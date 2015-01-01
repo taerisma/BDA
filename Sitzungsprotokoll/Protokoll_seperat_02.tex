@@ -1,0 +1,55 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+%\documentclass[10pt,a4paper]{article}
+%\usepackage{layout}
+\begin{document}
+\chapter{Gesprächsprotokoll}
+%\maketitle
+\section{SW2}
+\subsection{Gesprächsthemen}
+
+%Version:1 \\
+
+Das Hauptthema war die Produktbesprechung mit dem Industriepartner der
+Flytec vertreten durch Herr Erich Lerch. Für das Gerät ist ein
+Antennensystem im 2.4 GHz ISM Band zu design. Das System wird von einem Bluetooth low Energie Chip von Texas Instruments angeregt.
+Für die BDA wichtige Punkte die aus dem Gespräch hervorgegangen sind:
+\begin{itemize}
+	\item das Gehäuse ist aus ABS Kuststoff
+	\item Für das Linkbuget soll ein Wirkradius von 10 im Freiraum angenommen werden
+	\item Richtcharakteristik ist keine gefordert, wir definieren isotroph 
+	\item es wird eine Reserve von 6 dB eingeplant
+	\item als Empfangsgewinn wird 1 definiert
+	\item $S_{11} \leq$ 10 dB
+	\item Texas Instruments CC2541
+	\item auf einen Balun verzichten ist der Wunsch
+	\item symmetrisch angesteuerte Antenne
+	\item es wird sich um ein linear polarisiertes System handeln
+\end{itemize}
+Das G der Sendeantenne ist zu finden. Der Frequenzbereich des Low Energie Bluetooth von 2.4 GHz bis 2.45 GHz ist zu prüfen.
+\subsection{Wichtige Beschlüsse}
+
+\begin{itemize}
+	\item Herr Joss richtet die Dropbox ein
+	\item Frequenzbereich des Low Energie Bluetooth prüfen
+	\item Gewichtungsfaktor der Loop Antenne und des Dipols studieren
+	\item wie verhält sich das $Z_{ant} $ bei verkürzter Antenne
+	\item falls möglich die charakteristischen Eigenschaften von ABS prüfen
+\end{itemize}
+In einer späteren Phase des Projekt ist zu prüfen, ob und wie es
+möglich ist, dass die komplexe Ausgangsimpedanz der Quelle durch
+die Dimensionierung der Antennenleitung von der Quelle zum Fusspunkt
+der Antenne eine Anpassung auf Z=50+j*0 Ohm vornimmt. Das spart einen
+Balun ein und macht die Simulation einer Antenne erheblich einfacher,
+denn es kann von einer Quelle mit  $Z_{aus} $ von reel 50 Ohm
+ausgegangen werden.
+\subsection{Fragen auf SW3}
+\end{document}

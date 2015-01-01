@@ -1,24 +1,24 @@
 \section{Ausgangslage}
-Die Firma Flytec vernetzt Sensoren und Fluginstrumente drahtlos mit einem \glqq near pilot network\grqq{}. Für ein Fluginstrument in der Formgrösse eines Handgerätes soll eine integrierte Loop Antenne für das ISM Band 2.4 - 2.5 GHz entworfen werden.\todo{Quelle der Aufgabenstellung einfügen}
+Die Firma Flytec vernetzt Sensoren und Fluginstrumente drahtlos mit einem  near pilot network. Für ein Fluginstrument der 7000er Serie  soll eine integrierte Loop Antenne für das ISM Band 2.4 - 2.5 GHz entworfen werden.\todo{Quelle der Aufgabenstellung einfügen}
 
 \subsection{Fragestellung}
 Durch das Einarbeiten in die Eigenschaften elektrisch kleiner Antennen soll das Wissen für das Design eines Funktionsmuster  im 2.4-2.5GHz ISM Band arbeitenden Antennensystems erlangt werden. Das Design soll mit dem Empire XCcel Softwaretool simuliert. Iterativ soll eine symmetrisch gespiesene Loop Antenne gefunden werden. Die Antenne soll an den komplexen Ausgangswiderstand des Transceiverbausteins angepasst werden. Das simulierte Antennensystem soll gefertigt und ausgemessen werden. Die vorliegenden Antennenparameter sollen mit den simulierten Werten verglichen und bewertet werden.  
 \subsection{Technische Spezifikationen und Anforderungsliste}
 \todo{Anforderungskatalogs mit Fest-, Mindest- \& Wunschforderungen}
 \begin{itemize}
-\item Produkt Flytec
-\item Abstraktionsgrad des Simulationskörpers
-\item Materialien des Gehäuse
+\item Geräte 7030
+\item 
+\item Materialien des Gehäuse ABS Kusnstoff
 \item Volumen des Antennensystems
-\item Wirkungsradius
-\item Richtcharakteristik
-\item Polarisation
-\item Antennen Wirkungsgrad
-\item Antennen Gewinn
-\item minimaler Empfangspegel bei den Sensoren
-\item Transceivers Baustein
+\item Wirkungsradius 10m im Freiraum
+\item Richtcharakteristik isotroph
+\item Polarisation linear
+\item Antennen Wirkungsgrad ist zubestimmen
+\item Antennen Gewinn gleich wir der Abstrahl Wirkungsgrad
+\item minimaler Empfangspegel am Transceivers
+\item Transceivers Baustein Texas Instruments CC2541
 \item Sendeleistung
-\item maximaler S11 des Antennensystem
+\item $S_{11} \leq$ 10 dB
 \item Preis und Aufwand
 \item ...
 \item ...
@@ -34,9 +34,9 @@ Nr. & Anforderung & Beschreibung & Wert & nicht erfüllt \\
 \hline 
 002 & f & Handgerät lxbxh & lxbxh &   \\ 
 \hline 
-003 & f & Antennsystem & Loop Antenne &  \\ 
+003 & f & symmetische Speisung des Antennensystems &  \\ 
 \hline 
-004 & f & Antennen Speisung  & symmetrisch &  \\ 
+004 & f &  &  \\ 
 \hline 
 • &  &  &  &  \\ 
 \hline 
