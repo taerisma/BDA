@@ -1,0 +1,14 @@
+
+*.aux
+
+*.log
+
+*.toc
+
+*.tdo
+
+*.gz
+
+main.out
+
+main.pdf
