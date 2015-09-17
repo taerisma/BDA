@@ -1,0 +1,49 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Abstract}{3}{section.1}
+\contentsline {section}{\numberline {2}Zusammenfassung}{3}{section.2}
+\contentsline {section}{\numberline {3}Einleitung}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Aufbau der Arbeit}{3}{subsection.3.1}
+\contentsline {section}{\numberline {4}Ausgangslage}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Fragestellung}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Technische Spezifikationen und Anforderungsliste}{4}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Ziele der Arbeit}{5}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Meilensteine}{5}{subsubsection.4.3.1}
+\contentsline {section}{\numberline {5}Antennentheorie}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}elementarer Antennen Dipole}{6}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Hertzscher Dipol}{6}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Fitzgeraldscher Dipol}{6}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Nahfeld und Fernfeld}{6}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Antennenbauformen}{6}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}symmetrisch gespiesene Antennen}{6}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}$\lambda /2 $ Dipol Antenne}{7}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Loop Antenne}{8}{subsubsection.5.4.2}
+\contentsline {subsection}{\numberline {5.5}Abstrahlcharakteristik}{8}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Monopol \IeC {\"u}ber leitendem Ground}{8}{subsubsection.5.5.1}
+\contentsline {section}{\numberline {6}Antennendesign}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Model des Endproduktes xx}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Abmessungen des Antennensystems}{9}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}St\IeC {\"o}rfaktoren im Nahfeld}{9}{subsubsection.6.2.1}
+\contentsline {subsection}{\numberline {6.3}Entwurf des Antennensystems}{9}{subsection.6.3}
+\contentsline {section}{\numberline {7}Impedanzanpassung des Transceivers an das Antennensystem}{9}{section.7}
+\contentsline {subsection}{\numberline {7.1}Warum ist eine Impedanzanpassung n\IeC {\"o}tig}{9}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Anpassverfahren}{9}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Anpassung der komplexen Ausgangsimpedanz des Transceivers an das Antennensystem}{9}{subsection.7.3}
+\contentsline {section}{\numberline {8}Simulation}{9}{section.8}
+\contentsline {subsection}{\numberline {8.1}Simulationstool}{9}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Simulationverfahen}{9}{subsubsection.8.1.1}
+\contentsline {subsection}{\numberline {8.2}Was wird bei der Simulation ber\IeC {\"u}cksichtig}{9}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Simulationsresultate}{9}{subsection.8.3}
+\contentsline {section}{\numberline {9}Messungen}{9}{section.9}
+\contentsline {subsection}{\numberline {9.1}Messsystem}{9}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Messverfahren}{9}{subsubsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.2}Was wird gemessen}{9}{subsubsection.9.1.2}
+\contentsline {subsection}{\numberline {9.2}Erwartungen an die Messresultate}{9}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Messresultate}{9}{subsection.9.3}
+\contentsline {section}{\numberline {10}Diskussion des Funktionsmusters}{9}{section.10}
+\contentsline {section}{\numberline {11}Reflexion}{9}{section.11}
+\contentsline {subsection}{\numberline {11.1}Projektbezogene Reflexion}{9}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Pers\IeC {\"o}nliche Reflexion}{9}{subsection.11.2}
+\contentsline {section}{\numberline {12}Kick off}{10}{section.12}
+\contentsline {section}{\numberline {13}Grobplanung}{11}{section.13}
+\contentsline {section}{\numberline {14}Stichwortverzeichnis}{12}{section.14}
+\contentsline {section}{Literatur}{13}{section*.12}

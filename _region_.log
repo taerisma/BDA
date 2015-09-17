@@ -1,0 +1,1709 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=prv_main 2015.9.15)  15 SEP 2015 20:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_main _region_.tex
+(./_region_.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
+
+CUSTOMISED FORMAT. Preloaded files:
+        .
+ article.cls    2014/09/29 v1.4h Standard LaTeX document class
+  size10.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+  layout.sty    
+    cite.sty    2015/02/27  v 5.5
+   color.sty    1999/02/16
+   color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+colortbl.sty    2012/02/13 v1.0a Color table columns (DPC)
+   array.sty    2014/10/28 v2.4c Tabular extension package (FMi)
+inputenc.sty    2015/03/17 v1.2c Input encoding file
+    utf8.def    2014/09/29 v1.1m UTF-8 support for inputenc
+   t1enc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+  ot1enc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+  omsenc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+textcomp.sty    2005/09/27 v1.99g Standard LaTeX package
+  ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+  ts1enc.dfu    2014/09/29 v1.1m UTF-8 support for inputenc
+ lmodern.sty    2009/10/30 v1.6 Latin Modern Fonts
+ courier.sty    2005/04/12 PSNFSS-v9.2a (WaS) 
+todonotes.sty    2012/07/25
+  ifthen.sty    2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+ xkeyval.sty    2014/12/03 v2.7a package option processing (HA)
+ xkeyval.tex    2014/12/03 v2.7a key=value parser (HA)
+  xcolor.sty    2007/01/21 v2.11 LaTeX color extensions (UK)
+   color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
+    tikz.sty    2013/12/13 v3.0.0 (rcs-revision 1.142)
+     pgf.sty    2013/12/18 v3.0.0 (rcs-revision 1.14)
+  pgfrcs.sty    2013/12/20 v3.0.0 (rcs-revision 1.28)
+everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
+  pgfrcs.code.tex
+ pgfcore.sty    2010/04/11 v3.0.0 (rcs-revision 1.7)
+graphicx.sty    2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
+  pgfsys.sty    2013/11/30 v3.0.0 (rcs-revision 1.47)
+  pgfsys.code.tex
+pgfsyssoftpath.code.tex    2013/09/09  (rcs-revision 1.9)
+pgfsysprotocol.code.tex    2006/10/16  (rcs-revision 1.4)
+ pgfcore.code.tex
+pgfcomp-version-0-65.sty    2007/07/03 v3.0.0 (rcs-revision 1.7)
+pgfcomp-version-1-18.sty    2007/07/23 v3.0.0 (rcs-revision 1.1)
+  pgffor.sty    2013/12/13 v3.0.0 (rcs-revision 1.25)
+ pgfkeys.sty    
+ pgfkeys.code.tex
+ pgfmath.sty    
+ pgfmath.code.tex
+  pgffor.code.tex
+    tikz.code.tex
+    calc.sty    2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+appendix.sty    2009/09/02 v1.2b extra appendix facilities
+longtable.sty    2014/10/28 v4.11 Multi-page Table package (DPC)
+multirow.sty    
+   babel.sty    2014/09/25 3.9l The Babel package
+ ngerman.ldf    2013/12/13 v2.7 German support for babel (new orthography)
+circuitikz.sty    2015/05/15 The CircuiTikz circuit drawing package version 0.4
+
+  bchart.sty    
+ sidecap.sty    2003/06/06 v1.6f SideCap Package (RN/HjG)
+floatflt.sty    1997/07/16 v. 1.31
+ acronym.sty    2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+  suffix.sty    2006/07/15 1.5a Variant command support
+ xstring.sty    2013/10/13  v1.7c  String manipulations (C Tellechea)
+pdflscape.sty    2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+  lscape.sty    2000/10/22 v3.01 Landscape Pages (DPC)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+spreadtab.sty    2014/11/03 v0.4c Spreadsheet features for table environments
+      fp.sty    1995/04/02
+defpattern.sty    1994/10/12
+fp-basic.sty    1996/05/13
+fp-addons.sty    1995/03/15
+ fp-snap.sty    1995/04/05
+  fp-exp.sty    1995/04/03
+fp-trigo.sty    1995/04/14
+  fp-pas.sty    1994/08/29
+fp-random.sty    1995/02/23
+  fp-eqn.sty    1995/04/03
+  fp-upn.sty    1996/10/21
+ fp-eval.sty    1995/04/03
+hyperref.sty    2012/11/06 v6.83m Hypertext links for LaTeX
+hobsub-hyperref.sty    2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+hobsub-generic.sty    2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+  hobsub.sty    2012/05/28 v1.13 Construct package bundles (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+  ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+ intcalc.sty    2007/09/27 v1.1 Expandable calculations with integers (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+pdfescape.sty    2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+bigintcalc.sty    2012/04/08 v1.3 Expandable calculations on big integers (HO)
+  bitset.sty    2011/01/30 v1.1 Handle bit-vector datatype (HO)
+uniquecounter.sty    2011/01/30 v1.2 Provide unlimited unique counter (HO)
+letltxmacro.sty    2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+ hopatch.sty    2012/05/28 v1.2 Wrapper for package hooks (HO)
+xcolor-patch.sty    2011/01/30 xcolor patch
+atveryend.sty    2011/06/30 v1.8 Hooks at the very end of document (HO)
+atbegshi.sty    2011/10/05 v1.16 At begin shipout hook (HO)
+refcount.sty    2011/10/16 v3.4 Data extraction from label references (HO)
+ hycolor.sty    2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+ auxhook.sty    2011/03/04 v1.3 Hooks for auxiliary files (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+  pd1enc.def    2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+ hpdftex.def    2012/11/06 v6.83m Hyperref driver for pdfTeX
+rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+ amsmath.sty    2013/01/14 v2.14 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+      xy.sty    2013/10/06 Xy-pic version 3.8.9
+ amssymb.sty    2013/01/14 v3.01 AMS font symbols
+amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
+glossaries.sty    2015/03/16 v4.15 (NLCT)
+mfirstuc.sty    2015/02/03 v1.10 (NLCT)
+etoolbox.sty    2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
+textcase.sty    2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+    xfor.sty    2009/02/05 v1.05 (NLCT)
+datatool-base.sty    2014/06/10 v2.22 (NLCT)
+  substr.sty    2009/10/20 v1.2 Handle substrings
+datatool-fp.sty    2013/08/29 v2.17 (NLCT)
+glossaries-compatible-307.sty    2013/11/14 v4.0 (NLCT)
+tracklang.sty    2015/03/23 v1.2 (NLCT) Track Languages
+tracklang.tex
+translator.sty    2010/06/12 ver 1.10
+translator-language-mappings.tex
+glossaries-german.ldf    2014/11/23 v1.0
+glossary-hypernav.sty    2013/11/14 v4.0 (NLCT)
+glossary-list.sty    2015/02/03 v4.13 (NLCT)
+glossary-long.sty    2013/11/14 v4.0 (NLCT)
+glossary-super.sty    2013/11/14 v4.0 (NLCT)
+supertabular.sty    2004/02/20 v4.1e the supertabular environment
+glossary-tree.sty    2015/02/03 v4.13 (NLCT)
+ makeidx.sty    2014/09/29 v1.0m Standard LaTeX package
+ caption.sty    2013/05/02 v3.3-89 Customizing captions (AR)
+caption3.sty    2013/05/02 v1.6-88 caption3 kernel (AR)
+ltcaption.sty    2013/02/03 v1.3-62 longtable captions (AR)
+subcaption.sty    2013/02/03 v1.1-62 Sub-captions (AR)
+pdfpages.sty    2015/05/11 v0.4x Insert pages of external PDF documents (AM)
+ eso-pic.sty    2015/04/20 v2.0e eso-pic (RN)
+pppdftex.def    2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
+listings.sty    2014/09/06 1.5e (Carsten Heinz)
+ lstmisc.sty    2014/09/06 1.5e (Carsten Heinz)
+listings.cfg    2014/09/06 1.5e listings configuration
+lstlang1.sty    2014/09/06 1.5e listings language file
+printlen.sty    2009/09/03 v1.1a print lengths with units
+verbatim.sty    2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+  lipsum.sty    2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+blindtext.sty    2012/01/06 V2.0 blindtext-Package
+  xspace.sty    2014/10/28 v1.13 Space after command names (DPC,MH)
+ eurosym.sty    1998/08/06 v1.1 European currency symbol ``Euro''
+enumitem.sty    2011/09/28 v3.5.2 Customized lists
+ apacite.sty    2013/07/21 v6.03 APA citation
+fancyhdr.sty    
+multicol.sty    2015/03/31 v1.8m multicolumn formatting (FMi)
+  ot1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
+  omllmm.fd    2009/10/30 v1.6 Font defs for Latin Modern
+ omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
+ omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
+    umsa.fd    2013/01/14 v3.01 AMS symbols A
+    umsb.fd    2013/01/14 v3.01 AMS symbols B
+   t1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
+   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
+  t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/preview.sty
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prtightpage.def
+\PreviewBorder=\dimen284
+)
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count233
+\hfuzz=\dimen285
+
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prauctex.cfg))
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prfootnotes.def)
+\pr@snippet=\count266
+\pr@box=\box104
+\pr@output=\toks61
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count267
+\scratchdimen=\dimen286
+\scratchbox=\box105
+\nofMPsegments=\count268
+\nofMParguments=\count269
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count270
+\MPscratchDim=\dimen287
+\MPnumerator=\count271
+\makeMPintoPDFobject=\count272
+\everyMPtoPDFconversion=\toks63
+) ABD: EveryShipout initializing macros
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip85
+\RaggedLeftLeftskip=\skip86
+\RaggedRightLeftskip=\skip87
+\CenteringRightskip=\skip88
+\RaggedLeftRightskip=\skip89
+\RaggedRightRightskip=\skip90
+\CenteringParfillskip=\skip91
+\RaggedLeftParfillskip=\skip92
+\RaggedRightParfillskip=\skip93
+\JustifyingParfillskip=\skip94
+\CenteringParindent=\skip95
+\RaggedLeftParindent=\skip96
+\RaggedRightParindent=\skip97
+\JustifyingParindent=\skip98
+)
+\AC@reset@newl@bel
+\AtBeginShipoutBox=\box106
+Package hyperref Info: Link coloring OFF on input line 7.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count273
+)
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
+Package xypdf Info: Line width: 0.39998pt on input line 7.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = \protected\long macro:->\pr@protect@domacro {}
+{##1{}}\pr@\caption .
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: listings package is loaded.
+
+! Package caption Error: The `subcaption' package does not work correctly
+(caption)                in compatibility mode.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \begin{document}
+                    
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count274
+\c@maskedRefs=\count275
+(/usr/local/texlive/2015/texmf-dist/tex/latex/apacite/ngerman.apc
+File: ngerman.apc 2013/07/21 v6.03 apacite language file
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/apacite/german.apc
+File: german.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 142.
+LaTeX Info: Redefining \BHBI on input line 143.
+))
+ !name(main.tex) !offset(-3)  (./title.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 58.
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+! Preview: Snippet 1 started.
+<-><->
+      
+l.12 	\tableofcontents
+                      
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(645227+0x31933319).
+<-><->
+      
+l.12 	\tableofcontents
+                      
+Not a real error.
+
+[1] (./content.tex (./content/Abstract.tex
+! Preview: Snippet 2 started.
+<-><->
+      
+l.1 \section
+            {Abstract}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 2 ended.(645227+0x31933319).
+<-><->
+      
+l.1 \section{Abstract}
+                      
+Not a real error.
+
+[2
+
+]) (./content/Zusammenfassung.tex
+! Preview: Snippet 3 started.
+<-><->
+      
+l.1 \section
+            {Zusammenfassung}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 3 ended.(645227+183500x31933319).
+<-><->
+      
+l.1 \section{Zusammenfassung}
+                             
+Not a real error.
+
+[3
+
+]) (./content/Einleitung.tex
+! Preview: Snippet 4 started.
+<-><->
+      
+l.1 \section
+            {Einleitung}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 4 ended.(645227+183500x31933319).
+<-><->
+      
+l.1 \section{Einleitung}
+                        
+Not a real error.
+
+[4
+
+]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 3.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+! Preview: Snippet 5 started.
+<-><->
+      
+l.16 \subsection
+                {Aufbau der Arbeit}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 16.
+! Preview: Snippet 5 ended.(537690+0x31933319).
+<-><->
+      
+l.16 \subsection{Aufbau der Arbeit}
+                                   
+Not a real error.
+
+[5
+
+]) (./content/Ausgangslage.tex
+! Preview: Snippet 6 started.
+<-><->
+      
+l.1 \section
+            {Ausgangslage}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 6 ended.(645227+183500x31933319).
+<-><->
+      
+l.1 \section{Ausgangslage}
+                          
+Not a real error.
+
+[6
+
+]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 2.
+
+
+! Package tikz Error: Sorry, some package has redefined the meaning of the math
+-mode dollar sign. This is incompatible with tikz and its calc library and migh
+t cause unrecoverable errors.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...todo{Quelle der Aufgabenstellung einfügen}
+                                                  
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+! Preview: Snippet 7 started.
+<-><->
+      
+l.4 \subsection
+               {Fragestellung}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+! Preview: Snippet 7 ended.(537690+152916x31933319).
+<-><->
+      
+l.4 \subsection{Fragestellung}
+                              
+Not a real error.
+
+[7
+
+]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.6 \subsection
+               {Technische Spezifikationen und Anforderungsliste}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+! Preview: Snippet 8 ended.(537690+152916x31933319).
+<-><->
+      
+l.6 ...sche Spezifikationen und Anforderungsliste}
+                                                  
+Not a real error.
+
+[8
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9 \item
+          Produkt Flytec [1]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.57 \subsection
+                {Ziele der Arbeit}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 57.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 57.
+! Preview: Snippet 9 ended.(537690+0x31933319).
+<-><->
+      
+l.57 \subsection{Ziele der Arbeit}
+                                  
+Not a real error.
+
+[9
+
+]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.65 \subsubsection
+                   {Meilensteine}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 65.
+! Preview: Snippet 10 ended.(458128+0x31933319).
+<-><->
+      
+l.65 \subsubsection{Meilensteine}
+                                 
+Not a real error.
+
+[10
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 72.
+ [2
+
+
+
+]) (./content/Antennentheorie.tex
+! Preview: Snippet 11 started.
+<-><->
+      
+l.1 \section
+            {Antennentheorie}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 11 ended.(645227+0x31933319).
+<-><->
+      
+l.1 \section{Antennentheorie}
+                             
+Not a real error.
+
+[11
+
+]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.2 \subsection
+               {elementarer Antennen Dipole}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+! Preview: Snippet 12 ended.(537690+152916x31933319).
+<-><->
+      
+l.2 \subsection{elementarer Antennen Dipole}
+                                            
+Not a real error.
+
+[12
+
+]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.3 \subsubsection
+                  {Hertzscher Dipol}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+! Preview: Snippet 13 ended.(458128+127430x31933319).
+<-><->
+      
+l.3 \subsubsection{Hertzscher Dipol}
+                                    
+Not a real error.
+
+[13
+
+]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.4 \subsubsection
+                  {Fitzgeraldscher Dipol}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+! Preview: Snippet 14 ended.(458128+127430x31933319).
+<-><->
+      
+l.4 \subsubsection{Fitzgeraldscher Dipol}
+                                         
+Not a real error.
+
+[14
+
+]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.5 \subsection
+               {Nahfeld und Fernfeld}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+! Preview: Snippet 15 ended.(537690+0x31933319).
+<-><->
+      
+l.5 \subsection{Nahfeld und Fernfeld}
+                                     
+Not a real error.
+
+[15
+
+]
+! Preview: Snippet 16 started.
+<-><->
+      
+l.7 ...ld steht das E und H Feld senkrecht  im 90$
+                                                  ^\circ$Winkel aufeinander....
+
+Not a real error.
+
+! Preview: Snippet 16 ended.(451272+0x301284).
+<-><->
+      
+l.7 ...t das E und H Feld senkrecht  im 90$^\circ$
+                                                  Winkel aufeinander. Die We...
+
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.10 \[
+       do=\dfrac{2D^2}{\lambda}\]
+Not a real error.
+
+! Preview: Snippet 17 ended.(1426359+0x17402830).
+<-><->
+      
+l.10 \[do=\dfrac{2D^2}{\lambda}\]
+                                 
+Not a real error.
+
+[17]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.13 $
+      \lambda$: Wellenlänge
+Not a real error.
+
+! Preview: Snippet 18 ended.(455111+0x382295).
+<-><->
+      
+l.13 $\lambda$
+              : Wellenlänge
+Not a real error.
+
+[18]
+! Preview: Snippet 19 started.
+<-><->
+      
+l.16 \begin{figure}
+                   [htbp]
+Not a real error.
+
+
+<content/bilder/Feldwellenwiderstandsverlauf_im_Nahfeld-Fernfeld.pdf, id=104, 8
+45.1575pt x 597.23125pt>
+File: content/bilder/Feldwellenwiderstandsverlauf_im_Nahfeld-Fernfeld.pdf Graph
+ic file (type pdf)
+
+<use content/bilder/Feldwellenwiderstandsverlauf_im_Nahfeld-Fernfeld.pdf>
+Package pdftex.def Info: content/bilder/Feldwellenwiderstandsverlauf_im_Nahfeld
+-Fernfeld.pdf used on input line 18.
+(pdftex.def)             Requested size: 170.71652pt x 120.63792pt.
+
+! Preview: Snippet 19 ended.(9347919+0x31933319).
+<-><->
+      
+l.21 \end{figure}
+                 
+Not a real error.
+
+[19
+
+
+
+ <./content/bilder/Feldwellenwiderstandsverlauf_im_Nahfeld-Fernfeld.pdf>]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.22 \subsection
+                {Antennenbauformen}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 22.
+! Preview: Snippet 20 ended.(537690+0x31933319).
+<-><->
+      
+l.22 \subsection{Antennenbauformen}
+                                   
+Not a real error.
+
+[20
+
+]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.23 \subsection
+                {symmetrisch gespiesene Antennen}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 23.
+! Preview: Snippet 21 ended.(537690+152916x31933319).
+<-><->
+      
+l.23 \subsection{symmetrisch gespiesene Antennen}
+                                                 
+Not a real error.
+
+[21
+
+]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.26 ...stark und nehmen mit zunehmendem Abstand $
+                                                  1/r$ab. \\
+Not a real error.
+
+! Preview: Snippet 22 ended.(491520+163840x969237).
+<-><->
+      
+l.26 ...k und nehmen mit zunehmendem Abstand $1/r$
+                                                  ab. \\
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.34 \item Impedanz der $
+                         \lambda /2 $ Antenne
+Not a real error.
+
+! Preview: Snippet 23 ended.(491520+163840x1037656).
+<-><->
+      
+l.34 \item Impedanz der $\lambda /2 $
+                                      Antenne
+Not a real error.
+
+[23]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.37 \item Impedanz der $
+                         \lambda /2 $ Antenne
+Not a real error.
+
+! Preview: Snippet 24 ended.(491520+163840x1037656).
+<-><->
+      
+l.37 \item Impedanz der $\lambda /2 $
+                                      Antenne
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.40 \subsubsection
+                   {$\lambda /2 $ Dipol Antenne}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 40.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\lambda' on input line 40.
+
+! Preview: Snippet 25 ended.(491520+163840x31933319).
+<-><->
+      
+l.40 \subsubsection{$\lambda /2 $ Dipol Antenne}
+                                                
+Not a real error.
+
+[25
+
+]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.41 Die $
+          \lambda /2 $ Dipol Antenne ist eine der am Meisten eingesetzten An...
+
+Not a real error.
+
+! Preview: Snippet 26 ended.(491520+163840x1037656).
+<-><->
+      
+l.41 Die $\lambda /2 $
+                       Dipol Antenne ist eine der am Meisten eingesetzten An...
+
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.44 $
+      I(z)=\begin{cases}I_{0}sin[k(\frac{L}{2}-z)],& 0\le z \le \dfrac{L}{2}...
+
+Not a real error.
+
+! Preview: Snippet 27 ended.(1540110+1212430x11475943).
+<-><->
+      
+l.44 ..., & -\dfrac{L}{2} \le z \le 0 \end{cases}$
+                                                  
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.59 Bei einem Dipol mit der Länge  $
+                                      L= \frac{\lambda}{2}$ sich einen Strom...
+
+Not a real error.
+
+! Preview: Snippet 28 ended.(576613+225995x1787956).
+<-><->
+      
+l.59 ...pol mit der Länge  $L= \frac{\lambda}{2}$
+                                                   sich einen Strombauch üb...
+
+Not a real error.
+
+[28]
+! Preview: Snippet 29 started.
+<-><->
+      
+l.60 Ein Dipol mit der Länge  $
+                                L= \lambda$ bilden sich zwei  Strombauche ü...
+
+Not a real error.
+
+! Preview: Snippet 29 ended.(455111+0x1702123).
+<-><->
+      
+l.60 Ein Dipol mit der Länge  $L= \lambda$
+                                            bilden sich zwei  Strombauche ü...
+
+Not a real error.
+
+[29]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.70 ... mit der Reaktanz. Bei etwas weniger als $
+                                                  L=\frac{\lambda}{2}$ hat d...
+
+Not a real error.
+
+! Preview: Snippet 30 ended.(576613+225995x1787956).
+<-><->
+      
+l.70 ...ei etwas weniger als $L=\frac{\lambda}{2}$
+                                                   hat die Antenne Nulldurch...
+
+Not a real error.
+
+[30]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.72 ...klärung, kann der Stromverteilung einer $
+                                                  L = \lambda$ langen Antenn...
+
+Not a real error.
+
+! Preview: Snippet 31 ended.(455111+0x1702123).
+<-><->
+      
+l.72 ...nn der Stromverteilung einer $L = \lambda$
+                                                   langen Antenne betrachtet...
+
+Not a real error.
+
+[31]
+! Preview: Snippet 32 started.
+<-><->
+      
+l.72 ... dass der Strom nach dem Ohmschen Gesetz $
+                                                  I = \frac{U}{R}$ ist, so i...
+
+Not a real error.
+
+! Preview: Snippet 32 ended.(571517+225995x1776821).
+<-><->
+      
+l.72 ...nach dem Ohmschen Gesetz $I = \frac{U}{R}$
+                                                   ist, so ist naheliegen, d...
+
+Not a real error.
+
+[32]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 73.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 73.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 73.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 73.
+ [3
+
+
+]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.80 \[
+       E_{\theta}=\frac{j\eta I_{0} e^{-jkr}}{2\pi r}\frac{cos(\frac{kL}{2}c...
+
+Not a real error.
+
+! Preview: Snippet 33 ended.(1671579+0x21963898).
+<-><->
+      
+l.80 ...theta))-cos(\frac{kL}{2}))}{sin(\theta)}\]
+                                                  
+Not a real error.
+
+[33]
+! Preview: Snippet 34 started.
+<-><->
+      
+l.82 \[
+       H_{\Phi}=\frac{E_{\Theta}}{\eta}\]
+Not a real error.
+
+! Preview: Snippet 34 ended.(1468160+0x17417473).
+<-><->
+      
+l.82 \[H_{\Phi}=\frac{E_{\Theta}}{\eta}\]
+                                         
+Not a real error.
+
+[34]
+! Preview: Snippet 35 started.
+<-><->
+      
+l.117 \subsubsection
+                    {Loop Antenne}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+! Preview: Snippet 35 ended.(458128+127430x31933319).
+<-><->
+      
+l.117 \subsubsection{Loop Antenne}
+                                  
+Not a real error.
+
+[35
+
+]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.118 ...dünne Leiterschleife mit einem Radius  $
+                                                  r=\dfrac{bla}{bla}$  darge...
+
+Not a real error.
+
+! Preview: Snippet 36 ended.(898467+449545x2181096).
+<-><->
+      
+l.118 ...fe mit einem Radius  $r=\dfrac{bla}{bla}$
+                                                    dargestellt. \\
+Not a real error.
+
+[36]
+! Preview: Snippet 37 started.
+<-><->
+      
+l.119 ... Leiterschleife. Das H Feld erscheint 90$
+                                                  ^\circ$Winkel zum E Feld.
+Not a real error.
+
+! Preview: Snippet 37 ended.(451272+0x301284).
+<-><->
+      
+l.119 ...schleife. Das H Feld erscheint 90$^\circ$
+                                                  Winkel zum E Feld.
+Not a real error.
+
+[37]
+! Preview: Snippet 38 started.
+<-><->
+      
+l.120 \subsection
+                 {Abstrahlcharakteristik}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 120.
+! Preview: Snippet 38 ended.(537690+0x31933319).
+<-><->
+      
+l.120 \subsection{Abstrahlcharakteristik}
+                                         
+Not a real error.
+
+[38
+
+]
+! Preview: Snippet 39 started.
+<-><->
+      
+l.121 \subsubsection
+                    {Monopol über leitendem Ground}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 121.
+! Preview: Snippet 39 ended.(458128+127430x31933319).
+<-><->
+      
+l.121 ...ubsection{Monopol über leitendem Ground}
+                                                  
+Not a real error.
+
+[39
+
+]
+! Preview: Snippet 40 started.
+<-><->
+      
+l.125   $
+         \dfrac{\lambda}{4}$
+Not a real error.
+
+! Preview: Snippet 40 ended.(898467+449545x539581).
+<-><->
+      
+l.125   $\dfrac{\lambda}{4}$
+                            
+Not a real error.
+
+[40]
+! Preview: Snippet 41 started.
+<-><->
+      
+l.127   Die  $
+              \dfrac{\lambda}{4}$  Monopolantenn ist in der positiven z Rich...
+
+Not a real error.
+
+! Preview: Snippet 41 ended.(898467+449545x539581).
+<-><->
+      
+l.127   Die  $\dfrac{\lambda}{4}$
+                                   Monopolantenn ist in der positiven z Rich...
+
+Not a real error.
+
+[41]) (./content/Entwurf.tex
+! Preview: Snippet 42 started.
+<-><->
+      
+l.1 \section
+            {Antennendesign}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 42 ended.(645227+183500x31933319).
+<-><->
+      
+l.1 \section{Antennendesign}
+                            
+Not a real error.
+
+[42
+
+]
+! Preview: Snippet 43 started.
+<-><->
+      
+l.2 \subsection
+               {Model des Endproduktes xx}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+! Preview: Snippet 43 ended.(537690+152916x31933319).
+<-><->
+      
+l.2 \subsection{Model des Endproduktes xx}
+                                          
+Not a real error.
+
+[43
+
+]
+! Preview: Snippet 44 started.
+<-><->
+      
+l.3 \subsection
+               {Abmessungen des Antennensystems}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+! Preview: Snippet 44 ended.(537690+152916x31933319).
+<-><->
+      
+l.3 \subsection{Abmessungen des Antennensystems}
+                                                
+Not a real error.
+
+[44
+
+]
+! Preview: Snippet 45 started.
+<-><->
+      
+l.4 \subsubsection
+                  {Störfaktoren im Nahfeld}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+! Preview: Snippet 45 ended.(458128+0x31933319).
+<-><->
+      
+l.4 \subsubsection{Störfaktoren im Nahfeld}
+                                            
+Not a real error.
+
+[45
+
+]
+! Preview: Snippet 46 started.
+<-><->
+      
+l.5 \subsection
+               {Entwurf des Antennensystems}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+! Preview: Snippet 46 ended.(537690+152916x31933319).
+<-><->
+      
+l.5 \subsection{Entwurf des Antennensystems}
+                                            
+Not a real error.
+
+[46
+
+]) (./content/Anpassung.tex
+! Preview: Snippet 47 started.
+<-><->
+      
+l.1 \section
+            {Impedanzanpassung des Transceivers an das Antennensystem}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 47 ended.(645227+183500x31933319).
+<-><->
+      
+l.1 ...ung des Transceivers an das Antennensystem}
+                                                  
+Not a real error.
+
+[47
+
+]
+! Preview: Snippet 48 started.
+<-><->
+      
+l.2 \subsection
+               {Warum ist eine Impedanzanpassung nötig}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+! Preview: Snippet 48 ended.(537690+152916x31933319).
+<-><->
+      
+l.2 ...on{Warum ist eine Impedanzanpassung nötig}
+                                                  
+Not a real error.
+
+[48
+
+]
+! Preview: Snippet 49 started.
+<-><->
+      
+l.3 \subsection
+               {Anpassverfahren}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+! Preview: Snippet 49 ended.(537690+152916x31933319).
+<-><->
+      
+l.3 \subsection{Anpassverfahren}
+                                
+Not a real error.
+
+[49
+
+]
+! Preview: Snippet 50 started.
+<-><->
+      
+l.4 \subsection
+               {Anpassung der komplexen Ausgangsimpedanz des Transceivers an...
+
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+! Preview: Snippet 50 ended.(1455194+152916x31933319).
+<-><->
+      
+l.4 ...anz des Transceivers an das Antennensystem}
+                                                  
+Not a real error.
+
+[50
+
+]) (./content/Simulation.tex
+! Preview: Snippet 51 started.
+<-><->
+      
+l.1 \section
+            {Simulation}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 51 ended.(645227+0x31933319).
+<-><->
+      
+l.1 \section{Simulation}
+                        
+Not a real error.
+
+[51
+
+]
+! Preview: Snippet 52 started.
+<-><->
+      
+l.2 \subsection
+               {Simulationstool}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+! Preview: Snippet 52 ended.(537690+0x31933319).
+<-><->
+      
+l.2 \subsection{Simulationstool}
+                                
+Not a real error.
+
+[52
+
+]
+! Preview: Snippet 53 started.
+<-><->
+      
+l.3 \subsubsection
+                  {Simulationverfahen}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+! Preview: Snippet 53 ended.(458128+0x31933319).
+<-><->
+      
+l.3 \subsubsection{Simulationverfahen}
+                                      
+Not a real error.
+
+[53
+
+]
+! Preview: Snippet 54 started.
+<-><->
+      
+l.4 \subsection
+               {Was wird bei der Simulation berücksichtig}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+! Preview: Snippet 54 ended.(537690+152916x31933319).
+<-><->
+      
+l.4 ...Was wird bei der Simulation berücksichtig}
+                                                  
+Not a real error.
+
+[54
+
+]
+! Preview: Snippet 55 started.
+<-><->
+      
+l.5 \subsection
+               {Simulationsresultate}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+! Preview: Snippet 55 ended.(537690+0x31933319).
+<-><->
+      
+l.5 \subsection{Simulationsresultate}
+                                     
+Not a real error.
+
+[55
+
+]) (./content/Messungen.tex
+! Preview: Snippet 56 started.
+<-><->
+      
+l.1 \section
+            {Messungen}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 56 ended.(645227+183500x31933319).
+<-><->
+      
+l.1 \section{Messungen}
+                       
+Not a real error.
+
+[56
+
+]
+! Preview: Snippet 57 started.
+<-><->
+      
+l.2 \subsection
+               {Messsystem}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+! Preview: Snippet 57 ended.(537690+152916x31933319).
+<-><->
+      
+l.2 \subsection{Messsystem}
+                           
+Not a real error.
+
+[57
+
+]
+! Preview: Snippet 58 started.
+<-><->
+      
+l.3 \subsubsection
+                  {Messverfahren}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+! Preview: Snippet 58 ended.(458128+0x31933319).
+<-><->
+      
+l.3 \subsubsection{Messverfahren}
+                                 
+Not a real error.
+
+[58
+
+]
+! Preview: Snippet 59 started.
+<-><->
+      
+l.4 \subsubsection
+                  {Was wird gemessen}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+! Preview: Snippet 59 ended.(458128+127430x31933319).
+<-><->
+      
+l.4 \subsubsection{Was wird gemessen}
+                                     
+Not a real error.
+
+[59
+
+]
+! Preview: Snippet 60 started.
+<-><->
+      
+l.5 \subsection
+               {Erwartungen an die Messresultate}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 5.
+! Preview: Snippet 60 ended.(537690+152916x31933319).
+<-><->
+      
+l.5 \subsection{Erwartungen an die Messresultate}
+                                                 
+Not a real error.
+
+[60
+
+]
+! Preview: Snippet 61 started.
+<-><->
+      
+l.6 \subsection
+               {Messresultate}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
+! Preview: Snippet 61 ended.(537690+0x31933319).
+<-><->
+      
+l.6 \subsection{Messresultate}
+                              
+Not a real error.
+
+[61
+
+]) (./content/DisskusionFunktktionsmusters.tex
+! Preview: Snippet 62 started.
+<-><->
+      
+l.1 \section
+            {Diskussion des Funktionsmusters}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 62 ended.(645227+0x31933319).
+<-><->
+      
+l.1 \section{Diskussion des Funktionsmusters}
+                                             
+Not a real error.
+
+[62
+
+]) (./content/Reflexion.tex
+! Preview: Snippet 63 started.
+<-><->
+      
+l.1 \section
+            {Reflexion}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+! Preview: Snippet 63 ended.(645227+0x31933319).
+<-><->
+      
+l.1 \section{Reflexion}
+                       
+Not a real error.
+
+[63
+
+]
+! Preview: Snippet 64 started.
+<-><->
+      
+l.2 \subsection
+               {Projektbezogene Reflexion}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+! Preview: Snippet 64 ended.(537690+152916x31933319).
+<-><->
+      
+l.2 \subsection{Projektbezogene Reflexion}
+                                          
+Not a real error.
+
+[64
+
+]
+! Preview: Snippet 65 started.
+<-><->
+      
+l.3 \subsection
+               {Persönliche Reflexion}
+Not a real error.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+! Preview: Snippet 65 ended.(537690+0x31933319).
+<-><->
+      
+l.3 \subsection{Persönliche Reflexion}
+                                       
+Not a real error.
+
+[65
+
+]) (./content/todo.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [4]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input l

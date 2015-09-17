@@ -1,0 +1,93 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+%\documentclass[10pt,a4paper]{article}
+%\usepackage{layout}
+\begin{document}
+\chapter{Gesprächsprotokoll}
+%\maketitle
+\section{SW1}
+\subsection{Gesprächsthemen}
+
+\\ Version:2 \\
+
+Das Hauptthema war die Grobplanung der BDA. Die zur Verfügung stehenden 15 Wochen werden in vier Phasen eingeteilt. Die vier Phasen sind:
+\begin{itemize}
+	\item Recherche- und Theoriephase
+	\item Designphase
+	\item Prototyping 
+	\item Dokumentation des Engeneeringmodels
+\end{itemize}
+Die vier Phasen weden je mit einem Meilenstein enden. Die   Meilensteine dienen gleichzeitig als Projektcontrolling. Bevor in eine nächste Phase übergegangen wird, muss der Projektstand mit den Forderungen des Meilensteins überprüft werden. Zu diesen Zeitpunkten soll  ein Beschluss über den weiten Verlauf des Projekt gefällt werden.
+\subsection{Wichtige Beschlüsse}
+Die Recherche- und Theoriephase soll die folgenden Punkte beinhalten. 
+\begin{itemize}
+	\item Studium der beiden Grundantennen Monopol Antenne und Dipol Antenne
+	\item Studium der beiden symmetrisch gespiesenen Antennen Dipol und Loop Antenne
+	\begin{itemize}
+
+		\item das elektrische Feld des Dipols
+		\item das magnetische Feld des Dipols
+		\item das elektrische Feld der Loop Antenne
+		\item das magnetische Feld der Loop Antenne
+		\item das Nah- und Fernfeld der Antennen
+	\end{itemize}
+		\item das elektrische Feld der Monopol Antenne
+		\item das magnetische Feld der Monopol Antenne
+		\item die mathematische Beschreibung der Felder der elementaren symmetrischen Antennen
+		\begin{itemize}
+		\item Hertzscher Dipol
+		\item Fitzgeradscher Dipol
+		\end{itemize}
+		\item Antennenimpedanz der Dipol Antenne bei der Länge  $L=\lambda / 2$ und der Monopol Antenne bei $L=\lambda / 4$
+		\item Wie ändern sich die folgenden Antennenparameter in Abhängigkeit der Antennenlänge 
+	\begin{itemize}
+		\item Impedanz der Antennen
+		\item elektrisches und magnetisches Feld
+		\item Strahlungswiderstand
+		\item Bandbreite
+	\end{itemize}
+\end{itemize}
+Die Theorie zu den aufgeführten Punkten hilft den Designprozess voranzutreiben. Zudem ist das Wissen über das elektromagnetische Verhalten der  Antennen nötig, um die Simulationsergebnisse zu bewerten. Am Ende der Recherche- und Theoriephase sind die wesentlichen Erkenntnisse zur Antennentheorie zu 80\% im Bericht dokumentiert. Weiterer Bestandteile dieses Meilenstein sind das erstellen  eines Anforderungsdokument. \\
+\\ Bestandteile der Designphase:
+\begin{itemize}
+	 \item Vertraut werden mit dem Designtool und Simulationstool Empire  Xccel
+	 \item Erstellen eines  Simulationsmodels  
+	 \item Benennen und quantisieren der Simulationsfehler
+	 \item Erstellen von drei bis vier möglichen Antennenkonzepten
+	 \item Simulation der Antennenkonzepte
+	 \item Diskussion der Antennenkonzepte bezüglich folgende Punkte:
+		 \begin{itemize}
+		 \item Antennengüte Q
+		 \item Impedanz
+		 \item Strahlungswiderstand
+		 \item Abstrahleffizienz
+		 \item Richtcharakteristik
+		 \item relative Bandbreite
+		 \end{itemize}
+ \end{itemize} 
+Die Erkenntnisse aus den ersten Simulationen der Antennenkonzepte werden am Ende der Designphase an der Zwischenpräsentation gezeigt. Auch soll auf das Verhalten von elektrisch kurzen Antennen eingegangen  und verschiede Einflüsse der Abstrahlcharakteristik und ihre Zusammenhänge  gezeigt werden. \\
+\\Die Prototyping Phase ist ein iterativer  Prozess. Dieser beinhaltet die folgenden Arbeitsschritte:
+   \begin{itemize}
+	   \item Design
+	   \item Simulation
+	   \item Prototype Fertigung
+	   \item Messen
+	   \item Beurteilen und Auswerten
+   \end{itemize}
+
+In der Dokumentationsphase wird das Engeneeringmodel dokumentiert. Es gillt sämtliche Überlegungen und Erkenntnisse aus den ersten drei Phasen zu dokumentieren und ein Engeneeringmodel der bis dahin  bestmöglichen Konfiguration des Antennensystems zu erstellen. 
+\subsection{To do auf SW2}
+\begin{itemize}
+	\item Antennenparameter und Abstrahlung des el. mag. Feld der symmetrischen Antennen recherchieren und dokumentieren.
+	\item relevante Parameter für die Anforderungsliste auflisten
+\end{itemize}
+\subsection{Fragen auf SW2}
+\end{document}
