@@ -1,84 +1,30 @@
-\section{Ausgangslage}
-Die Firma Flytec vernetzt Sensoren und Fluginstrumente drahtlos mit einem  near pilot network. Für ein Fluginstrument der 7000er Serie  soll eine integrierte Loop Antenne für das ISM Band 2.4 - 2.5 GHz entworfen werden.\todo{Quelle der Aufgabenstellung einfügen}
+\subsection{Ausgangslage}
+Die Firma Flytec vernetzt Sensoren und Fluginstrumente drahtlos mit einem  „near pilot network“. Ihre Fluginstrumente stellen für die Piloten von Tuchfliegeren ein grosse Hilfe dar. Die Navigation in der Luft stellte selbst für erfahrene Piloten eine grosse Herausforderung dar. Für ein Fluginstrument der „Connect 1“ Serie  soll eine integrierte Kompaktantenne für das ISM Band 2.4 GHz entworfen werden. 
 
+\subsection{Problematik}
+Bestandteil dieser Arbeit ist das Entwickeln einer 2.4 GHz Bluetooth Antenne. Diese soll die Kommunikation mit einem Smartphone sicher stellen. Die bisher verwendete Antenne hat nie ihre gewünschte Wirkung gezeigt. Die Antenne wird von dem Bluetooth Low Energie Chip CC2541 der Firma Texas Instruments getrieben. In dem Gerät befinden sich mehrere Antennen die im selben Frequenzbereich arbeiten, die gegenseitige Koppelung der Antennen ist gross und sowohl  von der Wahl der Antennen sowie der Positionierung abhängig. Es soll eine möglichst optimale symmetrisch gespiesesnes Antennenkonzept für die Bluetoothverbindung erarbeitet werden. Das heisst auf die bis anhin verwendeten Baluns soll in Zukunft verzichtet werden.
 \subsection{Fragestellung}
-Durch das Einarbeiten in die Eigenschaften elektrisch kleiner Antennen soll das Wissen für das Design eines Funktionsmuster  im 2.4-2.5GHz ISM Band arbeitenden Antennensystems erlangt werden. Das Design soll mit dem Empire XCcel Softwaretool simuliert. Iterativ soll eine symmetrisch gespiesene Loop Antenne gefunden werden. Die Antenne soll an den komplexen Ausgangswiderstand des Transceiverbausteins angepasst werden. Das simulierte Antennensystem soll gefertigt und ausgemessen werden. Die vorliegenden Antennenparameter sollen mit den simulierten Werten verglichen und bewertet werden.  
-\subsection{Technische Spezifikationen und Anforderungsliste}
-\todo{Anforderungskatalogs mit Fest-, Mindest- \& Wunschforderungen}
-\begin{itemize}
-\item Geräte 7030
-\item 
-\item Materialien des Gehäuse ABS Kusnstoff
-\item Volumen des Antennensystems
-\item Wirkungsradius 10m im Freiraum
-\item Richtcharakteristik isotroph
-\item Polarisation linear
-\item Antennen Wirkungsgrad ist zubestimmen
-\item Antennen Gewinn gleich wir der Abstrahl Wirkungsgrad
-\item minimaler Empfangspegel am Transceivers
-\item Transceivers Baustein Texas Instruments CC2541
-\item Sendeleistung
-\item $S_{11} \leq$ 10 dB
-\item Preis und Aufwand
-\item ...
-\item ...
+Für ein Fluginstrument der „Connect 1“ Serie  soll eine integrierte Kompaktantenne für das ISM Band 2.4 - 2.5 GHz entworfen werden, mit dem Ziel zukünftig Daten auf eine Smartphone Applikation zu übertragen, um dem Piloten mit den aktuellen Flugdaten über das Smartphone zu versorgen. 
 
-
-\end{itemize}
-\begin{tabular}{l|c|c|c|c}
-\hline 
-Nr. & Anforderung & Beschreibung & Wert & nicht erfüllt \\ 
-\hline 
-\hline 
-001 & f & ISM Band  & 2.4-2.5 GHz & \\ 
-\hline 
-002 & f & Handgerät lxbxh & lxbxh &   \\ 
-\hline 
-003 & f & symmetische Speisung des Antennensystems &  \\ 
-\hline 
-004 & f &  &  \\ 
-\hline 
-• &  &  &  &  \\ 
-\hline 
-• &  &  &  &  \\ 
-\hline 
-• &  &  &  &  \\ 
-\hline 
-• &  &  &  &  \\
-\hline 
-• &  &  &  &  \\ 
-\hline 
-• &  &  &  &  \\ 
-\hline 
-• &  &  &  &  \\ 
-\hline
-• &  &  &  &  \\ 
-\hline 
-• &  &  &  &  \\
-\hline 
-\end{tabular} 
+Durch das Einarbeiten in die Eigenschaften elektrisch kleiner Antennen soll das Wissen für das Design eines Funktionsmuster  im 2.4 ISM Band arbeitenden Antennensystems erlangt werden. Das Design soll mit dem Empire Xccel Softwaretool simuliert. Iterativ soll eine symmetrisch gespiesene Kompaktantenne gefunden werden. Die Antenne soll an den komplexen Ausgangswiderstand des Bluetooth CC2541 Chip angepasst werden. Das simulierte Antennensystem soll gefertigt und ausgemessen werden. Die vorliegenden Antennenparameter sollen mit den simulierten Werten verglichen und bewertet werden. Ein Fazit über das erarbeitete Funktionsmuster soll den zukünftigen Einsatz in der „Connect 1“ darlegen.
 \subsection{Ziele der Arbeit}
-\todo{formuliere SMART Ziele}
-Es soll ein Funktionsmuster für eine integrierte Loop Antenne für das ISM  2.4-2.5GHz Band hergestellt werden.\\
+Es soll ein Funktionsmuster für eine integrierte symmetrisch gespiese-ne Antenne für das ISM 2.4 GHz Band hergestellt werden. Über diese Antenne sollen in Zukunft die Geräte der „Connect 1“ Serie über Bluetooth mit einem Smartphone kommunizieren lassen. 
 
-Auf der Basis der Theorie der elektrisch kleinen Antennen wird ein Entwurf für ein Antennensystem im 2.4 - 2.5 GHz Band designed. Der Entwurf wird simuliert und dokumentiert. \\
-Ein Anpassnetzwerk muss für die komplexe Ausgangsimpedanz des Transsivers dimensioniert, simuliert, hergestellt und ausgemessen werden.\\
-Der simulierte Entwurf des gesamten Antennensystems wird produziert und dient als Funktionsmuster. \\
-Die Antenneparameter des Funktionmusters müssen gemessen und dokumentiert werden.\\ Abweichungen zwischen der Simulation und den Messresultaten sollen dokumentiert und bewertet werden.
-\subsubsection{Meilensteine}
-Es werden die folgenden vier Meilensteine definiert. Die Meilensteine
-beinhalten   eine Sammlung von Aufgaben und haben einen
-Fertigstellungstermin, sie markieren das Ende einer Projektphase. Sie
-werden für das Projektcontrolling verwendet. Beim erreichen eines Meilensteins werden die Arbeiten bewertet und es werden Beschlüsse über den weiteren Projektverlauf gefällt.
-\todo{fünf Meilensteine definieren}
-	\begin{itemize}
-		\item MS 1 Theorie und Recherchenphase abgeschlossen und zu 89\% dokumentiert, ein Anforderungsdokument wurde erstellt
-		\item Zwischenpräsentation, vorstellen der ersten vier Antennenkonzepte
-		\item iterativ wurde eine Antennsystem gefunden welches den Anforderungen entspricht
-		\item Engeenieringmodel ist gefertigt und dokumentiert
+Auf der Basis der Theorie der elektrisch kleinen Antennen wird ein Entwurf für ein Antennensystem im 2.4 GHz Band designed. Der Entwurf wird simuliert und dokumentiert. 
+Ein Anpassnetzwerk muss für die komplexe Ausgangsimpedanz (70 +j30 Ohm bei 2.440 GHz) des Transsivers von Texas Instruments soll dimensioniert, simuliert, hergestellt und ausgemessen werden.
+Der simulierte Entwurf des gesamten Antennensystems wird produziert und dient als Funktionsmuster. Das Abstrahlverhalten des Funktionmusters muss gemessen und dokumentiert werden.
+Abweichungen zwischen der Simulation und den Messresultaten sollen do-kumentiert und bewertet werden.
+\subsection{Methodik}
+Diese Bachelor Arbeit beschreibt den Design Prozess eines 2.4 GHz Kom-pakt Antennen Systems. Es beinhaltet die Studien von Kompakt Antennen sowie deren Abstrahlverhalten. Ein Vorprojekt, welches verschiedene mögliche Antennenkonzepte prüft. Aus diesem Vorprojekt wird das vielversprechendste Konzept ausgewählt und für den Einsatz in die Geräte Serie „Connect 1“ der Firma Flytec AG optimiert. Dieser Prozess ist von Simulationen und vom erstellen und Ausmessen von Funktionsmustern begleitet. Die Erkenntnisse aus den Messungen und den Vergleichen aus Theorie und Praxis werden im einem Fazit zusammengefasst und es soll das weitere Vorgehen für die Firma Flytec dokumentiert werden. Für diese Bachelorarbeit stehen 15 Wochen zur Verfügung. Diese Zeit wird in die folgenden vier Phasen eingeteilt:
+\begin{itemize}
+	\item Recherche- und Theoriephase
+	\item Designphase
+	\item Prototyping 
+	\item Dokumentation des Engeneeringmodels
+\end{itemize}
 
-	\end{itemize}
-Es werden die folgenden vier Meilensteine definiert. Die Meilensteine beinhalten   eine Sammlung von Aufgaben und haben einen Fertigstellungsterminn. Sie werden für das Projektcontroling verwendet. Beim erreichen eines Meilensteins werden die Arbeiten bewertet und es werden Beschlüsse über den weiteren Projektverlauf gefällt.
+\subsection{Aufbau der Arbeit}
+Da muss noch was rein
 
 
 

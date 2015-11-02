@@ -1,135 +1,8 @@
-Leitungstheorie
-Antennentheorie 
-Was ist eine Antenne  Bevor in die Antennentheorie und das Abstrahlverhalten von Antennen betrachten, soll zuerst geklärt werden, was eine Antenne ist. Und wie sieht das Grundprinzip aus, welches das Abstrahlen einer elektrischen Welle die in einem Leiter geführt wird, in ein elektromagnetisches Wechselfeld übergeht und abgestrahlt wird. Was ist eine Antenne:  alle oszillierenden elektrischen und magnetischen Felder strahlen  
+Metallische Leiter absorbieren elektromagnetische Wellen bei hohen Frequenzen. [9] Im Gehäuse des neuen Fluginstrumentes sind viele verschiedene metallische Leiter vorhanden. Die Hauptplatine ist eine für die Antenneneine grosse Massefläche. Auchdas Display wird als grosse Absorptionsfläche betrach-tet.Ebenfalls  absorbierend  wirktdas  galvanisierte  Gehäuse  auf  die  abgestrahlte  Energie.  Da  sich  alle diese Teile im Nahfeld befinden, müssen diese in der Auslegung der Antenne berücksichtig werden.Dipol-oder  Monopolantennen  sind  typische  Quellen  für  E-Felder. Die  E-Felderwerden  von  elektri-schen  Leitern stark  absorbiert.  Darum  muss  bei  der  Antennenentwicklung  mit  Monopolantennen  ein besonderes  Augenmerk  auf  die,  sich  im Nahfeld  befindenden,  elektrischen  Leiter  gelegt  werden.  Im Gegensatz dazu können Rahmenantennen eingesetzt werden. Diese erzeugen ein H-Feld. Das H-Feld wird von den elektrischen Leitern weniger starkabsorbiert. Darum haben elektrische Leiter im Nahfeld weniger Einfluss auf die Rahmenantenne.
 
-
-• alle Leitungen die einen Wechselstrom führen strahlen 
-• Antennen ermöglichen das kontrollierte abstrahlen von elektrischer Energie in den Freienraum und wider zurück in die Leitung 
-Antennen Design Faktoren Die in verschiedene Richtungen abgestrhalte Energie wird (antenna pattern) genannt Die total abgestrahlte Leitung verglichen mit der zugeführten Leitung ist die Abstrahleffizienz Anpassung ist der Vergleich der Antennen Impedanz und der Impedanz der Transmission Line Die Abstrahlung ist eine Funktion der Frequenz • 
-Die Grundlge jeglicher abstrahlung von elektromagenischen Feldern ist der Wechselstrom. Aus der Wechsel- stromlehre ist bekannt, dass ein sich ändernendes Elektrishes Feld in einem Leiter ein en sich änderenden Strom hervorruft. und jeder Strom ein Magnetfeld mitsich bringt. Witer jede s sich änderne Magnet Feld bewirkt eien Änderung des Elektrischen Feldes. Daraus wird klar, dass ein Elektrischesfeld ein Magnetfeld hervorruft und umgekehrt. Oder das eine kann ohne das andere nicht existeiren. Ein Wechsel des Elektrischenfeld führt zu einer Änderung des Magneischenffeld. Das gilt in einer Leitung aber auch im freien Raum. 
-Die Maxwell Gelichungen zeigen diesen Zusammenhang mathematisch auf. ▽xH = dD 
-t 
-▽xE = dB t 
-Die Geschwindigkeit mit der sich eine Elektromagnetische Welle im freien Raum oder in eriner Leitung ausbreitet ist von den Materialeigenschaften des Mediums abhängig. 
-        
-Im Vakuum gilt: 
-offene Leitung als Strahler 
-1 vp = √με 
- 
-Um zu erkennen, dass eine Antenne in ihrer simplen form als Strahlendes Elementwirkt, muss zuerst die Lei- tungstheorie verstanden sein. Wir gehen von einer Spannugnsquelle VG mit einer Quelleimpedanz ZG aus. Diese Quelle wird eine Leitung mit einem Abschlusswiderastand ZL verbunden. Die Quelle führt zu einer Spannungs- welle in der Leitung. Die Spannungswelle ist in eine vor und in eine rücklaufende Welle geteilt. Über das Ohmsche Gesetzt ist der Strom in der Leitung definiert. Genauso wie die Spannungswelle einen Vor und einen Rückanteil besitzt, besitzt auch die Stromwelle eine vor- und rücklaufende Welle. 
-und 
-V(z)=V0∗e−β∗z +V0∗eβ∗z I(z) = V 0 ∗ e−β∗z − V 0 ∗ eβ∗z 
- 
-Z0 Z0 Die Wechselspannungsquelle treibt die Transmision Line mit der Impedanz Z0. 
-Eine hypothetische verlustlose Antenne, die gleichmässig in alle Raumrichtungen abstrahlt beziehungsweise aus allen Richtungen empfängt, wird isotroper Strahler oder Kugelstrahler genannt. Als Sendeantenne erzeugt sie eine Kugelwelle mit sphärischen Phasenfronten. Im Abstand r gilt winkelunabhängig folgende Leistungsdicht: 
-S= PS 4πr2 
-wobei PS die gesamt abgestrahlte Wirkleistung bezeichnet. 
-
-Antennen als Wellenwandler 
-Antennen erzeugen und empfangen elektromagnetische Wellen, die sich im freien ausbreiten. Im Sendefall wan- delt die Antenne, die ihr zugeführte Leitung möglichst effizient in elektromagnetische Wechselfelder um. Im Empfangsfall nimmt die Antenne aus einem elektromagnetischen Wellenfeld Leistung auf und stellt sie an einem Netzwerktor zur Verfügung. 
-Eine Signalübertragung mit zwei Antennen ist im folgenden Bild gezeigt. Eine leitergeführte Welle wird an ein Eingangstor (das Tor 1) geführt. Das Tor 1 stellt den Fusspunkt und somit der Anschlusspunkt einer Antenne dar. Die leitergeführte Welle wird am Tor 1 idealerweise reflexionsfrei aufgenommen. Die Antenne erzeugt ein Wechselfeld. Dabei agiert als Wandler der leitergeführten Welle in eine Freiraumwelle. Die Freiraumwelle führt Leitung von der Antenne fort. Mit wachsendem Abstand erscheinen die Wellen als Ebenen. Dabei spricht man vom Fernfeld. Antennen besitzen eine Dualität, das bedeutet ein Element welches gute abstrahlende Eigenschaf- ten aufweisst, besitzt ebenso gute Eigenschaften als Empfänger für elektromagnetische Wellen. 
-Im Empfangsfall nimmt eine Antenne Energie aus dem Wellenfeld auf und regt eine Leitergebundene Welle an ihrem Netzwerktor (Tor 2) an. 
-5.3 Nahfeld und Fernfeld 
-Bei der Beschreibung der elektromagnetischen Wellenfelder um eine Antenne, ist die Distanz zur Antenne von grosser Bedeutung. Es macht einen grossen Unterschied ob man die Feldverteilung in der unmittelbaren Umfeld der Antenne ( dem Nahfeld) oder den Beobachtungspunkt in einer grossen Entfernung (dem Fernfeld) ansetzt. Im Fernfeld steht das Elektrische E Feld und das Magnetische H Feld senkrecht im 90◦Winkel aufeinander. Die Wellenfront der beiden Felder bewegt sich in Ausbreitungsrichtung wie eine senkrechte Ebene vorwärts. 
-Die Feldverteilung des elektromagnetischen Wechselfeld kennt drei markante Zonen: • Reaktives Nahfeld • Strahllendes Nahfeld • Fernfeld 
-Der Übergang vom Nahfeld zum Fernfeld einer Antenne ist fliessend und es können keine klaren Abgrenzungen gezogen werden. Das Nahfeld zeichnet sich ander als das Fernfeld durch seine star reaktiven Feldanteile aus. Im reaktiven Nahfeld wird pendelt elektrische und magnetische Energie zwischen der Antenne und dem Freiraum hin und her. Diese Energie wird rund um die Antenne gespeichert. Im Fernfeld dominiert radial orientierte Leis- tungstransport. 
-Historisch gesehen haben sich bei der analytischen Betrachtung von Strahlungsproblemen unterschiedliche Nähe- rungen (Fresnel Näherung und die Fruenhofer Näherung) bewährt. Hieraus haben sich Formeld für den Abstand den man zur Antenne einnehmen muss, wenn man mit den für das Fernfeld definierten Antennenkenngrössen arbeiten wil. Daraus ergibt sich den Ferfeldabstand. Der Fernfeldabstand hängst von der verwendeten Wellen- längen λ und den geometrischen Abmessungen der Antenne ab. Die Näherung für das Fernfeld für elektrisch kurze Antenne tretten ab mindestens einem Abstand von r0 ein. 
-r0 = 2 ∗ λ Bei Antennen deren grösste Antennenabmessungen grösser als die Wellenlänge λ sind, treten die Fernfeldbedin- 
-gungen erst bei grösseren Abständen ein. 
-r0 = 2D2 λ 
-
-Mit: d0: Minimale Distanz für die Annahme des Fernfeld Kriterium D: Grösstes des Anten mass in Meter λ: Wellenlänge Das Fernfeld (r → ∞ einer Antenne hat volgende Eigenschaften: 
-• Die beiträge der Feldgrössen E und H sind reziprok zum Abstand r betrag E ,Betrag H tilde 1/r • Die Amplituden der Feldgrössen E und H sind in Phase • Der Feldwellenwiderstand ZF 0 verknüpft die Feldgrössen: E = ZF 0 ∗ H 
-quelle vom bild einfü- gen 
-  
-
- 
-Abbildung 1: Nah-Fernfeld 
-• Die Wellenfront der elektromagnetischen Wellen erscheinen als ebene Wellen • Die Vektoren der Transversalen Welle besitzen nur noch transversale Anteile • ... • ... 
-
-Kenngrössen von Antennen 
-Die wichtigsten elektromagnetischen Eigenschaften von Antennen für den Einsatz in Funktsystemen lassen sich durch eine Reihe von Kenngrössen beschreiben. Um diese Kenngrössen und ihre Berechnung besser zu ver- anschaulichen werden sie anhand des Hertzschen Dipol angewendet. Der Hertzsche Dipol ist im Kapitel xxx beschrieben. 
-
-Richtdiagramm 
-Im Fernfeld nimmt die Krümmung der sphärischen Phasenfront einer Kugel immer ab. Für r gegen unendlich kann die Kugelwelle lokal durch eine homogene ebene Welle angenähert werden. Die transversalen Feldkomponenten werden phasengleich ind es wird nur in radialer Richtung Wirkleistung transportiert. Der Richtwirkung im Raum wird kommt eine grosse praktische Bedeutung zu. Von ihr hängt es ab, welcher Anteil der gesamten ausgestrahlten Leitung effektiv für den eigentlichen Verwendungszweck genutzt wird. Je nach Verwendungszweck des Antennensystem ist eine bestimmt Feldverteilung über den Raum verlangt. Die Verteilung der Strahlung in verschieden Raumrichtungen liefert die Verteilung der Feldstärke in Abhängigkeit des Raumwinkels einer Antenne. Der Raum winkel wird in Kugelkoordinaten mit den Angaben über theta und phi gemacht. Eine Aussage über die Richtcharakteristik wird oft im Fernfeld gemacht. 
-Die Richtcharakteristik eines hypothetischen Kugelstrahlers ist 1, das heisst die abgestrahlte Leitung ist 
-unabhängig von theta oder phi. Die Richtcharakteristik eines in Z ausgerichteten Hertzschen Dipols ist sin(θ) 
-in polarkoordinaten ist ein doppel Kreis sichtbar. Die maximale Richtwirkung des E Feld lieg in der xz Ebene 
-bei einem theta Winkel von 90 ◦. Das ist naheliegend, denn beiλ ist der sinus 1. 2 
-Anstelle von aufwendigen dreidimensionalen Richtdiagrammen kommen zweidimensionale Schnitte durch 
-den Antennenmittelpunkt als Phsenzentrum und dem Maximum der Feldverteilung zum einsatz. Oft geben das 
-vertikale Richtiagramm mit theat und phi und das horizontale Richtdiagramm mit theat = λ und phi angegeben. 2 
-Ein Mass für den Grad der Energiebündelung bei Richtantennen ist die Breite der Strahlungskeule. Sie wird- ausgedrückt durch die vertikalen und horizontalen Halbertsbreiten delta θ und delta φ der Hauptkeulen.Das ist der Winkelbereich, innerhalb dessen die Strahlungsdichte um nicht mehr als die Hälfte der maximalen Strah- lungsdichte absinkt. Das bedeutet, die Strahlugsdichte sink um 3dB ab. Die Feldstärke fällt in diesem Bereich höchstens um 1 = 70.7P rozent ihres Maximalwertes ab. 
-von 90 ◦ 
-  
-sqrt(2) Beim Hertzschen Dipol entnimmt man dem vertikalen Richtiagramm in der zx Ebene einen Öffnungswinkel 
-
-
-
-Richtfaktor und Gewinn 
-elementarer Antennen Dipole 
-Hertzscher Dipol 
-Ein elektrisch kurzer Linearstrahler der länge l << λ0 4 
-kann als konzentriertes Bauelement betrachte werden. Auf seiner gesamten Länge kann die komplexe Amplitude I eine räumlich konstante Stromverteilung, die zeitlich 
-sinusförmig schwingt, annehmen. 
-
-5.5.2 Fitzgeraldscher Dipol 
-5.6 Antennenbauformen 
-5.7 symmetrisch gespiesene Antennen 
-Es gibt zwei Grundantennenformen, den Hertzschen Dipol und den Fitzgeradscher Dipol. Beide sind symmetrisch gespiesene Antennen. Im Nahfeld des Hertschen Dipols überwiegt das E Feld also der kapazitive Anteil, während im Nahfeld des Fitzgeradschen Dipols das H Feld also der induktive Anteil überwiegt. Im Fernfeld sind bei beiden Antennen das H und E Feld gleich stark und nehmen mit zunehmendem Abstand 1/rab. 
-Die Ausrichtung des E und H Feld sind bei den beiden Antennen verschieden. Das E Feld eines Hertschen Dipols ist im Fernfeld gleich polarisiert wie der Dipol. Genau umgekehrt ist das Feld des Fitzgeralschen Dipols. Das H Feld ist in der selben Ebene wie der Dipol. 
-• Bauform • el. mag Feld Ausrichtung • Impedanz der λ/2 Antenne • Beschreibung des Feld • el. mag Feld Ausrichtung • Impedanz der λ/2 Antenne • Richtcharakteristik 
-
-5.7.1 λ/2 Dipol Antenne 
-Die λ/2 Dipol Antenne ist eine der am Meisten eingesetzten Antennen. In diesem Abschnitt wird die Dipolantenne mit einer sehr dünnen Radius deren Länge einer halben Wellenlänge entspricht betrachtet. 
-Eine Dipol Antenne mit der Länge L entlang der Z-Achse orientiert ist und z = 0 ist, fliesst der Strom in der 
- 
-I0sin[k(L−z)], 0≤z≤L z-Richtung mit einer Amplitude, die der folgende Funktion entspricht: I(z) = 2 2 
- 
-Bei einem Dipol mit der Länge L = λ sich einen Strombauch über dem Einspeise Punkt ausbildet und der 
-2 
-Strom zu den Enden gegen null geht. Ein Dipol mit der Länge L = λ bilden sich zwei Strombauche über die ganze Länge des Dipols aus. Beim Einspeise Punkt und den beiden Enden geht der Strom gegen null. Wichtig bei der Stromverteilung ist, dass der Strom in der Zeit sinusförmig mit der Frequenz f oszilliert. 
-Die Eingangsimpedanz eines Dipols ist Abhängigkeit von seiner Länge. Man beachte, dass die Eingangsim- pedanz wird als Z = R + jX, wobei R der Widerstand und die Reaktanz X angegeben. Die Reaktanz X ist steht für die im Nahfeld gespeicherte Feldenergie. 
-Man beachte, dass für sehr kleine Dipolantennen, ist die Eingangsimpedanz kapazitiv ist, das heisst, die Im- pedanz durch eine negative Reaktanz-Wert (und eine relativ kleine reale Impedanz oder Widerstand) dominiert. Wir der Dipol länger, so erhöht sich der Eingangswiderstand, zusammen mit der Reaktanz. Bei etwas weniger als L = λ hat die Antenne Nulldurchgang des Imaginärteils. 
-2 
-Wenn die Länge des Dipol-Antenne ist nahe der Wellenlänge ist, wird die Eingangsimpedanz unendlich. Als einfachere Erklärung, kann der Stromverteilung einer L = λ langen Antenne betrachtet werden. ES ist 
-I0sin[k(L+z)], −L≤z≤0 22 
-    
-
-ersichtlich, dass bei der Einspeisestelle der Strom gegen Null geht. Unter Berücksichtigung, dass der Strom nach dem Ohmschen Gesetz I = U ist, so ist naheliegen, dass der Widerstand gegen unendlich gehen muss. 
-R 
-Im nächsten Abschnitt werden wir das Strahlungsmuster Dipol-Antennen zu berücksichtigen. Strahlungsdiagramme für die Dipol-Antennen Die weit Felder aus einer Dipolantenne der Länge L sind gegeben durch: 
-jηI0e−jkr cos(kLcos(θ))−cos(kL)) Eθ= 2 2 
-2πr 
-Die normierten Strahlungsmuster für Dipolantennen verschiedener Längen sind in Abbildung 3 dargestellt. Abbildung 3. normalisierte Strahlungsmuster für die Dipol-Antennen der angegebenen Länge. Die Full-Wellenlängen-Dipol-Antenne ist richtungs als die kürzere Viertelwellenlängen-Dipol-Antenne. Dies 
-ist ein typisches Ergebnis der Antennentheorie: es dauert eine größere Antenne allgemein Richt erhöhen. , Die Ergebnisse sind jedoch nicht immer offensichtlich. Das 1,5-Wellenlängen-Dipol-Muster ist ebenfalls in Figur 3. Anmerkung aufgetragen dass dieses Muster ein Maximum bei etwa +45 und -45 Grad. 
-Die Dipolantenne ist symmetrisch, wenn azimutal angesehen (um die lange Achse des Dipols); als Ergebnis das Strahlungsmuster nicht eine Funktion des Azimutwinkels. Damit ist die Dipolantenne ein Beispiel einer Rundstrahlantenne. Ferner hat das E-Feld nur eine Vektorkomponente und damit die Felder linear polarisiert. Wenn sie in der XY-Ebene betrachtet wird (für einen Dipol entlang der z-Achse orientiert ist), wird die E-Feld in der -y-Richtung, und folglich wird die Dipolantenne ist vertikal polarisiert. 
-Das 3D-Motiv für das 1-Wellenlängen-Dipol-Antenne ist in 4 gezeigt Dieses Muster ist ähnlich dem Muster für die Viertel- und Halbwellen-Dipolantenne. 
-Abbildung 4. Normalized 3d Strahlungsmuster für die 1-Wellenlängen-Dipol-Antenne. 
-Die 3D-Strahlungsmuster für die 1.5-Wellenlängen-Dipol-Antenne unterscheidet sich signifikant und wird in 5 gezeigt. 
-Abbildung 5. Normalized 3d Strahlungsmuster für die 1,5-Wellenlängen-Dipol-Antenne. Das (peak) Richt- charakteristik der Dipolantenne variiert, wie in Figur 6 gezeigt. 
-Abbildung 6. Dipole Antenna Richtwirkung als eine Funktion der Dipollänge. 
-Abbildung 6 zeigt, dass bis zu etwa L = 1,25 Die Richt steigt mit der Länge. , Für größere Längen die Richtwirkung hat jedoch einen Aufwärtstrend ist aber nicht mehr monoton. 
-Im nächsten Abschnitt werden wir am häufigsten Dipol-Antenne, die Halbwellen-Dipol-Antenne suchen. • Fusspunkt Impedanz • Feldausbreitung im Nahfeld • Feldausbreitung im Fernfeld 
-• Im Nahfeld relevant • Richtcharakteristik 
-5.7.2 Loop Antenne 
-Die Loop Antenne ist eine symmetrisch gespiesene Antenne. eine Loop Antenne ist einem Fitzgeralschen Dipol 
-nach empfunden. Die Loop Antenne wird durch eine dünne Leiterschleife mit einem Radius r = bla dargestellt. bla 
-Im Nahfeld der Loop Antenne dominiert der xx Anteil. Das E Felde ist in der Ebene der Leiterschleife. Das H Feld erscheint 90◦Winkel zum E Feld. 
-5.8 Abstrahlcharakteristik 
-5.8.1 Monopol über leitendem Ground 
-In der Praxis werden Monopolantennen über Masseflächen mit endlicher Leitfähigkeit und endlicher Grösse verwendet. Dies beeinflusst die Eigenschaften der Monopolantennen, insbesondere das Strahlungsmuster. Die 
-    
-HΦ = EΘ η 
-sin(θ) 
-
-
-Impedanz der Monopolantenne wird minimal über einem endlichen grossen Massebene verändert. Voraussetzung hierfür ist, dass die Massebene im Durchmesser über einige Wellenlängen der Abstrahlfrequenz besitzt. Jedoch ist die Strahlungscharakteristik der Monopolantenne stark durch eine endliche Grösse Massebene beeinflusst. Das resultierende Strahlungsdiagramm strahlt in einer ßchrägen"Richtung, weg von der horizontalen Ebene. Ein 
-Beispiel für das Strahlungsmuster für eine λ Monopolantenne mit einem Durchmesser der Massenfläche von 3 4 
-Wellenlängen. Die λ Monopolantenn ist in der positiven z Richtung ausgerichtet. 4 
-Das resultierende Strahlungsmuster für diese Monopolantenne ist omnidirektionalen. Jedoch hat die Rich- tung der maximalen Strahlung von der xy-Ebene in einem Winkel von dieser Ebene angehoben verändert. Im Allgemeinen gilt je grösser Grundplatte ist, desto niedriger ist diese Richtung der maximalen Strahlung. Das bedeutet wenn die Grundebene sich gegen unendlich nähert, so liegt die maximale Strahlung in der xy-Ebene. 
-Der Antennengewinn ist um 3 dB besser als eine Dipol Antenne. Da die Monopolantenne ihr Feld nur über dem perfekt leitendem Untergrund aufbaut. 
-6 Sende Quelle 
-Als Quelle oder englisch Source bezeichnet man einen Ursprungspunk. In der Übertagungstechnik ist die Quelle der Ursprungspunkt des Signals. Sie liefer die Signalleistung und speisst das Antennensystem. 
-6.1 CC2541 
-Der Bluetooth Low Energy Chip von Texas Instruments speist das Antennensystem mit einem Singal bei fo= 2.45 GHz. 
+Magnetfelder (wir reden hier von statischen bzw. quasistatischen
+Magnetfeldern?) kann man mit hochpermeablen Werkstoffen abschirmen
+(z.B. "Mu-Metall", ein Eisen-Nickel-Legierung?). Die Wände aus dem
+Material mit hoher Permeabilität haben einen niedrigen magnetischen
+Widerstand (R_m=l_m/(my_0*my_r*A)), daher konzentriert sich fast
+der gesamte magnetische Fluß in den Wänden.
