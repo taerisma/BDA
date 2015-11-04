@@ -117,7 +117,7 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
-	\draw (4,4) -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
+	\draw (4,4) node[left] {0} -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
 	\draw (4,4) -- (4,7.5)node at (3.7, 7.8) {Z};%Fadenkreuz z
 	
 	\draw[line width=1pt, ->, >=latex](4, 4)  -- (3.5, 3) node at (3.2, 3) {x};
@@ -160,7 +160,7 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
-	\draw (4,4) -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
+	\draw (4,4) node[left] {0}-- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
 	\draw (4,4) -- (4,7.5)node at (3.7, 7.8) {Z};%Fadenkreuz z
 	
 	\draw[line width=1pt, ->, >=latex](4, 4)  -- (3.5, 3) node at (3.2, 3) {x};
@@ -249,7 +249,7 @@ Die Dipolantenne und die Rahmen Antenne sind den beiden Elementaren Strahleren n
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
-	\draw (4,4) -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
+	\draw (4,4) node at(3.5,4) {0} -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
 	\draw (4,4) -- (4,7.5)node at (3.7, 7.8) {Z};%Fadenkreuz z
 	
 	\draw[line width=1pt, ->, >=latex](4, 4)  -- (3.5, 3) node at (3.2, 3) {x};
@@ -277,9 +277,9 @@ Die Dipolantenne und die Rahmen Antenne sind den beiden Elementaren Strahleren n
 	\draw[line width=0.5pt, cap=round,->](C) .. controls (c) .. (D) node at (4.2, 3.2){$\phi$};
 	
 	%Einheitsvektoren
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.8) node at (6.5, 7) {$\vec{E_{r}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 5.6) node at (6.5, 5.4) {$\vec{E_{\theta}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.3) node at (6.5, 6.1) {$\vec{H_{\phi}}  \vec{e}$};
+	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.8) node at (6.5, 7) {$\vec{H_{r}}\vec{e}$};
+	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 5.6) node at (6.5, 5.4) {$\vec{H_{\theta}}\vec{e}$};
+	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.3) node at (6.5, 6.1) {$\vec{E_{\phi}}  \vec{e}$};
 	
 	%Antenne Loop
 \draw[line width=3pt](4, 4) circle (0.3);
@@ -346,7 +346,7 @@ Bild aus Mtlab importiern\\
 \begin{figure}
 \begin{center}
 \begin{tikzpicture}
-	\draw (0,3) -- (10,3);%Fadenkreuz horizontal
+	\draw (0,3) node at (0.5,0.5) {xz Ebene} -- (10,3);%Fadenkreuz horizontal
 	\draw (5,0) -- (5,6);%Fadenkreuz vertikal
 	\draw [line width=1mm] (5,3.2) -- (5,4.5);%upper arm
 	\draw [line width=1mm] (5,1.5) -- (5,2.8);%lower arm
@@ -355,6 +355,7 @@ Bild aus Mtlab importiern\\
 
 	\node[draw] at (5,6.5) {$\theta=0$};
 	\node[draw] at (8,5.5) {$E(\theta)$};
+
 \end{tikzpicture}
 \end{center}
 	\caption{Dipol Antenne E Feld}
@@ -492,7 +493,7 @@ Als Beispiel, wenn $a/\lambda = 0.003$ ist, dann wird der $R_{rad} = 0.25 Ohm$. 
 \begin{figure}
 \begin{center}
 \begin{tikzpicture}
-	\draw (0,3) -- (10,3);%Fadenkreuz horizontal
+	\draw (0,3) node at (0.5,0.5) {xz Ebene} -- (10,3);%Fadenkreuz horizontal
 	\draw (5,0) -- (5,6);%Fadenkreuz vertikal
 	\draw (3,3) circle (2cm);%linker Kreis
 	\draw (7,3) circle (2cm);%rechter Kreis
@@ -502,6 +503,7 @@ Als Beispiel, wenn $a/\lambda = 0.003$ ist, dann wird der $R_{rad} = 0.25 Ohm$. 
 	\draw (4.5,2.8) -- (5.5,2.8);%Verbinung horizontal unten
 	\node[draw] at (5,6.5) {$\theta=0$};
 	\node[draw] at (8,5.5) {$E_{\phi}(\theta)$};
+
 \end{tikzpicture}
 \end{center}
 \caption{Loop Antenne E Feld}
@@ -618,7 +620,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird, dann wird oft eine 
 	\draw[line width=1.5pt, cap=round,->](A) .. controls (a) .. (B) node at (6.5, 0.5) {S11} node at (5.5, 0.5) {$\Gamma$};
 	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
 	
-	\node at (17, 6) {$\eta=\dfrac{R_{rad}}{Rv+R_{rad}}$};
+	\node at (17.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
 	\node at (9.5, 7) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
 	
 	\node at (18, 2.7) {$\varepsilon$};
@@ -630,8 +632,8 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird, dann wird oft eine 
 	\node at (20, 3.9) {$P_{rad}$};
 	\end{tikzpicture}
 	\end{center}
-\caption{Quelle}
-\label{Quellel}
+\caption{Anpassung von Quelle und Antenne}
+\label{AnpassungQuelleAntenne}
 \end{figure}
 
 
