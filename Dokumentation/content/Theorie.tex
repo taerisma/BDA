@@ -112,48 +112,7 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
-\begin{center}
-\begin{tikzpicture}
-	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
-	\draw (4,4) node[left] {0} -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
-	\draw (4,4) -- (4,7.5)node at (3.7, 7.8) {Z};%Fadenkreuz z
-	
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (3.5, 3) node at (3.2, 3) {x};
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (6, 4) node at (6, 4.3) {y};
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (4, 7) node at (3.7, 7) {z};
-	
-	\draw[line width=0.5pt, style=dotted](3.5, 3) -- (5.5, 3);%Projektion y Rcihtung
-	\draw[line width=0.5pt, style=dotted](5.5, 3) -- (6, 4);%Projektion x Rcihtung
-	
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 3) node at (5.3, 3.5) {$\rho$};
-	
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 6) node at (5.5, 6.3) {$\vec{r}$};
-	
-	\draw[line width=0.5pt, style=dotted](5.5, 3) -- (5.5, 6);%Projektion p zu \vec{r}
-	\draw[line width=0.5pt, style=dotted](4, 7) -- (5.5, 6);%Projektion von z zur \vec{r}
-	
-	\coordinate (A) at (4, 5.5);
-	\coordinate (B) at (4.9, 5.3);
-	\coordinate (a) at (4.4, 5.6);
-	\draw[line width=0.5pt, cap=round,->](A) .. controls (a) .. (B) node at (4.4, 5.8){$\theta$};
-	
-	\coordinate (C) at (3.7, 3.4);
-	\coordinate (D) at (4.7, 3.5);
-	\coordinate (c) at (4.1, 3.3);
-	\draw[line width=0.5pt, cap=round,->](C) .. controls (c) .. (D) node at (4.2, 3.2){$\varphi$};
-	
-	%Einheitsvektoren
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.8) node at (6.5, 7) {$\vec{E_{r}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 5.6) node at (6.5, 5.4) {$\vec{E_{\theta}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.3) node at (6.5, 6.1) {$\vec{H_{\varphi}}  \vec{e}$};
-	
-\end{tikzpicture}
-\end{center}
-	\caption{Feldvektor mit Einheitsvektoren}
-	\label{FerdVektorEinheistsvektor}
-\end{figure}
+
 %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
@@ -288,7 +247,7 @@ Die Dipolantenne und die Rahmenantenne sind den beiden elementaren Strahlern nac
 \caption{Loop Antenne mit Feldvektor und Einheitsvektoren}
 \label{LoopFerdVektor}
 \end{figure}
-\subsection{Die Dipol Antenne}
+\subsection{Die Dipol Antenne}\label{sec:DipolAntenne}
 Der zentral gespeiste Dipol besteht meist aus runden Leiterstäben mit dem Durchmesser d, die so ananeinander liegen, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe entspricht 2l>>d. Wird eine Spannung  in der Lücke zwischen den beiden Stäbe angelegt, kommt es zu einer Stromverteilung über die gesammte Länge der  Stäbe. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird auch Transmission Line genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungnsunabhänige Kugelwelle betrachtete werden.
 %E^j(wt-kr)/4pimu^-1 r
 %Elliot Seite 29 Nr1.93
@@ -395,7 +354,7 @@ Der Strahlungswiderstand oder auch $R_{rad}$ genannt kann im Fall des $\lambda /
 \begin{equation}
 R_{rad}=\frac{0.609 \eta}{\pi}= 73 Ohm
 \end{equation}
-\subsubsection{Der kurze Dipol mit 2l<<Lambda}
+\subsubsection{Der kurze Dipol }\label{sec:kurzerDipol}
 Die Therme $cos(kl*cos(\theta)) $ und $cos(kl)$ aus der Gewichtungsform des $\lambda/2$ Dipol können mit einer Reihe angenähert werden, sofern kl klein ist.
 \begin{equation}
 a_{\theta}(\theta)=-kl^{2}I_{m}sin(\theta) \lbrack 1- \frac{(kl)^{2}}{12}(1+cos^{2}(\theta))+...\rbrack
@@ -419,7 +378,7 @@ P(\theta,\phi)=\frac{(kl)^{2}\eta I^{2}}{2(4\pi r)^{2}}sin^{2}\theta
 \end{equation}
 Die abgestrahlte Leistung eines kurzen Dipols bei dem über die ganze Kugeloberfläche mit dem Radius r integriert wurde kann mit
 %Ellito 2.19
-\begin{equation}
+\begin{equation}\label{eq:Rrrad}
 R_{rad}=20(\frac{\pi L}{\lambda})^{2}
 \end{equation}
 berechnet werden.\\
@@ -433,7 +392,7 @@ $Rrad=20\left(piL/\lambda\right)^{2}$
 Dabei wird L als 2l und somit als länge der beiden Dipolarme angenommen.
 Wenn ein Dipol sehr kurz wird, zum Beispiel $2l=\lambda/8$ dann wird $R_{rad} = 3 Ohm$, Dieser Wert ist merklich kleiner als die 73 Ohm die  einens $\lambda/2$ Dipol. Der Effekt auf den reaktiven Anteil der Eingangsimpedanz ist noch dramatischer. Für einen endlich dünnen Dipol mit der Dicke d, ist die Reaktanz der Eingangsimpedanz eines $2l=\lambda/2$ Dipols positiv. Die Reaktanz ist wenig unter Null wenn die Dipollänge  $2l=\lambda/2$ enspricht. Wird der Dipol weiter gekürzt, so sinkt die Reaktanz sehr schnell  ins Negative. Im Fall, dass $2l=\lambda/8$ ist,  sind Werte für X grösser als 1000 Ohm kapazitive keine Seltenheit. 
 
-\subsection{Loop Antenne}
+\subsection{Loop Antenne}\label{sec:LoopAntenneTheorie}
 
 \begin{figure}[!htb]
 	\centering
@@ -482,7 +441,7 @@ P(\theta)=\frac{(ka)^{4}I{2}\eta}{32r^{2}}sin^{2}\theta
 \end{equation}
 Im Vergleich mit dem kurzen Dipol erzeugt die kleine Stromschleife ein vergleichbares Richtdiagramm. Das Fernfeld des kurzen Dipols ist jedoch vertikal(theta) polarisiert. Das bedeutet, dass die Abstrahlverhalten um 90Grad unterschiedlich sind. Integriert man die Leistungsdichte über eine Kugeloberfläche mit dem Radius r  auf und setzt sie der abgegebenen Leistung mit $1/2 I^{2}Rrad $ der zugeführten Zweidrahtleitung gleich, so gewinnt man $R_{rad}$ mit 
 \begin{equation}
-R_{rad} = 320\pi^{6} (a/\lambda)^{4}
+R_{rad} = 320\pi^{6} (a/\lambda)^{4}\label{eq:RradLoop}
 \end{equation}
 %ELLITOH 2.33
 Als Beispiel, wenn $a/\lambda = 0.003$ ist, dann wird der $R_{rad} = 0.25 Ohm$. Als Vergleich mit dem kurzen Dipol mit der Länge $2l=\lambda= 0.06$ führt das zu einem Strahlungswiderstand $R_{rad}$ von 0.7 Ohm.  Der Abstrahlwiderstand Rrad einer kleinen Stromschleife kann um den Faktor $n^{2}$ erhöht werden, wenn n die Anzahl der sehr eng aneinanderliegenden Wicklungen der Stromschleife sind. 
@@ -509,6 +468,65 @@ Als Beispiel, wenn $a/\lambda = 0.003$ ist, dann wird der $R_{rad} = 0.25 Ohm$. 
 \caption{Loop Antenne E Feld}
 \label{DipolEFerd}
 \end{figure}
+\subsection{Nah- und Fernfeld}
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}
+	\draw[line width=1.5pt](2, 4) circle (0.1) node at (2,3) {Phasenzentrum};
+	\draw (2,1.5) -- (2,0);%Strich nach unten
+	\draw (2,0.3) -- (3,0.3) node at (3.5,0.5) {r};%Strich zum r
+	\draw (4,0.3) -- (5.5,0.3) ;%Strich vom r
+	
+	\draw (2.5,4) -- (3,4);
+	\draw (3.5,4) -- (4,4);
+	\draw (4.5,4) -- (5,4);
+	\draw (5.5,4) -- (6,4);
+	
+	\draw (2.5,4.05) -- (3,4.1);
+	\draw (3.5,4.15) -- (4,4.2);
+	\draw (4.5,4.25) -- (5,4.3);
+	\draw (5.5,4.35) -- (6,4.4);
+	
+	\draw (2.4,4.1) -- (2.9,4.2);
+	\draw (4.4,4.3) -- (4,3.4);
+	\draw (4.2,4.5) -- (5,4.6);
+	\draw (5.1,4.7) -- (6,3.8);
+	
+	\draw (2.5,4.2) -- (3,4.4);
+	\draw (3.5,4.5) -- (4,4.7);
+	\draw (4.5,4.8) -- (5,5);
+	\draw (5.5,5.1) -- (6,5.3);
+%	
+	\draw (2.4,3.95) -- (2.9,3.9);
+	\draw (3.4,3.85) -- (3.9,3.8);
+	\draw (4.4,3.75) -- (4.9,3.7);
+	\draw (5.4,3.65) -- (5.9,3.6);
+
+	\draw (2.3,3.9) -- (3,3.8);
+	\draw (3.3,3.7) -- (4,3.6);
+	\draw (4.3,3.5) -- (5,3.4);
+	\draw (5.3,3.3) -- (6,3.2);
+	
+	\draw (2.5,3.8) -- (3,3.6);
+	\draw (3.5,3.5) -- (4,3.3);
+	\draw (4.5,3.2) -- (5,3);
+	\draw (5.5,2.9) -- (6,2.7);
+
+%	\draw (3,3) circle (2cm);%linker Kreis
+%	\draw (7,3) circle (2cm);%rechter Kreis
+%	\draw (4.5,3) circle (0.2cm);%linker kleiner Kreis
+%	\draw (5.5,3) circle (0.2cm);%rechter kleiner Kreis
+%	\draw (4.5,3.2) -- (5.5,3.2);%Verbindung horizontal oben
+%	\draw (4.5,2.8) -- (5.5,2.8);%Verbinung horizontal unten
+%	\node[draw] at (5,6.5) {$\theta=0$};
+%	\node[draw] at (8,5.5) {$E_{\phi}(\theta)$};
+
+\end{tikzpicture}
+\end{center}
+\caption{Phasenzentrum und Pointingvektor im Antennenfeld}
+\label{fig.Phasenzentrum}
+\end{figure}
+Quelle:Taschenbuch der Hochfrequenztechnik Meineke und Grundach N2
 \subsection{Systemansicht}
 Die Systemanasicht soll einen Überblick über die Bluetooth Verbindung vom Fluginstrument „Connect 1“ zu einem Smartphone geben.
 In der nachfolgenden Tabelle werden die Annahmen und fest gegebenen Parameter der Bluetooth Verbindung aufgelistet. Mit der Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der HF Quelle zur Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen und es hat keine Fremdkörper im Ausbreitungsraum.
@@ -700,15 +718,15 @@ Nr. & Anforderung & Beschreibung & Wert & nicht erfüllt \\
 	\draw[line width=1.5pt] (2.5, 1.5) -- (2.8, 2);
 	\draw[line width=1.5pt] (2.5, 1.5) -- (2.5, 2);
 	
-	\draw[line width=1.5pt, ->, >=latex](7, 2)  -- (6, 2) node at (5, 2.5) {10 m Freiraum};
+	\draw[line width=1.5pt, <->, >=latex](6, 2)  -- (8, 2) node at (7, 2.5) {10 m Freiraum};
 	
-	\draw[line width=1.5pt] (7.5, 0.5) -- (8, 0.5);
-	\draw[line width=1.5pt] (7.5, 0.5) -- (7.5, 1.5);
-	\draw[line width=1.5pt] (7.5, 1.5) -- (7.2, 2);
-	\draw[line width=1.5pt] (7.5, 1.5) -- (7.8, 2);
-	\draw[line width=1.5pt] (7.5, 1.5) -- (7.5, 2);
+	\draw[line width=1.5pt] (9.5, 0.5) -- (9.5, 0.5);
+	\draw[line width=1.5pt] (9.5, 0.5) -- (9.5, 1.5);
+	\draw[line width=1.5pt] (9.5, 1.5) -- (9.2, 2);
+	\draw[line width=1.5pt] (9.5, 1.5) -- (9.8, 2);
+	\draw[line width=1.5pt] (9.5, 1.5) -- (9.5, 2);
 	\draw[line width=1.5pt,decorate,decoration=expanding waves](3, 2) -- (5, 2);
-	\draw[line width=1.5pt](8, 0) rectangle (10, 1) node[pos=0.5] {Empfänger};
+	\draw[line width=1.5pt](10, 0) rectangle (12, 1) node[pos=0.5] {Empfänger};
 	%\node[draw,text] at (1,0.5) {Sender};
 %	\node[draw,text] at (9,0.5) {Empfenger};
 \end{tikzpicture}
