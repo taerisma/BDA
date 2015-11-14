@@ -146,6 +146,45 @@ Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter, p
 Im Nahfeld einer Antenne pendelt die nicht abgestrahlte Energie im Raum um die Antenne hin un der. Das Nahfeld baut sich auf und wider ab und wechselt so mit der Resonanzrequenz $f$ seine Richtung. Werden die Moleküle im Dielektischen Raum um die Antenne bei jeder Schwinung neu polarisiert, also bei jeder Schwinung neu Ausgerichtet.
 Die im Dielektrikum gespeicherte Energie ist stark von der materialspezifischen relativen Permittivität $\varepsilon_r $ abhänig. 
 
+Die Dielektrischen Verluste führen bei Antennen auch zu einem Detuning. Das Detunining ist kaum zu berechnen aber es kann mit Simmulationen bestimmt werden. Das Detuning entstht duch Verluste in um die  Antenne, da die Komplexe Impedanz der Antenne verändert wird kann das Detuning auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und die veränderte Antennenimpedanz eine Anpassung an den Sender und die Zuleitung ensteht und so eine wesentlich höhere Abstrahleffizienz $\eta_{overall}$ \ ensteht.
+
+Im Zusammenhan der Antennen und der reaktiven Nahfeldverlusten wird offt der Verlustwinkel genannt.  Der Verlustwinkel beschreibt den Anteil der Wirkleistung elektrisch reaktiver Bauteile wie Spulen oder Kondensatoren bei sinusförmigen Spannungs- und Stromverlauf. 
+
+Der Verlustwinkel ist als $\arctan$ des Verhältnisses von Wirkleistung zu Blindleistung definiert. 
+Je kleiner der Verlustwinkel, desto näher kommen die realen Bauteile ihrem idealen Verhalten. Eine ideale Induktivität hat einen Verlustwinkel von $0^\circ$. Ein idealer Kondensator hat ebenfalls einen Verlustwinkel von 0$^\circ$.
+
+Ein idealer elektrischer Widerstand hat dagegen einen Verlustwinkel von $90^\circ$; er besitzt keine kapazitiven oder induktiven Blindanteile.
+
+In der technisch realisierbaren Elektronik gibt es aber keine idealen Bauteile. Die Verluste sind zudem frequenzabhänig.
+
+Der Verlustwinkel  $\delta$  lässt sich über die komplexe Impedanz Z oder über die Phasenverschiebung  $\varphi$  zwischen Strom und Spannung des Bauteils berechnen: 
+\label{eq:Verlustwinkel}
+\begin{align}
+\delta &= \arctan \dfrac{Re\underline{Z}}{Im\underline{Z}} \\
+\delta &= 90^\circ - |\varphi|
+\end{align}
+
+Die realen Ersatzschaltbilder von Spulen und Kondensatoren berüksichtigen die Verluste mit einem R
+Die beiden Gleicungen \ref{eq:VerlustwinkelSpule} und \ref{eq:VerlustwinkelKondensator} zeigen die Verlustfaktoren an einer Spule und an einem Kondensator:
+\begin{equation}\label{eq:VerlustwinkelSpule}
+\tan \delta = \dfrac{R}{\omega L}
+\end{equation}
+
+\begin{equation} \label{eq:VerlustwinkelKondensator}
+\tan \delta = R \omega C
+\end{equation}
+
+In diesem Zusammenhan soll auch die komplexe Permitivität $\varepsilon$ genannt werden:
+\begin{equation} \label{eq:komplexePermitivität}
+\varepsilon=\varepsilon_0(\varepsilon^{'}-j\varepsilon^{''})=\varepsilon_0\varepsilon^{'}(1-j\dfrac{\varepsilon^{''}}{\varepsilon^{'}})
+\end{equation}
+
+In der Gleichung \ref{eq:komplexePermitivität} kommt das Verhältniss $\dfrac{\varepsilon^{''}}{\varepsilon^{'}}$ vor, dieses ist klein für gute dielektrika, welche über einen weiten Frequenzbereich annähernd konstant sind. Das Verhältins von der Wechselstrom Permitivität $\varepsilon^{'}$ und des dielektrischen Verlustfaktor $\varepsilon^{''}$ ergibt den Verlustwinkel $\tan\delta$
+
+\begin{equation} \label{eq:VerlustwinkelEpsilonPermitivität}
+\dfrac{\varepsilon^{''}}{\varepsilon^{'}}=\tan\delta
+\end{equation}
+
 \subsection{Loop Antenne}
 Magnetische Antennen sprechen nur auf die magnetischen Feldlinien des elektromagnetischen Feldes an, weshalb sie magnetische Antennen genannt werden. Sie sind nicht, wie oft angenommen wird, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden, und bereits nach $\lambda/4$ Wellenlänge ist ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei magnetischen Antennen senkrecht durch die Loop-Fläche hindurch. Für maximalen Empfang muss deshalb die Schmalseite der magnetischen Antenne in Richtung des Senders
 
@@ -167,6 +206,14 @@ Das Erstzschaltbild in der Abbildung \ref{fig:ESBantenne} einer Antenne, zeigt d
 \item $R_{v}$
 \item $R_{rad}$
 \item $Z_{ant}$
+\end{itemize}
+
+Weitere wichtige eigenschaften die es für die Auswahl eines Antennentyps in die Geräte der "Connecte 1" \  Serie zu berücksichtigen gibt sind:
+\begin{itemize}
+\item Directivity D
+\item Nafeldtyp
+\item Detuning gurch das Mmgebungsmaterial
+\item Kopplung mit anderen im Gerät vorhanden Antennen
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
