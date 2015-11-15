@@ -3,7 +3,7 @@
 \subsection{Elementare Strahler}
 Es gibt zwei elementare Strahler. Der eine stellt eine E Feld Antenne dar, der andere eine H Feld Antenne. Die beiden elementaren Strahler lassen sich nicht praktisch fertigen. Sie dienen nur für theoretische Überlegungen. 
 \subsection{Hertzscher Dipol }
-Ein elektrisch kurzer Linearstrahler kann als konzentriertes Bauelement betrachte werden. Auf seiner gesamten Länge kann ein Strom mit der komplexen Amplitude I und eine räumlich konstante Stromverteilung, die zeitlich sinusförmig schwingt, annehmen. Es stellt sich ein kurzer Stromfaden ein, dessen Stromrichtung von der Polarisierung der Dipole abhängt und somit mit $\omega $ die Richtung wechselt. 
+Ein elektrisch kurzer Linearstrahler kann als konzentriertes Bauelement betrachtet werden. Auf seiner gesamten Länge kann ein Strom mit der komplexen Amplitude I und eine räumlich konstante Stromverteilung, die zeitlich sinusförmig schwingt, annehmen. Es stellt sich ein kurzer Stromfaden ein, dessen Stromrichtung von der Polarisierung der Dipole abhängt und somit mit $\omega $ die Richtung wechselt. 
 Der Hertzsche Dipol bildet den elementaren Elektrischen Dipol. Man kann ihn sich als sehr kurze Stabantenne vorstellen. Der Betrag des Dipolmoments \textit{p(t)} eines Hertzschen Dipols ist als \textit{p}=\textbf{Q}\textit{d}\textbf{\textbf{l}} beschrieben. Der Scheitelwert $\hat{i}$ des Stromes  oszilliert mit der Kreisfrequenz klein omega $\omega$.\\
 $p(t)=pe^{j\omega t} = Q dl e^{j\omega t} = \frac{\hat{i} dl}{j\omega }e^{j\omega t}  $
 \\
@@ -50,7 +50,7 @@ E_\theta= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{j\omega \mu}{R}  + \frac{n}{
 H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R}  + \frac{n}{R^{2}}\right) sin(\theta)
 \end{equation}
 
-Mit wachsendem Abstand können einige Terme vernachlässigt werden. Alle Terme in denen der Abstand R in höherer Potenz vorkommt werden vereinfacht zu Null. Für das Fernfeld ergeben sich die folgenden Beschreibungen:
+Mit wachsendem Abstand können einige Terme vernachlässigt werden. Alle Terme in denen der Abstand R in höherer Potenz vorkommt, werden vereinfacht zu Null. Für das Fernfeld ergeben sich die folgenden Beschreibungen:
 
 
 \begin{equation}
@@ -75,7 +75,7 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 %Die Dipolantenne und die Rahmen Antenne sind den beiden Elementaren Strahleren nachempfunden und sollen im nächsten Abschnitt genauer betrachtet werden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2) node[below] {X};%Fadenkreuz x
@@ -111,11 +111,10 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 	\label{FerdVektor}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
@@ -159,6 +158,8 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 \caption{Dipolantanne mit Feldvektor und Einheitsvektoren}
 \label{DipolEFerdVektor}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Fitzgeraldscher Dipol }
 Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromverteilung besitzt, wird Fitzgeraldscher Dipol genannt. Dieser Dipol ist das Gegenstück zum Hertzschen Dipol und stellt somit den zweiten der beiden elementaren Strahler dar. Die Leiterschleife ist oft in der xy Ebene angeordnet. Da der Strom oszilliert ist er als \textit{i(t)} gekennzeichnet. Der Strom \textit{i(t)} führt in einem Kreis im Abstand a um das Zentrum. Im Zentrum bildet sich ein magnetisches, zeitabhängiges Moment \textit{m(t)}.
 \begin{figure}[!htb]
@@ -203,8 +204,9 @@ E_\phi= \frac{I S}{4\pi}   e^{-jkR} \left( \frac{k^{2}}{R}   \right) sin(\theta)
 Die beiden elementaren Strahler können nicht technisch  realisiert werden, aber sie sind sehr wichtig für das Verhalten von realen Antennen. Wenn reale Antennen vereinfacht werden oder wenn sehr kleine Teilstücke von realen Antennen betrachtet werden,  verhalten sie sich  wie die elementaren Dipole. \\
 
 Die Dipolantenne und die Rahmenantenne sind den beiden elementaren Strahlern nachempfunden und sollen im nächsten Abschnitt genauer betrachtet werden.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
@@ -247,20 +249,24 @@ Die Dipolantenne und die Rahmenantenne sind den beiden elementaren Strahlern nac
 \caption{Loop Antenne mit Feldvektor und Einheitsvektoren}
 \label{LoopFerdVektor}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Die Dipol Antenne}\label{sec:DipolAntenne}
-Der zentral gespeiste Dipol besteht meist aus runden Leiterstäben mit dem Durchmesser d, die so ananeinander liegen, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe entspricht 2l>>d. Wird eine Spannung  in der Lücke zwischen den beiden Stäbe angelegt, kommt es zu einer Stromverteilung über die gesammte Länge der  Stäbe. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird auch Transmission Line genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungnsunabhänige Kugelwelle betrachtete werden.
+Der zentral gespeiste Dipol besteht meist aus runden Leiterstäben mit dem Durchmesser d, die so aneinander liegen, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe entspricht $2l>>d$. Wird eine Spannung  in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesammte Länge der  Stäbe. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird auch Transmission Line genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungnsunabhänige Kugelwelle betrachtet werden.
 %E^j(wt-kr)/4pimu^-1 r
 %Elliot Seite 29 Nr1.93
 \begin{equation}
 \frac{e^{j(\omega t-kr)}}{4\pi \mu_{0}^{-1}r}
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=4cm]{content/bilder/Dipol_EMANT_S42.pdf}%
 	\caption{Dipol Antenne mit Stromverteilung}
 	\label{FitzDipol}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Die Stromausbreitung in der Dipol Stabantenne entspricht der Stromverteilung einer am Ende offenen Zweidrahtleitung. Das offene Ende der Leitung führt zu einer Reflexion der zuführenden Welle in die umgekehrte Richtung und somit zu einer stehenden Welle in der Leitung. Stromführende Elemente, die nahe beieinander liegen, deren Amplituden gleich aber gegenläufig sind, strahlen nur gering. Dies sind   Eigenschaften einer guten Zweidrahtleitung.
 Als Näherung für die Stromverteilung soll folgendes gelten:
@@ -302,6 +308,8 @@ H_{\phi}=j \frac{I_{m}}{2\pi} \frac{e^{j(\omega t - kr)}}{r} \lbrack \frac{cos\l
 Die Feldverteilung kann in der  Zweidimensionalen Polar Form oder in einer Dreidimensionalen Feldverteilung dargestellt werden.
 Die nachfolgende Grafik zeigt eine E Feldverteilung als Schnitt durch die xz Ebene.\\
 Bild aus Mtlab importiern\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \begin{center}
 \begin{tikzpicture}
@@ -320,6 +328,10 @@ Bild aus Mtlab importiern\\
 	\caption{Dipol Antenne E Feld}
 	\label{DipolEFerd}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 Dargestellt ist ein $\lambda/2$ Dipol der in z Richtung aufgerichtet ist. Es ist zu erkennen, dass bei $\theta = 0 ^\circ $  und $\theta = 180 ^\circ $ kein elektrisches Feld abgestrahlt wird. Stellt man sich die Grafik als um eine um phi von 0 Grad bis 360 Grad rotierende Scheibe vor, so kommt die bekannte Doughnut Form zum Vorschein.
 
 Die von theta und phi abhängige Leitung ist gegeben durch:
@@ -330,7 +342,7 @@ P(\theta,\phi)=\frac{2\eta I_{m}^{2}}{(4\pi r)^{2}}\lbrack \frac{cos^{2}\lbrack 
 
 %Durch Lösung des Doppelintegrals 
 %Elliot Seite 63
-Durch auflösen der Doppelintegrale über $\phi$ von 0 bis $\pi$  und $\theta$ von 0 bis $\pi$ erhält man eine nummerische Lösung der Integrale über die gesammte Kugelfäche:
+Durch Auflösen der Doppelintegrale über $\phi$ von 0 bis $\pi$  und $\theta$ von 0 bis $\pi$ erhält man eine nummerische Lösung der Integrale über die gesammte Kugelfäche:
 \begin{equation}
 P_{rad}=0.609 \frac{\eta I_{m}^{2}}{2\pi}
 \end{equation}
@@ -351,7 +363,7 @@ P=\frac{1}{2} I_{m}^{2}R_{rad}=(0.609)\frac{\eta I_{m}^{2}}{2\pi}
 \end{equation}
 
 Der Strahlungswiderstand oder auch $R_{rad}$ genannt kann im Fall des $\lambda /2$ Dipol nummerisch als 73 Ohm bestimmt werden.
-\begin{equation}
+\begin{equation}\label{RradDipol}
 R_{rad}=\frac{0.609 \eta}{\pi}= 73 Ohm
 \end{equation}
 \subsubsection{Der kurze Dipol }\label{sec:kurzerDipol}
@@ -371,7 +383,7 @@ I=I_{m}sin(kl)=I_{m}\lbrack kl - \frac{(kl)^{3}}{3!} +... \rbrack
 a_{\theta}(\theta)=-kl^{2}I_{m}sin(\theta)=-Ilsin\theta
 \end{equation}
 angenommen werden.
-Wie beim $\lambda/2$ Dipol findet man bei einem kurzen Dipol ein vertikal polarisiertetes E Feld. Das Feld ist etwas breiter, aber ebenfalls doughnutförmig. Die Impedanz des kurzen Dipols ändert sich jedoch drastisch gegenüber dem $\lambda/2$ Dipol. Mit der Impdanz ist auch die winkelabhänige Leistungsdichte wie folgt gegeben:
+Wie beim $\lambda/2$ Dipol findet man bei einem kurzen Dipol ein vertikal polarisiertes E Feld. Das Feld ist etwas breiter, aber ebenfalls doughnutförmig. Die Impedanz des kurzen Dipols ändert sich jedoch drastisch gegenüber dem $\lambda/2$ Dipol. Mit der Impdanz ist auch die winkelabhänige Leistungsdichte wie folgt gegeben:
 %Ellito 2.18
 \begin{equation}
 P(\theta,\phi)=\frac{(kl)^{2}\eta I^{2}}{2(4\pi r)^{2}}sin^{2}\theta
@@ -390,16 +402,20 @@ $Rrad=20\left(piL/\lambda\right)^{2}$
 %Eliott
 
 Dabei wird L als 2l und somit als länge der beiden Dipolarme angenommen.
-Wenn ein Dipol sehr kurz wird, zum Beispiel $2l=\lambda/8$ dann wird $R_{rad} = 3 Ohm$, Dieser Wert ist merklich kleiner als die 73 Ohm die  einens $\lambda/2$ Dipol. Der Effekt auf den reaktiven Anteil der Eingangsimpedanz ist noch dramatischer. Für einen endlich dünnen Dipol mit der Dicke d, ist die Reaktanz der Eingangsimpedanz eines $2l=\lambda/2$ Dipols positiv. Die Reaktanz ist wenig unter Null wenn die Dipollänge  $2l=\lambda/2$ enspricht. Wird der Dipol weiter gekürzt, so sinkt die Reaktanz sehr schnell  ins Negative. Im Fall, dass $2l=\lambda/8$ ist,  sind Werte für X grösser als 1000 Ohm kapazitive keine Seltenheit. 
+Wenn ein Dipol sehr kurz wird, zum Beispiel $2l=\lambda/8$ dann wird $R_{rad} = 3 Ohm$. Dieser Wert ist merklich kleiner als die 73 Ohm die  einens $\lambda/2$ Dipol. Der Effekt auf den reaktiven Anteil der Eingangsimpedanz ist noch dramatischer. Für einen endlich dünnen Dipol mit der Dicke d, ist die Reaktanz der Eingangsimpedanz eines $2l=\lambda/2$ Dipols positiv. Die Reaktanz ist wenig unter Null wenn die Dipollänge  $2l=\lambda/2$ enspricht. Wird der Dipol weiter gekürzt, so sinkt die Reaktanz sehr schnell  ins Negative. Im Fall, dass $2l=\lambda/8$ ist,  sind Werte für X grösser als 1000 Ohm kapazitive keine Seltenheit. 
 
 \subsection{Loop Antenne}\label{sec:LoopAntenneTheorie}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=7cm]{content/bilder/Loop_EMANT_S45.pdf}%
 	\caption{Loop Antenne}
 	\label{LoopAntenne}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 Wird eine kurze, kreisförmige Stromschleife mit dem Radius $a<<\lambda$ von einem Strom $Ie^{j\omega t}$ durchflossen,  kann in guter Näherung eine konstante Stromverteilung I entlang der Schlaufe angenommen werden,
 Die Koordinaten eines Punktes auf der Stromschleife sind gegeben mit
 \begin{eqnarray}
@@ -409,7 +425,7 @@ z’ &=&0
 \end{eqnarray}
 
 
-A ist der Abstand vom Zentrum der Stromsschleife. Somit kann ein Stromelement auf der Schleife beschrieben werden
+A ist der Abstand vom Zentrum der Stromschleife. Somit kann ein Stromelement auf der Schleife beschrieben werden
 \begin{equation}
 I dl= Ia(- \vec e_{x}sin(\psi)+\vec e_{y}cos(\psi))d\psi
 \end{equation}
@@ -439,7 +455,7 @@ zu
 \begin{equation}
 P(\theta)=\frac{(ka)^{4}I{2}\eta}{32r^{2}}sin^{2}\theta
 \end{equation}
-Im Vergleich mit dem kurzen Dipol erzeugt die kleine Stromschleife ein vergleichbares Richtdiagramm. Das Fernfeld des kurzen Dipols ist jedoch vertikal(theta) polarisiert. Das bedeutet, dass die Abstrahlverhalten um 90Grad unterschiedlich sind. Integriert man die Leistungsdichte über eine Kugeloberfläche mit dem Radius r  auf und setzt sie der abgegebenen Leistung mit $1/2 I^{2}Rrad $ der zugeführten Zweidrahtleitung gleich, so gewinnt man $R_{rad}$ mit 
+Im Vergleich mit dem kurzen Dipol erzeugt die kleine Stromschleife ein vergleichbares Richtdiagramm. Das Fernfeld des kurzen Dipols ist jedoch vertikal(theta) polarisiert. Das bedeutet, dass das Abstrahlverhalten um 90Grad verschoben ist. Integriert man die Leistungsdichte über eine Kugeloberfläche mit dem Radius r  auf und setzt sie der abgegebenen Leistung mit $1/2 I^{2}Rrad $ der zugeführten Zweidrahtleitung gleich, so gewinnt man $R_{rad}$ mit 
 \begin{equation}
 R_{rad} = 320\pi^{6} (a/\lambda)^{4}\label{eq:RradLoop}
 \end{equation}
@@ -447,9 +463,9 @@ R_{rad} = 320\pi^{6} (a/\lambda)^{4}\label{eq:RradLoop}
 Als Beispiel, wenn $a/\lambda = 0.003$ ist, dann wird der $R_{rad} = 0.25 Ohm$. Als Vergleich mit dem kurzen Dipol mit der Länge $2l=\lambda= 0.06$ führt das zu einem Strahlungswiderstand $R_{rad}$ von 0.7 Ohm.  Der Abstrahlwiderstand Rrad einer kleinen Stromschleife kann um den Faktor $n^{2}$ erhöht werden, wenn n die Anzahl der sehr eng aneinanderliegenden Wicklungen der Stromschleife sind. 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
 	\draw (0,3) node at (0.5,0.5) {xz Ebene} -- (10,3);%Fadenkreuz horizontal
@@ -468,67 +484,70 @@ Als Beispiel, wenn $a/\lambda = 0.003$ ist, dann wird der $R_{rad} = 0.25 Ohm$. 
 \caption{Loop Antenne E Feld}
 \label{DipolEFerd}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Nah- und Fernfeld}
-\begin{figure}
-\begin{center}
-\begin{tikzpicture}
-	\draw[line width=1.5pt](2, 4) circle (0.1) node at (2,3) {Phasenzentrum};
-	\draw (2,1.5) -- (2,0);%Strich nach unten
-	\draw (2,0.3) -- (3,0.3) node at (3.5,0.5) {r};%Strich zum r
-	\draw (4,0.3) -- (5.5,0.3) ;%Strich vom r
-	
-	\draw (2.5,4) -- (3,4);
-	\draw (3.5,4) -- (4,4);
-	\draw (4.5,4) -- (5,4);
-	\draw (5.5,4) -- (6,4);
-	
-	\draw (2.5,4.05) -- (3,4.1);
-	\draw (3.5,4.15) -- (4,4.2);
-	\draw (4.5,4.25) -- (5,4.3);
-	\draw (5.5,4.35) -- (6,4.4);
-	
-	\draw (2.4,4.1) -- (2.9,4.2);
-	\draw (4.4,4.3) -- (4,3.4);
-	\draw (4.2,4.5) -- (5,4.6);
-	\draw (5.1,4.7) -- (6,3.8);
-	
-	\draw (2.5,4.2) -- (3,4.4);
-	\draw (3.5,4.5) -- (4,4.7);
-	\draw (4.5,4.8) -- (5,5);
-	\draw (5.5,5.1) -- (6,5.3);
+%
+%\begin{figure}
+%\begin{center}
+%\begin{tikzpicture}
+%	\draw[line width=1.5pt](2, 4) circle (0.1) node at (2,3) {Phasenzentrum};
+%	\draw (2,1.5) -- (2,0);%Strich nach unten
+%	\draw (2,0.3) -- (3,0.3) node at (3.5,0.5) {r};%Strich zum r
+%	\draw (4,0.3) -- (5.5,0.3) ;%Strich vom r
 %	
-	\draw (2.4,3.95) -- (2.9,3.9);
-	\draw (3.4,3.85) -- (3.9,3.8);
-	\draw (4.4,3.75) -- (4.9,3.7);
-	\draw (5.4,3.65) -- (5.9,3.6);
-
-	\draw (2.3,3.9) -- (3,3.8);
-	\draw (3.3,3.7) -- (4,3.6);
-	\draw (4.3,3.5) -- (5,3.4);
-	\draw (5.3,3.3) -- (6,3.2);
-	
-	\draw (2.5,3.8) -- (3,3.6);
-	\draw (3.5,3.5) -- (4,3.3);
-	\draw (4.5,3.2) -- (5,3);
-	\draw (5.5,2.9) -- (6,2.7);
-
-%	\draw (3,3) circle (2cm);%linker Kreis
-%	\draw (7,3) circle (2cm);%rechter Kreis
-%	\draw (4.5,3) circle (0.2cm);%linker kleiner Kreis
-%	\draw (5.5,3) circle (0.2cm);%rechter kleiner Kreis
-%	\draw (4.5,3.2) -- (5.5,3.2);%Verbindung horizontal oben
-%	\draw (4.5,2.8) -- (5.5,2.8);%Verbinung horizontal unten
-%	\node[draw] at (5,6.5) {$\theta=0$};
-%	\node[draw] at (8,5.5) {$E_{\phi}(\theta)$};
-
-\end{tikzpicture}
-\end{center}
-\caption{Phasenzentrum und Pointingvektor im Antennenfeld}
-\label{fig.Phasenzentrum}
-\end{figure}
-Quelle:Taschenbuch der Hochfrequenztechnik Meineke und Grundach N2
+%	\draw (2.5,4) -- (3,4);
+%	\draw (3.5,4) -- (4,4);
+%	\draw (4.5,4) -- (5,4);
+%	\draw (5.5,4) -- (6,4);
+%	
+%	\draw (2.5,4.05) -- (3,4.1);
+%	\draw (3.5,4.15) -- (4,4.2);
+%	\draw (4.5,4.25) -- (5,4.3);
+%	\draw (5.5,4.35) -- (6,4.4);
+%	
+%	\draw (2.4,4.1) -- (2.9,4.2);
+%	\draw (4.4,4.3) -- (4,3.4);
+%	\draw (4.2,4.5) -- (5,4.6);
+%	\draw (5.1,4.7) -- (6,3.8);
+%	
+%	\draw (2.5,4.2) -- (3,4.4);
+%	\draw (3.5,4.5) -- (4,4.7);
+%	\draw (4.5,4.8) -- (5,5);
+%	\draw (5.5,5.1) -- (6,5.3);
+%%	
+%	\draw (2.4,3.95) -- (2.9,3.9);
+%	\draw (3.4,3.85) -- (3.9,3.8);
+%	\draw (4.4,3.75) -- (4.9,3.7);
+%	\draw (5.4,3.65) -- (5.9,3.6);
+%
+%	\draw (2.3,3.9) -- (3,3.8);
+%	\draw (3.3,3.7) -- (4,3.6);
+%	\draw (4.3,3.5) -- (5,3.4);
+%	\draw (5.3,3.3) -- (6,3.2);
+%	
+%	\draw (2.5,3.8) -- (3,3.6);
+%	\draw (3.5,3.5) -- (4,3.3);
+%	\draw (4.5,3.2) -- (5,3);
+%	\draw (5.5,2.9) -- (6,2.7);
+%
+%%	\draw (3,3) circle (2cm);%linker Kreis
+%%	\draw (7,3) circle (2cm);%rechter Kreis
+%%	\draw (4.5,3) circle (0.2cm);%linker kleiner Kreis
+%%	\draw (5.5,3) circle (0.2cm);%rechter kleiner Kreis
+%%	\draw (4.5,3.2) -- (5.5,3.2);%Verbindung horizontal oben
+%%	\draw (4.5,2.8) -- (5.5,2.8);%Verbinung horizontal unten
+%%	\node[draw] at (5,6.5) {$\theta=0$};
+%%	\node[draw] at (8,5.5) {$E_{\phi}(\theta)$};
+%
+%\end{tikzpicture}
+%\end{center}
+%\caption{Phasenzentrum und Pointingvektor im Antennenfeld}
+%\label{fig.Phasenzentrum}
+%\end{figure}
+%Quelle:Taschenbuch der Hochfrequenztechnik Meineke und Grundach N2
 \subsection{Systemansicht}
-Die Systemanasicht soll einen Überblick über die Bluetooth Verbindung vom Fluginstrument „Connect 1“ zu einem Smartphone geben.
+Die Systemansicht soll einen Überblick über die Bluetooth Verbindung vom Fluginstrument „Connect 1“ zu einem Smartphone geben.
 In der nachfolgenden Tabelle werden die Annahmen und fest gegebenen Parameter der Bluetooth Verbindung aufgelistet. Mit der Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der HF Quelle zur Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen und es hat keine Fremdkörper im Ausbreitungsraum.
 Weitere Annahmen sind:
 \begin{itemize}
@@ -543,44 +562,53 @@ Weitere Annahmen sind:
 \item -94 dBm Empfangsempfindlichkeit bei 1Mbps und 0.1\% EBR des CC2541 von TI
 \end{itemize}
 \subsubsection{Linkbudget}
+
+Das muss noch berechnet werden und in einer Tabelle zusammengefasst werden.\\
 Tabelle
 \subsection{Speisung}
 Unter der Speisung der Antenne wird die Leistungszufühung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
 \subsubsection{Quelle}
-Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein Hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz der Quellen kann sehr unterschiedlich sein. Oft findet sich am Quellenausgang ein Anpassungsnetzwerke um die Quellenimpedanz an die Leitungsimpedanz anzupassen.
+Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz der Quellen kann sehr unterschiedlich sein. Oft findet sich am Quellenausgang ein Anpassungsnetzwerk um die Quellenimpedanz an die Leitungsimpedanz anzupassen.
 \subsubsection{Zuleitung}
 Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialkabelleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
 \subsubsection{Anpassung}
-Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteil ansteht. 
-Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist also von Zein und Zaus die rede.
+Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf, wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteils ansteht. 
+Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von Zein und Zaus die Rede.
 Es gibt zwei Arten von Anpassung.
 \begin{itemize}
-\item 	Leisungsanpassung
+\item 	Leistungsanpassung
 \item 	Singalanpassung
 \end{itemize}
 Leistungsanpassung wird benötigt, wenn der Leistungsfuss möglichst unbeeinträchtigt sein soll. Es muss gelten
 $Z_{ein}=Z_{aus}*$
-Das bedeutet, dass der Realanteil von Zein und Zaus gleich ist aber der Imaginäranteil von Zaus muss den konjugiertkomplexen Wert des Zein aufweisen. Mit anderen Worten, Zaus hat beim Imaginärenanteil ein umgekehrtes Vorzeichen als der Zein. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Man bedenke, das ist im besten Fall nie mehr als 50\%.
+Das bedeutet, dass der Realanteil von $Z_{ein}$ und $Z_{aus}$ gleich ist, aber der Imaginäranteil von $Z_{aus}$ muss den konjugiertkomplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, $Z_{aus}$ hat beim Imaginärenanteil ein umgekehrtes Vorzeichen als der $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Man bedenke, das ist im besten Falle nie mehr als 50\%.
 Siganlanpassung wird angewendet, wenn möglichst keine Reflexionen auf der Leitung entstehen sollen. Es muss gelten:\\
-Zein= Zaus\\
-Die Siganlanpassung ist dann gewünscht, wenn die Qualität des Signals Vorrang hat und keinerlei Reflexionen erwünscht sind. In diesem Fall ist das Stehwellenverhältnis SWR = 1.
+$Z_{ein}=Z_{aus}$\\%zentrieren
+Die Signalanpassung ist dann gewünscht, wenn die Qualität des Signals Vorrang hat und keinerlei Reflexionen erwünscht sind. In diesem Fall ist das Stehwellenverhältnis SWR = 1.
 Um die jeweilig gewünschte Anpassung zu erreichen kommen Anpassnetzwerke zum Einsatz. Diese sind meist passive Netzwerke mit Induktivitäten L und Kapazitäten C. Manchmal kommt zur Kapazität und zur Induktivität ein Widerstand hinzu.\\
 Ein Beispiel für Anpassung.\\
 Eine Quelle mit einem Ausgangswiderstand von nicht 50 Ohm reell wird mit Hilfe einer ersten Anpassung auf eine 50 Ohm Leitung angepasst. Am Ende der 50 Ohm Leitung wird ein weiteres Anpassungsnetzwerk benötigt. Damit wird die Leitung und die Antennen aufeinander abgestimmt.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=8cm]{content/bilder/Anpassung.pdf}%
 	\caption{Blockschaltbildeiner Anpassung von der Quelle zur Antenne}
 	\label{Anpassung}
 \end{figure}
-Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird, dann wird oft eine Anpassnetzwerk zischen der Leitung und der Antenne benötigt.  Antennen haben einen  reellen Strahlungswiderstnad $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil. \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpassnetzwerk zwischen der Leitung und der Antenne benötigt.  Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil. \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=5cm]{content/bilder/ESB_Antenne.pdf}%
 	\caption{Ersatzschaltbild einer Antenne}
 	\label{ESBantenne}
 \end{figure}
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %\begin{figure}
 %\begin{center}
 %\begin{circuitikz}
