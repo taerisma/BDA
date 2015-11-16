@@ -78,6 +78,19 @@ Die Oberfläche  der elektromagnetischen Welle nimmt mit steigendem Abstand r vo
 
 Es kann kein eindeutiger Betriebsfall für die "Connect 1"\  Geräte genannt werden. Es ist wahrscheinlich, dass die meisten der Tuchfliegerpiloten die "Connect 1"\  Geräte zur Navigation verwenden. Das Gerät wird auf dem Schoss getragen. Dabei wird das Gerät in einer Hülle mit Bändern am Oberschäkel befestigt. Ein Mobiltelefon, welches sich am Arm des Piloten oder in einer Brusttasche befindet, ist klar mehr als $2\lambda$ entfernt und somit im Fernfeld. Da sowohl die Loop als auch die Dipol Antenne ein Torus ähnliches Fernfeld aufzeigen und die Position der neuen Bluetooth Antenne für beide Antennen die selbe sein wird, sind die Nahfeldeigenschaften der Antennen von Bedeutung.
 
+\subsection{Eigenschaften der Antenne}\label{sec:EigenschaftenAntenne}
+Die 2.4 GHz Bluetooth Antenne wird im Gerät "Connect 1" der Flytec eingesetzt. Dies ist ein kompaktes Handgerät welches den Piloten eines Tuchfliegers bei der Navigation in der Luft unterstützt. Die Gerätabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum der die neue Antenne einnehmen wird ist nicht derselbe wie in der Vorgängerversion der "Connect 1" \ Hardware. Für die neue Positionierung der Antenne wird der Hohlraum zwischen der Seitenwand des ABS Kunsstoffgehäuses und der Hauptplatine  vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 10 x 3.5 mm (L x B x H).\\
+Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch sein. Wie der Antennenfusspunkt mit der Quelle verbunden wird ist zum jetzigen Zeitpunkt noch nicht definiert. Mögliche symmetrische Verbindungen sind:
+
+\begin{itemize}
+\item Microstrip Verbindung  
+\item Zweidrahtleitung
+\item Zweidrahtleitung in Form eines Koaxialkabels
+\end{itemize}
+
+Die symmetrische Verbindung zwischen Quelle und Antenne hat den Vorteil, dass die bis anhin verwendeten Baluns für die Umwandlung des symmetrischen Ausgangs des Transsivers nicht mehr benötigt werden. \\
+Die Ausgangsimpedanz des verwendeten Texas Instruments CC2541 Transsivers ist bei 2.440 GHz $(70+j30) Ohm$. Dies entspricht einer komplexen Ausgangsimpedanz. \\Bei den gemachten Aussagen zu den Simulationen wurde jedoch eine rein reele Quellimpedanz von $(50+j0) Ohm$ angenommen.
+
 \subsection{Dipol Antenne}
 Die Dipol Antenne ist eine häufig vorkommende Antennenform.  Wird der Halbwellendipol mit seiner Resonanzfrequenz $f=\dfrac{\lambda}{2}$ angesteuert, tritt ein maximales Schwingen des Dipols auf.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -203,7 +216,7 @@ In der Gleichung \ref{eq:komplexePermitivität} kommt das Verhältnis $\dfrac{\v
 \end{equation}
 
 
-\subsubsection*{Verwendung einer Dipolantenne im Connect 1}
+\subsubsection{Verwendung einer Dipolantenne im Connect 1}
 Eine symmetrisch gespiesene Halbwellenantenne die leicht verkürzt ist,  ist eine einfach zu produzierende Antenne. Halbe Wellenlänge als strahlende Leiterlänge bedeutet etwas weniger als 0.06m Strahlerlänge. Das ist in dem Schlitz zwischen der Hauptplatine und der Gehäuseaussenelementen unterzubringen. 
 Das bedeutet, das die Antenne von sehr viel ABS Kunststoffmaterial umgeben ist. Dieses Material ist elektrisch nicht leitend und nicht magnetisch. Alle Dipolantennen sind in ihrem unmittelbaren Umfeld starke E Feld Strahler.  Die Materialeigenschaften von ABS Kunststoff führen mit einem  $\varepsilon_r$ von ca. 4.2 bei 2.4 GHz zu einer erheblichen Energiespeicherung im reaktiven Nahfeld der Antenne. Das führt wiederum zu einer Abweichung der idealen Antennenimpedanz. Die Veränderung der Antennenimpedanz bringt wiederum ein Detuning der Antenne mit sich.
 
@@ -256,26 +269,14 @@ Die Reaktanz $X_{ant}$ und der Strahlungswiderstand $R_{rad}$, sowie der Verlust
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Loop Antenne}
-Magnetische Antennen sprechen nur auf die magnetischen Feldlinien des elektromagnetischen Feldes an, weshalb sie magnetische Antennen genannt werden. Sie sind nicht, wie oft angenommen wird, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden, und bereits nach $\lambda/4$ Wellenlänge ist ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei magnetischen Antennen senkrecht durch die Loop-Fläche hindurch. Für maximalen Empfang muss deshalb die Schmalseite der magnetischen Antenne in Richtung des Senders zeigen.
-
-\subsection{Eigenschaften der Antenne}\label{sec:EigenschaftenAntenne}
-Die 2.4 GHz Bluetooth Antenne wird im Gerät "Connect 1" der Flytec eingesetzt. Dies ist ein kompaktes Handgerät welches den Piloten eines Tuchfliegers bei der Navigation in der Luft unterstützt. Die Gerätabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum der die neue Antenne einnehmen wird ist nicht derselbe wie in der Vorgängerversion der "Connect 1" \ Hardware. Für die neue Positionierung der Antenne wird der Hohlraum zwischen der Seitenwand des ABS Kunsstoffgehäuses und der Hauptplatine  vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 10 x 3.5 mm (L x B x H).\\
-Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch sein. Wie der Antennenfusspunkt mit der Quelle verbunden wird ist zum jetzigen Zeitpunkt noch nicht definiert. Mögliche symmetrische Verbindungen sind:
-
-\begin{itemize}
-\item Microstrip Verbindung  
-\item Zweidrahtleitung
-\item Zweidrahtleitung in Form eines Koaxialkabels
-\end{itemize}
-
-Die symmetrische Verbindung zwischen Quelle und Antenne hat den Vorteil, dass die bis anhin verwendeten Baluns für die Umwandlung des symmetrischen Ausgangs des Transsivers nicht mehr benötigt werden. \\
-Die Ausgangsimpedanz des verwendeten Texas Instruments CC2541 Transsivers ist bei 2.440 GHz $(70+j30) Ohm$. Dies entspricht einer komplexen Ausgangsimpedanz. \\Bei den gemachten Aussagen zu den Simulationen wurde jedoch eine rein reele Quellimpedanz von $(50+j0) Ohm$ angenommen.
 
 
 
 
-\subsection{Halbwellen Dipol Eigenschaften}
+
+
+
+\subsubsection{Halbwellen Dipol Eigenschaften}
 Das Ersatzschaltbild in der Abbildung \ref{fig:ESBantenne} einer Antenne zeigt die wesentlichen Parameter, die für eine Beurteilung der Abstrahleffizienz verantwortlich sind. Es sind dies:
 \begin{itemize}
 \item $R_{v}$
@@ -339,7 +340,7 @@ Die drei Komponenten $R_{v}$, $R_{rad}$ und $X_{ant}$ ergeben zusammen die gesam
 
 Der Strahlungswiderstand $R_{rad}$ des Halbwellen Dipols wird in der Gleichung \ref{eq:Rrrad} im Kapitel \ref{sec:kurzerDipol} berechnet. Man erhält für einen Dipol mit $2L = \frac{\lambda}{2}$ einen $R_{rad}$ von $15.7 \Omega $.
 
-\subsection{Simulationen eines Halbwellen Dipol}
+\subsubsection{Simulationen eines Halbwellen Dipol}
 
 Das Volumen in dem eine Bluetooth Antenne untergebracht werden kann ist in Kapitel \ref{sec:EigenschaftenAntenne} beschrieben. Das Volumen von 55 x 10 x 3.5 mm (L x B x H) wurde bei den Simmulationen berücksichtigt. \\
 Für die Simmulationen wurden grosse Vereinfachungen getroffen.\\
@@ -402,7 +403,9 @@ Die dreidimensionale \glqq EM Far Field\grqq \  Darstellungen der drei Simulatio
 \end{center}
 \end{figure}
 
-\subsection{Halbwellen Loop Eigenschaften}
+\subsection{Loop Antenne}
+Magnetische Antennen sprechen nur auf die magnetischen Feldlinien des elektromagnetischen Feldes an, weshalb sie magnetische Antennen genannt werden. Sie sind nicht, wie oft angenommen wird, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden, und bereits nach $\lambda/4$ Wellenlänge ist ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei magnetischen Antennen senkrecht durch die Loop-Fläche hindurch. Für maximalen Empfang muss deshalb die Schmalseite der magnetischen Antenne in Richtung des Senders zeigen.
+\subsubsection{Halbwellen Loop Eigenschaften}
 Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie ein Dipol. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen wie beim Dipol. Der Strahlungswiderstand $R_{rad}$ kann mit der Formel \ref{eq:RradLoop} aus Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für einen Loop der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung \ref{eq:XantLoop} einen Wert für $X = 637 \Omega$ gefunden werden. Um X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterduchmesser 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
 \begin{equation}\label{eq:XantLoop}
 X= 2\pi f a(ln \left( \frac{8a}{p} \right) - 1.75)
@@ -431,7 +434,7 @@ Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen D
 \label{fig:FflacheLoopAntenne}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Vollwellen Loop Eigenschaften}
+\subsubsection{Vollwellen Loop Eigenschaften}
 \subsection{Nutzwertanalyse Antennen Eigenschaften  }
 \begin{table}[htb]
   \centering
