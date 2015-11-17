@@ -343,7 +343,7 @@ Der Strahlungswiderstand $R_{rad}$ des Halbwellen Dipols wird in der Gleichung \
 \newpage
 \subsubsection{Simulationen eines Halbwellen Dipol}
 
-Das Volumen in dem eine Bluetooth Antenne untergebracht werden kann ist in Kapitel \ref{sec:EigenschaftenAntenne} beschrieben. Das Volumen von 55 x 10 x 3.5 mm (L x B x H) wurde bei den Simmulationen berücksichtigt. \\
+Das Volumen in dem eine Bluetooth Antenne untergebracht werden kann ist in Kapitel \ref{sec:EigenschaftenAntenne} beschrieben. Das Volumen von 55 x 10 x 3.5 mm (L x B x H) wurde bei den Simulationen berücksichtigt. \\
 Für die Simmulationen wurden grosse Vereinfachungen getroffen.\\
 Der ABS Kunststoff ist mit einem $\varepsilon_r $ von 4.3 und einem Verlustwinkel von 0.02 simuliert. Als Antennenstäbe wurde ein  Kupferdraht mit einem Radius $r = 1.12 mm$ verwendet. Das Kupfer hat eine Leitfähigkeit von $\kappa=58E6 [1/\Omega m]$. Die Länge der beiden Antennenarme ist je 25mm. Für die Quelle wurde eine Lücke von 2.45mm ausgespart. Die Quelle ist als 50 Ohm reel definiert.\\ 
 Es wurden drei Simulationen durchgeführt.
@@ -353,7 +353,7 @@ Es wurden drei Simulationen durchgeführt.
 \item  $\lambda/2 \ $Dipol eingklemmt zwischen zwei ABS Stücken
 \end{enumerate}
 
-Die Abbildung \ref{fig:S11_Dipol_freiraum_1} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist bei 2.42 GHz abgestimmt und es resuliert eine Return Loss Dämpfung von -16.1dB. Die 3dB Bandbreite ist etwa 200MHz und liegt bei ca. -13.1dB. Das zu dieser Freiraum Simulation gehöhrende Smith Diagramm zeigt in der Abbildung \ref{fig:Smith_Dipol_freiraum_2}  bei der Resonazfrequenz einen Widerstand von 68.6 Ohm reel. Das ist nahe dem in der Theorie und mit der Formel \ref{RradDipol} gezeigten Wert von 73 Ohm. Das Smith Diagramm zeigt weiter einen kapazitiven  Imaginäranteil von $j-4\Omega$. Da die Anpassung an die Quellenimpedanz von reel 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.
+Die Abbildung \ref{fig:S11_Dipol_freiraum_1} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist bei 2.42 GHz abgestimmt und es resultiert eine Return Loss Dämpfung von -16.1dB. Die -3dB Bandbreite ist etwa 200MHz und liegt bei ca. -13.1dB. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt in der Abbildung \ref{fig:Smith_Dipol_freiraum_2}  bei der Resonanzfrequenz einen Widerstand von 68.6 Ohm reel. Das ist nahe dem in der Theorie und mit der Formel \ref{RradDipol} gezeigten Wert von 73 Ohm. Das Smith Diagramm zeigt weiter einen kapazitiven  Imaginäranteil von $-j4\Omega$. Da die Anpassung an die Quellenimpedanz von reel 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.
 \begin{figure}[!h]
 \begin{center}
 \minipage{0.4\textwidth}
@@ -367,7 +367,7 @@ Die Abbildung \ref{fig:S11_Dipol_freiraum_1} zeigt das $S_{11}$ Diagramm eines D
 \end{center}
 \end{figure}
 
-In der Abbildung \ref{fig:S11_Dipol_ABS_3} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kuststoffstück im Nahfeld gezeigt. Das ABS Stück hat die Masse: 100 x 30 x 2 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonazfrequenz in der Abbildung \ref{fig:S11_Dipol_ABS_3}. Der maximale $S_{11}$ Wert liegt neu 400 MHz tiefer bei 2.04 GHz. Der $S_{11}$ Wert bei dieser Frequenz beträgt  neu -20.79dB.\\
+In der Abbildung \ref{fig:S11_Dipol_ABS_3} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kunststoffstück im Nahfeld gezeigt. Das ABS Stück hat die Masse: 100 x 30 x 2 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz in der Abbildung \ref{fig:S11_Dipol_ABS_3}. Der maximale $S_{11}$ Wert liegt neu 400 MHz tiefer bei 2.04 GHz. Der $S_{11}$ Wert bei dieser Frequenz beträgt  neu -20.79dB.\\
 Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpassung. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil ist mit $j+39$ Ohm induktiv.
 \begin{figure}[!h]
 \begin{center}
@@ -383,7 +383,7 @@ Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpass
 \end{figure}
 
 \newpage
-Die drite Simulation zeigt, das $S_{11}$ und das Smith Diagramm der Antenne, die zwischen zwei ABS Kunststoffstücken liegt. Es stellt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück ein. Die Resonazfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 180 MHz tiefer. Die Abbildung  \ref{fig:S11_Dipol_Zwei_ABS_5} zeigt weiter, dass die Antenne immer schmalbandiger wird.\\
+Die dritte Simulation zeigt das $S_{11}$ und das Smith Diagramm der Antenne, die zwischen zwei ABS Kunststoffstücken liegt. Es stellt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück ein. Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 180 MHz tiefer. Die Abbildung  \ref{fig:S11_Dipol_Zwei_ABS_5} zeigt weiter, dass die Antenne immer schmalbandiger wird.\\
 Das Smithdiagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt  bei $59.6 \%$.
 
 \begin{figure}[!htb]
@@ -399,8 +399,8 @@ Das Smithdiagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine e
 \end{center}
 \end{figure}
 
-Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizenz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt ist. Weiter zeigt es das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe. Die Resonanzfrequenz kann durch verkürtzung der Strahlerlänge und durch das paralellel Schalten von idealen Kapazitäten oder Induktivitäten zur Quelle erreicht werden.
-Die dreidimensionale \glqq EM Far Field\grqq \  Darstellungen der drei Simulationen zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Sie zeigen alle drei einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.
+Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt ist. Weiter zeigt es das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe. Die Resonanzfrequenz kann durch Verkürzung der Strahlerlänge und durch das paralell Schalten von idealen Kapazitäten oder Induktivitäten zur Quelle erreicht werden.
+Die dreidimensionale \glqq EM Far Field\grqq \  Darstellungen der drei Simulationen, zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Sie zeigen alle drei einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.
 
 
 
@@ -409,12 +409,12 @@ Die dreidimensionale \glqq EM Far Field\grqq \  Darstellungen der drei Simulatio
 
 
 \subsection{Loop Antenne}
-Magnetische Antennen sprechen nur auf die magnetischen Feldlinien des elektromagnetischen Feldes an, deshalb werden sie magnetische Antennen genannt. Sie sind nicht, wie oft angenommen wird, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden, und bereits nach $\lambda/4$ Wellenlänge ist ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei magnetischen Antennen senkrecht durch die Loop-Fläche hindurch. Für maximalen Empfang muss deshalb die Schmalseite der magnetischen Antenne in Richtung eines Dipolsenders  zeigen.
+Magnetische Antennen sprechen nur auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Deshalb werden sie magnetische Antennen genannt. Sie sind nicht magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits nach $\lambda/4$ Wellenlänge ist ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei magnetischen Antennen senkrecht durch die Loop-Fläche hindurch. Für maximalen Empfang muss deshalb die Schmalseite der magnetischen Antenne in Richtung eines Dipolsenders  zeigen.
 
 \subsubsection*{Elektromagnetische Wellenabstrahlung von Loop Antennen}
-Bei einer Loop Antennne ist der Ursprung der der Wellenausbreitung ein magnetischer Dipol. Eine genaue Schiderung des Zusammenhang des kreisförmigem Strom und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} erläutert. 
+Bei einer Loop Antenne ist der Ursprung der Wellenausbreitung ein magnetischer Dipol. Eine genaue Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} erläutert. 
 
-Elektromagnetische Wellen können auch aus einem schwingenden magnetischen Dipol,
+Elektromagnetische Wellen können  von einem schwingenden magnetischen Dipol
 abgestrahlt werden. Analog zum Hertzschen Dipol befindet sich im Koordinatenursprung
 ein magnetischer Dipol der Länge $dz<<\lambda$, welcher mit einem konstanten
 Strom $I^{m}=constant$ durchflossen wird. Dann beträgt das magnetische Dipolmoment
@@ -426,7 +426,7 @@ Schleife mit Radius $a<<\lambda$ vorstellen, die eine Magnetisierung $\textbf{M}
 \begin{equation}
 I^{m}dze_{z}=j\omega\mu_{0}I\pi a^{2}
 \end{equation}
-Dieser Fall wird als Rahmenantenne bezeichnet und ist in Abbildung xx dargestellt. Aus der Lösung der Maxwellschen Gleichungen mit Hilfe des elektrischen und
+Dieser Fall wird als Rahmenantenne bezeichnet und ist in Abbildung \ref{FitzDipol} dargestellt. Aus der Lösung der Maxwellschen Gleichungen mit Hilfe des elektrischen und
 magnetischen Vektorpotentials kann man die Felder der Rahmenantenne bestimmen,
 die die folgenden Transversalkomponenten $\textbf{E}_{\varphi}$ bzw.$\textbf{E}_{\vartheta}$ im Fernfeld aufweisen
 \begin{equation}
@@ -439,37 +439,38 @@ die die folgenden Transversalkomponenten $\textbf{E}_{\varphi}$ bzw.$\textbf{E}_
 
 Es wird festgestellt, dass die Felder nur vom Strom und der Fläche abhängig sind
 und nicht von der Form der Antenne. 
-Die Rahmenantenne besitzt einen sehr kleinen Strahlungswiderstand, der durch folgende
-Formel \ref{eq} beschrieben werden kann Auf den gleichen Wert kommt man wenn die Formel \ref{eq:RradLoop} aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet. S ist die Schleifenfläche und K kann als $2\pi/\lambda$ angenommen werden.
+Die Rahmenantenne besitzt einen sehr kleinen Strahlungswiderstand, der durch die
+Formel \ref{eq:RS_LOOP} beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel \ref{eq:RradLoop} aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. S ist die Schleifenfläche und K kann als $2\pi/\lambda$ angenommen werden.
 \begin{equation}\label{eq:RS_LOOP}
 R_{s}=\dfrac{2Ps}{|I|^{2}}=Z_{0}\dfrac{\pi}{6}(k^{2}a^{2})^{2}=Z_{0}\dfrac{2\pi}{3}\left(\dfrac{kS}{\lambda}\right)^{2} 
 \end{equation}
-%\simeq 31.171\dfrac{S^{2}}{\lambda^{4}} ist um den Fktor 1000 zuklein
+%\simeq 31.171\dfrac{S^{2}}{\lambda^{4}} ist um den Faktor 1000 zuklein
 So beträgt z.B. der Strahlungswiderstand für eine kreisförmige Schleife mit Radius $a = \lambda/25$ der  $R_{s} = 0,788\Omega$.
 
 
-
 \subsubsection{Halbwellen Loop Eigenschaften}
-Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen wie beim Dipol. Der Strahlungswiderstand $R_{rad}$ kann mit der Formel \ref{eq:RradLoop} aus Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für einen Loop der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung \ref{eq:XantLoop} einen Wert für $X = 637 \Omega$ gefunden werden. Um X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterduchmesser 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
+Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen wie beim Dipol. Der Strahlungswiderstand $R_{rad}$ kann mit der Formel \ref{eq:RradLoop} aus Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für einen Loop der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung \ref{eq:XantLoop} einen Wert für $X = 637 \Omega$ gefunden werden. Um X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
 \begin{equation}\label{eq:XantLoop}
 X= 2\pi f a(ln \left( \frac{8a}{p} \right) - 1.75)
 \end{equation}
 
-Aufgrund der engen Platzverhältnisse, die für das Antennenvolumen herrschen, kann keine runde Loop Antenne umgesetzt werden. Loop Antennen können in den unteschiedlichsten Formen realisiert werden. Man findet sie als rechtecke, Oktagone, oder als Dreiecke. Oft wird ein Rahmen gefertig und auf diesen Rahen werden mehrere Winungen $n$ aufgespannt. Allen Antennen Formen gemein ist, dass die Klemmenspannung am unbelasteten Fusspunktderantten vom Zeitabhänigen magnetischen Fluss Änderung durch die Antennenfläche induziert wird.
+Aufgrund der engen Platzverhältnisse, die für das Antennenvolumen herrschen, kann keine runde Loop Antenne umgesetzt werden. Loop Antennen können in den unterschiedlichsten Formen realisiert werden. Man findet sie als Rechtecke, Oktagone, oder als Dreiecke. Oft wird ein Rahmen gefertigt und auf diesen  werden mehrere Windungen $n$ aufgespannt. Für allen Antennenformen gilt, dass die Klemmenspannung am unbelasteten Fusspunkt der Antenne von der zeitabhängigen magnetischen Flussänderung durch die Antennenfläche induziert wird.
 \begin{equation}\label{eq:InduktionspannungLoop}
 V_{ol}= j\omega\Psi_{m}=j\omega\textbf{B}*\textbf{s}= j\omega\mu H_{z}*\pi a^{2}
 \end{equation}
 
-\begin{equation}\label{eq:InduktionspannungLoop}
+\begin{equation}\label{eq:InduktionspannungLoopHz}
 H_{z}=H^{i}\cos\psi\sin\theta_{i}
 \end{equation}
 
-Zu den Formel \ref{eq:InduktionspannungLoop} und \ref{eq:InduktionspannungLoop} 
+%Bild von der Welle durch die Loop Fläche
+Zu den Formeln \ref{eq:InduktionspannungLoop} und \ref{eq:InduktionspannungLoopHz}: \\
 $\Psi_{m}$ ist der magnetische Fluss\\
-$\therefore_{i} und \phi_{i}$ sind die Winkel im Kugelkkordinatensystem abhänig vom der durch die Loopfläche tretenden Welle.
+$\vartheta_{i}$ und $\varphi_{i}$\  sind die Winkel im Kugelkoordinatensystem, abhängig vom der durch die Loopfläche tretenden Welle.
  \\ 
-Die Formgebung muss in dem freien Volumen, welches im Kapitel \ref{sec:EigenschaftenAntenne} beschrieben wurde, Platz finden. Dies führt zu einem langen flachen Loop. Die Form erinnert stark an jene eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
+Die Formgebung muss im freien Volumen, welches im Kapitel \ref{sec:EigenschaftenAntenne} beschrieben wurde, Platz finden. Dies führt zu einem langen, flachen Loop. Die Form erinnert stark an jene eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
 Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen Dipol. Der Strahlungswiderstand ist beinahe  ca.  280 Ohm. 
+
 
 
  %%%%%%%%%%%%%%%%%%%%%%%
@@ -493,7 +494,7 @@ Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen D
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Da  die Loopantenne nicht in der Mitte gespeist wird, ist die Oberfächenstromverteilung anders. Bei einer Loopantenne solle aufgrund des im Nahfeld dominierenden starken Magnetfeld, keine Energiespeicherung im umgebenden Kunststoff gespeichert werden. Dennoch kommt es bei den Loop Antennen wie bei den Dipolantennen zu einer Pv die nicht abgestrahlt wird. Wie beim Dipol pendelt bei jeder Schwingung ein Teil der Feldenergie um die Antenne. Diese wird nicht abgestrahlt. Diese magnetische Energie baut sich bei jeder Schwingung um den Strahler auch und induziert beim Rückgang einen Strom in der Umgekehrten Richtung in der Antenne. Das allgemeine Ersatzschaltbild \ref{fig:allgemeinesESBantenne} einer Antenne sieht nur den $R_{v}$ den $R_{rad}$ und ein $X_{ant}$ vor. $Z_{ant}$ sagt nichts darüber ob die Antenne eher Induktiv oder Kapazitiv ist.
+Da  die Loopantenne nicht in der Mitte gespeist wird, ist die Oberfächenstromverteilung anders. Bei einer Loopantenne soll aufgrund des im Nahfeld dominierenden starken Magnetfeld, keine Energie im umgebenden Kunststoff gespeichert werden. Dennoch kommt es bei den Loop Antennen wie bei den Dipolantennen zu einer Pv die nicht abgestrahlt wird. Wie beim Dipol pendelt bei jeder Schwingung ein Teil der Feldenergie um die Antenne. Diese wird nicht abgestrahlt. Diese magnetische Energie baut sich bei jeder Schwingung um den Strahler auf und induziert beim Rückgang einen Strom in der umgekehrten Richtung in der Antenne. Das allgemeine Ersatzschaltbild \ref{fig:allgemeinesESBantenne} einer Antenne sieht nur den $R_{v}$, den $R_{rad}$ und ein $X_{ant}$ vor. $Z_{ant}$ sagt nichts darüber aus, ob die Antenne eher induktiv oder kapazitiv ist.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]%ESB Antenne
@@ -538,22 +539,24 @@ Da  die Loopantenne nicht in der Mitte gespeist wird, ist die Oberfächenstromve
 %------------------------.............---------...........----------.........-----
 
 \subsubsection{Loop Antenne in Connect 1}
-Beim Einsatz einer magentischen Antenne als Bluetooth Antenne in der "Connect 1" | \ Serie. Da das Vorgesehene Antennenvolumen lang und Schmal ist, kann keine runde Schleife als Loop dienen. Statt dessen  könnte ein langer Loop zwischen dem Gehäuse und der Hauptplatine untrgebracht werden. Loopantennen sind ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E und H Feldvektoren etwa gleichlang, in Phase und rechtwinklig zueinander. Als ebene Welle wird die Antennenleistung in Form von Wirkleistung in Transversalerichtung von der Strahlerquelle weggetragen.\\
-Um den Einfluss des "Connect 1" \ Gerät auf die Feldausbreitung der Loop Antenne abzuschätzen, das Antenne Ersatzschaltbild \ref{fig:allgemeinesESBantenne}  betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
+Beim Einsatz einer magnetischen Antenne als Bluetooth Antenne in der "Connect 1"  \ Serie. Da das vorgesehene Antennenvolumen lang und schmal ist, kann keine runde Schleife als Loop dienen. Stattdessen  könnte ein langer Loop zwischen dem Gehäuse und der Hauptplatine untergebracht werden. Loopantennen sind in ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E und H Feldvektoren etwa gleichlang, in Phase und rechtwinklig zueinander. Als ebene Welle wird die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle abgestrahlt.\\
+Um den Einfluss der "Connect 1" \ Geräte auf die Feldausbreitung der Loop Antenne abzuschätzen, kann das Antenne Ersatzschaltbild \ref{fig:allgemeinesESBantenne}  betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
   \begin{enumerate}[label={\alph*)}] 
      \item die Antenne an die Quelle angepasst ist 
      \item $R_{rad}$ gegenüber $R_{v}$ gross ist 
   \end{enumerate} 
   
-Die Anpassung einer Loop Antenne ist aufgund der Antennenimpedanz ohne Anpassungsnetzwerk sehr schwer zu erreichen. Für alle Antennenformen gilt: wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann ist der Retun Loss sehr klein, das bedeutet der $S_{11}$ Wert ist sehr klein, daher erreicht nur ein kliener Teil, der für die Antenne bestimmten Leitstung, den Strahlungswiederstand und kann abgestrhalt werden.\\
-Das Verhältniss von $R_{rad}$ zu $R_{v}$ wirk sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne ein. 
+Die Anpassung einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk sehr schwer zu erreichen. Für alle Antennenformen gilt: wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann ist der Return Loss sehr klein. Das bedeutet der $S_{11}$ Wert ist sehr klein. Daher erreicht nur ein kleiner Teil, der für die Antenne bestimmten Leistung, den Strahlungswiederstand und kann abgestrahlt werden.\\
+Das Verhältnis von $R_{rad}$ zu $R_{v}$ wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus. 
+
 
 
 \subsubsection{Halbwellen Loop Simulationseigenschaften}
-Um das Anstahlverhalten und die Einwirkungen von Kunsstoff im Nahfeld aufzuzeigen, werden die Folgenen Abbildungen genauer erläutert.
-Die Erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodel wurde keine runde Stromschleife verwendet, sonder ein langer, schmaler Loop. Die Länge des Loop entspricht $\lambda/2$ der Bluetooth Zielfrequenz von 2.45 GHz. Die Antennenstruktur wird von einer Quelle mit 50 Innenwiderstand getrieben. Als Antennenstruktur wurden  rechteckige Kupfer Quader mit einer Dicke von 1mm verwendet. \\
-Die Resonazfrequenz ist in der Abbildung  \ref{fig:S11_Loop_Lambda2_freiraum_1} gezeigt, sie liegt bei dieser Simulation bei $5.84 GHz$ die Antenne zeigt als 3dB Grenze eine bandbreite von $66kHz$. Bei $5.84 GHz$ zeigt die Antenne einen $S_{11}$ Wert von mehr als 25dB.\\
-Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt die Fehlanpassung auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginäranteil bei 6225 Ohm. Da ist es kein wunder, dass der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt des Smithdiagramm liegt. Dieser Punkt sthet für eine $\infty$ Impedanz. Dies führt zu einer total Refflexion. Der Reflexionsfaktor $\Gamma$ ist 1. Die vom Empire Xccel berechnete Abstrahleffizienz ist $1\%$.
+Um das Abstrahlverhalten und die Einwirkungen von Kunststoff im Nahfeld aufzuzeigen, werden die folgenden Abbildungen genauer erläutert.
+Die Erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodell wurde keine runde Stromschleife verwendet, sondern ein langer, schmaler Loop. Die Länge des Loop entspricht $\lambda/2$ der Bluetooth Zielfrequenz von 2.45 GHz. Die Antennenstruktur wird von einer Quelle mit 50Ohm Innenwiderstand getrieben. Als Antennenstruktur wurden  rechteckige Kupfer Quader mit einer Dicke von 1mm verwendet. \\
+Die Resonanzfrequenz ist in der Abbildung  \ref{fig:S11_Loop_Lambda2_freiraum_1} gezeigt. Sie liegt bei dieser Simulation bei $5.84 GHz$. Die Antenne zeigt als -3dB Grenze eine Bandbreite von $66kHz$. Bei $5.84 GHz$ zeigt die Antenne einen $S_{11}$ Wert von mehr als -25dB.\\
+Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt die Fehlanpassung auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 6225 Ohm. Desshalb ist der Frequenzpunkt von $2.45 GHz$ beim rechten Ausgangspunkt des Smithdiagramm. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer total Reflexion. Der Reflexionsfaktor $\Gamma$ ist 1. Die vom Empire Xccel berechnete Abstrahleffizienz ist $1\%$.
+
 
 \begin{figure}[!h]
 \begin{center}
@@ -567,11 +570,12 @@ Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt d
 \endminipage
 \end{center}
 \end{figure}
-\subsubsection{Simmulationen einer Lambda/2 Loop Antenne}\label{sec:SimL2Loop}
-Sie Simulationen der Dipolantenne haben eine erhebliche Einwirkung des ABS Kuststoff auf die Resonazfrequenz gezeigt. Da die Loopantenne in ihrem Nahfeld ein starkes Magnetfeld zeigt und der elektrisch nicht leitende ABS Kuststoff auch nicht magnetisch ist, solle dieser keine grosse Wirkung auf die Resonanzfrequenz zeigen. 
-Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} Zeigt das $S_11$ Diagramm derselben Loopantenne aber es wurde wie bei den Simmulationen der Dipolantenne ein ABS Kuststoffstück direkt an die Antenne gelebt. Das ABS Stück hat die Masse 100 x 30 x 2 mm (L x B x H). Die Abmessungen und die Simulationseigenschaften sind dieseleben wie bei den Dipolsimulationen.
+\subsubsection{Simulationen einer Lambda/2 Loop Antenne}\label{sec:SimL2Loop}
+Die Simulationen der Dipolantenne haben eine erhebliche Einwirkung des ABS Kunststoff auf die Resonanzfrequenz gezeigt. Da die Loopantenne in ihrem Nahfeld ein starkes Magnetfeld zeigt und der elektrisch nicht leitende ABS Kunststoff  nicht magnetisch ist, soll dieser keine grosse Wirkung auf die Resonanzfrequenz zeigen. 
+Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} zeigt das $S_{11}$ Diagramm derselben Loopantenne. Es wird wie bei den Simulationen der Dipolantenne ein ABS Kunststoffstück direkt an die Antenne gelegt. Das ABS Stück hat die Masse 100 x 30 x 2 mm (L x B x H). Die Abmessungen und die Simulationseigenschaften sind dieselben wie bei den Dipolsimulationen.
 
-Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} und \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigen jedoch eine Resonazfrequenz die um mehr als 1430MHz auf 4.41GHz gefallen ist. Ebenfalls ist die antenne etwas weniger schmalbandig. Die -3dB bandbreit ist auf 210kHz gestiegen. Weiter ist $S_{11}$ Wert auf -15.4 dB gesunken.\\Die Abbildung \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigt das Simith Diagramm, daraus ist ebenfall ersichtlich, dass die Antenne für die Frequenz 2.45GHz nicht mehr einen Unterbruch darstellt. Die Abstrahleffizienz ist immernoch unter $3\%$.
+Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} und \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigen jedoch eine Resonanzfrequenz, die um mehr als $1430MHz$ auf $4.41GHz$ gefallen ist. Ebenfalls ist die Antenne etwas weniger schmalbandig. Die -3dB Bandbreite ist auf 210kHz gestiegen. Weiter ist der $S_{11}$ Wert auf -15.4dB gesunken.\\Die Abbildung \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigt das Smithdiagramm. Daraus ist ebenfalls ersichtlich, dass die Antenne für die Frequenz $2.45GHz$ nicht mehr einen Unterbruch darstellt. Die Abstrahleffizienz ist immer noch unter $3\%$.
+
 
 \begin{figure}[!h]
 \begin{center}
@@ -586,9 +590,10 @@ Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} und \ref{fig:Smith_Lambda2_Loop_
 \end{center}
 \end{figure}
 
-Beiden Simulation der Loopantenne mit ABS Kuststoff in der Nähe zeigt bereits, dass der Kunsstoff seine Auswirkungen auf die Resonazfrequenz in ähnlicher weise wie bei einer Dipolantenne zeigt.\\
-Die Dipolantenne wird nun zischen zwei gleichgrossen ABS Kusntstoffstücken eingeklemmt. Die Antennenanordung beilbt dieselbe. Abbildung \ref{fig:S11_Lambda2_Loop_2ABS_5} Zeigt die Resonazfrequenz die weiter sinkt. Die liegt neu bei 4.3 GHz. Die -3dB Bandbreite beträgt 270MHz. Der $S_{11}$ Wert zeigt -13.2dB.\\
-Das Smith Digaramm in Abbildung \ref{fig:Smith_Lambda2_Loop_2ABS_6} zwigt einen Antennenwiderstand von 24 Ohm und einen kapazitiven Anteil von 379 Ohm.
+Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfled  zeigt, dass der Kunststoff  Auswirkungen auf die Resonanzfrequenz in ähnlicher weise wie bei einer Dipolantenne zeigt.\\
+Die Dipolantenne wird nun zwischen zwei gleich grossen ABS Kunststoffstücken eingeklemmt. Die Antennenanordnung bleibt dieselbe. Abbildung \ref{fig:S11_Lambda2_Loop_2ABS_5} zeigt dass die Resonanzfrequenz weiter sinkt. Sie liegt neu bei $4.3GHz$. Die -3dB Bandbreite beträgt $270MHz$. Der $S_{11}$ Wert zeigt -13.2dB.\\
+Das Smith Diagramm in Abbildung \ref{fig:Smith_Lambda2_Loop_2ABS_6} zeigt einen Antennenwiderstand von 24Ohm und einen kapazitiven Anteil von 379Ohm.
+
 \begin{figure}[!h]
 	\begin{center}
 	\minipage{0.4\textwidth}
@@ -602,8 +607,8 @@ Das Smith Digaramm in Abbildung \ref{fig:Smith_Lambda2_Loop_2ABS_6} zwigt einen 
 	\end{center}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Simulationen einer Loop Antenne mit mehrern Schleifen}
-Im Vorhergehenden Abschnitt Kaptitel \ref{sec:SimL2Loop} sind anhand eines einfach Modelds die Eiegenschaften einer Loopantenne mit umliegendem Kunststoff gezeigt. Der Effekt des Kunststoff war grösseralserwartet. We ist ein Detuning wie bei einer Dipolantenne fesstellbar. Dass das Detuning auch Chanzen bildet zeigen die drei folgenden Simulationen der Abbildungen von \ref{fig:S11_Loop_freiraum_1} bis \ref{fig:Smith_Loop_2ABS_6}. Es wurde immer dieselbe Antennestrucktur Simuliert. Diese ist ändlich einer RFID Spule aufgebaut. Drei lange, flache Schleifen sind ineinander gedreht. Die Äusserste ist nicht Höher als 10mm und die Länge beträgt nicht mehr als 55mm. Die Simulation wurde drei Mal durch geführt. Die Erste zeigt die Antenne im Freiraum, die Zweite zwigt das Resonazverhalten mit einem ABS Stück im Nahfeld, bei der dritte Simulation ist die Antennenstruktur zwischen zwei ABS Kunststoffstücken. Wie zu erwarten war, sinkt die Resonazfrequenz mit dem Kunststoff im Nahfeld. 
+\subsubsection{Simulationen einer Loop Antenne mit mehreren Schleifen}
+Im vorhergehenden Abschnitt Kapitel \ref{sec:SimL2Loop} sind anhand eines einfach Modells die Eigenschaften einer Loopantenne mit umliegendem Kunststoff gezeigt. Der Effekt des Kunststoffes war grösser als erwartet. Es ist ein Detuning wie bei einer Dipolantenne feststellbar. Dass das Detuning auch Chancen bildet, zeigen die drei folgenden Simulationen der Abbildungen von \ref{fig:S11_Loop_freiraum_1} bis \ref{fig:Smith_Loop_2ABS_6}. Es wurde immer dieselbe Antennenstruktur simuliert. Diese ist ähnlich wie eine RFID Spule aufgebaut. Drei lange, flache Schleifen sind ineinander gedreht. Die Äusserste ist nicht Höher als 10mm und die Länge beträgt nicht mehr als 55mm. Die Simulation wurde drei mal durchgeführt. Die erste zeigt die Antenne im Freiraum, die zweite zeigt das Resonanzverhalten mit einem ABS Stück im Nahfeld und bei der dritte Simulation ist die Antennenstruktur zwischen zwei ABS Kunststoffstücken ersichtlich. Wie zu erwarten war, sinkt die Resonanzfrequenz mit dem Kunststoff im Nahfeld. 
 \begin{figure}[!h]
 \begin{center}
 \minipage{0.4\textwidth}
