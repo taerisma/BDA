@@ -6,7 +6,7 @@ magnetischen Feldkomponenten sind in Phase. Daher wird im Fernfeld Wirkleistung 
 übertragen. Das elektrische und magnetische Feld hat nur Komponenten in der Ebene senkrecht zur Ausbreitungsrichtung.
 Man spricht von einer ebenen Welle. Sie wird vom E und H Vektor aufgespannt  und bewegt sich in
 Transversalerrichtung fort. Die Kugelwelle bewegt sich im Raum fort, bis die gesamte Energie absorbiert ist. Die Amplituden der E und H Vektoren
-nehmen mit steigendem Abstand r um den Faktor $1/r$  ab. Der Zusammenhang zwischen E und H Feld ist
+nehmen mit steigendem Abstand $r$ um den Faktor $1/r$  ab. Der Zusammenhang zwischen E und H Feld ist
 durch die intrinsische Wellenimpedanz $\eta$ gegeben. 
 Die Gleichung \ref{eq:WellenImpedanzZ0} zeigt den Wellenwiderstand im Vakuum.
 
@@ -65,7 +65,7 @@ Das Abstrahlverhalten ist in den Kapitelen \ref{sec:DipolAntenne} und \ref{sec:L
 	\label{fig:FerdVektorEinheistsvektor}
 \end{figure}
 
-Die Oberfläche  der elektromagnetischen Welle nimmt mit steigendem Abstand r von der Antenne immer weiter zu. Ebenfalls nimmt die Beugung der Oberfläche der Kugelwelle immer mehr ab. Ist der Abstand r genügend gross, so kann die Welle lokal als ebene Wellenfront angenommen werden. Bei Distanzen von mehr als $2\lambda$ kann das Fernfeld angenommen werden, es gilt das Fernfeldkriterium. Bei einer Zielfrequenz von 2.45 Ghz bei der die Bluetooth Antenne arbeiten soll, tritt das Fernfeld wie in der Gleichung \ref{eq:Fernfeld} gezeigt nach 24 cm auf.
+Die Oberfläche  der elektromagnetischen Welle nimmt mit steigendem Abstand $r$ von der Antenne immer weiter zu. Ebenfalls nimmt die Beugung der Oberfläche der Kugelwelle immer mehr ab. Ist der Abstand $r$ genügend gross, so kann die Welle lokal als ebene Wellenfront angenommen werden. Bei Distanzen von mehr als $2\lambda$ kann das Fernfeld angenommen werden, es gilt das Fernfeldkriterium. Bei einer Zielfrequenz von 2.45Ghz bei der die Bluetooth Antenne arbeiten soll, tritt das Fernfeld wie in der Gleichung \ref{eq:Fernfeld} gezeigt nach 24cm auf.
 
 
 
@@ -76,10 +76,10 @@ Die Oberfläche  der elektromagnetischen Welle nimmt mit steigendem Abstand r vo
 2\lambda &= 2*0.12[m] =0.24[m] \nonumber
 \end{align}
 
-Es kann kein eindeutiger Betriebsfall für die "Connect 1"\  Geräte genannt werden. Es ist wahrscheinlich, dass die meisten der Tuchfliegerpiloten die "Connect 1"\  Geräte zur Navigation verwenden. Das Gerät wird auf dem Schoss getragen. Dabei wird das Gerät in einer Hülle mit Bändern am Oberschäkel befestigt. Ein Mobiltelefon, welches sich am Arm des Piloten oder in einer Brusttasche befindet, ist klar mehr als $2\lambda$ entfernt und somit im Fernfeld. Da sowohl die Loop als auch die Dipol Antenne ein Torus ähnliches Fernfeld aufzeigen und die Position der neuen Bluetooth Antenne für beide Antennen die selbe sein wird, sind die Nahfeldeigenschaften der Antennen von Bedeutung.
+Es kann kein eindeutiger Betriebsfall für die "Connect 1"\  Geräte genannt werden. Es ist wahrscheinlich, dass die meisten der Tuchfliegerpiloten die "Connect 1"\  Geräte zur Navigation verwenden. Das Gerät wird auf dem Schoss getragen. Dabei wird das Gerät in einer Hülle mit Bändern am Oberschäkel befestigt. Ein Mobiltelefon, welches sich am Arm des Piloten oder in einer Brusttasche befindet, ist klar mehr als $2\lambda$ entfernt und somit im Fernfeld. Da sowohl die Loop als auch die Dipol Antenne ein Torus ähnliches Fernfeld aufzeigen und die Position der neuen Bluetooth Antenne für beide Antennen dieselbe sein wird, sind die Nahfeldeigenschaften der Antennen von Bedeutung.
 
 \subsection{Eigenschaften der Antenne}\label{sec:EigenschaftenAntenne}
-Die 2.4 GHz Bluetooth Antenne wird im Gerät "Connect 1" der Flytec eingesetzt. Dies ist ein kompaktes Handgerät welches den Piloten eines Tuchfliegers bei der Navigation in der Luft unterstützt. Die Gerätabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum der die neue Antenne einnehmen wird ist nicht derselbe wie in der Vorgängerversion der "Connect 1" \ Hardware. Für die neue Positionierung der Antenne wird der Hohlraum zwischen der Seitenwand des ABS Kunsstoffgehäuses und der Hauptplatine  vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 10 x 3.5 mm (L x B x H).\\
+Die 2.4 GHz Bluetooth Antenne wird im Gerät "Connect 1" der Flytec AG eingesetzt. Dies ist ein kompaktes Handgerät welches den Piloten eines Tuchfliegers bei der Navigation in der Luft unterstützt. Die Gerätabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum der die neue Antenne einnehmen wird ist nicht derselbe wie in der Vorgängerversion der "Connect 1" \ Hardware. Für die neue Positionierung der Antenne wird der Hohlraum zwischen der Seitenwand des ABS Kunsstoffgehäuses und der Hauptplatine  vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 3.5 x 10 mm (L x B x H).\\
 Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch sein. Wie der Antennenfusspunkt mit der Quelle verbunden wird ist zum jetzigen Zeitpunkt noch nicht definiert. Mögliche symmetrische Verbindungen sind:
 
 \begin{itemize}
@@ -88,11 +88,18 @@ Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch s
 \item Zweidrahtleitung in Form eines Koaxialkabels
 \end{itemize}
 
-Die symmetrische Verbindung zwischen Quelle und Antenne hat den Vorteil, dass die bis anhin verwendeten Baluns für die Umwandlung des symmetrischen Ausgangs des Transsivers nicht mehr benötigt werden. \\
-Die Ausgangsimpedanz des verwendeten Texas Instruments CC2541 Transsivers ist bei 2.440 GHz $(70+j30) Ohm$. Dies entspricht einer komplexen Ausgangsimpedanz. \\Bei den gemachten Aussagen zu den Simulationen wurde jedoch eine rein reele Quellimpedanz von $(50+j0) Ohm$ angenommen.
+Die symmetrische Verbindung zwischen Quelle und Antenne hat den Vorteil, dass die bis anhin verwendeten Baluns für die Umwandlung des symmetrischen Ausgangs des Transsivers nicht mehr benötigt werden. Die passive Anpassung in Form der Baluns bringt bis anhin eine Dämpfung zwischen 6dB und 9dB. Die grosse Streuung kommt durch Bauteiltoleranzen zustande.\\
+Die Ausgangsimpedanz des verwendeten Texas Instruments CC2541 Transsivers ist bei 2.440 GHz $(70+j30) Ohm$. Dies entspricht einer komplexen Ausgangsimpedanz. \\Bei den gemachten Aussagen zu den Simulationen wurde jedoch eine rein reele Quellimpedanz von $(50+j0) Ohm$ angenommen. Da in einer ersten Betrachtung nur das Abstrahlverhalten und nicht die Anpassung der Antenne an den Quelle interessiert. 
 
 \subsection{Dipol Antenne}
-Die Dipol Antenne ist eine häufig vorkommende Antennenform.  Wird der Halbwellendipol mit seiner Resonanzfrequenz $f=\dfrac{\lambda}{2}$ angesteuert, tritt ein maximales Schwingen des Dipols auf.
+Die Dipol Antenne ist eine häufig vorkommende Antennenform.  Dipol Antennen gibt es in einer grossen Zahl verschiedener Ausführungen. Ihre Charakteristik ändert sich mit ihren geometrischen Eigenschaften. Die Antenne werden oft ihn Kategorien entsprechend ihrer Länge eingeteilt. So gibt es vier typische Gruppen von Dipol Antennen. 
+\begin{itemize}
+\item $2l<< \lambda/2 $
+\item $2l = \lambda/2 $
+\item $2l = \lambda $
+\item $2l>> \lambda $
+\end{itemize} 
+Die Dipolantenne bei der $2l=\lambda/2$ entspricht, wir oft Referenzdipol oder Halbwellendipol genannt. Wird der Halbwellendipol mit seiner Resonanzfrequenz $f=\dfrac{\lambda}{2}$ angesteuert, tritt ein maximales Schwingen des Dipols auf.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]%ESB Antenne
 	\begin{center}
@@ -135,19 +142,18 @@ ebenfalls nicht als völlig freier Raum angenommen werden. Es befindet sich imme
 %ist das richtig?
 
 Wenn sich eine $\lambda /2$ lange Vertikalantenne über der Erde befindet,  ergeben sich für das Strahlungsdiagramm die folgenden Eigenschaften: 
-Die Horizontalcharakteristik des vertikalen Halbwellendipols ist kreisförmig aufgrund der Symmetrie. Das Strahlungsdiagramm ist unabhängig vom Azimutwinkel $\varphi$ in der Horizontalebene des Dipols. Die Vertikalcharakteristik des vertikalen Halbwellendipols über der Erde erscheint jedoch gerichtet, das heisst es besteht eine Abhängigkeit vom Winkel $\theta$ . 
-
-Gemäss O. Zinke %O. Zinke, H. Brunswig, Lehrbuch der Hochfrequenztechnik, Band 1, 4. Auflage,Springer-Verlag, Berlin Heidelberg New York, 1990
- lassen sich die folgenden Aussagen für einen Dipol vertikal Polarisiert über der Erde treffen:
+Die Horizontalcharakteristik des vertikalen Halbwellendipols ist kreisförmig aufgrund der Symmetrie. Das Strahlungsdiagramm ist unabhängig vom Azimutwinkel $\varphi$ in der Horizontalebene des Dipols. Die Vertikalcharakteristik des vertikalen Halbwellendipols erscheint jedoch gerichtet, das heisst es besteht eine Abhängigkeit vom Winkel $\theta$ . 
+%O. Zinke, H. Brunswig, Lehrbuch der Hochfrequenztechnik, Band 1, 4. Auflage,Springer-Verlag, Berlin Heidelberg New York, 1990
+Gemäs Robert S. Ellitt lassen sich die folgenden Aussagen für die Gewichtungsfunktion  einen Dipol vertikal Polarisiert über der Erde treffen:
 
 
 \begin{equation}\label{eq:FDipolTheat}
-F(\theta,\frac{l}{\lambda}=\dfrac{1}{2})=\dfrac{2\cos^{2}(\dfrac{\pi}{2}\cos\theta)}{\sin\theta}
+F(\theta,\frac{l}{\lambda}=\dfrac{1}{2})=-\dfrac{2I_{m}}{k}\dfrac{\cos\left(\dfrac{\pi}{2}\cos\theta\right)}{\sin\theta}
 \end{equation}
 
 %Braut es eventuell noch ein Bild
 
-Die Nahfeldeigenschaften der Dipol Antenne zeigt ein starkes E Feld. Dieses zeigt eine Richtungsabhängigkeit  des Winkels $\theta$. Die starken E Felder polarisieren alle Dielektrika in unmittelbarer Nähe des Dipols. Dies führt zu dielektrischen Verlusten. Diese steigen mit der Frequenz des Feldes. Die dielektrischen Verluste können als Widerstände in Serie gedacht werden. Sie stellen die äquivalente Verlustleistung an einem Widerstand dar, die für das polarisieren der umgebenden dielektrikum Struktur nötig ist.
+Die Nahfeldeigenschaften der Dipol Antenne zeigt ein starkes E Feld. Dieses zeigt eine Richtungsabhängigkeit  des Winkels $\theta$. Die starken E Felder polarisieren alle Dielektrika in unmittelbarer Nähe des Dipols. Dies führt zu dielektrischen Verlusten. Diese steigen mit der Frequenz des Wechselfeldes. Die dielektrischen Verluste können als Widerstände in Serie bei den idealen Komponenten des Ersatzschaltbildes gedacht werden. Sie stellen die äquivalente Verlustleistung an einem Widerstand dar, die für das polarisieren der umgebenden dielektrikum Struktur nötig ist.
 Das Dielektrikum ist ein elektrisch nicht leitendes Material, das aber vom elektrischen Feld durchdringt wird. Die Feldgrössen des Dielektrikums sind die elektrische Feldstärke E und die elektrische Flussdichte D. Die Flussdichte D ist  im elektrostatischen Fall, das heisst im zeitlich konstanten Fall, und in einem isotropen Medium durch die Primitivität $\varepsilon $ \ über folgende Beziehung in Gleichung \ref{eq:FlussdichteD} verknüpft:
 
 
@@ -160,6 +166,13 @@ Die Permittivität $\varepsilon$ setzt sich, wie in Gleichung \ \ref{eq:Epsilon}
 \begin{equation}\label{eq:Epsilon}
 \varepsilon = \varepsilon_r \varepsilon_0
 \end{equation}
+
+Die Permittivitäts Konstante $\varepsilon_{0}$ ist eine Naturkonstante. Sie erhält ihren Wert aus dem in der Gleichung \ref{eq:Epsilon0} ersichtlichen Zusammenhang. Die Konstante $\mu_{0}  $ ist wie die Lichtgeschwindigkeit $c$ eine Naturkonstante und beschreibt die magnetische Feldkonstante mit $4\pi10^-7 [N/A^{2}]$.
+\begin{equation}\label{eq:Epsilon0}
+\varepsilon_{0} = \dfrac{1}{\mu_{0}c^{2}}=8.854187...[As/Vm]
+\end{equation}
+
+
 
 Da in einem Dielektrikum die Ladungsträger nicht frei beweglich sind, werden sie durch ein äusseres elektrisches Feld polarisiert. Dabei wird zwischen zwei Arten der Polarisation unterschieden:
 \begin{itemize}
@@ -174,7 +187,7 @@ Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter, p
 Im Nahfeld einer Antenne pendelt die nicht abgestrahlte Energie im Raum um die Antenne hin und her. Das Nahfeld baut sich auf und ab. Es wechselt so mit der Resonanzfrequenz $f_r$ seine Richtung. Die Moleküle im dielektrischen Raum um die Antenne werden bei jeder Schwingung neu polarisiert.
 Die im Dielektrikum gespeicherte Energie ist stark von der materialspezifischen, relativen Permittivität $\varepsilon_r $ abhängig. 
 
-Die dielektrischen Verluste führen bei Antennen auch zu einem Detuning. Das Detuning ist kaum zu berechnen, aber es kann mit Simulationen bestimmt werden. Das Detuning entsteht durch Verluste in und um die  Antenne, da die komplexe Impedanz der Antenne verändert wird. Das Detuning kann auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und die veränderte Antennenimpedanz eine Anpassung an den Sender und die Zuleitung entsteht und so eine wesentlich höhere Abstrahleffizienz $\eta_{overall}$ \ sich ergibt.
+Die dielektrischen Verluste führen bei Antennen  zu einem Detuning. Das Detuning ist kaum zu berechnen, aber es kann mit Simulationen bestimmt werden. Das Detuning entsteht durch Verluste in und um die  Antenne, da die komplexe Impedanz der Antenne verändert wird. Das Detuning kann auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und die veränderte Antennenimpedanz eine Anpassung an den Sender und die Zuleitung entsteht und so eine wesentlich höhere Abstrahleffizienz $\eta_{overall}$ \ sich ergibt. Weiter kann das Detuning eine Absenkung der Resonanzfrequenz hervorrufen, die sonnst nur mit einer Vergrösserung der Antennenstruktur möglich währe.
 
 Im Zusammenhang der Antennen und den reaktiven Nahfeldverlusten wird oft der Verlustwinkel genannt.  Der Verlustwinkel beschreibt den Anteil der Wirkleistung elektrisch reaktiver Bauteile wie Spulen oder Kondensatoren bei sinusförmigen Spannungs- und Stromverlauf. 
 
