@@ -3,8 +3,8 @@
 \subsection{Elementare Strahler}
 Es gibt zwei elementare Strahler. Der eine stellt eine E Feld Antenne dar, der andere eine H Feld Antenne. Die beiden elementaren Strahler lassen sich nicht praktisch fertigen. Sie dienen nur für theoretische Überlegungen. 
 \subsection{Hertzscher Dipol }
-Ein elektrisch kurzer Linearstrahler kann als konzentriertes Bauelement betrachtet werden. Auf seiner gesamten Länge kann ein Strom mit der komplexen Amplitude I und eine räumlich konstante Stromverteilung, die zeitlich sinusförmig schwingt, annehmen. Es stellt sich ein kurzer Stromfaden ein, dessen Stromrichtung von der Polarisierung der Dipole abhängt und somit mit $\omega $ die Richtung wechselt. 
-Der Hertzsche Dipol bildet den elementaren Elektrischen Dipol. Man kann ihn sich als sehr kurze Stabantenne vorstellen. Der Betrag des Dipolmoments \textit{p(t)} eines Hertzschen Dipols ist als \textit{p}=\textbf{Q}\textit{d}\textbf{\textbf{l}} beschrieben. Der Scheitelwert $\hat{i}$ des Stromes  oszilliert mit der Kreisfrequenz klein omega $\omega$.\\
+Ein elektrisch kurzer Linearstrahler kann als konzentriertes Element betrachtet werden. Auf seiner gesamten Länge kann ein Strom mit der komplexen Amplitude $I$ und eine räumlich konstante Stromverteilung, die zeitlich sinusförmig schwingt, annehmen. Es stellt sich ein kurzer Stromfaden ein, dessen Stromrichtung von der Polarisierung der Dipole abhängt und somit mit $\omega $ die Richtung wechselt. 
+Der Hertzsche Dipol bildet den elementaren Elektrischen Dipol. Man kann ihn sich als sehr kurze Stabantenne vorstellen. Der Betrag des Dipolmoments \textit{p(t)} eines Hertzschen Dipols ist als \textit{p}=\textbf{Q}\textit{d}\textbf{\textbf{l}} beschrieben \cite{Emant}. Der Scheitelwert $\hat{i}$ des Stromes  oszilliert mit der Kreisfrequenz klein omega $\omega$.\\
 $p(t)=pe^{j\omega t} = Q dl e^{j\omega t} = \frac{\hat{i} dl}{j\omega }e^{j\omega t}  $
 \\
 Ist ein Hertzscher Dipol unendlich dünn und in einem xyz Koordinatensystem in die z Richtung ausgerichtet so gilt:
@@ -22,7 +22,7 @@ Es bildet sich ein E Feld von dem positiven Ladungspunkt zum negativen Ladungspu
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=4cm]{content/bilder/HerzDipolEMANTS37.pdf}%
-	\caption{Hertzscher Dipol}
+	\caption{Hertzscher Dipol mit dem Dipolmoment \textit{p(t)}}
 	\label{HerzDipol}
 \end{figure}
 
@@ -32,12 +32,10 @@ Es bildet sich ein E Feld von dem positiven Ladungspunkt zum negativen Ladungspu
 %	\caption{Wellenimpdedanz Z0}%
 %	\label{Z0_Grafik}
 %\end{figure}
-Die Ausrichtung der E Feldlinien wechselt bei jeder Schwingung ihre Richtung. Im Nahfeld dominiert das E Feld. Mit wachsendem Abstand sind das E Feld und das H Feld senkrecht aufeinander und in Phase. Dabei können das E und H Feld als ebene Welle betrachtet werden. Die allgemeine Formel für die Feldverteilung lautet:
+Die Ausrichtung der E Feldlinien wechselt bei jeder Schwingung ihre Richtung. Im Nahfeld dominiert das E Feld. Mit wachsendem Abstand sind das E Feld und das H Feld senkrecht aufeinander und in Phase. Dabei können das E und H Feld als ebene Welle betrachtet werden. Die allgemeine Formel für die Feldverteilung lautet \cite{elliott1981antenna}:
 
 
-%E_r=(I dl)/2π  e^(-jkR) (n/R^2 +1/(jωεR^3 ))cos(θ)
-%E_θ=(I dl)/4π  e^(-jkR) (jωμ/R+n/R^2 +1/(jωεR^3 ))sin(θ)
-%H_φ=(I dl)/4π  e^(-jkR) (jk/R+n/R^2 )sin(θ)
+
 \begin{equation}
 E_r= \frac{I dl}{2\pi}   e^{-jkR} \left( \frac{n}{R^{2}}  + \frac{1}{j\omega \epsilon R^{3}}\right) cos(\theta)
 \end{equation}
@@ -114,50 +112,50 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
-\begin{center}
-\begin{tikzpicture}
-	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
-	\draw (4,4) node[left] {0}-- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
-	\draw (4,4) -- (4,7.5)node at (3.7, 7.8) {Z};%Fadenkreuz z
-	
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (3.5, 3) node at (3.2, 3) {x};
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (6, 4) node at (6, 4.3) {y};
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (4, 7) node at (3.7, 7) {z};
-	
-	\draw[line width=0.5pt, style=dotted](3.5, 3) -- (5.5, 3);%Projektion y Rcihtung
-	\draw[line width=0.5pt, style=dotted](5.5, 3) -- (6, 4);%Projektion x Rcihtung
-	
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 3) node at (5.3, 3.5) {$\rho$};
-	
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 6) node at (5.5, 6.3) {$\vec{r}$};
-	
-	\draw[line width=0.5pt, style=dotted](5.5, 3) -- (5.5, 6);%Projektion p zu \vec{r}
-	\draw[line width=0.5pt, style=dotted](4, 7) -- (5.5, 6);%Projektion von z zur \vec{r}
-	
-	\coordinate (A) at (4, 5.5);
-	\coordinate (B) at (4.9, 5.3);
-	\coordinate (a) at (4.4, 5.6);
-	\draw[line width=0.5pt, cap=round,->](A) .. controls (a) .. (B) node at (4.4, 5.8){$\theta$};
-	
-	\coordinate (C) at (3.7, 3.4);
-	\coordinate (D) at (4.7, 3.5);
-	\coordinate (c) at (4.1, 3.3);
-	\draw[line width=0.5pt, cap=round,->](C) .. controls (c) .. (D) node at (4.2, 3.2){$\varphi$};
-	
-	%Einheitsvektoren
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.8) node at (6.5, 7) {$\vec{E_{r}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 5.6) node at (6.5, 5.4) {$\vec{E_{\theta}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.3) node at (6.5, 6.1) {$\vec{H_{\varphi}}  \vec{e}$};
-	
-	%Antenne dipol
-	\draw[line width=3pt] (4,4.1) -- (4,5.2);
-	\draw[line width=3pt] (4,3.9) -- (4,2.8);
-\end{tikzpicture}
-\end{center}
-\caption{Dipolantanne mit Feldvektor und Einheitsvektoren}
-\label{DipolEFerdVektor}
-\end{figure}
+%\begin{figure}[h]
+%\begin{center}
+%\begin{tikzpicture}
+%	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
+%	\draw (4,4) node[left] {0}-- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
+%	\draw (4,4) -- (4,7.5)node at (3.7, 7.8) {Z};%Fadenkreuz z
+%	
+%	\draw[line width=1pt, ->, >=latex](4, 4)  -- (3.5, 3) node at (3.2, 3) {x};
+%	\draw[line width=1pt, ->, >=latex](4, 4)  -- (6, 4) node at (6, 4.3) {y};
+%	\draw[line width=1pt, ->, >=latex](4, 4)  -- (4, 7) node at (3.7, 7) {z};
+%	
+%	\draw[line width=0.5pt, style=dotted](3.5, 3) -- (5.5, 3);%Projektion y Rcihtung
+%	\draw[line width=0.5pt, style=dotted](5.5, 3) -- (6, 4);%Projektion x Rcihtung
+%	
+%	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 3) node at (5.3, 3.5) {$\rho$};
+%	
+%	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 6) node at (5.5, 6.3) {$\vec{r}$};
+%	
+%	\draw[line width=0.5pt, style=dotted](5.5, 3) -- (5.5, 6);%Projektion p zu \vec{r}
+%	\draw[line width=0.5pt, style=dotted](4, 7) -- (5.5, 6);%Projektion von z zur \vec{r}
+%	
+%	\coordinate (A) at (4, 5.5);
+%	\coordinate (B) at (4.9, 5.3);
+%	\coordinate (a) at (4.4, 5.6);
+%	\draw[line width=0.5pt, cap=round,->](A) .. controls (a) .. (B) node at (4.4, 5.8){$\theta$};
+%	
+%	\coordinate (C) at (3.7, 3.4);
+%	\coordinate (D) at (4.7, 3.5);
+%	\coordinate (c) at (4.1, 3.3);
+%	\draw[line width=0.5pt, cap=round,->](C) .. controls (c) .. (D) node at (4.2, 3.2){$\varphi$};
+%	
+%	%Einheitsvektoren
+%	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.8) node at (6.5, 7) {$\vec{E_{r}}\vec{e}$};
+%	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 5.6) node at (6.5, 5.4) {$\vec{E_{\theta}}\vec{e}$};
+%	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.3) node at (6.5, 6.1) {$\vec{H_{\varphi}}  \vec{e}$};
+%	
+%	%Antenne dipol
+%	\draw[line width=3pt] (4,4.1) -- (4,5.2);
+%	\draw[line width=3pt] (4,3.9) -- (4,2.8);
+%\end{tikzpicture}
+%\end{center}
+%\caption{Dipolantanne mit Feldvektor und Einheitsvektoren}
+%\label{DipolEFerdVektor}
+%\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Fitzgeraldscher Dipol }\label{sec:FitzgeraldescherDipol}
@@ -168,11 +166,8 @@ Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromve
 	\caption{Fitzgeraldscher Dipol}
 	\label{FitzDipol}
 \end{figure}
-Wenn der Hertzsche Dipol eine E Feld Antenne genannt wird, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. Das Nahfeld des Fitzgeraldschen Dipols wird wie folgt beschrieben:
+Wenn der Hertzsche Dipol eine E Feld Antenne genannt wird, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. Das Nahfeld des Fitzgeraldschen Dipols wird wie folgt beschrieben\cite{elliott1981antenna}:
 
-%H_r=IS/2π  e^(-jkR) (jk/R^2 +1/R^3 )cos(θ)
-%H_θ=IS/4π  e^(-jkR) (-k^2/R+jk/R^2 +1/R^3 )sin(θ)
-%E_φ=nIS/4π  e^(-jkR) (k^2/R-jk/R^2 )sin(θ)
 \begin{equation}
 H_r= \frac{I S}{2\pi}   e^{-jkR} \left( \frac{jk}{R^{2}}  + \frac{1}{R^{3}} \right) cos(\theta)
 \end{equation}
@@ -183,6 +178,11 @@ H_\theta= \frac{I S}{4\pi}   e^{-jkR} \left(- \frac{k^{2}}{R}  + \frac{jk}{R^{2}
 
 \begin{equation}
 E_\phi= \frac{I S}{4\pi}   e^{-jkR} \left( \frac{k^{2}}{R}  - \frac{jk}{R^{2}} \right) sin(\theta)
+\end{equation}
+
+Das zeitabhänige magnetische Moment \textit{m(t)} ergiebtsich durch die Multiplikation der durch die Schleife aufgespannten Fläche $a^{2}\pi=S$ und dem konstanten Schleifenstrom $I$ der auf der ganzen Schleife denselben Wert $I$ hat. Dank der Annhanme des konstanten Storm kann wie in Gleichung \ref{eq:magnetischesMoment} das magneische Moment berechtet werden. 
+\begin{equation}\label{eq:magnetischesMoment}
+Ia^{2}\pi=IS=m
 \end{equation}
 
 Die Terme mit R in der zweiten oder dritten Potenz fallen für das Fernfeld weg. Da im Fernfeld der Radius R so gross ist, dass diese Terme vernachlässigt werden. 
@@ -252,7 +252,7 @@ Die Dipolantenne und die Rahmenantenne sind den beiden elementaren Strahlern nac
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Die Dipol Antenne}\label{sec:DipolAntenne}
-Der zentral gespeiste Dipol besteht meist aus runden Leiterstäben mit dem Durchmesser d, die so aneinander liegen, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe entspricht $2l>>d$. Wird eine Spannung  in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesammte Länge der  Stäbe. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird auch Transmission Line genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungnsunabhänige Kugelwelle betrachtet werden.
+Der zentral gespeiste Dipol besteht meist aus runden Leiterstäben mit dem Durchmesser d, die so aneinander liegen, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe entspricht $2l>>d$. Wird eine Spannung  in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesammte Länge der  Stäbe. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird auch Transmission Line genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungnsunabhänige Kugelwelle betrachtet werden \cite{elliott1981antenna}.
 %E^j(wt-kr)/4pimu^-1 r
 %Elliot Seite 29 Nr1.93
 \begin{equation}
@@ -391,7 +391,7 @@ P(\theta,\phi)=\frac{(kl)^{2}\eta I^{2}}{2(4\pi r)^{2}}sin^{2}\theta
 Die abgestrahlte Leistung eines kurzen Dipols bei dem über die ganze Kugeloberfläche mit dem Radius r integriert wurde kann mit
 %Ellito 2.19
 \begin{equation}\label{eq:Rrrad}
-R_{rad}=20(\frac{\pi L}{\lambda})^{2}
+R_{rad}=20 \left(\frac{\pi L}{\lambda} \right) ^{2}
 \end{equation}
 berechnet werden.\\
 
@@ -562,9 +562,74 @@ Weitere Annahmen sind:
 \item -94 dBm Empfangsempfindlichkeit bei 1Mbps und 0.1\% EBR des CC2541 von TI
 \end{itemize}
 \subsubsection{Linkbudget}
+Unter dem Link Budget versteht man die Summe aller Gewinne und Verluste vom Sender über das Übertragungsmedium bis hin zum Empfänger. Es beschreibt somit, welcher Signalpegel beim Empfänger nach Abzug aller Verluste ausgehend von der Sendeleistung noch  ankommt. Anhand dieses Werts und den technischen Angaben des Empfängers kann im voraus die maximal mögliche Datenrate berechnet werden. Wenn die Sendeleitung gesetzlich limitiert ist und die maximale Bit Fehler Rate bekannt ist kann sodie maximale Distanz oder die maximale Datenrate brechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. 
+Das Link Budget kann in der Theorie bei der Verwendung von Funkübertragung nahezu beliebig komplex gestaltet werden und eine  Reihe von weiteren Parametern beinhalten. In der Praxis hat sich für die Berechnung des Link Budgets bei Richtfunksystemen nach flogender Formel \ref{eq:LinkBudgetGelichung} bewährt.
 
-Das muss noch berechnet werden und in einer Tabelle zusammengefasst werden.\\
-Tabelle
+\begin{equation}
+P_{Rx} = P_{Tx}+L_{Tx}+G_{x}+L_{fs}+L_{Rx}+G_{r}+L_{div}\label{eq:LinkBudgetGelichung}
+\end{equation}
+
+
+Wobei $P_{Rx}$ für den zu berechnenden Empfangspegel in dBm steht.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite steht. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (engl. gain) der Empfangsantenne. $L_{fs}$ für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$ steht für diverse weitere Verluste wie z. B. Hindernisse und die Schwundreserve (engl. Fade Margin) in dB oder für eine System Reserve.  $L_{Rx}$ für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
+
+Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung (engl. Free Space Path Loss)  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung elektromagnetischer Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen   Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
+In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in den Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler die Gleiche ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler wird, desto mehr verteilt sich die Energie auf eine immer grösser werdende Oberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz.
+\cite{linkbudget}
+
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+	\draw[line width=1.5pt](0, 0) rectangle (2, 1) node[pos=0.5] {Sender};
+	\draw[line width=1.5pt] (2, 0.5) -- (2.5, 0.5);%zuleitung
+	\draw[line width=1.5pt] (2.5, 0.5) -- (2.5, 1.5);%Antennenmast
+	\draw[line width=1.5pt] (2.5, 1.5) -- (2.2, 2);%Antenne
+	\draw[line width=1.5pt] (2.5, 1.5) -- (2.8, 2);
+	\draw[line width=1.5pt] (2.5, 1.5) -- (2.5, 2);
+	
+	\draw[line width=1.5pt, <->, >=latex](6, 2)  -- (8, 2) node at (7, 2.5) {10 m Freiraum};
+	
+	\draw[line width=1.5pt] (9.5, 0.5) -- (10, 0.5);%zuleitung
+	\draw[line width=1.5pt] (9.5, 0.5) -- (9.5, 1.5);%Antennenmast
+	\draw[line width=1.5pt] (9.5, 1.5) -- (9.2, 2);%Antenne
+	\draw[line width=1.5pt] (9.5, 1.5) -- (9.8, 2);
+	\draw[line width=1.5pt] (9.5, 1.5) -- (9.5, 2);
+	\draw[line width=1.5pt,decorate,decoration=expanding waves](3, 2) -- (5, 2);
+	\draw[line width=1.5pt](10, 0) rectangle (12, 1) node[pos=0.5] {Empfänger};
+	%\node[draw,text] at (1,0.5) {Sender};
+%	\node[draw,text] at (9,0.5) {Empfenger};
+\end{tikzpicture}
+\end{center}
+\caption{Verbindungs Model}
+\label{fig:LinkModel}
+\end{figure}
+Die Abbildung \ref{fig:LinkModel} zeigt ein einfaches Verbinungsmodel einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigt Link Buget beschreibt eine Übretragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wrid. Es werden einige Vereinfachung getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1, das enstprich 0dBi angenommen. Es werden keine Polarisationsverluste berücksichtigt. Für die berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen.
+\begin{eqnarray}
+    	d_{0} 	&= x \\ \label{eq:d0_LinkBudget}
+    K		&= \left(\dfrac{\lambda}{4\pi d_{0}} \right)^{2}G_{x}G_{r} \\ \label{eq:K_LinkBudget}
+    P_{Rx} 	&= P_{Tx}K \left( \dfrac{d_{0}}{D}\right)^{\gamma} \\ \label{eq:Prx_LinkBudget}
+    L_{fs} 	&= \dfrac{P_{Tx}}{P_{Rx}} \\ \label{eq:Freiraumdaempfung}
+    L_{fs}(dB) 	&= 10\log_{10}(L_{fs}) \label{eq:Freiraumdaempfung_dB}
+\end{eqnarray}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l c r} \toprule 
+  Komponete                  	& 			&Leistungsbeitrag  \\ \midrule
+  Abgegebene Leitung    			&$P_{Tx}$ 	& 0dB       \\
+  Übergangsverluste              &$L_{Tx}$	& -3dB       \\
+  Gewinn der Sendeantenne    	&$G_{x}$		& zu bestimmen        \\
+  Ausbreitungsverluste   		& $F_{LS}$	& -60dB        \\
+  Gewinn empfangsantenne  		& $G_{r}$	& 0dB           \\
+  Polarisationsverluste          & 	& 0dB            \\
+  Übergangsverluste              & $L_{Rx}$	& -3dB            \\
+  Erwartete Leistung am Empfänger & $P_{Rx}$  & -66dBm  \\ \midrule
+  Systemreserve        			 & $L_{div}$&-6dBm \\ 
+  Minimal notwendiges Empfängersignal &$P_{Rx}^{'}$ & -72dB \\ \bottomrule
+  \end{tabular}
+  \caption{Linkbudget 10m Bluethooth Übertragung}
+  \label{tab:Linkbudget}
+\end{table}
+
 \subsection{Speisung}
 Unter der Speisung der Antenne wird die Leistungszufühung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
 \subsubsection{Quelle}
@@ -735,33 +800,6 @@ Nr. & Anforderung & Beschreibung & Wert & nicht erfüllt \\
 %• &  &  &  &  \\
 %\hline 
 \end{tabular} 
-
-\begin{figure}
-\begin{center}
-\begin{tikzpicture}
-	\draw[line width=1.5pt](0, 0) rectangle (2, 1) node[pos=0.5] {Sender};
-	\draw[line width=1.5pt] (2, 0.5) -- (2.5, 0.5);
-	\draw[line width=1.5pt] (2.5, 0.5) -- (2.5, 1.5);
-	\draw[line width=1.5pt] (2.5, 1.5) -- (2.2, 2);
-	\draw[line width=1.5pt] (2.5, 1.5) -- (2.8, 2);
-	\draw[line width=1.5pt] (2.5, 1.5) -- (2.5, 2);
-	
-	\draw[line width=1.5pt, <->, >=latex](6, 2)  -- (8, 2) node at (7, 2.5) {10 m Freiraum};
-	
-	\draw[line width=1.5pt] (9.5, 0.5) -- (9.5, 0.5);
-	\draw[line width=1.5pt] (9.5, 0.5) -- (9.5, 1.5);
-	\draw[line width=1.5pt] (9.5, 1.5) -- (9.2, 2);
-	\draw[line width=1.5pt] (9.5, 1.5) -- (9.8, 2);
-	\draw[line width=1.5pt] (9.5, 1.5) -- (9.5, 2);
-	\draw[line width=1.5pt,decorate,decoration=expanding waves](3, 2) -- (5, 2);
-	\draw[line width=1.5pt](10, 0) rectangle (12, 1) node[pos=0.5] {Empfänger};
-	%\node[draw,text] at (1,0.5) {Sender};
-%	\node[draw,text] at (9,0.5) {Empfenger};
-\end{tikzpicture}
-\end{center}
-\caption{Verbindungs Model}
-\label{LinkModel}
-\end{figure}
 
 \subsection{Analyse mit bekannten Modellen}
 \subsection{Neue Design Ansätze}

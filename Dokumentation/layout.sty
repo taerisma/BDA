@@ -162,7 +162,7 @@
 
 % citation
 \usepackage{cite}
-\usepackage{apacite}
+%\usepackage{apacite}%das beisst sich mit den nummern im Literaturverzeichniss
 
 % header, foote and page-layout
 \usepackage{fancyhdr}
@@ -202,11 +202,11 @@
 %paket für Tabellen
 \usepackage{booktabs}
 
-%Quellen
-%\bibliographystyle{alphadin}
+% Naturwissenschaftliche Bibliographien
+\usepackage[square, comma, numbers, sort&compress]{natbib}
+\bibliographystyle{abbrvnat}
+%\bibliographystyle{unsrt}
+\usepackage[nottoc]{tocbibind}
 
-%für zitate
-%\usepackage[round]{natbib}
 
 
-\bibliographystyle{plain}
