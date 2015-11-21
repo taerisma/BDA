@@ -7,45 +7,45 @@ Warning--string name "februar" is undefined
 --line 52 of file mydata.bib.bib
 Warning--to sort, need author or key in linkbudget
 Warning--empty year in linkbudget
-You've used 5 entries,
+You've used 6 entries,
             2773 wiz_defined-function locations,
-            626 strings with 5162 characters,
-and the built_in function-call counts, 1600 in all, are:
-= -- 145
+            631 strings with 5282 characters,
+and the built_in function-call counts, 1846 in all, are:
+= -- 174
 > -- 51
 < -- 5
-+ -- 20
++ -- 21
 - -- 15
-* -- 98
-:= -- 255
-add.period$ -- 22
-call.type$ -- 5
-change.case$ -- 17
-chr.to.int$ -- 5
-cite$ -- 13
-duplicate$ -- 91
-empty$ -- 155
+* -- 115
+:= -- 283
+add.period$ -- 25
+call.type$ -- 6
+change.case$ -- 20
+chr.to.int$ -- 6
+cite$ -- 15
+duplicate$ -- 108
+empty$ -- 184
 format.name$ -- 21
-if$ -- 336
+if$ -- 394
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 6
-newline$ -- 40
+newline$ -- 45
 num.names$ -- 16
-pop$ -- 53
+pop$ -- 61
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 18
 quote$ -- 0
-skip$ -- 61
+skip$ -- 72
 stack$ -- 0
-substring$ -- 11
-swap$ -- 5
+substring$ -- 15
+swap$ -- 7
 text.length$ -- 1
-text.prefix$ -- 0
+text.prefix$ -- 1
 top$ -- 0
-type$ -- 40
+type$ -- 51
 warning$ -- 2
 while$ -- 12
 width$ -- 0
-write$ -- 81
+write$ -- 93
 (There were 3 warnings)
