@@ -470,7 +470,7 @@ Als Beispiel, wenn $a/\lambda = 0.03$ ist, dann wird der $R_{rad} = 0.25 Ohm$. A
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
 \begin{tikzpicture}
 	\draw (0,3) node at (0.5,0.5) {xz Ebene} -- (10,3);%Fadenkreuz horizontal
@@ -491,7 +491,50 @@ Als Beispiel, wenn $a/\lambda = 0.03$ ist, dann wird der $R_{rad} = 0.25 Ohm$. A
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
 \subsection{Nah- und Fernfeld}
+Antennen sind Wellenwandler. Sie wandeln die ihnen zugeführte elektromagnetische Welle die elektromagnetische Energie die sich im Raum um die Antenne ausbreitet um. Die Zuführende Welle ist oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, Leiterbahn auf einem Leiterplatte oder einem Koaxialkabel erfolgen.  Für manche Antennen wird ein Hohlleiter, also Luft als Übertragungsmedium verwendet. 
+Der Antenne kommt die Aufgabe zu die Medium gebundene Welle in eine Raumwelle zu wandelt. Das bedeutet, die Leitergebunde Welle wird zu einer Freiraumwelle. Diese füllt den Raum um die Antenne aus. 
+Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \Omega$.
+Sie spezielle Ausführung der Antenne als Wellenwandlertyp hängt wesentlich vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer normalen Freiraumübertagungsstrecke ist die Distanz r zwischen dem Sender und dem Empfänger sehr gross, verglichen mit den Abmessungen der Sendeantennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort schein die Antennenstrahlung, in Bild xx charakterisiert durch den Vektor der elektromagnetischen Leistungsdichte S. Der Vektor ist wird auch Poynting Vektor genannt. Für den Empfänger scheint es, als ob die empfangene Elektromagnetische Strahlung von einem einzigen Punkt ausgeht. Dieser Entstehungspunkt wird Phasenzentrum genannt. Er ist die Quelle der Abgestrahlten elektromagnetischen Felder. Wenn diese Voraussetzungen vorliegen, berindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Die Fernfeldregion wird oft als Fernfeld bezeichnet. 
+Im Fernfeld gelten vereinfachte Beziehungen. Streng genommen liegen nur für die Distanzen von $r->\infty$ reine Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten als bereichsweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist eine ebene Welle für deren elektrische und magnetische Feldstärken die Beziehung :
+\begin{equation}
+E/H=120\pi\label{eq:WellenimpedanuE/H}
+\end{equation}
+
+gilt. Die Leistungsdichte S ergibt sich, wenn die Feldkomponenten E  und H senkrecht aufeinanderstehen und gleichphasig sind.
+\begin{equation}
+S=\dfrac{1}{2}EH=\dfrac{1}{2} E^{2}/F_{F0}\label{eq:LeistungsdichteS}
+\end{equation}
+
+
+Die E Feld und die H Feldkomponente sind dabei Scheitelwerte.
+Näherungsweise treten diese Gesetzmässigkeiten auch schon früher bei einem endlichen Abstand r von der Sendeantenne ein. Als Grenzwert für den Fernfeldabstand $r_{2}$ für den Beginn des Fernfeldregion  definiert man in der Praxis für Antennen mit einer grösseren geometrischen Abmessung $D_{0}$ näherungsweise:
+\begin{equation}
+r_{2}=\dfrac{2*D_{0}^{2}}{\lambda_{0}} \label{eq:Fernfelddistanz_r2}
+\end{equation}
+
+Die maximale Antennenabmessung ist als  definiert. Für sie gilt $D_{0}>\lambda_{0}$ . Für diese Antennen wird am Empfangsort das Phasenkriterium im Fernfeld eingehalten. Es besagt, dass der Phasenfehler der durch die Grösse der Antennenabmessungen entsteht nicht grösser ist als $\lambda_{0}/8$.  Die Gleichung \ref{eq:Fernfelddistanz_r2} berücksichtig das selbe Kriterium. Es besagt, dass der Weglängenunterschied $\Delta r$ zwischen zwei am Empfangsort einfallenden Strahlen, von denen der eine vom Antennenmittelpunkt und der andere vom Antennenrand ausgeht, der Bedingung
+\begin{equation}
+\Delta r\leqq\lambda_{0}/8 \label{eq:Phasenfehler}
+\end{equation}
+ genügt.  Das Gebiet zwischen dem Sender und der Empfänger kann in drei Regionen unterteilt werden. Diese sind Abhängig von der Distanz $r$ zum Sender. Es können keine klaren Grenzen gezogen werden. Die Übergänge sind fliessend. Zwischen der Sendeantenne und der Fernfeldregion liegt die Nahfeldregion oder kürzer das Nahfeld. Das Nahfeld kann in zwei Gebiete unterteilt werden. Es sind dies das Nahfeld und das Strahlende Nahfeld. Die Nahfeldregion, die unmittelbar die Antenne umschliesst, dominieren die reaktiven Feldkomponenten mit $r^{3}$ und $r^{2}$ abfallen.  Je nach Literatur ist die Grenze des Nahfeld zum strahlenden Nahfeld anders definiert. Nach dem Taschenbuch der Hochfrequenztechnik ist dieser Abstand $r_{1}$ erreicht wenn, $r_{1}$ der Formel entspricht.
+\begin{equation}
+R_{1}=0.62\sqrt{\dfrac{D_{0}^{3}}{\lambda_{0}}} \label{eq:Fernfelddistanz_kurzeAntenne}
+\end{equation}
+
+Die Bezieungen für die Nahfeldregionen sind von den maximalen Antennenabmessungen abhängig.  Die Definition in Formel \ref{eq:Fernfelddistanz_kurzeAntenne} gilt für Antenne die als maximale Abmessungen $D_{0}>\lambda_{0}$ nicht übersteigen.
+
+Für Dipol und Schleifenantennen deren Abmessungen wesentlich kleiner als eine Wellenlänge $\lambda_{0}$ liegen.  Bei diesen Antennen erstreckt sich das Nahfeld bis etwa einen Abstand von der Antenne von $r_{1}=\lambda_{0}/2pi$.
+
+Bei einer Freiraum–Übertragungsstrecke, bei der sich die Empfangsantenne im Fernfeld der Sendeantenne im Abstand $r$ befindet, erhält man für die Leistungsdichte am Ort der Empfangsantenne \cite{meinke1992taschenbuch}
+
+\begin{equation}
+S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\pi}\label{eq:LeistungsdichteS}
+\end{equation}
+
+%Dieser Zusammenhang ist auch im Kapitel yyy in der Gleichung xxx gezeigt.
+
 %
 %\begin{figure}
 %\begin{center}
