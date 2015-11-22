@@ -653,16 +653,16 @@ In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem St
 %	\node[draw,text] at (9,0.5) {Empfenger};
 \end{tikzpicture}
 \end{center}
-\caption{Verbindungs Model}
-\label{fig:LinkModel}
+\caption{Verbindungs Modell}
+\label{fig:LinkModell}
 \end{figure}
-Die Abbildung \ref{fig:LinkModel} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigt Link Budget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachung getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1, das entspricht 0dBi angenommen. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der "Connect 1" zur Anwendung kommende Texas Instruments CC2541 Chip angenommen.
+Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigt Link Budget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachung getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1, das entspricht 0dBi angenommen. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der "Connect 1" zur Anwendung kommende Texas Instruments CC2541 Chip angenommen.
 \begin{eqnarray}
-    	d_{0} 	&= x \\ \label{eq:d0_LinkBudget}
-    K		&= \left(\dfrac{\lambda}{4\pi d_{0}} \right)^{2}G_{x}G_{r} \\ \label{eq:K_LinkBudget}
-    P_{Rx} 	&= P_{Tx}K \left( \dfrac{d_{0}}{D}\right)^{\gamma} \\ \label{eq:Prx_LinkBudget}
-    L_{fs} 	&= \dfrac{P_{Tx}}{P_{Rx}} \\ \label{eq:Freiraumdaempfung}
-    L_{fs}(dB) 	&= 10\log_{10}(L_{fs}) \label{eq:Freiraumdaempfung_dB}
+    	d_{0} 	&=& x \\ \label{eq:d0_LinkBudget}
+    K		&=& \left(\dfrac{\lambda}{4\pi d_{0}} \right)^{2}G_{x}G_{r} \\ \label{eq:K_LinkBudget}
+    P_{Rx} 	&=& P_{Tx}K \left( \dfrac{d_{0}}{D}\right)^{\gamma} \\ \label{eq:Prx_LinkBudget}
+    L_{fs} 	&=& \dfrac{P_{Tx}}{P_{Rx}} \\ \label{eq:Freiraumdaempfung}
+    L_{fs}(dB) 	&=& 10\log_{10}(L_{fs}) \label{eq:Freiraumdaempfung_dB}
 \end{eqnarray}
 
 
@@ -684,18 +684,198 @@ Die Abbildung \ref{fig:LinkModel} zeigt ein einfaches Verbindungsmodell einer Ri
   \caption{Linkbudget 10m Bluetooth Übertragung}
   \label{tab:Linkbudget}
 \end{table}
-
-
-\subsection{Speisung}
-Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%Quelle&%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \subsection{Quelle}
-Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz der Quellen kann sehr unterschiedlich sein. Oft findet sich am Quellenausgang ein Anpassungsnetzwerk um die Quellenimpedanz an die Leitungsimpedanz anzupassen.
+Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz von Quellen kann sehr unterschiedlich sein. Oft findet sich am Quellenausgang ein Anpassungsnetzwerk, um die Quellenimpedanz an die Leitungsimpedanz anzupassen. Die in der Hochfrequenztechnik verwendeten Quellen haben oft einen Innenwiderstand von $50\Omega$. Die Abbildung \ref{fig:asymetrischeQuelle} zeigt eine asymmetrische  Hochfrequenzquelle. Einer der beiden Anschlüsse wird als Massenpotential definiert, der andere Anschluss führt das gewünschte Signal. 
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
+	\draw[line width=1.5pt] (3, 5) -- (4.5, 5);
+	%\draw[line width=1.5pt] (3, 2) -- (7, 2);
+	\draw[line width=1.5pt, -*](3, 2)  -- (7, 2);
+	\draw[line width=1.5pt] (3, 2) -- (3, 3);
+	\draw[line width=1.5pt] (3, 4) -- (3, 5);
+	\draw[line width=1.5pt](4.5, 4.75) rectangle (5.5, 5.25) node at (5, 5.5) {Rq} node at (5, 4.5) {50 Ohm};
+	%\draw[line width=1.5pt] (5.5, 5) -- (7, 5);
+	\draw[line width=1.5pt, -*](5.5, 5)  -- (7, 5);
+	\draw[line width=1.5pt, decorate, decoration=snake](8, 5) -- (9, 5) node at (8.5, 5.5) {Signal der Quelle};
+	\draw[line width=1.5pt](2, 1.5) rectangle (6.5, 6) ;%Quellenramen
+	\draw[line width=1.5pt] (7, 2) -- (8, 2);%Masse Strich horizontal
+	\draw[line width=1.5pt] (8, 2) -- (8, 1.5);%Masse Strich vertikal
+	\draw[line width=1pt] (7.5, 1.5) -- (8.5, 1.5);%Masse Strich horizontal kurz
+	\draw[line width=1pt] (7.7, 1.3) -- (8.3, 1.3);%Masse Strich horizontal kurz
+	\draw[line width=1pt] (7.9, 1.1) -- (8.1, 1.1);%Masse Strich horizontal kurz
+	\end{tikzpicture}
+	\end{center}
+\caption{ESB einer asymetrischen Quelle}
+\label{fig:asymetrischeQuelle}
+\end{figure}
+
+Symmetrische Quellen haben zwei oder drei Anschlusspunkte. Sie übertragen das HF Signal auf zwei Leitungen. Die Signalform ist um 180$^\circ$ auf den beiden Leitungen zu einander verschoben. Eine symmetrische Quelle ist in der Abbildung \ref{fig:symetrischeQuelle} dargestellt.
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
+	\draw[line width=1.5pt] (3, 5) -- (4.5, 5);
+	%\draw[line width=1.5pt] (3, 2) -- (7, 2);
+	\draw[line width=1.5pt, -*](3, 2)  -- (8, 2);
+	\draw[line width=1.5pt] (3, 2) -- (3, 3);
+	\draw[line width=1.5pt] (3, 4) -- (3, 5);
+	%\draw[line width=1.5pt](4.5, 4.75) rectangle (5.5, 5.25) node at (5, 5.5) {Rq} node at (5, 4.5) {50 Ohm};
+	\draw[line width=1.5pt] (4.5, 4) -- (4.5, 6);%Spliter
+	\draw[line width=1.5pt] (4.5, 6) -- (5.5, 6);%Spliter oben
+	\draw[line width=1.5pt] (4.5, 4) -- (5.5, 4);%Spliter unten
+	\draw[line width=1.5pt] (5.5, 5.5) -- (5.5, 6.5);%Verstärker hinten
+	\draw[line width=1.5pt] (5.5, 6.5) -- (6.5, 6);%obenaben
+	\draw[line width=1.5pt] (5.5, 5.5) -- (6.5, 6);%untenufen
+	\draw[line width=1.5pt] (5.5, 3.5) -- (5.5, 4.5);%Inverter hinten
+	\draw[line width=1.5pt] (5.5, 4.5) -- (6.5, 4);%obenaben
+	\draw[line width=1.5pt] (5.5, 3.5) -- (6.5, 4);%untenufen
+	\draw[line width=1.5pt, -*](6.5, 6)  -- (8, 6);%Siganlpfad oben
+	\draw[line width=1.5pt](6.6, 4) circle (0.1);
+	\draw[line width=1.5pt, -*](6.7, 4)  -- (8, 4);%Siganlpfad unten
+	\draw[line width=1.5pt, decorate, decoration=snake](9, 6) -- (10, 6) node at (9.5, 6.5) {Signal der Quelle};
+	\draw[line width=1.5pt, decorate, decoration=snake](9, 4) -- (10, 4) node at (9.5, 4.5) {Signal der Quelle invertiert};
+	\draw[line width=1.5pt](2, 1.5) rectangle (7, 7) ;%Quellenramen
+	\draw[line width=1.5pt] (8, 2) -- (9, 2);%Masse Strich horizontal
+	\draw[line width=1.5pt] (9, 2) -- (9, 1.5);%Masse Strich vertikal
+	\draw[line width=1pt] (8.5, 1.5) -- (9.5, 1.5);%Masse Strich horizontal kurz
+	\draw[line width=1pt] (8.7, 1.3) -- (9.3, 1.3);%Masse Strich horizontal kurz
+	\draw[line width=1pt] (8.9, 1.1) -- (9.1, 1.1);%Masse Strich horizontal kurz
+	\end{tikzpicture}
+	\end{center}
+\caption{ESB einer symetrischen Quelle}
+\label{fig:symetrischeQuelle}
+\end{figure}
 \subsection{Zuleitung}
 Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialkabelleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
+Weiter Verbindungstypen sind:
+\begin{itemize}
+\item Drahtverbindung
+\item Koaxialkabel
+\item Leiterbahn
+\item Hohlleiter
+\item Galsfaserleiter
+\end{itemize}
+An dieser Stelle soll genauer auf die elektrische leitergebundene Übertragung eingegangen werden.
+Leitungen gehören zu den wichtigsten Ubertragungsmedien der Nachrichtentechnik. Sie leiten fast mit Lichtgeschwindigkeit elektromagnetische Wellen vom Sende- zum Empfangsort.
+Bei Gleichstrom und sehr niedrigen Frequenzen kann eine Leitung im allgemeinen als ideal
+oder mit einem rein ohmschen Verhalten angenommen werden. Man macht keine grossen
+Fehler, wenn man Signalverläufe am Eingang und am Ausgang als gleich und gleichzeitig
+ansieht. Kommt aber die physikalische Länge der Leitung in die Grössenordnung der Wellenlänge
+der Schwingung, oder die Anstiegszeit eines Impulses in die Grössenordnung der
+Ausbreitungsverzögerung, dann kann die Ausgangsspannung vällig anders aussehen als die
+Eingangsspannung. Die Leitung muss jetzt als Zweitor mit frequenzabhängigen Eigenschaften
+betrachtet werden.
+Ein geeignetes Konzept fur das Verständnis ist der Begriff der elektrischen Länge:
+\begin{equation}
+Elektrische Länge=\dfrac{l}{\lambda}\label{eq:ElektrischeLänge}
+\end{equation}
+
+Dabei ist $l$ die länge der Leitung und $\lambda$ gibt die Wellenlänge des Siganles auf der Leitung mit der Länge $l$. 
+
+Zur Analyse ob eine Leitung strahlt, das heisst, die Leitung muss als frequeznabäniges Zweitor betrachtet werden, werden zwei Fälle unterschieden.\\
+Ist die $Elektrische Länge=\dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klasischen schaltungstheorie behandelt wreden. Die Leitung wird meist als verlustlos und reflexionsfrei betrachtet.\\
+Ein etwas anders Bild zeigt sich, wenn die $Elektrische Länge=\dfrac{l}{\lambda}>\dfrac{1}{20}$ enspricht. Die Phänomene der elektromagnetischen Wennen werden wirksam. Die Leitungen müssen mit ihren frequenzabhänigen Eigenschaft behandelt werden. 
+Geht man von einer idalen Wellenausbreitung aus bei der keine Verluste vorkommen, so ist die Wellenänge $\lambda$ mit der Signalfrequenz $f$ mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeS} verknüpft.
+\begin{equation}
+\lambda_{0}=\dfrac{c}{f}\label{eq:WellenlängeMITc}
+\end{equation}
+Da eine Leitugn immer etwas Verlustbehaftet ist, kann die Ausbreitung einer Welle im Leitermedium nie der Lichtgeschwindigketi $c$ enstprechen. Daher gilt:
+\begin{equation}
+\lambda=\dfrac{v}{f}\label{eq:WellenlängeMITv}
+\end{equation}
+Die Signalgeschwindigkeit $v$ geteilt durch die Anzahl Schwingungen pro Sekunde ergibt die Wellenlänge $\lambda$ im Medium.
+
+Für die Gleichungen \ref{eq:ElektrischeLänge}, \ref{eq:WellenlängeMITc} und \ref{eq:WellenlängeMITv} gilt:
+\begin{enumerate}[leftmargin=2cm]
+   \item[] l: Leitungslänge [m] 
+   \item[] $\lambda$: Wellenlänge  [m] 
+   \item[] $f$: Frequenz (Hz) [1/s] 
+   \item[] $c$: Lichtgeschwindigkeit  [m/s] 
+   \item[] $v$: Geschwindigkeit  [m/s] 
+\end{enumerate} 
+Besonders vorteilhafte Ubertragungseigenschaften hat die längshomogene Leitung. Es handelt
+sich dabei um eine Leitung, die auf ihrer ganzen Länge konstanten Leitungsquerschnitt, gleiches
+Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator hat. Gebräuchliche
+Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, eine Streifenleitung auf
+einer Printplatte oder das Koaxialkabel.
+\subsubsection{Leitungsmodell}
+Um die Zweitoreigenschaften einer längshomogenen Leitung zu ermitteln, wird diese wie in
+Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren. Es ist von einer Zweitorkette die Rede.
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+	%unten
+	\draw[line width=0.5pt, *-*](2, 2)  -- (3.5, 2);
+	\draw[line width=0.5pt, -*](3.5, 2)  -- (5, 2);
+	\draw[line width=0.5pt, -*](5, 2)  -- (6.5, 2) ;
+	\draw[line width=0.5pt, -*](6.5, 2)  -- (8, 2);
+	\draw[line width=0.5pt, -*](8, 2)  -- (9.5, 2);
+	%oben
+	\draw[line width=0.5pt, *-*](2, 3.5)  -- (3.5, 3.5);
+	\draw[line width=0.5pt, -*](3.5, 3.5)  -- (5, 3.5);
+	\draw[line width=0.5pt, -*](5, 3.5)  -- (6.5, 3.5) node at (5.75,4) {$\Delta z$};
+	\draw[line width=0.5pt, -*](6.5, 3.5)  -- (8, 3.5);
+	\draw[line width=0.5pt, -*](8, 3.5)  -- (9.5, 3.5)node at (5.75,4) {n};
+	\draw[line width=1.5pt, ->, >=latex](2, 3.2) -- (2, 2.3) node at (1.5,2.75) {$\underline{U_{1}}$};
+	\draw[line width=1.5pt, ->, >=latex](9.5, 3.2) -- (9.5, 2.3) node at (10,2.75) {$\underline{U_{2}}$};
+	%vertikal gepunktete linien
+	\draw[line width=0.5pt, style=dashed](3.4, 2) -- (3.4, 3.5);%vertikal gepunktete Linie
+	\draw[line width=0.5pt, style= dashed](4.9, 2) -- (4.9, 3.5);%vertikal gepunktete Linie
+	\draw[line width=0.5pt, style= dashed](6.4, 2) -- (6.4, 3.5);%vertikal gepunktete Linie
+	\draw[line width=0.5pt, style=dashed](7.9, 2) -- (7.9, 3.5);%vertikal gepunktete Linie
+	\end{tikzpicture}
+	\end{center}
+\caption{Leitungsmodell eine Kette von Zweitoren}
+\label{fig:LeitungsmodellZweitorKette}
+\end{figure}
+Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette}gezeigt ist, kann die Leiterlänge durch $geteilt werden$. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ Lange Leiterstücke. Betrachtet man ein kurzes Leitungsstuck mit der Länge $\Delta z = 1/n$ , so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\phi = i  \Delta L$. \\
+Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern. Die Folge davon ist ein elektrisches Feld und eine Oberflächenladung $Q = u  \Delta C$ auf den Leitern \cite{Emant}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=11cm]{content/bilder/Leiterstueck.pdf}%
+	\caption{Ersatzschaltbild eines elementaren Leiterstücks}
+	\label{fig:ESBLeiterstueck}
+\end{figure}
+
+Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leitungsbeläge ausdrücken. Die Gleichung \ref{eq:InduktiverLeitungsbelag} gibt den induktiven Leitungsbelag an. Die Gleichung \ref{eq:KapazitiverLeitungsbelag} zeigt den kapazitiven Leitungsbelag.
+\begin{equation}
+L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
+\end{equation}
+\begin{equation}
+C'=\dfrac{\Delta C}{\Delta z}\label{eq:KapazitiverLeitungsbelag}
+\end{equation}
+
+Werden zudem die ohmschen Verluste im Leiter und allfällige dielektrische Verluste in der Isolation als Wirkwiderstäde dargestellt, so lässt sich das Ersatzschaltbild einer Leitung gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
+Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitungsbelag} und die Abbildung \ref{fig:ESBLeiterstueck} gilt:
+\begin{enumerate}[leftmargin=2cm]
+   \item[] $R'$: Ohmsche Leiterverlust/m [$\Omega/m$] 
+   \item[] $L'$: Serieinduktivität/m  [$H/m$] 
+   \item[] $G'$: Dieelektrische Verluste/m  [$S/m$] 
+   \item[] $C'$: Kapazität zwischen den Leiten/m  [$F/m$] 
+   \item[] $\Delta m$: Abschnittlänge  [$m$] 
+\end{enumerate} 
+
+Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts enztang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen Z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beligigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT}berechnet werden.
+\begin{eqnarray}\label{eq:UvonZundT}
+U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
+\end{eqnarray}
+\begin{eqnarray}\label{eq:IvonZundT}
+I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\omega t \beta z)}
+\end{eqnarray}
+
 \subsection{Anpassung}
 Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf, wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteils ansteht. 
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von Zein und Zaus die Rede.
 Es gibt zwei Arten von Anpassung.
+\subsection{Speisung}
+Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
 
 \begin{itemize}
 \item 	Leistungsanpassung
