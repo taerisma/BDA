@@ -18,7 +18,7 @@ Es bildet sich ein E Feld von dem positiven Ladungspunkt zum negativen Ladungspu
 %\end{minipage}
 %\end{center}
 
-
+\todo{ev Dipol neu Zeichen}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=4cm]{content/bilder/HerzDipolEMANTS37.pdf}%
@@ -167,6 +167,7 @@ Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromve
 	\label{FitzDipol}
 \end{figure}
 Wenn der Hertzsche Dipol eine E Feld Antenne genannt wird, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. Das Nahfeld des Fitzgeraldschen Dipols wird wie folgt beschrieben\cite{elliott1981antenna}:
+\todo{fitz Dipol Bild neu Zeichen}
 
 \begin{equation}
 H_r= \frac{I S}{2\pi}   e^{-jkR} \left( \frac{jk}{R^{2}}  + \frac{1}{R^{3}} \right) cos(\theta)
@@ -687,11 +688,11 @@ Die Abbildung \ref{fig:LinkModel} zeigt ein einfaches Verbindungsmodell einer Ri
 
 \subsection{Speisung}
 Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
-\subsubsection{Quelle}
+\subsection{Quelle}
 Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz der Quellen kann sehr unterschiedlich sein. Oft findet sich am Quellenausgang ein Anpassungsnetzwerk um die Quellenimpedanz an die Leitungsimpedanz anzupassen.
-\subsubsection{Zuleitung}
+\subsection{Zuleitung}
 Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialkabelleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
-\subsubsection{Anpassung}
+\subsection{Anpassung}
 Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf, wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteils ansteht. 
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von Zein und Zaus die Rede.
 Es gibt zwei Arten von Anpassung.
@@ -804,60 +805,3 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 \label{AnpassungQuelleAntenne}
 \end{figure}
 
-\newpage
-\section{Design}
-\subsection{Anforderungen}
-Das Design des Antennensystems wird für einen Anwendungsfall im Freiraum dimensioniert. Die Distanz zwischen Sender und Empfänger soll 10 Meter betragen. Das Übertragungsmedium ist Luft, kann aber idealisiert als Vakuum angenommen werden. Das System soll isotrop abstrahlen und der Gewinn der Empfangsantenne kann mit einem Faktor  1 angenommen werden. Die Antenne soll symmetrisch gespiesen werden und im 2.4 GHz ISM Band arbeiten. Als Quelle dient ein Bluetooth Low Energie Texas Instruments CC2541 Chip mit 0 dBm als Sendeleistung. Als Designkriterien wird eine S11 Dämpfung von 10 dB und eine Reserve von 6 dB dienen.
-
-
-%\subsection{Technische Spezifikationen und Anforderungsliste}
-%%\todo{Anforderungskatalogs mit Fest-, Mindest- \& Wunschforderungen}
-%\begin{itemize}
-%\item Geräte Connect 1
-%\item Materialien des Gehäuse ABS Kusnstoff
-%\item Volumen des Antennensystems
-%\item Wirkungsradius 10m im Freiraum
-%\item Richtcharakteristik isotroph
-%\item Polarisation linear
-%\item Antennen Wirkungsgrad ist zubestimmen
-%\item Antennen Gewinn gleich wir der Abstrahl Wirkungsgrad
-%\item minimaler Empfangspegel am Transceivers
-%\item Transceivers Baustein Texas Instruments CC2541
-%\item Sendeleistung
-%\item $S_{11} \leq$ 10 dB
-%\end{itemize}
-
-\begin{tabular}{l|c|c|c|c}
-\hline 
-Nr. & Anforderung & Beschreibung & Wert & nicht erfüllt \\ 
-\hline 
-\hline 
-001 & f & ISM Frequenzbereich  & 2.4-2.5 GHz & \\ 
-\hline 
-002 & f & Handgerät lxbxh & lxbxh &   \\ 
-\hline 
-003 & f & symmetrische Speisung des Antennensystems &  \\ 
-\hline 
-004 & f & Reflexionskoeffizient der Antenne S11 & 10dB & \\ 
-\hline 
-005 & f & Funkdistanz, Arbeitsradius & 10m &  \\ 
-\hline 
-006 & f & Linkbudget Reserve & 6dB &  \\ 
-%• &  &  &  &  \\ 
-%\hline 
-%• &  &  &  &  \\
-%\hline 
-%• &  &  &  &  \\ 
-%\hline 
-%• &  &  &  &  \\ 
-%\hline 
-%• &  &  &  &  \\ 
-%\hline
-%• &  &  &  &  \\ 
-%\hline 
-%• &  &  &  &  \\
-%\hline 
-\end{tabular} 
-
-\subsection{Analyse mit bekannten Modellen}
-\subsection{Neue Design Ansätze}
