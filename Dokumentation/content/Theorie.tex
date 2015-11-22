@@ -494,11 +494,12 @@ Als Beispiel, wenn $a/\lambda = 0.03$ ist, dann wird der $R_{rad} = 0.25 Ohm$. A
 
 \newpage
 \subsection{Nah- und Fernfeld}
-Antennen sind Wellenwandler. Sie wandeln die ihnen zugeführte elektromagnetische Welle die elektromagnetische Energie die sich im Raum um die Antenne ausbreitet um. Die Zuführende Welle ist oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, Leiterbahn auf einem Leiterplatte oder einem Koaxialkabel erfolgen.  Für manche Antennen wird ein Hohlleiter, also Luft als Übertragungsmedium verwendet. 
-Der Antenne kommt die Aufgabe zu die Medium gebundene Welle in eine Raumwelle zu wandelt. Das bedeutet, die Leitergebunde Welle wird zu einer Freiraumwelle. Diese füllt den Raum um die Antenne aus. 
-Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \Omega$.
-Sie spezielle Ausführung der Antenne als Wellenwandlertyp hängt wesentlich vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer normalen Freiraumübertagungsstrecke ist die Distanz r zwischen dem Sender und dem Empfänger sehr gross, verglichen mit den Abmessungen der Sendeantennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort schein die Antennenstrahlung, in Bild xx charakterisiert durch den Vektor der elektromagnetischen Leistungsdichte S. Der Vektor ist wird auch Poynting Vektor genannt. Für den Empfänger scheint es, als ob die empfangene Elektromagnetische Strahlung von einem einzigen Punkt ausgeht. Dieser Entstehungspunkt wird Phasenzentrum genannt. Er ist die Quelle der Abgestrahlten elektromagnetischen Felder. Wenn diese Voraussetzungen vorliegen, berindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Die Fernfeldregion wird oft als Fernfeld bezeichnet. 
-Im Fernfeld gelten vereinfachte Beziehungen. Streng genommen liegen nur für die Distanzen von $r->\infty$ reine Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten als bereichsweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist eine ebene Welle für deren elektrische und magnetische Feldstärken die Beziehung :
+Antennen sind Wellenwandler. Sie wandeln die ihnen zugeführte elektromagnetische Welle in die elektromagnetische Energie, die sich im Raum um die Antenne ausbreit, um. Die zuführende Welle ist oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, Leiterbahn auf einer Leiterplatte oder einem Koaxialkabel erfolgen.  Für manche Antennen wird ein Hohlleiter, also Luft als Übertragungsmedium als Zuleitung verwendet . 
+Der Antenne kommt die Aufgabe zu, die Medium gebundene Welle in eine Raumwelle zu wandeln. Das bedeutet, die leitergebundene Welle wird zu einer Freiraumwelle. Diese füllt den Raum um die Antenne aus. 
+Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \Omega$ an.
+Eine spezielle Ausführung der Antenne als Wellenwandlertyp hängt im wesentlichen vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer normalen Freiraumübertagungsstrecke ist die Distanz r zwischen dem Sender und dem Empfänger sehr gross, verglichen mit den Abmessungen der Sendeantennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort scheint die Antennenstrahlung in Bild xx charakterisiert durch den Vektor der elektromagnetischen Leistungsdichte S. Der Vektor  wird auch Poynting Vektor genannt. Für den Empfänger scheint es, als ob die empfangene elektromagnetische Strahlung von einem einzigen Punkt ausgeht. Dieser Entstehungspunkt wird Phasenzentrum genannt. Er ist die Quelle der abgestrahlten elektromagnetischen Felder. Wenn diese Voraussetzungen vorliegen, befindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Die Fernfeldregion wird kurz als Fernfeld bezeichnet. 
+Im Fernfeld gelten vereinfachte Beziehungen. Streng genommen liegen nur für die Distanzen von $r->\infty$ reine Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten  bereichsweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist eine ebene Welle für deren elektrische und magnetische Feldstärken die Beziehung :
+\todo{Text Bild xx}
 \begin{equation}
 E/H=120\pi\label{eq:WellenimpedanuE/H}
 \end{equation}
@@ -509,26 +510,27 @@ S=\dfrac{1}{2}EH=\dfrac{1}{2} E^{2}/F_{F0}\label{eq:LeistungsdichteS}
 \end{equation}
 
 
-Die E Feld und die H Feldkomponente sind dabei Scheitelwerte.
+Die E Feld- und die H Feldkomponente sind dabei Scheitelwerte.
 Näherungsweise treten diese Gesetzmässigkeiten auch schon früher bei einem endlichen Abstand r von der Sendeantenne ein. Als Grenzwert für den Fernfeldabstand $r_{2}$ für den Beginn des Fernfeldregion  definiert man in der Praxis für Antennen mit einer grösseren geometrischen Abmessung $D_{0}$ näherungsweise:
 \begin{equation}
 r_{2}=\dfrac{2*D_{0}^{2}}{\lambda_{0}} \label{eq:Fernfelddistanz_r2}
 \end{equation}
 
-Die maximale Antennenabmessung ist als  definiert. Für sie gilt $D_{0}>\lambda_{0}$ . Für diese Antennen wird am Empfangsort das Phasenkriterium im Fernfeld eingehalten. Es besagt, dass der Phasenfehler der durch die Grösse der Antennenabmessungen entsteht nicht grösser ist als $\lambda_{0}/8$.  Die Gleichung \ref{eq:Fernfelddistanz_r2} berücksichtig das selbe Kriterium. Es besagt, dass der Weglängenunterschied $\Delta r$ zwischen zwei am Empfangsort einfallenden Strahlen, von denen der eine vom Antennenmittelpunkt und der andere vom Antennenrand ausgeht, der Bedingung
+Die maximale Antennenabmessung ist als $D_{0}$ definiert. Für sie gilt $D_{0}>\lambda_{0}$ . Für diese Antennen wird am Empfangsort das Phasenkriterium im Fernfeld eingehalten. Es besagt, dass der Phasenfehler der durch die Grösse der Antennenabmessungen entsteht, nicht grösser ist als $\lambda_{0}/8$.  Die Gleichung \ref{eq:Fernfelddistanz_r2} berücksichtigt dasselbe Kriterium. Es besagt, dass der Weglängenunterschied $\Delta r$ zwischen zwei am Empfangsort einfallenden Strahlen, von denen der eine vom Antennenmittelpunkt und der andere vom Antennenrand ausgeht, der Bedingung in der Gleichung \ref{eq:Phasenfehler} genügt.
 \begin{equation}
 \Delta r\leqq\lambda_{0}/8 \label{eq:Phasenfehler}
 \end{equation}
- genügt.  Das Gebiet zwischen dem Sender und der Empfänger kann in drei Regionen unterteilt werden. Diese sind Abhängig von der Distanz $r$ zum Sender. Es können keine klaren Grenzen gezogen werden. Die Übergänge sind fliessend. Zwischen der Sendeantenne und der Fernfeldregion liegt die Nahfeldregion oder kürzer das Nahfeld. Das Nahfeld kann in zwei Gebiete unterteilt werden. Es sind dies das Nahfeld und das Strahlende Nahfeld. Die Nahfeldregion, die unmittelbar die Antenne umschliesst, dominieren die reaktiven Feldkomponenten mit $r^{3}$ und $r^{2}$ abfallen.  Je nach Literatur ist die Grenze des Nahfeld zum strahlenden Nahfeld anders definiert. Nach dem Taschenbuch der Hochfrequenztechnik ist dieser Abstand $r_{1}$ erreicht wenn, $r_{1}$ der Formel entspricht.
+Das Gebiet zwischen dem Sender und dem Empfänger kann in drei Regionen unterteilt werden. Diese sind abhängig von der Distanz $r$ zum Sender. Es können keine klaren Grenzen gezogen werden. Die Übergänge sind fliessend. Zwischen der Sendeantenne und der Fernfeldregion liegt die Nahfeldregion oder kürzer das Nahfeld. Das Nahfeld kann in zwei Gebiete unterteilt werden. Es sind dies das Nahfeld und das strahlende Nahfeld. In der  Nahfeldregion, die unmittelbar die Antenne umschliesst, dominieren die reaktiven Feldkomponenten, die mit $r^{3}$ und $r^{2}$ abfallen.  Je nach Literatur ist die Grenze des Nahfeld zum strahlenden Nahfeld anders definiert. Nach dem Taschenbuch der Hochfrequenztechnik ist dieser Abstand $r_{1}$ erreicht, wenn $r_{1}$ der Formel \ref{eq:Fernfelddistanz_kurzeAntenne} entspricht.
+\todo{Quelle}
 \begin{equation}
 R_{1}=0.62\sqrt{\dfrac{D_{0}^{3}}{\lambda_{0}}} \label{eq:Fernfelddistanz_kurzeAntenne}
 \end{equation}
 
-Die Bezieungen für die Nahfeldregionen sind von den maximalen Antennenabmessungen abhängig.  Die Definition in Formel \ref{eq:Fernfelddistanz_kurzeAntenne} gilt für Antenne die als maximale Abmessungen $D_{0}>\lambda_{0}$ nicht übersteigen.
+Die Beziehungen für die Nahfeldregionen sind von den maximalen Antennenabmessungen abhängig.  Die Definition in Formel \ref{eq:Fernfelddistanz_kurzeAntenne} gilt für Antennen, die als maximale Abmessung $D_{0}>\lambda_{0}$ nicht übersteigt.
 
-Für Dipol und Schleifenantennen deren Abmessungen wesentlich kleiner als eine Wellenlänge $\lambda_{0}$ liegen.  Bei diesen Antennen erstreckt sich das Nahfeld bis etwa einen Abstand von der Antenne von $r_{1}=\lambda_{0}/2pi$.
+Für Dipol und Schleifenantennen, deren Abmessungen wesentlich kleiner als eine Wellenlänge $\lambda_{0}$ sind, erstreckt sich das Nahfeld bis etwa einen Abstand   $r_{1}=\lambda_{0}/2pi$ von der Antenne.
 
-Bei einer Freiraum–Übertragungsstrecke, bei der sich die Empfangsantenne im Fernfeld der Sendeantenne im Abstand $r$ befindet, erhält man für die Leistungsdichte am Ort der Empfangsantenne \cite{meinke1992taschenbuch}
+Bei einer Freiraumübertragungsstrecke, bei der sich die Empfangsantenne im Fernfeld der Sendeantenne im Abstand $r$ befindet, erhält man für die Leistungsdichte am Ort der Empfangsantenne \cite{meinke1992taschenbuch}.
 
 \begin{equation}
 S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\pi}\label{eq:LeistungsdichteS}
@@ -612,21 +614,21 @@ Weitere Annahmen sind:
 \end{itemize}
 
 \subsubsection{Linkbudget}
-Unter dem Link Budget versteht man die Summe aller Gewinne und Verluste vom Sender über das Übertragungsmedium bis hin zum Empfänger. Es beschreibt somit, welcher Signalpegel beim Empfänger nach Abzug aller Verluste ausgehend von der Sendeleistung noch  ankommt. Anhand dieses Werts und den technischen Angaben des Empfängers kann im Voraus die maximal mögliche Datenrate berechnet werden. Wenn die Sendeleitung gesetzlich limitiert ist und die maximale Bit Fehler Rate bekannt ist, kann die maximale Distanz oder die maximale Datenrate berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. 
-Das Link Budget kann in der Theorie bei der Verwendung von Funkübertragung nahezu beliebig komplex gestaltet werden und eine  Reihe von weiteren Parametern beinhalten. In der Praxis hat sich für die Berechnung des Link Budgets bei Richtfunksystemen nach folgender Formel \ref{eq:LinkBudgetGelichung} bewährt.
+Unter dem Linkbudget versteht man die Summe aller Gewinne und Verluste vom Sender über das Übertragungsmedium bis hin zum Empfänger. Es beschreibt somit, welcher Signalpegel beim Empfänger nach Abzug aller Verluste ausgehend von der Sendeleistung ankommt. Anhand dieses Wertes und den technischen Angaben des Empfängers kann im voraus die maximal mögliche Datenrate berechnet werden. Wenn die Sendeleitung gesetzlich limitiert ist und die maximale Bit Fehler Rate (EBR) bekannt ist, kann die maximale Distanz oder die maximale Datenrate berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. 
+Das Linkbudget kann  nahezu beliebig komplex gestaltet werden und eine  Reihe von weiteren Parametern beinhalten. In der Praxis hat sich für die Berechnung des Linkbudgets bei Richtfunksystemen nach folgender Formel \ref{eq:LinkBudgetGelichung} bewährt.
 
 
 \begin{equation}
 P_{Rx} = P_{Tx}+L_{Tx}+G_{x}+L_{fs}+L_{Rx}+G_{r}+L_{div}\label{eq:LinkBudgetGelichung}
 \end{equation}
 
-Die Formel \ref{eq:LinkBudgetGelichung} wir als Ausgangslage für die Berechnung des minimalen Gewinn der Sendeantenne $G_{x}$ dienen. Da als die minimale Empfänger Sensitivität aus dem Daten Blatt des  Bluetooth Low Energie Texas Instruments CC2541 Chip bekannt ist, kann der nötige Gewinn der Sendeantenne $G_{x}$ berechnet werden. Der minimale Gewinn ist ein Kriterium welches beim Antennendesign beachtet werden muss.
+Die Formel \ref{eq:LinkBudgetGelichung} wird als Ausgangslage für die Berechnung des minimalen Gewinns der Sendeantenne $G_{x}$ dienen. Da  die minimale Empfängersensitivität aus dem Daten Blatt des  Bluetooth Low Energie Texas Instruments CC2541 Chip bekannt ist, kann der nötige Gewinn der Sendeantenne $G_{x}$ berechnet werden. Der minimale Gewinn ist ein Kriterium welches beim Antennendesign beachtet werden muss.
 
-Wobei $P_{Rx}$ für den zu berechnenden Empfangspegel in dBm steht.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite steht. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (engl. gain) der Empfangsantenne. $L_{fs}$ für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$ steht für diverse weitere Verluste wie z. B. Hindernisse und die Schwundreserve (engl. Fade Margin) in dB oder für eine System Reserve.  $L_{Rx}$ für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
+Wobei $P_{Rx}$ für den zu berechnenden Empfangspegel in dBm steht.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite steht. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (engl. gain) der Empfangsantenne. $L_{fs}$ für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$ steht für diverse weitere Verluste wie zum Beispiel Hindernisse oder für eine System Reserve.  $L_{Rx}$ für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
 
 
-Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung (engl. Free Space Path Loss)  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung elektromagnetischer Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen  und Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
-In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in den Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler die Gleiche ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler wird, desto mehr verteilt sich die Energie auf eine immer grösser werdende Oberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz.
+Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung (engl. Free Space Path Loss)  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung von elektromagnetischen Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen  und Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
+In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in dem Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler die Gleiche ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler wird, desto mehr verteilt sich die Energie auf eine immer grösser werdende Oberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz.
 \cite{linkbudget}
 
 
@@ -656,7 +658,7 @@ In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem St
 \caption{Verbindungs Modell}
 \label{fig:LinkModell}
 \end{figure}
-Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigt Link Budget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachung getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1, das entspricht 0dBi angenommen. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der "Connect 1" zur Anwendung kommende Texas Instruments CC2541 Chip angenommen.
+Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1, das entspricht 0dBi angenommen. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der \glqq Connect 1\grqq zur Anwendung kommende Texas Instruments CC2541 Chip angenommen.
 \begin{eqnarray}
     	d_{0} 	&=& x \\ \label{eq:d0_LinkBudget}
     K		&=& \left(\dfrac{\lambda}{4\pi d_{0}} \right)^{2}G_{x}G_{r} \\ \label{eq:K_LinkBudget}
@@ -752,44 +754,37 @@ Symmetrische Quellen haben zwei oder drei Anschlusspunkte. Sie übertragen das H
 \label{fig:symetrischeQuelle}
 \end{figure}
 \subsection{Zuleitung}
-Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialkabelleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
+Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialkabelleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung, während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
 Weiter Verbindungstypen sind:
 \begin{itemize}
 \item Drahtverbindung
 \item Koaxialkabel
 \item Leiterbahn
 \item Hohlleiter
-\item Galsfaserleiter
+\item Glasfaserleiter
 \end{itemize}
 An dieser Stelle soll genauer auf die elektrische leitergebundene Übertragung eingegangen werden.
-Leitungen gehören zu den wichtigsten Ubertragungsmedien der Nachrichtentechnik. Sie leiten fast mit Lichtgeschwindigkeit elektromagnetische Wellen vom Sende- zum Empfangsort.
-Bei Gleichstrom und sehr niedrigen Frequenzen kann eine Leitung im allgemeinen als ideal
-oder mit einem rein ohmschen Verhalten angenommen werden. Man macht keine grossen
-Fehler, wenn man Signalverläufe am Eingang und am Ausgang als gleich und gleichzeitig
-ansieht. Kommt aber die physikalische Länge der Leitung in die Grössenordnung der Wellenlänge
-der Schwingung, oder die Anstiegszeit eines Impulses in die Grössenordnung der
-Ausbreitungsverzögerung, dann kann die Ausgangsspannung vällig anders aussehen als die
-Eingangsspannung. Die Leitung muss jetzt als Zweitor mit frequenzabhängigen Eigenschaften
-betrachtet werden.
-Ein geeignetes Konzept fur das Verständnis ist der Begriff der elektrischen Länge:
+Leitungen gehören zu den wichtigsten Übertragungsmedien der Nachrichtentechnik. Sie leiten fast mit Lichtgeschwindigkeit elektromagnetische Wellen vom Sendeort zum Empfangsort.
+Bei Gleichstrom und sehr niedrigen Frequenzen kann eine Leitung im allgemeinen als ideal oder mit einem rein ohmischen Verhalten angenommen werden. Man macht keine grossen Fehler, wenn man Signalverläufe am Eingang und am Ausgang als gleich und gleichzeitig ansieht. Kommt aber die physikalische Länge der Leitung in die Grössenordnung der Wellenlänge der Schwingung, oder die Anstiegszeit eines Impulses in die Grössenordnung der Ausbreitungsverzögerung, dann kann die Ausgangsspannung völlig anders aussehen als die Eingangsspannung. Die Leitung muss jetzt als Zweitor mit frequenzabhängigen Eigenschaften betrachtet werden.
+Ein geeignetes Konzept für das Verständnis ist der Begriff der elektrischen Länge:
 \begin{equation}
 Elektrische Länge=\dfrac{l}{\lambda}\label{eq:ElektrischeLänge}
 \end{equation}
 
-Dabei ist $l$ die länge der Leitung und $\lambda$ gibt die Wellenlänge des Siganles auf der Leitung mit der Länge $l$. 
-
+Bei der  Gleichung \ref{eq:ElektrischeLänge} ist $l$ die Länge der Leitung und $\lambda$ gibt die Wellenlänge des Signales auf der Leitung mit der Länge $l$ an. 
+			
 Zur Analyse ob eine Leitung strahlt, das heisst, die Leitung muss als frequeznabäniges Zweitor betrachtet werden, werden zwei Fälle unterschieden.\\
-Ist die $Elektrische Länge=\dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klasischen schaltungstheorie behandelt wreden. Die Leitung wird meist als verlustlos und reflexionsfrei betrachtet.\\
-Ein etwas anders Bild zeigt sich, wenn die $Elektrische Länge=\dfrac{l}{\lambda}>\dfrac{1}{20}$ enspricht. Die Phänomene der elektromagnetischen Wennen werden wirksam. Die Leitungen müssen mit ihren frequenzabhänigen Eigenschaft behandelt werden. 
-Geht man von einer idalen Wellenausbreitung aus bei der keine Verluste vorkommen, so ist die Wellenänge $\lambda$ mit der Signalfrequenz $f$ mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeS} verknüpft.
+Ist die $Elektrische Länge=\dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klassischen Schaltungstheorie behandelt werden. Die Leitung wird meist als verlustlos und reflexionsfrei betrachtet.\\
+Ein etwas anders Bild zeigt sich, wenn die $Elektrische Länge=\dfrac{l}{\lambda}>\dfrac{1}{20}$ entspricht. Die Phänomene der elektromagnetischen Wellen werden wirksam. Die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. 
+Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeS} verknüpft.
 \begin{equation}
 \lambda_{0}=\dfrac{c}{f}\label{eq:WellenlängeMITc}
 \end{equation}
-Da eine Leitugn immer etwas Verlustbehaftet ist, kann die Ausbreitung einer Welle im Leitermedium nie der Lichtgeschwindigketi $c$ enstprechen. Daher gilt:
+Da eine Leitung immer etwas Verlustbehaftet ist, kann die Ausbreitung einer Welle im Leitermedium nie der Lichtgeschwindigkeit $c$ entsprechen. Daher gilt:
 \begin{equation}
 \lambda=\dfrac{v}{f}\label{eq:WellenlängeMITv}
 \end{equation}
-Die Signalgeschwindigkeit $v$ geteilt durch die Anzahl Schwingungen pro Sekunde ergibt die Wellenlänge $\lambda$ im Medium.
+Die Signalgeschwindigkeit $v$ dividiert durch die Anzahl Schwingungen pro Sekunde ergibt die Wellenlänge $\lambda$ im Medium.
 
 Für die Gleichungen \ref{eq:ElektrischeLänge}, \ref{eq:WellenlängeMITc} und \ref{eq:WellenlängeMITv} gilt:
 \begin{enumerate}[leftmargin=2cm]
@@ -799,14 +794,12 @@ Für die Gleichungen \ref{eq:ElektrischeLänge}, \ref{eq:WellenlängeMITc} und \
    \item[] $c$: Lichtgeschwindigkeit  [m/s] 
    \item[] $v$: Geschwindigkeit  [m/s] 
 \end{enumerate} 
-Besonders vorteilhafte Ubertragungseigenschaften hat die längshomogene Leitung. Es handelt
-sich dabei um eine Leitung, die auf ihrer ganzen Länge konstanten Leitungsquerschnitt, gleiches
-Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator hat. Gebräuchliche
-Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, eine Streifenleitung auf
+Besonders vorteilhafte Übertragungseigenschaften hat die längshomogene Leitung. Es handelt sich dabei um eine Leitung, die auf ihrer ganzen Länge konstanten Leitungsquerschnitt, gleiches
+Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator hat. Gebräuchliche Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, eine Streifenleitung auf
 einer Printplatte oder das Koaxialkabel.
 \subsubsection{Leitungsmodell}
 Um die Zweitoreigenschaften einer längshomogenen Leitung zu ermitteln, wird diese wie in
-Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren. Es ist von einer Zweitorkette die Rede.
+Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren unterteilt. Es ist von einer Zweitorkette die Rede.
 \begin{figure}[h]
 	\begin{center}
 	\begin{tikzpicture}
@@ -834,7 +827,7 @@ Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt in $n$ gleiche Elemen
 \caption{Leitungsmodell eine Kette von Zweitoren}
 \label{fig:LeitungsmodellZweitorKette}
 \end{figure}
-Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette}gezeigt ist, kann die Leiterlänge durch $geteilt werden$. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ Lange Leiterstücke. Betrachtet man ein kurzes Leitungsstuck mit der Länge $\Delta z = 1/n$ , so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\phi = i  \Delta L$. \\
+Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette}gezeigt ist, kann die Leiterlänge durch $n$ geteilt werden. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ lange Leiterstücke. Betrachtet man ein kurzes Leitungsstück mit der Länge $\Delta z = 1/n$, so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\phi = i  \Delta L$. \\
 Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern. Die Folge davon ist ein elektrisches Feld und eine Oberflächenladung $Q = u  \Delta C$ auf den Leitern \cite{Emant}.
 
 \begin{figure}[!htb]
@@ -844,7 +837,7 @@ Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern
 	\label{fig:ESBLeiterstueck}
 \end{figure}
 
-Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leitungsbeläge ausdrücken. Die Gleichung \ref{eq:InduktiverLeitungsbelag} gibt den induktiven Leitungsbelag an. Die Gleichung \ref{eq:KapazitiverLeitungsbelag} zeigt den kapazitiven Leitungsbelag.
+Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leiterbeläge ausdrücken. Die Gleichung \ref{eq:InduktiverLeitungsbelag} gibt den induktiven Leitbelag an. Die Gleichung \ref{eq:KapazitiverLeitungsbelag} zeigt den kapazitiven Leitbelag.
 \begin{equation}
 L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
 \end{equation}
@@ -852,23 +845,24 @@ L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
 C'=\dfrac{\Delta C}{\Delta z}\label{eq:KapazitiverLeitungsbelag}
 \end{equation}
 
-Werden zudem die ohmschen Verluste im Leiter und allfällige dielektrische Verluste in der Isolation als Wirkwiderstäde dargestellt, so lässt sich das Ersatzschaltbild einer Leitung gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
+Werden zudem die ohmschen Verluste im Leiter und allfällige dielektrische Verluste in der Isolation als Wirkwiderstände dargestellt, so lässt sich das Ersatzschaltbild einer Leitung gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
 Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitungsbelag} und die Abbildung \ref{fig:ESBLeiterstueck} gilt:
 \begin{enumerate}[leftmargin=2cm]
    \item[] $R'$: Ohmsche Leiterverlust/m [$\Omega/m$] 
-   \item[] $L'$: Serieinduktivität/m  [$H/m$] 
-   \item[] $G'$: Dieelektrische Verluste/m  [$S/m$] 
+   \item[] $L'$: Serie Induktivität/m  [$H/m$] 
+   \item[] $G'$: Dielektrische Verluste/m  [$S/m$] 
    \item[] $C'$: Kapazität zwischen den Leiten/m  [$F/m$] 
-   \item[] $\Delta m$: Abschnittlänge  [$m$] 
+   \item[] $\Delta m$: Abschnittslänge  [$m$] 
 \end{enumerate} 
-
-Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts enztang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen Z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beligigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT}berechnet werden.
+\todo{serieeninduktivität}
+Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT}berechnet werden.
 \begin{eqnarray}\label{eq:UvonZundT}
 U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
 \begin{eqnarray}\label{eq:IvonZundT}
 I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
+
 
 \subsection{Anpassung}
 Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf, wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteils ansteht. 
