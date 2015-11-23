@@ -22,7 +22,7 @@ Es bildet sich ein E Feld von dem positiven Ladungspunkt zum negativen Ladungspu
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=4cm]{content/bilder/HerzDipolEMANTS37.pdf}%
-	\caption{Hertzscher Dipol mit dem Dipolmoment \textit{p(t)}}
+	\caption{Hertzscher Dipol mit dem Dipolmoment \textit{p(t)} \cite{Emant}}
 	\label{HerzDipol}
 \end{figure}
 
@@ -163,7 +163,7 @@ Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromve
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=4cm]{content/bilder/Fitzgerald_Dipol_EMANT_S37.pdf}%
-	\caption{Fitzgeraldscher Dipol}
+	\caption{Fitzgeraldscher Dipol \cite{Emant}}
 	\label{FitzDipol}
 \end{figure}
 Wenn der Hertzsche Dipol eine E Feld Antenne genannt wird, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. Das Nahfeld des Fitzgeraldschen Dipols wird wie folgt beschrieben\cite{elliott1981antenna}:
@@ -181,7 +181,7 @@ H_\theta= \frac{I S}{4\pi}   e^{-jkR} \left(- \frac{k^{2}}{R}  + \frac{jk}{R^{2}
 E_\phi= \frac{I S}{4\pi}   e^{-jkR} \left( \frac{k^{2}}{R}  - \frac{jk}{R^{2}} \right) sin(\theta)
 \end{equation}
 
-Das zeitabhängige magnetische Moment \textit{m(t)} ergibt sich durch die Multiplikation der durch die Schleife aufgespannten Fläche $a^{2}\pi=S$ und dem konstanten Schleifenstrom $I$ der auf der ganzen Schleife denselben Wert $I$ hat. Dank der Annahme des konstanten Storm kann wie in Gleichung \ref{eq:magnetischesMoment} das magnetische Moment berechnet werden. 
+Das zeitabhängige magnetische Moment \textit{m(t)} ergibt sich durch die Multiplikation der durch die Schleife aufgespannten Fläche $a^{2}\pi=S$ und dem konstanten Schleifenstrom $I$ der auf der ganzen Schleife denselben Wert $I$ hat. Dank der Annahme des konstanten Storm kann wie in Gleichung \ref{eq:magnetischesMoment} das magnetische Moment berechnet werden \cite{Harrington-TimeHarmonic}. 
 \begin{equation}\label{eq:magnetischesMoment}
 Ia^{2}\pi=IS=m
 \end{equation}
@@ -265,19 +265,19 @@ Der zentral gespeiste Dipol besteht meist aus runden Leiterstäben mit dem Durch
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=4cm]{content/bilder/Dipol_EMANT_S42.pdf}%
-	\caption{Dipol Antenne mit Stromverteilung}
+	\caption{Dipol Antenne mit Stromverteilung \cite{Tekom}}
 	\label{FitzDipol}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Die Stromausbreitung in der Dipol Stabantenne entspricht der Stromverteilung einer am Ende offenen Zweidrahtleitung. Das offene Ende der Leitung führt zu einer Reflexion der zuführenden Welle in die umgekehrte Richtung und somit zu einer stehenden Welle in der Leitung. Stromführende Elemente, die nahe beieinander liegen, deren Amplituden gleich aber gegenläufig sind, strahlen nur gering. Dies sind   Eigenschaften einer guten Zweidrahtleitung.
-Als Näherung für die Stromverteilung soll folgendes gelten:
+Als Näherung für die Stromverteilung soll folgendes gelten \cite{elliott1981antenna}:
 \begin{equation}
 I(x,t) =I_{m}sin([k(l-x)])e^{j\omega t}
 \end{equation}
 %Elliot Seite 59 Formel 2.1
 
-Bei einem Dipol mit dem Durchmesser $d<<\lambda$ wird dieser zu einem dünnen Stromfaden. Und die Stromdichte im Leiter kann \textbf{J}\textit{d}\textbf{\textbf{V}} mit \textbf{I}\textit{d}\textbf{\textbf{l}} als Stromelement ersetzt werden. Die Summation der Elementardipole kann dann als Quelle betrachtet werden.\\
+Bei einem Dipol mit dem Durchmesser $d<<\lambda$ wird dieser zu einem dünnen Stromfaden. Und die Stromdichte im Leiter kann \textbf{J}\textit{d}\textbf{\textbf{V}} mit \textbf{I}\textit{d}\textbf{\textbf{l}} als Stromelement ersetzt werden. Die Summation der Elementardipole kann dann als Quelle betrachtet werden \cite{elliott1981antenna}.\\
 
 \begin{equation}
 I_{m}sin(k(l-dz))
@@ -297,7 +297,7 @@ Es sollen zwei Fälle genauer betrachtet werden.
 \item der kurze Dipol mit 2l<<$\lambda$
 \end{itemize}
 \subsubsection{Der Halbwellendipol}
-Der $\lambda/2$ Dipol ist eine der wichtigsten Antennen. Über die Gewichtungsfunktion lässt sich auf das Fernfeldverhalten schliessen.
+Der $\lambda/2$ Dipol ist eine der wichtigsten Antennen. Über die Gewichtungsfunktion lässt sich auf das Fernfeldverhalten schliessen \cite{elliott1981antenna}.
 \begin{equation}
 E_{\theta}=j60I_{m} \frac{e^{j(\omega t - kr)}}{r} \lbrack \frac{cos\lbrack  (\pi/2) cos(\theta)\rbrack}{sin(\theta)} \rbrack
 \end{equation}
@@ -309,8 +309,8 @@ H_{\phi}=j \frac{I_{m}}{2\pi} \frac{e^{j(\omega t - kr)}}{r} \lbrack \frac{cos\l
 
 Die Feldverteilung kann in der  Zweidimensionalen Polar Form oder in einer Dreidimensionalen Feldverteilung dargestellt werden.
 Die nachfolgende Grafik zeigt eine E Feldverteilung als Schnitt durch die xz Ebene.\\
-%!!!!Qichtig!!!!!Bild aus Matlab importieren\\
-
+%!!!!Wichtig!!!!!Bild aus Matlab importieren\\
+\todo{Matlab Bild der Feldausbreitung}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
@@ -337,7 +337,7 @@ Die nachfolgende Grafik zeigt eine E Feldverteilung als Schnitt durch die xz Ebe
 
 Dargestellt ist ein $\lambda/2$ Dipol der in z Richtung aufgerichtet ist. Es ist zu erkennen, dass bei $\theta = 0 ^\circ $  und $\theta = 180 ^\circ $ kein elektrisches Feld abgestrahlt wird. Stellt man sich die Grafik als um eine um $\varphi$ von 0 Grad bis 360 Grad rotierende Scheibe vor, so kommt die bekannte Doughnut Form zum Vorschein.
 
-Die von $\vartheta$ und $\varphi$ abhängige Leitung ist gegeben durch:
+Die von $\vartheta$ und $\varphi$ abhängige Leitung ist gegeben durch \cite{elliott1981antenna}:
 %P(theta,phi)= elliot2.10
 \begin{equation}
 P(\theta,\phi)=\frac{2\eta I_{m}^{2}}{(4\pi r)^{2}}\lbrack \frac{cos^{2}\lbrack (\pi/2) cos(\theta)\rbrack}{sin^{2}(\theta)}\rbrack
@@ -345,14 +345,14 @@ P(\theta,\phi)=\frac{2\eta I_{m}^{2}}{(4\pi r)^{2}}\lbrack \frac{cos^{2}\lbrack 
 
 %Durch Lösung des Doppelintegrals 
 %Elliot Seite 63
-Durch das Auflösen der Doppelintegrale über $\phi$ von 0 bis $\pi$  und $\theta$ von 0 bis $\pi$ erhält man eine nummerische Lösung der Integrale über die gesamte Kugeloberfläche:
+Durch das Auflösen der Doppelintegrale über $\phi$ von 0 bis $\pi$  und $\theta$ von 0 bis $\pi$ erhält man eine nummerische Lösung der Integrale über die gesamte Kugeloberfläche \cite{elliott1981antenna}:
 \begin{equation}
 P_{rad}=0.609 \frac{\eta I_{m}^{2}}{2\pi}
 \end{equation}
 %elliot 63 Forlmel 2.11
 
 Wie die obere Grafik  zeigt, ist die maximale Feldausbreitung auf höhe der Einspeisestelle bei $\theta = 90 ^\circ $ maximal,  denn der  $sin(90 ^\circ ) $ entspricht 1.
-Der maximale Richtwert,  aus dem englischen als directivity bekannt, erhält man indem die Abgestrahlte Leitung mit einem isotropen Kugelstrahler verglichen wird.
+Der maximale Richtwert,  aus dem englischen als directivity bekannt, erhält man indem die Abgestrahlte Leitung mit einem isotropen Kugelstrahler verglichen wird\cite{elliott1981antenna}.
 \begin{equation}
 D(peak)=\frac{P(\theta,\phi)(\pi/2)}{P_{rad}/ 4 \pi r^{2}} =1.64
 \label{eq:Directivity}
@@ -370,6 +370,7 @@ Der Strahlungswiderstand oder auch $R_{rad}$ genannt kann im Fall des $\lambda /
 R_{rad}=\frac{0.609 \eta}{\pi}= 73 Ohm
 \end{equation}
 \subsubsection{Der kurze Dipol }\label{sec:kurzerDipol}
+\todo{Der kurze Dipol etwas beschreiben}
 Die Therme $cos(kl*cos(\theta)) $ und $cos(kl)$ aus der Gewichtungsform des $\lambda/2$ Dipol können mit einer Reihe angenähert werden, sofern kl klein ist.
 \begin{equation}
 a_{\theta}(\theta)=-kl^{2}I_{m}sin(\theta) \lbrack 1- \frac{(kl)^{2}}{12}(1+cos^{2}(\theta))+...\rbrack
@@ -386,7 +387,7 @@ I=I_{m}sin(kl)=I_{m}\lbrack kl - \frac{(kl)^{3}}{3!} +... \rbrack
 a_{\theta}(\theta)=-kl^{2}I_{m}sin(\theta)=-Ilsin\theta
 \end{equation}
 angenommen werden.
-Wie beim $\lambda/2$ Dipol findet man bei einem kurzen Dipol ein vertikal polarisiertes E Feld. Das Feld ist etwas breiter, aber ebenfalls doughnutförmig. Die Impedanz des kurzen Dipols ändert sich jedoch drastisch gegenüber dem $\lambda/2$ Dipol. Mit der Impedanz ist auch die winkelabhängige Leistungsdichte wie folgt gegeben:
+Wie beim $\lambda/2$ Dipol findet man bei einem kurzen Dipol ein vertikal polarisiertes E Feld. Das Feld ist etwas breiter, \todo{Öffnungswinkel angeben} aber ebenfalls doughnutförmig. Die Impedanz des kurzen Dipols ändert sich jedoch drastisch gegenüber dem $\lambda/2$ Dipol. Mit der Impedanz ist auch die winkelabhängige Leistungsdichte wie folgt gegeben:
 %Ellito 2.18
 \begin{equation}
 P(\theta,\phi)=\frac{(kl)^{2}\eta I^{2}}{2(4\pi r)^{2}}sin^{2}\theta
@@ -498,7 +499,7 @@ Antennen sind Wellenwandler. Sie wandeln die ihnen zugeführte elektromagnetisch
 Der Antenne kommt die Aufgabe zu, die Medium gebundene Welle in eine Raumwelle zu wandeln. Das bedeutet, die leitergebundene Welle wird zu einer Freiraumwelle. Diese füllt den Raum um die Antenne aus. 
 Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \Omega$ an.
 Eine spezielle Ausführung der Antenne als Wellenwandlertyp hängt im wesentlichen vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer normalen Freiraumübertagungsstrecke ist die Distanz r zwischen dem Sender und dem Empfänger sehr gross, verglichen mit den Abmessungen der Sendeantennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort scheint die Antennenstrahlung in Bild xx charakterisiert durch den Vektor der elektromagnetischen Leistungsdichte S. Der Vektor  wird auch Poynting Vektor genannt. Für den Empfänger scheint es, als ob die empfangene elektromagnetische Strahlung von einem einzigen Punkt ausgeht. Dieser Entstehungspunkt wird Phasenzentrum genannt. Er ist die Quelle der abgestrahlten elektromagnetischen Felder. Wenn diese Voraussetzungen vorliegen, befindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Die Fernfeldregion wird kurz als Fernfeld bezeichnet. 
-Im Fernfeld gelten vereinfachte Beziehungen. Streng genommen liegen nur für die Distanzen von $r->\infty$ reine Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten  bereichsweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist eine ebene Welle für deren elektrische und magnetische Feldstärken die Beziehung :
+Im Fernfeld gelten vereinfachte Beziehungen. Streng genommen liegen nur für die Distanzen von $r->\infty$ reine Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten  bereichsweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist eine ebene Welle für deren elektrische und magnetische Feldstärken die Beziehung \cite{meinke1992taschenbuch}
 \todo{Text Bild xx}
 \begin{equation}
 E/H=120\pi\label{eq:WellenimpedanuE/H}
@@ -814,7 +815,7 @@ Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt in $n$ gleiche Elemen
 	\draw[line width=0.5pt, -*](3.5, 3.5)  -- (5, 3.5);
 	\draw[line width=0.5pt, -*](5, 3.5)  -- (6.5, 3.5) node at (5.75,4) {$\Delta z$};
 	\draw[line width=0.5pt, -*](6.5, 3.5)  -- (8, 3.5);
-	\draw[line width=0.5pt, -*](8, 3.5)  -- (9.5, 3.5)node at (5.75,4) {n};
+	\draw[line width=0.5pt, -*](8, 3.5)  -- (9.5, 3.5)node at (8.75,4) {$n$};
 	\draw[line width=1.5pt, ->, >=latex](2, 3.2) -- (2, 2.3) node at (1.5,2.75) {$\underline{U_{1}}$};
 	\draw[line width=1.5pt, ->, >=latex](9.5, 3.2) -- (9.5, 2.3) node at (10,2.75) {$\underline{U_{2}}$};
 	%vertikal gepunktete linien
@@ -855,7 +856,7 @@ Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitun
    \item[] $\Delta m$: Abschnittslänge  [$m$] 
 \end{enumerate} 
 \todo{serieeninduktivität}
-Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT}berechnet werden.
+Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT}berechnet werden \cite{Tekom}.
 \begin{eqnarray}\label{eq:UvonZundT}
 U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
@@ -866,8 +867,9 @@ I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\ome
 
 \subsection{Anpassung}
 Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf, wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteils ansteht. 
-Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von Zein und Zaus die Rede.
+Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
 Es gibt zwei Arten von Anpassung.
+\todo{Wichtig Anpassung beschreiben}
 \subsection{Speisung}
 Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
 

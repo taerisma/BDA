@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -24,6 +24,11 @@ R.~F. Harrington.
 \newblock ISBN 9780470546710.
 \newblock \doi{10.1109/9780470546710}.
 \newblock URL \url{http://dx.doi.org/10.1109/9780470546710}.
+
+\bibitem[Joss(2013)]{Tekom}
+M.~Joss.
+\newblock Einführung in die nachrichtentechnik.
+\newblock Skript~1, HSLU, 2013.
 
 \bibitem[Joss(2015)]{Emant}
 M.~Joss.
