@@ -1,0 +1,85 @@
+\section{Test}
+\subsection{Messsystem}
+Blabla Bla verschiedene Messsysteme für die unterschiedlichen aufgaben.\\
+unteranderem  StarLab für die elektromagnetische Feldmessungenvon strahlenden Körpern.\\
+
+BlaBla Netzwerkanalysator zum bestimmen der Streuparameter
+\subsubsection{StarLab}
+Das Messsystem  StarLab von mvG microwave vision Gruppe ermöglicht das Messen von Antennen und strahlenden Körpern. Es ist ein Messsystem für Hochfrequenzsysteme, die im Mikrowellenbereich strahlen. Das System misst Antennen im Zylinder- und Kugelkoordinatensystem. Misst das System das elektromagnetische Feld eines Körpers im Zylinderkoordinatensystem, so wird ein Testobjekt auf einem motorisierten Schlitten durch die Mitte des StarLab gezogen. Dabei zeichnen die 12 im Kreis angeordneten Kreuzantennen das abgestrahlte elektromagnetische Feld auf. 
+Wird das von einem Testobjekt abgestrahlte elektromagnetische Feld im Kugelkoordinatensystem aufgenommen, so wird das Testobjekt genau im Zentrum der Messapparatur platziert. Der Drehteller, auf dem sich das Testobjekt befindet, dreht sich während eines Messzyklus um 360 Grad. 
+Das StarLab Messsystem besteht aus  zwei Teilen. Der erste Teil ist die Messapparatur. Diese beinhaltet zwölf kreuzförmige im Kreis angeordnete Antennen, welche im orangen Kreis um das Messobjekt angebracht sind.  Die Antennen sind alle ins Zentrum gerichtet und zwischen ihnen liegen je 22.5 Grad. Das gibt eine Abdeckung von 270 Grad. In Zentrum des Messsystems ist eine Testplattform. Diese ist von einem Schrittmotor angetrieben. Das ermöglicht, dass das elektromagnetische Feld eines Testobjekts aus allen Richtungen ausgezeichnet werden kann. Der Frequenzgenerator des StarLab hat einen Signal Frequenzbereich von 650 MHz bis 6 GHz. Ein Testobjekt darf maximal einen Durchmesser von 45 cm aufweisen.
+Die Absorberkegel sind neben dem orangen Messring befestigt. Diese Kegel verhindern Reflektionen der elektromagnetischen Wellen, da ansonsten nicht nur die primäre Abstrahlung des Testobjekts, sondern eine Gemisch aus Abstrahlung und Reflexionen aufgezeichnet würde. Aus demselben Grunde können die beiden Öffnungen der Messapparatur mit Absorberpanels verschlossen werden. Die Abbildung xx zeigt ein Messobjekt im Zentrum der Messapparatur. 
+
+Das Messobjekt wird mit Polystyrol angehoben, damit das Testobjekt genau in der Mitte der Messapparatur platziert wird. Polystyrol hat nur minimalen Einfluss auf die elektromagnetischen Wellen und ist daher gut geeignet um Objekte zu stützen. Ein weiterer Vorteil des Polystyrols ist das geringe Gewicht von $1.05 g/cm^3$. Denn die maximale Last, bestehend aus Drehteller und Testobjekt, darf  10 kg  nicht überschreiten. Zudem besitzt das Polystyrol eine sehr tiefe Dielektrizitätskonstante, sie beträgt $\varepsilon=1.03$ bei 50 Hz. Zum Vergleich, das als ideal betrachtete Vakuum   besitzt ein $\varepsilon=1$ bei 50Hz. Der Verlustwinkel bei 1 MHz ist sehr klein mit $0.05*10^-3$.
+\cite{StarLab,Polystyrol_Datenblatt,WikiPermitt} 
+%Quelle: https://de.wikipedia.org/wiki/Permittivität
+%Quelle: http://www.kern.de
+
+
+\subsubsection{Netzwerkanalysator}
+Ein Netzwerkanalysator wird in der Elektronik, Nachrichtentechnik und besonders in der Hochfrequenztechnik
+eingesetzt. Seine Aufgaben umfassen  das Aufnehmen der Streuparameter (S-Parameter), also Reflexion und Transmission von elektrischen Signalwellen an
+Messobjekten. Netzwerkanalysator zeichnet die S Parameter als Funktion der Frequenz auf. Der Netzwerkanalysator sendet ein Signal die, hinlaufende
+Welle genannt, zum  Messobjekt (englisch DUT ein device under test). Die  Frequenz, Amplitude und Phase der hinlaufenden Welle sind bekannt. Das Messobjekt reflektiert ein Teil dieses Signals. Dieser Teil wird weglaufende Welle genannt. Sie wird ohne in das Testobjekt einzudringen am Eingang zum Netzwerkanalysator zurück reflektier. Der Rest läuft in das Messobjekt, wird dort verändert, das heisst gedämpft, verstärkt oder phasenverschoben. Der transmittierte Signalanteil tritt am Ausgang des DUT als übertragenes Signal in Erscheinung. Die durch das DUT veränderte und am Ausgang anliegende Signal Welle wird auch  weglaufende Welle genannt.
+
+Aus dem Verhältnis von reflektiertem zu gesendetem Signal wird die Reflexion des Messobjektes gemessen. Der $S_{11}$ Wert gibt in dB die Rückflussdämpfung an. Diese wird in enlischer Literatur "Return Loss" genannt.
+Der $S_{21}$ Wert gibt Auskunft über das Verhältnis des übertragenem Siganl zu dem gesendeten Signal. Dabe wird die  Transmission des Messobjektes gemessen. 
+Die Abbildung \ref{NetzwerkanalysatorZweiTor} zeigt diesen Zusammenhang auf.
+\cite{NetzwerkanalyzorTUDarmstadt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+	\draw[line width=1.5pt](4, 1) rectangle (7, 3) node at (5.5,2) {DUT};
+	\draw[line width=3pt, ->, >=latex](0, 2.4) -- (4, 2.4) node at (2,2.7) {gesendetes Signal};
+	\draw[line width=2.5pt, ->, >=latex](7, 2) -- (11, 2) node at (9,2.3) {übertragenes Signal};
+	\draw[line width=1pt, ->, >=latex](4, 1.7) -- (0, 1.7) node at (2,2) {reflektiertes Signal};
+	%\draw[line width=1.5pt](3, 0) rectangle (5, 1);
+\end{tikzpicture}
+\end{center}
+	\caption{Ermittlung der S-Parameter am Zweitor}
+	\label{NetzwerkanalysatorZweiTor}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+	\draw[line width=1.5pt](0, 0.5) rectangle (4, 3.5) node at (2,2) {Netzwerkanalysator};
+	\draw[line width=1.5pt](8, 1) rectangle (11, 3) node at (9.5,2) {DUT};
+	\draw[line width=3pt, ->, >=latex](4, 2.4) -- (8, 2.4) node at (6,2.7) {gesendetes Signal};
+	\draw[line width=1pt, ->, >=latex](8, 1.7) -- (4, 1.7) node at (6,2) {reflektiertes Signal};
+	%\draw[line width=1.5pt](3, 0) rectangle (5, 1);
+\end{tikzpicture}
+\end{center}
+	\caption{Ermittlung der $S_{11}$ Parameter am Zweitor}
+	\label{NetzwerkanalysatorS11}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+	\draw[line width=1.5pt](0, 1.5) rectangle (4, 4.5) node at (2,3) {Netzwerkanalysator};
+	\draw[line width=1.5pt](8, 2.1) rectangle (11, 3.9) node at (9.5,3) {DUT};
+	\draw[line width=3pt, ->, >=latex](4, 3.4) -- (8, 3.4) node at (6,3.7) {gesendetes Signal};
+	\draw[line width=2.5pt, ->, >=latex](13, 1.8) -- (4, 1.8) node at (6,2.1) {übertragenes Signal};
+	\draw[line width=2.5pt] (11, 3) -- (13, 3);
+	\draw[line width=2.5pt] (13, 3) -- (13, 1.8);
+\end{tikzpicture}
+\end{center}
+	\caption{Ermittlung der $S_{21}$ Parameter am Zweitor}
+	\label{NetzwerkanalysatorS21}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Test Setup}
+Beschreiben der Messumgebung\\
+Was wird gemessen\\
+wie wird gemessen, Verfahren, Messauflösung, Fehler
+\subsubsection{Testobjekte}
+Welches Design
+\subsubsection{Erwartung}
+welche Werte werden aufgrund der Theorei und des Design erwartet
+\subsubsection{Resultate}
+\subsubsection{Fazit der Messung xx}
+Vergleich aus der erartungshaltung und den Messresultaten
