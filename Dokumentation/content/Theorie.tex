@@ -867,11 +867,91 @@ I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\ome
 \end{eqnarray}
 
 
-\subsection{Anpassung}
+\subsection{Reflexionen und Anpassung}
 Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf, wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteils ansteht. 
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
 Es gibt zwei Arten von Anpassung.
 \todo{Wichtig Anpassung beschreiben}
+\begin{itemize}
+\item Leistungsanpassung
+\item Wellenanpassung
+\end{itemize}
+Die Leistungsanpassung wird angewendet wenn die maximale Leistungsübertragung gefordert ist. Die maximale Leistung in der Last wird erreicht, wenn der Lastwiderstand dem Quellenwiderstand entspricht. Bei rein ohmischen Quellen und Lastwiderstand bedeutet das:\\
+\[R_{Quelle} = R_{Last}\]
+
+Die Wellenanpassung wird auch Leitungsanpassung oder Impedanzanpassung genannt. Wellenanpassung ist in der Hochfrequenztechnik immer dann gefragt, wenn die zu übertragenden Wellen oder Impulse ohne Reflexionen von einer Quelle zu einer Last übertragen werden. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, so wird Wellenanpassung erreicht, wenn die Leistungsanpassung erfüllt ist. Treten jedoch Impedanzen mit positivem oder negativem Imaginärteil auf, so muss für die Wellenanpassung das folgende Kriterium erfüllt sein: \\
+\begin{eqnarray}\label{eq:ZeinZaus}
+Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
+\end{eqnarray}
+
+Im diesem Zusammenhang soll auch erwähnt sein, dass es auch die Spannungsanpassung und die Stromanpassung gibt, beides wird im Rahmen dieser Arbeit nicht erläutert. \\
+
+Die Reflexionen und die Anpassung soll anhand eines Beispiels einer Leitung mit Abschlusswiderstand genauer näher erläutert werden. \\
+
+Eine Quelle treibt eine vorwärtslaufende Welle in einer Leitung. Die Leitung besitzt einen Leitungswiderstand $Z_0$.  Das Ende der Leitung ist mit einem Abschlusswiderstand versehen. Dieser Widerstand stellt eine Lastimpedanz $Z_L$ zwischen dem Hin- und Rückleiter dar. \\
+Man spricht von einer mit einer Lastimpedanz $Z_0$ abgeschlossenen Übertragungsleitung. Leitungsimpedanz $Z_0$ entspricht nicht exakt der Leitungsimpedanz $Z_L$, daher kommt es zu einer   Teilreflexion der vorlaufenden Welle. Das Verhältnis zwischen den Amplituden der rücklaufenden Welle und der vorlaufenden Welle wird als Reflexionskoeffizient r bezeichnet. \\
+
+Reflexionskoeffizient r
+
+\begin{eqnarray}\label{eq:Reflexionskoeffizient}
+r=\dfrac{U_{R}}{U_{V}}=\dfrac{Z_{L}-Z_{V}}{Z_{L} + Z_{V}}=-\dfrac{I_{R}}{I_{V}}
+\end{eqnarray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=10cm]{content/bilder/ReflexionenLeitungLastimpedanz.pdf}%
+	\caption{Refelxionen einer Leitung an einer Lastimpedanz \cite{Tekom}}
+	\label{FitzDipol}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Die Spannung $U_L$ über der Last ergibt sich  aus der Überlagerung der Vorlaufendenspannungswelle und  Rücklaufendenspannugswelle. Dies ist in der Gleichung \ref{eq:AnpassungULast} gezeigt. In Gleichung \ref{eq:AnpassungILast} ist der Strom in der Last ersichtlich. Dieser wird aus der Vorlaufenden- und Rücklaufendenstromwelle gebildet.
+
+\begin{eqnarray}\label{eq:AnpassungULast}
+U_L = U_V + U_R
+\end{eqnarray}
+
+\begin{eqnarray}\label{eq:AnpassungILast}
+I_L = I_V + I_R
+\end{eqnarray}
+
+Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist, was als stehende Welle bezeichnet wird. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten löschen sich die Wellen gegenseitig aus. Ihr wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert: \\
+
+Rückflussdämpfung $a$: 
+Die Rückflussdämpfung a wird in der englischen Literatur \textit{Return Loss} genannt.
+\begin{eqnarray}\label{eq:Ruckflussdämpfung_a}
+a=20\log\left(\left| \dfrac{U_V}{U_R}\right| \right)=-20\log(|r|)
+\end{eqnarray}
+Die Ruckflussdämpfung beschreibt als logarithmisches Mass, wie stark das rücklaufende Signal gegenüber dem vorlaufenden Signal gedämpft ist \cite{Tkom}.\\
+
+Welligkeitsfaktor $s$: 
+\begin{eqnarray}\label{eq:Welligkeitsfaktor_s}
+s=\dfrac{U_{max}}{U_{min}}=\dfrac{1+|r|}{1-|r|}
+\end{eqnarray}
+Der Welligkeitsfaktor $s$ bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung. Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet. \\
+
+Anpassnetzwerke: \\
+Nachrichtentechnische Systeme können als eine Kette von aktiven oder passiven Eintor- und Zweitor-Schaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette, muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Die Eingangsimpedanz eines Zweitor wird oft als Zein und die Ausgansimpedanz Zaus bezeichnet. 
+Um die Anpassungsbedingungen zu formulieren, kann das Zweitor als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden, welche durch den Lastwiderstand $Z_L$ belastet wird.
+
+Leistungsanpassung: \\
+Für die Übertragung der maximalen Wirkleistung von der Quelle zur Last  wird Leistungsanpassung benötigt. Um diese Bedingung zu erfüllen muss gelten:
+
+\[Z_{ein} = Z_{aus}^*\]
+Das bedeutet, eine induktive Komponente beim Innenwiderstand muss somit durch eine gleich grosse kapazitive Komponente beim Aussenwiderstand kompensiert werden und umgekehrt. Gleichzeitig müssen die beiden Wirkwiderstände gleiche Werte aufweisen. Das heisst der Realteil von $Z_{ein}$ und $Z_{aus}$ sind gleich, jedoch sind die Imaginärantiele konjugiert komplex. Das bedeutet, dass die Blindwiderstände von Quelle und Last sich ausgleichen müssen. Dies geschieht, wenn eine ohmisch induktive Quelle durch eine ohmisch kapazitive Last kompensiert wird um das Leistungsanpassungskriterium zu erfüllen. \\
+
+Wellenanpassung: \\
+Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderstände 
+eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, und ein Teil des Signals wird reflektiert. Stehende Wellen sind das Resultat. Um diese störenden Einflüsse zu vermeiden, muss für komplexe Widerstände folgende Beziehung erfüllt sein:
+\[Z_{I} = Z_{L}\]\\
+
+Diese Anpassung bezeichnet man als Impedanzanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_i = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leitungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die durch eine Stossstelle hervorgerufene Reflexion  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Lediglich beim Leistungsverstärkern,  zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
+
+Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben (Leistungsanpassung).
+
+
 \subsection{Speisung}
 \todo{Speisung und Anpassung auseinanderhalten}
 Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
