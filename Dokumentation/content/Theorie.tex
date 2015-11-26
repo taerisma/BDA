@@ -947,14 +947,154 @@ eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, u
 
 Diese Anpassung bezeichnet man als Impedanzanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_i = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leitungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die durch eine Stossstelle hervorgerufene Reflexion  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Lediglich beim Leistungsverstärkern,  zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
 
-Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben (Leistungsanpassung).
+Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung das heisst die in dem $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entsprich $50\%$, da die Selbe Leistung wie in der Last im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel \ref{eq:PmaxLeistungsanpassung} zeigt die maximale Leitung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
+\begin{eqnarray}\label{eq:PmaxLeistungsanpassung}
+P_{Last_max}=\dfrac{U_{0}^2}{4R_Q} bei R_Q=R_L
+\end{eqnarray}
+
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {$U_{0}$};%Quelle
+	\draw[line width=1.5pt] (3, 5) -- (4.5, 5);%oben kurz
+
+	\draw[line width=1.5pt] (3, 2) -- (3, 3);%von unten zur Quelle
+	\draw[line width=1.5pt] (3, 4) -- (3, 5);%von der Quelle nach oben
+	\draw[line width=1.5pt](4.5, 4.75) rectangle (5.5, 5.25) node at (5, 5.5) {$R_Q$};%RQ
+
+	\draw[line width=1.5pt, -*](5.5, 5)  -- (7, 5);%oben bis zum Punkt
+	\draw[line width=1.5pt, -*](3, 2)  -- (7, 2);%unten bis zum Punkt
+	
+	\draw[line width=1.5pt](7, 5)  -- (8.5, 5);%oben 
+	\draw[line width=1.5pt](7, 2)  -- (8.5, 2);%unten 
+	\draw[line width=1.5pt](8.5, 5)  -- (8.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt](8.5, 2)  -- (8.5, 3);%unten nach oben zu RL
+
+ 	\draw[line width=1.5pt](8.25, 3) rectangle (8.75, 4) node at (9.25, 3.5) {$R_L$} ;%RL
+ 	\draw[line width=1.5pt, ->, >=latex](6.5, 3.5) -- (7.5, 3.5) node at (7, 3.8) {$P_a$};
+
+	\end{tikzpicture}
+	\end{center}
+\caption{Leistungsanpassung mit $R_Q = R_L$}
+\label{fig:LeistungsanpassungU0_RQ_RL}
+\end{figure}
+
+
+Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetzt werden. Ist der Quellenwiderstand $R_Q$ oder der Lastwiderstand $R_L$  reaktiv, das heisst induktiv oder kapazitiv, dann sind die Schaltungen stark Frequenz abhängig. So besitzt beispielsweise eine Antenne nur bei einer bestimmten Frequenz einen rein Ohm’schen Innenwiderstand $R_i$. Bei allen adern Frequenzen sind sowohl Real- als auch Imaginärteil vorhanden. Eine Möglichkeit für eine Korrektur ist in der Abbildung \ref{AnpassungKomplexerLast} dargestellt. Auch diese  Anpassung ist aber frequenzabhängig und nur für die Entwurfsfrequenz optimal aber danke der Transformation ist Leitungsanpassung möglich.
+\todo{Bild selber zeichnen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=10cm]{content/bilder/AnpassungKomplexerLast.pdf}%
+	\caption{leitungsanpassung für eine komplexe Last \cite{Tekom}}
+	\label{AnpassungKomplexerLast}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Entwurf eines Ohm’schen Anpassnetzwerkes:} \\
+Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die Last $R_L$, kann die Schaltung von Abbildung \ref{fig:Leistungsanpassung_RQ_grösser_als_RL} verwendet werden. Die Widerstände R1 und R2 berechnen sich nach folgenden Beziehungen der Gleichung \ref{eq:R1R2wennRQgrösserRL}:
+
+\begin{align}\label{eq:R1R2wennRQgrösserRL}
+R1 &= \sqrt{RQ(RQ-RL)}\\
+R2 &= \dfrac{RQ RL}{R1}\\
+a_{dB} &= 20\log \left( \sqrt{\dfrac{RQ}{RL}}+\sqrt{\dfrac{RQ}{RL}-1}\right)
+\end{align}
+
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+%	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {$U_{0}$};%Quelle
+%	\draw[line width=1.5pt] (3, 5) -- (4.5, 5);%oben kurz
+
+%	\draw[line width=1.5pt] (3, 2) -- (3, 3);%von unten zur Quelle
+	\draw[line width=1.5pt, *-] (1, 5) -- (3, 5);%oben zu R1
+	\draw[line width=1.5pt](3, 4.75) rectangle (4, 5.25) node at (3.5, 5.5) {$R1$};%R1
+
+	\draw[line width=1.5pt, *-](5, 5.1)  -- (5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt, *-](5, 1.9)  -- (5, 3);%unten nach oben zu RL
+ 	\draw[line width=1.5pt](4.75, 3) rectangle (5.25, 4) node at (5.6, 3.5) {R2};%R2
+
+	\draw[line width=1.5pt, -*](4, 5)  -- (7, 5);%oben bis zum Punkt
+	\draw[line width=1.5pt, *-*](1, 2)  -- (7, 2);%unten bis zum Punkt
+	
+	\draw[line width=1.5pt](5, 5)  -- (8.5, 5);%oben 
+	\draw[line width=1.5pt](7, 2)  -- (8.5, 2);%unten 
+	\draw[line width=1.5pt](8.5, 5)  -- (8.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt](8.5, 2)  -- (8.5, 3);%unten nach oben zu RL
+
+ 	\draw[line width=1.5pt](8.25, 3) rectangle (8.75, 4) node at (9.25, 3.5) {$R_L$} ;%RL
+ 	\draw[line width=1.5pt, ->, >=latex](0, 3.5) -- (1.5, 3.5) node at (0.75, 4) {$Z_{ein}=RQ$};
+
+	\draw[line width=1.5pt,style=dashed](2,1.5) rectangle (6, 6);
+	\end{tikzpicture}
+	\end{center}
+\caption{Anpassung für $R_Q > R_L$}
+\label{fig:Leistungsanpassung_RQ_grösser_als_RL}
+\end{figure}
+
+Gilt es eine hochohmige Last RL an eine Quelle mit einem RQ der kleiner ist als RL anzupassen, so können die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL}und die mathematischen Beziehungen aud den Gleichungen \ref{eq:R1R2wennRLgrösserRQ}  verwendet werden.
+
+\begin{align}\label{eq:R1R2wennRLgrösserRQ}
+R1 &= \sqrt{RL(RL-RQ)}\\
+R2 &= \dfrac{RQ RL}{R1}\\
+a_{dB} &= 20\log \left( \sqrt{\dfrac{RL}{RQ}}+\sqrt{\dfrac{RL}{RQ}-1}\right)
+\end{align}
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+
+	\draw[line width=1.5pt, *-] (1, 5) -- (4, 5);%oben zu R1
+	\draw[line width=1.5pt](4, 4.75) rectangle (5, 5.25) node at (4.5, 5.5) {$R1$};%R1
+
+	\draw[line width=1.5pt, *-](3.5, 5.1)  -- (3.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt, *-](3.5, 1.9)  -- (3.5, 3);%unten nach oben zu RL
+ 	\draw[line width=1.5pt](3.25, 3) rectangle (3.75, 4) node at (4, 3.5) {R2};%R2
+
+	\draw[line width=1.5pt, -*](5, 5)  -- (7, 5);%oben bis zum Punkt
+	\draw[line width=1.5pt, *-*](1, 2)  -- (7, 2);%unten bis zum Punkt
+	
+	\draw[line width=1.5pt](7, 5)  -- (8.5, 5);%oben von R1 zum Punkt 
+	\draw[line width=1.5pt](7, 2)  -- (8.5, 2);%unten 
+	\draw[line width=1.5pt](8.5, 5)  -- (8.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt](8.5, 2)  -- (8.5, 3);%unten nach oben zu RL
+
+ 	\draw[line width=1.5pt](8.25, 3) rectangle (8.75, 4) node at (9.25, 3.5) {$R_L$} ;%RL
+ 	\draw[line width=1.5pt, ->, >=latex](0, 3.5) -- (1.5, 3.5) node at (0.75, 4) {$Z_{ein}=RQ$};
+
+	\draw[line width=1.5pt,style=dashed](2,1.5) rectangle (6, 6);
+	\end{tikzpicture}
+	\end{center}
+\caption{Anpassung für $R_Q < R_L$}
+\label{fig:LeistungsanpassungU0_RQkleiner_als_RL}
+\end{figure}
+
+\textbf{Entwurf eines verlustfreien L-Netzwerkes}
+Ein einfaches verlustfreies Anpassnetzwerk besteht aus zwei Reaktanzen. Der Entwurfsansatz besteht darin, dass eine Reaktanz $X_{p}$ parallel zum grösseren Widerstand, in Abbildung xxxx wäre dies der Quellenwiderstand $R_{Q}$ geschalten wird. In diesem Fall folgt für die Impedanz $Z_{links} $von der Trennlinie... \\
+\todo{Bild einfügen L Netzwetzwerk}
+Formel\\
+\todo{Formel 2.39}
+$X_p$  kann nun so gewählt werden, dass der Realteil von $Z_{Links}$  dem Lastwiderstand $R_L$ entspricht. \\
+\begin{equation}
+R_{Links}= R_L
+\end{equation}
+Als nächstes gilt es die so eingeführte imaginäre Grössse $X_{Links}$ auf der rechten Seite der 
+Trennlinie zu kompensieren, indem die Seriereaktanz $X_{s}$entsprechend gewählt wird: 
+\begin{equation}
+X_{Links}= -jX_s
+\end{equation}
+Als letzten Schritt gilt es die Werte für die Induktivität $L$ und Kapazität $C$ für die gewünschte Frequenz zu berechnen. 
+\begin{equation}
+jX_{L}= j\omega L und jX_c=\dfrac{-j}{\omega C}
+\end{equation}
 
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Speisung}
 \todo{Speisung und Anpassung auseinanderhalten}
 Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
+
 
 \begin{itemize}
 \item 	Leistungsanpassung
@@ -981,7 +1121,7 @@ Eine Quelle mit einem Ausgangswiderstand von nicht 50 Ohm reell wird mit Hilfe e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpassnetzwerk zwischen der Leitung und der Antenne benötigt.  Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil. \\
+Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpassnetzwerk zwischen der Leitung und der Antenne benötigt.  Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!htb]
 	\centering
@@ -990,6 +1130,9 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 	\label{ESBantenne}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 %\begin{figure}
 %\begin{center}
@@ -1013,7 +1156,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 %\end{ circuitikz }
 %%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
