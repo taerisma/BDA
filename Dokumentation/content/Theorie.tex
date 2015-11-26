@@ -866,12 +866,10 @@ U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\ome
 I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
 
-
-\subsection{Reflexionen und Anpassung}
-Die Anpassung oder auch Impedanzanpassung genannt, kommt immer dann zum Zuge, wenn auf einem Signalpfad Stossstellen auftreten. Stossstellen treten immer dann auf, wenn die Impedanz eines Leitermediums oder ein Übergang eines Bauteils ansteht. 
+\subsection{Anpassung und Reflexionen}
+Die Anpassung ist nicht nur in Hochfrequenztechnik HF ein viel diskutiertes Thema, auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiede Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen wenn möglichst viel Leitung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiederstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Eine ganz anderes Ziel verfolgt die Wellenanpassung, dabei sie kommt immer dann zum Zuge, wenn auf einem Signalpfad die Signalreflexionen an den Übergängen des Mediums verhindert werden.
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
-Es gibt zwei Arten von Anpassung.
-\todo{Wichtig Anpassung beschreiben}
+In diesem Kapitel werden zwei Arten der Anpassung genauer betrachtet. Es sind dies die:
 \begin{itemize}
 \item Leistungsanpassung
 \item Wellenanpassung
@@ -919,18 +917,18 @@ I_L = I_V + I_R
 
 Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist, was als stehende Welle bezeichnet wird. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten löschen sich die Wellen gegenseitig aus. Ihr wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert: \\
 
-Rückflussdämpfung $a$: 
+Rückflussdämpfung $a$:\\
 Die Rückflussdämpfung a wird in der englischen Literatur \textit{Return Loss} genannt.
 \begin{eqnarray}\label{eq:Ruckflussdämpfung_a}
 a=20\log\left(\left| \dfrac{U_V}{U_R}\right| \right)=-20\log(|r|)
 \end{eqnarray}
-Die Ruckflussdämpfung beschreibt als logarithmisches Mass, wie stark das rücklaufende Signal gegenüber dem vorlaufenden Signal gedämpft ist \cite{Tkom}.\\
+Die Ruckflussdämpfung beschreibt als logarithmisches Mass, wie stark das rücklaufende Signal gegenüber dem vorlaufenden Signal gedämpft ist \cite{Tekom}.\\
 
-Welligkeitsfaktor $s$: 
+Welligkeitsfaktor $s$:
 \begin{eqnarray}\label{eq:Welligkeitsfaktor_s}
 s=\dfrac{U_{max}}{U_{min}}=\dfrac{1+|r|}{1-|r|}
 \end{eqnarray}
-Der Welligkeitsfaktor $s$ bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung. Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet. \\
+Der Welligkeitsfaktor $s$ \ref{{eq:Welligkeitsfaktor_s}} bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung. Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet. \\
 
 Anpassnetzwerke: \\
 Nachrichtentechnische Systeme können als eine Kette von aktiven oder passiven Eintor- und Zweitor-Schaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette, muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Die Eingangsimpedanz eines Zweitor wird oft als Zein und die Ausgansimpedanz Zaus bezeichnet. 
@@ -945,11 +943,13 @@ Das bedeutet, eine induktive Komponente beim Innenwiderstand muss somit durch ei
 Wellenanpassung: \\
 Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderstände 
 eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, und ein Teil des Signals wird reflektiert. Stehende Wellen sind das Resultat. Um diese störenden Einflüsse zu vermeiden, muss für komplexe Widerstände folgende Beziehung erfüllt sein:
-\[Z_{I} = Z_{L}\]\\
+\[Z_{I} = Z_{L}\]
 
 Diese Anpassung bezeichnet man als Impedanzanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_i = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leitungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die durch eine Stossstelle hervorgerufene Reflexion  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Lediglich beim Leistungsverstärkern,  zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
 
 Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben (Leistungsanpassung).
+
+
 
 
 \subsection{Speisung}
