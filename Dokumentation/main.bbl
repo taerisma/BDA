@@ -31,14 +31,17 @@ H.~Cuno.
 \newblock Frech-VerlagStuttgart, 1976.
 \newblock ISBN 3772402380.
 
-\bibitem[Elliott()]{elliott1981antenna}
+\bibitem[Elliott(1981)]{elliott1981antenna}
 R.~Elliott.
 \newblock \emph{Antenna theory and design}.
-\newblock IEEE-Press.
+\newblock IEEE-Press, 1981.
 \newblock ISBN 9780130383563.
 
-\bibitem[Harrington()]{Harrington-TimeHarmonic}
+\bibitem[Harrington(2001)]{Harrington-TimeHarmonic}
 R.~F. Harrington.
+\newblock \emph{Time-Harmonic Electromagnetic Fields}.
+\newblock IEEE-Press, 2001.
+\newblock ISBN 9780470546710.
 
 \bibitem[Joss(2013)]{Tekom}
 M.~Joss.

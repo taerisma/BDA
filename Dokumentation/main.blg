@@ -3,20 +3,12 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: abbrvnat.bst
 Database file #1: mydata.bib.bib
-You're missing a field name---line 24 of file mydata.bib.bib
- : 
- : %  doi = {10.1109/9780470546710},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 42 of file mydata.bib.bib
- : 
- : %  url={https://books.google.ch/books?id=AnYeAQAAIAAJ},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Warning--I'm ignoring elliott1981antenna's extra "publisher" field
+--line 41 of file mydata.bib.bib
 Warning--string name "februar" is undefined
---line 53 of file mydata.bib.bib
+--line 49 of file mydata.bib.bib
 Warning--string name "september" is undefined
---line 63 of file mydata.bib.bib
+--line 59 of file mydata.bib.bib
 Warning--to sort, need author or key in linkbudget
 Warning--to sort, need author or key in WikiPermitt
 Warning--to sort, need author or key in DielektrikumPolarisation
@@ -25,51 +17,45 @@ Warning--empty year in DielektrikumPolarisation
 Warning--empty year in Polystyrol_Datenblatt
 Warning--empty year in WikiPermitt
 Warning--empty year in linkbudget
-Warning--empty year in elliott1981antenna
-Warning--empty year in elliott1981antenna
-Warning--empty title in Harrington-TimeHarmonic
-Warning--empty publisher in Harrington-TimeHarmonic
-Warning--empty year in Harrington-TimeHarmonic
-Warning--empty year in Harrington-TimeHarmonic
 You've used 15 entries,
             2773 wiz_defined-function locations,
-            674 strings with 6348 characters,
-and the built_in function-call counts, 4553 in all, are:
-= -- 422
+            679 strings with 6432 characters,
+and the built_in function-call counts, 4568 in all, are:
+= -- 431
 > -- 141
 < -- 10
 + -- 57
 - -- 42
-* -- 300
-:= -- 660
-add.period$ -- 55
+* -- 291
+:= -- 669
+add.period$ -- 58
 call.type$ -- 15
 change.case$ -- 54
 chr.to.int$ -- 15
-cite$ -- 48
+cite$ -- 42
 duplicate$ -- 262
 empty$ -- 461
 format.name$ -- 55
-if$ -- 981
+if$ -- 990
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 12
-newline$ -- 92
+newline$ -- 95
 num.names$ -- 36
-pop$ -- 179
+pop$ -- 167
 preamble$ -- 1
 purify$ -- 46
 quote$ -- 0
-skip$ -- 171
+skip$ -- 177
 stack$ -- 0
 substring$ -- 38
-swap$ -- 15
+swap$ -- 16
 text.length$ -- 2
 text.prefix$ -- 2
 top$ -- 0
 type$ -- 135
-warning$ -- 14
+warning$ -- 8
 while$ -- 27
 width$ -- 0
-write$ -- 203
-(There were 2 error messages)
+write$ -- 211
+(There were 11 warnings)
