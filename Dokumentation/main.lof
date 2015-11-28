@@ -1,50 +1,50 @@
 \select@language {ngerman}
-\contentsline {figure}{\numberline {1}{\ignorespaces Hertzscher Dipol mit dem Dipolmoment \textit {p(t)} \cite {Emant}\relax }}{7}{figure.caption.9}
-\contentsline {figure}{\numberline {2}{\ignorespaces Feldvektor\relax }}{8}{figure.caption.10}
-\contentsline {figure}{\numberline {3}{\ignorespaces Fitzgeraldscher Dipol \cite {Emant}\relax }}{8}{figure.caption.11}
-\contentsline {figure}{\numberline {4}{\ignorespaces Loop Antenne mit Feldvektor und Einheitsvektoren\relax }}{9}{figure.caption.13}
-\contentsline {figure}{\numberline {5}{\ignorespaces Dipol Antenne mit Stromverteilung \cite {Tekom}\relax }}{10}{figure.caption.14}
-\contentsline {figure}{\numberline {6}{\ignorespaces Das E Feldeiner Dipolantenne in der xz Ebene\relax }}{11}{figure.caption.16}
-\contentsline {figure}{\numberline {7}{\ignorespaces Loop Antenne\relax }}{13}{figure.caption.19}
-\contentsline {figure}{\numberline {8}{\ignorespaces E Feld einer Loop Antenne in der xz Ebene\relax }}{14}{figure.caption.20}
-\contentsline {figure}{\numberline {9}{\ignorespaces Verbindungs Modell\relax }}{16}{figure.caption.22}
-\contentsline {figure}{\numberline {10}{\ignorespaces ESB einer asymetrischen Quelle\relax }}{18}{figure.caption.24}
-\contentsline {figure}{\numberline {11}{\ignorespaces ESB einer symetrischen Quelle\relax }}{18}{figure.caption.25}
-\contentsline {figure}{\numberline {12}{\ignorespaces Leitungsmodell eine Kette von Zweitoren\relax }}{20}{figure.caption.26}
-\contentsline {figure}{\numberline {13}{\ignorespaces Ersatzschaltbild eines elementaren Leiterst\IeC {\"u}cks\relax }}{20}{figure.caption.27}
-\contentsline {figure}{\numberline {14}{\ignorespaces Refelxionen einer Leitung an einer Lastimpedanz \cite {Tekom}\relax }}{22}{figure.caption.29}
-\contentsline {figure}{\numberline {15}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{23}{figure.caption.30}
-\contentsline {figure}{\numberline {16}{\ignorespaces leitungsanpassung f\IeC {\"u}r eine komplexe Last \cite {Tekom}\relax }}{24}{figure.caption.32}
-\contentsline {figure}{\numberline {17}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{24}{figure.caption.33}
-\contentsline {figure}{\numberline {18}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{25}{figure.caption.34}
-\contentsline {figure}{\numberline {19}{\ignorespaces Blockschaltbildeiner Anpassung von der Quelle zur Antenne\relax }}{26}{figure.caption.38}
-\contentsline {figure}{\numberline {20}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{26}{figure.caption.39}
-\contentsline {figure}{\numberline {21}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk und einer Antenne\relax }}{26}{figure.caption.40}
-\contentsline {figure}{\numberline {22}{\ignorespaces Feldvektor mit Einheitsvektoren\relax }}{27}{figure.caption.41}
-\contentsline {figure}{\numberline {23}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{29}{figure.caption.43}
-\contentsline {figure}{\numberline {24}{\ignorespaces horizontalpolarisierter Halbwellendipol\relax }}{29}{figure.caption.44}
-\contentsline {figure}{\numberline {25}{\ignorespaces Ersatzschaltbild einer Antenne mit $Z_{ant}$\relax }}{32}{figure.caption.46}
-\contentsline {figure}{\numberline {26}{\ignorespaces S11 Diagramm eines Dipols in Freiraum\relax }}{33}{figure.caption.47}
-\contentsline {figure}{\numberline {27}{\ignorespaces Smith Diagramm eines Dipols im Freiraum\relax }}{33}{figure.caption.47}
-\contentsline {figure}{\numberline {28}{\ignorespaces S11 eines Dipols mit angrenzendem ABS St\IeC {\"u}ck\relax }}{34}{figure.caption.48}
-\contentsline {figure}{\numberline {29}{\ignorespaces Smith Diagramm eines Dipols mit angrenzendem ABS St\IeC {\"u}ck\relax }}{34}{figure.caption.48}
-\contentsline {figure}{\numberline {30}{\ignorespaces S11 eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{34}{figure.caption.49}
-\contentsline {figure}{\numberline {31}{\ignorespaces Smith-Diagramm eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{34}{figure.caption.49}
-\contentsline {figure}{\numberline {32}{\ignorespaces Flach gestauchte Loop Antenne\relax }}{36}{figure.caption.51}
-\contentsline {figure}{\numberline {33}{\ignorespaces Allgemeines Ersatzschaltbild einer Antenne\relax }}{36}{figure.caption.52}
-\contentsline {figure}{\numberline {34}{\ignorespaces S11 Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{37}{figure.caption.53}
-\contentsline {figure}{\numberline {35}{\ignorespaces Smith Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{37}{figure.caption.53}
-\contentsline {figure}{\numberline {36}{\ignorespaces S11 Diagramm einer $\lambda /2$ Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{38}{figure.caption.54}
-\contentsline {figure}{\numberline {37}{\ignorespaces Smith Diagramm einer $\lambda /2$ Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{38}{figure.caption.54}
-\contentsline {figure}{\numberline {38}{\ignorespaces S11 Diagramm einer $\lambda /2$ Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{39}{figure.caption.55}
-\contentsline {figure}{\numberline {39}{\ignorespaces Smith-Diagramm einer $\lambda /2$ Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{39}{figure.caption.55}
-\contentsline {figure}{\numberline {40}{\ignorespaces S11 Diagramm einer Loop Antenne im Freiraum\relax }}{39}{figure.caption.56}
-\contentsline {figure}{\numberline {41}{\ignorespaces Smith-Diagramm einer Loop Antenne im Freiraum\relax }}{39}{figure.caption.56}
-\contentsline {figure}{\numberline {42}{\ignorespaces S11 Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{40}{figure.caption.58}
-\contentsline {figure}{\numberline {43}{\ignorespaces Smith-Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{40}{figure.caption.58}
-\contentsline {figure}{\numberline {44}{\ignorespaces S11 Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{40}{figure.caption.60}
-\contentsline {figure}{\numberline {45}{\ignorespaces Smith Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{40}{figure.caption.60}
-\contentsline {figure}{\numberline {46}{\ignorespaces Design Ausgangslage\relax }}{41}{figure.caption.64}
-\contentsline {figure}{\numberline {47}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{43}{figure.caption.66}
-\contentsline {figure}{\numberline {48}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{44}{figure.caption.67}
-\contentsline {figure}{\numberline {49}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{44}{figure.caption.68}
+\contentsline {figure}{\numberline {1}{\ignorespaces Hertzscher Dipol mit dem Dipolmoment \textit {p(t)} \cite {Emant}\relax }}{7}{figure.caption.14}
+\contentsline {figure}{\numberline {2}{\ignorespaces Feldvektor\relax }}{8}{figure.caption.15}
+\contentsline {figure}{\numberline {3}{\ignorespaces Fitzgeraldscher Dipol \cite {Emant}\relax }}{8}{figure.caption.16}
+\contentsline {figure}{\numberline {4}{\ignorespaces Loop Antenne mit Feldvektor und Einheitsvektoren\relax }}{9}{figure.caption.18}
+\contentsline {figure}{\numberline {5}{\ignorespaces Dipol Antenne mit Stromverteilung \cite {Tekom}\relax }}{10}{figure.caption.19}
+\contentsline {figure}{\numberline {6}{\ignorespaces Das E Feld einer Dipolantenne in der xz Ebene\relax }}{11}{figure.caption.22}
+\contentsline {figure}{\numberline {7}{\ignorespaces Loop Antenne\relax }}{13}{figure.caption.27}
+\contentsline {figure}{\numberline {8}{\ignorespaces E Feld einer Loop Antenne in der xz Ebene\relax }}{14}{figure.caption.31}
+\contentsline {figure}{\numberline {9}{\ignorespaces Verbindungs Modell\relax }}{16}{figure.caption.35}
+\contentsline {figure}{\numberline {10}{\ignorespaces ESB einer asymetrischen Quelle\relax }}{18}{figure.caption.37}
+\contentsline {figure}{\numberline {11}{\ignorespaces ESB einer symetrischen Quelle\relax }}{18}{figure.caption.38}
+\contentsline {figure}{\numberline {12}{\ignorespaces Leitungsmodell eine Kette von Zweitoren\relax }}{20}{figure.caption.39}
+\contentsline {figure}{\numberline {13}{\ignorespaces Ersatzschaltbild eines elementaren Leiterst\IeC {\"u}cks\relax }}{20}{figure.caption.40}
+\contentsline {figure}{\numberline {14}{\ignorespaces Refelxionen einer Leitung an einer Lastimpedanz \cite {Tekom}\relax }}{22}{figure.caption.42}
+\contentsline {figure}{\numberline {15}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{23}{figure.caption.43}
+\contentsline {figure}{\numberline {16}{\ignorespaces leitungsanpassung f\IeC {\"u}r eine komplexe Last \cite {Tekom}\relax }}{24}{figure.caption.45}
+\contentsline {figure}{\numberline {17}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{24}{figure.caption.46}
+\contentsline {figure}{\numberline {18}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{25}{figure.caption.47}
+\contentsline {figure}{\numberline {19}{\ignorespaces Blockschaltbildeiner Anpassung von der Quelle zur Antenne\relax }}{26}{figure.caption.51}
+\contentsline {figure}{\numberline {20}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{26}{figure.caption.52}
+\contentsline {figure}{\numberline {21}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk und einer Antenne\relax }}{26}{figure.caption.53}
+\contentsline {figure}{\numberline {22}{\ignorespaces Feldvektor mit Einheitsvektoren\relax }}{27}{figure.caption.54}
+\contentsline {figure}{\numberline {23}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{29}{figure.caption.56}
+\contentsline {figure}{\numberline {24}{\ignorespaces horizontalpolarisierter Halbwellendipol\relax }}{29}{figure.caption.57}
+\contentsline {figure}{\numberline {25}{\ignorespaces Ersatzschaltbild einer Antenne mit $Z_{ant}$\relax }}{32}{figure.caption.59}
+\contentsline {figure}{\numberline {26}{\ignorespaces S11 Diagramm eines Dipols in Freiraum\relax }}{33}{figure.caption.60}
+\contentsline {figure}{\numberline {27}{\ignorespaces Smith Diagramm eines Dipols im Freiraum\relax }}{33}{figure.caption.60}
+\contentsline {figure}{\numberline {28}{\ignorespaces S11 eines Dipols mit angrenzendem ABS St\IeC {\"u}ck\relax }}{34}{figure.caption.61}
+\contentsline {figure}{\numberline {29}{\ignorespaces Smith Diagramm eines Dipols mit angrenzendem ABS St\IeC {\"u}ck\relax }}{34}{figure.caption.61}
+\contentsline {figure}{\numberline {30}{\ignorespaces S11 eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{34}{figure.caption.62}
+\contentsline {figure}{\numberline {31}{\ignorespaces Smith-Diagramm eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{34}{figure.caption.62}
+\contentsline {figure}{\numberline {32}{\ignorespaces Flach gestauchte Loop Antenne\relax }}{36}{figure.caption.64}
+\contentsline {figure}{\numberline {33}{\ignorespaces Allgemeines Ersatzschaltbild einer Antenne\relax }}{36}{figure.caption.65}
+\contentsline {figure}{\numberline {34}{\ignorespaces S11 Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{37}{figure.caption.66}
+\contentsline {figure}{\numberline {35}{\ignorespaces Smith Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{37}{figure.caption.66}
+\contentsline {figure}{\numberline {36}{\ignorespaces S11 Diagramm einer $\lambda /2$ Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{38}{figure.caption.67}
+\contentsline {figure}{\numberline {37}{\ignorespaces Smith Diagramm einer $\lambda /2$ Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{38}{figure.caption.67}
+\contentsline {figure}{\numberline {38}{\ignorespaces S11 Diagramm einer $\lambda /2$ Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{39}{figure.caption.68}
+\contentsline {figure}{\numberline {39}{\ignorespaces Smith-Diagramm einer $\lambda /2$ Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{39}{figure.caption.68}
+\contentsline {figure}{\numberline {40}{\ignorespaces S11 Diagramm einer Loop Antenne im Freiraum\relax }}{39}{figure.caption.69}
+\contentsline {figure}{\numberline {41}{\ignorespaces Smith-Diagramm einer Loop Antenne im Freiraum\relax }}{39}{figure.caption.69}
+\contentsline {figure}{\numberline {42}{\ignorespaces S11 Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{40}{figure.caption.71}
+\contentsline {figure}{\numberline {43}{\ignorespaces Smith-Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{40}{figure.caption.71}
+\contentsline {figure}{\numberline {44}{\ignorespaces S11 Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{40}{figure.caption.73}
+\contentsline {figure}{\numberline {45}{\ignorespaces Smith Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{40}{figure.caption.73}
+\contentsline {figure}{\numberline {46}{\ignorespaces Design Ausgangslage\relax }}{41}{figure.caption.77}
+\contentsline {figure}{\numberline {47}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{43}{figure.caption.79}
+\contentsline {figure}{\numberline {48}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{44}{figure.caption.80}
+\contentsline {figure}{\numberline {49}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{44}{figure.caption.81}
