@@ -1,18 +1,18 @@
 \section{Implementierung}\label{sec:Implementierung}
 Die in der „Connect  1“ geforderte symmetrische Bluetooth Antenne soll günstig und platzsparend im Inneren des Gerätes positioniert werden. Aus diesem Grunde wird eine gedruckte Dipolantenne entworfen. In kleinen  elektronischen Geräten sind auf eine Leiterplatte gedruckte Antennen  von Interesse. Die auf einer Leiterplatte gefertigten Antennen haben den Vorteil, dass sie sehr kompakt und günstig zu produzieren sind. Zudem sind die Signalwege vom Sendechip zur Antenne sehr kurz. Trotz eines simplen Antennendesign haben Dipolantennen  ein annähernd isotropes Abstrahlverhalten. Sie sind viel verbreitete Sende- und Empfangsantennen für tragbare Geräte. \\
 
-Auf Grund ihrer simplen und kostengünstigen  Herstellung sind auf  einer Leiterplatte gedruckte Antennen sehr beliebt. Es entstehen nur geringe Kosten weil die Antenne auf demselben PCB, wie die gesamte Gerätelektronik gefertigt wird. Dies geschieht im selben Arbeitsgang der Print Fertigung. Die  Anpassung und die strahlenden  Antennenelemente sind ebenso Teil der Leiterplatte wie die Elektronikbauteil des Prints. Für ein System, bei dem ein isotropes Abstrahlverhalten gefordert ist, wie es in tragbaren Geräten der Fall ist, kommen oft Dipolantennen zum Einsatz. 
-Um eine gute Abstrahlleistung der Antenne zu bekommen, ist ein $\lambda /2$ Dipol ein guter Ansatz. Dabei erfordert es, dass die effektive mechanische Länge des Dipols etwas weniger als eine halbe Wellenlänge beträgt. Eine gute Ansatz ist 0.47 mal die Wellenlänge. 
+Auf Grund ihrer simplen und kostengünstigen  Herstellung sind auf  einer Leiterplatte gedruckte Antennen sehr beliebt. Es entstehen nur geringe Kosten, weil die Antenne auf demselben PCB wie die gesamte Gerätelektronik gefertigt wird. Dies geschieht im selben Arbeitsgang der Print Fertigung. Die  Anpassung und die strahlenden  Antennenelemente sind ebenso Teil der Leiterplatte wie die Elektronikbauteil des Prints. Für ein System, bei dem ein isotropes Abstrahlverhalten gefordert ist, wie es in tragbaren Geräten der Fall ist, kommen oft Dipolantennen zum Einsatz. 
+Um eine gute Abstrahlleistung der Antenne zu bekommen, ist ein $\lambda /2$ Dipol ein guter Ansatz. Dabei erfordert es, dass die effektive mechanische Länge des Dipols etwas weniger als eine halbe Wellenlänge beträgt. Ein guter Ansatz ist 0.47 mal die Wellenlänge. 
 Zur Berechnung der Länge des in Resonanz betriebenen Dipols kann die  Gleichung \ref{eq:lamba_2_laene_dipol} herangezogen werden.
 \begin{equation}\label{eq:lamba_2_laene_dipol}
 L=2l = 0.47 \lambda= 0,47 \dfrac{v}{f}
 \end{equation} 
-Wobei $v$ die tatsächliche Ausbreitungsgeschwindigkeit der Elektronen in den Dipol Radials ist. Diese Geschwindigkeit $v$ hängt von der effektiven dielektrischen Konstante der Umgebung der Dipol Radials ab. 
+Wobei $v$ die tatsächliche Ausbreitungsgeschwindigkeit der Elektronen in den Dipol Radials ist. Diese Geschwindigkeit $v$ hängt von der effektiven dielektrischen Konstante der Umgebung der ab. 
 Die effektive  Impulsgeschwindigkeit der Elektronen kann mit der Gleichung \ref{eff_Geschwindigkeit} berechnet werden. 
 \begin{equation}\label{eff_Geschwindigkeit}
 v = \dfrac{c}{\varepsilon_{eff}}
 \end{equation}
-Wobei $c$ die Lichtgeschwindigkeit im Vakuum und $\varepsilon_{eff}$  die effektive Dielektrizitätskonstante des umgebenden Mediums ist. Die effektive Dielektrizitätskonstante, einer auf ein Substrat gedruckte Antenne, ist von der  Geometrie und dem Dielektrikum des Substrats abhängig. Zur Berechnung der effektiven Dielektrizitätszahl für eine schmale Kupferspur auf einem Substrat aus der Gleichung \ref{eff_epsilon} nehmen. 
+Wobei $c$ die Lichtgeschwindigkeit im Vakuum und $\varepsilon_{eff}$  die effektive Dielektrizitätskonstante des umgebenden Mediums ist. Die effektive Dielektrizitätskonstante, einer auf ein Substrat gedruckte Antenne, ist von der  Geometrie und dem Dielektrikum des Substrats abhängig. Die Berechnung der effektiven Dielektrizitätszahl für eine schmale Kupferspur kann aus der Gleichung \ref{eff_epsilon} entnommen werden. 
 
 \begin{equation}\label{eff_epsilon}
 \varepsilon_{eff}=\dfrac{\varepsilon_r+1}{2}+\dfrac{\varepsilon_r-1}{2}\left[\left(1+\dfrac{12h}{w}\right)^{-\frac{1}{2}}+0.04\left(1-\dfrac{w}{h}\right)^{2}\right]
@@ -20,11 +20,11 @@ Wobei $c$ die Lichtgeschwindigkeit im Vakuum und $\varepsilon_{eff}$  die effekt
 Wobei $h$ die Dicke des Substrats, $w$ die Breite des Spuren und  $\varepsilon_{r}$ die relative Dielektrizitätskonstante des Substrats ist. 
 
 \subsection{Design Ansatz Lambda/2 Dipolantenne}  
-Unter Verwendung der in Kapitel \ref{sec:Implementierung} eingeführten Gleichungen \ref{eq:lamba_2_laene_dipol} soll eine Dipolantenne für die Frequenz 2.45 GHz entworfen werden. Die Antenne wird symmetrisch gespeist. Die Antenne wird auf eine Leiterplatte gedruckt. Als Substrat des Antennenprints kommt eine Standard- FR-4 PCB mit einem geschätzten  $\varepsilon_r $ von 4.3 bei 1GHz und einer Substratdicke von 1,5 mm  zum Einsatz. Die Dicke der Kupferschicht beträgt 35 $\mu m$. Die Leiterbahnbreite für die Radials wird als 1mm breit definiert.\\
+Unter Verwendung der in Kapitel \ref{sec:Implementierung} eingeführten Gleichungen \ref{eq:lamba_2_laene_dipol} soll eine Dipolantenne für die Frequenz 2.45 GHz entworfen werden. Die Antenne wird symmetrisch gespiesen. Die Antenne wird auf eine Leiterplatte gedruckt. Als Substrat des Antennenprints kommt eine Standard- FR-4 PCB mit einem geschätzten  $\varepsilon_r $ von 4.3 bei 1GHz und einer Substratdicke von 1,5 mm  zum Einsatz. Die Dicke der Kupferschicht beträgt 35 $\mu m$. Die Leiterbahnbreite für die Radials wird als 1mm breit definiert.\\
 
 Wird die relative Dielektrizitätskonstante $\varepsilon_{r}$ in die Gleichung \ref{eff_epsilon} eingesetzt, so kann eine effektive Dielektrizitätszahl $\varepsilon_{eff}$  von xxxx berechnet werden.\\
 
-Setzt man die effektive Dielektrizitätszahl $\varepsilon_{eff}$ von xxxxx  in die Gleichung der Elektronengeschwindigkeit \ref{eff_Geschwindigkeit} ein, so erhält man die Geschwindigkeit $v=vvv$. \\
+Setzt man die effektive Dielektrizitätszahl $\varepsilon_{eff}$ von xxxxx  in die Gleichung der Elektronengeschwindigkeit aus der Formel \ref{eff_Geschwindigkeit} ein, so erhält man die Geschwindigkeit $v=vvv$. \\
 Die Geschwindigkeit $v$  kann in der  Gleichung \ref{eq:lamba_2_laene_dipol} eingesetzt werden. Die Länge der Dipol Radials lässt sich bestimmen als:
 \begin{equation}\label{eq:lamba_2_laene_dipol}
 L=2l = 0.47 \lambda= 0,47 \dfrac{v}{f}=0,47 \dfrac{vvvv}{2.45[GHz]}=bla
