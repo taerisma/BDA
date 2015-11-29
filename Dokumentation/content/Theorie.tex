@@ -630,8 +630,8 @@ Weitere Annahmen sind:
 \end{itemize}
 
 \subsubsection{Linkbudget}
-Unter dem Linkbudget versteht man die Summe aller Gewinne und Verluste vom Sender über das Übertragungsmedium bis hin zum Empfänger. Es beschreibt somit, welcher Signalpegel beim Empfänger nach Abzug aller Verluste ausgehend von der Sendeleistung ankommt. Anhand dieses Wertes und den technischen Angaben des Empfängers kann im voraus die maximal mögliche Datenrate berechnet werden. Wenn die Sendeleitung gesetzlich limitiert ist und die maximale Bit Fehler Rate (EBR) bekannt ist, kann die maximale Distanz oder die maximale Datenrate berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. 
-Das Linkbudget kann  nahezu beliebig komplex gestaltet werden und eine  Reihe von weiteren Parametern beinhalten. In der Praxis hat sich für die Berechnung des Linkbudgets bei Richtfunksystemen nach folgender Formel \ref{eq:LinkBudgetGelichung} bewährt.
+Unter dem Linkbudget versteht man die Summe aller Gewinne und Verluste vom Sender über das Übertragungsmedium bis hin zum Empfänger. Es beschreibt, welcher Signalpegel beim Empfänger nach Abzug aller Verluste ausgehend von der Sendeleistung ankommt. Anhand dieses Wertes und den technischen Angaben des Empfängers kann im voraus die maximal mögliche Datenrate berechnet werden. Wenn die Sendeleitung gesetzlich limitiert ist und die maximale Bit Fehler Rate (EBR) bekannt ist, kann die maximale Distanz oder die maximale Datenrate berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. 
+Das Linkbudget kann  nahezu beliebig komplex gestaltet werden und eine  Reihe von weiteren Parametern beinhalten. In der Praxis hat sich für die Berechnung des Linkbudgets bei Richtfunksystemen nach  Formel \ref{eq:LinkBudgetGelichung} bewährt.
 
 
 \begin{equation}
@@ -640,11 +640,11 @@ P_{Rx} = P_{Tx}+L_{Tx}+G_{x}+L_{fs}+L_{Rx}+G_{r}+L_{div}\label{eq:LinkBudgetGeli
 
 Die Formel \ref{eq:LinkBudgetGelichung} wird als Ausgangslage für die Berechnung des minimalen Gewinns der Sendeantenne $G_{x}$ dienen. Da  die minimale Empfängersensitivität aus dem Daten Blatt des  Bluetooth Low Energie Texas Instruments CC2541 Chip bekannt ist, kann der nötige Gewinn der Sendeantenne $G_{x}$ berechnet werden. Der minimale Gewinn ist ein Kriterium welches beim Antennendesign beachtet werden muss.
 
-Wobei $P_{Rx}$ für den zu berechnenden Empfangspegel in dBm steht.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite steht. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (engl. gain) der Empfangsantenne. $L_{fs}$ für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$ steht für diverse weitere Verluste wie zum Beispiel Hindernisse oder für eine System Reserve.  $L_{Rx}$ für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
+Der Empfangspegel $P_{Rx}$ in der Fromel \ref{eq:LinkBudgetGelichung}  steht für die am Empfäger resultierende Leitung in dBm.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ steht für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (englisch gain) der Empfangsantenne. $L_{fs}$ steht für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$  für diverse weitere Verluste wie zum Beispiel Hindernisse oder für eine System Reserve.  $L_{Rx}$ steht für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
 
 
-Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung (engl. Free Space Path Loss)  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung von elektromagnetischen Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen  und Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
-In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in dem Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler die Gleiche ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler wird, desto mehr verteilt sich die Energie auf eine immer grösser werdende Oberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz.
+Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung (engl. Free Space Path Loss)  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung von elektromagnetischen Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie zu Beispiel die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen  und Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
+In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler, der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in den Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler identisch ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler wird, desto mehr verteilt sich die Energie auf eine immer grösser werdende Oberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz.
 \cite{linkbudget}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -676,7 +676,7 @@ In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem St
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1, das entspricht 0dBi angenommen. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der \glqq Connect 1\grqq zur Anwendung kommende Texas Instruments CC2541 Chip angenommen.
+Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1 definiert, das entspricht 0dBi. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der \glqq Connect 1\grqq zur Anwendung kommende Texas Instruments CC2541 Chip angenommen.
 \begin{eqnarray}
     	d_{0} 	&=& x \\ \label{eq:d0_LinkBudget}
     K		&=& \left(\dfrac{\lambda}{4\pi d_{0}} \right)^{2}G_{x}G_{r} \\ \label{eq:K_LinkBudget}
@@ -772,7 +772,7 @@ Symmetrische Quellen haben zwei oder drei Anschlusspunkte. Sie übertragen das H
 \label{fig:symetrischeQuelle}
 \end{figure}
 \subsection{Zuleitung}
-Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialkabelleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung, während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
+Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung, während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
 Weiter Verbindungstypen sind:
 \begin{itemize}
 \item Drahtverbindung
@@ -783,7 +783,7 @@ Weiter Verbindungstypen sind:
 \end{itemize}
 An dieser Stelle soll genauer auf die elektrische leitergebundene Übertragung eingegangen werden.
 Leitungen gehören zu den wichtigsten Übertragungsmedien der Nachrichtentechnik. Sie leiten fast mit Lichtgeschwindigkeit elektromagnetische Wellen vom Sendeort zum Empfangsort.
-Bei Gleichstrom und sehr niedrigen Frequenzen kann eine Leitung im allgemeinen als ideal oder mit einem rein ohmischen Verhalten angenommen werden. Man macht keine grossen Fehler, wenn man Signalverläufe am Eingang und am Ausgang als gleich und gleichzeitig ansieht. Kommt aber die physikalische Länge der Leitung in die Grössenordnung der Wellenlänge der Schwingung, oder die Anstiegszeit eines Impulses in die Grössenordnung der Ausbreitungsverzögerung, dann kann die Ausgangsspannung völlig anders aussehen als die Eingangsspannung. Die Leitung muss jetzt als Zweitor mit frequenzabhängigen Eigenschaften betrachtet werden.
+Bei Gleichstrom und sehr niedrigen Frequenzen kann eine Leitung im allgemeinen als ideal oder mit einem rein ohmischen Verhalten angenommen werden. Man macht keine grossen Fehler, wenn man Signalverläufe am Eingang und am Ausgang als gleich und gleichzeitig ansieht. Kommt aber die physikalische Länge der Leitung in die Grössenordnung der Wellenlänge der Schwingung oder die Anstiegszeit eines Impulses in die Grössenordnung der Ausbreitungsverzögerung, dann kann die Ausgangsspannung völlig anders aussehen als die Eingangsspannung. Die Leitung muss jetzt als Zweitor mit frequenzabhängigen Eigenschaften betrachtet werden.
 Ein geeignetes Konzept für das Verständnis ist der Begriff der elektrischen Länge:
 \begin{equation}
 Elektrische Länge=\dfrac{l}{\lambda}\label{eq:ElektrischeLänge}
@@ -791,10 +791,10 @@ Elektrische Länge=\dfrac{l}{\lambda}\label{eq:ElektrischeLänge}
 
 Bei der  Gleichung \ref{eq:ElektrischeLänge} ist $l$ die Länge der Leitung und $\lambda$ gibt die Wellenlänge des Signales auf der Leitung mit der Länge $l$ an. 
 			
-Zur Analyse ob eine Leitung strahlt, das heisst, die Leitung muss als frequeznabäniges Zweitor betrachtet werden, werden zwei Fälle unterschieden.\\
+Zur Analyse, ob eine Leitung strahlt, wird ihre Elektrische Länge betrachtet. \\
 Ist die $Elektrische Länge=\dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klassischen Schaltungstheorie behandelt werden. Die Leitung wird meist als verlustlos und reflexionsfrei betrachtet.\\
-Ein etwas anders Bild zeigt sich, wenn die $Elektrische Länge=\dfrac{l}{\lambda}>\dfrac{1}{20}$ entspricht. Die Phänomene der elektromagnetischen Wellen werden wirksam. Die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. 
-Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeS} verknüpft.
+Ein etwas anders Bild zeigt sich, wenn die $Elektrische Länge=\dfrac{l}{\lambda}>\dfrac{1}{20}$ entspricht. In deisem Fall muss die Leitung als frequeznabäniges Zweitor betrachtet werden. Die Phänomene der elektromagnetischen Wellen werden wirksam. Die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. 
+Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ und mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeMITc} verknüpft.
 \begin{equation}
 \lambda_{0}=\dfrac{c}{f}\label{eq:WellenlängeMITc}
 \end{equation}
@@ -802,7 +802,7 @@ Da eine Leitung immer etwas Verlustbehaftet ist, kann die Ausbreitung einer Well
 \begin{equation}
 \lambda=\dfrac{v}{f}\label{eq:WellenlängeMITv}
 \end{equation}
-Die Signalgeschwindigkeit $v$ dividiert durch die Anzahl Schwingungen pro Sekunde ergibt die Wellenlänge $\lambda$ im Medium.
+Die Signalgeschwindigkeit $v$ dividiert durch die Anzahl Schwingungen pro Sekunde ergibt die Wellenlänge $\lambda$.
 
 Für die Gleichungen \ref{eq:ElektrischeLänge}, \ref{eq:WellenlängeMITc} und \ref{eq:WellenlängeMITv} gilt:
 \begin{enumerate}[leftmargin=2cm]
@@ -812,12 +812,12 @@ Für die Gleichungen \ref{eq:ElektrischeLänge}, \ref{eq:WellenlängeMITc} und \
    \item[] $c$: Lichtgeschwindigkeit  [m/s] 
    \item[] $v$: Geschwindigkeit  [m/s] 
 \end{enumerate} 
-Besonders vorteilhafte Übertragungseigenschaften hat die längshomogene Leitung. Es handelt sich dabei um eine Leitung, die auf ihrer ganzen Länge konstanten Leitungsquerschnitt, gleiches
+Besonders vorteilhafte Übertragungseigenschaften hat die längshomogene Leitung. Es handelt sich dabei um eine Leitung, die auf ihrer ganzen Länge einen konstanten Leitungsquerschnitt, gleiches
 Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator hat. Gebräuchliche Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, eine Streifenleitung auf
 einer Printplatte oder das Koaxialkabel.
 \subsubsection{Leitungsmodell}
 Um die Zweitoreigenschaften einer längshomogenen Leitung zu ermitteln, wird diese wie in
-Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren unterteilt. Es ist von einer Zweitorkette die Rede.
+Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt. Diese wird in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren unterteilt. Es ist von einer Zweitorkette die Rede.
 \begin{figure}[h]
 	\begin{center}
 	\begin{tikzpicture}
@@ -845,7 +845,7 @@ Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt in $n$ gleiche Elemen
 \caption{Leitungsmodell eine Kette von Zweitoren}
 \label{fig:LeitungsmodellZweitorKette}
 \end{figure}
-Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette}gezeigt ist, kann die Leiterlänge durch $n$ geteilt werden. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ lange Leiterstücke. Betrachtet man ein kurzes Leitungsstück mit der Länge $\Delta z = 1/n$, so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\phi = i  \Delta L$. \\
+Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette} gezeigt ist, kann die Leiterlänge durch $n$ geteilt werden. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ lange Leiterstücke. Betrachtet man ein kurzes Leitungsstück mit der Länge $\Delta z = 1/n$, so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\phi = i  \Delta L$. \\
 Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern. Die Folge davon ist ein elektrisches Feld und eine Oberflächenladung $Q = u  \Delta C$ auf den Leitern \cite{Emant}.
 
 \begin{figure}[!htb]
@@ -873,7 +873,7 @@ Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitun
    \item[] $\Delta m$: Abschnittslänge  [$m$] 
 \end{enumerate} 
 \todo{serieeninduktivität}
-Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT}berechnet werden \cite{Tekom}.
+Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT} berechnet werden \cite{Tekom}.
 \begin{eqnarray}\label{eq:UvonZundT}
 U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
@@ -892,7 +892,7 @@ In diesem Kapitel werden zwei Arten der Anpassung genauer betrachtet. Es sind di
 Die Leistungsanpassung wird angewendet, wenn die maximale Leistungsübertragung gefordert ist. Die maximale Leistung in der Last wird erreicht, wenn der Lastwiderstand dem Quellenwiderstand entspricht. Bei rein ohmischen Quellen und Lastwiderstand bedeutet das:\\
 \[R_{Quelle} = R_{Last}\]
 
-Die Wellenanpassung wird auch Leitungsanpassung oder Impedanzanpassung genannt. Wellenanpassung ist in der Hochfrequenztechnik immer dann gefragt, wenn die zu übertragenden Wellen oder Impulse ohne Reflexionen von einer Quelle zu einer Last übertragen werden. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, so wird Wellenanpassung erreicht, wenn die Leistungsanpassung erfüllt ist. Treten jedoch Impedanzen mit positivem oder negativem Imaginärteil auf, so muss für die Wellenanpassung das folgende Kriterium erfüllt sein: \\
+Die Wellenanpassung wird auch Leitungsanpassung oder Impedanzanpassung genannt. Wellenanpassung ist in der Hochfrequenztechnik immer dann gefragt, wenn die zu übertragenden Wellen oder Impulse ohne Reflexionen von einer Quelle zu einer Last übertragen werden. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, wird sowohl Wellenanpassung als auch Leistungsanpassung erreicht. Treten jedoch Impedanzen mit positivem oder negativem Imaginärteil auf, so muss für die Wellenanpassung das folgende Kriterium erfüllt sein: \\
 \begin{eqnarray}\label{eq:ZeinZaus}
 Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
 \end{eqnarray}
@@ -920,7 +920,8 @@ r=\dfrac{U_{R}}{U_{V}}=\dfrac{Z_{L}-Z_{V}}{Z_{L} + Z_{V}}=-\dfrac{I_{R}}{I_{V}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Die Spannung $U_L$ über der Last ergibt sich  aus der Überlagerung der Vorlaufendenspannungswelle und  Rücklaufendenspannugswelle. Dies ist in der Gleichung \ref{eq:AnpassungULast} gezeigt. In Gleichung \ref{eq:AnpassungILast} ist der Strom in der Last ersichtlich. Dieser wird aus der Vorlaufenden- und Rücklaufendenstromwelle gebildet.
+Die Spannung $U_L$ über der Last ergibt sich  aus der Überlagerung der vorlaufenden Spannungswelle und  rücklaufenden Spannugswelle. Dies ist in der Gleichung \ref{eq:AnpassungULast} gezeigt. In Gleichung \ref{eq:AnpassungILast} ist der Strom in der Last ersichtlich. Dieser wird aus der Vorlaufenden- und Rücklaufendenstromwelle gebildet.
+\todo{Spannugswellen}
 
 \begin{eqnarray}\label{eq:AnpassungULast}
 U_L = U_V + U_R
@@ -930,7 +931,7 @@ U_L = U_V + U_R
 I_L = I_V + I_R
 \end{eqnarray}
 
-Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist, was als stehende Welle bezeichnet wird. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten löschen sich die Wellen gegenseitig aus. Ihr Wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert: \\
+Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist. Dies wird als stehende Welle bezeichnet. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten heben sich die Wellen gegenseitig auf. Ihr Wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert: \\
 
 Rückflussdämpfung $a$:\\
 Die Rückflussdämpfung a wird in der englischen Literatur \textit{Return Loss} genannt.
@@ -943,28 +944,28 @@ Welligkeitsfaktor $s$:
 \begin{eqnarray}\label{eq:Welligkeitsfaktor_s}
 s=\dfrac{U_{max}}{U_{min}}=\dfrac{1+|r|}{1-|r|}
 \end{eqnarray}
-Der Welligkeitsfaktor $s$ \ref{{eq:Welligkeitsfaktor_s}} bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung. Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet. \\
+Der Welligkeitsfaktor $s$ \ref{eq:Welligkeitsfaktor_s} bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung. Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet. \\
+\todo{Betrag Welligkeisfaktor s}
 
 Anpassnetzwerke: \\
-Nachrichtentechnische Systeme können als eine Kette von aktiven oder passiven Eintor- und Zweitor-Schaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette, muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgansimpedanz $Z_{aus}$ bezeichnet. 
-Um die Anpassungsbedingungen zu formulieren, kann das Zweitor als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden, welche durch den Lastwiderstand $Z_L$ belastet wird.
+Nachrichtentechnische Systeme können als eine Kette von aktiven oder passiven Eintor- und Zweitorschaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgansimpedanz als $Z_{aus}$ bezeichnet. 
+Um die Anpassungsbedingungen zu formulieren kann das Zweitor als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden. Diese wird  durch den Lastwiderstand $Z_L$ belastet.
 
 Leistungsanpassung: \\
 Für die Übertragung der maximalen Wirkleistung von der Quelle zur Last  wird Leistungsanpassung benötigt. Um diese Bedingung zu erfüllen muss gelten:
 
 \[Z_{ein} = Z_{aus}^*\]
-Das bedeutet, eine induktive Komponente beim Innenwiderstand muss somit durch eine gleich grosse kapazitive Komponente beim Aussenwiderstand kompensiert werden und umgekehrt. Gleichzeitig müssen die beiden Wirkwiderstände gleiche Werte aufweisen. Das heisst der Realteil von $Z_{ein}$ und $Z_{aus}$ sind gleich, jedoch sind die Imaginäranteile konjugiert komplex. Das bedeutet, dass die Blindwiderstände von Quelle und Last sich ausgleichen müssen. Dies geschieht, wenn eine ohmisch induktive Quelle durch eine ohmisch kapazitive Last kompensiert wird um das Leistungsanpassungskriterium zu erfüllen. \\
+Das bedeutet, eine induktive Komponente beim Innenwiderstand muss somit durch eine gleich grosse kapazitive Komponente beim Aussenwiderstand kompensiert werden und umgekehrt. Gleichzeitig müssen die beiden Wirkwiderstände gleiche Werte aufweisen. Das heisst, der Realteil von $Z_{ein}$ und $Z_{aus}$ sind gleich, jedoch sind die Imaginäranteile konjugiert komplex. Das bedeutet, dass die Blindwiderstände von Quelle und Last sich ausgleichen müssen. Dies geschieht, wenn eine ohmisch induktive Quelle durch eine ohmisch kapazitive Last kompensiert wird um das Leistungsanpassungskriterium zu erfüllen. \\
 
 Wellenanpassung: \\
-Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderstände 
-eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, und ein Teil des Signals wird reflektiert. Stehende Wellen sind das Resultat. Um diese störenden Einflüsse zu vermeiden, muss für komplexe Widerstände folgende Beziehung erfüllt sein:
+Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderstände zu eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, dabbei wird  ein Teil des Signals reflektiert. Stehende Wellen sind das Resultat. Um diese störenden Einflüsse zu vermeiden, muss für komplexe Widerstände folgende Beziehung erfüllt sein:
 \[Z_{I} = Z_{L}\]
 
-Diese Anpassung bezeichnet man als Impedanzanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_i = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leitungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die bei der Leistungsanpassung entstehenden Reflexionen  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung die bei der Wellenanpassung. Lediglich beim Leistungsverstärkern, zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
+Diese Anpassung bezeichnet man als Impedanzanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_i = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leitungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die bei der Leistungsanpassung entstehenden Reflexionen  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Die bei der Wellenanpassung resultiert. Nur bei Leistungsverstärkern, zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
 
-Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung, das heisst die in dem $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung wie in der Last im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel \ref{eq:PmaxLeistungsanpassung} zeigt die maximale Leitung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
+Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung. Das heisst, die in dem $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung wie in der Last im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel \ref{eq:PmaxLeistungsanpassung} zeigt die maximale Leistung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung, bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
 \begin{eqnarray}\label{eq:PmaxLeistungsanpassung}
-P_{Last_max}=\dfrac{U_{0}^2}{4R_Q} bei R_Q=R_L
+P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} bei R_Q=R_L
 \end{eqnarray}
 
 \begin{figure}[h]
@@ -1047,7 +1048,7 @@ a_{dB} &= 20\log \left( \sqrt{\dfrac{RQ}{RL}}+\sqrt{\dfrac{RQ}{RL}-1}\right)
 \label{fig:Leistungsanpassung_RQ_grösser_als_RL}
 \end{figure}
 
-Gilt es eine hochohmige Last RL an eine Quelle mit einem RQ der kleiner ist als RL anzupassen, so können die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL}und die mathematischen Beziehungen und den Gleichungen \ref{eq:R1R2wennRLgrösserRQ}  verwendet werden.
+Gilt es eine hochohmige Last RL an eine Quelle mit einem RQ der kleiner ist als RL anzupassen, so können die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL} und die mathematischen Beziehungen und den Gleichungen \ref{eq:R1R2wennRLgrösserRQ}  verwendet werden.
 
 \begin{align}\label{eq:R1R2wennRLgrösserRQ}
 R1 &= \sqrt{RL(RL-RQ)}\\
@@ -1083,8 +1084,8 @@ a_{dB} &= 20\log \left( \sqrt{\dfrac{RL}{RQ}}+\sqrt{\dfrac{RL}{RQ}-1}\right)
 \label{fig:LeistungsanpassungU0_RQkleiner_als_RL}
 \end{figure}
 
-\textbf{Entwurf eines verlustfreien L-Netzwerkes}
-Ein einfaches verlustfreies Anpassnetzwerk besteht aus zwei Reaktanzen. Der Entwurfsansatz besteht darin, dass eine Reaktanz $X_{p}$ parallel zum grösseren Widerstand, in Abbildung xxxx wäre dies der Quellenwiderstand $R_{Q}$ geschalten wird. In diesem Fall folgt für die Impedanz $Z_{links} $von der Trennlinie... \\
+\textbf{Entwurf eines verlustfreien L-Netzwerkes}\\
+Ein einfaches, verlustfreies Anpassnetzwerk besteht aus zwei Reaktanzen. Der Entwurfsansatz besteht darin, dass eine Reaktanz $X_{p}$ parallel zum grösseren Widerstand, in Abbildung xxxx wäre dies der Quellenwiderstand $R_{Q}$, geschalten wird. In diesem Fall folgt für die Impedanz $Z_{links} $von der Trennlinie... \\
 \todo{Bild einfügen L Netzwetzwerk}
 Formel\\
 \todo{Formel 2.39}
@@ -1092,7 +1093,7 @@ $X_p$  kann nun so gewählt werden, dass der Realteil von $Z_{Links}$  dem Lastw
 \begin{equation}
 R_{Links}= R_L
 \end{equation}
-Als nächstes gilt es die so eingeführte imaginäre Grössse $X_{Links}$ auf der rechten Seite der 
+Als nächstes gilt es, die so eingeführte imaginäre Grössse $X_{Links}$ auf der rechten Seite der 
 Trennlinie zu kompensieren, indem die Seriereaktanz $X_{s}$entsprechend gewählt wird: 
 \begin{equation}
 X_{Links}= -jX_s
@@ -1116,8 +1117,8 @@ Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit ei
 \item 	Singalanpassung
 \end{itemize}
 Leistungsanpassung wird benötigt, wenn der Leistungsfluss möglichst unbeeinträchtigt sein soll. Es muss gelten
-$Z_{ein}=Z_{aus}*$
-Das bedeutet, dass der Realanteil von $Z_{ein}$ und $Z_{aus}$ gleich ist, aber der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, $Z_{aus}$ hat beim Imaginärteil ein umgekehrtes Vorzeichen als der $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Man bedenke, das ist im besten Falle nie mehr als 50\%.
+$Z_{ein}=Z_{aus}*$.
+Das bedeutet, dass der Realanteil von $Z_{ein}$ und $Z_{aus}$ gleich ist jedoch der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, $Z_{aus}$ hat beim Imaginärteil ein umgekehrtes Vorzeichen als der $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Man bedenke, das ist im besten Falle nie mehr als 50\%.
 Signalanpassung wird angewendet, wenn möglichst keine Reflexionen auf der Leitung entstehen sollen. Es muss gelten:\\
 $Z_{ein}=Z_{aus}$\\%zentrieren
 Die Signalanpassung ist dann gewünscht, wenn die Qualität des Signals Vorrang hat und keinerlei Reflexionen erwünscht sind. In diesem Fall ist das Stehwellenverhältnis SWR = 1.
@@ -1130,11 +1131,11 @@ Eine Quelle mit einem Ausgangswiderstand von nicht 50 Ohm reell wird mit Hilfe e
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=8cm]{content/bilder/Anpassung.pdf}%
-	\caption{Blockschaltbildeiner Anpassung von der Quelle zur Antenne}
+	\caption{Blockschaltbild einer Anpassung von der Quelle zur Antenne}
 	\label{Anpassung}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\todo{Bild Anpassung selber machn}
 
 Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpassnetzwerk zwischen der Leitung und der Antenne benötigt.  Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
