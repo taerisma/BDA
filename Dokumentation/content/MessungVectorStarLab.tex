@@ -1,0 +1,57 @@
+	\section{ Netzwerkanalysator }
+	Mit hilfe des Netzwerkanalysor werden die Streuparamaeter des DUT aufgenommen. Der \textit{Return Loss} also  die Rückflussdämpfung und die Durchgangsdämpfung oder die Kopplung zweier Ports sind oft von Interesse.\\
+	Um die Impedanz $Z_{ant}$ einer Antenne zu bestimmen wird das Smith Diagramm mit dem Netzwerkanalysator verendet. Es zeigt den Realteil einer Impedanz sowie die Reaktanz. Die positiven imaginär Teile entsprechen einer Induktivität  und die negativen Anteilen einer Kapazität.
+	
+	\subsection{DUT und Netzwerkanalysator vorbereiten}
+	Netzwerkanalysator etwas laufen lassen. Wenn der Netzwerkanalysator kalibriert ist, dann das Messkabel nicht mehr wechseln. Bei der Kalibrierung nicht mit den Händen das Kabel oder die Stecker beeinflussen. Falls nötig eklektischleidende HF Absorber Matten als Unterlage verwenden. \\
+	Auf mögliche Störquellen achten, diese abschirmen oder ausschalten.
+	\begin{itemize}
+	\item Netzwerkanalysator 10 Minuten laufen lassen
+	\item Netzwerkanalysator Kalibrieren
+	\begin{itemize}
+	\item offen
+	\item $50\Omega$
+	\item short
+	\end{itemize}
+	\item Ofeset der Messebene einstellen
+	\item PRESET
+	\item SPAM die Mittenfrequenz wählen
+	\item die Bandbreite wählen
+	\item die Filte für das Grundrauschen wählen
+	\item Pegel des Grundrausen bestimmen
+	\end{itemize}
+	
+	\section{Starlab}
+	Das StarLab misst die Nahfeldeigenschaften einer Antenne oder eines Strahlenden Körpers. Diese werden benötigt um die Ferfeldeigenschaften zu berechen. Dies geschieht mit einer \textit{near field to fare fild transformation}. Für elektrisch keine Antennen kennen je nach Abstand zur Antenne und Abhängig von der maximalen Antennen Abmessung drei Verschiedene Empfangszonen. Der Übergang zwischen den Zonen ist fliessen. Es gilt, dass das Nahfeld wir in zwei Regionen unterteilt. Es sind dies das Nahfeld und das strahlende Nafeld. Das Fernfeld entspricht der Fraunhofer Kriterium.
+	
+	\begin{itemize}
+	\item Nahfeld bis zum Abstand $r<2\lambda$
+	\item strahlendes Nahfeld bis zum Abstand $r<\dfrac{D^2}{2\lambda}$
+	\item Nahfeld bis zum Abstand $r>\dfrac{2D^2}{\lambda}$
+\end{itemize}	 
+
+	\subsection{DUT vorbereiten}
+	\begin{itemize}
+	\item 50 Ohm Abschlusswiderstand am Ende des Kabel beachten
+	\item 6dB Dämpfungsglied am Ende des Kabel überprüfen
+	\item Die Antenne muss am DUT fest befestigt sein
+	\item Das Messkabel benötigt eine Zugsentlastung
+	\item Koordinatensystem beim platzieren des DUT beachten
+	\begin{itemize}
+	\item Koordinatenbezugssystem muss gleich gewählt sein wie das des Bezugssystem
+	\item Wo ist der Startpunkt von $\theta=0^\circ$
+	\item in welche Richtung läuft $\theta$
+	\item Wo ist der Startpunkt von $\phi=0^\circ$
+	\item in welche Richtung läuft $\phi$
+	\end{itemize}
+	\item DUT am Messturm befestigen 
+	\item Messturm auf $\phi=0^\circ$, $\phi=90^\circ$ und zurück auf $\phi=0^\circ$ drehen und Position bestimmen
+	\end{itemize}
+\subsection{Was wird gemmessen}
+\begin{itemize}
+	\item 3D Em tot in dB
+	\item xy Ebene auf der Höhe $z=0$ (Vogelperspektive) $\theta=90^\circ$ $\phi=360^\circ= \pm \pi=180^\circ$
+	\item xz Ebene auf der Höhe $y=0$ (von Vorne in das Starlab hinein) $\theta\pm 180^\circ =\pm \pi$ $\phi= 0\circ = 180^\circ$
+	\item Effizeinz
+\end{itemize}
+
