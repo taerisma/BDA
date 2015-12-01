@@ -1118,22 +1118,42 @@ Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit ei
 \end{itemize}
 Leistungsanpassung wird benötigt, wenn der Leistungsfluss möglichst unbeeinträchtigt sein soll. Es muss gelten
 $Z_{ein}=Z_{aus}*$.
-Das bedeutet, dass der Realanteil von $Z_{ein}$ und $Z_{aus}$ gleich ist jedoch der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, $Z_{aus}$ hat beim Imaginärteil ein umgekehrtes Vorzeichen als der $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Man bedenke, das ist im besten Falle nie mehr als 50\%.
+Das bedeutet, dass der Realanteil von $Z_{ein}$ und $Z_{aus}$ gleich ist jedoch der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, $Z_{aus}$ hat beim Imaginärteil ein umgekehrtes Vorzeichen als der $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Dies entspricht  50\% der erzwugten Leistung wird imLastwiderstand und 50\% in der Quelle umgesetzt.
 Signalanpassung wird angewendet, wenn möglichst keine Reflexionen auf der Leitung entstehen sollen. Es muss gelten:\\
 $Z_{ein}=Z_{aus}$\\%zentrieren
 Die Signalanpassung ist dann gewünscht, wenn die Qualität des Signals Vorrang hat und keinerlei Reflexionen erwünscht sind. In diesem Fall ist das Stehwellenverhältnis SWR = 1.
-Um die jeweilig gewünschte Anpassung zu erreichen kommen Anpassnetzwerke zum Einsatz. Diese sind meist passive Netzwerke mit Induktivitäten L und Kapazitäten C. Manchmal kommt zur Kapazität und zur Induktivität ein Widerstand hinzu.\\
+Um die jeweilig gewünschte Anpassung zu erreichen, kommen Anpassnetzwerke zum Einsatz. Diese sind meist passive Netzwerke mit Induktivitäten L und Kapazitäten C. Manchmal kommt zur Kapazität und zur Induktivität ein Widerstand hinzu.\\
 Ein Beispiel für Anpassung.\\
-Eine Quelle mit einem Ausgangswiderstand von nicht 50 Ohm reell wird mit Hilfe einer ersten Anpassung auf eine 50 Ohm Leitung angepasst. Am Ende der 50 Ohm Leitung wird ein weiteres Anpassungsnetzwerk benötigt. Damit wird die Leitung und die Antennen aufeinander abgestimmt.\\
+Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm Leitung angeschlossen. Am Ende der 50 Ohm Leitung wird ein  Anpassungsnetzwerk benötigt. Damit wird die Leitung und die Antennen aufeinander abgestimmt.Das Anpassnetzwerek passt die komplexe Antennenimpedanz auf $50\Omega$ reell und $+j0\Omega$ an. In diesem Beispiel wird sowohl Wellen als auch Leitungsanpassung erfüllt.\\
 
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+	\draw[line width=1.5pt](0, 0) rectangle (3, 2) node at (1.5, 1) {Quelle};
+	\draw[line width=1.5pt, *-](3, 1.4)  -- (4, 1.4);
+	\draw[line width=1.5pt, *-](3, 0.7)  -- (4, 0.7);
+	\draw[line width=1.5pt](4, 0) rectangle (7, 2) node at (5.5, 1) {50 $\Omega$Leitung};
+	\draw[line width=1.5pt, *-](7, 1.4)  -- (8, 1.4);
+	\draw[line width=1.5pt, *-](7, 0.7)  -- (8, 0.7);
+	\draw[line width=1.5pt](8, 0) rectangle (11, 2) node at (9.5, 1) {Anpassung};
+	\draw[line width=1.5pt, *-](11, 1.4)  -- (12, 1.4);
+	\draw[line width=1.5pt, *-](11, 0.7)  -- (12, 0.7);
+	\draw[line width=1.5pt](12, 0) rectangle (15, 2) node at (13.5, 1) {Antenne (Last)};
+	\end{tikzpicture}
+	\end{center}
+\caption{Blockschaltbild einer  Quelle mit Leitung, Anpassung und Antenne}
+\label{Anpassung}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=8cm]{content/bilder/Anpassung.pdf}%
-	\caption{Blockschaltbild einer Anpassung von der Quelle zur Antenne}
-	\label{Anpassung}
-\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=8cm]{content/bilder/Anpassung.pdf}%
+%	\caption{Blockschaltbild einer Anpassung von der Quelle zur Antenne}
+%	\label{Anpassung}
+%\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Bild Anpassung selber machn}
 
