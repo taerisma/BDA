@@ -1,9 +1,9 @@
-	\section{ Netzwerkanalysator }
-	Mit hilfe des Netzwerkanalysor werden die Streuparamaeter des DUT aufgenommen. Der \textit{Return Loss} also  die Rückflussdämpfung und die Durchgangsdämpfung oder die Kopplung zweier Ports sind oft von Interesse.\\
-	Um die Impedanz $Z_{ant}$ einer Antenne zu bestimmen wird das Smith Diagramm mit dem Netzwerkanalysator verendet. Es zeigt den Realteil einer Impedanz sowie die Reaktanz. Die positiven imaginär Teile entsprechen einer Induktivität  und die negativen Anteilen einer Kapazität.
+\section{ Netzwerkanalysator }
+Mit Hilfe des Netzwerkanalysor werden die Streuparameter des DUT aufgenommen. Der \textit{Return Loss} also  die Rückflussdämpfung $S_{11}$ und die Durchgangsdämpfung $S_{21}$ oder die Kopplung zweier Ports sind oft von Interesse.\\
+	Um die Impedanz $Z_{ant}$ einer Antenne zu bestimmen wird das Smith Diagramm mit dem Netzwerkanalysator verendet. Es zeigt den Realteil einer Impedanz sowie die Reaktanz an. Die positiven imaginär Teile entsprechen einer Induktivität  und die negativen Anteilen einer Kapazität.
 	
 	\subsection{DUT und Netzwerkanalysator vorbereiten}
-	Netzwerkanalysator etwas laufen lassen. Wenn der Netzwerkanalysator kalibriert ist, dann das Messkabel nicht mehr wechseln. Bei der Kalibrierung nicht mit den Händen das Kabel oder die Stecker beeinflussen. Falls nötig eklektischleidende HF Absorber Matten als Unterlage verwenden. \\
+	Netzwerkanalysator etwas laufen lassen. Den Netzwerkanalysator kalibrieren.  Wenn der Netzwerkanalysator kalibriert ist, dann das Messkabel nicht mehr wechseln. Bei der Kalibrierung nicht mit den Händen das Kabel oder die Stecker beeinflussen. Falls nötig eklektisch leidende HF Absorber Matten als Unterlage verwenden. \\
 	Auf mögliche Störquellen achten, diese abschirmen oder ausschalten.
 	\begin{itemize}
 	\item Netzwerkanalysator 10 Minuten laufen lassen
@@ -13,23 +13,25 @@
 	\item $50\Omega$
 	\item short
 	\end{itemize}
-	\item Ofeset der Messebene einstellen
+
 	\item PRESET
 	\item SPAM die Mittenfrequenz wählen
 	\item die Bandbreite wählen
 	\item die Filte für das Grundrauschen wählen
 	\item Pegel des Grundrausen bestimmen
+		\item Ofeset der Messebene  der durch die Phasendrehung durch das zusätliche Antennenkabel hinzukommt einstellen einstellen
 	\end{itemize}
 	
 	\section{Starlab}
-	Das StarLab misst die Nahfeldeigenschaften einer Antenne oder eines Strahlenden Körpers. Diese werden benötigt um die Ferfeldeigenschaften zu berechen. Dies geschieht mit einer \textit{near field to fare fild transformation}. Für elektrisch keine Antennen kennen je nach Abstand zur Antenne und Abhängig von der maximalen Antennen Abmessung drei Verschiedene Empfangszonen. Der Übergang zwischen den Zonen ist fliessen. Es gilt, dass das Nahfeld wir in zwei Regionen unterteilt. Es sind dies das Nahfeld und das strahlende Nafeld. Das Fernfeld entspricht der Fraunhofer Kriterium.
+	Das StarLab misst die Nahfeldeigenschaften einer Antenne oder eines strahlenden Körpers. Diese werden benötigt um die Ferfeldeigenschaften zu berechnen. Dies geschieht mit einer \textit{near field to fare fild transformation}. Für elektrisch keine Antennen kennen je nach Abstand zur Antenne und Abhängig von der maximalen Antennen Abmessung drei Verschiedene Empfangszonen. Der Übergang zwischen den Zonen ist fliessen. Es gilt:\\  
+	Das Nahfeld wir in zwei Regionen unterteilt. Es sind dies: das Nahfeld und das strahlende Nahfeld. Das Fernfeld entspricht der Fraunhofer Kriterium. Dank der Fernfeldvereinfachung können ab einem Abstand von $R>r_3$ das H und das H Feld als orthogonal, mit der selben Amplitude und Phasengleich betrachtet  werden. Das Produkt aus den $\vec{E}$ und $\vec{H}$ Vektor ist ein Leistungstransport in transversale Richtung.
 	
 	\begin{itemize}
-	\item Nahfeld bis zum Abstand $r<2\lambda$
-	\item strahlendes Nahfeld bis zum Abstand $r<\dfrac{D^2}{2\lambda}$
-	\item Nahfeld bis zum Abstand $r>\dfrac{2D^2}{\lambda}$
+	\item Nahfeld bis zum Abstand $r_1<2\lambda$
+	\item strahlendes Nahfeld bis zum Abstand $r_2<\dfrac{D^2}{2\lambda}$
+	\item Nahfeld bis zum Abstand $r_3>\dfrac{2D^2}{\lambda}$
 \end{itemize}	 
-
+Mit dem StarLab aufgezeichete Daten können mit Softwar ausgewertet werden, es ist möglich 3D Richtdiagramme darzustellen, aber auch 1D Schnitte duch eine gewünschte Ebene zu betrachten. Eine weitere Möglichkeit ist die Berechnung der Abstrahleffizen bei einer gewünschten Frequenz.
 	\subsection{DUT vorbereiten}
 	\begin{itemize}
 	\item 50 Ohm Abschlusswiderstand am Ende des Kabel beachten
@@ -38,23 +40,90 @@
 	\item Das Messkabel benötigt eine Zugsentlastung
 	\item Koordinatensystem beim platzieren des DUT beachten
 	\begin{itemize}
-	\item Koordinatenbezugssystem muss gleich gewählt sein wie das des Bezugssystem
-	\item Wo ist der Startpunkt von $\theta=0^\circ$
-	\item in welche Richtung läuft $\theta$
+	\item Koordinatenbezugssystem muss gleich gewählt sein wie das des Bezugssystem der Simulation
+	\item Der Startpunkt von $\theta=0^\circ$ ist auf der 12 Uhr Position
+	\item Die Richtung von $\theta$ läuft von 12 Uhr nach 6 Uhr $\pm 180\circ$
 	\item Wo ist der Startpunkt von $\phi=0^\circ$
 	\item in welche Richtung läuft $\phi$
 	\end{itemize}
-	\item DUT am Messturm befestigen 
+
 	\item Messturm auf $\phi=0^\circ$, $\phi=90^\circ$ und zurück auf $\phi=0^\circ$ drehen und Position bestimmen
 	\end{itemize}
-\subsection{Was wird gemmessen}
+\subsection{Was wird gemessen}
+In dieser Arbeit werden nur die Folgenden Daten der Messugn ausgewertet:
 \begin{itemize}
-	\item 3D Em tot in dB
+	\item 3D richtdiagramm E tot in dB
 	\item xy Ebene auf der Höhe $z=0$ (Vogelperspektive) $\theta=90^\circ$ $\phi=360^\circ= \pm \pi=180^\circ$
-	\item xz Ebene auf der Höhe $y=0$ (von Vorne in das Starlab hinein) $\theta\pm 180^\circ =\pm \pi$ $\phi= 0\circ = 180^\circ$
-	\item Effizeinz
+	\item xz Ebene auf der Höhe $y=0$ (von Vorne in das StarLab hinein) $\theta=\pm 180^\circ =\pm \pi$ $\phi= 0^\circ = 180^\circ$
+	\item Effizeinz $\eta$
 	\subsection{Messen StarLab}
-	Um die elektromagnetischen Felder mit Starlab zumessen benötigt man  die Messeinheit, den Messturm und den PC mit der Messsoftware "SPM" sowie die Software die "SatEnv" Software  zur Darsttellung der Daten.
-	\subsubsection{Messen StarLab}
+	Um die elektromagnetischen Felder mit StarLab zumessen benötigt man  die Messeinheit, den Messturm und den PC mit der Messsoftware SPM sowie die Software die SatEnv Software  zur Darstellung der Daten.
+	\subsubsection{SatEnv}
+	Passwort für PC ist: starlab2014\\
+	StaEnv Software öffnen
+	\begin{itemize}
+	\item [0]StaEnv $\rightarrow$ rechts Klick $\rightarrow$ Project $\rightarrow$ Create $\rightarrow$ Projekt Name eintragen
+	\item der neu erstellt Ordner mit dem $+$ Zeichen öffnen
+	\item Import Ordner anwählen
+	\item SPM Software öffnen
+	\end{itemize}
+	\subsubsection{SPM}
+	SPM Software öffen
+	\begin{itemize}
+	\item Start a measurement $\rightarrow$ $360^\circ$ anwählen 
+	\item im neuen Fenster der Messung einen Namen geben
+	\item Linear auswählen
+	\item Start Frequenz
+	\item End Frequenz 
+	\item Anzahl der Messpunkte wählen
+	\item die grösse der Antenne in [m] eintragen
+	\item „Star measurement“ Button klicken
+	\end{itemize}
+	Die Messung wird durchgeführt. Die 22 Antenne decken einer Bereich von $\pm 150^\circ$ ab. Das DUT dreht sich auf dem Messmasten um $360^\circ$.\\
+	Auf der rechtenseite des Fenster ist ein „Export data“ zu erkennen. Als Export kann die SatEnv Software ausgewählt werden. Wichtig dabei ist, das in der SatEnv der Import Ordner im gewünschten Projekt ausgewählt ist.
+	
+	\subsection{Darstellend der gemessenen Daten}
+	\textbf{3D Richtdiagramm}\\
+	Die Dastellung der Messdataten geschied in der SatEnv Software.  Im gewünschten Projekt des SatEnv Tool den Import Ordner im gewünschten Projekt wählen. Die erstellte Messung wählen
+	\begin{itemize}
+	\item rechtsklick auf die Messung $\rightarrow$ Computation $\rightarrow$ Create far field /Spherical 
+	\item im neuen Fenster nichts ändern und \glqq ok\grqq drücken
+	\item im neuen Fenster einen Zielordner  oder ein Projektordner erstellen
+	\item Unter dem Namen der Messung ist neu ein \glqq NF to FF transformation\grqq erschienen
+	 \glqq NF to FF transformation  \grqq $\rightarrow$ rechts Klick $\rightarrow$ Reduce number of dimensions
+	\item  im neuen Fenster die Zielfrequenz eingeben und mit \glqq ok\grqq bestätigen
+	\item  die neu erstellt Datei umbenenne 
+	\item auf neu benannte Datei $\rightarrow$ rechtsklick $\rightarrow$ 3D view $\rightarrow$ 3D Ansicht erscheint 
+	\item 3D Ansicht $\rightarrow$ rechtsklick $\rightarrow$ Show toolbar 
+	\item E Total. dB Darstellung des 3D Richtdiagramm wählen
+	\item Farb Darstellung ändern \glqq min \grqq und \glqq max \grqq Werte definieren
+	\item 3D Grafik ausrichten
+	\end{itemize}
+	\textbf{1D Feldschnitt}\\
+	Die 1D Schnitte können wie Folgt dargestellt werden:\\
+	Schnitt parallel zur xy Ebene auf der Höhe $z=0$ (Vogel Perspektive)
+	\begin{itemize}
+	\item rechts Klick auf das [neus File]  und \glqq 1D \grqq auswählen
+	\item im neuen Fenster die fest gewählte Achse auswählen (Thea oder Phi)
+	\item den Schnittwinkel wählen ($Theat = 90^\circ$)
+	\item im neuen Fenster den \glqq Polar Mode\grqq auswählen
+	\end{itemize}
+	Schnitt  in der xz Ebene auf der Höhe $y=0$ (Front  Perspektive in des StarLab)
+	\begin{itemize}
+	\item rechts Klick auf das [neus File ]  und \glqq 1D \grqq auswählen
+	\item im neuen Fenster die fest gewählte Achse auswählen 
+	\item den Schnittwinkel wählen ( $Phi= 0^\circ$)
+	\item im neuen Fenster den \glqq Polar Mode\grqq auswählen
+	\end{itemize}
+	Die Effizienz kann wie Folgt dargestellt werden:
+	\begin{itemize}
+	\item  rechts Klick auf das "NF to FF transformation"  $\rightarrow$ Computation $\rightarrow$ Efficiency auswählen
+	\item es erschein ein neus File rechts Klick  $\rightarrow$ "1D view"
+	\item das neue Fenster zeigt die Effizienz 
+	\item die Anzeige auf Efficiency stellen
+	\end{itemize}
+	
 \end{itemize}
+
+
 
