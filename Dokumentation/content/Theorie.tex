@@ -881,7 +881,7 @@ U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\ome
 I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
 
-\subsection{Anpassung und Reflexionen}
+\subsection{Anpassung und Reflexionen}\label{sec:AnpassungReflexionen}
 Die Anpassung ist nicht nur in Hochfrequenztechnik HF ein viel diskutiertes Thema, auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiedene Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen, wenn möglichst viel Leitung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiederstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Ein ganz anderes Ziel verfolgt die Wellenanpassung. Sie kommt immer dann zum Zuge, wenn auf einem Signalpfad die Signalreflexionen an den Übergängen des Mediums verhindert werden.
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
 In diesem Kapitel werden zwei Arten der Anpassung genauer betrachtet. Es sind dies die:
@@ -1132,14 +1132,14 @@ Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm L
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](0, 0) rectangle (3, 2) node at (1.5, 1) {Quelle};
-	\draw[line width=1.5pt, *-](3, 1.4)  -- (4, 1.4);
-	\draw[line width=1.5pt, *-](3, 0.7)  -- (4, 0.7);
+	\draw[line width=1.5pt](3, 1.4)  -- (4, 1.4);
+	\draw[line width=1.5pt](3, 0.7)  -- (4, 0.7);
 	\draw[line width=1.5pt](4, 0) rectangle (7, 2) node at (5.5, 1) {50 $\Omega$Leitung};
-	\draw[line width=1.5pt, *-](7, 1.4)  -- (8, 1.4);
-	\draw[line width=1.5pt, *-](7, 0.7)  -- (8, 0.7);
+	\draw[line width=1.5pt](7, 1.4)  -- (8, 1.4);
+	\draw[line width=1.5pt](7, 0.7)  -- (8, 0.7);
 	\draw[line width=1.5pt](8, 0) rectangle (11, 2) node at (9.5, 1) {Anpassung};
-	\draw[line width=1.5pt, *-](11, 1.4)  -- (12, 1.4);
-	\draw[line width=1.5pt, *-](11, 0.7)  -- (12, 0.7);
+	\draw[line width=1.5pt](11, 1.4)  -- (12, 1.4);
+	\draw[line width=1.5pt](11, 0.7)  -- (12, 0.7);
 	\draw[line width=1.5pt](12, 0) rectangle (15, 2) node at (13.5, 1) {Antenne (Last)};
 	\end{tikzpicture}
 	\end{center}
@@ -1157,17 +1157,37 @@ Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm L
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{Bild Anpassung selber machn}
 
-Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpassnetzwerk zwischen der Leitung und der Antenne benötigt.  Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=5cm]{content/bilder/ESB_Antenne.pdf}%
-	\caption{Ersatzschaltbild einer Antenne}
-	\label{ESBantenne}
+Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpassnetzwerk zwischen der Leitung und der Antenne benötigt.  Da die Impedanz der Leitung $Z_L$ und der Antenne $Z_{ant}$ nur in seltenen Fällen aufeinander stimmt. Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil der als $X_{ant}$ dargestellt wird.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=5cm]{content/bilder/ESB_Antenne.pdf}%
+%	\caption{Ersatzschaltbild einer Antenne}
+%	\label{ESBantenne}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+	\draw[line width=1.5pt,*-](12, 5)  -- (13.5, 5);%Startz zu Rv
+		\draw[line width=1.5pt](14.5, 5)  -- (16, 5) ;%Rv zu Rrad
+		\draw[line width=1.5pt](16, 5)  -- (16, 4.4) ;%Rv zu Rrad
+		\draw[line width=1.5pt](14.5, 5)  -- (16, 5) ;%
+		\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
+		\draw[line width=1.5pt](15.75, 3.4) rectangle (16.25, 4.4) node at (17, 3.9) {$R_{rad}$};%Rrad
+		\draw[line width=1.5pt](16, 3.4)  -- (16, 2.8);%Rrad zu Xant
+		\draw[line width=1.5pt](15.75, 2.8)  -- (16.25, 2.8);%Kondensator oben
+		\draw[line width=1.5pt](15.75, 2.6)  -- (16.25, 2.6);%Kondensator unten
+		\node at (17, 2.7) {$X_{ant}$};
+		\draw[line width=1.5pt](16, 2.6)  -- (16, 2);
+	\draw[line width=1.5pt,-*](16, 2)  -- (12, 2);
+	\end{tikzpicture}
+	\end{center}
+\caption{Ersatzschaltbild einer Antenne}
+\label{ESBantenne}
 \end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 
 %\begin{figure}
@@ -1191,6 +1211,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 %\end{tikzpicture}
 %\end{ circuitikz }
 %%%%%%%%%%%%%%%%%%%%%%
+Wenn die Speisung in einem grösseren Zusammenhang betrachte, dann erkennt man, dass die Speisung mehr als die Berücksichtigung der Impedanzen von der Quelle bis zur Antenne umfasst. Um ein Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein. Die Abbildung \ref{AnpassungQuelleAntenne} zeigt wichtige Zusammenhänge der Speisung und des Zusammenhangs von Quelle, Leitungsimpedanz und der Antenne auf. Wie im Kapitel \ref{sec:AnpassungReflexionen} ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$ aus dem wiederum auf die Reflexionsdämpfung $S_{11}$ geschlossen wird. Der Zusammenhang ist einfach, je mehr der Reflexionskoeffizient $\Gamma\rightarrow 1$ desto grösser ist der $S_{11}$ Wert in dB, desto mehr Leistung geht in die Antenne und dadurch kann mehr Energie abgestrahlt werden. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_rad$ da $P_{rad}=I_{ant}^2*R_{rad}$ ist. Aus der Abstrahleffizienz $\eta_{rad}$ ist ebenfalls zu erkenn, dass die Verluste in dem Antenne System klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen, um eine hohe Abstrahleffizienz $\eta_{rad}$ zu erhalten.
 
 \begin{figure}[h]
 	\begin{center}
@@ -1205,7 +1226,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 	%\draw[line width=1.5pt] (5.5, 5) -- (7, 5);
 	\draw[line width=1.5pt, -*](5.5, 5)  -- (7, 5);
 	
-	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
+	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 5) {Anpassungsnetzwerk} node at (9.5, 4.5) {Leitung};
 	\draw[line width=1.5pt, *-](12, 5)  -- (13.5, 5);
 	\draw[line width=1.5pt, *-](12, 2)  -- (16, 2);
 	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
@@ -1228,7 +1249,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
 	
 	\node at (17.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
-	\node at (9.5, 7) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
+	\node at (9.5, 6) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
 	
 	\node at (18, 2.7) {$\varepsilon$};
 	\node at (18.5, 2.7) {$\delta$};
@@ -1239,7 +1260,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 	\node at (20, 3.9) {$P_{rad}$};
 	\end{tikzpicture}
 	\end{center}
-\caption{ESB einer Quelle mit Anpassnetzwerk  und einer Antenne}
+\caption{ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne}
 \label{AnpassungQuelleAntenne}
 \end{figure}
 
