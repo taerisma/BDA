@@ -957,7 +957,7 @@ Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Volt
 \begin{eqnarray}\label{eq:Welligkeitsfaktor_s}
 s=\dfrac{U_{max}}{U_{min}}=\dfrac{1+|r|}{1-|r|}
 \end{eqnarray}
-Der Welligkeitsfaktor $s$ \ref{eq:Welligkeitsfaktor_s} bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung\cite{Tekom}. 
+Der Welligkeitsfaktor $s$ aus der Gleichung \ref{eq:Welligkeitsfaktor_s} bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung\cite{Tekom}.\\
 
 
 Anpassnetzwerke: \\
@@ -974,7 +974,9 @@ Wellenanpassung: \\
 Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderstände zu eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, dabbei wird  ein Teil des Signals reflektiert. Stehende Wellen sind das Resultat. Um diese störenden Einflüsse zu vermeiden, muss für komplexe Widerstände folgende Beziehung erfüllt sein:
 \[Z_{I} = Z_{L}\]
 
-Diese Anpassung bezeichnet man als Impedanzanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_i = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leitungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die bei der Leistungsanpassung entstehenden Reflexionen  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Die bei der Wellenanpassung resultiert. Nur bei Leistungsverstärkern, zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
+Das Bedeutet die Beträge des Realteil- und Imaginärteils von Quelle und Last sind gleich. Als auch der Phasenwinkel ist gleich.
+
+Diese Anpassung bezeichnet man als Wellenanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_i = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leistungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die bei der Leistungsanpassung entstehenden Reflexionen  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Die bei der Wellenanpassung resultiert. Nur bei Leistungsverstärkern, zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
 
 Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung. Das heisst, die in dem $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung wie in der Last im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel \ref{eq:PmaxLeistungsanpassung} zeigt die maximale Leistung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung, bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
 \begin{eqnarray}\label{eq:PmaxLeistungsanpassung}
@@ -1015,7 +1017,7 @@ Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetz
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=10cm]{content/bilder/AnpassungKomplexerLast.pdf}%
-	\caption{leitungsanpassung für eine komplexe Last \cite{Tekom}}
+	\caption{Leitungsanpassung für eine komplexe Last \cite{Tekom}}
 	\label{AnpassungKomplexerLast}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
