@@ -615,7 +615,7 @@ S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\p
 %Quelle:Taschenbuch der Hochfrequenztechnik Meineke und Grundach N2
 \subsection{Systemansicht}
 Die Systemansicht soll einen Überblick über die Bluetooth Verbindung vom Fluginstrument „Connect 1“ zu einem Smartphone geben.
-In der nachfolgenden Tabelle werden die Annahmen und  die gegebenen Parameter der Bluetooth Verbindung aufgelistet. Mit der Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der HF Quelle zur Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen und es hat keine Fremdkörper im Ausbreitungsraum.
+In der nachfolgenden Tabelle \ref{tab:Linkbudget} werden die Annahmen und  die gegebenen Parameter der Bluetooth Verbindung aufgelistet. Mit der Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der HF Quelle zur Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen und es hat keine Fremdkörper im Ausbreitungsraum.
 Weitere Annahmen sind:
 \begin{itemize}
 \item Als Sende- und Empfangschip wird beim Empfänger und Sender der CC2541 von TI eingesetzt
@@ -623,7 +623,7 @@ Weitere Annahmen sind:
 \item Keine Hindernisse auf der Übermittlungsstrecke
 \item Reserve von 6 dB
 
-\item Der Gewinn der Sendeantenne ist 1
+\item Der Gewinn der Empfangsantenne ist 1
 \item Die Sendeleistung ist 0 dBm
 \item Die Anschluss- und Verbindungsdämpfung beim Sender und beim Empfänger entsprechen je 0.5 dB
 \item -94 dBm Empfangsempfindlichkeit bei 1Mbps und 0.1\% EBR des CC2541 von TI
@@ -640,7 +640,7 @@ P_{Rx} = P_{Tx}+L_{Tx}+G_{x}+L_{fs}+L_{Rx}+G_{r}+L_{div}\label{eq:LinkBudgetGeli
 
 Die Formel \ref{eq:LinkBudgetGelichung} wird als Ausgangslage für die Berechnung des minimalen Gewinns der Sendeantenne $G_{x}$ dienen. Da  die minimale Empfängersensitivität aus dem Daten Blatt des  Bluetooth Low Energie Texas Instruments CC2541 Chip bekannt ist, kann der nötige Gewinn der Sendeantenne $G_{x}$ berechnet werden. Der minimale Gewinn ist ein Kriterium welches beim Antennendesign beachtet werden muss.
 
-Der Empfangspegel $P_{Rx}$ in der Fromel \ref{eq:LinkBudgetGelichung}  steht für die am Empfäger resultierende Leitung in dBm.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ steht für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (englisch gain) der Empfangsantenne. $L_{fs}$ steht für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$  für diverse weitere Verluste wie zum Beispiel Hindernisse oder für eine System Reserve.  $L_{Rx}$ steht für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
+Der Empfangspegel $P_{Rx}$ in der Fromel \ref{eq:LinkBudgetGelichung}  steht für die am Empfäger resultierende Leistung in dBm.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ steht für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (englisch gain) der Empfangsantenne. $L_{fs}$ steht für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$  für diverse weitere Verluste wie zum Beispiel Hindernisse oder für eine System Reserve.  $L_{Rx}$ steht für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
 
 
 Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung (engl. Free Space Path Loss)  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung von elektromagnetischen Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie zu Beispiel die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen  und Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
@@ -676,7 +676,8 @@ In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem St
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1 definiert, das entspricht 0dBi. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der \glqq Connect 1\grqq zur Anwendung kommende Texas Instruments CC2541 Chip angenommen.
+Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1 definiert, das entspricht 0dBi. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der \glqq Connect 1\grqq zur Anwendung kommende Texas Instruments CC2541 Chip angenommen. Für die berechnung der Freiraumdämpfung müssen die flgenden Formeleln genannt weden:
+ 
 \begin{eqnarray}
     	d_{0} 	&=& x \\ \label{eq:d0_LinkBudget}
     K		&=& \left(\dfrac{\lambda}{4\pi d_{0}} \right)^{2}G_{x}G_{r} \\ \label{eq:K_LinkBudget}
@@ -685,6 +686,13 @@ Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer R
     L_{fs}(dB) 	&=& 10\log_{10}(L_{fs}) \label{eq:Freiraumdaempfung_dB}
 \end{eqnarray}
 
+\begin{itemize}
+\item $d_{0}$ Distanz zum Sender in Meter
+\item $D$ maximale Abmessugn des Senders in Meter
+\item K ist eine Konstante, welche die Antennencharakteristik und die mittlere Kanaldämpfung wiedergibt
+\item $\gamma$ Gamma ist ein Tabellenwert für die Ausbreitungsverluste im Medium 
+\end{itemize}
+Für die geforderten Systemspezifikationen entspricht $d_0$= 10 Meter. $D$ enspricht xx Meter. Für die Formel \ref{eq:Prx_LinkBudget} kann für $\gamma$ = 2 eingesetzt werden.\cite{Tekom}
 
 \begin{table}[h]
   \centering
@@ -704,6 +712,8 @@ Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer R
   \caption{Linkbudget 10m Bluetooth Übertragung}
   \label{tab:Linkbudget}
 \end{table}
+
+Die Tabelle \ref{tab:Linkbudget} zeigt die für Die Bluetooth Verbindung relevanten Gewinne und Verluste auf. Bei einer Verbindung von 10 Meter und den getroffenen Vereinfachung ist mit einem minimalen Empfangspegel von $-72dB$ zu rechen. Das ist ein ausreichendeer Empfangspegel. Der die minimale Empfanssenitivität bei $-92dB$ liegt, resultiert eine Reserve von $20dB$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%Quelle&%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -864,16 +874,16 @@ C'=\dfrac{\Delta C}{\Delta z}\label{eq:KapazitiverLeitungsbelag}
 \end{equation}
 
 Werden zudem die ohmschen Verluste im Leiter und allfällige dielektrische Verluste in der Isolation als Wirkwiderstände dargestellt, so lässt sich das Ersatzschaltbild einer Leitung gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
-Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitungsbelag} und die Abbildung \ref{fig:ESBLeiterstueck} gilt:
+Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitungsbelag} und die Abbildung \ref{fig:ESBLeiterstueck} gilt \cite{Tekom}:
 \begin{enumerate}[leftmargin=2cm]
    \item[] $R'$: Ohmsche Leiterverlust/m [$\Omega/m$] 
-   \item[] $L'$: Serie Induktivität/m  [$H/m$] 
+   \item[] $L'$: Serieinduktivität/m  [$H/m$] 
    \item[] $G'$: Dielektrische Verluste/m  [$S/m$] 
    \item[] $C'$: Kapazität zwischen den Leiten/m  [$F/m$] 
    \item[] $\Delta m$: Abschnittslänge  [$m$] 
 \end{enumerate} 
-\todo{serieeninduktivität}
-Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen z Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT} berechnet werden \cite{Tekom}.
+
+Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen $z$ Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT} berechnet werden \cite{Tekom}.
 \begin{eqnarray}\label{eq:UvonZundT}
 U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
@@ -882,22 +892,23 @@ I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\ome
 \end{eqnarray}
 
 \subsection{Anpassung und Reflexionen}\label{sec:AnpassungReflexionen}
-Die Anpassung ist nicht nur in Hochfrequenztechnik HF ein viel diskutiertes Thema, auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiedene Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen, wenn möglichst viel Leitung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiederstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Ein ganz anderes Ziel verfolgt die Wellenanpassung. Sie kommt immer dann zum Zuge, wenn auf einem Signalpfad die Signalreflexionen an den Übergängen des Mediums verhindert werden.
+Die Anpassung ist nicht nur in Hochfrequenztechnik HF ein viel diskutiertes Thema, auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiedene Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiederstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Ein ganz anderes Ziel verfolgt die Wellenanpassung. Sie kommt immer dann zum Zuge, wenn auf einem Signalpfad die Signalreflexionen an den Übergängen des Mediums verhindert werden.
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
 In diesem Kapitel werden zwei Arten der Anpassung genauer betrachtet. Es sind dies die:
 \begin{itemize}
 \item Leistungsanpassung
 \item Wellenanpassung
 \end{itemize}
-Die Leistungsanpassung wird angewendet, wenn die maximale Leistungsübertragung gefordert ist. Die maximale Leistung in der Last wird erreicht, wenn der Lastwiderstand dem Quellenwiderstand entspricht. Bei rein ohmischen Quellen und Lastwiderstand bedeutet das:\\
+Im diesem Zusammenhang soll auch erwähnt sein, dass es auch die Spannungsanpassung und die Stromanpassung gibt, beides wird im Rahmen dieser Arbeit nicht erläutert. \\
+Die Leistungsanpassung wird angewendet, wenn die maximale Leistungsübertragung gefordert ist. Die maximale Leistung in der Last wird erreicht, wenn der Lastwiderstand dem Quellenwiderstand entspricht. Bei rein ohmischen Quellen- und Lastwiderstand bedeutet das:\\
 \[R_{Quelle} = R_{Last}\]
 
-Die Wellenanpassung wird auch Leitungsanpassung oder Impedanzanpassung genannt. Wellenanpassung ist in der Hochfrequenztechnik immer dann gefragt, wenn die zu übertragenden Wellen oder Impulse ohne Reflexionen von einer Quelle zu einer Last übertragen werden. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, wird sowohl Wellenanpassung als auch Leistungsanpassung erreicht. Treten jedoch Impedanzen mit positivem oder negativem Imaginärteil auf, so muss für die Wellenanpassung das folgende Kriterium erfüllt sein: \\
+Die Wellenanpassung wird auch Leitungsanpassung  genannt. Wellenanpassung ist in der Hochfrequenztechnik immer dann gefragt, wenn die zu übertragenden Wellen oder Impulse ohne Reflexionen von einer Quelle zu einer Last übertragen werden. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, wird sowohl Wellenanpassung als auch Leistungsanpassung erreicht, wenn $R_{Quelle} = R_{Last}$ ist. Treten jedoch Impedanzen mit positivem oder negativem Imaginärteil auf, so muss für die Wellenanpassung das folgende Kriterium erfüllt sein: \\
 \begin{eqnarray}\label{eq:ZeinZaus}
 Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
 \end{eqnarray}
 
-Im diesem Zusammenhang soll auch erwähnt sein, dass es auch die Spannungsanpassung und die Stromanpassung gibt, beides wird im Rahmen dieser Arbeit nicht erläutert. \\
+
 
 Die Reflexionen und die Anpassung soll anhand eines Beispiels einer Leitung mit Abschlusswiderstand genauer näher erläutert werden. \\
 
