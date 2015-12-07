@@ -804,7 +804,7 @@ Bei der  Gleichung \ref{eq:ElektrischeLänge} ist $l$ die Länge der Leitung und
 Zur Analyse, ob eine Leitung strahlt, wird ihre Elektrische Länge betrachtet. \\
 Ist die $Elektrische Länge=\dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klassischen Schaltungstheorie behandelt werden. Die Leitung wird meist als verlustlos und reflexionsfrei betrachtet.\\
 Ein etwas anders Bild zeigt sich, wenn die $Elektrische Länge=\dfrac{l}{\lambda}>\dfrac{1}{20}$ entspricht. In deisem Fall muss die Leitung als frequeznabäniges Zweitor betrachtet werden. Die Phänomene der elektromagnetischen Wellen werden wirksam. Die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. 
-Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ und mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeMITc} verknüpft.
+Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ und mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeMITc} verknüpft \cite{Tekom}.
 \begin{equation}
 \lambda_{0}=\dfrac{c}{f}\label{eq:WellenlängeMITc}
 \end{equation}
@@ -913,16 +913,17 @@ Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
 Die Reflexionen und die Anpassung soll anhand eines Beispiels einer Leitung mit Abschlusswiderstand genauer näher erläutert werden. \\
 
 Eine Quelle treibt eine vorwärtslaufende Welle in einer Leitung. Die Leitung besitzt einen Leitungswiderstand $Z_0$.  Das Ende der Leitung ist mit einem Abschlusswiderstand versehen. Dieser Widerstand stellt eine Lastimpedanz $Z_L$ zwischen dem Hin- und Rückleiter dar. \\
-Man spricht von einer mit einer Lastimpedanz $Z_0$ abgeschlossenen Übertragungsleitung. Leitungsimpedanz $Z_0$ entspricht nicht exakt der Leitungsimpedanz $Z_L$, daher kommt es zu einer   Teilreflexion der vorlaufenden Welle. Das Verhältnis zwischen den Amplituden der rücklaufenden Welle und der vorlaufenden Welle wird als Reflexionskoeffizient r bezeichnet. \\
+Man spricht von einer mit einer Lastimpedanz $Z_L$ abgeschlossenen Übertragungsleitung.  Die Leitungsimpedanz $Z_0$ entspricht nicht exakt der Lastimpedanz $Z_L$, daher kommt es zu einer   Teilreflexion der vorlaufenden Welle. Das Verhältnis zwischen den Amplituden der rücklaufenden Welle und der vorlaufenden Welle wird als Reflexionskoeffizient r bezeichnet \cite{Tekom}. \\
 
-Reflexionskoeffizient r
+Reflexionskoeffizient r:
 
 \begin{eqnarray}\label{eq:Reflexionskoeffizient}
-r=\dfrac{U_{R}}{U_{V}}=\dfrac{Z_{L}-Z_{V}}{Z_{L} + Z_{V}}=-\dfrac{I_{R}}{I_{V}}
+r=\dfrac{\underline{U}_{R}}{\underline{U}_{V}}=\dfrac{Z_{L}-Z_{V}}{Z_{L} + Z_{V}}=-\dfrac{\underline{I}_{R}}{\underline{I}_{V}}
 \end{eqnarray}
+Der Reflexionskoeffizient r lässt sich wie aus Gleichung \ref{eq:Reflexionskoeffizient} gezigt, anhand der Last- und der Quelleimpedanz oder aus dem Verhältnis der vor und rücklaufenden Stromwellen berechen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!h]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{content/bilder/ReflexionenLeitungLastimpedanz.pdf}%
 	\caption{Refelxionen einer Leitung an einer Lastimpedanz \cite{Tekom}}
@@ -931,20 +932,20 @@ r=\dfrac{U_{R}}{U_{V}}=\dfrac{Z_{L}-Z_{V}}{Z_{L} + Z_{V}}=-\dfrac{I_{R}}{I_{V}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Die Spannung $U_L$ über der Last ergibt sich  aus der Überlagerung der vorlaufenden Spannungswelle und  rücklaufenden Spannugswelle. Dies ist in der Gleichung \ref{eq:AnpassungULast} gezeigt. In Gleichung \ref{eq:AnpassungILast} ist der Strom in der Last ersichtlich. Dieser wird aus der Vorlaufenden- und Rücklaufendenstromwelle gebildet.
-\todo{Spannugswellen}
+Die Spannung $\underline{U}_L$ über der Last ergibt sich  aus der Überlagerung der vorlaufenden Spannungswelle und  rücklaufenden Spannugswelle. Dies ist in der Gleichung \ref{eq:AnpassungULast} gezeigt. In Gleichung \ref{eq:AnpassungILast} ist der Strom in der Last $\underline{I}_L$ ersichtlich. Dieser wird aus der Vorlaufenden- und Rücklaufendenstromwelle gebildet\cite{Tekom}.
+
 
 \begin{eqnarray}\label{eq:AnpassungULast}
-U_L = U_V + U_R
+\underline{U}_L = \underline{U}_V + \underline{U}_R
 \end{eqnarray}
 
 \begin{eqnarray}\label{eq:AnpassungILast}
-I_L = I_V + I_R
+\underline{I}_L = \underline{I}_V + \underline{I}_R
 \end{eqnarray}
 
 Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist. Dies wird als stehende Welle bezeichnet. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten heben sich die Wellen gegenseitig auf. Ihr Wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert: \\
 
-Rückflussdämpfung $a$:\\
+Rückflussdämpfung $a$:
 Die Rückflussdämpfung a wird in der englischen Literatur \textit{Return Loss} genannt.
 \begin{eqnarray}\label{eq:Ruckflussdämpfung_a}
 a=20\log\left(\left| \dfrac{U_V}{U_R}\right| \right)=-20\log(|r|)
@@ -952,21 +953,22 @@ a=20\log\left(\left| \dfrac{U_V}{U_R}\right| \right)=-20\log(|r|)
 Die Ruckflussdämpfung beschreibt als logarithmisches Mass, wie stark das rücklaufende Signal gegenüber dem vorlaufenden Signal gedämpft ist \cite{Tekom}.\\
 
 Welligkeitsfaktor $s$:
+Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet.
 \begin{eqnarray}\label{eq:Welligkeitsfaktor_s}
 s=\dfrac{U_{max}}{U_{min}}=\dfrac{1+|r|}{1-|r|}
 \end{eqnarray}
-Der Welligkeitsfaktor $s$ \ref{eq:Welligkeitsfaktor_s} bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung. Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet. \\
-\todo{Betrag Welligkeisfaktor s}
+Der Welligkeitsfaktor $s$ \ref{eq:Welligkeitsfaktor_s} bezeichnet die Verhältnisse der Beträge von Maxima und Minima der stehenden Welle auf der Leitung\cite{Tekom}. 
+
 
 Anpassnetzwerke: \\
-Nachrichtentechnische Systeme können als eine Kette von aktiven oder passiven Eintor- und Zweitorschaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgansimpedanz als $Z_{aus}$ bezeichnet. 
+Übertragungssysteme können als eine Kette von aktiven oder passiven Eintor- und Zweitorschaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Je nach Sigganlfrequenz oder Impulsdauer müssen die frequenzabhänigen Eigenaschften dieser zweitore berücksichtigt werden. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Um die gewünschten Systemeigenschaften zu erreichen. Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgansimpedanz als $Z_{aus}$ bezeichnet. 
 Um die Anpassungsbedingungen zu formulieren kann das Zweitor als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden. Diese wird  durch den Lastwiderstand $Z_L$ belastet.
 
 Leistungsanpassung: \\
 Für die Übertragung der maximalen Wirkleistung von der Quelle zur Last  wird Leistungsanpassung benötigt. Um diese Bedingung zu erfüllen muss gelten:
 
 \[Z_{ein} = Z_{aus}^*\]
-Das bedeutet, eine induktive Komponente beim Innenwiderstand muss somit durch eine gleich grosse kapazitive Komponente beim Aussenwiderstand kompensiert werden und umgekehrt. Gleichzeitig müssen die beiden Wirkwiderstände gleiche Werte aufweisen. Das heisst, der Realteil von $Z_{ein}$ und $Z_{aus}$ sind gleich, jedoch sind die Imaginäranteile konjugiert komplex. Das bedeutet, dass die Blindwiderstände von Quelle und Last sich ausgleichen müssen. Dies geschieht, wenn eine ohmisch induktive Quelle durch eine ohmisch kapazitive Last kompensiert wird um das Leistungsanpassungskriterium zu erfüllen. \\
+Das bedeutet, eine induktive Komponente beim Innenwiderstand muss somit durch eine gleich grosse kapazitive Komponente des Aussenwiderstandes kompensiert werden und umgekehrt. Gleichzeitig müssen die beiden Wirkwiderstände gleiche Werte aufweisen. Das heisst, der Realteil von $Z_{ein}$ und $Z_{aus}$ sind gleich, jedoch sind die Imaginäranteile konjugiert komplex. Das bedeutet, dass die Blindwiderstände von Quelle und Last sich ausgleichen müssen. Dies geschieht, wenn eine ohmisch induktive Quelle durch eine ohmisch kapazitive Last kompensiert wird um das Leistungsanpassungskriterium zu erfüllen. Dabei sind die Bertäge der Impedanzen gleich jedoch der Winkel der Phasenlage ist un $\pm 180^\circ$  verschoben. Es wird oft gesgt, dass der Imaginärteil der Last gleich dem Imaginärteil der Quelle entspricht, jedoch sei der Imaginätteil an der Realteilachse gespiegelt.\\
 
 Wellenanpassung: \\
 Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderstände zu eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, dabbei wird  ein Teil des Signals reflektiert. Stehende Wellen sind das Resultat. Um diese störenden Einflüsse zu vermeiden, muss für komplexe Widerstände folgende Beziehung erfüllt sein:
