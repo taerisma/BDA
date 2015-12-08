@@ -1008,8 +1008,11 @@ P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} | R_Q=R_L
 \label{fig:LeistungsanpassungU0_RQ_RL}
 \end{figure}
 
+In der Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} ist eine Leistungsanpassung gezeigt. 
+Der Lastwiderstand $R_{L}$ besitz den selben Wert wie dem Quellenwiderstand $R_{Q}$. Im $R_{L}$ wie in Formel \ref{eq:PmaxLeistungsanpassung} gezeigt, die Hälfte der Quellenleistung umgesetzt.
 
 Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetzt werden. Ist der Quellenwiderstand $R_Q$ oder der Lastwiderstand $R_L$  reaktiv, das heisst induktiv oder kapazitiv, dann sind die Schaltungen stark frequenzabhängig. So besitzt beispielsweise eine Antenne nur bei einer bestimmten Frequenz einen rein reellen Impedanz $Z_{ant}$. Bei allen andern Frequenzen sind sowohl Real- als auch Imaginärteil vorhanden, dann ist $Z_{ant}$ komplex. Eine Möglichkeit für eine Korrektur ist in der Abbildung \ref{AnpassungKomplexerLast} dargestellt. Auch diese  Anpassung ist frequenzabhängig und nur für die Entwurfsfrequenz optimal, aber dank der Transformation ist Leitungsanpassung möglich.
+\todo{Text zum Bild Z'}
 \todo{Bild selber zeichnen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!h]
@@ -1021,13 +1024,15 @@ Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetz
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \textbf{Entwurf eines Ohm’schen Anpassnetzwerkes:} \\
-Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die Last $R_L$, kann die Schaltung von Abbildung \ref{fig:Leistungsanpassung_RQ_grösser_als_RL} verwendet werden. Die Widerstände R1 und R2 berechnen sich nach folgenden Beziehungen der Gleichung \ref{eq:R1R2wennRQgrösserRL}:
+Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die Last $R_L$, kann die Schaltung von Abbildung \ref{fig:Leistungsanpassung_RQ_grösser_als_RL} verwendet werden. Die Widerstände R1 und R2 berechnen sich nach folgenden Beziehungen der Gleichung \ref{eq:R1R2wennRQgrösserRL_R1} und \ref{eq:R1R2wennRQgrösserRL_R2} \cite{Tekom}:
 
-\begin{align}\label{eq:R1R2wennRQgrösserRL}
-R1 &= \sqrt{RQ(RQ-RL)}\\
-R2 &= \dfrac{RQ RL}{R1}\\
-a_{dB} &= 20\log \left( \sqrt{\dfrac{RQ}{RL}}+\sqrt{\dfrac{RQ}{RL}-1}\right)
-\end{align}
+%\begin{equation}
+	\begin{align}
+		R1 &= \sqrt{RQ(RQ-RL)} \label{eq:R1R2wennRQgrösserRL_R1} \\
+		R2 &= \dfrac{RQ RL}{R1} \label{eq:R1R2wennRQgrösserRL_R2} \\
+		a_{dB} &= 20\log \left( \sqrt{\dfrac{RQ}{RL}}+\sqrt{\dfrac{RQ}{RL}-1}\right)
+	\end{align}
+%\end{equation}
 
 \begin{figure}[h]
 	\begin{center}
@@ -1061,11 +1066,11 @@ a_{dB} &= 20\log \left( \sqrt{\dfrac{RQ}{RL}}+\sqrt{\dfrac{RQ}{RL}-1}\right)
 \label{fig:Leistungsanpassung_RQ_grösser_als_RL}
 \end{figure}
 
-Gilt es eine hochohmige Last RL an eine Quelle mit einem RQ der kleiner ist als RL anzupassen, so können die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL} und die mathematischen Beziehungen und den Gleichungen \ref{eq:R1R2wennRLgrösserRQ}  verwendet werden.
+Gilt es eine hochohmige Last RL an eine Quelle mit einem RQ der kleiner ist als RL anzupassen, so können die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL} und die mathematischen Beziehungen und den Gleichungen \ref{eq:R1R2wennRLgrösserRQ_R1}  sowie \ref{eq:R1R2wennRLgrösserRQ_R2}verwendet werden \cite{Tekom}:
 
-\begin{align}\label{eq:R1R2wennRLgrösserRQ}
-R1 &= \sqrt{RL(RL-RQ)}\\
-R2 &= \dfrac{RQ RL}{R1}\\
+\begin{align}
+R1 &= \sqrt{RL(RL-RQ)} \label{eq:R1R2wennRLgrösserRQ_R1}\\
+R2 &= \dfrac{RQ RL}{R1} \label{eq:R1R2wennRLgrösserRQ_R2}\\
 a_{dB} &= 20\log \left( \sqrt{\dfrac{RL}{RQ}}+\sqrt{\dfrac{RL}{RQ}-1}\right)
 \end{align}
 \begin{figure}[h]
@@ -1116,6 +1121,36 @@ Als letzten Schritt gilt es die Werte für die Induktivität $L$ und Kapazität 
 jX_{L}= j\omega L und jX_c=\dfrac{-j}{\omega C}
 \end{equation}
 
+\todo{Bild selber zeichnen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+	\begin{center}
+	\begin{tikzpicture}
+	\draw[line width=1.5pt](1, 3) circle (0.5) node at (1,3){$U_0$};
+	\draw[line width=1.5pt](1, 3.5)  -- (1, 4.5);%quelle nach oben
+	\draw[line width=1.5pt](1, 2.5)  -- (1, 1.5);%Queelle nach unten
+	\draw[line width=1.5pt](1, 4.5)  -- (3, 4.5);
+	\draw[line width=1.5pt](1, 1.5)  -- (3, 1.5);
+	\draw[line width=1.5pt](3, 4.75) rectangle (4, 4.25) node at (3.5, 4.75) {$R_Q$};
+	\draw[line width=1.5pt](6, 3.5)  -- (6, 4.5);
+	\draw[line width=1.5pt](6, 2.5)  -- (6, 1.5);
+	\draw[line width=1.5pt](5.75, 2.5) rectangle (6.25, 3.5) node at (5.25, 3) {$R_P$};
+	\end{tikzpicture}
+	\end{center}
+\caption{Blockschaltbild einer  Quelle mit Leitung, Anpassung und Antenne}
+\label{Anpassung}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\draw[line width=1.5pt](0, 0) rectangle (3, 2) node at (1.5, 1) {Quelle};
+%	\draw[line width=1.5pt](3, 1.4)  -- (4, 1.4);
+%	\draw[line width=1.5pt](3, 0.7)  -- (4, 0.7);
+%	\draw[line width=1.5pt](4, 0) rectangle (7, 2) node at (5.5, 1) {50 $\Omega$Leitung};
+%	\draw[line width=1.5pt](7, 1.4)  -- (8, 1.4);
+%	\draw[line width=1.5pt](7, 0.7)  -- (8, 0.7);
+%	\draw[line width=1.5pt](8, 0) rectangle (11, 2) node at (9.5, 1) {Anpassung};
+%	\draw[line width=1.5pt](11, 1.4)  -- (12, 1.4);
+%	\draw[line width=1.5pt](11, 0.7)  -- (12, 0.7);
+%	\draw[line width=1.5pt](12, 0) rectangle (15, 2) node at (13.5, 1) {Antenne (Last)};
 
 
 
