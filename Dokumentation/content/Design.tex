@@ -50,15 +50,17 @@ Das Design des Antennensystems wird für einen Anwendungsfall im Freiraum dimens
 %\end{itemize}
 
 \begin{table}[htb]
- \centering
-\begin{tabular}{lccc}\toprule 
+\centering
+\begin{tabular}{lccr} \toprule 
 Nr. & Anforderung & Beschreibung & Wert   \\ 
+\midrule
 001 & f & ISM Frequenzbereich  & 2.4-2.5 GHz  \\ 
 002 & f & Handgerät lxbxh & 142x88x23 [mm]    \\  
 003 & f &  Speisung des Antennensystems & symmetrisch  \\  
 004 & f & Reflexionskoeffizient der Antenne  at -10B & 100 MHz  \\ 
 005 & f & Funkdistanz, Arbeitsradius & 10m   \\ 
-006 & f & Linkbudget Reserve & 6dB   \\ \bottomrule
+006 & f & Linkbudget Reserve & 6dB   \\ 
+\bottomrule
   \end{tabular}
   \caption{Anforderungen an das Bluetooth Antennensystem}
   \label{AnforderungenAntenneSystem}
@@ -103,10 +105,10 @@ Es wurden vier Dipolantennen entworfen. Die Entwürfe sind im EMPIREXPU erstellt
 \subsubsection*{Entwurf}
 Die vier Antennen habe alle dieselbe. Das "3M 1181 Tape" ist  hat eine Kupferstärke von 26$\mu$m. Die vier Antennen unterscheiden sich in der Breit der Kupferstreifen und in iher Form.\\
 Es wurden die folgenden vier Formen simulieirt:
-Dipol 5mm breit und xxmm lang
+
 \begin{itemize}
-\item Dipol 5mm breit und xxmm lang
-\item Dipol 3mm breit und xxmm lang
+\item Dipol 5mm breit und 50.5mm lang
+\item Dipol 3mm breit und 50.25mm lang
 \item Dipol 1mm breit und xxmm lang
 \item Dipol 1mm breit und xxmm lang mit Dachkapazität
 \end{itemize}
@@ -116,27 +118,69 @@ Dipol 5mm breit und xxmm lang
 \begin{center}
 \begin{tikzpicture}
 \draw[line width=1.5pt,fill=black!30](0, 0) rectangle (2.5, 0.5);
-\draw[line width=1.5pt](2.7, 0) rectangle (5.2, 0.5);
+\draw[line width=1.5pt,fill=black!30](2.7, 0) rectangle (5.2, 0.5);
 \end{tikzpicture}
 \end{center}
 \caption{Dipol 5mm breit xxmm lang}
 \label{fig:Dipol5mmxxlang}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{table}[h]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+\draw[line width=1.5pt,fill=black!30](0, 0) rectangle (2.5, 0.3);
+\draw[line width=1.5pt,fill=black!30](2.7, 0) rectangle (5.2, 0.3);
+\end{tikzpicture}
+\end{center}
+\caption{Dipol 3mm breit 50.25mm lang}
+\label{fig:Dipol3mmxxlang}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+\draw[line width=1.5pt,fill=black!30](0, 0) rectangle (2.5, 0.1);
+\draw[line width=1.5pt,fill=black!30](2.7, 0) rectangle (5.2, 0.1);
+\end{tikzpicture}
+\end{center}
+\caption{Dipol 1mm breit xxmm lang}
+\label{fig:Dipol1mmxxlang}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\begin{tikzpicture}
+\draw[line width=1.5pt,fill=black!30](1, 0.25) rectangle (3.5, 0.35);
+\draw[line width=1.5pt,fill=black!30](3.7, 0.25) rectangle (6.1, 0.35);
+\draw[line width=1.5pt,fill=black!30](0.9, 0) rectangle (1, 0.6);
+\draw[line width=1.5pt,fill=black!30](6.1, 0) rectangle (6.2, 0.6);
+\end{tikzpicture}
+\end{center}
+\caption{Dipol 1mm breit xxmm lang mit Dachkapazität}
+\label{fig:Dipol1mmxxlangDachkapazität}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In der Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} sind einige Antenenparameter und Abstrahlcharakterisiken der verschieden Dipolantennen aufgezeigt. Der $S_{11}$ Wert ist in dB und gibt den maximalen wert der Rückflussdämpfung an. Da die $S_{11}$ Dämpfung der Antennen im Gerät teilweise nicht über einen Bereich von 100MHz einen grösseren Wert als -10dB erreicht wird die -10dB Bandbreite hier nicht aufgeführt.
+$Z_{ant}$ gibt die simulierte Antenneimpedanz bei einer Freqeunz von 2.45GHz an.
+$\eta$ gibt die Abstrahleffizenz  in Prozent an. Sie besagt, wieviel Prozent der Antennenstruktur abgestrahlt werden kann, wenn die Anregung mit einer idealen 50 Ohm in Plane Quelle simuliert wird. Auch $\eta$ ist auf die Abstrahlfrequenz von 2.45GHz bezogen.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h!]
   \centering
-  \begin{tabular}{l  c c c r} 
+  \begin{tabular}{p{4cm} p{2cm} l c c c r} 
   \toprule 
-  Antenne                  	& Freiraum/Conncect 1	&$S_{11}$	& $Z_{ant}$ 	& $\eta$\\ 
+  Antenne                  	& Freiraum Conncect1	 & $S_{11}$[dB]	& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$]\\ 
   \midrule
- 5mm breit und xxmm lang    	& Freiraum				&			&  			&   		\\
-            					& Conncect 1   			&      		&			&		\\
- 3mm breit und xxmm lang    & Freiraum				&      		&			&		\\
-     						& Conncect 1				&  			&			&		\\
+ 5mm breit und 50.5mm lang    	& Freiraum				&	-12.31 @ 2.54		&  	49.7-j27.9		&   	91	\\
+            					& Conncect 1   			&   -4.92 @ 2.406   		&	17.6+j25.7		& 62		\\
+ 3mm breit und 50.25mm lang    & Freiraum				&      		&			&		\\
+     						& Conncect 1				&  		-5.24 @2.44	&	16+j14.7		&	65	\\
  1mm breit und xxmm lang  	& Freiraum				&         	&			&		\\
       						& Conncect 1				&  			&			&		\\
-  1mm breit und xxmm lang mit Dachkapazität  	& Freiraum				&         	&			&		\\
+  1mm breit und xxmm lang \\
+  mit Dachkapazität  		& Freiraum				&         	&			&		\\
       						& Conncect 1				&  			&			&		\\
  \bottomrule
   \end{tabular}
@@ -144,4 +188,7 @@ Dipol 5mm breit und xxmm lang
   \label{tab:Vergeich_Lambda/2_Freiraum_Geraet}
 \end{table}
 
+\newpage 
+\thispagestyle{empty}
+\newpage 
 \subsection{Neue Design Ansätze}
