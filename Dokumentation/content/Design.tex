@@ -109,8 +109,8 @@ Es wurden die folgenden vier Formen simulieirt:
 \begin{itemize}
 \item Dipol 5mm breit und 50.5mm lang
 \item Dipol 3mm breit und 50.25mm lang
-\item Dipol 1mm breit und xxmm lang
-\item Dipol 1mm breit und xxmm lang mit Dachkapazität
+\item Dipol 1mm breit und 51.25mm lang
+\item Dipol 1mm breit und 45.25mm lang mit Dachkapazität
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,7 +121,7 @@ Es wurden die folgenden vier Formen simulieirt:
 \draw[line width=1.5pt,fill=black!30](2.7, 0) rectangle (5.2, 0.5);
 \end{tikzpicture}
 \end{center}
-\caption{Dipol 5mm breit xxmm lang}
+\caption{Dipol 5mm breit 50.5mm lang}
 \label{fig:Dipol5mmxxlang}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,7 +134,7 @@ Es wurden die folgenden vier Formen simulieirt:
 \end{tikzpicture}
 \end{center}
 \caption{Dipol 3mm breit 50.25mm lang}
-\label{fig:Dipol3mmxxlang}
+\label{fig:Dipol3mm5025lang}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,8 +145,8 @@ Es wurden die folgenden vier Formen simulieirt:
 \draw[line width=1.5pt,fill=black!30](2.7, 0) rectangle (5.2, 0.1);
 \end{tikzpicture}
 \end{center}
-\caption{Dipol 1mm breit xxmm lang}
-\label{fig:Dipol1mmxxlang}
+\caption{Dipol 1mm breit 51.25mm lang}
+\label{fig:Dipol1mm5125lang}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,13 +159,14 @@ Es wurden die folgenden vier Formen simulieirt:
 \draw[line width=1.5pt,fill=black!30](6.1, 0) rectangle (6.2, 0.6);
 \end{tikzpicture}
 \end{center}
-\caption{Dipol 1mm breit xxmm lang mit Dachkapazität}
-\label{fig:Dipol1mmxxlangDachkapazität}
+\caption{Dipol 1mm breit 45.25mm lang mit Dachkapazität}
+\label{fig:Dipol1mm4525langDachkapazität}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In der Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} sind einige Antenenparameter und Abstrahlcharakterisiken der verschieden Dipolantennen aufgezeigt. Der $S_{11}$ Wert ist in dB und gibt den maximalen wert der Rückflussdämpfung an. Da die $S_{11}$ Dämpfung der Antennen im Gerät teilweise nicht über einen Bereich von 100MHz einen grösseren Wert als -10dB erreicht wird die -10dB Bandbreite hier nicht aufgeführt.
-$Z_{ant}$ gibt die simulierte Antenneimpedanz bei einer Freqeunz von 2.45GHz an.
-$\eta$ gibt die Abstrahleffizenz  in Prozent an. Sie besagt, wieviel Prozent der Antennenstruktur abgestrahlt werden kann, wenn die Anregung mit einer idealen 50 Ohm in Plane Quelle simuliert wird. Auch $\eta$ ist auf die Abstrahlfrequenz von 2.45GHz bezogen.
+In der Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} sind einige Antennenparameter und Abstrahlcharakterisiken der verschieden Dipolantennen aufgezeigt. Der $S_{11}$ Wert ist in dB und gibt den maximalen wert der Rückflussdämpfung an. Da die $S_{11}$ Dämpfung der Antennen im Gerät teilweise nicht über einen Bereich von 100MHz einen grösseren Wert als -10dB erreicht wird die -10dB Bandbreite hier nicht aufgeführt.
+$Z_{ant}$ gibt die simulierte Antennenimpedanz bei einer Frequenz von 2.45GHz an.
+$\eta$ gibt die Abstrahleffizienz in Prozent an. Sie besagt, wieviel Prozent der Antennenstruktur abgestrahlt werden kann, wenn die Anregung mit einer idealen 50 Ohm \textit{In Plane} Quelle simuliert wird. Auch $\eta$ ist auf die Abstrahlfrequenz von 2.45GHz bezogen.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h!]
   \centering
@@ -173,20 +174,58 @@ $\eta$ gibt die Abstrahleffizenz  in Prozent an. Sie besagt, wieviel Prozent der
   \toprule 
   Antenne                  	& Freiraum Conncect1	 & $S_{11}$[dB]	& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$]\\ 
   \midrule
- 5mm breit und 50.5mm lang    	& Freiraum				&	-12.31 @ 2.54		&  	49.7-j27.9		&   	91	\\
-            					& Conncect 1   			&   -4.92 @ 2.406   		&	17.6+j25.7		& 62		\\
- 3mm breit und 50.25mm lang    & Freiraum				&      		&			&		\\
-     						& Conncect 1				&  		-5.24 @2.44	&	16+j14.7		&	65	\\
- 1mm breit und xxmm lang  	& Freiraum				&         	&			&		\\
-      						& Conncect 1				&  			&			&		\\
-  1mm breit und xxmm lang \\
-  mit Dachkapazität  		& Freiraum				&         	&			&		\\
-      						& Conncect 1				&  			&			&		\\
+ 5mm breit und 50.5mm lang    	& Freiraum			&	-12.31 @ 2.54		&  	49.7-j27.9		&   	91	\\
+            					& Conncect 1   			&   -4.92 @ 2.406   		&	17.6+j25.7		& 	62	\\
+ 3mm breit und 50.25mm lang    & Freiraum			&    -13.45 @ 2.56  		&	52.9-j28.3		&	91	\\
+     						& Conncect 1				&  	-5.24 @2.44			&	16+j14.7			&	65	\\
+ 1mm breit und 51.25mm lang  	& Freiraum			&    -14.14 @ 2.52    	&	60.4-j23.2		&	93	\\
+      						& Conncect 1				&  	-5.9 @ 2.45			&	16.5+j6.4		&	68	\\
+  1mm breit und 45.25mm lang \\
+  mit Dachkapazität  		& Freiraum				&   -15.15 @ 2.57      	&	55.4-j29.7		&	90.5	\\
+      						& Conncect 1				&  	-5.529 @ 2.47		&	15.21j3.8		&	65	\\
  \bottomrule
   \end{tabular}
   \caption{$\lambda/2$ Dipolantennen simuliert im Freiraum und im "Connect 1"}
   \label{tab:Vergeich_Lambda/2_Freiraum_Geraet}
 \end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%S11 Parameterder vier Antennen simuliertmit und ohne Gehäuse
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=10cm]{content/bilder/Simulation/Vergleich_s11_5mmDipol_Freiraum_Geraet.eps}%
+	\caption{Vergleich des S11 im Gehaüse und im Freiraum Dipol 5mm breit}
+	\label{S11_Vergleich_Simulation_5mm}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=10cm]{content/bilder/Simulation/Vergleich_s11_3mmDipol_Freiraum_Geraet.eps}%
+	\caption{Vergleich des S11 im Gehaüse und im Freiraum Dipol 3mm breit}
+	\label{S11_Vergleich_Simulation_3mm}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=10cm]{content/bilder/Simulation/Vergleich_s11_1mmDipol_Freiraum_Geraet.eps}%
+	\caption{Vergleich des S11 im Gehaüse und im Freiraum Dipol 1mm breit}
+	\label{S11_Vergleich_Simulation_1mm}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=10cm]{content/bilder/Simulation/Vergleich_s11_1mmDipol_Freiraum_Geraet_Dach.eps}%
+	\caption{Vergleich des S11 im Gehaüse und im Freiraum Dipol 1mm breit mit Dach}
+	\label{S11_Vergleich_Simulation_1mm_Dach}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bbbbbbbbbbbbbbbbb\\
+Ein Text zu jedem Bild und\\
+allgemein zum Dipol\\
+zur Dämpgung des Gehäuses\\
+zur of nicht vorhanderenen -10 dB Bandbreite
 
 \newpage 
 \thispagestyle{empty}
