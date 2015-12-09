@@ -1,8 +1,0 @@
-Metallische Leiter absorbieren elektromagnetische Wellen bei hohen Frequenzen. [9] Im Gehäuse des neuen Fluginstrumentes sind viele verschiedene metallische Leiter vorhanden. Die Hauptplatine ist eine für die Antenneneine grosse Massefläche. Auchdas Display wird als grosse Absorptionsfläche betrach-tet.Ebenfalls  absorbierend  wirktdas  galvanisierte  Gehäuse  auf  die  abgestrahlte  Energie.  Da  sich  alle diese Teile im Nahfeld befinden, müssen diese in der Auslegung der Antenne berücksichtig werden.Dipol-oder  Monopolantennen  sind  typische  Quellen  für  E-Felder. Die  E-Felderwerden  von  elektri-schen  Leitern stark  absorbiert.  Darum  muss  bei  der  Antennenentwicklung  mit  Monopolantennen  ein besonderes  Augenmerk  auf  die,  sich  im Nahfeld  befindenden,  elektrischen  Leiter  gelegt  werden.  Im Gegensatz dazu können Rahmenantennen eingesetzt werden. Diese erzeugen ein H-Feld. Das H-Feld wird von den elektrischen Leitern weniger starkabsorbiert. Darum haben elektrische Leiter im Nahfeld weniger Einfluss auf die Rahmenantenne.
-
-Magnetfelder (wir reden hier von statischen bzw. quasistatischen
-Magnetfeldern?) kann man mit hochpermeablen Werkstoffen abschirmen
-(z.B. "Mu-Metall", ein Eisen-Nickel-Legierung?). Die Wände aus dem
-Material mit hoher Permeabilität haben einen niedrigen magnetischen
-Widerstand (R_m=l_m/(my_0*my_r*A)), daher konzentriert sich fast
-der gesamte magnetische Fluß in den Wänden.
