@@ -10,7 +10,7 @@ Der Hertzsche Dipol bildet den elementaren Elektrischen Dipol. Man kann ihn sich
 p(t)=pe^{j\omega t} = Q dl e^{j\omega t} = \frac{\hat{i} dl}{j\omega }e^{j\omega t}
 \end{equation}
 
-Ist ein Hertzscher Dipol unendlich dünn und in einem xyz Koordinatensystem in die z Richtung ausgerichtet so gilt:
+Ist ein Hertzscher Dipol unendlich dünn und in einem xyz Koordinatensystem im Ursprung und in die z Richtung ausgerichtet so gilt:
  
 Es bildet sich ein E Feld von dem positiven Ladungspunkt zum negativen Ladungspunkt. Die Potentiale der Ladungspunkte oszillieren mit $\omega$. 
 %\begin{center}
@@ -35,7 +35,7 @@ Es bildet sich ein E Feld von dem positiven Ladungspunkt zum negativen Ladungspu
 %	\caption{Wellenimpdedanz Z0}%
 %	\label{Z0_Grafik}
 %\end{figure}
-Die Ausrichtung der E Feldlinien wechselt bei jeder Schwingung von $\omega$ ihre Richtung. Im Nahfeld dominiert das E Feld. Mit wachsendem Abstand sind das E Feld und das H Feld senkrecht aufeinander und in Phase. Dabei können das E und H Feld als ebene Welle betrachtet werden. Die allgemeine Formel für die Feldverteilung lautet \cite{elliott1981antenna}:
+Die Ausrichtung der E Feldlinien wechselt bei jeder Schwingung ihre Richtung. Im Nahfeld dominiert das E Feld. Mit wachsendem Abstand sind das E Feld und das H Feld senkrecht aufeinander und in Phase. Dabei können das E und H Feld als ebene Welle betrachtet werden. Die allgemeine Formel für die Feldverteilung im Kugelkoordinaten System lautet \cite{elliott1981antenna}:
 
 
 
@@ -48,9 +48,10 @@ E_\theta= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{j\omega \mu}{R}  + \frac{n}{
 \end{equation}
 
 \begin{equation}
-H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R}  + \frac{n}{R^{2}}\right) sin(\theta)
+H_\varphi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R}  + \frac{n}{R^{2}}\right) sin(\theta)
 \end{equation}
 
+\newpage
 Mit wachsendem Abstand können einige Terme vernachlässigt werden. Alle Terme in denen der Abstand R in höherer Potenz vorkommt, werden vereinfacht zu Null. Für das Fernfeld ergeben sich die folgenden Beschreibungen:
 
 
@@ -63,8 +64,11 @@ E_\theta= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{j\omega \mu}{R}  \right) sin
 \end{equation}
 
 \begin{equation}
-H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
+H_\varphi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 \end{equation}
+In weiter Ferne von dem Elementaren Strahler sind die Feldanteile $E_r$ soweit abgeklungen, dass sie als Null angenommen werden. Es bleiben ein E Feld Vektor und ein H Feld Vektor übrig. Vereinfacht könne die beiden E und H Feldvektoren als phasengleich und senkrecht zueinander angenommen werden. Die werden sich soweit im Raum ausbreiten, bis ihre gesamte Energie absorbiert ist. Das bedeutet die Amplitude des E und H Feldvektor wird Null.\\
+
+Für alle Antennen die eine lange und dünne Geometrie besitzen, wie zum Beispiel die Monopolantennen, die Dipolantennen oder die Faltdipole bildet der Hertzsche Dipol die Grundlage der Feldausbreitung. Die Ausdehnung des Elementaren Strahlers ist auf ein Länge der Strahlenden Struktur von etwa $100\mu m$ beschränkt. Das bedeutet der Gültigkeitsbereich der in dieser Arbeit gezeigten Formeln und Beschreibungen führen bis 3 THz.
 
 %Die Terme mit R in der zweiten oder dritten Potenz fallen für das Fernfeld weg. Da im Fernfeld der Radius R so gross ist, dass diese Terme vernachlässig werden. 
 %Das Fernfeld kann wie folgt beschrieben werden:
@@ -108,12 +112,12 @@ H_\phi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 	\draw[line width=0.5pt, cap=round,->](C) .. controls (c) .. (D) node at (4.2, 3.2){$\varphi$};
 \end{tikzpicture}
 \end{center}
-	\caption{Feldvektor}
+	\caption{Aufbau des Kugelkoordinatensystem}
 	\label{FerdVektor}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+Die Elektromagnetischen Felder eines Hertzschen Dipols werden oft in Kugelkoordinaten beschrieben. Jeder Punkt kann mit einem Vektor $\vec{r}$ mit dem Start Punkt im Ursprung beschrieben werden. Die Spitze des Vektor $\vec{r}$ kann in die xy Eben projiziert werden. Der Winkel $\varphi$ gesprochen phi kann Werte $\pm \pi$ haben und dekt somit $360^\circ$ ab. Der Winkel $\theta$ gesprochen theta gibt die Neigung von der positiven z Achse an.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[h]
 %\begin{center}
@@ -1327,6 +1331,10 @@ Wenn die Speisung in einem grösseren Zusammenhang betrachte, dann erkennt man, 
 \caption{ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne}
 \label{AnpassungQuelleAntenne}
 \end{figure}
+
+
+
+
 
 
 
