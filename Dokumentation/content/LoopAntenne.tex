@@ -1,0 +1,91 @@
+\newpage
+
+\subsection{Loop Antenne}\label{sec:LoopAntenneTheorie}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=7cm]{content/bilder/Loop_EMANT_S45.pdf}%
+	\caption{Loop Antenne}
+	\label{LoopAntenne}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Wird eine kurze, kreisförmige Stromschleife mit dem Radius $a<<\lambda$ von einem Strom $Ie^{j\omega t}$ durchflossen,  kann in guter Näherung eine konstante Stromverteilung I entlang der Schlaufe angenommen werden,
+Die Koordinaten eines Punktes auf der Stromschleife sind gegeben mit
+\begin{eqnarray}
+x’ &=&a \cos(\psi)\\
+y’ &=&a \sin(\psi)\\
+z’ &=&0
+\end{eqnarray}
+
+
+Der Abstand  a entspricht dem Radius  aus dem Zentrum zur Stromschleife. Die Stromschleife ist in  Abbildung \ref{{LoopAntenne}} ersichtlich. Somit kann ein Stromelement auf der Schleife beschrieben werden als:
+\begin{equation}
+I dl= Ia(- \vec e_{x}sin(\psi)+\vec e_{y}cos(\psi))d\psi
+\end{equation}
+ 
+%EMANT Joss Seit 45
+Die Stromverteilung führt zu einem Abstrahlen von Elektromagnetischen Wellen.
+%Die Gewichtungsfaktoren findet man mit Hilfe von (116 Joss) und (117 Joss) zu
+%Emant Joss Seite 46
+%Emant Joss Seite 46
+Da eine Integration über $2\pi $ einer Kreisfunktion Null ergibt, findet man direkt 
+\begin{equation}
+a(\theta, \phi) =0
+\end{equation}
+\todo{Was sthet hier?}
+Nimmt man  an, dass $ka$ klein ist, so kann der folgende Term vereinfacht werden.
+\begin{equation}
+a(\theta)=sin(ka sin(\theta)cos(\psi))=ka sin(\theta)cos(\psi)
+\end{equation}
+dank der Fereinfachung kann xxxx als geschrieben werden.
+\begin{equation}
+a(\theta)=j(\pi a^{2}I)(k sin \theta)
+\end{equation}
+%$a(theta, phi)=j$... oder Ellito 2.31 oder Joss Seite 46.
+\todo{neu schreiben Loop}
+Das Fernfeld ist  ist  $\varphi$ polarisiert.  Die Leistungsdichte gewinnt man mit 
+\todo{Ebenen Loop}
+%(Joss 118) 
+\begin{equation}
+\vec P(\theta,\phi)=\frac{1}{2}Re(\vec E x \vec H^*)
+\end{equation}
+zu
+%Joss EMANT P(theta,phi)=....Ellito 2.32
+\begin{equation}
+P(\theta)=\frac{(ka)^{4}I{2}\eta}{32r^{2}}sin^{2}\theta
+\end{equation}
+Im Vergleich mit dem kurzen Dipol erzeugt die kleine Stromschleife ein vergleichbares Richtdiagramm. Das Fernfeld des kurzen Dipols ist jedoch vertikal $\vartheta$ polarisiert. Das bedeutet, dass das Abstrahlverhalten um 90Grad verschoben ist. Integriert man die Leistungsdichte über eine Kugeloberfläche mit dem Radius r  auf und setzt sie der abgegebenen Leistung mit $1/2 I^{2}Rrad $ der zugeführten Zweidrahtleitung gleich, so gewinnt man $R_{rad}$ mit 
+\begin{equation}
+R_{rad} = 320\pi^{6} (a/\lambda)^{4}\label{eq:RradLoop}
+\end{equation}
+%ELLITOH 2.33
+Beispiel:\\
+Wenn $a/\lambda = 0.03$ ist, dann wird der $R_{rad} = 0.25 Ohm$. Als Vergleich mit dem kurzen Dipol mit der Länge $2l=\lambda= 0.06$ führt das zu einem Strahlungswiderstand $R_{rad}$ von 0.7 Ohm.  Der Abstrahlwiderstand $R_{rad}$ einer kleinen Stromschleife kann um den Faktor $n^{2}$ erhöht werden, wenn n die Anzahl der sehr eng aneinander liegenden Wicklungen der Stromschleife sind. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h!]
+\begin{center}
+\begin{tikzpicture}
+	\draw (0,3) node at (0.5,0.5) {xz Ebene} -- (10,3);%Fadenkreuz horizontal
+	\draw (5,0) -- (5,6);%Fadenkreuz vertikal
+	\draw (3,3) circle (2cm);%linker Kreis
+	\draw (7,3) circle (2cm);%rechter Kreis
+	\draw (4.5,3) circle (0.2cm);%linker kleiner Kreis
+	\draw (5.5,3) circle (0.2cm);%rechter kleiner Kreis
+	\draw (4.5,3.2) -- (5.5,3.2);%Verbindung horizontal oben
+	\draw (4.5,2.8) -- (5.5,2.8);%Verbinung horizontal unten
+	\node[draw] at (5,6.5) {$\vartheta=0$};
+	\node[draw] at (8,5.5) {$E_{\varphi}(\vartheta)$};
+
+\end{tikzpicture}
+\end{center}
+\caption{E Feld einer Loop Antenne in der xz Ebene}
+\label{DipolEFerd}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
