@@ -1,52 +1,57 @@
-
-
 \newpage
 \subsection{Nah- und Fernfeld}
-Antennen sind Wellenwandler. Sie wandeln die ihnen zugeführte elektromagnetische Welle in die elektromagnetische Energie, die sich im Raum um die Antenne ausbreit, um. Die zuführende Welle ist oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, Leiterbahn auf einer Leiterplatte oder einem Koaxialkabel erfolgen.  Für manche Antennen wird ein Hohlleiter, also Luft als Übertragungsmedium als Zuleitung verwendet . 
-Der Antenne kommt die Aufgabe zu, die im Leiter gebundene Welle in eine Raumwelle zu wandeln. Das bedeutet, die leitergebundene Welle wird zu einer Freiraumwelle. Diese füllt den Raum um die Antenne aus. 
-Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \Omega$ an.
-Eine spezielle Ausführung der Antenne als Wellenwandlertyp hängt im wesentlichen vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer normalen Freiraumübertagungsstrecke ist die Distanz r zwischen dem Sender und dem Empfänger sehr gross, verglichen mit den Abmessungen der Sendeantennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort scheint die Antennenstrahlung in Bild xx charakterisiert durch den Vektor der elektromagnetischen Leistungsdichte S. 
-\todo{Bild xx}
-Der Vektor S wird auch Poynting Vektor genannt. Für den Empfänger erscheint es, als ob die empfangene elektromagnetische Strahlung von einem einzigen Punkt ausgeht. Dieser Entstehungspunkt wird Phasenzentrum genannt. Er ist die Quelle der abgestrahlten elektromagnetischen Felder. Wenn diese Voraussetzungen vorliegen, befindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Die Fernfeldregion wird kurz als Fernfeld bezeichnet. 
-Im Fernfeld gelten vereinfachte Beziehungen. Streng genommen liegen nur für die Distanzen von $r->\infty$ reine Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten  bereichsweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist eine ebene Welle für deren elektrische und magnetische Feldstärken die Beziehung \cite{meinke1992taschenbuch}
-\todo{Text Bild xx}
+Antennen sind Wellenwandler. Sie wandeln die ihnen zugeführte elektromagnetische Welle in  elektromagnetische Energie um. Die elektromagnetische Energie hat ebenfalls einen Wellencharakter und breiten  sich im Raum um die Antenne kugelförmig aus. Die zuführende Welle ist oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, einer Leiterbahn auf einer Leiterplatte oder einem Koaxialkabel erfolgen.  Für einige Antennen wird ein Hohlleiter, also Luft als Übertragungsmedium der Zuleitung verwendet. 
+Der Antenne kommt die Aufgabe zu, die im Leiter geführte Welle in eine Raumwelle zu wandeln. Das bedeutet, die leitergebundene Welle wird zu einer Freiraumwelle. Diese füllt den Raum um die Antenne aus. 
+Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \Omega$ an. Der Wellenwiderstand im freien Raum kann als Wellenwiderstand im Vakuum betrachtet werden. Wenn die Luft als homogenes Medium mit perfekten Eigenschaften wie ein Vakuum betrachtet wird so gilt:
+\begin{equation}\label{eq:Wellenimpedanz}
+Z_{F0}=\sqrt{\dfrac{\mu_{0}}{\epsilon}}=\sqrt{\dfrac{\mu_{0}}{\epsilon_{0}}}=120\pi
+\end{equation}
+Breitet sich die ellle in einem Medium mit einer nicht endlichen Leitfähigkeit aus,so ist die Wellenimpedanz eine komplexe grösse und die Leitfähigkeit des Mediums $\sigma$ muss berücksichtigt werden.
+\begin{equation}\label{eq:Wellenimpedanz}
+Z_{F0}=\sqrt{\dfrac{j\omega\mu_{0}}{\sigma+j\omega\epsilon}}
+\end{equation}
+Eine spezielle Ausführung der Antenne als Wellenwandlertyp hängt im wesentlichen vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer normalen Freiraumübertagungsstrecke ist die Distanz r zwischen dem Sender und dem Empfänger sehr gross, verglichen mit den Abmessungen der Sendeantennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort scheint die Antennenstrahlung  aus einer punktförmigen Quelle zu stammen. Auf eine Empfangsantenne trifft ein  elektromagnetischen Leistungsdichte, diese wird als Poynting Vektor $\vec{S}$ bezeichnet.\\
+Für den Empfänger erscheint es, als ob die empfangene elektromagnetische Strahlung von einem einzigen Punkt ausgeht. Dieser Entstehungspunkt wird Phasenzentrum genannt. Er ist die Quelle der abgestrahlten elektromagnetischen Felder. Wenn diese Voraussetzungen erfüllt sind, befindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Die Fernfeldregion wird kurz als Fernfeld bezeichnet. 
+Im Fernfeld gelten vereinfachte Beziehungen. Streng genommen liegen nur für die Distanzen von $r\rightarrow\infty$ reine Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten  bereichsweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist eine ebene Welle für deren elektrische und magnetische Feldstärken die Beziehung \cite{meinke1992taschenbuch}
 \begin{equation}
 E/H=120\pi\label{eq:WellenimpedanuE/H}
 \end{equation}
-
-gilt. Die Leistungsdichte S ergibt sich, wenn die Feldkomponenten E  und H senkrecht aufeinanderstehen und gleichphasig sind.
+gilt. Die Leistungsdichte $\vec{S}$ ergibt sich, wenn die Feldkomponenten $\vec{E}$  und $\vec{H}$ senkrecht aufeinanderstehen und gleichphasig sind.
 \begin{equation}
-S=\dfrac{1}{2}EH=\dfrac{1}{2} E^{2}/F_{F0}\label{eq:LeistungsdichteS}
+\vec{S}=\dfrac{1}{2}EH=\dfrac{1}{2} E^{2}/F_{F0}\label{eq:LeistungsdichteS}
 \end{equation}
-
-
+Die E und H Feldkomponenten sind in Gleichung \ref{eq:LeistungsdichteS} ebenfalls Vektoren.
 Die E Feld- und die H Feldkomponente sind dabei Scheitelwerte.
-Näherungsweise treten diese Gesetzmässigkeiten auch schon früher bei einem endlichen Abstand r von der Sendeantenne ein. Als Grenzwert für den Fernfeldabstand $r_{2}$ für den Beginn des Fernfeldregion  definiert man in der Praxis für Antennen mit einer grösseren geometrischen Abmessung $D_{0}$ näherungsweise\cite{meinke1992taschenbuch}:
+Näherungsweise treten diese Gesetzmässigkeiten auch schon früher bei einem endlichen Abstand r von der Sendeantenne auf. Als Grenzwert für den Fernfeldabstand $r_{2}$ für den Beginn des Fernfeldregion  definiert man in der Praxis für Antennen mit einer grösseren geometrischen Abmessung $D_{0}$ näherungsweise\cite{meinke1992taschenbuch}:
 \begin{equation}
-r_{2}=\dfrac{2*D_{0}^{2}}{\lambda_{0}} \label{eq:Fernfelddistanz_r2}
+r_{2}=\dfrac{2D_{0}^{2}}{\lambda_{0}} \label{eq:Fernfelddistanz_r2}
 \end{equation}
-
 Die maximale Antennenabmessung ist als $D_{0}$ definiert. Für sie gilt $D_{0}>\lambda_{0}$ . Für diese Antennen wird am Empfangsort das Phasenkriterium im Fernfeld eingehalten. Es besagt, dass der Phasenfehler, der durch die Grösse der Antennenabmessungen entsteht, nicht grösser ist als $\lambda_{0}/8$.  Die Gleichung \ref{eq:Fernfelddistanz_r2} berücksichtigt dasselbe Kriterium. Es besagt, dass der Weglängenunterschied $\Delta r$ zwischen zwei am Empfangsort einfallenden Strahlen, von denen der eine vom Antennenmittelpunkt und der andere vom Antennenrand ausgeht, der Bedingung in der Gleichung \ref{eq:Phasenfehler} genügt\cite{meinke1992taschenbuch}.
 \begin{equation}
 \Delta r\leqq\lambda_{0}/8 \label{eq:Phasenfehler}
 \end{equation}
 Das Gebiet zwischen dem Sender und dem Empfänger kann in drei Regionen unterteilt werden. Diese sind abhängig von der Distanz $r$ zum Sender. Es können keine klaren Grenzen gezogen werden. Die Übergänge sind fliessend. Zwischen der Sendeantenne und der Fernfeldregion liegt die Nahfeldregion. Diese wird folgend Nahfeld genannt. Das Nahfeld kann in zwei Gebiete unterteilt werden. Es sind dies das Nahfeld und das strahlende Nahfeld. In der  Nahfeldregion, die unmittelbar die Antenne umschliesst, dominieren die reaktiven Feldkomponenten. Die reaktiven Feldkomponeten fallen  mit $r^{3}$ und $r^{2}$ ab.  Je nach Literatur ist die Grenze des Nahfeld zum strahlenden Nahfeld anders definiert. Nach dem Taschenbuch der Hochfrequenztechnik ist dieser Abstand $r_{1}$ erreicht, wenn $r_{1}$ der Formel \ref{eq:Fernfelddistanz_kurzeAntenne} entspricht\cite{meinke1992taschenbuch}.
 \todo{bezug zur Formel}
-
 \begin{equation}
-R_{1}=0.62\sqrt{\dfrac{D_{0}^{3}}{\lambda_{0}}} \label{eq:Fernfelddistanz_kurzeAntenne}
+r_{1}=0.62\sqrt{\dfrac{D_{0}^{3}}{\lambda_{0}}} \label{eq:Fernfelddistanz_kurzeAntenne}
 \end{equation}
-
 Die Beziehungen für die Nahfeldregionen sind von den maximalen Antennenabmessungen abhängig.  Die Definition in Formel \ref{eq:Fernfelddistanz_kurzeAntenne} gilt für Antennen, die als maximale Abmessung $D_{0}>\lambda_{0}$ nicht übersteigt.
-
 Für Dipol und Schleifenantennen, deren Abmessungen wesentlich kleiner als eine Wellenlänge $\lambda_{0}$ sind, erstreckt sich das Nahfeld bis zum  Abstand   $r_{1}=\lambda_{0}/2pi$ von der Antenne.
-
 Bei einer Freiraumübertragungsstrecke, bei der sich die Empfangsantenne im Fernfeld der Sendeantenne im Abstand $r$ befindet, erhält man für die Leistungsdichte am Ort der Empfangsantenne \cite{meinke1992taschenbuch}.
 
 \begin{equation}
 S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\pi}\label{eq:LeistungsdichteS}
 \end{equation}
-
+In den Formel aus Gleichung \ref{eq:LeistungsdichteS} fällt der Faktor $4r^{2}\pi$ auf, dieser kommt daher, dass die Leistungsdichte die Ausgestrahlte Leitung auf einer Kugeloberfläche verteilt. $\vec{S}$ ist der Leistungdichte Vektor mit er wird mit wachsendem Abstand r quadratisch kleiner, die SI Einheit ist $[W/m^{2}]$.\\
+Für die Gleichung \ref {eq:LeistungsdichteS} gilt:
+\begin{enumerate}[leftmargin=2cm]
+   \item[] $P_t$: xx [W]
+   \item[] $P_{t0}$: yyy [W]
+   \item[] $G$: Gewinn 
+   \item[] $P_{ei}$: Lichtgeschwindigkeit  [m/s] 
+   \item[] $r$: Abstand zwischen Sender und Empfänger [m]
+\end{enumerate} 
+ 
 %Dieser Zusammenhang ist auch im Kapitel yyy in der Gleichung xxx gezeigt.
 
 %
@@ -108,6 +113,8 @@ S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\p
 %\label{fig.Phasenzentrum}
 %\end{figure}
 %Quelle:Taschenbuch der Hochfrequenztechnik Meineke und Grundach N2
+
+
 \subsection{Systemansicht}
 Die Systemansicht soll einen Überblick über die Bluetooth Verbindung vom Fluginstrument „Connect 1“ zu einem Smartphone geben.
 In der nachfolgenden Tabelle \ref{tab:Linkbudget} werden die Annahmen und  die gegebenen Parameter der Bluetooth Verbindung aufgelistet. Mit der Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der HF Quelle zur Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen und es hat keine Fremdkörper im Ausbreitungsraum.
