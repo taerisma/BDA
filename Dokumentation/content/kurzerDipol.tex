@@ -1,6 +1,6 @@
 \newpage
 \subsubsection{Der kurze Dipol }\label{sec:kurzerDipol}
-Der kurze Dipol kann wie der $\lambda /2$ Dipol als eine Reihe von Elementaren Dipolen angesehen werden. Die einen schlanken Stromfaden bilden. Auch für den kurzen Dipol gilt, dass der Durchmesser d des Dipols viel klein ist als die Länge der Antennenstäbe. 
+Der kurze Dipol kann wie der $\lambda /2$ Dipol als eine Reihe von Elementaren Dipolen angesehen werden. Diese bilden einen schlanken Stromfaden. Auch für den kurzen Dipol gilt, dass der Durchmesser d des Dipols viel klein ist als die Länge der Antennenstäbe. 
 Die Terme $cos(kl*cos(\theta)) $ und $cos(kl)$ aus der Gewichtungsform Gleichung \ref{eq:Gewichtungsfunktion}
  des $\lambda/2$ Dipol können mit einer Reihe angenähert werden, sofern $kl$ klein ist.
 \begin{equation}
@@ -12,31 +12,34 @@ Der Eingangsstrom eines kurzen Dipols ist gegeben durch:
 I=I_{m}sin(kl)=I_{m}\lbrack kl - \frac{(kl)^{3}}{3!} +... \rbrack
 \end{equation}
 %Ellito 2.16
- Für kleine Längen wie 2l = $\lambda/4 $ kann ohne grossen Fehler die Gewichtungsfunktion als 
+ Für kleine Dipollängen wie 2l = $\lambda/4 $ kann ohne grossen Fehler die Gewichtungsfunktion wie in der Gleichung \ref{GewichtungKurzerDipol}  angenommen werden.
 %Ellito 2.17
-\begin{equation}
+\begin{equation}\label{GewichtungKurzerDipol}
 a_{\theta}(\theta)=-kl^{2}I_{m}sin(\theta)=-Ilsin\theta
 \end{equation}
-angenommen werden.\\
-Wie beim $\lambda/2$ Dipol findet man bei einem kurzen Dipol ein vertikal polarisiertes E Feld. Das Feld ist etwas breiter, \todo{Öffnungswinkel angeben} jedoch wie beim $\lambda/2$ Dipol doughnutförmig. Die Impedanz des kurzen Dipols ändert sich jedoch drastisch gegenüber dem $\lambda/2$ Dipol. Mit der Impedanz ist auch die winkelabhängige Leistungsdichte wie folgt gegeben:
+Wie beim $\lambda/2$ Dipol findet man bei einem kurzen Dipol ein vertikal polarisiertes E Feld. Das Feld ist etwas breiter. Aber immer noch wie beim $\lambda/2$ Dipol doughnutförmig. Die breitere Abstrahlcharakteristik  bedeutet, dass der Öffnungswinkel grösser ist als bei einem $\lambda/2$ Dipol. Allgemein wir in der Antennentechnik  der Öffnungswinkel als eine Kenngrösse von Antennen angesehen. Die Abstrahlcharakteristik wird stark vom Öffnungswinkel beeinflusst. Er beschreibt  den Winkel bei dem die abgestrahlte Sendeleistung der Hälfte der maximalen Sendeleistung entspricht. Die Hälfte der Sendelleistung ist dasselbe wie, die Antennenfeldstärke um 3 dB abgefallen ist. Dieser Öffnungswinkel wird  daher als Halbwertbreite bezeichnet \cite{Öffnungswinkel}.  Die Impedanz des kurzen Dipols ändert sich jedoch drastisch gegenüber dem $\lambda/2$ Dipol. Mit der Impedanz ist auch die winkelabhängige Leistungsdichte wie folgt gegeben\cite{elliott1981antenna}
 %Ellito 2.18
 \begin{equation}
 P(\theta,\varphi)=\frac{(kl)^{2}\eta I^{2}}{2(4\pi r)^{2}}sin^{2}\theta
 \end{equation}
-Die abgestrahlte Leistung eines kurzen Dipols bei dem über die ganze Kugeloberfläche mit dem Radius $r$ integriert wurde, kann mit der Formel \ref{eq:Rrrad} berechnet werden.
+Die abgestrahlte Leistung eines kurzen Dipols bei dem über die ganze Kugeloberfläche mit dem Radius $r$ integriert wurde, kann mit der Formel \ref{eq:Rrrad} berechnet werden\cite{elliott1981antenna}.
 %Ellito 2.19
 \begin{equation}\label{eq:Rrrad}
 R_{rad}=20 \left(\frac{\pi L}{\lambda} \right) ^{2}
 \end{equation}
-
-
-
-Die aus der abgestrahlten Leistung ergebende maximale Richtwirkung eines kurzen Dipols wird  mit einem isotopen Strahler verglichen. Dies ergibt nach Formel \ref{eq:Directivity} einen Wert für den Richtfaktor D von 1.5. Dieser Wert ist nicht viel weniger als bei einem $\lambda/2$ Dipol mit einem D Wert von 1.64. Das entspricht $10\log{1.5}=1.76dBi$.
+\todo{Prad Rrad Fehler}
+Die aus der abgestrahlten Leistung ergebende maximale Richtwirkung eines kurzen Dipols wird  mit einem isotopen Strahler verglichen. Dies ergibt nach Formel \ref{eq:Directivity} einen Wert des Richtfaktors D von 1.5. Dieser Wert ist nicht viel weniger als bei einem $\lambda/2$ Dipol mit einem D Wert von 1.64. Das entspricht $10\log{1.5}=1.76dBi$. Der Gewinn G einer Antenne wird im englischen \textit{gain} genannt. Der Gewinn ist die Multiplikation des Richtfaktors D und der Abstrahleffizienz $\eta$. Dieser Zusammenhang ist in der Formel \ref{gain} beschrieben.
+\begin{equation}\label{gain}
+G=D\eta
+\end{equation}
 Der Strahlungswiderstand kann mit der Umformung des $Prad=1/2 I^{2}Rrad$ umgestellt werden. \\
 Man findet :
-$Rrad=20\left(\piL/\lambda\right)^{2}$ \\
+$Rrad=20\left(\pi L/\lambda\right)^{2}$ 
 %Eliott
+\todo{Fheler Prad}
 Dabei wird L als 2l und somit als länge der beiden Dipolarme angenommen.
-Wenn ein Dipol sehr kurz wird, zum Beispiel $2l=\lambda/8$, dann wird $R_{rad} = 3 Ohm$. Dieser Wert ist merklich kleiner als   die 73 Ohm   eines $\lambda/2$ Dipols. Der Effekt auf den reaktiven Anteil der Eingangsimpedanz ist noch dramatischer. Für einen endlich dünnen Dipol mit der Dicke d, ist die Reaktanz der Eingangsimpedanz eines $2l=\lambda/2$ Dipols positiv. Die Reaktanz ist wenig unter Null, wenn die Dipollänge  $2l=\lambda/2$ entspricht. Wird der Dipol weiter gekürzt,  sinkt die Reaktanz sehr schnell ins Negative. Wenn  $2l=\lambda/8$ ist,  sind Werte für X grösser als 1000 Ohm kapazitiv keine Seltenheit. 
+Wenn ein Dipol sehr kurz wird, zum Beispiel $2l=\lambda/8$, dann wird $R_{rad} = 3 Ohm$. Dieser Wert ist merklich kleiner als   die 73 Ohm   eines $\lambda/2$ Dipols. Der Effekt auf den reaktiven Anteil der Eingangsimpedanz ist noch dramatischer. Für einen endlich dünnen Dipol mit der Dicke d, ist die Reaktanz der Eingangsimpedanz eines $2l=\lambda/2$ Dipols positiv. Die Reaktanz ist wenig unter Null, wenn die Dipollänge  $2l=\lambda/2$ entspricht. Wird der Dipol weiter gekürzt,  sinkt die Reaktanz sehr schnell ins Negative. Wenn  $2l=\lambda/8$ ist,  sind Werte für X grösser als 1000 Ohm kapazitiv keine Seltenheit\cite{elliott1981antenna}. 
+
+
 
 
