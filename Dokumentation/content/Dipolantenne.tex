@@ -1,8 +1,6 @@
-
-
 \newpage
 \subsection{Die Dipol Antenne}\label{sec:DipolAntenne}
-Der zentral gespeiste Dipol besteht meistens aus zwei runden Leiterstäben mit dem Durchmesser $d$ und der Länge $l$. Die beiden Stäbe haben eine gesamte Länge von $2l$. Die  Stäbe liegen so aneinander, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe ist viel grösser als  der Durchmesser $d$. Wird eine Spannung  in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesamte Länge der  Stäbe. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird englisch \textit{Transmission Line} genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungsunabhängige Kugelwelle betrachtet werden \cite{elliott1981antenna}.
+Der zentral gespeiste Dipol besteht meistens aus zwei runden Leiterstäben mit dem Durchmesser $d$ und der Länge $l$. Die beiden Stäbe haben eine gesamte Länge von $2l$. Die  Stäbe liegen so aneinander, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe ist viel grösser als  der Durchmesser $d$. Wird eine Spannung  in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesamte Länge. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird englisch \textit{Transmission Line} genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungsunabhängige Kugelwelle betrachtet werden \cite{elliott1981antenna}.
 %E^j(wt-kr)/4pimu^-1 r
 %Elliot Seite 29 Nr1.93
 
@@ -20,14 +18,14 @@ Der zentral gespeiste Dipol besteht meistens aus zwei runden Leiterstäben mit d
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Stromausbreitung in der Dipol Stabantenne entspricht der Stromverteilung einer am Ende offenen Zweidrahtleitung. Deren Enden im $90^\circ$ abgewinkelt werden. Das offene Ende der Leitung führt zu einer Reflexion der zuführenden Welle in die umgekehrte Richtung und somit zu einer stehenden Welle in der Leitung. Stromführende Elemente, die nahe beieinander liegen, deren Amplituden gleich aber gegenläufig sind, strahlen nur gering. Dies sind Eigenschaften einer guten Zweidrahtleitung. Aber die voneinander abgewinkelten Leitungsenden strahlen stark.
-Als Näherung für die Stromverteilung soll folgendes gelten \cite{elliott1981antenna}:
+Die Stromausbreitung in der Dipolantenne entspricht der Stromverteilung einer am Ende offenen Zweidrahtleitung. Die Enden der Zweidrahtleitung weden um $90^\circ$  von der der Leitung abgewinkelt. Das offene Ende der Leitung führt zu einer Reflexion der zuführenden Welle in die umgekehrte Richtung und somit zu einer stehenden Welle in der Leitung. Stromführende Elemente, die nahe beieinander liegen und deren Amplituden gleich aber gegenläufig sind, strahlen nur gering. Dies sind Eigenschaften einer guten Zweidrahtleitung. Die voneinander abgewinkelten Leitungsenden strahlen stark.
+Als Näherung für die Stromverteilung in den Leitungsenden soll folgendes gelten \cite{elliott1981antenna}:
 \begin{equation}\label{I_xt_Dipol} 
 I(x,t) =I_{m}sin([k(l-x)])e^{j\omega t}
 \end{equation}
 %Elliot Seite 59 Formel 2.1
 \todo{S59 Formel 2.1}
-Aus Formel \ref{I_xt_Dipol} kann entnommen werden, dass sich der Strom entlang der Dipolarme ändert. Die Stromverteilung ist somit vom Betrachtungsort $x$ und Zeitpunkt $t$ abhängig.
+Aus Formel \ref{I_xt_Dipol} kann entnommen werden, dass sich der Strom entlang der Dipolarme ändert. Die Stromverteilung ist somit vom Betrachtungsort $x$ und dem Zeitpunkt $t$ abhängig.
 
 
 Bei einem Dipol mit dem Durchmesser $d<<\lambda$ wird dieser zu einem dünnen Stromfaden. Die Stromdichte im Leiter kann \textbf{J}\textit{d}\textbf{\textbf{V}} mit \textbf{I}\textit{d}\textbf{\textbf{l}} als Stromelement ersetzt werden. Die Summe der Elementardipole mit konstantem Strom können als Quelle betrachtet werden \cite{elliott1981antenna}.\\
@@ -36,14 +34,15 @@ Bei einem Dipol mit dem Durchmesser $d<<\lambda$ wird dieser zu einem dünnen St
 I_{m}sin(k(l-dz))
 \end{equation}
 %Elliot Seite 61 Formel 2.2
-Die hier beschriebe Antenne hat einen so kleinen Durchmesser verglichen mit ihrer Länge L, dass der Stromfaden nur eine Ausdehnung entlang der z Achse aufweist. Die Gewichtungsfunktion dieser Summe von Elementardipolen die alle in der z Achse liegen ist:\\
-$a(\varphi)= 0$
+Die hier beschriebene Antenne hat einen sehr kleinen Durchmesser verglichen mit ihrer Länge L, dass der Stromfaden nur eine Ausdehnung entlang der z Achse aufweist. Die Gewichtungsfunktion dieser Summe von Elementardipolen die alle in der z Achse liegen ist:
+\begin{equation}
+a(\varphi)= 0
+\end{equation}
 jedoch die Gewichtungsfunktion in $\theta$ Richtung beträgt nach R. Elliott \cite{elliott1981antenna}:
 \begin{equation}\label{eq:Gewichtungsfunktion}
 a_{\theta}(\theta)=- \frac{2I_{m}}{k sin(\theta)} \lbrack cos(kl cos(\theta)) - cos(kl) \rbrack
 \end{equation}
 %Elliot Formel 2.6 oder Joss EMANT 122.
-
 Es sollen zwei Fälle genauer betrachtet werden.
 \begin{itemize}
 \item der Halbwellendipol mit 2l= $\lambda/2$
@@ -88,14 +87,13 @@ Die nachfolgende Grafik zeigt eine E Feldverteilung als Schnitt durch die xz Ebe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Dargestellt ist ein $\lambda/2$ Dipol der in z Richtung aufgerichtet ist. Es ist zu erkennen, dass bei $\theta = 0 ^\circ $  und $\theta = 180 ^\circ $ kein elektrisches Feld abgestrahlt wird. Stellt man sich die Grafik als um eine um $\varphi$ von 0 Grad bis 360 Grad rotierende Scheibe vor, so kommt die bekannte Doughnut Form zum Vorschein.
+Dargestellt ist ein $\lambda/2$ Dipol, der in z Richtung ausgerichtet ist. Es ist zu erkennen, dass bei $\theta = 0 ^\circ $  und $\theta = 180 ^\circ $ kein elektrisches Feld abgestrahlt wird. Stellt man sich die Grafik als um eine um $\varphi$ von 0 Grad bis 360 Grad rotierende Scheibe vor, so kommt die bekannte Doughnut Form zum Vorschein.
 
 Die von $\vartheta$ und $\varphi$ abhängige Leistung ist gegeben durch \cite{elliott1981antenna}:
 %P(theta,phi)= elliot2.10
 \begin{equation}
 P(\theta,\phi)=\frac{2\eta I_{m}^{2}}{(4\pi r)^{2}}\lbrack \frac{cos^{2}\lbrack (\pi/2) cos(\theta)\rbrack}{sin^{2}(\theta)}\rbrack
 \end{equation}
-
 %Durch Lösung des Doppelintegrals 
 %Elliot Seite 63
 Durch das Auflösen der Doppelintegrale über $\varphi$ von 0 bis $\pi$  und $\theta$ von 0 bis $\pi$ erhält man eine nummerische Lösung der Integrale über die gesamte Kugeloberfläche \cite{elliott1981antenna}:
@@ -103,17 +101,16 @@ Durch das Auflösen der Doppelintegrale über $\varphi$ von 0 bis $\pi$  und $\t
 P_{rad}=0.609 \frac{\eta I_{m}^{2}}{2\pi}
 \end{equation}
 %elliot 63 Forlmel 2.11
-
-Wie die  Grafik \ref{fig:DipolEFerd} zeigt, ist die maximale Feldausbreitung auf der Höhe der Einspeisestelle bei $\theta = 90 ^\circ $ maximal,  denn der  $sin(90 ^\circ ) $ entspricht 1.
-Der maximale Richtwert oder Richtfaktor,  aus dem englischen als \textit{directivity} bekannt, erhält man indem die Abgestrahlte Leistung mit einem isotropen Kugelstrahler verglichen wird\cite{elliott1981antenna}.
+Wie die  Grafik \ref{fig:DipolEFerd} zeigt, ist die maximale Feldausbreitung auf der Höhe der Einspeisestelle bei $\theta = 90 ^\circ $ maximal.  Da der Wert von  $\sin90^\circ  $ = 1 entspricht.
+Der maximale Richtwert oder Richtfaktor,  aus dem englischen als \textit{directivity} bekannt, erhält man, indem die Abgestrahlte Leistung mit einem isotropen Kugelstrahler verglichen wird\cite{elliott1981antenna}.
 \begin{equation}
 D(peak)=\frac{P(\theta,\varphi)(\pi/2)}{P_{rad}/ 4 \pi r^{2}} =1.64
 \label{eq:Directivity}
 \end{equation}
 %Dmax=1.64 nach Ellito 2.12
-Das besagt, dass die Abstrahlung in den Raum nicht homogen ist. Das Resultat des Richtfaktors für eine $\lambda /2$ Dipolantenne aus Gleichung \ref{eq:Directivity} ist ein Verhältnisfaktor. Dieser ist bezogen auf einen gleichmässig in den Raum strahlenden Kugelstrahler. Die Hauptkeule, ist die Richtung der grössten Abstrahlung ist also um den Faktor 1.64 grösser als bei einem Normstrahler. Der Richtfaktor wird oft in dB abgegeben. Da man sich auf den isotropen Strahler bezieht, ist die Angabe dBi und entspricht in dem gezeigten Beispiel $10\log{1.64}=2.15dBi$.\\
+Das besagt, dass die Abstrahlung in den Raum nicht homogen ist. Das Resultat des Richtfaktors für eine $\lambda /2$ Dipolantenne aus Gleichung \ref{eq:Directivity} ist ein Verhältnisfaktor. Dieser ist bezogen auf einen gleichmässig in den Raum strahlenden Kugelstrahler. Die Hauptkeule beschreibt die Richtung der grössten Abstrahlung. Sie ist bei einem Dipol um den Faktor 1.64 grösser als bei einem Normstrahler. Der Richtfaktor wird oft in dB abgegeben. Da man sich auf den isotropen Strahler bezieht, ist die Angabe in der Einheit dBi. Der Richtfaktor entspricht in dem gezeigten Beispiel $10\log{1.64}=2.15dBi$.\\
 
-Bei einem Halbwellendipol der Länge 2l mit $l=\lambda/4 $ ist der Scheitelwert des Antennenstromes $I_{m}$ beim Einspeisepunkt, dem Zentrum des Dipol bei z= 0. Somit kann gesagt werden, dass die Zuleitung  die folgende Leistung  liefert:
+Bei einem Halbwellendipol der Länge 2l mit $l=\lambda/4 $ ist der Scheitelwert des Antennenstromes $I_{m}$ beim Einspeisepunkt. Dieser liegt im dem Zentrum des Dipol bei z = 0. Somit kann gesagt werden, dass die Zuleitung  die folgende Leistung  liefert:
 %Elliot 2.14
 \begin{equation}
 P=\frac{1}{2} I_{m}^{2}R_{rad}=(0.609)\frac{\eta I_{m}^{2}}{2\pi}

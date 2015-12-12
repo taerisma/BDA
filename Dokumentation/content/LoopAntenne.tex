@@ -14,22 +14,22 @@ x’ &=&a \cos(\Psi)\\
 y’ &=&a \sin(\Psi)\\
 z’ &=&0\label{SchlaufeInDerEbene}
 \end{eqnarray}
-Aus der Gleichung \ref{SchlaufeInDerEbene} wird deutlich, dass die Ebene nur un der xy Ebene liegt und keine Ausdehung in z Richtugn besitzt.
+Aus der Gleichung \ref{SchlaufeInDerEbene} wird deutlich, dass die Ebene nur in der xy Ebene liegt und keine Ausdehung in z Richtung besitzt.
 Der Abstand  a entspricht dem Radius  aus dem Zentrum zur Stromschleife. Die Stromschleife ist in  Abbildung \ref{LoopAntenne} ersichtlich. Somit kann ein Stromelement auf der Schleife beschrieben werden als:
 \begin{equation}
 I dl= Ia(- \vec e_{x}sin(\Psi)+\vec e_{y}cos(\Psi))d\Psi
 \end{equation}
  %EMANT Joss Seit 45
-Die Stromverteilung führt zu einem Abstrahlen von Elektromagnetischen Wellen. Die abstrahlung kann mit der gewichtungsfunktion in Abhänigkeit von $\theta$ und $\varphi$ beschrieben werden. Die ausfühliche Gewichtungsfunktion einer Stromschleife hat Elliott \cite{elliott1981antenna}beschrieben. Da die Integration eines gecshlossenen Kreis Null ergibt, können die Gleichungen wie folgt vereinfacht werden.
+Die Stromverteilung führt zu einem Abstrahlen von Elektromagnetischen Wellen. Die Abstrahlung kann mit der Gewichtungsfunktion in Abhänigkeit von $\theta$ und $\varphi$ beschrieben werden. Die ausfühliche Gewichtungsfunktion einer Stromschleife hat Elliott \cite{elliott1981antenna}beschrieben. Da die Integration eines geschlossenen Kreis Null ergibt, können die Gleichungen wie folgt vereinfacht werden.
 %Die Gewichtungsfaktoren findet man mit Hilfe von (116 Joss) und (117 Joss) zu
 %Emant Joss Seite 46
 %Emant Joss Seite 46
 
-\begin{equation}
+\begin{equation}\label{GewichtungsfunktionLoop_aTheta}
 a\theta(\theta, \phi) =0
 \end{equation}
 
-Nimmt man  an, dass $ka$ klein ist, so kann der die Gewichtungsfunktion $a\varphi$ stark vereinfacht werden.
+Nimmt man  an, dass $ka$ klein ist, so kann  die Gewichtungsfunktion $a\varphi$ stark vereinfacht werden.
 %\begin{equation}
 %a\varphi(\theta, \varphi)=sin(ka sin(\theta)cos(\psi))=ka sin(\theta)cos(\psi)
 %\end{equation}
@@ -39,18 +39,18 @@ a\varphi(\theta,\varphi)=j(\pi a^{2}I)(k sin \theta)
 \end{equation}
 %$a(theta, phi)=j$... oder Ellito 2.31 oder Joss Seite 46.
 \todo{neu schreiben Loop}
-Das Fernfeld ist  ist  $\varphi$ polarisiert. Da die gewichtungsfunktion in $a\theta$ Null wird.  Die Leistungsdichte gewinnt man mit: 
+Das Fernfeld   ist  $\varphi$ polarisiert, da die Gewichtungsfunktion aus Formel \ref{GewichtungsfunktionLoop_aTheta}  $a\theta$ gleich Null wird.  Die Leistungsdichte gewinnt man mit: 
 
 %(Joss 118) 
 \begin{equation}
-\vec P(\theta,\phi)=\frac{1}{2}Re(\vec E x \vec H^*)
+\vec P(\theta,\varphi)=\frac{1}{2}Re(\vec E x \vec H^*)
 \end{equation}
 zu
 %Joss EMANT P(theta,phi)=....Ellito 2.32
 \begin{equation}
 P(\theta)=\frac{(ka)^{4}I{2}\eta}{32r^{2}}sin^{2}\theta
 \end{equation}
-Im Vergleich mit dem kurzen Dipol erzeugt die kleine Stromschleife ein vergleichbares Richtdiagramm. Das Fernfeld des kurzen Dipols ist jedoch vertikal $\theta$ polarisiert. Das bedeutet, dass das Abstrahlverhalten um $90^\circ$ verschoben ist. Integriert man die Leistungsdichte über eine Kugeloberfläche mit dem Radius r  auf und setzt sie der abgegebenen Leistung mit $1/2 I^{2}Rrad $ der zugeführten Zweidrahtleitung gleich, so gewinnt man $R_{rad}$ mit 
+Im Vergleich mit dem kurzen Dipol erzeugt die kleine Stromschleife ein vergleichbares Richtdiagramm. Das Fernfeld des kurzen Dipols ist jedoch vertikal $\theta$ polarisiert. Das bedeutet, dass das Abstrahlverhalten um $90^\circ$ verschoben ist. Integriert man die Leistungsdichte über eine Kugeloberfläche mit dem Radius r  und setzt sie der abgegebenen Leistung mit $1/2 I^{2}Rrad $ der zugeführten Zweidrahtleitung gleich, so gewinnt man $R_{rad}$:
 \begin{equation}
 R_{rad} = 320\pi^{6} (a/\lambda)^{4}\label{eq:RradLoop}
 \end{equation}
