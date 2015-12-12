@@ -7,8 +7,8 @@ Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$
 Z_{F0}=\sqrt{\dfrac{\mu_{0}}{\epsilon}}=\sqrt{\dfrac{\mu_{0}}{\epsilon_{0}}}=120\pi
 \end{equation}
 Breitet sich die Welle in einem Medium mit einer nicht endlichen Leitfähigkeit aus, so ist die Wellenimpedanz eine komplexe grösse und die Leitfähigkeit des Mediums $\sigma$ muss berücksichtigt werden.
-\begin{equation}\label{eq:Wellenimpedanz}
-Z_{F0}=\sqrt{\dfrac{j\omega\mu_{0}}{\sigma+j\omega\epsilon}}
+\begin{equation}\label{eq:Wellenimpedanz_Leitung}
+Z_{F}=\sqrt{\dfrac{j\omega\mu_{0}}{\sigma+j\omega\epsilon}}
 \end{equation}
 Eine spezielle Ausführung der Antenne als Wellenwandlertyp hängt im wesentlichen vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer normalen Freiraumübertagungsstrecke ist die Distanz r zwischen dem Sender und dem Empfänger sehr gross, verglichen mit den Abmessungen der Sendeantennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort scheint die Antennenstrahlung  aus einer punktförmigen Quelle zu stammen. Auf eine Empfangsantenne trifft eine  elektromagnetische Leistungsdichte. Diese wird als Poynting Vektor $\vec{S}$ bezeichnet.\\
 Für den Empfänger erscheint es, als ob die empfangene elektromagnetische Strahlung von einem einzigen Punkt ausgeht. Dieser Entstehungspunkt wird Phasenzentrum genannt. Er ist die Quelle der abgestrahlten elektromagnetischen Felder. Wenn diese Voraussetzungen erfüllt sind, befindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Die Fernfeldregion wird kurz als Fernfeld bezeichnet. 
@@ -39,9 +39,9 @@ Für Dipolantennen und Schleifenantennen, deren Abmessungen wesentlich kleiner a
 Bei einer Freiraumübertragungsstrecke, bei der sich die Empfangsantenne im Fernfeld der Sendeantenne im Abstand $r$ befindet, erhält man für die Leistungsdichte am Ort der Empfangsantenne \cite{meinke1992taschenbuch}.
 
 \begin{equation}
-S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\pi}\label{eq:LeistungsdichteS}
+S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\pi}\label{eq:LeistungsdichteS_vonD}
 \end{equation}
-In der Formel aus Gleichung \ref{eq:LeistungsdichteS} fällt der Faktor $4r^{2}\pi$ auf. Dies kommt daher, dass die Leistungsdichte die aubgestrahlte Leistung auf einer Kugeloberfläche verteilt. $\vec{S}$ ist der Leistungsdichte Vektor. Dieser wird mit wachsendem Abstand r quadratisch kleiner. Der Leistungsdichtevetor $\vec{S}$ besitzt die SI Einheit  $[W/m^{2}]$.\\
+In der Formel aus Gleichung \ref{eq:LeistungsdichteS_vonD} fällt der Faktor $4r^{2}\pi$ auf. Dies kommt daher, dass die Leistungsdichte die aubgestrahlte Leistung auf einer Kugeloberfläche verteilt. $\vec{S}$ ist der Leistungsdichte Vektor. Dieser wird mit wachsendem Abstand r quadratisch kleiner. Der Leistungsdichtevetor $\vec{S}$ besitzt die SI Einheit  $[W/m^{2}]$.\\
 Für die Gleichung \ref {eq:LeistungsdichteS} gilt:
 \begin{enumerate}[leftmargin=2cm]
    \item[] $P_t$: xx [W]
@@ -137,25 +137,22 @@ Weitere Annahmen sind:
 
 
 \subsubsection{Linkbudget}
-Unter dem Linkbudget versteht man die Summe aller Gewinne und Verluste vom Sender über das Übertragungsmedium bis hin zum Empfänger. Es beschreibt, welcher Signalpegel beim Empfänger nach Abzug aller Verluste ausgehend von der Sendeleistung ankommt. Anhand dieses Wertes und den technischen Angaben des Empfängers kann im voraus die maximal mögliche Datenrate berechnet werden. Wenn die Sendeleitung gesetzlich limitiert ist und die maximale Bit Fehler Rate (EBR) bekannt ist, kann die maximale Distanz oder die maximale Datenrate berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. 
+Unter dem Linkbudget versteht man die Summe aller Gewinne und Verluste vom Sender über das Übertragungsmedium bis hin zum Empfänger. Es beschreibt, welcher Signalpegel beim Empfänger nach Abzug aller Verluste ausgehend von der Sendeleistung ankommt. Anhand dieses Wertes und den technischen Angaben des Empfängers kann im  die maximal mögliche Datenrate berechnet werden. Wenn die Sendeleitung gesetzlich limitiert ist und die maximale Bit Fehler Rate (EBR) bekannt ist, kann die maximale Distanz oder die maximale Datenrate berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. 
 Das Linkbudget kann  nahezu beliebig komplex gestaltet werden und eine  Reihe von weiteren Parametern beinhalten. In der Praxis hat sich für die Berechnung des Linkbudgets bei Richtfunksystemen nach  Formel \ref{eq:LinkBudgetGelichung} bewährt.
 
 
 \begin{equation}
 P_{Rx} = P_{Tx}+L_{Tx}+G_{x}+L_{fs}+L_{Rx}+G_{r}+L_{div}\label{eq:LinkBudgetGelichung}
 \end{equation}
-
 Die Formel \ref{eq:LinkBudgetGelichung} wird als Ausgangslage für die Berechnung des minimalen Gewinns der Sendeantenne $G_{x}$ dienen. Da  die minimale Empfängersensitivität aus dem Daten Blatt des  Bluetooth Low Energie Texas Instruments CC2541 Chip bekannt ist, kann der nötige Gewinn der Sendeantenne $G_{x}$ berechnet werden. Der minimale Gewinn ist ein Kriterium welches beim Antennendesign beachtet werden muss.
+Der Empfangspegel $P_{Rx}$ in der Formel \ref{eq:LinkBudgetGelichung}  steht für die am Empfänger resultierende Leistung in dBm.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ steht für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn englisch \textit{gain} der Empfangsantenne. $L_{fs}$ steht für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$  für diverse weitere Verluste wie zum Beispiel Hindernisse oder für eine System Reserve.  $L_{Rx}$ steht für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.\\
 
-Der Empfangspegel $P_{Rx}$ in der Fromel \ref{eq:LinkBudgetGelichung}  steht für die am Empfäger resultierende Leistung in dBm.  Die Sendeleistung $P_{Tx}$ in dBm und $L_{Tx}$ steht für jegliche Verluste durch Kabel, Verbinder und Stecker in dB auf der Senderseite. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn (englisch gain) der Empfangsantenne. $L_{fs}$ steht für den Verlust durch die Freiraumdämpfung in dB, $L_{div}$  für diverse weitere Verluste wie zum Beispiel Hindernisse oder für eine System Reserve.  $L_{Rx}$ steht für jegliche Verluste durch Kabel, Verbinder, Stecker in dB von der Empfangsantenne bis zum Empfänger.
-
-
-Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung (engl. Free Space Path Loss)  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung von elektromagnetischen Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie zu Beispiel die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen  und Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
-In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler, der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in den Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler identisch ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler wird, desto mehr verteilt sich die Energie auf eine immer grösser werdende Oberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz.
+Die Freiraumdämpfung $L_{fs}$ soll an dieser Stelle etwas genauer erläutert werden. Unter der Freiraumdämpfung oder englisch \textit{Free Space Path Loss}  versteht man die Reduzierung der Leistungsdichte bei der Ausbreitung von elektromagnetischen Wellen im freien Raum. Im Vakuum existieren keine Störeinflüsse wie zum Beispiel die Dämpfung durch Luft, andere Gase oder  Hindernisse. Somit wird das Medium als homogen  und Reflexionsfrei angenommen. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger.
+In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler, der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in den Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler identisch ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler wird, desto mehr verteilt sich die Energie auf eine immer grösser werdende Kugeloberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz.
 \cite{linkbudget}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
+\begin{figure}[!ht]
 \begin{center}
 \begin{tikzpicture}
 	\draw[line width=1.5pt](0, 0) rectangle (2, 1) node[pos=0.5] {Sender};
@@ -183,25 +180,24 @@ In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem St
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Richtstrahlverbindung. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1 definiert, das entspricht 0dBi. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der \glqq Connect 1\grqq zur Anwendung kommende Texas Instruments CC2541 Chip angenommen. Für die berechnung der Freiraumdämpfung müssen die flgenden Formeleln genannt weden:
+Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell einer Kommunikationskanals. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget beschreibt eine Übertragung wie in Gleichung \ref{eq:LinkBudgetGelichung} gezeigt wird. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist als Faktor 1 definiert, das entspricht 0dBi. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen. Als Sende- und Empfangschip wird der in der \glqq Connect 1\grqq zur Anwendung kommende Texas Instruments CC2541 Chip angenommen. Für die Berechnung der Freiraumdämpfung müssen die folgenden Formellen genannt weden\cite{Tekom}:
  
 \begin{eqnarray}
-    	d_{0} 	&=& x \\ \label{eq:d0_LinkBudget}
-    K		&=& \left(\dfrac{\lambda}{4\pi d_{0}} \right)^{2}G_{x}G_{r} \\ \label{eq:K_LinkBudget}
-    P_{Rx} 	&=& P_{Tx}K \left( \dfrac{d_{0}}{D}\right)^{\gamma} \\ \label{eq:Prx_LinkBudget}
-    L_{fs} 	&=& \dfrac{P_{Tx}}{P_{Rx}} \\ \label{eq:Freiraumdaempfung}
-    L_{fs}(dB) 	&=& 10\log_{10}(L_{fs}) \label{eq:Freiraumdaempfung_dB}
+    	d_{0} 	&=& 10 [m] \\ \label{eq:d0_LinkBudget}
+    G_r		&=&  1 \\ \label{eq:Gr_LinkBudget}
+	G_t 		&=&  1 \\ \label{eq:Gt_LinkBudget}
+    P_{Rx}(d_0) 	&=& \dfrac{P_{Tx}G_t G_r\lambda^2}{(4\pi)^2 d_0^2} \\ \label{eq:Prx_LinkBudget}
+    L_{fs} 		&=& \dfrac{P_{Tx}}{P_{Rx}} \\ \label{eq:Freiraumdaempfung}
+    L_{fs}(dB) 	&=& 10\log_{10}(L_{fs}) \\ \label{eq:Freiraumdaempfung_dB}
+    L_{fs}(dB) 	&=& 20\log(\dfrac{4\pi d_0 f_0}{c_0}) \label{eq:Freiraumdaempfung_dB_aufgelöst} 
 \end{eqnarray}
+Wenn die Gleichung \ref{eq:Freiraumdaempfung_dB}  aufgelösst und die gegebenen Werte in die Gleichung \ref{eq:Freiraumdaempfung_dB_aufgelöst} Einsatz, so erhält man für eine Übertragungsstrecke im Freiraum für eine Frequenz von 2.45 GHz bei einer Distanz von 10 Meter eine Dämpfung von -60dB. Man beachte das $-$ in der Gleichung \ref{Freiraumdämpfung_ausgerechnet}, der erhalte Wert muss negativ sein, da es sich um eine Dämpfung handelt.
+\begin{equation}\label{Freiraumdämpfung_ausgerechnet}
+    L_{fs}(dB) = -20\log(\dfrac{4\pi 10[m] 2.45*10^9 [1/s] }{3*10^8[m/s]}) =-60.2dB
+\end{equation}
+Für die geforderten Systemspezifikationen entspricht $d_0 = 10$  Meter.
 
-\begin{itemize}
-\item $d_{0}$ Distanz zum Sender in Meter
-\item $D$ maximale Abmessugn des Senders in Meter
-\item K ist eine Konstante, welche die Antennencharakteristik und die mittlere Kanaldämpfung wiedergibt
-\item $\gamma$ Gamma ist ein Tabellenwert für die Ausbreitungsverluste im Medium 
-\end{itemize}
-Für die geforderten Systemspezifikationen entspricht $d_0$= 10 Meter. $D$ enspricht xx Meter. Für die Formel \ref{eq:Prx_LinkBudget} kann für $\gamma$ = 2 eingesetzt werden.\cite{Tekom}
-
-\begin{table}[h]
+\begin{table}[!ht]
   \centering
   \begin{tabular}{l c r} \toprule 
   Komponete                  	& 			&Leistungsbeitrag  \\ \midrule
@@ -220,14 +216,16 @@ Für die geforderten Systemspezifikationen entspricht $d_0$= 10 Meter. $D$ enspr
   \label{tab:Linkbudget}
 \end{table}
 
-Die Tabelle \ref{tab:Linkbudget} zeigt die für Die Bluetooth Verbindung relevanten Gewinne und Verluste auf. Bei einer Verbindung von 10 Meter und den getroffenen Vereinfachung ist mit einem minimalen Empfangspegel von $-72dB$ zu rechen. Das ist ein ausreichendeer Empfangspegel. Der die minimale Empfanssenitivität bei $-92dB$ liegt, resultiert eine Reserve von $20dB$.
+Die Tabelle \ref{tab:Linkbudget} zeigt die für die Bluetooth Verbindung relevanten Gewinne und Verluste auf des Übertragungskanals. Bei einer Verbindung von 10 Meter und den getroffenen Vereinfachung ist mit einem minimalen Empfangspegel von $-72dB$ zu rechen. Das ist ein ausreichender Empfangspegel. Der die minimale Empfangssensitivität bei $-92dB$ liegt, resultiert eine Reserve von $20dB$. Da wie bereits in der Gleichung \ref{gain} sich der Gewinn aus dem Richtfaktor und dem Wirkungsgrad einer Antenne zusammensetzt, kann eine Aussage zum Antennendesign gemacht werden. Denn das Design wird zeigen, dass der Wirkungsfaktor mit Sicherheit nicht 1 betragen wird und das Abstrahlverhalten wird nicht kugelförmig sein. Da keine praktisch realisierbare Antenne ein rein isotropes Verhalten zeigt und die Absorbierenden Eigenschaften des "Connect 1" Gerätes werden sich ebenfalls in der Feldausbreitung bemerkbar machen. Die Kombination aus Richtwirkung und Wirkungsgrad wird ein in der 3D Abstrahlmuster mit schwankender Leistungsdichte ergeben. Um einen Funktionstüchtigen Kommunikationskanal zu erhalten hat das Linkbuget aus Tabelle \ref{tab:Linkbudget} gezeigt, dass beim Empfänger mindestens eins Siganlpegel von -92dB ankommen muss.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%Quelle&%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsection{Quelle}
-Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz von Quellen kann sehr unterschiedlich sein. Oft findet sich am Quellenausgang ein Anpassungsnetzwerk, um die Quellenimpedanz an die Leitungsimpedanz anzupassen. Die in der Hochfrequenztechnik verwendeten Quellen haben oft einen Innenwiderstand von $50\Omega$. Die Abbildung \ref{fig:asymetrischeQuelle} zeigt eine asymmetrische  Hochfrequenzquelle. Einer der beiden Anschlüsse wird als Massenpotential definiert, der andere Anschluss führt das gewünschte Signal. 
-\begin{figure}[h]
+Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz von Quellen kann sehr unterschiedlich sein. Oft befindet sich am Quellenausgang ein Anpassungsnetzwerk, um die Quellenimpedanz an die Leitungsimpedanz anzupassen. Die in der Hochfrequenztechnik verwendeten Quellen haben oft einen Innenwiderstand von $50\Omega$. Die Abbildung \ref{fig:asymetrischeQuelle} zeigt eine asymmetrische  Hochfrequenzquelle. Einer der beiden Anschlüsse wird als Massenpotential definiert, der andere Anschluss führt das gewünschte Signal. Der Innenwiderstand der gezeigten Quelle ist $50\Omega$ reell.
+\begin{figure}[!th]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
@@ -251,9 +249,11 @@ Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Au
 \caption{ESB einer asymetrischen Quelle}
 \label{fig:asymetrischeQuelle}
 \end{figure}
+Bei asymmetrischer Signalübertragung oder auch unsymmetrischer Signalübertragung genannt, erfolgt die elektrische Signalübertragung in Form einer Spannung, die sich gegenüber einem Bezugspotential ändert. Sie ist die einfachste Art der Datenübertragung. Das Bezugspotential wird auf einer Referenzleitung übertragen. Als Reverenz dient meistens Masse. \\
 
-Symmetrische Quellen haben zwei oder drei Anschlusspunkte. Sie übertragen das HF Signal auf zwei Leitungen. Die Signalform ist um 180$^\circ$ auf den beiden Leitungen zu einander verschoben. Eine symmetrische Quelle ist in der Abbildung \ref{fig:symetrischeQuelle} dargestellt.
-\begin{figure}[h]
+Symmetrische Quellen haben mehr als zwei  Anschlusspunkte. Sie übertragen das HF Signal auf zwei Leitungen. Die Signalform ist auf den beiden Leitungen um 180$^\circ$  zu einander verschoben. Eine symmetrische Quelle ist in der Abbildung \ref{fig:symetrischeQuelle} dargestellt.
+
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
@@ -277,7 +277,7 @@ Symmetrische Quellen haben zwei oder drei Anschlusspunkte. Sie übertragen das H
 	\draw[line width=1.5pt, -*](6.7, 4)  -- (8, 4);%Siganlpfad unten
 	\draw[line width=1.5pt, decorate, decoration=snake](9, 6) -- (10, 6) node at (9.5, 6.5) {Signal der Quelle};
 	\draw[line width=1.5pt, decorate, decoration=snake](9, 4) -- (10, 4) node at (9.5, 4.5) {Signal der Quelle invertiert};
-	\draw[line width=1.5pt](2, 1.5) rectangle (7, 7) ;%Quellenramen
+	\draw[line width=1.5pt](2, 1.5) rectangle (7, 6.8) ;%Quellenramen
 	\draw[line width=1.5pt] (8, 2) -- (9, 2);%Masse Strich horizontal
 	\draw[line width=1.5pt] (9, 2) -- (9, 1.5);%Masse Strich vertikal
 	\draw[line width=1pt] (8.5, 1.5) -- (9.5, 1.5);%Masse Strich horizontal kurz
@@ -288,6 +288,7 @@ Symmetrische Quellen haben zwei oder drei Anschlusspunkte. Sie übertragen das H
 \caption{ESB einer symetrischen Quelle}
 \label{fig:symetrischeQuelle}
 \end{figure}
+\newpage
 \subsection{Zuleitung}
 Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung, während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
 Weiter Verbindungstypen sind:
@@ -299,23 +300,23 @@ Weiter Verbindungstypen sind:
 \item Glasfaserleiter
 \end{itemize}
 An dieser Stelle soll genauer auf die elektrische leitergebundene Übertragung eingegangen werden.
-Leitungen gehören zu den wichtigsten Übertragungsmedien der Nachrichtentechnik. Sie leiten fast mit Lichtgeschwindigkeit elektromagnetische Wellen vom Sendeort zum Empfangsort.
-Bei Gleichstrom und sehr niedrigen Frequenzen kann eine Leitung im allgemeinen als ideal oder mit einem rein ohmischen Verhalten angenommen werden. Man macht keine grossen Fehler, wenn man Signalverläufe am Eingang und am Ausgang als gleich und gleichzeitig ansieht. Kommt aber die physikalische Länge der Leitung in die Grössenordnung der Wellenlänge der Schwingung oder die Anstiegszeit eines Impulses in die Grössenordnung der Ausbreitungsverzögerung, dann kann die Ausgangsspannung völlig anders aussehen als die Eingangsspannung. Die Leitung muss jetzt als Zweitor mit frequenzabhängigen Eigenschaften betrachtet werden.
-Ein geeignetes Konzept für das Verständnis ist der Begriff der elektrischen Länge:
+Leitungen gehören zu den wichtigsten Übertragungsmedien der Nachrichtentechnik. Sie übertragen fast mit Lichtgeschwindigkeit elektromagnetische Wellen vom Sendeort zum Empfangsort.
+Bei Gleichstrom und sehr niedrigen Frequenzen kann eine Leitung im allgemeinen als ideal oder mit einem rein ohmischen Verhalten angenommen werden. Man macht keine grossen Fehler, wenn man Signalverläufe am Eingang und am Ausgang als gleich und gleichzeitig ansieht. Kommt aber die physikalische Länge der Leitung in die Grössenordnung der Wellenlänge der zu übertragenden Schwingung oder die Anstiegszeit eines Impulses in die Grössenordnung der Ausbreitungsverzögerung, dann kann die Ausgangsspannung völlig anders aussehen als die Eingangsspannung. Die Leitung muss jetzt als Zweitor mit frequenzabhängigen Eigenschaften betrachtet werden.
+Ein geeignetes Konzept für die Betrachtung  und das  Verständnis eines frequenzabhängigen Zweitor bringt der Begriff der elektrischen Länge mit sich:
 \begin{equation}
-Elektrische Länge=\dfrac{l}{\lambda}\label{eq:ElektrischeLänge}
+Elektrische L\"ange=\dfrac{l}{\lambda}\label{eq:ElektrischeLänge}
 \end{equation}
 
-Bei der  Gleichung \ref{eq:ElektrischeLänge} ist $l$ die Länge der Leitung und $\lambda$ gibt die Wellenlänge des Signales auf der Leitung mit der Länge $l$ an. 
+Bei der  Gleichung \ref{eq:ElektrischeLänge} ist $l$ die Länge der Leitung und $\lambda$ gibt die Wellenlänge des Signales auf der Leitung  an. 
 			
 Zur Analyse, ob eine Leitung strahlt, wird ihre Elektrische Länge betrachtet. \\
-Ist die $Elektrische Länge=\dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klassischen Schaltungstheorie behandelt werden. Die Leitung wird meist als verlustlos und reflexionsfrei betrachtet.\\
-Ein etwas anders Bild zeigt sich, wenn die $Elektrische Länge=\dfrac{l}{\lambda}>\dfrac{1}{20}$ entspricht. In deisem Fall muss die Leitung als frequeznabäniges Zweitor betrachtet werden. Die Phänomene der elektromagnetischen Wellen werden wirksam. Die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. 
-Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ und mit der Lichtgeschwindigkeit $c$ wie in Gleichung \ref{eq:WellenlängeMITc} verknüpft \cite{Tekom}.
+Ist die $Elektrische L\"ange=\dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klassischen Schaltungstheorie behandelt werden. Die Leitung wird meist als verlustlos und reflexionsfrei betrachtet.\\
+Ein ganz anders Bild zeigt sich, wenn die $Elektrische L\"ange=\dfrac{l}{\lambda}>\dfrac{1}{20}$ entspricht. In deisem Fall muss die Leitung als frequeznabäniges Zweitor betrachtet werden. Die Phänomene der elektromagnetischen Wellen werden wirksam. Die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. 
+Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ und mit der Lichtgeschwindigkeit $c_0$ wie in Gleichung \ref{eq:WellenlängeMITc} verknüpft \cite{Tekom}.
 \begin{equation}
 \lambda_{0}=\dfrac{c}{f}\label{eq:WellenlängeMITc}
 \end{equation}
-Da eine Leitung immer etwas Verlustbehaftet ist, kann die Ausbreitung einer Welle im Leitermedium nie der Lichtgeschwindigkeit $c$ entsprechen. Daher gilt:
+Da eine Leitung immer etwas Verlustbehaftet ist, kann die Ausbreitung einer Welle im Leitermedium nie der Lichtgeschwindigkeit $c_0$ entsprechen. Daher gilt:
 \begin{equation}
 \lambda=\dfrac{v}{f}\label{eq:WellenlängeMITv}
 \end{equation}
@@ -323,19 +324,18 @@ Die Signalgeschwindigkeit $v$ dividiert durch die Anzahl Schwingungen pro Sekund
 
 Für die Gleichungen \ref{eq:ElektrischeLänge}, \ref{eq:WellenlängeMITc} und \ref{eq:WellenlängeMITv} gilt:
 \begin{enumerate}[leftmargin=2cm]
-   \item[] l: Leitungslänge [m] 
+   \item[] $l$: Leitungslänge [m] 
    \item[] $\lambda$: Wellenlänge  [m] 
    \item[] $f$: Frequenz (Hz) [1/s] 
-   \item[] $c$: Lichtgeschwindigkeit  [m/s] 
+   \item[] $c_0$: Lichtgeschwindigkeit  [m/s] 
    \item[] $v$: Geschwindigkeit  [m/s] 
 \end{enumerate} 
 Besonders vorteilhafte Übertragungseigenschaften hat die längshomogene Leitung. Es handelt sich dabei um eine Leitung, die auf ihrer ganzen Länge einen konstanten Leitungsquerschnitt, gleiches
-Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator hat. Gebräuchliche Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, eine Streifenleitung auf
-einer Printplatte oder das Koaxialkabel.
+Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator hat. Gebräuchliche Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, eine Streifenleitung auf einer Printplatte oder das Koaxialkabel.
 \subsubsection{Leitungsmodell}
 Um die Zweitoreigenschaften einer längshomogenen Leitung zu ermitteln, wird diese wie in
 Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt. Diese wird in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren unterteilt. Es ist von einer Zweitorkette die Rede.
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	%unten
@@ -362,10 +362,44 @@ Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt. Diese wird in $n$ gl
 \caption{Leitungsmodell eine Kette von Zweitoren}
 \label{fig:LeitungsmodellZweitorKette}
 \end{figure}
-Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette} gezeigt ist, kann die Leiterlänge durch $n$ geteilt werden. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ lange Leiterstücke. Betrachtet man ein kurzes Leitungsstück mit der Länge $\Delta z = 1/n$, so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\phi = i  \Delta L$. \\
+Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette} gezeigt ist, kann die Leiterlänge durch $n$ geteilt werden. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ lange Leiterstücke. Betrachtet man ein kurzes Leitungsstück mit der Länge $\Delta z = l/n$, so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\
+Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. \\
 Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern. Die Folge davon ist ein elektrisches Feld und eine Oberflächenladung $Q = u  \Delta C$ auf den Leitern \cite{Emant}.
+\begin{figure}[!h]
+\begin{minipage}{7cm}
+	\centering
+	\begin{tikzpicture}
+		\draw[line width=1.5pt,style=dashed](5, 1.5) circle (1.5);
+		\draw[line width=1.5pt,style=dashed](5, 1.5) circle (1);
+		\draw[line width=1.5pt](5, 1.5) circle (0.5);
+		\draw(4.8, 1.3)  -- (5.2, 1.7);
+		\draw(4.8, 1.7)  -- (5.2, 1.3);
+		\draw[line width=1.5pt, ->, >=latex](3, 3.5) -- (7, 3.5) node at (9.5,3.5){Magnetischer Fluss $\Phi$};
+		\draw[line width=1.5pt,style=dashed](5, 5.5) circle (1.5);
+		\draw[line width=1.5pt,style=dashed](5, 5.5) circle (1);
+		\draw[line width=1.5pt](5, 5.5) circle (0.5);
+		\fill[fill=black](5, 5.5) circle (2pt);				
+	\end{tikzpicture}
+	\caption{Magnetischer Fluss einer Zeidrahtleitung}	
+\end{minipage}
+\hfill
+\begin{minipage}{7cm}
+	\centering
+	\begin{tikzpicture}
+		\draw[line width=1.5pt](5, 1.5) circle (0.5) node at (5, 1.5){$+$};
+		\draw node at (5.3,0.7){$Q+$};
+		\draw[line width=1.5pt, ->, >=latex](5, 2.2) -- (5, 4.8) node at (5.5,3.5){$+u$};
+		\draw[line width=1.5pt](5, 5.5) circle (0.5) node at (5, 5.5){$-$};
+		\draw node at (5.3,6.3){$Q-$};	
+	\end{tikzpicture}
+	\caption{Oberflächenladung einer Zeidrahtleitung}		
+%\caption{statische Feldbetrachtung einer Transversalen Ebene einer Zeidrahtleitung}
+\end{minipage}
+\label{fig:statischeZeidrahtleitung}
+\caption{statische Feldbetrachtung einer Transversalen Ebene einer Zeidrahtleitung}
+\end{figure}
 
-\begin{figure}[!htb]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=11cm]{content/bilder/Leiterstueck.pdf}%
 	\caption{Ersatzschaltbild eines elementaren Leiterstücks}
@@ -373,15 +407,38 @@ Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern
 \end{figure}
 
 Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leiterbeläge ausdrücken. Die Gleichung \ref{eq:InduktiverLeitungsbelag} gibt den induktiven Leitbelag an. Die Gleichung \ref{eq:KapazitiverLeitungsbelag} zeigt den kapazitiven Leitbelag.
+
 \begin{equation}
 L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
 \end{equation}
 \begin{equation}
 C'=\dfrac{\Delta C}{\Delta z}\label{eq:KapazitiverLeitungsbelag}
 \end{equation}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%
+%%%%%%%%%%%%
+%\begin{figure}[!ht]
+%	\begin{center}
+%	\begin{tikzpicture}
+%		\draw[line width=1.5pt](5, 1.5) circle (0.5) node at (5, 1.5){$+$};
+%		\draw node at (5.3,0.7){$Q+$};
+%		\draw[line width=1.5pt, ->, >=latex](5, 2.2) -- (5, 4.8) node at (5.5,3.5){$+u$};
+%		\draw[line width=1.5pt](5, 5.5) circle (0.5) node at (5, 5.5){$-$};
+%		\draw node at (5.3,6.3){$Q-$};		
+%	\end{tikzpicture}
+%	\end{center}
+%\caption{statische Feldbetrachtung einer Transversalen Ebene einer Zeidrahtleitung}
+%\label{fig:statischeZeidrahtleitung_Oberflächenspannung}
+%\end{figure}
+%%%%%%%%%%%
+
+
+
+
 
 Werden zudem die ohmschen Verluste im Leiter und allfällige dielektrische Verluste in der Isolation als Wirkwiderstände dargestellt, so lässt sich das Ersatzschaltbild einer Leitung gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
-Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitungsbelag} und die Abbildung \ref{fig:ESBLeiterstueck} gilt \cite{Tekom}:
+Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitungsbelag} gelten die Zusammenhänge aus der Abbildung \ref{fig:ESBLeiterstueck}  \cite{Tekom}:
 \begin{enumerate}[leftmargin=2cm]
    \item[] $R'$: Ohmsche Leiterverlust/m [$\Omega/m$] 
    \item[] $L'$: Serieinduktivität/m  [$H/m$] 
@@ -389,7 +446,6 @@ Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitun
    \item[] $C'$: Kapazität zwischen den Leiten/m  [$F/m$] 
    \item[] $\Delta m$: Abschnittslänge  [$m$] 
 \end{enumerate} 
-
 Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen $z$ Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT} berechnet werden \cite{Tekom}.
 \begin{eqnarray}\label{eq:UvonZundT}
 U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
@@ -417,9 +473,9 @@ Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
 
 
 
-Die Reflexionen und die Anpassung soll anhand eines Beispiels einer Leitung mit Abschlusswiderstand genauer näher erläutert werden. \\
+Die Reflexionen und die Anpassung soll anhand eines Beispiels einer Leitung mit Abschlusswiderstand  näher erläutert werden. \\
 
-Eine Quelle treibt eine vorwärtslaufende Welle in einer Leitung. Die Leitung besitzt einen Leitungswiderstand $Z_0$.  Das Ende der Leitung ist mit einem Abschlusswiderstand versehen. Dieser Widerstand stellt eine Lastimpedanz $Z_L$ zwischen dem Hin- und Rückleiter dar. \\
+Eine Quelle treibt eine vorwärtslaufende Welle in einer Leitung. Die Leitung besitzt einen Leitungswiderstand $Z_0$. Dieserkann wie aus Formel \ref{eq:Wellenimpedanz_Leitung} ersichtlich brechnet werden. Das Ende der Leitung ist mit einem Abschlusswiderstand versehen. Dieser Widerstand stellt eine Lastimpedanz $Z_L$ zwischen dem Hin- und Rückleiter dar. \\
 Man spricht von einer mit einer Lastimpedanz $Z_L$ abgeschlossenen Übertragungsleitung.  Die Leitungsimpedanz $Z_0$ entspricht nicht exakt der Lastimpedanz $Z_L$, daher kommt es zu einer   Teilreflexion der vorlaufenden Welle. Das Verhältnis zwischen den Amplituden der rücklaufenden Welle und der vorlaufenden Welle wird als Reflexionskoeffizient r bezeichnet \cite{Tekom}. \\
 
 Reflexionskoeffizient r:
@@ -427,14 +483,14 @@ Reflexionskoeffizient r:
 \begin{eqnarray}\label{eq:Reflexionskoeffizient}
 r=\dfrac{\underline{U}_{R}}{\underline{U}_{V}}=\dfrac{Z_{L}-Z_{V}}{Z_{L} + Z_{V}}=-\dfrac{\underline{I}_{R}}{\underline{I}_{V}}
 \end{eqnarray}
-Der Reflexionskoeffizient r lässt sich wie aus Gleichung \ref{eq:Reflexionskoeffizient} gezigt, anhand der Last- und der Quelleimpedanz oder aus dem Verhältnis der vor und rücklaufenden Stromwellen berechen.
+Der Reflexionskoeffizient r lässt sich wie aus Gleichung \ref{eq:Reflexionskoeffizient} gezigt, anhand der Last- und der Quelleimpedanz oder aus dem Verhältnis der vor- und rücklaufenden Stromwellen berechen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=10cm]{content/bilder/ReflexionenLeitungLastimpedanz.pdf}%
 	\caption{Refelxionen einer Leitung an einer Lastimpedanz \cite{Tekom}}
-	\label{FitzDipol}
+	\label{LeitungMit_ZL}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -450,15 +506,15 @@ Die Spannung $\underline{U}_L$ über der Last ergibt sich  aus der Überlagerung
 \underline{I}_L = \underline{I}_V + \underline{I}_R
 \end{eqnarray}
 
-Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist. Dies wird als stehende Welle bezeichnet. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten heben sich die Wellen gegenseitig auf. Ihr Wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert: \\
+Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist. Dies wird als stehende Welle bezeichnet. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten heben sich die Wellen gegenseitig auf. Ihr Wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert:\\
 
 Rückflussdämpfung $a$:
 Die Rückflussdämpfung a wird in der englischen Literatur \textit{Return Loss} genannt.
 \begin{eqnarray}\label{eq:Ruckflussdämpfung_a}
 a=20\log\left(\left| \dfrac{U_V}{U_R}\right| \right)=-20\log(|r|)
 \end{eqnarray}
-Die Ruckflussdämpfung beschreibt als logarithmisches Mass, wie stark das rücklaufende Signal gegenüber dem vorlaufenden Signal gedämpft ist \cite{Tekom}.\\
 
+Die Rückflussdämpfung beschreibt als logarithmisches Mass, wie stark das rücklaufende Signal gegenüber dem vorlaufenden Signal gedämpft ist \cite{Tekom}.\\
 Welligkeitsfaktor $s$:
 Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet.
 \begin{eqnarray}\label{eq:Welligkeitsfaktor_s}
@@ -488,7 +544,7 @@ Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeb
 P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} | R_Q=R_L
 \end{eqnarray}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {$U_{0}$};%Quelle
@@ -522,7 +578,7 @@ Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetz
 \todo{Text zum Bild Z'}
 \todo{Bild selber zeichnen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=10cm]{content/bilder/AnpassungKomplexerLast.pdf}%
 	\caption{Leitungsanpassung für eine komplexe Last \cite{Tekom}}
@@ -541,7 +597,7 @@ Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die La
 	\end{align}
 %\end{equation}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 %	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {$U_{0}$};%Quelle
@@ -580,7 +636,7 @@ R1 &= \sqrt{RL(RL-RQ)} \label{eq:R1R2wennRLgrösserRQ_R1}\\
 R2 &= \dfrac{RQ RL}{R1} \label{eq:R1R2wennRLgrösserRQ_R2}\\
 a_{dB} &= 20\log \left( \sqrt{\dfrac{RL}{RQ}}+\sqrt{\dfrac{RL}{RQ}-1}\right)
 \end{align}
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 
@@ -634,7 +690,7 @@ jX_{L}= j\omega L \label{eq:XL} \\  jX_C=\dfrac{-j}{\omega C} \label{eq:XC}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](1, 3) circle (0.5) node at (1,3){$U_0$};
@@ -699,7 +755,7 @@ Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm L
 
 %%%%%%%%%%%%%%%%%%%%%%
 
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](0, 0) rectangle (3, 2) node at (1.5, 1) {Quelle};
@@ -737,7 +793,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 %	\label{ESBantenne}
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt,*-](12, 5)  -- (13.5, 5);%Startz zu Rv
@@ -784,7 +840,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 %%%%%%%%%%%%%%%%%%%%%%
 Wenn die Speisung in einem grösseren Zusammenhang betrachte, dann erkennt man, dass die Speisung mehr als die Berücksichtigung der Impedanzen von der Quelle bis zur Antenne umfasst. Um ein Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein. Die Abbildung \ref{AnpassungQuelleAntenne} zeigt wichtige Zusammenhänge der Speisung und des Zusammenhangs von Quelle, Leitungsimpedanz und der Antenne auf. Wie im Kapitel \ref{sec:AnpassungReflexionen} ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$ aus dem wiederum auf die Reflexionsdämpfung $S_{11}$ geschlossen wird. Der Zusammenhang ist einfach, je mehr der Reflexionskoeffizient $\Gamma\rightarrow 1$ desto grösser ist der $S_{11}$ Wert in dB, desto mehr Leistung geht in die Antenne und dadurch kann mehr Energie abgestrahlt werden. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_rad$ da $P_{rad}=I_{ant}^2*R_{rad}$ ist. Aus der Abstrahleffizienz $\eta_{rad}$ ist ebenfalls zu erkenn, dass die Verluste in dem Antenne System klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen, um eine hohe Abstrahleffizienz $\eta_{rad}$ zu erhalten.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};

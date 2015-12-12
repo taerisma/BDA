@@ -28,7 +28,7 @@ Das Abstrahlverhalten ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:Lo
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
+\begin{figure}[!ht]
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
@@ -115,7 +115,7 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in die G
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]%ESB Antenne
+\begin{figure}[!ht]%ESB Antenne
 	\begin{center}
 	\begin{tikzpicture}
 %	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
@@ -171,7 +171,7 @@ Die Dipol Antenne ist eine häufig vorkommende Antennenform.  Dipol Antennen gib
 Die Dipolantenne bei der $2l=\lambda/2$ entspricht, wird oft Referenzdipol oder Halbwellendipol genannt. Wird der Halbwellendipol mit seiner Resonanzfrequenz $f=\dfrac{\lambda}{2}$ angesteuert, tritt ein maximales Schwingen des Dipols auf. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]%ESB Antenne
+\begin{figure}[!ht]%ESB Antenne
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](5, 2) circle (0.5) node at (5, 2) {AC};
@@ -313,7 +313,7 @@ Der Strahlungswiderstand des $\lambda/2$ Dipols entspricht wie aus der Gleichung
 Die Reaktanz $X_{ant}$ und der Strahlungswiderstand $R_{rad}$ sowie der Verlustwiderstand $R_v$ ergeben die Antennenimpedanz. Diese wird $Z_{ant}$  genannt. Dieser Zusammenhang ist  in der Abbildung \ref{fig:ESBantenneZant} gezeigt. Die in Abbildung \ref{fig:ESBantenneZant} gezeigte $X_{ant}$ weisst einen negativen Imaginärteil auf. Deshalb ist $X_{ant}$ in Form eines Kondensators gezeichnet.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h!]%ESB Antenne mit Zant
+\begin{figure}[!ht]%ESB Antenne mit Zant
 	\begin{center}
 	\begin{tikzpicture}
 %	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
@@ -374,7 +374,7 @@ Es wurden drei Simulationen durchgeführt.
 Die Abbildung \ref{fig:S11_Dipol_freiraum_1} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist bei 2.42 GHz abgestimmt und es resultiert eine Return Loss Dämpfung von -16.1dB. Die -3dB Bandbreite ist etwa 200 MHz und liegt bei ca. -13.1dB. Die -10dB Bandbreite beträgt xxx MHz. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt in der Abbildung \ref{fig:Smith_Dipol_freiraum_2}  bei der Resonanzfrequenz einen Widerstand von 68.6 Ohm reell. Das ist nahe dem in der Theorie und mit der Formel \ref{RradDipol} gezeigten Wert von 73 Ohm. Das Smith Diagramm zeigt weiter einen kapazitiven  Imaginärteil von $-j4\Omega$. Da die Anpassung an die Quellenimpedanz von reell 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.
 \todo{-10dB Bandbreite}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Dipol/S11DipolOhneABS.pdf}
@@ -390,7 +390,7 @@ Die Abbildung \ref{fig:S11_Dipol_freiraum_1} zeigt das $S_{11}$ Diagramm eines D
 In der Abbildung \ref{fig:S11_Dipol_ABS_3} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kunststoffstück im Nahfeld gezeigt. Das ABS Stück hat die Masse: 100 x 2 x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz in der Abbildung \ref{fig:S11_Dipol_ABS_3}. Der maximale $S_{11}$ Wert liegt neu 400 MHz tiefer bei 2.04 GHz. Der $S_{11}$ Wert bei dieser Frequenz beträgt  neu -20.79 dB. Die -10dB Bandbreite beträgt yyy MHz.\\
 \todo{10dB Bandbreite}
 Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpassung. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil ist mit $+j39$ Ohm induktiv.
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Dipol/S11DipolABS.pdf}
@@ -407,7 +407,7 @@ Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpass
 Die dritte Simulation zeigt das $S_{11}$ und das Smith-Diagramm der Antenne. Diese liegt zwischen zwei ABS Kunststoffstücken. Es zeigt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück. Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 180 MHz tiefer. Die Abbildung  \ref{fig:S11_Dipol_Zwei_ABS_5} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt zzz MHz.\\
 Das Smith-Diagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt  bei $59.6 \%$.
 
-\begin{figure}[!htb]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Dipol/S11DipolZweiABS.pdf}
@@ -498,7 +498,7 @@ Die Formgebung muss im freien Volumen, welche im Kapitel \ref{sec:EigenschaftenA
 Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen Dipol. Der Strahlungswiderstand ist beinahe  ca.  280 Ohm. 
 
  %%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]
+\begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3)  -- (3, 4);%links
@@ -523,7 +523,7 @@ Da  die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[h]%ESB Antenne
+\begin{figure}[!ht]%ESB Antenne
 	\begin{center}
 	\begin{tikzpicture}
 %	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
@@ -583,7 +583,7 @@ Die erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodell 
 Die Resonanzfrequenz ist in der Abbildung  \ref{fig:S11_Loop_Lambda2_freiraum_1} gezeigt. Sie liegt bei dieser Simulation bei $5.84 GHz$. Die Antenne zeigt als -3dB Grenze eine Bandbreite von $66kHz$. Bei $5.84 GHz$ zeigt die Antenne einen $S_{11}$ Wert von mehr als -25dB.\\
 Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt die Fehlanpassung auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 6225 Ohm. Deshalb ist der Frequenzpunkt von $2.45 GHz$ beim rechten Ausgangspunkt des Smith-Diagramm. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer total Reflexion. Der Reflexionsfaktor $\Gamma$ ist 1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist $1\%$.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Loop/L2/ohneABS/S11_Loop_Lambda2_ohneABS.pdf}
@@ -601,7 +601,7 @@ Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} zeigt das $S_{11}$ Diagramm ders
 
 Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} und \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigen jedoch eine Resonanzfrequenz, die um mehr als $1430MHz$ auf $4.41GHz$ gefallen ist. Ebenfalls ist die Antenne etwas weniger schmalbandig. Die -3dB Bandbreite ist auf 210kHz gestiegen. Weiter ist der $S_{11}$ Wert auf -15.4dB gesunken.\\Die Abbildung \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigt das Smith-Diagramm. Daraus ist ebenfalls ersichtlich, dass die Antenne für die Frequenz $2.45GHz$ nicht mehr einen Unterbruch darstellt. Die Abstrahleffizienz ist immer noch unter $3\%$.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Loop/L2/1ABS/S11_Loop_Lambda2_mitABS.pdf}
@@ -623,7 +623,7 @@ Das Smith Diagramm in Abbildung \ref{fig:Smith_Lambda2_Loop_2ABS_6} zeigt einen 
 
 
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\begin{center}
 	\minipage{0.4\textwidth}
  	\includegraphics[width=\linewidth]{content/bilder/Evaluation/Loop/L2/2ABS/S11_Loop_Lambda2_mit2ABS.pdf}
@@ -638,7 +638,7 @@ Das Smith Diagramm in Abbildung \ref{fig:Smith_Lambda2_Loop_2ABS_6} zeigt einen 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Simulationen einer Loop Antenne mit mehreren Schleifen}
 Im vorhergehenden Abschnitt Kapitel \ref{sec:SimL2Loop} sind anhand eines einfachen Modells die Eigenschaften einer Loopantenne mit umliegendem Kunststoff gezeigt. Der Effekt des Kunststoffes war grösser als erwartet. Es ist ein Detuning wie bei einer Dipolantenne feststellbar. Dass das Detuning auch Chancen bildet, zeigen die drei folgenden Simulationen der Abbildungen von \ref{fig:S11_Loop_freiraum_1} bis \ref{fig:Smith_Loop_2ABS_6}. Es wurde immer dieselbe Antennenstruktur simuliert. Diese ist ähnlich wie eine RFID Spule aufgebaut. Drei lange, flache Schleifen sind ineinander gedreht. Die Äusserste ist nicht Höher als 10mm und die Länge beträgt nicht mehr als 55mm. Die Simulation wurde drei mal durchgeführt. Die erste zeigt die Antenne im Freiraum, die zweite zeigt das Resonanzverhalten mit einem ABS Stück im Nahfeld und bei der dritten Simulation ist die Antennenstruktur zwischen zwei ABS Kunststoffstücken ersichtlich. Wie zu erwarten war, sinkt die Resonanzfrequenz mit dem Kunststoff im Nahfeld. 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Loop/ohneABS/S11_Loop_Coil_ohneABS.pdf}
@@ -653,7 +653,7 @@ Im vorhergehenden Abschnitt Kapitel \ref{sec:SimL2Loop} sind anhand eines einfac
 
 Mit einem Stück ABS ein simpler Lamda /2 Loop\\
 \todo{Beschreiben der Simulation}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Loop/mit1ABS/S11_Loop_Coil_1ABS.pdf}
@@ -668,7 +668,7 @@ Mit einem Stück ABS ein simpler Lamda /2 Loop\\
 
 Mit 2 ABS Stücken in der Nähe
 \todo{Beschreiben der Simulation}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Loop/Kurz3/S11Loop2ABS.pdf}
@@ -685,7 +685,7 @@ Ein Fazit aus den Simulationen der Loop Schleifen mehrfach gefaltet.
 \todo{Fatzit aus den Loop Messungen}
 \subsection{Nutzwertanalyse Antennen Eigenschaften }
 \todo{Beschreiben}
-\begin{table}[htb]
+\begin{table}[!ht]
   \centering
   \begin{tabular}{l r l l l l l l l l} \toprule 
   && \multicolumn{2}{c}{Dipol $\lambda/2$}   && \multicolumn{2}{c}{Loop $\lambda/2$}   && \multicolumn{2}{c}{Loop} \\ \cmidrule{3-4} \cmidrule{6-7} \cmidrule{9-10}

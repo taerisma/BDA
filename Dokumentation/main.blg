@@ -9,53 +9,55 @@ Warning--string name "februar" is undefined
 --line 49 of file mydata.bib.bib
 Warning--string name "september" is undefined
 --line 59 of file mydata.bib.bib
+Warning--to sort, need author or key in Oeffnungswinkel
 Warning--to sort, need author or key in linkbudget
 Warning--to sort, need author or key in WikiPermitt
 Warning--to sort, need author or key in DielektrikumPolarisation
 Warning--to sort, need author or key in Polystyrol_Datenblatt
 Warning--empty year in DielektrikumPolarisation
+Warning--empty year in Oeffnungswinkel
 Warning--empty year in Polystyrol_Datenblatt
 Warning--empty year in WikiPermitt
 Warning--empty year in linkbudget
-You've used 16 entries,
+You've used 17 entries,
             2773 wiz_defined-function locations,
-            685 strings with 6566 characters,
-and the built_in function-call counts, 4823 in all, are:
-= -- 462
+            690 strings with 6721 characters,
+and the built_in function-call counts, 5072 in all, are:
+= -- 487
 > -- 141
 < -- 10
-+ -- 58
++ -- 59
 - -- 42
-* -- 308
-:= -- 699
-add.period$ -- 62
-call.type$ -- 16
-change.case$ -- 57
-chr.to.int$ -- 16
-cite$ -- 44
-duplicate$ -- 279
-empty$ -- 490
+* -- 324
+:= -- 720
+add.period$ -- 65
+call.type$ -- 17
+change.case$ -- 60
+chr.to.int$ -- 17
+cite$ -- 49
+duplicate$ -- 294
+empty$ -- 525
 format.name$ -- 55
-if$ -- 1050
+if$ -- 1111
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 12
-newline$ -- 101
+newline$ -- 106
 num.names$ -- 36
-pop$ -- 174
+pop$ -- 191
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 51
 quote$ -- 0
-skip$ -- 188
+skip$ -- 198
 stack$ -- 0
-substring$ -- 42
-swap$ -- 18
+substring$ -- 45
+swap$ -- 19
 text.length$ -- 2
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 146
-warning$ -- 8
+type$ -- 157
+warning$ -- 10
 while$ -- 27
 width$ -- 0
-write$ -- 225
-(There were 11 warnings)
+write$ -- 236
+(There were 13 warnings)
