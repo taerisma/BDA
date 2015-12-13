@@ -781,7 +781,7 @@ Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm L
 %	\label{Anpassung}
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\todo{Bild Anpassung selber machn}
+
 
 Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpassnetzwerk zwischen der Leitung und der Antenne benötigt.  Da die Impedanz der Leitung $Z_L$ und der Antenne $Z_{ant}$ nur in seltenen Fällen aufeinander stimmt. Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$. Je nach Typ einen kapazitiven oder einen induktiven Anteil der als $X_{ant}$ dargestellt wird.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -837,7 +837,7 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  wird oft ein Anpas
 %\end{tikzpicture}
 %\end{ circuitikz }
 %%%%%%%%%%%%%%%%%%%%%%
-Wenn die Speisung in einem grösseren Zusammenhang betrachte, dann erkennt man, dass die Speisung mehr als die Berücksichtigung der Impedanzen von der Quelle bis zur Antenne umfasst. Um ein Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein. Die Abbildung \ref{AnpassungQuelleAntenne} zeigt wichtige Zusammenhänge der Speisung und des Zusammenhangs von Quelle, Leitungsimpedanz und der Antenne auf. Wie im Kapitel \ref{sec:AnpassungReflexionen} ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$ aus dem wiederum auf die Reflexionsdämpfung $S_{11}$ geschlossen wird. Der Zusammenhang ist einfach, je mehr der Reflexionskoeffizient $\Gamma\rightarrow 1$ desto grösser ist der $S_{11}$ Wert in dB, desto mehr Leistung geht in die Antenne und dadurch kann mehr Energie abgestrahlt werden. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_rad$ da $P_{rad}=I_{ant}^2*R_{rad}$ ist. Aus der Abstrahleffizienz $\eta_{rad}$ ist ebenfalls zu erkenn, dass die Verluste in dem Antenne System klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen, um eine hohe Abstrahleffizienz $\eta_{rad}$ zu erhalten.
+Wenn die Speisung in einem grösseren Zusammenhang betrachtet, dann erkennt man, dass die Speisung mehr als die Berücksichtigung der Impedanzen von der Quelle bis zur Antenne umfasst. Um ein Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein. Die Abbildung \ref{AnpassungQuelleAntenne} zeigt wichtige Zusammenhänge der Speisung und des Zusammenhangs von Quelle, Leitungsimpedanz und der Antenne auf. Wie im Kapitel \ref{sec:AnpassungReflexionen} ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$ aus dem wiederum auf die Reflexionsdämpfung $S_{11}$ geschlossen wird. Der Zusammenhang ist einfach, je mehr der Reflexionskoeffizient $\Gamma\rightarrow 1$ geht, desto grösser ist der $S_{11}$ Wert in dB, desto mehr Leistung geht in die Antenne und dadurch kann mehr Energie abgestrahlt werden. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_rad$ da $P_{rad}=I_{ant}^2*R_{rad}$ ist. Aus der Abstrahleffizienz $\eta_{rad}$ ist ebenfalls zu erkenn, dass die Verluste des Antennensystems klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen, um eine hohe Abstrahleffizienz $\eta_{rad}$ zu erhalten.
 
 \begin{figure}[!ht]
 	\begin{center}
