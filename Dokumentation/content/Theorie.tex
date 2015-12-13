@@ -475,7 +475,7 @@ Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
 
 Die Reflexionen und die Anpassung soll anhand eines Beispiels einer Leitung mit Abschlusswiderstand  näher erläutert werden. \\
 
-Eine Quelle treibt eine vorwärtslaufende Welle in einer Leitung. Die Leitung besitzt einen Leitungswiderstand $Z_0$. Dieserkann wie aus Formel \ref{eq:Wellenimpedanz_Leitung} ersichtlich brechnet werden. Das Ende der Leitung ist mit einem Abschlusswiderstand versehen. Dieser Widerstand stellt eine Lastimpedanz $Z_L$ zwischen dem Hin- und Rückleiter dar. \\
+Eine Quelle treibt eine vorwärtslaufende Welle in einer Leitung. Die Leitung besitzt einen Leitungswiderstand $Z_0$. Dieser kann wie aus Formel \ref{eq:Wellenimpedanz_Leitung} ersichtlich brechnet werden. Das Ende der Leitung ist mit einem Abschlusswiderstand versehen. Dieser Widerstand stellt eine Lastimpedanz $Z_L$ zwischen dem Hin- und Rückleiter dar. \\
 Man spricht von einer mit einer Lastimpedanz $Z_L$ abgeschlossenen Übertragungsleitung.  Die Leitungsimpedanz $Z_0$ entspricht nicht exakt der Lastimpedanz $Z_L$, daher kommt es zu einer   Teilreflexion der vorlaufenden Welle. Das Verhältnis zwischen den Amplituden der rücklaufenden Welle und der vorlaufenden Welle wird als Reflexionskoeffizient r bezeichnet \cite{Tekom}. \\
 
 Reflexionskoeffizient r:
@@ -508,14 +508,15 @@ Die Spannung $\underline{U}_L$ über der Last ergibt sich  aus der Überlagerung
 
 Durch die Überlagerung des vorlaufenden und rücklaufenden Signals gibt es eine Überlagerungskurve die örtlich konstante Maxima $U_{max}$ und Minima $U_{min}$ aufweist. Dies wird als stehende Welle bezeichnet. Dadurch kann die Spannung an den Knotenpunkten Werte zwischen Null und dem doppelten Wert der Spannung des vorlaufenden Signals aufweisen. An den Knotenpunkten heben sich die Wellen gegenseitig auf. Ihr Wert ist somit Null. Für die Beschreibung der Fehlanpassung haben sich neben dem Reflexionskoeffizient  $r$ noch weitere Begriffe etabliert:\\
 
-Rückflussdämpfung $a$:
+Rückflussdämpfung $a$:\\
 Die Rückflussdämpfung a wird in der englischen Literatur \textit{Return Loss} genannt.
 \begin{eqnarray}\label{eq:Ruckflussdämpfung_a}
 a=20\log\left(\left| \dfrac{U_V}{U_R}\right| \right)=-20\log(|r|)
 \end{eqnarray}
 
 Die Rückflussdämpfung beschreibt als logarithmisches Mass, wie stark das rücklaufende Signal gegenüber dem vorlaufenden Signal gedämpft ist \cite{Tekom}.\\
-Welligkeitsfaktor $s$:
+
+Welligkeitsfaktor $s$:\\
 Der Welligkeitsfaktor $s$ wird in der englischen Literatur auch als \textit{Voltage Standing Wave Ratio} kurz VSWR bezeichnet.
 \begin{eqnarray}\label{eq:Welligkeitsfaktor_s}
 s=\dfrac{U_{max}}{U_{min}}=\dfrac{1+|r|}{1-|r|}
@@ -524,8 +525,8 @@ Der Welligkeitsfaktor $s$ aus der Gleichung \ref{eq:Welligkeitsfaktor_s} bezeich
 
 
 Anpassnetzwerke: \\
-Übertragungssysteme können als eine Kette von aktiven oder passiven Eintor- und Zweitorschaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Je nach Sigganlfrequenz oder Impulsdauer müssen die frequenzabhänigen Eigenaschften dieser zweitore berücksichtigt werden. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Um die gewünschten Systemeigenschaften zu erreichen. Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgansimpedanz als $Z_{aus}$ bezeichnet. 
-Um die Anpassungsbedingungen zu formulieren kann das Zweitor als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden. Diese wird  durch den Lastwiderstand $Z_L$ belastet.
+Übertragungssysteme können als eine Kette von aktiven oder passiven  Zweitorschaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Je nach Sigganlfrequenz oder Impulsdauer müssen die frequenzabhänigen Eigenaschften dieser Zweitore berücksichtigt werden. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Um die gewünschten Systemeigenschaften zu erreichen. Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgansimpedanz als $Z_{aus}$ bezeichnet. 
+Um die Anpassungsbedingungen zu formulieren kann das Zweitor als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden. Diese wird  durch den Lastwiderstand $Z_L$ belastet.\\
 
 Leistungsanpassung: \\
 Für die Übertragung der maximalen Wirkleistung von der Quelle zur Last  wird Leistungsanpassung benötigt. Um diese Bedingung zu erfüllen muss gelten:
@@ -537,7 +538,7 @@ Wellenanpassung: \\
 Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderstände zu eine Stossstelle für das zu übertragende Signal. Dies führt zu Reflexionen, dabbei wird  ein Teil des Signals reflektiert. Stehende Wellen sind das Resultat. Um diese störenden Einflüsse zu vermeiden, muss für komplexe Widerstände folgende Beziehung erfüllt sein:
 \[Z_{I} = Z_{L}\]
 
-Das Bedeutet die Beträge des Realteil- und Imaginärteils von Quelle und Last sind gleich. Als auch der Phasenwinkel ist gleich.Diese Anpassung bezeichnet man als Wellenanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_I = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall komplexer Widerstände ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leistungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die bei der Leistungsanpassung entstehenden Reflexionen  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Die bei der Wellenanpassung resultiert. Nur bei Leistungsverstärkern, zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
+Das Bedeutet die Beträge des Realteil- und Imaginärteils von Quelle und Last sind gleich.  Der Phasenwinkel zwischen real und imaginär Teil ist ebenfals gleich. Diese Anpassung bezeichnet man als Wellenanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_I = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall mit komplexen Widerständen ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leistungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die bei der Leistungsanpassung entstehenden Reflexionen  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Die bei der Wellenanpassung resultiert. Nur bei Leistungsverstärkern, zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
 
 Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung. Das heisst, die in dem $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung wie in der Last im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel \ref{eq:PmaxLeistungsanpassung} zeigt die maximale Leistung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung, bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
 \begin{eqnarray}\label{eq:PmaxLeistungsanpassung}
@@ -572,11 +573,10 @@ P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} | R_Q=R_L
 \end{figure}
 
 In der Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} ist eine Leistungsanpassung gezeigt. 
-Der Lastwiderstand $R_{L}$ besitz den selben Wert wie dem Quellenwiderstand $R_{Q}$. Im $R_{L}$ wie in Formel \ref{eq:PmaxLeistungsanpassung} gezeigt, die Hälfte der Quellenleistung umgesetzt.
+Der Lastwiderstand $R_{L}$ besitz den selben Wert wie der Quellenwiderstand $R_{Q}$. Im $R_{L}$ wird wie in Formel \ref{eq:PmaxLeistungsanpassung} gezeigt, die Hälfte der Quellenleistung umgesetzt.
 
 Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetzt werden. Ist der Quellenwiderstand $R_Q$ oder der Lastwiderstand $R_L$  reaktiv, das heisst induktiv oder kapazitiv, dann sind die Schaltungen stark frequenzabhängig. So besitzt beispielsweise eine Antenne nur bei einer bestimmten Frequenz einen rein reellen Impedanz $Z_{ant}$. Bei allen andern Frequenzen sind sowohl Real- als auch Imaginärteil vorhanden, dann ist $Z_{ant}$ komplex. Eine Möglichkeit für eine Korrektur ist in der Abbildung \ref{AnpassungKomplexerLast} dargestellt. Auch diese  Anpassung ist frequenzabhängig und nur für die Entwurfsfrequenz optimal, aber dank der Transformation ist Leitungsanpassung möglich.
-\todo{Text zum Bild Z'}
-\todo{Bild selber zeichnen}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
 	\centering
@@ -587,7 +587,7 @@ Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetz
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \textbf{Entwurf eines Ohm’schen Anpassnetzwerkes:} \\
-Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die Last $R_L$, kann die Schaltung von Abbildung \ref{fig:Leistungsanpassung_RQ_grösser_als_RL} verwendet werden. Die Widerstände R1 und R2 berechnen sich nach folgenden Beziehungen der Gleichung \ref{eq:R1R2wennRQgrösserRL_R1} und \ref{eq:R1R2wennRQgrösserRL_R2} \cite{Tekom}:
+Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die Last $R_L$, kann die Schaltung von Abbildung \ref{fig:Leistungsanpassung_RQ_grösser_als_RL} verwendet werden. Die Widerstände R1 und R2 berechnen sich nach folgenden Beziehungen der Gleichungen \ref{eq:R1R2wennRQgrösserRL_R1} und \ref{eq:R1R2wennRQgrösserRL_R2} \cite{Tekom}:
 
 %\begin{equation}
 	\begin{align}
@@ -629,7 +629,7 @@ Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die La
 \label{fig:Leistungsanpassung_RQ_grösser_als_RL}
 \end{figure}
 
-Gilt es eine hochohmige Last RL an eine Quelle mit einem RQ der kleiner ist als RL anzupassen, so können die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL} und die mathematischen Beziehungen und den Gleichungen \ref{eq:R1R2wennRLgrösserRQ_R1}  sowie \ref{eq:R1R2wennRLgrösserRQ_R2}verwendet werden \cite{Tekom}:
+Gilt es eine hochohmige Last $R_L$ an eine Quelle mit einem $R_Q$ der kleiner ist als $R_L$ anzupassen, so können die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL} und die mathematischen Beziehungen der Gleichungen \ref{eq:R1R2wennRLgrösserRQ_R1}  sowie \ref{eq:R1R2wennRLgrösserRQ_R2}verwendet werden \cite{Tekom}:
 
 \begin{align}
 R1 &= \sqrt{RL(RL-RQ)} \label{eq:R1R2wennRLgrösserRQ_R1}\\
@@ -664,20 +664,19 @@ a_{dB} &= 20\log \left( \sqrt{\dfrac{RL}{RQ}}+\sqrt{\dfrac{RL}{RQ}-1}\right)
 \caption{Anpassung für $R_Q < R_L$}
 \label{fig:LeistungsanpassungU0_RQkleiner_als_RL}
 \end{figure}
-
+\newpage
 \textbf{Entwurf eines verlustfreien L-Netzwerkes}\\
-Ein einfaches, verlustfreies Anpassnetzwerk besteht aus zwei Reaktanzen. Der Entwurfsansatz besteht darin, dass eine Reaktanz $X_{p}$ parallel zum grösseren Widerstand, in Abbildung \ref{fig:verlustfreieAnpassung} wäre dies der Quellenwiderstand $R_{Q}$, geschalten wird. In diesem Fall folgt für die Impedanz $Z_{links} $von der Trennlinie als pralellschaltung von $R_Q$ und $X_P$ betrachtet werden. \\
-Die Impedanz $Z_{links}$ brechnet ist definiert als:
+Ein einfaches, verlustfreies Anpassnetzwerk besteht aus zwei Reaktanzen. Der Entwurfsansatz besteht darin, dass eine Reaktanz $X_{p}$ parallel zum grösseren Widerstand, in Abbildung \ref{fig:verlustfreieAnpassung} wäre dies der Quellenwiderstand $R_{Q}$, geschalten wird. In diesem Fall folgt für die Impedanz $Z_{links}$ von der Trennlinie als pralellschaltung von $R_Q$ und $X_P$ betrachtet werden. \\
+Die Impedanz $Z_{links}$  ist definiert als:
 \begin{equation}
 Z_{Links}= R_{Links}+jX{Links}=\dfrac{R_QX_P^2+jR_Q^2X_P}{R_Q^2+X_P^2}
 \end{equation}
-
 $X_P$  kann nun so gewählt werden, dass der Realteil von $Z_{Links}$  dem Lastwiderstand $R_L$ entspricht. \\
 \begin{equation}
 R_{Links}= R_L
 \end{equation}
 Als nächstes gilt es, die so eingeführte imaginäre Grössse $X_{Links}$ auf der rechten Seite der 
-Trennlinie zu kompensieren, indem die Seriereaktanz $X_{s}$entsprechend gewählt wird: 
+Trennlinie zu kompensieren, indem die Seriereaktanz $X_{s}$ entsprechend gewählt wird: 
 \begin{equation}
 X_{Links}= -X_S
 \end{equation}
@@ -727,7 +726,7 @@ Leistungsanpssung\\
 Wellenanpasung\\
 Beides in dem der  Imaginär Teil verschwindet.\\
 Was sthet im Fokus...Die Anpassung ist Richtungsabhänig
-Senden oder Empfangen
+Eine möglichst optimales Empfangensverhalten steht im Vordergurnd
 
 
 
@@ -745,13 +744,13 @@ Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit ei
 \end{itemize}
 Leistungsanpassung wird benötigt, wenn der Leistungsfluss möglichst unbeeinträchtigt sein soll. Es muss gelten
 $Z_{ein}=Z_{aus}*$.
-Das bedeutet, dass der Realanteil von $Z_{ein}$ und $Z_{aus}$ gleich ist jedoch der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, $Z_{aus}$ hat beim Imaginärteil ein umgekehrtes Vorzeichen als der $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Dies entspricht  50\% der erzwugten Leistung wird imLastwiderstand und 50\% in der Quelle umgesetzt.
+Das bedeutet, dass die Realanteile von $Z_{ein}$ und $Z_{aus}$ gleich sind jedoch der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten,  der Imaginärteil von $Z_{aus}$ hat ein umgekehrtes Vorzeichen als  $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Dies entspricht  50\% der erzeugten Leistung wird im Lastwiderstand und 50\% in der Quelle umgesetzt.
 Signalanpassung wird angewendet, wenn möglichst keine Reflexionen auf der Leitung entstehen sollen. Es muss gelten:\\
 $Z_{ein}=Z_{aus}$\\%zentrieren
-Die Signalanpassung ist dann gewünscht, wenn die Qualität des Signals Vorrang hat und keinerlei Reflexionen erwünscht sind. In diesem Fall ist das Stehwellenverhältnis SWR = 1.
-Um die jeweilig gewünschte Anpassung zu erreichen, kommen Anpassnetzwerke zum Einsatz. Diese sind meist passive Netzwerke mit Induktivitäten L und Kapazitäten C. Manchmal kommt zur Kapazität und zur Induktivität ein Widerstand hinzu.\\
+Die Signalanpassung ist dann gewünscht, wenn die Qualität des Signals Vorrang hat und keinerlei Reflexionen erwünscht sind. In diesem Fall ist das Stehwellenverhältnis gleich 1.
+Um die  gewünschte Anpassung zu erreichen, kommen Anpassnetzwerke zum Einsatz. Diese sind meist passive Netzwerke mit Induktivitäten L und Kapazitäten C und Widerständen R.\\
 Ein Beispiel für Anpassung.\\
-Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm Leitung angeschlossen. Am Ende der 50 Ohm Leitung wird ein  Anpassungsnetzwerk benötigt. Damit wird die Leitung und die Antennen aufeinander abgestimmt.Das Anpassnetzwerek passt die komplexe Antennenimpedanz auf $50\Omega$ reell und $+j0\Omega$ an. In diesem Beispiel wird sowohl Wellen als auch Leitungsanpassung erfüllt.\\
+Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm Leitung angeschlossen. Am Ende der 50 Ohm Leitung wird ein  Anpassungsnetzwerk benötigt. Damit wird die Leitung und die Antennen aufeinander abgestimmt. Das Anpassnetzwerek passt die komplexe Antennenimpedanz auf $50\Omega$ reell und $+j0\Omega$ an. In diesem Beispiel wird sowohl Wellen als auch Leitungsanpassung erfüllt.\\
 
 %%%%%%%%%%%%%%%%%%%%%%
 
