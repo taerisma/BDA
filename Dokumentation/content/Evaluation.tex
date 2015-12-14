@@ -6,7 +6,7 @@ magnetischen Feldkomponenten sind in Phase. Daher wird im Fernfeld Wirkleistung 
 Man spricht von einer ebenen Welle. Sie wird vom E und H Vektor aufgespannt  und bewegt sich in
 Transversalerrichtung fort. Die Kugelwelle bewegt sich im Raum fort bis die gesamte Energie absorbiert ist. Die Amplituden der E und H Vektoren
 nehmen mit steigendem Abstand $r$ um den Faktor $1/r$  ab. Der Zusammenhang zwischen E und H Feld ist
-durch die intrinsische Wellenimpedanz $\eta$ gegeben. 
+durch die intrinsische Wellenimpedanz $\eta$ gegeben. Näheres zu den Feldvektoren und der Feldausbreitung ist im Kapitel \ref{sec:NahundFern} gezeigt.
 Die Gleichung \ref{eq:WellenImpedanzZ0} zeigt den Wellenwiderstand im Vakuum\cite{elliott1981antenna}.
 
 
@@ -21,9 +21,9 @@ Z_{0}=\dfrac{E}{H}=\sqrt{\dfrac{\mu}{\epsilon}}=377\Omega
 
 Die Ausrichtung des E Feldes ist bei den Loop und den Dipol Antennen um 90 Grad verschoben. 
 Im Nahfeld sind die induktiven Anteile des elektromagnetischen Wechselfeldes bei den Loop Antennen dominant. 
-Im Gegenzug ist das Nahfeld der Dipol Antenne mehr kapazitiv.
+Im Gegenzug ist das Nahfeld der Dipol Antenne  kapazitiv.
 Mann nennt die Dipolantenne deshalb E Feld Antenne und die Loop Antenne wird oft H Feld Antenne genannt.
-Das Abstrahlverhalten ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:LoopAntenneTheorie} aufgezeigt. Die Abbildung \ref{fig:FerdVektorEinheistsvektor} zeigt einen Poynting-Vektor im  kugelkoordinaten und im kartesischen Koordinatensystem. Am Ende des Poynting-Vektor $\vec{r}$  sind die Einheitsvektoren mit den dazugehörenden  E und H Feldvektoren ersichtlich\cite{Emant}.\\
+Das Abstrahlverhalten ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:LoopAntenneTheorie} aufgezeigt. Die Abbildung \ref{fig:FerdVektorEinheistsvektor} zeigt einen Poynting-Vektor im  kugelkoordinaten und im kartesischen Koordinatensystem. Am Ende des Poynting-Vektor $\vec{r}$  sind die Einheitsvektoren mit den dazugehörenden  E und H Feldvektoren ersichtlich\cite{Emant}. Der Vektor $\vec{E}_r$ zeigt die Richtung des Leistungstranzport.\\
 
 
 
@@ -75,17 +75,17 @@ Das Abstrahlverhalten ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:Lo
 Die Oberfläche  der elektromagnetischen Welle nimmt mit steigendem Abstand $r$ von der Antenne immer weiter zu. Ebenfalls nimmt die Beugung der Oberfläche der Kugelwelle immer mehr ab. Ist der Abstand $r$ genügend gross, so kann die Welle lokal als ebene Wellenfront angenommen werden. Bei Distanzen von mehr als $2\lambda$ kann das Fernfeld angenommen werden. Es gilt das Fernfeldkriterium. Bei einer Zielfrequenz von 2.45 Ghz, bei der die Bluetooth Antenne arbeiten soll, tritt das Fernfeld wie in der Gleichung \ref{eq:Fernfeld} gezeigt nach 24 cm auf.
 \todo{welcheQuelle sagt 2lambda}
 
-\begin{eqnarray}\label{eq:Fernfeld}
+\begin{eqnarray}
 \lambda &=\dfrac{c}{f} \\
-\lambda &=\dfrac{3E8[m/s]}{2.45E9[1/s]}=0.12m\\ 
+\lambda &=\dfrac{3*10^{8} [m/s]}{2.45*10^{9} [1/s]}=0.12m\\ 
 2\lambda &= Fernfeldkriterium\\ 
-2\lambda &= 2*0.12[m] =0.24[m] 
+2\lambda &= 2*0.12[m] =0.24 [m] \label{eq:Fernfeld}
 \end{eqnarray}
 
 Es kann kein eindeutiger Betriebsfall für die "Connect 1"\  Geräte genannt werden. Es ist wahrscheinlich, dass die meisten der Tuchfliegerpiloten die "Connect 1"\  Geräte zur Navigation verwenden. Das Gerät wird auf dem Schoss getragen. Dabei wird das Gerät in einer Hülle mit Bändern am Oberschäkel befestigt. Ein Mobiltelefon, welches sich am Arm des Piloten oder in einer Brusttasche befindet, ist klar mehr als $2\lambda$ entfernt und somit im Fernfeld. Da sowohl die Loop- als auch die Dipolantenne ein Torus ähnliches Fernfeld aufzeigen und die Position der neuen Bluetooth Antenne für beide Antennen dieselbe sein wird, sind die Nahfeldeigenschaften der Antennen von Bedeutung.
 
 \subsection{Eigenschaften einer Antenne für den Einsatz in der \glqq Connect 1\grqq \  Serie}\label{sec:EigenschaftenAntenne}
-Die 2.4 GHz Bluetooth Antenne wird im Gerät "Connect 1" der Flytec AG eingesetzt. Dies ist ein kompaktes Handgerät welches den Piloten eines Tuchfliegers bei der Navigation in der Luft unterstützt. Die Gerätabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum, den die neue Antenne einnehmen wird, ist nicht derselbe wie in der Vorgängerversion der "Connect 1" \ Hardware. Für die neue Positionierung der Antenne ist der Hohlraum zwischen der Seitenwand des ABS Kunststoffgehäuse und der Hauptplatine  vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 3.5 x 10 mm (L x B x H).\\
+Die 2.4 GHz Bluetooth Antenne wird im Gerät "Connect 1" \  der Flytec AG eingesetzt. Dies ist ein kompaktes Handgerät welches den Piloten eines Tuchfliegers bei der Navigation in der Luft unterstützt. Die Gerätabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum, den die neue Antenne einnehmen wird, ist nicht derselbe wie in der Vorgängerversion der "Connect 1" \ Hardware. Für die neue Positionierung der Antenne ist der Hohlraum zwischen der Seitenwand des ABS Kunststoffgehäuse und der Hauptplatine  vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 3.5 x 10 mm (L x B x H).\\
 Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch sein. Wie der Antennenfusspunkt mit der Quelle verbunden wird ist zum jetzigen Zeitpunkt noch nicht definiert. Mögliche symmetrische Verbindungen sind:
 
 \begin{itemize}
@@ -93,18 +93,15 @@ Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch s
 \item Zweidrahtleitung
 \item Zweidrahtleitung in Form eines Koaxialkabels
 \end{itemize}
-
-Die symmetrische Verbindung zwischen Quelle und Antenne hat den Vorteil, dass die bis anhin verwendeten Baluns für die Umwandlung des symmetrischen Ausgangs des Transceivers nicht mehr benötigt werden. Die passive Anpassung in Form der Baluns bringt bis anhin eine Dämpfung zwischen 6dB und 9dB. Die grosse Streuung kommt durch Bauteiltoleranzen zustande.\\
-Die Ausgangsimpedanz des verwendeten Texas Instruments CC2541 Transceivers ist bei Frequenz von 2.440 GHz bei $(70+j30) Ohm$. Dies entspricht einer komplexen Ausgangsimpedanz. \\Bei den gemachten Aussagen zu den Simulationen wurde jedoch eine  reelle Quellimpedanz von $(50+j0) Ohm$ angenommen. In der ersten Betrachtung steht das Abstrahlverhalten und nicht die Anpassung  an die Quelle im Fokus. 
-
-
+Die symmetrische Verbindung zwischen Quelle und Antenne hat den Vorteil, dass die bis anhin verwendeten Baluns für die Umwandlung des symmetrischen Ausgangs des Transceivers nicht mehr benötigt werden. Die passive Anpassung in Form der Baluns bringt bis anhin eine Dämpfung zwischen 6dB und 9dB mit sich. Die grosse Streuung kommt durch Bauteiltoleranzen zustande.\\
+Diese Baluns waren bei der ersten Hardware Version des \glqq Connect 1\grqq Geräts notwendig, da für die Bluetooth Verbindung Monopolstabantennen verwendet. Diese Balusn werden aufgund des kukünftigen symmetrischen Desing nicht mehr nötig sein. Die Ausgangsimpedanz des verwendeten Texas Instruments CC2541 Transceivers ist bei Frequenz von 2.440 GHz bei $(70+j30) Ohm$. Dies entspricht einer komplexen Ausgangsimpedanz. \\Bei den gemachten Aussagen zu den Simulationen wurde jedoch eine  reelle Quellimpedanz von $(50+j0) Ohm$ angenommen. In der ersten Betrachtung steht das Abstrahlverhalten und nicht die Anpassung  an die Quelle im Fokus. \\
 Das Ersatzschaltbild in der Abbildung \ref{fig:ESBantenne} einer Antenne zeigt die wesentlichen Parameter, die für eine Beurteilung der Abstrahleffizienz notwendig sind. Es sind dies:
 \begin{itemize}
 \item $R_{v}$
 \item $R_{rad}$
 \item $Z_{ant}$
 \end{itemize}
-
+\newpage
 Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in die Geräte der "Connecte 1" \  Serie zu berücksichtigen  sind:
 \begin{itemize}
 \item Directivity D
@@ -154,21 +151,21 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in die G
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Der $R_{v}$ vereint die elektrischen Verluste, die in den Leitern und an den Übergängen zu Stande kommen. Ebenfalls kann der $R_{rad}$ nicht einfach ausgemessen werden. $R_{rad}$ entspricht dem Widerstand der benötigt wird, um beim frequenzabhängig resultierenden Antennenstrom die abgestrahlte Leistung in Wärme umzuwandeln.\\
+Der $R_{v}$ vereint die elektrischen Verluste, die in den Leitern und an den Übergängen zu Stande kommen. Ebenfalls kann der $R_{rad}$ nicht einfach ausgemessen werden. $R_{rad}$ entspricht dem Widerstand der benötigt wird, um  die abgestrahlte Leistung in Wärme umzuwandeln. Die Abstrahlleistung ist vom Antennenstrom abänig. Der Antennenstrom wird stark von der frequenzabhänigen Anpassung beeinflusst.\\
 Das Verhältnis von $R_{rad}$  zu $R_{v}$ wirkt direkt in die Abstrahleffizienz $\eta_{rad}$ ein. \\
 Die Antennenimpedanz ist in der Abbildung \ref{fig:ESBantenne} als $X_{ant}$ in Form eines Kondensators abgebildet. Die dielektrischen Verluste des Winkels $\delta$ wirken ebenfalls in den $R_{v}$.\\
-Die drei Komponenten $R_{v}$, $R_{rad}$ und $X_{ant}$ ergeben zusammen die gesamte Antennenimpedanz $Z_{ant}$. Wie in den Abbildungen \ref{fig:ESBantenne} und \ref{fig:ESBantenneZant} zu erkennen ist.
+Die drei Komponenten $R_{v}$, $R_{rad}$ und $X_{ant}$ ergeben zusammen die gesamte Antennenimpedanz $Z_{ant}$. Wie in den Abbildungen \ref{fig:ESBantenne} und \ref{fig:ESBantenneZant} zu erkennen ist. Wie aus Kapitel \ref{sec:Speisung} bekannt ist das Verhältiniss der Leitungsimpedanz $Z_L$ zur Antennenimpedanz $Z_{ant}$ für die in die Antenne übertragene Leitungsenergie verantwortlich.
 
 
 \subsection{Dipol Antenne}
-Die Dipol Antenne ist eine häufig vorkommende Antennenform.  Dipol Antennen gibt es in einer grossen Zahl verschiedener Ausführungen. Ihre Charakteristik ändert sich mit ihren geometrischen Eigenschaften. Die Antennen werden oft ihn Kategorien entsprechend ihrer Länge eingeteilt. Eine Dipolarmlänge entspricht der halben Länge des Dipols und ist im folgenden Kapitel als $l$ bezeichet. So gibt es vier typische Gruppen von Dipol Antennen. 
+Die Dipol Antenne ist eine häufig vorkommende Antennenform.  Dipol Antennen gibt es in einer grossen Zahl verschiedener Ausführungen. Ihre Charakteristik ändert sich mit ihren geometrischen Eigenschaften. Die Antennen werden oft ihn Kategorien entsprechend ihrer Länge eingeteilt. Eine Dipolarmlänge entspricht der halben Länge des Dipols und ist im folgenden Kapitel als $l$ bezeichet. Dipol Antenne werden oft in die  vier typische Gruppen eigeteilt. 
 \begin{itemize}
 \item $2l<< \lambda/2 $
 \item $2l = \lambda/2 $
 \item $2l = \lambda $
 \item $2l>> \lambda $
 \end{itemize} 
-Die Dipolantenne bei der $2l=\lambda/2$ entspricht, wird oft Referenzdipol oder Halbwellendipol genannt. Wird der Halbwellendipol mit seiner Resonanzfrequenz $f=\dfrac{\lambda}{2}$ angesteuert, tritt ein maximales Schwingen des Dipols auf. 
+Die Dipolantenne bei der $2l=\lambda/2$ entspricht, wird oft Referenzdipol oder Halbwellendipol genannt. Wird der Halbwellendipol mit seiner Resonanzfrequenz $f_{res}$ angesteuert, tritt ein maximales Schwingen des Dipols auf. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]%ESB Antenne
@@ -200,9 +197,9 @@ Die Dipolantenne bei der $2l=\lambda/2$ entspricht, wird oft Referenzdipol oder 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
+Gegenüber idealen Betrachtungen muss die Länge des $\lambda /2$ Dipols um den Faktorkürzer gewählt werden, um  die gewünschte Frequenz zu erhalten. Die Verkürzung  ist in der Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt und Abhänig von der Geometrie der Antenne und dem umgebenden Material.\cite{Hcuno}
 
-Gegenüber idealen Betrachtungen muss die Länge des $\lambda /2$ Dipols um den Faktor 0,95 kürzer gewählt werden, um  die gewünschte Frequenz zu erhalten. Die Verkürzung  ist in der Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt und Abhänig von der Geometrie der Antenne und dem umgebenden Material.\cite{Hcuno}
-\todo{Dipolverkürtzung erweitern}
 
 %Weiter Komentar wiso es sich eine Verkürzung einstellt
 %H. Cuno, Vorbereitung auf die Amateurfunklizenzprüfung, Frech-VerlagStuttgart, 1976 
