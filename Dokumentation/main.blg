@@ -2,62 +2,55 @@ This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: abbrvnat.bst
-Database file #1: mydata.bib.bib
-Warning--I'm ignoring elliott1981antenna's extra "publisher" field
---line 41 of file mydata.bib.bib
-Warning--string name "februar" is undefined
---line 49 of file mydata.bib.bib
-Warning--string name "september" is undefined
---line 59 of file mydata.bib.bib
-Warning--to sort, need author or key in Oeffnungswinkel
-Warning--to sort, need author or key in linkbudget
-Warning--to sort, need author or key in WikiPermitt
-Warning--to sort, need author or key in DielektrikumPolarisation
-Warning--to sort, need author or key in Polystyrol_Datenblatt
-Warning--empty year in DielektrikumPolarisation
-Warning--empty year in Oeffnungswinkel
-Warning--empty year in Polystyrol_Datenblatt
-Warning--empty year in WikiPermitt
-Warning--empty year in linkbudget
-You've used 17 entries,
+I found no \bibdata command---while reading file main.aux
+Warning--I didn't find a database entry for "Emant"
+Warning--I didn't find a database entry for "elliott1981antenna"
+Warning--I didn't find a database entry for "Harrington-TimeHarmonic"
+Warning--I didn't find a database entry for "Tekom"
+Warning--I didn't find a database entry for "Oeffnungswinkel"
+Warning--I didn't find a database entry for "meinke1992taschenbuch"
+Warning--I didn't find a database entry for "linkbudget"
+Warning--I didn't find a database entry for "CC2541"
+Warning--I didn't find a database entry for "rothammel1991antennenbuch"
+You've used 0 entries,
             2773 wiz_defined-function locations,
-            690 strings with 6721 characters,
-and the built_in function-call counts, 5072 in all, are:
-= -- 487
-> -- 141
-< -- 10
-+ -- 59
-- -- 42
-* -- 324
-:= -- 720
-add.period$ -- 65
-call.type$ -- 17
-change.case$ -- 60
-chr.to.int$ -- 17
-cite$ -- 49
-duplicate$ -- 294
-empty$ -- 525
-format.name$ -- 55
-if$ -- 1111
+            605 strings with 4718 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 106
-num.names$ -- 36
-pop$ -- 191
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 0
 quote$ -- 0
-skip$ -- 198
+skip$ -- 1
 stack$ -- 0
-substring$ -- 45
-swap$ -- 19
-text.length$ -- 2
-text.prefix$ -- 3
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
 top$ -- 0
-type$ -- 157
-warning$ -- 10
-while$ -- 27
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 236
-(There were 13 warnings)
+write$ -- 7
+(There was 1 error message)
