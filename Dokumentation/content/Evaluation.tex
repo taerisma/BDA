@@ -812,8 +812,59 @@ Eine Richtwirkung von 4.7dBi. Zeigt das 3D Richtdigramm aus der Abbildung \ref{f
 %%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsubsection{Fazit aus den Simulatioen der Loop Antennen}
-Ein Fazit aus den Simulationen der Loop Schleifen mehrfach gefaltet.
+Die Folgende Taabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} zeigt die wesentlichen Parameter aus den drei Simulationen der der $\lambda/2$ Dipolantenne.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{p{4cm} p{2cm} l  c c c c r} 
+  \toprule 
+  Antenne und Umfeld             & max $S_{11}$[dB]		& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$] & -10dB Bandbreite & relative Bandbreite\\ 
+  \midrule
+$\lambda/2$ Dipolantenne im Freiraum    		&	-12.31 @ 2.54		&  	49.7-j27.9			&   	91	&	&\\          					   		
+$\lambda/2$ Dipolantenne mit einem ABS Stück 	&    -13.45 @ 2.56  		&	52.9-j28.3			&	91	&	&\\
+$\lambda/2$ Dipolantenne mit zwei ABS Stücken &    -14.14 @ 2.52    	&	60.4-j23.2			&	93	&	&\\
+ \bottomrule
+  \end{tabular}
+  \caption{Simulation einer $\lambda/2$ Dipolantennen im Freiraum und im ABS Stücken}
+  \label{tab:Evaluation_Vergeich_Dipolantennen}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Die Tabelle \ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05} beinhaltet einige Vergleichswerte der $\lambda/2$ Loop Antenne.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{p{4cm} p{2cm} l  c c c c r} 
+  \toprule 
+  Antenne und Umfeld             & max $S_{11}$[dB]		& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$] & -10dB Bandbreite & relative Bandbreite\\ 
+  \midrule
+$\lambda/2$ Loop im Freiraum    		&	-12.31 @ 2.54		&  	49.7-j27.9			&   	91	&	&\\          					   		
+$\lambda/2$ Loop mit einem ABS Stück 	&    -13.45 @ 2.56  		&	52.9-j28.3			&	91	&	&\\
+$\lambda/2$ Loop mit zwei ABS Stücken &    -14.14 @ 2.52    	&	60.4-j23.2			&	93	&	&\\
+ \bottomrule
+  \end{tabular}
+  \caption{Simulation einer $\lambda/2$ Loop Antenne }
+  \label{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Die Tabelle \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} beinhaltet die Vergleichswerte der Loop Antenne mit drei Windungen.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{p{4cm} p{2cm} l  c c c c r} 
+  \toprule 
+  Antenne und Umfeld             & max $S_{11}$[dB]		& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$] & -10dB Bandbreite & relative Bandbreite\\ 
+  \midrule
+Loop mit drei Windungen  im Freiraum    		&	-12.31 @ 2.54		&  	49.7-j27.9			&   	91	&	&\\          					   		
+Loop mit drei Windungen mit einem ABS Stück 	&    -13.45 @ 2.56  		&	52.9-j28.3			&	91	&	&\\
+Loop mit drei Windungen mit zwei ABS Stücken &    -14.14 @ 2.52    	&	60.4-j23.2			&	93	&	&\\
+ \bottomrule
+  \end{tabular}
+  \caption{Simulation einer Loop Antenne mit drei Windungen }
+  \label{tab:Evaluation_Vergeich_Loop_Antennen_Coil}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Nutzwertanalyse Antennen Eigenschaften }
 Die Nutzwertanalyse zeigt die Vor und nachteile der verschiedenen Simulationen auf.
@@ -833,15 +884,15 @@ waüeoifhj
   \centering
   \begin{tabular}{l r l l l l l l l l} \toprule 
   && \multicolumn{2}{c}{Dipol $\lambda/2$}   && \multicolumn{2}{c}{Loop $\lambda/2$}   && \multicolumn{2}{c}{Loop} \\ \cmidrule{3-4} \cmidrule{6-7} \cmidrule{9-10}
-  Kriterium                  & $g$ \%  & $N$ & $N\cdot g$               && $N$ & $N\cdot g$                  && $N$ & $N\cdot g$ \\ \midrule
-  Antennengüte Q            &  25             & 2   & 0.5               && 5   & 1.25                        && 5   & 1.25 \\
-  Impedanz                  &  15             & 3   & 0.45              && 4   & 0.6                         && 5   & 0.75 \\
-  vvvv    &  20             & 1   & 0.2               && 4   & 0.8                         && 5   & 1 \\
-  Richtcharakteristik       &  20             & 1   & 0.2               && 6   & 1.2                         && 6   & 1.2 \\
-  Relative Bandbreite       &   5             & 3   & 0.15              && 6   & 0.3                         && 5   & 0.25 \\
-  Materialaufwand           &   5             & 6   & 0.3               && 4   & 0.2                         && 6   & 0.3 \\
-  Kosten                    &  10             & 4   & 0.4               && 6   & 1.2                         && 6   & 1 \\
-  Gesamt                    & 100             &     & 2.2               &&     & 5.55                        &&     & 5.75 \\ \bottomrule
+  Kriterium                 & $g$ \%  		& $N$ & $N\cdot g$          && $N$ & $N\cdot g$             		&& $N$ & $N\cdot g$ \\ \midrule
+  Antennengüte Q            	&  25             & 2   & 0.5               && 5   & 1.25                        && 5   & 1.25 \\
+  Impedanz                  	&  15             & 3   & 0.45              && 4   & 0.6                         && 5   & 0.75 \\
+  vvvv    					&  20             & 1   & 0.2               && 4   & 0.8                         && 5   & 1 \\
+  Richtcharakteristik       	&  20             & 1   & 0.2               && 6   & 1.2                         && 6   & 1.2 \\
+  Relative Bandbreite       	&   5             & 3   & 0.15              && 6   & 0.3                         && 5   & 0.25 \\
+  Materialaufwand           	&   5             & 6   & 0.3               && 4   & 0.2                         && 6   & 0.3 \\
+  Kosten                    	&  10             & 4   & 0.4               && 6   & 1.2                         && 6   & 1 \\
+  Gesamt                    	& 100             &     & 2.2               &&     & 5.55                        &&     & 5.75 \\ \bottomrule
   \end{tabular}
   \caption{Nutzwertanalyse für symmetrische Antenne}
   \label{nutzwertEvaluation}

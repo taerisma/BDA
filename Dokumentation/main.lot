@@ -1,5 +1,8 @@
 \select@language {ngerman}
 \contentsline {table}{\numberline {1}{\ignorespaces Linkbudget 10m Bluetooth \IeC {\"U}bertragung\relax }}{20}{table.caption.26}
-\contentsline {table}{\numberline {2}{\ignorespaces Nutzwertanalyse f\IeC {\"u}r symmetrische Antenne\relax }}{51}{table.caption.69}
-\contentsline {table}{\numberline {3}{\ignorespaces Anforderungen an das Bluetooth Antennensystem\relax }}{52}{table.caption.71}
-\contentsline {table}{\numberline {4}{\ignorespaces $\lambda /2$ Dipolantennen simuliert im Freiraum und im "Connect 1"\relax }}{54}{table.caption.78}
+\contentsline {table}{\numberline {2}{\ignorespaces Simulation einer $\lambda /2$ Dipolantennen im Freiraum und im ABS St\IeC {\"u}cken\relax }}{51}{table.caption.69}
+\contentsline {table}{\numberline {3}{\ignorespaces Simulation einer $\lambda /2$ Loop Antenne \relax }}{51}{table.caption.70}
+\contentsline {table}{\numberline {4}{\ignorespaces Simulation einer Loop Antenne mit drei Windungen \relax }}{51}{table.caption.71}
+\contentsline {table}{\numberline {5}{\ignorespaces Nutzwertanalyse f\IeC {\"u}r symmetrische Antenne\relax }}{52}{table.caption.72}
+\contentsline {table}{\numberline {6}{\ignorespaces Anforderungen an das Bluetooth Antennensystem\relax }}{52}{table.caption.74}
+\contentsline {table}{\numberline {7}{\ignorespaces $\lambda /2$ Dipolantennen simuliert im Freiraum und im "Connect 1"\relax }}{55}{table.caption.81}
