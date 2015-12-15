@@ -37,7 +37,7 @@
 \contentsline {figure}{\numberline {36}{\ignorespaces $S_{11}$ eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{41}{figure.caption.54}
 \contentsline {figure}{\numberline {37}{\ignorespaces Smith-Diagramm eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{41}{figure.caption.54}
 \contentsline {figure}{\numberline {38}{\ignorespaces Flach gestauchte Loop Antenne\relax }}{43}{figure.caption.55}
-\contentsline {figure}{\numberline {39}{\ignorespaces Allgemeines Ersatzschaltbild einer induktiven Antenne\relax }}{43}{figure.caption.56}
+\contentsline {figure}{\numberline {39}{\ignorespaces Allgemeines Ersatzschaltbild einer induktiven Antenne\relax }}{44}{figure.caption.56}
 \contentsline {figure}{\numberline {40}{\ignorespaces $S_{11}$ Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{45}{figure.caption.57}
 \contentsline {figure}{\numberline {41}{\ignorespaces Smith Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{45}{figure.caption.57}
 \contentsline {figure}{\numberline {42}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops\relax }}{45}{figure.caption.58}
@@ -49,22 +49,22 @@
 \contentsline {figure}{\numberline {48}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{47}{figure.caption.62}
 \contentsline {figure}{\numberline {49}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne im Freiraum\relax }}{48}{figure.caption.63}
 \contentsline {figure}{\numberline {50}{\ignorespaces Smith-Diagramm einer Loop Antenne im Freiraum\relax }}{48}{figure.caption.63}
-\contentsline {figure}{\numberline {51}{\ignorespaces xxxx\relax }}{48}{figure.caption.64}
-\contentsline {figure}{\numberline {52}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{48}{figure.caption.65}
-\contentsline {figure}{\numberline {53}{\ignorespaces Smith-Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{48}{figure.caption.65}
-\contentsline {figure}{\numberline {54}{\ignorespaces xxxx\relax }}{49}{figure.caption.66}
-\contentsline {figure}{\numberline {55}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{49}{figure.caption.67}
-\contentsline {figure}{\numberline {56}{\ignorespaces Smith Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{49}{figure.caption.67}
-\contentsline {figure}{\numberline {57}{\ignorespaces xxxx\relax }}{50}{figure.caption.68}
-\contentsline {figure}{\numberline {58}{\ignorespaces Design Ausgangslage\relax }}{50}{figure.caption.72}
-\contentsline {figure}{\numberline {59}{\ignorespaces Dipol 5mm breit 50.5mm lang\relax }}{52}{figure.caption.76}
-\contentsline {figure}{\numberline {60}{\ignorespaces Dipol 3mm breit 50.25mm lang\relax }}{52}{figure.caption.77}
-\contentsline {figure}{\numberline {61}{\ignorespaces Dipol 1mm breit 51.25mm lang\relax }}{52}{figure.caption.78}
-\contentsline {figure}{\numberline {62}{\ignorespaces Dipol 1mm breit 45.25mm lang mit Dachkapazit\IeC {\"a}t\relax }}{52}{figure.caption.79}
-\contentsline {figure}{\numberline {63}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 5mm breit\relax }}{53}{figure.caption.81}
-\contentsline {figure}{\numberline {64}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 3mm breit\relax }}{54}{figure.caption.82}
-\contentsline {figure}{\numberline {65}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 1mm breit\relax }}{55}{figure.caption.83}
-\contentsline {figure}{\numberline {66}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 1mm breit mit Dach\relax }}{56}{figure.caption.84}
-\contentsline {figure}{\numberline {67}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{56}{figure.caption.85}
-\contentsline {figure}{\numberline {68}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{56}{figure.caption.86}
-\contentsline {figure}{\numberline {69}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{57}{figure.caption.87}
+\contentsline {figure}{\numberline {51}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim Freiraum\relax }}{48}{figure.caption.64}
+\contentsline {figure}{\numberline {52}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{49}{figure.caption.65}
+\contentsline {figure}{\numberline {53}{\ignorespaces Smith-Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{49}{figure.caption.65}
+\contentsline {figure}{\numberline {54}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim und einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{49}{figure.caption.66}
+\contentsline {figure}{\numberline {55}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{50}{figure.caption.67}
+\contentsline {figure}{\numberline {56}{\ignorespaces Smith Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{50}{figure.caption.67}
+\contentsline {figure}{\numberline {57}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim und zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{50}{figure.caption.68}
+\contentsline {figure}{\numberline {58}{\ignorespaces Design Ausgangslage\relax }}{52}{figure.caption.70}
+\contentsline {figure}{\numberline {59}{\ignorespaces Dipol 5mm breit 50.5mm lang\relax }}{54}{figure.caption.74}
+\contentsline {figure}{\numberline {60}{\ignorespaces Dipol 3mm breit 50.25mm lang\relax }}{54}{figure.caption.75}
+\contentsline {figure}{\numberline {61}{\ignorespaces Dipol 1mm breit 51.25mm lang\relax }}{54}{figure.caption.76}
+\contentsline {figure}{\numberline {62}{\ignorespaces Dipol 1mm breit 45.25mm lang mit Dachkapazit\IeC {\"a}t\relax }}{54}{figure.caption.77}
+\contentsline {figure}{\numberline {63}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 5mm breit\relax }}{55}{figure.caption.79}
+\contentsline {figure}{\numberline {64}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 3mm breit\relax }}{56}{figure.caption.80}
+\contentsline {figure}{\numberline {65}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 1mm breit\relax }}{57}{figure.caption.81}
+\contentsline {figure}{\numberline {66}{\ignorespaces Vergleich des S11 im Geha\IeC {\"u}se und im Freiraum Dipol 1mm breit mit Dach\relax }}{58}{figure.caption.82}
+\contentsline {figure}{\numberline {67}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{59}{figure.caption.83}
+\contentsline {figure}{\numberline {68}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{59}{figure.caption.84}
+\contentsline {figure}{\numberline {69}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{59}{figure.caption.85}
