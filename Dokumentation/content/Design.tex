@@ -1,5 +1,5 @@
 \newpage 
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \section{Design}
 \subsection{Anforderungen}
 Das Design des Antennensystems wird für einen Anwendungsfall im Freiraum dimensioniert. Die Distanz zwischen Sender und Empfänger soll 10 Meter betragen. Das Übertragungsmedium ist Luft, kann aber idealisiert als Vakuum angenommen werden. Das System soll isotrop abstrahlen und der Gewinn der Empfangsantenne kann mit einem Faktor  1 angenommen werden. Die Antenne soll symmetrisch gespiesen werden und im 2.4 GHz ISM Band arbeiten. Als Quelle dient ein Bluetooth Low Energie Texas Instruments CC2541 Chip mit 0 dBm als Sendeleistung. Als Designkriterien wird eine $S_{11}$ Dämpfung von -10 dB mit einer Bandbreite von midestens 100 MHz gefordert und eine Reserve von 6 dB soll in das Linkbudget eigerechte werden. Die Abbildung \ref{fig:DesignAusgangslage} zeigt die welsentlichen Punkte der Designanforderungen.
@@ -208,7 +208,7 @@ $\eta$ gibt die Abstrahleffizienz in Prozent an. Sie besagt, wieviel Prozent der
 	\inputencoding{latin1}
 	\input{content/bilder/Simulation/Simulation_S11_3mm_breit.tikz}%=10cm]{}%
 	\endgroup
-	\caption{Vergleich des S11 im Gehaüse und im Freiraum Dipol 3mm breit}
+	\caption{Vergleich des $S_{11}$ im Gehaüse und im Freiraum Dipol 3mm breit}
 	\label{S11_Vergleich_Simulation_3mm}
 \end{figure}
 
@@ -218,7 +218,7 @@ $\eta$ gibt die Abstrahleffizienz in Prozent an. Sie besagt, wieviel Prozent der
 	\inputencoding{latin1}
 	\input{content/bilder/Simulation/Simulation_S11_1mm_breit.tikz}%=10cm]{}%
 	\endgroup
-	\caption{Vergleich des S11 im Gehaüse und im Freiraum Dipol 1mm breit}
+	\caption{Vergleich des $S_{11}$ im Gehaüse und im Freiraum Dipol 1mm breit}
 	\label{S11_Vergleich_Simulation_1mm}
 \end{figure}
 
@@ -228,7 +228,7 @@ $\eta$ gibt die Abstrahleffizienz in Prozent an. Sie besagt, wieviel Prozent der
 	\inputencoding{latin1}
 	\input{content/bilder/Simulation/Simulation_S11_Dipol_1mm_Dach.tikz}%=10cm]{}%
 	\endgroup
-	\caption{Vergleich des S11 im Gehaüse und im Freiraum Dipol 1mm breit mit Dach}
+	\caption{Vergleich des $S_{11}$ im Gehaüse und im Freiraum Dipol 1mm breit mit Dach}
 	\label{S11_Vergleich_Simulation_1mm_Dach}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
