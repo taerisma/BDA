@@ -613,11 +613,13 @@ Das Verhältnis von $R_{rad}$ zu $R_{v}$ wirkt sich auf die Abstrahleffizienz $\
 
 
 \subsubsection{Simulationen einer Lambda/2 Loop Antenne}\label{sec:SimL2Loop}
-Um das Abstrahlverhalten und die Einwirkungen von Kunststoff im Nahfeld aufzuzeigen, werden die folgenden Abbildungen genauer erläutert.
+Um das Abstrahlverhalten und die Wirkungen von Kunststoff im Nahfeld aufzuzeigen, werden die folgenden Abbildungen genauer erläutert.
 Die erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodell wurde keine runde Stromschleife verwendet, sondern ein langer, schmaler Loop. Die Länge des Loop entspricht $\lambda/2$ der Bluetooth Zielfrequenz von 2.45 GHz. Die Antennenstruktur wird von einer Quelle mit 50 Ohm Innenwiderstand getrieben. Als Antennenstruktur wurden  rechteckige Kupferquader mit einer Dicke von 1mm verwendet.\\
-Es wurden wie beim der Dipol Antenne in Kapitel \ref{sim_lamda2_Dipol}\ drei Simulationen durchgeführt. Diese sollen das Verhalten von Loop Antennen mit Kunststoff im Nahfeld schematisch zeigen.\\ 
-Die Resonanzfrequenz einer $\lambda/2$ langen Leiterschleife ist in der Abbildung  \ref{fig:S11_Loop_Lambda2_freiraum_1} gezeigt. Sie liegt bei dieser Simulation bei $5.84 GHz$.  Bei $5.84 GHz$ zeigt die Antenne einen $S_{11}$ Wert von mehr als -25dB. Die -10dB Bandbreite beträgt 400 MHz.\\
-Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt die Fehlanpassung auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 6225 Ohm bei einer Frequenz von 2.45 GHz. Deshalb ist der Frequenzpunkt von $2.45 GHz$ beim rechten Ausgangspunkt des Smith-Diagramm. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer total Reflexion. Der Reflexionsfaktor $\Gamma$ ist in diesem Fall 1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$.
+
+Es wurden wie beim der Dipol Antenne in Kapitel \ref{sim_lamda2_Dipol}\ drei Simulationen durchgeführt. Diese sollen das Verhalten von Loop Antennen mit Kunststoff im Nahfeld  aufzeigen.\\ 
+Die Resonanzfrequenz einer $\lambda/2$ langen Leiterschleife im Freiraum ist in der Abbildung  \ref{fig:S11_Loop_Lambda2_freiraum_1} gezeigt. Sie liegt bei dieser Simulation bei 5.84 GHz.  Bei 5.84 GHz zeigt die Antenne einen $S_{11}$ Wert von mehr als -25dB. Die -10dB Bandbreite beträgt 400 MHz.\\
+Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt die Fehlanpassung klar auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 6225 Ohm bei einer Frequenz von 2.45 GHz. Deshalb ist der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt des Smith-Diagramm. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer total Reflexion. Der Reflexionsfaktor $\Gamma$ ist in diesem Fall 1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$.\\
+
 
 \begin{figure}[!h]
 \begin{center}
@@ -632,22 +634,25 @@ Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt d
 \end{center}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
+Die sehr tiefeAbstrahleffizienz ist auch aus der Abbildung \ref{fig:sim_Loop_freiraum_3D} zu entnehmen. Das es ist kaum eine bevorzugte Abstrahllrichtung zu sehen. Die die dunkelrote Farbe entspricht einem Richtfaktor von 1.19dBi, das enspricht beinahe einem isotropen Abstrahlverhalten.
+%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=7cm]{content/bilder/Evaluation/Loop/L2/ohneABS/EM_Far_Field_Loop_Lambda2_ohneABS.JPG}%
-	\caption{xxxx}
-	\label{xxx}
+	\includegraphics[width=13cm]{content/bilder/Evaluation/Loop/L2/ohneABS/EM_Far_Field_Loop_Lambda2_ohneABS.JPG}%
+	\caption{Simulierte 3D Abstrahlcharakteristik eines $\lambda/2$ Loops}
+	\label{fig:sim_Loop_freiraum_3D}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-Die Simulationen der Dipolantennen haben eine erhebliche Einwirkung des ABS Kunststoff auf die Resonanzfrequenz gezeigt. Da die Loopantenne in ihrem Nahfeld ein starkes Magnetfeld zeigt und der elektrisch nicht leitende ABS Kunststoff  nicht magnetisch ist, sollte dieser keine grosse Wirkung auf die Resonanzfrequenz zeigen.\\ Diese Erwartungshaltung kann mit der folgenden Simulation überprüft werden. 
+Die Simulationen der Dipolantennen haben eine erhebliche Wirkung des ABS Kunststoff auf die Resonanzfrequenz gezeigt. Da die Loopantenne in ihrem Nahfeld ein starkes Magnetfeld zeigt und der elektrisch nicht leitende ABS Kunststoff  nicht magnetisch ist, sollte dieser keine grosse Wirkung auf die Resonanzfrequenz zeigen.\\ Diese Erwartungshaltung kann mit der folgenden Simulation überprüft werden.\\
+ 
 Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} zeigt das $S_{11}$ Diagramm derselben Loopantenne wie in Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2}. Jedoch wird wie bei den Simulationen der Dipolantenne ein ABS Kunststoffstück direkt an die Antenne gelegt. Das ABS Stück hat die Masse 100 x 30 x 2 mm (L x B x H). Die Abmessungen der Antennenstruktur und die Simulationseigenschaften bleiben  dieselben wie bei den Dipolsimulationen und der Freiraum Simulation der Loop Antenne.\\
 
-Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} und \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigen jedoch eine Resonanzfrequenz, die um mehr als $1430MHz$ auf $4.41GHz$ gefallen ist. Die -10dB Bandbreite ist auf 320kHz gesunken. Weiter ist der $S_{11}$ maximal Wert auf -15.4dB gesunken.\\
-Die Abbildung \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigt das Smith-Diagramm. Daraus ist ebenfalls ersichtlich, dass die Antenne für die Frequenz $2.45GHz$ nicht mehr einen Unterbruch darstellt. Die Abstrahleffizienz ist immer noch unter $3\%$. Das ist auf die Antennenimpedanz $Z_{ant}$ von (28-j433)Ohm zurückzu führen.
+Die Abbildung \ref{fig:S11_Lambda2_Loop_1ABS_3} und \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigen jedoch eine Resonanzfrequenz, die um mehr als 1430MHz auf 4.41GHz gefallen ist. Die -10dB Bandbreite ist auf 320kHz gesunken. Weiter ist der $S_{11}$ maximal Wert auf -15.4dB gesunken.\\
+Die Abbildung \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigt das Smith-Diagramm. Daraus ist ebenfalls ersichtlich, dass die Antenne für die Frequenz 2.45GHz nicht mehr einen Unterbruch darstellt. Die Abstrahleffizienz ist immer noch unter $3\%$. Das ist auf die Antennenimpedanz $Z_{ant}$ von (28-j433)Ohm zurückzu führen.
 
-\begin{figure}[!ht]
+\begin{figure}[!h]
 \begin{center}
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{content/bilder/Evaluation/Loop/L2/1ABS/S11_Loop_Lambda2_mitABS.pdf}
@@ -659,23 +664,29 @@ Die Abbildung \ref{fig:Smith_Lambda2_Loop_1ABS_4} zeigt das Smith-Diagramm. Dara
 \endminipage
 \end{center}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%
+Das simulierte 3D Richtiagramm des $\lambda/2$ langen, flachen Dipols zeigt weiterhin keine eindutig bevorzugte Richtwirkung. Der D Wert liegt bei 1.54dBi das ist etwa der selebe Wert einer $\lambda/2$ Dipolantenne. 
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=7cm]{content/bilder/Evaluation/Loop/L2/1ABS/EM_Far_Field_Loop_Lambda2_mitABS.JPG}%
-	\caption{xxxx}
-	\label{xxx}
+	\includegraphics[width=13cm]{content/bilder/Evaluation/Loop/L2/1ABS/EM_Far_Field_Loop_Lambda2_mitABS.JPG}%
+	\caption{Simulierte 3D Abstrahlcharakteristik eines $\lambda/2$ Loops mit einem ABS Stück im Nahfeld}
+	\label{fig:sim_Loop_freiraum_3D_1ABS}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \newpage
-Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfeld  zeigt, dass der Kunststoff  Auswirkungen auf die Resonanzfrequenz in ähnlicher weise wie bei einer Dipolantenne zeigt.\\
-Die Loop Antenne wird nun zwischen zwei gleich grossen ABS Kunststoffstücken eingeklemmt. Die Antennenanordnung bleibt dieselbe. \\
-Die Erwartung ist, dass auch bei dieser Simulation ein Detunig statt findet.\\ Die Abbildung \ref{fig:S11_Lambda2_Loop_2ABS_5} zeigt, dass die Resonanzfrequenz weiter sinkt. Sie liegt neu bei 4.3GHz. Die -10dB Bandbreite beträgt 270 MHz. Der $S_{11}$ Wert zeigt bei 4.3GHz -13.2dB.\\
+Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfeld  zeigt, dass der Kunststoff  Auswirkungen auf die Resonanzfrequenz in ähnlicher Art und Weise wie bei einer Dipolantenne zeigt.\\
+
+Die Loop Antenne wird nun zwischen zwei gleich grossen ABS Kunststoffstücken eingeklemmt. Die Antennenanordnung und Ausrichtung der Antenne bleibt dieselbe. \\
+Die Erwartung ist, dass auch bei dieser Simulation ein Detunig statt findet.\\ 
+
+Die Abbildung \ref{fig:S11_Lambda2_Loop_2ABS_5} zeigt, dass die Resonanzfrequenz weiter sinkt. Sie liegt neu bei 4.3GHz. Die -10dB Bandbreite beträgt 270 MHz. Der $S_{11}$ Wert zeigt bei 4.3GHz -13.2dB.\\
 Das Smith Diagramm in Abbildung \ref{fig:Smith_Lambda2_Loop_2ABS_6} zeigt einen Antennenwiderstand von $24\Omega$ und einen kapazitiven Anteil von $-j379\Omega$\\
 Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfeld  zeigt, dass der Kunststoff  Auswirkungen auf die Resonanzfrequenz in ähnlicher weise wie bei einer Dipolantenne zeigt.\\
+Die Abstrahleffizienz ist kanpp über $3\%$. Die erhebliche Fehlanpassung macht sich deutlich bemerkbar. Die Abstrahlrichung mit der stärksten Ausprägung zeigt nur 1.59dBi.Das ist in der Abbildung \ref{fig:sim_Loop_freiraum_3D_2ABS} gezeigt.
 
 
 
@@ -694,9 +705,9 @@ Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfeld  zeigt, dass der 
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=7cm]{content/bilder/Evaluation/Loop/L2/2ABS/EM_Far_Field_Loop_Lambda2_mit2ABS.JPG}%
-	\caption{xxxx}
-	\label{xxx}
+	\includegraphics[width=13cm]{content/bilder/Evaluation/Loop/L2/2ABS/EM_Far_Field_Loop_Lambda2_mit2ABS.JPG}%
+	\caption{Simulierte 3D Abstrahlcharakteristik eines $\lambda/2$ Loops mit einem ABS Stück im Nahfeld}
+	\label{fig:sim_Loop_freiraum_3D_2ABS}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
