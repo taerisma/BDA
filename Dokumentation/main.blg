@@ -15,53 +15,57 @@ Warning--to sort, need author or key in Verkuertzungsfaktor
 Warning--to sort, need author or key in Verkuertzungsfaktor_wiki
 Warning--to sort, need author or key in WikiPermitt
 Warning--to sort, need author or key in DielektrikumPolarisation
+Warning--to sort, need author or key in Guetefaktor_Q
+Warning--to sort, need author or key in Bandbreite_B
 Warning--to sort, need author or key in Polystyrol_Datenblatt
+Warning--empty year in Bandbreite_B
 Warning--empty year in DielektrikumPolarisation
+Warning--empty year in Guetefaktor_Q
 Warning--empty year in Oeffnungswinkel
 Warning--empty year in Polystyrol_Datenblatt
 Warning--empty year in Verkuertzungsfaktor
 Warning--empty year in Verkuertzungsfaktor_wiki
 Warning--empty year in WikiPermitt
 Warning--empty year in linkbudget
-You've used 19 entries,
+You've used 21 entries,
             2773 wiz_defined-function locations,
-            699 strings with 7003 characters,
-and the built_in function-call counts, 5582 in all, are:
-= -- 539
+            708 strings with 7251 characters,
+and the built_in function-call counts, 6080 in all, are:
+= -- 589
 > -- 141
 < -- 10
-+ -- 62
++ -- 64
 - -- 42
-* -- 362
-:= -- 764
-add.period$ -- 71
-call.type$ -- 19
-change.case$ -- 66
-chr.to.int$ -- 18
-cite$ -- 59
-duplicate$ -- 324
-empty$ -- 595
+* -- 394
+:= -- 806
+add.period$ -- 77
+call.type$ -- 21
+change.case$ -- 72
+chr.to.int$ -- 20
+cite$ -- 69
+duplicate$ -- 354
+empty$ -- 665
 format.name$ -- 55
-if$ -- 1235
+if$ -- 1357
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 12
-newline$ -- 116
+newline$ -- 126
 num.names$ -- 36
-pop$ -- 223
+pop$ -- 257
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 59
 quote$ -- 0
-skip$ -- 215
+skip$ -- 235
 stack$ -- 0
-substring$ -- 51
-swap$ -- 23
+substring$ -- 57
+swap$ -- 25
 text.length$ -- 2
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 179
-warning$ -- 14
+type$ -- 201
+warning$ -- 18
 while$ -- 27
 width$ -- 0
-write$ -- 260
-(There were 17 warnings)
+write$ -- 282
+(There were 21 warnings)
