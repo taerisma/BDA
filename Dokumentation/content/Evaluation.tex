@@ -909,15 +909,16 @@ waüeoifhj
   \centering
   \begin{tabular}{l r l l l l l l l l} \toprule 
   && \multicolumn{2}{c}{Dipol $\lambda/2$}   && \multicolumn{2}{c}{Loop $\lambda/2$}   && \multicolumn{2}{c}{Loop} \\ \cmidrule{3-4} \cmidrule{6-7} \cmidrule{9-10}
-  Kriterium                 & $g$ \%  		& $N$ & $N\cdot g$          && $N$ & $N\cdot g$             		&& $N$ & $N\cdot g$ \\ \midrule
-  Antennengüte Q            	&  25             & 2   & 0.5               && 5   & 1.25                        && 5   & 1.25 \\
-  Impedanz                  	&  15             & 3   & 0.45              && 4   & 0.6                         && 5   & 0.75 \\
-  vvvv    					&  20             & 1   & 0.2               && 4   & 0.8                         && 5   & 1 \\
-  Richtcharakteristik       	&  20             & 1   & 0.2               && 6   & 1.2                         && 6   & 1.2 \\
-  Relative Bandbreite       	&   5             & 3   & 0.15              && 6   & 0.3                         && 5   & 0.25 \\
-  Produktionsaufwand           	&   5             & 6   & 0.3               && 4   & 0.2                         && 6   & 0.3 \\
-  Kosten                    	&  10             & 4   & 0.4               && 6   & 1.2                         && 6   & 1 \\
-  Gesamt                    	& 100             &     & 2.2               &&     & 5.55                        &&     & 5.75 \\ \bottomrule
+  	Kriterium               	& $g$ \%  		& $N$ & $N\cdot g$     	&& $N$ & $N\cdot g$             		&& $N$ 	& $N\cdot g$ \\ \midrule
+  	Antennengüte Q          	&  15          	& 2   & 0.5             	&& 5   & 1.25                        && 5   	& 1.25 \\
+  	Impedanz               	&  25           	& 3   & 0.45            	&& 4   & 0.6                         && 5   	& 0.75 \\
+	Bandbreite 				&	15			& 4   	& 0.8           	&& 5   & 1 							&&		&	\\
+	relative Bandbreite 		&	10			& 4   	& 0.8           	&& 5   & 1 							&&		&	\\
+  	Richtcharakteristik     &  15            & 1   & 0.2            	&& 6   & 1.2                         && 6   	& 1.2 \\
+  	Produktionsaufwand    	&   5           & 6   & 0.3             	&& 4   & 0.2                         && 6   	& 0.3 \\
+  	Kosten                  &  5           	& 4   & 0.4             	&& 6   & 1.2                         && 6   	& 1 \\
+  \hline
+  Gesamt                    & 100          	&     & 2.2             	&&     & 5.55                        &&     	& 5.75 \\ \bottomrule
   \end{tabular}
   \caption{Nutzwertanalyse für symmetrische Antenne}
   \label{nutzwertEvaluation}
@@ -931,7 +932,12 @@ Bei Antennen wird der Gütefaktor oder Q Wert genannt, aus dem Verhältnis der M
 In der Nachrichten-, Audio- und Hochfrequenztechnik wird die Bandbreite für einen Frequenzbereich angegeben. Die Bandbreite ist dabei der Frequenzbereich, in dem elektrische Signale mit einem Amplitudenabfall von bis zu einer definierteten Grenze abfallen. Es handelt sich um eine Frequenzdifferenz zwischen der oberen $f_o$ und der unteren Frequenz $f_u$. Oft ist die Amplitudendgrenz bei -3dB angesetzt. Bei -3dB ist die Signalstärke auf 0.707 des Maxialwerts abesunken. Das bedutet das Signal hat bei -3dB um die Hälfte der maximalen Leistung \cite{Bandbreite_B}.
 In der Tabellen \ref{tab:Evaluation_Vergeich_Dipolantennen} ,\ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05}, \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} und \ref{nutzwertEvaluation} bezeiht man sich auf die -10dB Bandbreite.\\
 \textbf{Mittenfrequenz $f_{c}$}\\
-Die Mittenfrequenz $f_c$ ist definiert über die obere und untere Grenzfrequenz. Sie wird gebeildet als $f_c=f_u+(f_o-f_u)/2$. Die Mttenfrequenz muss nicht der Resonanzfrequenz $f_{res}$ enstprechen.
+Die Mittenfrequenz $f_c$ ist definiert über die obere und untere Grenzfrequenz. Sie wird gebeildet als $f_c=f_u+(f_o-f_u)/2$. Die Mttenfrequenz muss nicht der Resonanzfrequenz $f_{res}$ enstprechen.\\
+%%%%%%
+\textbf{relative  Bandbreite d}\\
+Die releative bandbreite ist der Kehrwert des Antennegüte Faktors.
+Sie Wird gebildet ind dem die Bandbreite B durch die Resonanzfrequenz geteilt wrid. $d=\dfrac{Bandbreite}{f_{Resonanz}}$\\
+%%%%%%
 \textbf{Richtcharakteristik D}\\
 Die Richtcharakteristik bit ein Verhältnis der Maximalen Leitungsdichte der Antenne gegenüber einemisotrophen Strahler in dBi an.
 \textbf{Abstrahleffizienz $\eta$}\\
