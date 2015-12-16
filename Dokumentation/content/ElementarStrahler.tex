@@ -70,6 +70,7 @@ In weiter Ferne vom Elementaren Strahler sind die Feldanteile $E_r$ soweit abgek
 
 Für alle Antennen, die eine lange und dünne Geometrie besitzen, wie zum Beispiel die Monopolantennen, die Dipolantennen oder die Faltdipole bildet der Hertzsche Dipol die Grundlage der Feldausbreitung. Die Ausdehnung des Elementaren Strahlers ist auf eine Länge der strahlenden Struktur von etwa $100\mu m$ beschränkt. Das bedeutet, der Gültigkeitsbereich der in dieser Arbeit gezeigten Formeln und Beschreibungen führen bis 3 THz.
 
+
 %Die Terme mit R in der zweiten oder dritten Potenz fallen für das Fernfeld weg. Da im Fernfeld der Radius R so gross ist, dass diese Terme vernachlässig werden. 
 %Das Fernfeld kann wie folgt beschrieben werden:
 %
@@ -167,14 +168,16 @@ Die Elektromagnetischen Felder eines Hertzschen Dipols werden oft in Kugelkoordi
 
 \newpage
 \subsection{Fitzgeraldscher Dipol }\label{sec:FitzgeraldescherDipol}
-Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromverteilung besitzt, wird Fitzgeraldscher Dipol genannt. Dieser Dipol ist das Gegenstück zum Hertzschen Dipol und stellt somit den zweiten der beiden elementaren Strahler dar. Die Leiterschleife ist oft in der xy Ebene angeordnet. Da der Strom oszilliert, ist er als \textit{i(t)} gekennzeichnet. Der Strom \textit{i(t)} führt in einem Kreis im Abstand a um das Zentrum. Im Zentrum bildet sich ein magnetisches, zeitabhängiges Moment \textit{m(t)}.
-\begin{figure}[!ht]
+Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromverteilung besitzt, wird Fitzgeraldscher Dipol genannt. Dieser Dipol ist das Gegenstück zum Hertzschen Dipol und stellt somit den zweiten der beiden elementaren Strahler dar. Die Leiterschleife ist oft in der xy Ebene angeordnet. Da der Strom oszilliert, ist er als \textit{i(t)} gekennzeichnet. Der Strom \textit{i(t)} führt in einem Kreis im Abstand a um das Zentrum.\\ 
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width=4cm]{content/bilder/Fitzgerald_Dipol_EMANT_S37.pdf}%
 	\caption{Fitzgeraldscher Dipol \cite{Emant}}
 	\label{FitzDipol_elementar_Loop}
 \end{figure}
-Wenn der Hertzsche Dipol eine E Feld Antenne genannt wird, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. In der unmittelbaren Nähe der Leitschleife bildet sich ein sehr starkes Magnetfeld aus. Das Nahfeld des Fitzgeraldschen Dipols wird wie folgt beschrieben\cite{elliott1981antenna}:
+\todo{ev. Loop selber zeichen}
+ Im Zentrum bildet sich ein magnetisches, zeitabhängiges Moment \textit{m(t)}.\\
+ Wenn der Hertzsche Dipol eine E Feld Antenne genannt wird, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. In der unmittelbaren Nähe der Leitschleife bildet sich ein sehr starkes Magnetfeld aus. Das Nahfeld des Fitzgeraldschen Dipols wird wie folgt beschrieben\cite{elliott1981antenna}:
 
 
 \begin{equation}
@@ -188,17 +191,13 @@ H_\theta= \frac{I S}{4\pi}   e^{-jkR} \left(- \frac{k^{2}}{R}  + \frac{jk}{R^{2}
 \begin{equation}
 E_\phi= \frac{I S}{4\pi}   e^{-jkR} \left( \frac{k^{2}}{R}  - \frac{jk}{R^{2}} \right) sin(\theta)
 \end{equation}
-
 Das zeitabhängige magnetische Moment \textit{m(t)} ergibt sich durch die Multiplikation der durch die Schleife aufgespannten Fläche $a^{2}\pi=S$ und dem konstanten Schleifenstrom $I$.Der Wert $I$ ist auf der ganzen Schleife konstant. Dank der Annahme des konstanten Stroms kann wie in Gleichung \ref{eq:magnetischesMoment} das magnetische Moment berechnet werden \cite{Harrington-TimeHarmonic}. 
 \begin{equation}\label{eq:magnetischesMoment}
 Ia^{2}\pi=IS=m
 \end{equation}
-
 Die Terme mit R in der zweiten oder dritten Potenz fallen für das Fernfeld weg. Da im Fernfeld der Radius R  gross ist, können diese Terme vernachlässigt werden. 
 Das Fernfeld kann wie folgt beschrieben werden:
 
-
-Formel:
 \begin{equation}
 H_r= 0
 \end{equation}
@@ -210,10 +209,8 @@ H_\theta= \frac{I S}{4\pi}   e^{-jkR} \left(- \frac{k^{2}}{R}   \right) sin(\the
 \begin{equation}
 E_\varphi= \frac{I S}{4\pi}   e^{-jkR} \left( \frac{k^{2}}{R}   \right) sin(\theta)
 \end{equation}
-
 Wie beim Hertzschen Dipol fällt mit wachsendem Abstand R ein $H_r$ Anteil weg. Bis zur vollständigen Absorption bleiben die orthogonalen $ E_\varphi $ und $ H_\theta $ Feldvektoren übrig.
 Die beiden elementaren Strahler können nicht technisch  realisiert werden, aber sie sind sehr wichtig für das Verhalten und Verständnis von realen Antennen. Wenn reale Antennen vereinfacht werden oder  sehr kleine Teilstücke von realen Antennen betrachtet werden,  verhalten sie sich  wie die elementaren Dipole. \\
-
 Die Dipolantenne und die Rahmenantenne sind den beiden elementaren Strahlern nachempfunden und sollen im nächsten Abschnitt genauer betrachtet werden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
