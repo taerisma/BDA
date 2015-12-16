@@ -477,7 +477,25 @@ Das Smith-Diagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine 
 \subsubsection{Fazit aus den Simulatioen der Dipolantennen}
 Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Weiter zeigt es das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe. Der Kunststoff im Nahfeld der Antenne hat dieselbe Wirkung auf die Resonanzfrequenz wie das Verlängern der  Strahlerlänge. Das bedeutet, die Resonanzfrequenz $f_{r}$ sinkt.  Die beiden Kunststoffstücke haben eine Verschiebung des maximalen $S_{11}$ Werts von 600 MHz verursacht. Das bedeutet, die $v_p$ muss um 25\% kleiner sein als $c_0$.
 Die dreidimensionalen \glqq EM Far Field\grqq \  Darstellungen der drei Simulationen zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Sie zeigen alle drei, einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.\\
-Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie bekannten Bereich. Der $R_{rad}$ war bei den drei Versuchen zwischen (68-j4) Ohm und  (208-j28) Ohm. Die Anpassung an die reelle 50 Ohm Quelle zeigt immer noch eine Abstrahleffizienz von $\eta_{rad}$ von   ca. 69\% bis 97\%.
+Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie bekannten Bereich. Der $R_{rad}$ war bei den drei Versuchen zwischen (68-j4) Ohm und  (208-j28) Ohm. Die Anpassung an die reelle 50 Ohm Quelle zeigt immer noch eine Abstrahleffizienz von $\eta_{rad}$ von   ca. 69\% bis 97\%.\\
+
+Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergleichswerte der $\lambda/2$ Dipolantenne.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{p{4cm} p{2cm} l  c c c c r} 
+  \toprule 
+  Antenne und Umfeld             & max $S_{11}$[dB]		& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$] & Bandbreite & relative Bandbreite[$\%$]\\ 
+  \midrule
+$\lambda/2$ Dipol im Freiraum    			&	-16.16 @ 2.42		&  	68.6-j4			&   	97	&	300[MHz] & 12\\         		
+$\lambda/2$ Dipol mit einem \\ABS Stück 	&   -20.79 @ 2.02  		&	141.5+j39.6		&	71	&	320[MHz]	 & 15\\
+$\lambda/2$ Dipol mit zwei \\ABS Stücken 	&   -28.2 @ 1.81    	&	206.2-j28		&	59	&	320[MHz]	 & 17\\
+ \bottomrule
+  \end{tabular}
+  \caption{Simulation einer $\lambda/2$ Dipolantennen im Freiraum und im ABS Stücken}
+  \label{tab:Evaluation_Vergeich_Dipolantennen}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -816,23 +834,24 @@ Die Folgende Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} zeigt die wesen
 Fall 1 die Antenne befindet sich im Freiraum.\\
 Fall 2 an die Antenne ist ein Kunststoffstück angebracht.\\
 Fall 3 die Antenne wird von beiden Seiten direkt anliegende mit zwei Kunststoffstücken umschlossen.\\
-Die Bandbreitet beschreibt die -10dB Bandbreite in MHz. Die relative Bandbreite ist Einheiten los und die Angabe erfolgt in $\%$. Die relative Bandbreite wird durch die Division der -10dB Bandbreite und der Mittenfrequenz gebildet. Als Mittenfrequenz wird bei jeder Simulation die Frequenz mit der grössen $S_{11}$ Dämpfung bestimmt.
-Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergleichswerte der $\lambda/2$ Dipolantenne.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!h]
-  \centering
-  \begin{tabular}{p{4cm} p{2cm} l  c c c c r} 
-  \toprule 
-  Antenne und Umfeld             & max $S_{11}$[dB]		& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$] & Bandbreite & relative Bandbreite[$\%$]\\ 
-  \midrule
-$\lambda/2$ Dipol im Freiraum    			&	-16.16 @ 2.42		&  	68.6-j4			&   	97	&	300[MHz] & 12\\         		
-$\lambda/2$ Dipol mit einem \\ABS Stück 	&   -20.79 @ 2.02  		&	141.5+j39.6		&	71	&	320[MHz]	 & 15\\
-$\lambda/2$ Dipol mit zwei \\ABS Stücken 	&   -28.2 @ 1.81    	&	206.2-j28		&	59	&	320[MHz]	 & 17\\
- \bottomrule
-  \end{tabular}
-  \caption{Simulation einer $\lambda/2$ Dipolantennen im Freiraum und im ABS Stücken}
-  \label{tab:Evaluation_Vergeich_Dipolantennen}
-\end{table}
+Die Bandbreitet beschreibt die -10dB Bandbreite in MHz. Die relative Bandbreite ist Einheiten los und die Angabe erfolgt in $\%$. Die relative Bandbreite wird durch die Division der -10dB Bandbreite und der Mittenfrequenz gebildet. Als Mittenfrequenz wird bei jeder Simulation die Frequenz mit der grössen $S_{11}$ Dämpfung bestimmt.\\
+
+%Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergleichswerte der $\lambda/2$ Dipolantenne.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{table}[!h]
+%  \centering
+%  \begin{tabular}{p{4cm} p{2cm} l  c c c c r} 
+%  \toprule 
+%  Antenne und Umfeld             & max $S_{11}$[dB]		& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$] & Bandbreite & relative Bandbreite[$\%$]\\ 
+%  \midrule
+%$\lambda/2$ Dipol im Freiraum    			&	-16.16 @ 2.42		&  	68.6-j4			&   	97	&	300[MHz] & 12\\         		
+%$\lambda/2$ Dipol mit einem \\ABS Stück 	&   -20.79 @ 2.02  		&	141.5+j39.6		&	71	&	320[MHz]	 & 15\\
+%$\lambda/2$ Dipol mit zwei \\ABS Stücken 	&   -28.2 @ 1.81    	&	206.2-j28		&	59	&	320[MHz]	 & 17\\
+% \bottomrule
+%  \end{tabular}
+%  \caption{Simulation einer $\lambda/2$ Dipolantennen im Freiraum und im ABS Stücken}
+%  \label{tab:Evaluation_Vergeich_Dipolantennen}
+%\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Die Tabelle \ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05} beinhaltet einige Vergleichswerte der $\lambda/2$ Loop Antenne.
@@ -871,7 +890,7 @@ Loop mit drei Windungen mit zwei ABS Stücken &    -12.6 @ 2.45    	&	31.6+j5.5	
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{EinFazit aus den Tabellenwerten ziehen }
-\subsection{Nutzwertanalyse Antenneneigenschaften }
+\subsection{Nutzwertanalyse der Antenneneigenschaften }
 
 Die Nutzwertanalyse zeigt die Vor und nachteile der verschiedenen Simulationen auf.
 sjadfp
@@ -885,6 +904,7 @@ aspijfdnp
 
 waüeoifhj
 \todo{eine Nutzwertanalyse schreiben}
+\newpage
 \begin{table}[!ht]
   \centering
   \begin{tabular}{l r l l l l l l l l} \toprule 
@@ -895,13 +915,27 @@ waüeoifhj
   vvvv    					&  20             & 1   & 0.2               && 4   & 0.8                         && 5   & 1 \\
   Richtcharakteristik       	&  20             & 1   & 0.2               && 6   & 1.2                         && 6   & 1.2 \\
   Relative Bandbreite       	&   5             & 3   & 0.15              && 6   & 0.3                         && 5   & 0.25 \\
-  Materialaufwand           	&   5             & 6   & 0.3               && 4   & 0.2                         && 6   & 0.3 \\
+  Produktionsaufwand           	&   5             & 6   & 0.3               && 4   & 0.2                         && 6   & 0.3 \\
   Kosten                    	&  10             & 4   & 0.4               && 6   & 1.2                         && 6   & 1 \\
   Gesamt                    	& 100             &     & 2.2               &&     & 5.55                        &&     & 5.75 \\ \bottomrule
   \end{tabular}
   \caption{Nutzwertanalyse für symmetrische Antenne}
   \label{nutzwertEvaluation}
 \end{table}
+
+\newpage
+\subsubsection{Antennenkriterien}
+\textbf{Antennengüte Q}\\
+Bei Antennen wird der Gütefaktor oder Q Wert genannt, aus dem Verhältnis der Mittenfrequenz $F_{c}$ zur Antennenbandbreite B errechnet. Wobei die Mittenfrequenz aus dem Mittelwert der oberen und unteren Grenzfrequenz errechnet werden kann. $Q = f_c/(f_0-f_u)$, mit $f_c$ als Mittenfrequenz, $f_u$ als untere Grenzfrequenz und $f_o$ als obere Grenzfrequenz. Je grösser der Gütefaktor desto schmalbandiger und je niedriger der Gütefaktor  desto breitbandiger sind Antennen \cite{Gütefaktor_Q}.\\
+\textbf{Bandbreite B}\\
+In der Nachrichten-, Audio- und Hochfrequenztechnik wird die Bandbreite für einen Frequenzbereich angegeben. Die Bandbreite ist dabei der Frequenzbereich, in dem elektrische Signale mit einem Amplitudenabfall von bis zu einer definierteten Grenze abfallen. Es handelt sich um eine Frequenzdifferenz zwischen der oberen $f_o$ und der unteren Frequenz $f_u$. Oft ist die Amplitudendgrenz bei -3dB angesetzt. Bei -3dB ist die Signalstärke auf 0.707 des Maxialwerts abesunken. Das bedutet das Signal hat bei -3dB um die Hälfte der maximalen Leistung.
+In der Tabellen \ref{tab:Evaluation_Vergeich_Dipolantennen} ,\ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05}\ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} und \ref{nutzwertEvaluation} bezeiht man sich auf die -10dB Bandbreite.\\
+\textbf{Mittenfrequenz $f_{c}$}\\
+\textbf{Richtcharakteristik}\\
+\textbf{Abstrahleffizienz $\eta$}\\
+\textbf{Antennenimpedanz $Z_{ant}$}\\
+\textbf{Produktionsaufwand}\\
+\textbf{Kosten}\\
 \newpage 
 \thispagestyle{empty}
 
