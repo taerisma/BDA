@@ -28,7 +28,7 @@ axis background/.style={fill=white},
 title={$\text{Simulation des  |S}_{\text{11}}|\text{ im Freiraum und dim Gerät eines Dipol 1mm breit}$},
 legend style={at={(0.97,0.03)},anchor=south east,legend cell align=left,align=left,draw=black}
 ]
-\addplot [color=red,style=dashed]
+\addplot [color=red,style=loosely dashed]
   table[row sep=crcr]{%
 2000000000	-2.33527\\
 2001670000	-2.35116\\
@@ -632,7 +632,7 @@ legend style={at={(0.97,0.03)},anchor=south east,legend cell align=left,align=le
 2998330000	-5.70963\\
 3000000000	-5.69461\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{ Frei Raum}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ Frei Raum 1mm}$};
 
 \addplot [color=blue,solid]
   table[row sep=crcr]{%
@@ -1238,7 +1238,7 @@ legend style={at={(0.97,0.03)},anchor=south east,legend cell align=left,align=le
 2998330000	-1.26622\\
 3000000000	-1.26238\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{ im Gerät}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ im Gerät 1mm}$};
 
 \end{axis}
 \end{tikzpicture}%

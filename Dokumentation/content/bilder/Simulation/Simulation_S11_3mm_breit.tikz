@@ -632,9 +632,9 @@ legend style={at={(0.97,0.03)},anchor=south east,legend cell align=left,align=le
 2998330000	-6.38433\\
 3000000000	-6.36748\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{ Frei Raum}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ Frei Raum 3mm}$};
 
-\addplot [color=blue,solid]
+\addplot [color=violet,solid]
   table[row sep=crcr]{%
 2000000000	-0.594386\\
 2001670000	-0.600369\\
@@ -1238,7 +1238,7 @@ legend style={at={(0.97,0.03)},anchor=south east,legend cell align=left,align=le
 2998330000	-1.60881\\
 3000000000	-1.60471\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{ im Gerät}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ im Gerät 3mm}$};
 
 \end{axis}
 \end{tikzpicture}%
