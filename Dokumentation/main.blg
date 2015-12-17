@@ -4,11 +4,11 @@ The top-level auxiliary file: main.aux
 The style file: abbrvnat.bst
 Database file #1: mydata.bib.bib
 Warning--I'm ignoring elliott1981antenna's extra "publisher" field
---line 41 of file mydata.bib.bib
+--line 40 of file mydata.bib.bib
 Warning--string name "februar" is undefined
---line 49 of file mydata.bib.bib
+--line 48 of file mydata.bib.bib
 Warning--string name "september" is undefined
---line 59 of file mydata.bib.bib
+--line 58 of file mydata.bib.bib
 Warning--to sort, need author or key in Oeffnungswinkel
 Warning--to sort, need author or key in linkbudget
 Warning--to sort, need author or key in Verkuertzungsfaktor
@@ -29,16 +29,16 @@ Warning--empty year in WikiPermitt
 Warning--empty year in linkbudget
 You've used 21 entries,
             2773 wiz_defined-function locations,
-            708 strings with 7251 characters,
-and the built_in function-call counts, 6080 in all, are:
-= -- 589
+            706 strings with 7228 characters,
+and the built_in function-call counts, 6052 in all, are:
+= -- 583
 > -- 141
 < -- 10
 + -- 64
 - -- 42
-* -- 394
-:= -- 806
-add.period$ -- 77
+* -- 390
+:= -- 800
+add.period$ -- 75
 call.type$ -- 21
 change.case$ -- 72
 chr.to.int$ -- 20
@@ -46,13 +46,13 @@ cite$ -- 69
 duplicate$ -- 354
 empty$ -- 665
 format.name$ -- 55
-if$ -- 1357
+if$ -- 1351
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 12
-newline$ -- 126
+newline$ -- 124
 num.names$ -- 36
-pop$ -- 257
+pop$ -- 259
 preamble$ -- 1
 purify$ -- 59
 quote$ -- 0
@@ -67,5 +67,5 @@ type$ -- 201
 warning$ -- 18
 while$ -- 27
 width$ -- 0
-write$ -- 282
+write$ -- 278
 (There were 21 warnings)

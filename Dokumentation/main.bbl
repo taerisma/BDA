@@ -49,8 +49,9 @@ Permittivität.
 \newblock Eingesehen am 23.11.2015.
 
 \bibitem[lin()]{linkbudget}
-mescont.
-\newblock URL \url{http://www.meconet.de}.
+Link-budget.
+\newblock URL
+  \url{http://www.meconet.de/de/service/hochfrequenz/link-budget/index.html?a=65&level=1}.
 \newblock Eingesehen am 20.11.2015.
 
 \bibitem[3M(2015)]{Kupferband}
@@ -79,12 +80,12 @@ R.~F. Harrington.
 
 \bibitem[Joss(2013)]{Tekom}
 M.~Joss.
-\newblock Einführung in die nachrichtentechnik.
+\newblock {Einführung in die Nachrichtentechnik}.
 \newblock Skript~1, HSLU, 2013.
 
 \bibitem[Joss(2015)]{Emant}
 M.~Joss.
-\newblock Elektromagnetische wellen und antennen.
+\newblock {Elektromagnetische Wellen und Antennen}.
 \newblock Skript~1, HSLU, 2015.
 
 \bibitem[Meinke et~al.(1992)Meinke, Lange, Gundlach, and
@@ -93,8 +94,7 @@ H.~Meinke, K.~Lange, F.~Gundlach, and K.~L{\"o}cherer.
 \newblock \emph{Taschenbuch der Hochfrequenztechnik: Band 1: Grundlagen}.
 \newblock Taschenbuch der Hochfrequenztechnik / Meinke; Gundlach. Hrsg. von K.
   Lange. Springer, 1992.
-\newblock ISBN 9783540547143.
-\newblock URL \url{https://books.google.ch/books?id=vvpNiEjZKwsC}.
+\newblock ISBN 3-540-5417-7.
 
 \bibitem[Mic(2015)]{StarLab}
 \emph{StarLab}.
@@ -115,7 +115,6 @@ K.~Rothammel and A.~Krischke.
 \newblock \emph{Antennenbuch}.
 \newblock Franckh, 1991.
 \newblock ISBN 9783440058534.
-\newblock URL \url{https://books.google.de/books?id=OtWLAAAACAAJ}.
 
 \bibitem[Tex(2015)]{CC2541}
 \emph{2.4-GHz Bluetooth low energy and Proprietary System-on-Chip}.

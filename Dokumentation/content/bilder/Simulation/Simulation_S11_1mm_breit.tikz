@@ -25,10 +25,10 @@ ymax=0,
 ylabel={Amplitude in [dB]},
 ymajorgrids,
 axis background/.style={fill=white},
-title={$\text{Simulation des  S}_{\text{11}}\text{ im Freiraum und dim Gerät eines Dipol 1mm breit}$},
+title={$\text{Simulation des  |S}_{\text{11}}|\text{ im Freiraum und dim Gerät eines Dipol 1mm breit}$},
 legend style={at={(0.97,0.03)},anchor=south east,legend cell align=left,align=left,draw=black}
 ]
-\addplot [color=red,solid]
+\addplot [color=red,style=dashed]
   table[row sep=crcr]{%
 2000000000	-2.33527\\
 2001670000	-2.35116\\

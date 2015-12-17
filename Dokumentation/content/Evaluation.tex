@@ -435,7 +435,7 @@ Die Abbildung \ref{fig:S11_Dipol_freiraum_1} zeigt das $S_{11}$ Diagramm eines D
 \end{center}
 \end{figure}
 %\newpage
-\textbf{Simulationen einer $\lambda/2$ Dipolantenne mit einem ABS Kuststoffstück im Nahfeld}\\
+\textbf{Simulationen einer $\lambda/2$ Dipolantenne mit einem ABS Kunststoffstück im Nahfeld}\\
 
 In der Abbildung \ref{fig:S11_Dipol_ABS_3} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kunststoffstück im Nahfeld gezeigt. Das ABS Stück hat die Masse: 100 x 2 x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz in der Abbildung \ref{fig:S11_Dipol_ABS_3}. Der maximale $S_{11}$ Wert liegt neu 400 MHz tiefer bei 2.04 GHz. Der maximale $S_{11}$ Wert bei dieser Frequenz beträgt  neu -20.79 dB. Die -10dB Bandbreite beträgt 340 MHz.\\
 
@@ -456,7 +456,7 @@ Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpass
 \end{figure}
 
 \newpage
-\textbf{Simulationen einer $\lambda/2$ Dipolantenne mit zwei ABS Kuststoffstücken im Nahfeld}\\
+\textbf{Simulationen einer $\lambda/2$ Dipolantenne mit zwei ABS Kunststoffstücken im Nahfeld}\\
 
 Die dritte Simulation zeigt das $S_{11}$ und das Smith-Diagramm der Antenne. Diese liegt zwischen zwei ABS Kunststoffstücken. Es zeigt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück. Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 180 MHz tiefer. Die Abbildung  \ref{fig:S11_Dipol_Zwei_ABS_5} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz.\\
 Das Smith-Diagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt  bei $59.6 \%$.
@@ -474,7 +474,7 @@ Das Smith-Diagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine 
 \end{center}
 \end{figure}
 
-\subsubsection{Fazit aus den Simulatioen der Dipolantennen}
+\subsubsection{Vergleich aus den Simulatioen der Dipolantennen}
 Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Weiter zeigt es das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe. Der Kunststoff im Nahfeld der Antenne hat dieselbe Wirkung auf die Resonanzfrequenz wie das Verlängern der  Strahlerlänge. Das bedeutet, die Resonanzfrequenz $f_{r}$ sinkt.  Die beiden Kunststoffstücke haben eine Verschiebung des maximalen $S_{11}$ Werts von 600 MHz verursacht. Das bedeutet, die $v_p$ muss um 25\% kleiner sein als $c_0$.
 Die dreidimensionalen \glqq EM Far Field\grqq \  Darstellungen der drei Simulationen zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Sie zeigen alle drei, einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.\\
 Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie bekannten Bereich. Der $R_{rad}$ war bei den drei Versuchen zwischen (68-j4) Ohm und  (208-j28) Ohm. Die Anpassung an die reelle 50 Ohm Quelle zeigt immer noch eine Abstrahleffizienz von $\eta_{rad}$ von   ca. 69\% bis 97\%.\\
@@ -530,7 +530,7 @@ Sie weisen die folgenden Transversalkomponenten $\textbf{E}_{\varphi}$ bzw.$\tex
 Es wird festgestellt, dass die Felder nur vom Strom und der Fläche abhängig sind
 und nicht von der Form der Antenne. 
 Die Rahmenantenne besitzt einen sehr kleinen Strahlungswiderstand, der durch die
-Formel \ref{eq:RS_LOOP} beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel \ref{eq:RradLoop} aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. S ist die Schleifenfläche und k kann als $2\pi/\lambda$ angenommen werden. Der Radius der Schleife entspricht $a$ und $Z_0$ ist die Wellenimpedanz im Freiraum mit $120\pi$.
+Formel \ref{eq:RS_LOOP} beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel \ref{eq:RradLoop} aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. S ist die von der Winung aufgespannte Fläche und k kann als $2\pi/\lambda$ angenommen werden. Der Radius der Windung entspricht $a$ und $Z_0$ ist die Wellenimpedanz im Freiraum mit $120\pi$.
 \begin{equation}\label{eq:RS_LOOP}
 R_{s}=\dfrac{2Ps}{|I|^{2}}=Z_{0}\dfrac{\pi}{6}(k^{2}a^{2})^{2}=Z_{0}\dfrac{2\pi}{3}\left(\dfrac{kS}{\lambda}\right)^{2} 
 \end{equation}
@@ -743,8 +743,8 @@ Die Abstrahleffizienz ist kanpp über $3\%$. Die erhebliche Fehlanpassung macht 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-\subsubsection{Simulationen einer Loop Antenne mit mehreren Schleifen}
-Im vorhergehenden Abschnitt Kapitel \ref{sec:SimL2Loop} sind anhand eines einfachen Modells die Eigenschaften einer Loop Antenne mit umliegendem Kunststoff gezeigt. Der Effekt des Kunststoffes war grösser als erwartet. Es ist ein Detuning wie bei einer Dipolantenne feststellbar. Dass das Detuning auch Chancen bildet, zeigen die drei folgenden Simulationen der Abbildungen von \ref{fig:S11_Loop_freiraum_1} bis \ref{fig:Smith_Loop_2ABS_6}. Es wurde immer dieselbe Antennenstruktur simuliert. Diese ist ähnlich wie eine RFID Spule aufgebaut. Drei lange, flache Schleifen sind ineinander gedreht. Die Äusserste ist nicht Höher als 10mm und die Länge beträgt nicht mehr als 55mm. Die Simulation wurde drei mal durchgeführt. Die erste zeigt die Antenne im Freiraum, die zweite zeigt das Resonanzverhalten mit einem ABS Stück im Nahfeld und bei der dritten Simulation ist die Antennenstruktur zwischen zwei ABS Kunststoffstücken ersichtlich.\\
+\subsubsection{Simulationen einer Loop Antenne mit mehreren Windungen}
+Im vorhergehenden Abschnitt Kapitel \ref{sec:SimL2Loop} sind anhand eines einfachen Modells die Eigenschaften einer Loop Antenne mit umliegendem Kunststoff gezeigt. Der Effekt des Kunststoffes war grösser als erwartet. Es ist ein Detuning wie bei einer Dipolantenne feststellbar. Dass das Detuning auch Chancen bildet, zeigen die drei folgenden Simulationen der Abbildungen von \ref{fig:S11_Loop_freiraum_1} bis \ref{fig:Smith_Loop_2ABS_6}. Es wurde immer dieselbe Antennenstruktur simuliert. Diese ist ähnlich wie eine RFID Spule aufgebaut. Drei lange, flache Windungen sind ineinander gedreht. Die Äusserste ist nicht Höher als 10mm und die Länge beträgt nicht mehr als 55mm. Die Simulation wurde drei mal durchgeführt. Die erste zeigt die Antenne im Freiraum, die zweite zeigt das Resonanzverhalten mit einem ABS Stück im Nahfeld und bei der dritten Simulation ist die Antennenstruktur zwischen zwei ABS Kunststoffstücken ersichtlich.\\
 
 \textbf{Loop Antenne mit drei Windungen im Freiraum}\\
 Wie zu erwarten war, sinkt die Resonanzfrequenz mit dem Kunststoff im Nahfeld. Die Abbildung \ref{fig:S11_Loop_freiraum_1} zeigt das die Rückfluss Dämpfung der Antennenstruktur. Das Bild \ref{fig:S11_Loop_freiraum_1} zeigt einen sehr schmalbandigen $S_{11}$ Verlauf. Die -10 dB Bandbreite beträgt 60MHz. Der maximale $S_{11}$ Wertliegt bei 3.3 GHz und weisst -11dB aus. In Abbildung \ref{fig:S11_Loop_freiraum_1} zeigt eine Antennenimpedanz von (37+j375)$\Omega$. Dabei resultiert eine Abstrahleffizienz von ca. $\eta=2.5\%$
@@ -829,7 +829,7 @@ Eine Richtwirkung von 4.7dBi. Zeigt das 3D Richtdigramm aus der Abbildung \ref{f
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\subsubsection{Fazit aus den Simulatioen der Loop Antennen}
+\subsubsection{Vergleich aus den Simulatioen der Loop Antennen}
 Die Folgende Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} zeigt die wesentlichen Parameter aus den drei Simulationen der $\lambda/2$ Dipolantenne, der $\lambda/2$ Loop Antenne und der Loop Antenne mit drei Windungen. Für jede der Antennen wurden die Werte für die drei Fälle aufgenommen.\\
 Fall 1 die Antenne befindet sich im Freiraum.\\
 Fall 2 an die Antenne ist ein Kunststoffstück angebracht.\\
@@ -890,7 +890,7 @@ Loop mit drei Windungen mit zwei ABS Stücken &    -12.6 @ 2.45    	&	31.6+j5.5	
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \todo{EinFazit aus den Tabellenwerten ziehen }
-\subsection{Nutzwertanalyse der Antenneneigenschaften }
+\subsection{Intpretation der simulierten Antennen}
 
 Die Nutzwertanalyse zeigt die Vor und nachteile der verschiedenen Simulationen auf.
 sjadfp
@@ -903,8 +903,25 @@ aspijfdnp
 
 
 waüeoifhj
-\todo{eine Nutzwertanalyse schreiben}
+sadjnfp
+
+asüoifj
+
+aspijfdnp
+
+
+waüeoifhj
+
 \newpage
+\subsubsection{Nutzwertanalyse der Antenneneigenschaften }
+sadjnfp
+
+asüoifj
+
+aspijfdnp
+
+
+waüeoifhj
 \begin{table}[!ht]
   \centering
   \begin{tabular}{l r l l l l l l l l} \toprule 
