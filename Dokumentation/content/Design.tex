@@ -1,7 +1,8 @@
 \newpage 
 %\thispagestyle{empty}
-\section{Design}
-\subsection{Anforderungen}
+\chapter{Design}
+
+\section{Anforderungen}
 Das Design des Antennensystems wird für einen Anwendungsfall im Freiraum dimensioniert. Die Distanz zwischen Sender und Empfänger soll 10 Meter betragen. Das Übertragungsmedium ist Luft, kann aber idealisiert als Vakuum angenommen werden. Das System soll isotrop abstrahlen und der Gewinn der Empfangsantenne kann mit einem Faktor  1 angenommen werden. Die Antenne soll symmetrisch gespiesen werden und im 2.4 GHz ISM Band arbeiten. Als Quelle dient ein Bluetooth Low Energie Texas Instruments CC2541 Chip mit 0 dBm als Sendeleistung. Als Designkriterien wird eine $S_{11}$ Dämpfung von -10 dB mit einer Bandbreite von midestens 100 MHz gefordert und eine Reserve von 6 dB soll in das Linkbudget eigerechte werden. Die Abbildung \ref{fig:DesignAusgangslage} zeigt die welsentlichen Punkte der Designanforderungen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,7 +67,7 @@ Nr. & Anforderung & Beschreibung & Wert   \\
   \label{AnforderungenAntenneSystem}
 \end{table} 
 
-\subsection{Design mit bekannten Modellen}
+\section{Design mit bekannten Modellen}
 
 Die in der „Connect  1“ geforderte symmetrische Bluetooth Antenne soll   platzsparend im Inneren des Gerätes positioniert sein. Aus diesem Grunde wird eine gedruckte Dipolantenne entworfen. In kleinen  elektronischen Geräten sind auf eine Leiterplatte oder auf einem selbstklebenden Kunststoffstreifen gedruckte Antennen  von grossem Interesse. Die auf einer Leiterplatte oder einer Folie gedruckten Antennen haben den Vorteil, dass sie sehr kompakt und günstig zu produzieren sind. Zudem sind die Signalwege vom Sende- und Empfangschip zur Antenne sehr kurz. Trotz eines simplen Antennendesign haben Dipolantennen und Monopolantennen ein annähernd isotropes Abstrahlverhalten. Sie sind viel verbreitete Sende- und Empfangsantennen für tragbare Geräte. \\
 
@@ -89,7 +90,7 @@ Wobei $c$ die Lichtgeschwindigkeit im Vakuum und $\varepsilon_{eff}$  die effekt
 \end{equation}
 Wobei $h$ die Dicke des Substrats, $w$ die Breite des Spuren und  $\varepsilon_{r}$ die relative Dielektrizitätskonstante des Substrats ist. 
 
-\subsection{Design Ansatz $\lambda$/2 Dipolantenne}  
+\section{Design Ansatz $\lambda$/2 Dipolantenne}  
 Unter Verwendung der in Kapitel \ref{sec:Implementierung} eingeführten Gleichungen \ref{eq:lamba_2_laene_dipol} soll eine Dipolantenne für die Frequenz 2.45 GHz entworfen werden. Die Antenne wird symmetrisch gespiesen. Die Antenne wird auf eine Leiterplatte gedruckt. Als Substrat des Antennenprints kommt eine Standard- FR-4 PCB mit einem geschätzten  $\varepsilon_r $ von 4.3 bei 1GHz und einer Substratdicke von 1,5 mm  zum Einsatz. Die Dicke der Kupferschicht beträgt 35 $\mu m$. Die Leiterbahnbreite für die Radials wird als 1mm breit definiert.\\
 
 Wird die relative Dielektrizitätskonstante $\varepsilon_{r}$ in die Gleichung \ref{eff_epsilon} eingesetzt, so kann eine effektive Dielektrizitätszahl $\varepsilon_{eff}$  von xxxx berechnet werden.\\
@@ -100,7 +101,7 @@ Die Geschwindigkeit $v$  kann in der  Gleichung \ref{eq:lamba_05_langer_dipol} e
 \begin{equation}\label{eq:lamba_05_langer_dipol}
 L=2l = 0.47 \lambda= 0,47 \dfrac{v}{f}=0,47 \dfrac{vvvv}{2.45[GHz]}=bla
 \end{equation} 
-\subsubsection{Simulatation von verschiedenen Geometrien}
+\subsection{Simulatation von verschiedenen Geometrien}
 Es wurden vier Dipolantennen entworfen. Die Entwürfe sind im EMPIREXPU erstellt und simuliert worden. Die Antennenabmessungen wurden auf das Simulationsmodel optimiert. Die Länge der Antennen weicht vom $L=2l=\lambda/2$ Ansatz ab. Es wurde versucht eine optimale länge der Antenne für einen Einbau der Antenne in den "Connect 1" Geräten zu finden. Die Simulationen geht von einem 26$\mu$m dicken Kupfer als Antennenleiter aus. Dies enspricht dem 3M Kupferband des Typs "1181 Tape". Die Leimschicht des Klebeband wird vernachlässigt. Als Trägersubstrat dient direkt das ABS Gehäuse\cite{Kupferband}.
 \subsubsection*{Entwurf}
 Die vier Antennen habe alle dieselbe. Das "3M 1181 Tape" ist  hat eine Kupferstärke von 26$\mu$m. Die vier Antennen unterscheiden sich in der Breit der Kupferstreifen und in iher Form.\\
@@ -239,9 +240,9 @@ allgemein zum Dipol\\
 zur Dämpgung des Gehäuses\\
 zur of nicht vorhanderenen -10 dB Bandbreite
 
-\subsection{Fazit aus den $\lambda/2$ Dipolantennen Simulationen}
+\section{Fazit aus den $\lambda/2$ Dipolantennen Simulationen}
 
 \newpage 
 \thispagestyle{empty}
 \newpage 
-\subsection{Neue Design Ansätze}
+\section{Neue Design Ansätze}
