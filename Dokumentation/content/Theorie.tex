@@ -1,5 +1,5 @@
 \newpage
-\subsection{Nah- und Fernfeld}\label{sec:NahundFern}
+\section{Nah- und Fernfeld}\label{sec:NahundFern}
 Antennen sind Wellenwandler. Sie wandeln die ihnen zugeführte elektromagnetische Welle in  elektromagnetische Energie um. Die elektromagnetische Energie hat ebenfalls einen Wellencharakter und breitet  sich im Raum um die Antenne kugelförmig aus. Die zuführende Welle ist oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, einer Leiterbahn auf einer Leiterplatte oder einem Koaxialkabel erfolgen.  Für einige Antennen wird ein Hohlleiter, als Zuleitung verwendet. 
 Der Antenne kommt die Aufgabe zu, die im Leiter geführte Welle in eine Raumwelle zu wandeln. Das bedeutet, die leitergebundene Welle wird zu einer Freiraumwelle. Diese füllt den Raum um die Antenne aus. 
 Bei einer optimalen Ausführung passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \Omega$ an. Der Wellenwiderstand im freien Raum kann als Wellenwiderstand im Vakuum betrachtet werden. Wenn die Luft als homogenes Medium mit perfekten Eigenschaften wie ein Vakuum betrachtet wird so gilt:
@@ -117,7 +117,7 @@ Für die Gleichung \ref {eq:LeistungsdichteS} gilt:
 %Quelle:Taschenbuch der Hochfrequenztechnik Meineke und Grundach N2
 
 
-\subsection{Systemansicht}
+\section{Systemansicht}
 Die Systemansicht soll einen Überblick über die Bluetooth Verbindung vom Fluginstrument „Connect 1“ zu einem Smartphone geben.
 In der nachfolgenden Tabelle \ref{tab:Linkbudget} werden die Annahmen und  die gegebenen Parameter der Bluetooth Verbindung aufgelistet. Mit der Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der HF Quelle zur Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen und es hat keine Fremdkörper im Ausbreitungsraum. Das Ausbreitungsmedium wird als homogen betrachtet.
 Weitere Annahmen sind:
@@ -224,7 +224,7 @@ Die Tabelle \ref{tab:Linkbudget} zeigt die für die Bluetooth Verbindung relevan
 %%%%Quelle&%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\subsection{Quelle}
+\section{Quelle}
 Jedes Antennensystem verfügt über eine Quelle.  Die Quelle liefert an ihrem Ausgang ein hochfrequentes Signal. Der Ausgang kann entweder symmetrisch oder asymmetrisch sein. Die Ausgangsimpedanz von Quellen kann sehr unterschiedlich sein. Oft befindet sich am Quellenausgang ein Anpassungsnetzwerk. Die Quellenimpedanz kann dadurch an die Leitungsimpedanz anzupassen werden. Die in der Hochfrequenztechnik verwendeten Quellen haben oft einen Innenwiderstand von $50\Omega$. Die Abbildung \ref{fig:asymetrischeQuelle} zeigt eine asymmetrische  Hochfrequenzquelle. Einer der beiden Anschlüsse wird als Massenpotential definiert, der andere Anschluss führt das gewünschte Signal. Der Innenwiderstand der gezeigten Quelle ist $50\Omega$ reell.
 \begin{figure}[!th]
 	\begin{center}
@@ -290,7 +290,7 @@ Symmetrische Quellen haben mehr als zwei  Anschlusspunkte. Sie übertragen das H
 \label{fig:symetrischeQuelle}
 \end{figure}
 \newpage
-\subsection{Zuleitung}
+\section{Zuleitung}
 Darunter versteht man die Verbindung zwischen Quelle und Antenne. Je nach System kommen Zweidrahtleitungen, Koaxialleitungen oder Hohlleiter zum Einsatz. Eine Zweidrahtleitung ist eine symmetrische Verbindung, während ein Koaxialkabel eine asymmetrische Verbindung darstellt.
 Weiter Verbindungstypen sind:
 \begin{itemize}
@@ -333,7 +333,7 @@ Für die Gleichungen \ref{eq:ElektrischeLänge}, \ref{eq:WellenlängeMITc} und \
 \end{enumerate} 
 Besonders vorteilhafte Übertragungseigenschaften hat die längshomogene Leitung. Es handelt sich dabei um eine Leitung, die auf ihrer ganzen Länge einen konstanten Leitungsquerschnitt, gleiches
 Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator hat. Gebräuchliche Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, eine Streifenleitung auf einer Printplatte oder das Koaxialkabel.
-\subsubsection{Leitungsmodell}
+\subsection{Leitungsmodell}
 Um die Zweitoreigenschaften einer längshomogenen Leitung zu ermitteln, wird diese wie in
 Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt. Diese wird in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren unterteilt. Es ist von einer Zweitorkette die Rede.
 \begin{figure}[!ht]
@@ -455,7 +455,7 @@ U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\ome
 I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
 
-\subsection{Anpassung und Reflexionen}\label{sec:AnpassungReflexionen}
+\section{Anpassung und Reflexionen}\label{sec:AnpassungReflexionen}
 Die Anpassung ist nicht nur in der Hochfrequenztechnik ein viel diskutiertes Thema. Auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiedene Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiederstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Ein ganz anderes Ziel verfolgt die Wellenanpassung. Sie kommt immer dann zum Zuge, wenn auf einem Signalpfad die Signalreflexionen an den Übergängen des Mediums verhindert werden.
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
 In diesem Kapitel werden zwei Arten der Anpassung genauer betrachtet. Es sind dies:
@@ -718,14 +718,14 @@ jX_{L}= j\omega L \label{eq:XL} \\  jX_C=\dfrac{-j}{\omega C} \label{eq:XC}
 \label{fig:verlustfreieAnpassung}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Impedanztransformation  einer Leiteung}
+\section{Impedanztransformation  einer Leiteung}
 \todo{Dieses Kapitel ist fakultativ}
 Phasendrehung auf einer Leitung\\
 $\lambda/4$ Leitung\\
 $\lambda$ Leitung\\
 beliebig lange Leitung\\
 Beispiel im Smith Diagramm mit normierten Werten zeigen
-\subsection{Anpassung des  Antennensystems}
+\section{Anpassung des  Antennensystems}
 \todo{beschreiben}
 Welche Möglichkeinten\\
 Leistungsanpssung\\
@@ -739,7 +739,7 @@ Ein möglichst optimales Empfangensverhalten steht im Vordergurnd
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Speisung}\label{sec:Speisung}
+\section{Speisung}\label{sec:Speisung}
 \todo{Speisung und Anpassung auseinanderhalten}
 Unter der Speisung der Antenne wird die Leistungszuführung verstanden. Damit eine Antenne strahlt, muss diese mit einer Spannungswelle angeregt werden. Die Strom und Spannungsverteilung der Antenne ist für das Abstrahlverhalten verantwortlich. 
 
