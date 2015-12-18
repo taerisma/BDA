@@ -1,0 +1,10 @@
+
+BUILD 11057
+
+EXCEPTION [Errno 22] Invalid argument
+Traceback (most recent call last):
+  File "./newkern_2/simul.py", line 225, in main
+  File "./newkern_2/simul.py", line 177, in _main
+  File "./newkern_2/acad.py", line 2343, in do_fdtd
+  File "./newkern_2/logger.py", line 173, in timesteps
+IOError: [Errno 22] Invalid argument

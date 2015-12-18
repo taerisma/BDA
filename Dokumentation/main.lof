@@ -32,38 +32,24 @@
 \contentsline {figure}{\numberline {31}{\ignorespaces Ersatzschaltbild einer Antenne mit $Z_{ant}$\relax }}{39}{figure.caption.54}
 \contentsline {figure}{\numberline {32}{\ignorespaces Vergleich des $S_{11}$\relax }}{41}{figure.caption.55}
 \contentsline {figure}{\numberline {33}{\ignorespaces Vergleich der Impedanz\relax }}{42}{figure.caption.56}
-\contentsline {figure}{\numberline {34}{\ignorespaces $S_{11}$ Diagramm eines Dipols in Freiraum\relax }}{42}{figure.caption.57}
-\contentsline {figure}{\numberline {35}{\ignorespaces Smith Diagramm eines Dipols im Freiraum\relax }}{42}{figure.caption.57}
-\contentsline {figure}{\numberline {36}{\ignorespaces $S_{11}$ eines Dipols mit angrenzendem ABS St\IeC {\"u}ck\relax }}{43}{figure.caption.58}
-\contentsline {figure}{\numberline {37}{\ignorespaces Smith Diagramm eines Dipols mit angrenzendem ABS St\IeC {\"u}ck\relax }}{43}{figure.caption.58}
-\contentsline {figure}{\numberline {38}{\ignorespaces $S_{11}$ eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{43}{figure.caption.59}
-\contentsline {figure}{\numberline {39}{\ignorespaces Smith-Diagramm eines Dipols zwischen zwei ABS St\IeC {\"u}cken\relax }}{43}{figure.caption.59}
-\contentsline {figure}{\numberline {40}{\ignorespaces Flach gestauchte Loop Antenne\relax }}{45}{figure.caption.61}
-\contentsline {figure}{\numberline {41}{\ignorespaces Allgemeines Ersatzschaltbild einer induktiven Antenne\relax }}{45}{figure.caption.62}
-\contentsline {figure}{\numberline {42}{\ignorespaces $S_{11}$ Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{47}{figure.caption.63}
-\contentsline {figure}{\numberline {43}{\ignorespaces Smith Diagramm einer $\lambda /2$ Loop Antenne im Freiraum\relax }}{47}{figure.caption.63}
-\contentsline {figure}{\numberline {44}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops\relax }}{47}{figure.caption.64}
-\contentsline {figure}{\numberline {45}{\ignorespaces $S_{11}$ Diagramm einer $\lambda /2$ Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{48}{figure.caption.65}
-\contentsline {figure}{\numberline {46}{\ignorespaces Smith Diagramm einer $\lambda /2$ Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{48}{figure.caption.65}
-\contentsline {figure}{\numberline {47}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{48}{figure.caption.66}
-\contentsline {figure}{\numberline {48}{\ignorespaces $S_{11}$ Diagramm einer $\lambda /2$ Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{49}{figure.caption.67}
-\contentsline {figure}{\numberline {49}{\ignorespaces Smith-Diagramm einer $\lambda /2$ Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{49}{figure.caption.67}
-\contentsline {figure}{\numberline {50}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{49}{figure.caption.68}
-\contentsline {figure}{\numberline {51}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne im Freiraum\relax }}{50}{figure.caption.69}
-\contentsline {figure}{\numberline {52}{\ignorespaces Smith-Diagramm einer Loop Antenne im Freiraum\relax }}{50}{figure.caption.69}
-\contentsline {figure}{\numberline {53}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim Freiraum\relax }}{50}{figure.caption.70}
-\contentsline {figure}{\numberline {54}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{51}{figure.caption.71}
-\contentsline {figure}{\numberline {55}{\ignorespaces Smith-Diagramm einer Loop Antenne mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{51}{figure.caption.71}
-\contentsline {figure}{\numberline {56}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim und einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{51}{figure.caption.72}
-\contentsline {figure}{\numberline {57}{\ignorespaces $S_{11}$ Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{52}{figure.caption.73}
-\contentsline {figure}{\numberline {58}{\ignorespaces Smith Diagramm einer Loop Antenne mit zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{52}{figure.caption.73}
-\contentsline {figure}{\numberline {59}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim und zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{52}{figure.caption.74}
-\contentsline {figure}{\numberline {60}{\ignorespaces Design Ausgangslage\relax }}{56}{figure.caption.79}
-\contentsline {figure}{\numberline {61}{\ignorespaces Dipol 5mm breit 50.5mm lang\relax }}{58}{figure.caption.83}
-\contentsline {figure}{\numberline {62}{\ignorespaces Dipol 3mm breit 50.25mm lang\relax }}{58}{figure.caption.84}
-\contentsline {figure}{\numberline {63}{\ignorespaces Dipol 1mm breit 51.25mm lang\relax }}{58}{figure.caption.85}
-\contentsline {figure}{\numberline {64}{\ignorespaces Dipol 1mm breit 45.25mm lang mit Dachkapazit\IeC {\"a}t\relax }}{58}{figure.caption.86}
-\contentsline {figure}{\numberline {65}{\ignorespaces Vergleich des $S_{11}$ im Geha\IeC {\"u}se und im Freiraum von Dipolantennen \relax }}{59}{figure.caption.88}
-\contentsline {figure}{\numberline {66}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{63}{figure.caption.89}
-\contentsline {figure}{\numberline {67}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{63}{figure.caption.90}
-\contentsline {figure}{\numberline {68}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{63}{figure.caption.91}
+\contentsline {figure}{\numberline {34}{\ignorespaces Flach gestauchte Loop Antenne\relax }}{44}{figure.caption.58}
+\contentsline {figure}{\numberline {35}{\ignorespaces Allgemeines Ersatzschaltbild einer induktiven Antenne\relax }}{44}{figure.caption.59}
+\contentsline {figure}{\numberline {36}{\ignorespaces Vergleich des $S_{11}$ Werts einer Loop Antenne\relax }}{46}{figure.caption.60}
+\contentsline {figure}{\numberline {37}{\ignorespaces Vergleich der Impedanz einer Loop Antenne\relax }}{47}{figure.caption.61}
+\contentsline {figure}{\numberline {38}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops\relax }}{48}{figure.caption.62}
+\contentsline {figure}{\numberline {39}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{48}{figure.caption.63}
+\contentsline {figure}{\numberline {40}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{49}{figure.caption.64}
+\contentsline {figure}{\numberline {41}{\ignorespaces Vergleich des $S_{11}$ Werts einer Loop Antenne\relax }}{49}{figure.caption.65}
+\contentsline {figure}{\numberline {42}{\ignorespaces Vergleich der Impedanz einer Loop Antenne\relax }}{50}{figure.caption.66}
+\contentsline {figure}{\numberline {43}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim Freiraum\relax }}{51}{figure.caption.67}
+\contentsline {figure}{\numberline {44}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim und einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{51}{figure.caption.68}
+\contentsline {figure}{\numberline {45}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungenim und zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{52}{figure.caption.69}
+\contentsline {figure}{\numberline {46}{\ignorespaces Design Ausgangslage\relax }}{55}{figure.caption.74}
+\contentsline {figure}{\numberline {47}{\ignorespaces Dipol 5mm breit 50.5mm lang\relax }}{57}{figure.caption.78}
+\contentsline {figure}{\numberline {48}{\ignorespaces Dipol 3mm breit 50.25mm lang\relax }}{57}{figure.caption.79}
+\contentsline {figure}{\numberline {49}{\ignorespaces Dipol 1mm breit 51.25mm lang\relax }}{57}{figure.caption.80}
+\contentsline {figure}{\numberline {50}{\ignorespaces Dipol 1mm breit 45.25mm lang mit Dachkapazit\IeC {\"a}t\relax }}{57}{figure.caption.81}
+\contentsline {figure}{\numberline {51}{\ignorespaces Vergleich des $S_{11}$ im Geha\IeC {\"u}se und im Freiraum von Dipolantennen \relax }}{58}{figure.caption.83}
+\contentsline {figure}{\numberline {52}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{62}{figure.caption.84}
+\contentsline {figure}{\numberline {53}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{62}{figure.caption.85}
+\contentsline {figure}{\numberline {54}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{62}{figure.caption.86}

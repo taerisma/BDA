@@ -1,0 +1,19 @@
+Evaluation 
+Dipol mit ABS
+
+Form rund
+länge 52.25mm
+Lücke 2.45mm
+Durchmess 2.44mm
+
+ABS
+(lxbxh)= (100x30x2)mm
+
+
+Radiation   Efficiency (P_rad/P_in)     is 96.093 %
+Total       Efficiency (P_rad/P_in_inc) is 71.118 %
+
+S11 max 2.08 GHz -20.79dB
+-10dB Bandbreit 342 MHz
+
+Zant	141.480+j39.612 bei 2.45GHz

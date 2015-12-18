@@ -1,0 +1,13 @@
+Loop
+1ABS
+ein ABS anliegend an die Antenne
+Platte (lxbxh)=(100x30x2)mm
+
+Kupfer Quader 22mm lang 10mm hoch 1 mm tief
+
+Zant 27.699+j433.465 bei 2450MHz
+S11max 4.4138 GHz -15.4191 dB
+-10dB Bandbreite 335 MHz
+Effizienz
+95.939 %
+2.74%

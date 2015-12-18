@@ -1,0 +1,17 @@
+Loop
+3 Widungen
+1 ABS Kunststoffstück
+ABS Platte direkt an Antenne
+(lxbxh)=(100x30x2)
+
+3 Winungen L= 48.6mm
+Höhe = 10mm
+Tiefe= 1mm
+Gesammt Länge 291.75mm
+
+Zant 19.786-j49.049 bei 2450MHz
+S11max  2.5232 GHz  -14.2478dB
+-10dB Bandbreite 51 MHz
+Effizienz
+54.3%
+29.5%

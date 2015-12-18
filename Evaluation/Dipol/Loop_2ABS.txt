@@ -1,0 +1,12 @@
+Loop
+2ABS
+ein ABS anliegend das ander 1 mm Abstand
+
+Kupfer Quader 22mm lang 10mm hoch 1 mm tief
+
+Zant 24.479+j379.9 bei 2450MHz
+S11max 4.3007 GHz -13.2034 dB
+-10dB Bandbreite 278 MHz
+Effizienz
+95.64 %
+3.12%
