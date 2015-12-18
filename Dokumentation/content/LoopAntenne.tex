@@ -76,6 +76,15 @@ Wenn $a/\lambda = 0.03$ ist, dann wird der $R_{rad} = 0.25\Omega$. Als Vergleich
 	\draw[line width=0.4pt, ->, >=latex](9, 3) -- (10.1, 3) node at (10.5,3){x};
 	\node[draw] at (5,6.5) {$\theta=0$};
 	\node[draw] at (8,5.5) {$E_{\varphi}(\theta)$};
+	
+	%%%%%%
+	%vetor Pfeil
+		\draw[line width=0.4pt, ->, >=latex](5, 3) -- (7, 5) node at (7,4.7){$\vec{r}$};
+
+	\coordinate (A) at (5, 5.5);
+	\coordinate (B) at (6.4, 4.5);
+	\coordinate (a) at (5.6, 5.4);
+	\draw[line width=0.5pt, dashed, very thick,cap=round,->](A) .. controls (a) .. node[above] {$\theta$} (B);
 \end{tikzpicture}
 \end{center}
 \caption{E Feld einer Loop Antenne in der xz Ebene}

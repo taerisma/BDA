@@ -98,7 +98,7 @@ Das Ersatzschaltbild in der Abbildung \ref{fig:ESBantenne} zeigt die wesentliche
 \item $R_{rad}$
 \item $Z_{ant}$
 \end{itemize}
-\newpage
+
 Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in die Geräte der "Connect 1" \  Serie zu berücksichtigen  sind:
 \begin{itemize}
 \item Directivity D
@@ -459,9 +459,11 @@ Die Abbildung \ref{fig:S11_Dipol_freiraum_1} zeigt das $S_{11}$ Diagramm eines D
 
 In der Abbildung \ref{fig:S11_Dipol_ABS_3} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kunststoffstück im Nahfeld gezeigt. Das ABS Stück hat die Masse: 100 x 2 x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz in der Abbildung \ref{fig:S11_Dipol_ABS_3}. Der maximale $S_{11}$ Wert liegt neu 400 MHz tiefer bei 2.04 GHz. Der maximale $S_{11}$ Wert bei dieser Frequenz beträgt  neu -20.79 dB. Die -10dB Bandbreite beträgt 340 MHz.\\
 
+Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpassung. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil ist mit $+j39$ Ohm induktiv.\\
+\textbf{Simulationen einer $\lambda/2$ Dipolantenne mit zwei ABS Kunststoffstücken im Nahfeld}\\
 
-
-Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpassung. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil ist mit $+j39$ Ohm induktiv.
+Die dritte Simulation zeigt das $S_{11}$ und das Smith-Diagramm der Antenne. Diese liegt zwischen zwei ABS Kunststoffstücken. Es zeigt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück. Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 180 MHz tiefer. Die Abbildung  \ref{fig:S11_Dipol_Zwei_ABS_5} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz.\\
+Das Smith-Diagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt  bei $59.6 \%$.
 %\begin{figure}[!h]
 %\begin{center}
 %\minipage{0.4\textwidth}
@@ -475,11 +477,8 @@ Das Smith Diagramm in Abbildung \ref{fig:Smith_Dipol_ABS_4} zeigt die Fehlanpass
 %\end{center}
 %\end{figure}
 
-\newpage
-\textbf{Simulationen einer $\lambda/2$ Dipolantenne mit zwei ABS Kunststoffstücken im Nahfeld}\\
 
-Die dritte Simulation zeigt das $S_{11}$ und das Smith-Diagramm der Antenne. Diese liegt zwischen zwei ABS Kunststoffstücken. Es zeigt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück. Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 180 MHz tiefer. Die Abbildung  \ref{fig:S11_Dipol_Zwei_ABS_5} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz.\\
-Das Smith-Diagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt  bei $59.6 \%$.
+
 
 %\begin{figure}[!h]
 %\begin{center}
@@ -493,6 +492,8 @@ Das Smith-Diagramm in der Abbildung \ref{fig:Smith_Dipol_Zwei_ABS_6} zeigt eine 
 %\endminipage
 %\end{center}
 %\end{figure}
+\clearpage
+\newpage
 
 \subsubsection{Vergleich aus den Simulatioen der Dipolantennen}
 Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Weiter zeigt es das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe. Der Kunststoff im Nahfeld der Antenne hat dieselbe Wirkung auf die Resonanzfrequenz wie das Verlängern der  Strahlerlänge. Das bedeutet, die Resonanzfrequenz $f_{r}$ sinkt.  Die beiden Kunststoffstücke haben eine Verschiebung des maximalen $S_{11}$ Werts von 600 MHz verursacht. Das bedeutet, die $v_p$ muss um 25\% kleiner sein als $c_0$.
@@ -667,27 +668,7 @@ Es wurden wie beim der Dipol Antenne in Kapitel \ref{sim_lamda2_Dipol}\ drei Sim
 \textbf{$\lambda/2$ Loop Antenne im Freiraum}\\
 Die Resonanzfrequenz einer $\lambda/2$ langen Leiterschleife im Freiraum ist in der Abbildung  \ref{fig:S11_Loop_Lambda2_freiraum_1} gezeigt. Sie liegt bei dieser Simulation bei 5.84 GHz.  Bei 5.84 GHz zeigt die Antenne einen $S_{11}$ Wert von mehr als -25dB. Die -10dB Bandbreite beträgt 400 MHz.\\
 Das Smith Diagramm in  Abbildung \ref{fig:Smith_Loop_Lambda2_freiraum_2} zeigt die Fehlanpassung klar auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 6225 Ohm bei einer Frequenz von 2.45 GHz. Deshalb ist der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt des Smith-Diagramm. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer total Reflexion. Der Reflexionsfaktor $\Gamma$ ist in diesem Fall 1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$.\\
-%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]
-	\centering
-	\begingroup
-	\inputencoding{latin1}
-	\input{content/bilder/Evaluation/S11_Loop.tex}
-	\endgroup
-	\caption{Vergleich des $S_{11}$ Werts einer Loop Antenne}
-	\label{S11_Loop_Vergleich_Simulation}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]
-	\centering
-	\begingroup
-	\inputencoding{latin1}
-	\input{content/bilder/Evaluation/Impedanz_Loop.tex}
-	\endgroup
-	\caption{Vergleich der Impedanz einer Loop Antenne}
-	\label{Impedanz_Loop_Vergleich_Simulation}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %\begin{figure}[!h]
 %\begin{center}
@@ -784,7 +765,31 @@ Die Abstrahleffizienz ist kanpp über $3\%$. Die erhebliche Fehlanpassung macht 
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+	\centering
+	\begingroup
+	\inputencoding{latin1}
+	\input{content/bilder/Evaluation/S11_Loop.tex}
+	\endgroup
+	\caption{Vergleich des $S_{11}$ Werts einer Loop Antenne}
+	\label{S11_Loop_Vergleich_Simulation}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+	\centering
+	\begingroup
+	\inputencoding{latin1}
+	\input{content/bilder/Evaluation/Impedanz_Loop.tex}
+	\endgroup
+	\caption{Vergleich der Impedanz einer Loop Antenne}
+	\label{Impedanz_Loop_Vergleich_Simulation}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
 \newpage
 \subsubsection{Simulierte 3D Richtdiagramme der Loop Antenne}
 {
@@ -878,28 +883,36 @@ Die Abbildung \ref{fig:sim_Loop_3Fach_freiraum_3D} zeigt das 3D Richtdiagramm. D
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\subsubsection{Simulierte 3D Richtdiagramme}
-{
-\centering
-\includegraphics[width=0.6\textwidth, height=4cm]{content/bilder/Evaluation/Loop/ohneABS/EM_Far_Field_Loop_Coil_ohneABS.JPG}
-\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit  drei Windungenim Freiraum}
-\label{fig:sim_Loop_3Fach_freiraum_3D}
-\medskip
-\includegraphics[width=0.6\textwidth, height=4cm]{content/bilder/Evaluation/Loop/Mit1ABS/EM_Far_Filed_Loop_Coil_1ABS.JPG}
-\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit  drei Windungenim und einem ABS Stück im Nahfeld}
-\label{fig:sim_Loop_3Fach_1ABS_3D}
-\medskip
-\includegraphics[width=0.6\textwidth, height=4cm]{content/bilder/Evaluation/Loop/Kurz3/EMFraField_Loop_2ABS_kurz3.JPG}
-\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit  drei Windungenim und zwei ABS Stücken im Nahfeld}
-\label{fig:sim_Loop_3Fach_2ABS_3D}
-%\medskip
-%\includegraphics[width=0.6\textwidth, height=4cm]{Abb/V104.png}
-%\captionof{figure}{Messwerte des Versuches IV}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
+\clearpage
+\subsubsection{Simulierte 3D Richtdiagramme einer Loop Antenne mit drei Windungen}
+Das Richtdiagramm der dreifachen windungen mit einem angrenzendem Kusststoffstück ist in Abbildung \ref{fig:sim_Loop_3Fach_1ABS_3D} gezeigt. Die maximale Richtcharakteristik weisst einen Wert von 4.55dBi auf.
+%%%%%%%%
+\begin{figure}[h]
+	\begin{center}
+		\begin{minipage}[t]{\textwidth}
+			\begin{center}
+				\includegraphics[width=0.6\textwidth, height=4cm]{content/bilder/Evaluation/Loop/ohneABS/EM_Far_Field_Loop_Coil_ohneABS.JPG}
+				\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit  drei Windungenim Freiraum}
+				\label{fig:sim_Loop_3Fach_freiraum_3D}
+			\end{center}
+		\end{minipage}
+		\begin{minipage}[t]{\textwidth}
+			\begin{center}
+				\includegraphics[width=0.6\textwidth, height=4cm]{content/bilder/Evaluation/Loop/Mit1ABS/EM_Far_Filed_Loop_Coil_1ABS.JPG}
+				\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit  drei Windungenim und einem ABS Stück im Nahfeld}
+				\label{fig:sim_Loop_3Fach_1ABS_3D}
+			\end{center}
+		\end{minipage}
+		\begin{minipage}[t]{\textwidth}
+			\begin{center}
+				\includegraphics[width=0.6\textwidth, height=4cm]{content/bilder/Evaluation/Loop/Kurz3/EMFraField_Loop_2ABS_kurz3.JPG}
+				\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit  drei Windungenim und zwei ABS Stücken im Nahfeld}
+				\label{fig:sim_Loop_3Fach_2ABS_3D}
+			\end{center}
+		\end{minipage}
+	\end{center}
+\end{figure}
+%%%%%%%
 
 %\begin{figure}[!h]
 %\begin{center}
@@ -915,7 +928,7 @@ Die Abbildung \ref{fig:sim_Loop_3Fach_freiraum_3D} zeigt das 3D Richtdiagramm. D
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 
-Das Richtdiagramm der dreifachen Schleife mit einem angrenzendem Kusststoffstück ist in Abbildung \ref{fig:sim_Loop_3Fach_1ABS_3D} gezeigt. Die maximale Richtcharakteristik weisst einen Wert von 4.55dBi auf.
+
 %%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[h]
 %	\centering
