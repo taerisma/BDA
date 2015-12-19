@@ -1,18 +1,16 @@
 \newpage
 \chapter{Theorie}
 %\section{Theorie}
-\section{Elementare Strahler}
-Es gibt zwei elementare Strahler. Der eine stellt eine E Feld Antenne dar, der andere eine H Feld Antenne. Die beiden elementaren Strahler lassen sich nicht praktisch fertigen. Sie dienen nur für theoretische Überlegungen. 
-\section{Hertzscher Dipol }
-Ein elektrisch kurzer Linearstrahler kann als konzentriertes Element betrachtet werden. Auf seiner gesamten Länge kann ein Strom mit der komplexen Amplitude $I$ und eine räumlich konstante Stromverteilung, die zeitlich sinusförmig schwingt, angenommen werden. Es stellt sich ein kurzer Stromfaden ein, dessen Stromrichtung von der Polarisierung der Dipole abhängt und somit mit $\omega $ die Richtung wechselt. 
-Der Hertzsche Dipol bildet den elementaren Elektrischen Dipol. Man kann ihn sich als sehr kurze Stabantenne vorstellen. Der Betrag des Dipolmoments \textit{p(t)} eines Hertzschen Dipols ist als \textit{p}=\textbf{Q}\textit{d}\textbf{\textbf{l}} in der Formel \ref{Dipolmoment} beschrieben \cite{Emant}. Der Scheitelwert $\hat{i}$ des Stromes  oszilliert mit der Kreisfrequenz  $\omega$.
+\section{Elementare Strahler}\label{sec:ElementareStrahler}
+Es gibt zwei elementare Strahler. Der eine stellt eine E Feld Antenne dar, der andere eine H Feld Antenne. Die beiden elementaren Strahler lassen sich nicht praktisch fertigen. Sie dienen nur für theoretische Überlegungen. Sie bilden jedoch die Grundlage sämtlicher realen Antennen.
+\section{Hertzscher Dipol}
+Ein elektrisch kurzer Linearstrahler kann als konzentriertes Element betrachtet werden. Auf seiner gesamten Länge kann ein Strom mit der  Amplitude $I$ und eine räumlich konstante Stromverteilung, die zeitlich sinusförmig schwingt, angenommen werden. Es stellt sich ein kurzer Stromfaden ein, dessen Stromrichtung von der Polarisierung der Dipole abhängt und somit mit $\omega $ die Richtung wechselt. 
+Der Hertzsche Dipol bildet den elementaren Elektrischen Dipol. Man kann ihn sich als eine sehr kurze Stabantenne vorstellen. Der Betrag des Dipolmoments \textit{p(t)} eines Hertzschen Dipols ist als $\textit{p}=Q\textit{d}l$ in (\ref{Dipolmoment}) beschrieben \cite{Emant}. Der Scheitelwert $\hat{i}$ des Stromes  schwingt mit der Kreisfrequenz  $\omega$.
 
 \begin{equation}\label{Dipolmoment}
 p(t)=pe^{j\omega t} = Q dl e^{j\omega t} = \frac{\hat{i} dl}{j\omega }e^{j\omega t}
 \end{equation}
-
-Ist ein Hertzscher Dipol unendlich dünn und in einem xyz Koordinatensystem im Ursprung und in die z Richtung ausgerichtet so gilt:\\
-Es bildet sich ein E Feld vom positiven Ladungspunkt zum negativen Ladungspunkt. Die Potentiale der Ladungspunkte oszillieren mit $\omega$. 
+Ist ein Hertzscher Dipol unendlich dünn und in einem xyz Koordinatensystem im Ursprung und in die z Richtung ausgerichtet, so bildet sich ein E Feld vom positiven  zum negativen Ladungspunkt. Die Potentiale der Ladungspunkte oszillieren mit $\omega$. Die Ausrichtung der E Feldlinien wechselt bei jeder Schwingung ihre Richtung. Im Nahfeld dominiert das E Feld. Mit wachsendem Abstand von dem Strahler, sind das E Feld und das H Feld senkrecht zueinander und in Phase. Dabei können das E und H Feld als ebene Welle betrachtet werden. Die allgemeine Formel für die Feldverteilung im Kugelkoordinaten System lautet \cite{elliott1981antenna}:
 %\begin{center}
 %\begin{minipage}{\linewidth}
 %\centering
@@ -21,13 +19,7 @@ Es bildet sich ein E Feld vom positiven Ladungspunkt zum negativen Ladungspunkt.
 %\end{minipage}
 %\end{center}
 
-\todo{ev Dipol neu Zeichen}
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=4cm]{content/bilder/HerzDipolEMANTS37.pdf}%
-	\caption{Hertzscher Dipol mit dem Dipolmoment \textit{p(t)} \cite{Emant}}
-	\label{HerzDipol}
-\end{figure}
+
 
 %\begin{figure}[htbp]
 %	\centering
@@ -35,7 +27,7 @@ Es bildet sich ein E Feld vom positiven Ladungspunkt zum negativen Ladungspunkt.
 %	\caption{Wellenimpdedanz Z0}%
 %	\label{Z0_Grafik}
 %\end{figure}
-Die Ausrichtung der E Feldlinien wechselt bei jeder Schwingung ihre Richtung. Im Nahfeld dominiert das E Feld. Mit wachsendem Abstand sind das E Feld und das H Feld senkrecht aufeinander und in Phase. Dabei können das E und H Feld als ebene Welle betrachtet werden. Die allgemeine Formel für die Feldverteilung im Kugelkoordinaten System lautet \cite{elliott1981antenna}:
+
 
 
 
@@ -51,8 +43,15 @@ E_\theta= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{j\omega \mu}{R}  + \frac{n}{
 H_\varphi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R}  + \frac{n}{R^{2}}\right) sin(\theta)
 \end{equation}
 
-\newpage
-Mit wachsendem Abstand können einige Terme vernachlässigt werden. Alle Terme, in denen der Abstand R in höherer Potenz vorkommt, werden vereinfacht zu Null. Für das Fernfeld ergeben sich die folgenden Beschreibungen:
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=4cm]{content/bilder/HerzDipolEMANTS37.pdf}%
+	\caption{Hertzscher Dipol mit dem Dipolmoment \textit{p(t)} \cite{Emant}}
+	\label{HerzDipol}
+\end{figure}
+
+
+Mit wachsendem Abstand können einige Terme vernachlässigt werden. Alle Terme, in denen der Abstand R in höherer Potenz vorkommt, werden vereinfacht zu Null. Für das Fernfeld ergeben sich die folgenden Beschreibungen \cite{elliott1981antenna}:
 
 
 \begin{equation}
@@ -66,19 +65,12 @@ E_\theta= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{j\omega \mu}{R}  \right) sin
 \begin{equation}
 H_\varphi= \frac{I dl}{4\pi}   e^{-jkR} \left( \frac{jk}{R} \right) sin(\theta)
 \end{equation}
-In weiter Ferne vom Elementaren Strahler sind die Feldanteile $E_r$ soweit abgeklungen, dass sie als Null angenommen werden. Es bleibt ein E Feld Vektor und ein H Feld Vektor übrig. Vereinfacht können die beiden E und H Vektoren als phasengleich und senkrecht zueinander angenommen werden. Sie werden sich soweit im Raum ausbreiten, bis ihre gesamte Energie absorbiert ist. Das bedeutet, die Amplituden der E und H Vektoren werden Null.\\
+In weiter Ferne vom Elementaren Strahler sind die Feldanteile von $E_r$ soweit abgeklungen, dass sie als Null angenommen werden. Es bleibt ein E Feld Vektor und ein H Feld Vektor übrig. Vereinfacht können die beiden E und H Vektoren als phasengleich und senkrecht zueinander angenommen werden. Sie werden sich soweit im Raum ausbreiten, bis ihre gesamte Energie absorbiert ist. Das bedeutet, die Amplituden der E und H Vektoren werden Null.\\
+Für alle Antennen, die eine lange und dünne Geometrie besitzen, wie zum Beispiel die Monopolantennen, die Dipolantennen oder die Faltdipole bildet der Hertzsche Dipol die Grundlage der Feldausbreitung. Die Ausdehnung des Elementaren Strahlers ist auf eine Länge der strahlenden Struktur von etwa $100\mu m$ beschränkt. Das bedeutet, der Gültigkeitsbereich der in dieser Arbeit gezeigten Formeln und Beschreibungen führen bis einer Frrequenz von 3 THz. Da die Wellenlänge $\lambda$ bei ca. 3 THz einer Länge von 100$\mu m$ entspricht.\\
+Die Elektromagnetischen Felder eines Hertzschen Dipols werden oft in Kugelkoordinaten beschrieben. Jeder Punkt kann mit einem Vektor $\vec{r}$ mit dem Start Punkt im Ursprung beschrieben werden. Die Spitze des Vektor $\vec{r}$ kann in die xy Ebene projiziert werden. Der Winkel $\varphi$, gesprochen phi, liegt in der xy Ebene und startet bei der positiven x Achse. Er kann Werte von $\pm \pi$ erreichen und deckt somit $360^\circ$ ab. Der Winkel $\theta$, gesprochen theta, gibt die Neigung  des Vektors $\vec{r}$ zu der positiven z Achse an. Ein Vektor $\vec{r}$ ist in der Abbildung \ref{FerdVektor} gezeigt.
 
-Für alle Antennen, die eine lange und dünne Geometrie besitzen, wie zum Beispiel die Monopolantennen, die Dipolantennen oder die Faltdipole bildet der Hertzsche Dipol die Grundlage der Feldausbreitung. Die Ausdehnung des Elementaren Strahlers ist auf eine Länge der strahlenden Struktur von etwa $100\mu m$ beschränkt. Das bedeutet, der Gültigkeitsbereich der in dieser Arbeit gezeigten Formeln und Beschreibungen führen bis 3 THz.
 
 
-%Die Terme mit R in der zweiten oder dritten Potenz fallen für das Fernfeld weg. Da im Fernfeld der Radius R so gross ist, dass diese Terme vernachlässig werden. 
-%Das Fernfeld kann wie folgt beschrieben werden:
-%
-%Formel:
-%
-%Die beiden elementaren Strahler können nicht technisch realisiert werden, aber sie sind sehr wichtig für das Verhalten von realen Antennen. Denn wenn reale Antennen verein-facht werden oder wenn sehr kleine Teilstücke von realen Antennen betrachtet werden, so verhalten sie sich oft wie die elementaren Dipole. 
-%
-%Die Dipolantenne und die Rahmen Antenne sind den beiden Elementaren Strahleren nachempfunden und sollen im nächsten Abschnitt genauer betrachtet werden.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
@@ -118,7 +110,7 @@ Für alle Antennen, die eine lange und dünne Geometrie besitzen, wie zum Beispi
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Die Elektromagnetischen Felder eines Hertzschen Dipols werden oft in Kugelkoordinaten beschrieben. Jeder Punkt kann mit einem Vektor $\vec{r}$ mit dem Start Punkt im Ursprung beschrieben werden. Die Spitze des Vektor $\vec{r}$ kann in die xy Eben projiziert werden. Der Winkel $\varphi$, gesprochen phi, kann Werte $\pm \pi$ haben und deckt somit $360^\circ$ ab. Der Winkel $\theta$, gesprochen theta, gibt die Neigung  der positiven z Achse an.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[h]
 %\begin{center}
@@ -168,34 +160,36 @@ Die Elektromagnetischen Felder eines Hertzschen Dipols werden oft in Kugelkoordi
 
 \newpage
 \section{Fitzgeraldscher Dipol }\label{sec:FitzgeraldescherDipol}
-Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromverteilung besitzt, wird Fitzgeraldscher Dipol genannt. Dieser Dipol ist das Gegenstück zum Hertzschen Dipol und stellt somit den zweiten der beiden elementaren Strahler dar. Die Leiterschleife ist oft in der xy Ebene angeordnet. Da der Strom oszilliert, ist er als \textit{i(t)} gekennzeichnet. Der Strom \textit{i(t)} führt in einem Kreis im Abstand a um das Zentrum.\\ 
+Eine unendlich dünne Leiterschleife, die auf der ganzen Länge dieselbe Stromverteilung besitzt, wird Fitzgeraldscher Dipol genannt. Dieser Dipol ist das Gegenstück zum Hertzschen Dipol und stellt somit den zweiten der beiden elementaren Strahler dar. Die Leiterschleife ist oft in der xy Ebene angeordnet.Es wird von einer Schleife gesprochen, da der Strom $I$ wie in einer Spule mit nur einer Windung geführt wird. Da der Strom oszilliert, ist er als \textit{i(t)} gekennzeichnet. Der Strom \textit{i(t)} führt in einem Kreis im Abstand a um das Zentrum.
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=4cm]{content/bilder/Fitzgerald_Dipol_EMANT_S37.pdf}%
+	\includegraphics[width=5.2cm]{content/bilder/Fitzgerald_Dipol_EMANT_S37.pdf}%
 	\caption{Fitzgeraldscher Dipol \cite{Emant}}
 	\label{FitzDipol_elementar_Loop}
 \end{figure}
-\todo{ev. Loop selber zeichen}
- Im Zentrum bildet sich ein magnetisches, zeitabhängiges Moment \textit{m(t)}.\\
- Wenn der Hertzsche Dipol eine E Feld Antenne genannt wird, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. In der unmittelbaren Nähe der Leitschleife bildet sich ein sehr starkes Magnetfeld aus. Das Nahfeld des Fitzgeraldschen Dipols wird wie folgt beschrieben\cite{elliott1981antenna}:
+\newpage
+Im Zentrum bildet sich ein magnetisches, zeitabhängiges Moment \textit{m(t)}. Wenn der Hertzsche Dipol eine E Feld Antenne darstellt, so ist der Fitzgeraldsche Dipol eine H Feld Antenne. In der unmittelbaren Nähe der Leitschleife bildet sich ein sehr starkes Magnetfeld aus. Das Nahfeld des Fitzgeraldschen Dipols wird mit den folgenden drei Formeln (\ref{Fitz_Nah_Hr}, \ref{Fitz_Nah_Etheta} und \ref{Fitz_Nah_Ephi}) wie folgt beschrieben\cite{elliott1981antenna}:
 
 
 \begin{equation}
 H_r= \frac{I S}{2\pi}   e^{-jkR} \left( \frac{jk}{R^{2}}  + \frac{1}{R^{3}} \right) cos(\theta)
+\label{Fitz_Nah_Hr}
 \end{equation}
 
 \begin{equation}
 H_\theta= \frac{I S}{4\pi}   e^{-jkR} \left(- \frac{k^{2}}{R}  + \frac{jk}{R^{2}}+ \frac{1}{R^{3}} \right) sin(\theta)
+\label{Fitz_Nah_Etheta}
 \end{equation}
 
 \begin{equation}
 E_\phi= \frac{I S}{4\pi}   e^{-jkR} \left( \frac{k^{2}}{R}  - \frac{jk}{R^{2}} \right) sin(\theta)
+\label{Fitz_Nah_Ephi}
 \end{equation}
-Das zeitabhängige magnetische Moment \textit{m(t)} ergibt sich durch die Multiplikation der durch die Windungn aufgespannten Fläche $a^{2}\pi=S$ und dem konstanten Schleifenstrom $I$.Der Wert $I$ ist auf der ganzen Windung konstant. Dank der Annahme des konstanten Stroms kann wie in Gleichung \ref{eq:magnetischesMoment} das magnetische Moment berechnet werden \cite{Harrington-TimeHarmonic}. 
+Das zeitabhängige magnetische Moment \textit{m(t)} ergibt sich durch die Multiplikation der durch die Windungn aufgespannten Fläche $a^{2}\pi=S$ und dem  Schleifenstrom $I$. Der Strom $I$ ist auf der ganzen Windung konstant. Dank der Annahme des konstanten Stroms kann wie aus (\ref{eq:magnetischesMoment}) gezeigt, das magnetische Moment $m(t)$ berechnet werden \cite{Harrington-TimeHarmonic}. 
 \begin{equation}\label{eq:magnetischesMoment}
 Ia^{2}\pi=IS=m
 \end{equation}
-Die Terme mit R in der zweiten oder dritten Potenz fallen für das Fernfeld weg. Da im Fernfeld der Radius R  gross ist, können diese Terme vernachlässigt werden. 
+Die Terme mit R in der zweiten oder dritten Potenz fallen für das Fernfeld aus (\ref{Fitz_Nah_Hr}, \ref{Fitz_Nah_Etheta} und \ref{Fitz_Nah_Ephi}) weg. Da im Fernfeld der Radius R  sehr gross ist, können diese Terme vernachlässigt werden. Die Amplituden des E und H Feldes mit dem wachsendem Abstand $R$ um den Faktor $1/R$ sinken.
 Das Fernfeld kann wie folgt beschrieben werden:
 
 \begin{equation}
@@ -209,16 +203,17 @@ H_\theta= \frac{I S}{4\pi}   e^{-jkR} \left(- \frac{k^{2}}{R}   \right) sin(\the
 \begin{equation}
 E_\varphi= \frac{I S}{4\pi}   e^{-jkR} \left( \frac{k^{2}}{R}   \right) sin(\theta)
 \end{equation}
-Wie beim Hertzschen Dipol fällt mit wachsendem Abstand R ein $H_r$ Anteil weg. Bis zur vollständigen Absorption bleiben die orthogonalen $ E_\varphi $ und $ H_\theta $ Feldvektoren übrig.
-Die beiden elementaren Strahler können nicht technisch  realisiert werden, aber sie sind sehr wichtig für das Verhalten und Verständnis von realen Antennen. Wenn reale Antennen vereinfacht werden oder  sehr kleine Teilstücke von realen Antennen betrachtet werden,  verhalten sie sich  wie die elementaren Dipole. \\
+Wie beim Hertzschen Dipol fällt mit wachsendem Abstand R ein $H_r$ Anteil weg. Bis zur vollständigen Absorption bleiben die orthogonalen $ E_\varphi $ und $ H_\theta $ Feldvektoren übrig.\\
+Wie zu Beginn dieses Kapitel \ref{sec:ElementareStrahler} erwähnt, können die beiden elementaren Strahler können nicht technisch  realisiert werden, aber sie sind sehr wichtig für das Verhalten und Verständnis von realen Antennen. Wenn reale Antennen vereinfacht werden oder man sehr kleine Teilstücke von realen Antennen betrachtet,  verhalten sie sich  wie die elementaren Dipole. \\
 Die Dipolantenne und die Rahmenantenne sind den beiden elementaren Strahlern nachempfunden und sollen im nächsten Abschnitt genauer betrachtet werden.
-
+\newpage
+Die Abbildung \ref{LoopFerdVektor} zeigt eine Fitzgeraldscher Dipol als Leiterschleife in der xy Ebene Sein Zentrum bildet der Ursprung vom Koordinatensystem und ist mit Null gekennzeichnet. Ebenfalls ist ein $\vec{r}$ mit entsprechenden Projektionslinien zur z Achse und auf die xy Eben gezeichnet. An der Spitze des $\vec{r}$ sind die Feldvektoren $H_{r}, H_{\theta} \  und H_{\varphi}$ mit den entsprechenden Einheitsvektoren $\vec{e}$ gezeichnet.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
 \begin{center}
 \begin{tikzpicture}
 	\draw (4,4) -- (3,2)node at (3, 1.7) {X};%Fadenkreuz x
-	\draw (4,4) node at(3.5,4) {0} -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
+	\draw (4,4) node at(3.75,4) {0} -- (7,4)node at (7.3, 4) {Y};%Fadenkreuz y
 	\draw (4,4) -- (4,7.5)node at (3.7, 7.8) {Z};%Fadenkreuz z
 	
 	\draw[line width=1pt, ->, >=latex](4, 4)  -- (3.5, 3) node at (3.2, 3) {x};
@@ -243,15 +238,15 @@ Die Dipolantenne und die Rahmenantenne sind den beiden elementaren Strahlern nac
 	\coordinate (C) at (3.7, 3.4);
 	\coordinate (D) at (4.7, 3.5);
 	\coordinate (c) at (4.1, 3.3);
-	\draw[line width=0.5pt, cap=round,->](C) .. controls (c) .. (D) node at (4.2, 3.2){$\phi$};
+	\draw[line width=0.5pt, cap=round,->](C) .. controls (c) .. (D) node at (4.2, 3.2){$\varphi$};
 	
 	%Einheitsvektoren
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.8) node at (6.5, 7) {$\vec{H_{r}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 5.6) node at (6.5, 5.4) {$\vec{H_{\theta}}\vec{e}$};
-	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.3) node at (6.5, 6.1) {$\vec{E_{\phi}}  \vec{e}$};
+	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.8) node at (6.5, 7) {$H_{r}\vec{e}$};
+	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 5.6) node at (6.5, 5.4) {$H_{\theta}\vec{e}$};
+	\draw[line width=1pt, ->, >=latex](5.5, 6)  -- (6.1, 6.3) node at (6.5, 6.1) {$E_{\varphi} \vec{e}$};
 	
 	%Antenne Loop
-\draw[line width=3pt](4, 4) circle (0.3);
+\draw[line width=3pt](4, 4) ellipse (0.8 and 0.4);
 \end{tikzpicture}
 \end{center}
 \caption{Loop Antenne mit Feldvektor und Einheitsvektoren}

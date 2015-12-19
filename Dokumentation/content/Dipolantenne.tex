@@ -1,6 +1,6 @@
-\newpage
+
 \section{Dipolantenne}\label{sec:DipolAntenne}
-Der zentral gespeiste Dipol besteht meistens aus zwei runden Leiterstäben mit dem Durchmesser $d$ und der Länge $l$. Die beiden Stäbe haben eine gesamte Länge von $2l$. Die  Stäbe liegen so aneinander, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe ist viel grösser als  der Durchmesser $d$. Wird eine Spannung  in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesamte Länge. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird englisch \textit{Transmission Line} genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungsunabhängige Kugelwelle betrachtet werden \cite{elliott1981antenna}.
+Der zentral gespeiste Dipol besteht oft aus zwei runden Leiterstäben mit dem Durchmesser $d$ und der Länge $l$. Die beiden Stäbe haben eine gesamte Länge von $2l$. Die  Stäbe liegen so aneinander, dass in der Mitte der beiden Stäbe eine kleine Lücke entsteht. Die gesamte Länge der beiden Stäbe ist viel grösser als  der Durchmesser $d$. Wird eine Spannung  in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesamte Länge. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird englisch \textit{Transmission Line} genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung entlang der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In erster Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungsunabhängige Kugelwelle betrachtet werden \cite{elliott1981antenna}.
 %E^j(wt-kr)/4pimu^-1 r
 %Elliot Seite 29 Nr1.93
 
@@ -17,15 +17,15 @@ Der zentral gespeiste Dipol besteht meistens aus zwei runden Leiterstäben mit d
 	\label{FitzDipol}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Die Stromausbreitung in der Dipolantenne entspricht der Stromverteilung einer am Ende offenen Zweidrahtleitung. Die Enden der Zweidrahtleitung weden um $90^\circ$  von der der Leitung abgewinkelt. Das offene Ende der Leitung führt zu einer Reflexion der zuführenden Welle in die umgekehrte Richtung und somit zu einer stehenden Welle in der Leitung. Stromführende Elemente, die nahe beieinander liegen und deren Amplituden gleich aber gegenläufig sind, strahlen nur gering. Dies sind Eigenschaften einer guten Zweidrahtleitung. Die voneinander abgewinkelten Leitungsenden strahlen stark.
+Die Stromausbreitung in der Dipolantenne entspricht der Stromverteilung einer am Ende offenen Zweidrahtleitung. Die Enden der Zweidrahtleitung werden um $90^\circ$  von der  Leitung abgewinkelt. Das offene Ende der Leitung führt zu einer Reflexion der zuführenden Welle in die umgekehrte Richtung und somit zu einer stehenden Welle in der Leitung. Stromführende Elemente, die nahe beieinander liegen und deren Amplituden gleich aber gegenläufig sind, strahlen nur gering. Dies sind Eigenschaften einer guten Zweidrahtleitung. Die voneinander abgewinkelten Leitungsenden strahlen stark.
 Als Näherung für die Stromverteilung in den Leitungsenden soll folgendes gelten \cite{elliott1981antenna}:
 \begin{equation}\label{I_xt_Dipol} 
 I(x,t) =I_{m}sin([k(l-x)])e^{j\omega t}
 \end{equation}
 %Elliot Seite 59 Formel 2.1
 \todo{S59 Formel 2.1}
-Aus Formel \ref{I_xt_Dipol} kann entnommen werden, dass sich der Strom entlang der Dipolarme ändert. Die Stromverteilung ist somit vom Betrachtungsort $x$ und dem Zeitpunkt $t$ abhängig.\\
-Bei einem Dipol mit dem Durchmesser $d<<\lambda$ wird dieser zu einem dünnen Stromfaden. Die Stromdichte im Leiter kann \textbf{J}\textit{d}\textbf{\textbf{V}} mit \textbf{I}\textit{d}\textbf{\textbf{l}} als Stromelement ersetzt werden. Die Summe der Elementardipole mit konstantem Strom können als Quelle betrachtet werden \cite{elliott1981antenna}.\\
+Aus  (\ref{I_xt_Dipol}) kann entnommen werden, dass sich der Strom entlang der Dipolarme ändert. Die Stromverteilung ist somit vom Betrachtungsort $x$ und dem Zeitpunkt $t$ abhängig.\\
+Bei einem Dipol mit dem Durchmesser $d<<\lambda$ wird dieser zu einem dünnen Stromfaden. Die Stromdichte im Leiter kann $J \textit{d}V$ mit $I\textit{d}l$ als Stromelement ersetzt werden. Die Summe der Elementardipole mit konstantem Strom können als Quelle betrachtet werden \cite{elliott1981antenna}.\\
 
 \begin{equation}
 I_{m}sin(k(l-dz))
