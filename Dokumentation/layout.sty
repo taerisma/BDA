@@ -46,7 +46,14 @@
 	\newenvironment{zebralongtable}{\rowcolors{1}{lgray}{white}\longtable}{\endlongtable}
 
 % language
+%Sprache und Trennen
 \usepackage[ngerman]{babel}
+%%%%
+\usepackage[T1]{fontenc} 
+\usepackage{lmodern} 
+%\usepackage[ngerman]{babel} 
+\usepackage[babel]{microtype}
+%%%%%%
 
 % graphics
 \usepackage{pgf}
@@ -185,7 +192,7 @@
 
 \fancyhead[L]{\textbf{Bachelorarbeit}}
 \fancyhead[C]{}
-\fancyhead[R]{Version 22}
+\fancyhead[R]{Version 23}
 
 \fancyfoot[L]{\author}
 \fancyfoot[C]{\today}
