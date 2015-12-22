@@ -8,28 +8,27 @@
 	\label{LoopAntenne}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Wird eine kurze, kreisförmige Stromschleife mit dem Radius $a<<\lambda$ von einem Strom $Ie^{j\omega t}$ durchflossen,  kann in guter Näherung eine konstante Stromverteilung I entlang der Schlaufe angenommen werden.Die Koordinaten eines Punktes auf der Stromschleife sind gegeben mit
+Wird eine kurze, kreisförmige Stromschleife mit dem Radius $a<<\lambda$ von einem Strom $Ie^{j\omega t}$ durchflossen,  kann in guter Näherung eine konstante Stromverteilung I entlang der Schlaufe angenommen werden. Die Koordinaten eines Punktes auf der Stromschleife sind gegeben mit
 \begin{eqnarray}
 x’ &=& a \cos(\Psi)\\
 y’ &=& a \sin(\Psi)\\
 z’ &=& 0\label{SchlaufeInDerEbene}
 \end{eqnarray}
-Aus der Gleichung \ref{SchlaufeInDerEbene} wird deutlich, dass die Ebene nur in der xy Ebene liegt und keine Ausdehung in z Richtung besitzt.
+Aus  (\ref{SchlaufeInDerEbene}) wird deutlich, dass die Ebene nur in der xy Ebene liegt und keine Ausdehung in z Richtung besitzt.
 Der Abstand  a entspricht dem Radius  aus dem Zentrum zur Stromschleife. Die Stromschleife ist in  Abbildung \ref{LoopAntenne} ersichtlich. Somit kann ein Stromelement auf der Schleife beschrieben werden als:
 \begin{equation}
 I dl= Ia(- \vec e_{x}sin(\Psi)+\vec e_{y}cos(\Psi))d\Psi
 \end{equation}
  %EMANT Joss Seit 45
-Die Stromverteilung führt zu einem Abstrahlen von Elektromagnetischen Wellen. Die Abstrahlung kann mit der Gewichtungsfunktion in Abhänigkeit von $\theta$ und $\varphi$ beschrieben werden. Die ausfühliche Gewichtungsfunktion einer Stromschleife hat Elliott \cite{elliott1981antenna}beschrieben. Da die Integration eines geschlossenen Kreis Null ergibt, können die Gleichungen wie folgt vereinfacht werden.
+Die Stromverteilung führt zu eine Abstrahlung von elektromagnetischen Wellen. Die Abstrahlung kann mit der Gewichtungsfunktion in Abhänigkeit von $\theta$ und $\varphi$ beschrieben werden. Die ausfühliche Gewichtungsfunktion einer Stromschleife hat  \cite{elliott1981antenna}beschrieben. Da die Integration eines geschlossenen Kreis Null ergibt, können die Gleichungen der Gewichtungsfunktion abänig von $\theta$ und $\varphi$ wie folgt vereinfacht werden \cite{Emant}.
 %Die Gewichtungsfaktoren findet man mit Hilfe von (116 Joss) und (117 Joss) zu
 %Emant Joss Seite 46
 %Emant Joss Seite 46
-
 \begin{equation}\label{GewichtungsfunktionLoop_aTheta}
 a\theta(\theta, \varphi) =0
 \end{equation}
-
-Nimmt man  an, dass $ka$ klein ist, so kann  die Gewichtungsfunktion $a\varphi$ stark vereinfacht werden.
+Das Fernfeld   ist  $\varphi$ polarisiert, da die Gewichtungsfunktion aus  (\ref{GewichtungsfunktionLoop_aTheta})  $a\theta$ gleich Null wird.\\
+Nimmt man  an, dass $ka$ klein ist, so kann  die Gewichtungsfunktion $a\varphi$ weiter vereinfacht werden.
 %\begin{equation}
 %a\varphi(\theta, \varphi)=sin(ka sin(\theta)cos(\psi))=ka sin(\theta)cos(\psi)
 %\end{equation}
@@ -39,11 +38,11 @@ a\varphi(\theta,\varphi)=j(\pi a^{2}I)(k sin \theta)
 \end{equation}
 %$a(theta, phi)=j$... oder Ellito 2.31 oder Joss Seite 46.
 \todo{neu schreiben Loop}
-Das Fernfeld   ist  $\varphi$ polarisiert, da die Gewichtungsfunktion aus Formel \ref{GewichtungsfunktionLoop_aTheta}  $a\theta$ gleich Null wird.  Die Leistungsdichte gewinnt man mit: 
+ Die Leistungsdichte gewinnt man mit: 
 
 %(Joss 118) 
 \begin{equation}
-\vec P(\theta,\varphi)=\frac{1}{2}Re(\vec E x \vec H^*)
+P(\theta,\varphi)=\frac{1}{2}Re(E x H^*)
 \end{equation}
 zu
 %Joss EMANT P(theta,phi)=....Ellito 2.32
@@ -87,7 +86,7 @@ Wenn $a/\lambda = 0.03$ ist, dann wird der $R_{rad} = 0.25\Omega$. Als Vergleich
 	\draw[line width=0.5pt, dashed, very thick,cap=round,->](A) .. controls (a) .. node[above] {$\theta$} (B);
 \end{tikzpicture}
 \end{center}
-\caption{E Feld einer Loop Antenne in der xz Ebene}
+\caption{E-Feld einer Loop Antenne in der xz Ebene}
 \label{DipolEFerd}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -8,21 +8,21 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Dipol Antenne mit Stromverteilung \cite {Tekom}\relax }}{10}{figure.caption.11}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Das E Feld einer Dipolantenne in der xz Ebene\relax }}{11}{figure.caption.14}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Loop Antenne\relax }}{14}{figure.caption.16}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces E Feld einer Loop Antenne in der xz Ebene\relax }}{15}{figure.caption.18}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Verbindungs Modell\relax }}{19}{figure.caption.23}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces ESB einer asymetrischen Quelle\relax }}{22}{figure.caption.25}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces ESB einer symetrischen Quelle\relax }}{22}{figure.caption.26}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Leitungsmodell eine Kette von Zweitoren\relax }}{24}{figure.caption.27}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Magnetischer Fluss einer Zweidrahtleitung\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Oberfl\IeC {\"a}chenladung einer Zweidrahtleitung\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces statische Feldbetrachtung einer transversalen Ebene einer Zweidrahtleitung\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Ersatzschaltbild eines elementaren Leiterst\IeC {\"u}cks\relax }}{25}{figure.caption.29}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Refelxionen einer Leitung an einer Lastimpedanz \cite {Tekom}\relax }}{27}{figure.caption.30}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{29}{figure.caption.32}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Leistungsanpassung f\IeC {\"u}r eine komplexe Last mit einem Transformator\cite {Tekom}\relax }}{30}{figure.caption.33}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{31}{figure.caption.34}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{32}{figure.caption.35}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Verlustfreie Anpassung\relax }}{33}{figure.caption.36}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Blockschaltbild einer Quelle mit Leitung, Anpassung und Antenne\relax }}{34}{figure.caption.40}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{34}{figure.caption.41}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne\relax }}{35}{figure.caption.42}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces E-Feld einer Loop Antenne in der xz Ebene\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Verbindungs Modell\relax }}{19}{figure.caption.20}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces ESB einer asymetrischen Quelle\relax }}{21}{figure.caption.22}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces ESB einer symetrischen Quelle\relax }}{22}{figure.caption.23}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Leitungsmodell eine Kette von Zweitoren\relax }}{24}{figure.caption.24}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Magnetischer Fluss einer Zweidrahtleitung\relax }}{24}{figure.caption.25}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Oberfl\IeC {\"a}chenladung einer Zweidrahtleitung\relax }}{24}{figure.caption.25}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces statische Feldbetrachtung einer transversalen Ebene einer Zweidrahtleitung\relax }}{24}{figure.caption.25}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Ersatzschaltbild eines elementaren Leiterst\IeC {\"u}cks\relax }}{24}{figure.caption.26}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Refelxionen einer Leitung an einer Lastimpedanz \cite {Tekom}\relax }}{27}{figure.caption.27}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{29}{figure.caption.29}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Leistungsanpassung f\IeC {\"u}r eine komplexe Last mit einem Transformator\cite {Tekom}\relax }}{29}{figure.caption.30}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{31}{figure.caption.32}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Verlustfreie Anpassung\relax }}{32}{figure.caption.33}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Blockschaltbild einer Quelle mit Leitung, Anpassung und Antenne\relax }}{33}{figure.caption.37}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{33}{figure.caption.38}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne\relax }}{34}{figure.caption.39}
