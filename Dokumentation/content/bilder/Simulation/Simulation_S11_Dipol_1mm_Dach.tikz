@@ -25,7 +25,7 @@ ymax=0,
 ylabel={Amplitude in [dB]},
 ymajorgrids,
 axis background/.style={fill=white},
-title={$\text{Simulation des  |S}_{\text{11}}|\text{ Werts, im Freiraum und im Gerät bei verschiedenen Geometrien}$},
+title={$\text{Simulation des  |S}_{\text{11}}|\text{ Werts im Freiraum und im Gerät bei verschiedenen Geometrien}$},
 legend style={at={(0.00,0.00)},anchor=south west,legend cell align=left,align=left,draw=black}
 ]
 \addplot [color=red,style=dotted]

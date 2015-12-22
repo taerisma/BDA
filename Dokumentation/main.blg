@@ -9,16 +9,15 @@ Warning--string name "februar" is undefined
 --line 48 of file mydata.bib.bib
 Warning--string name "september" is undefined
 --line 58 of file mydata.bib.bib
-Warning--I didn't find a database entry for "a"
 Warning--to sort, need author or key in Oeffnungswinkel
 Warning--to sort, need author or key in linkbudget
 Warning--to sort, need author or key in Verkuertzungsfaktor
 Warning--to sort, need author or key in Verkuertzungsfaktor_wiki
+Warning--to sort, need author or key in WikiPermitt
 Warning--to sort, need author or key in DielektrikumPolarisation
 Warning--to sort, need author or key in Guetefaktor_Q
 Warning--to sort, need author or key in Bandbreite_B
 Warning--to sort, need author or key in Polystyrol_Datenblatt
-Warning--to sort, need author or key in WikiPermitt
 Warning--empty year in Bandbreite_B
 Warning--empty year in DielektrikumPolarisation
 Warning--empty year in Guetefaktor_Q
@@ -69,4 +68,4 @@ warning$ -- 18
 while$ -- 27
 width$ -- 0
 write$ -- 278
-(There were 22 warnings)
+(There were 21 warnings)

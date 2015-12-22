@@ -317,7 +317,7 @@ Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkomm
 \begin{equation}
 \lambda_{0}=\dfrac{c}{f}\label{eq:WellenlängeMITc}
 \end{equation}
-Da eine Leitung immer etwas Verlustbehaftet ist, kann die Ausbreitung einer Welle im Leitermedium nie der Lichtgeschwindigkeit $c_0$ entsprechen. Daher gilt:
+Da eine Leitung immer etwas verlustbehaftet ist, kann die Ausbreitung einer Welle im Leitermedium nie der Lichtgeschwindigkeit $c_0$ entsprechen. Daher gilt:
 \begin{equation}
 \lambda=\dfrac{v}{f}\label{eq:WellenlängeMITv}
 \end{equation}
@@ -381,7 +381,7 @@ Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern
 		\draw[line width=1.5pt](5, 5.5) circle (0.5);
 		\fill[fill=black](5, 5.5) circle (2pt);				
 	\end{tikzpicture}
-	\caption{Magnetischer Fluss einer Zeidrahtleitung}	
+	\caption{Magnetischer Fluss einer Zweidrahtleitung}	
 \end{minipage}
 \hfill
 \begin{minipage}{7cm}
@@ -397,7 +397,7 @@ Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern
 %\caption{statische Feldbetrachtung einer Transversalen Ebene einer Zeidrahtleitung}
 \end{minipage}
 \label{fig:statischeZeidrahtleitung}
-\caption{statische Feldbetrachtung einer Transversalen Ebene einer Zweidrahtleitung}
+\caption{statische Feldbetrachtung einer transversalen Ebene einer Zweidrahtleitung}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -456,7 +456,7 @@ I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\ome
 \end{eqnarray}
 
 \section{Anpassung und Reflexionen}\label{sec:AnpassungReflexionen}
-Die Anpassung ist nicht nur in der Hochfrequenztechnik ein viel diskutiertes Thema. Auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiedene Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiederstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Ein ganz anderes Ziel verfolgt die Wellenanpassung. Sie kommt immer dann zum Zuge, wenn auf einem Signalpfad die Signalreflexionen an den Übergängen des Mediums verhindert werden.
+Die Anpassung ist nicht nur in der Hochfrequenztechnik ein viel diskutiertes Thema. Auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiedene Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiderstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Ein ganz anderes Ziel verfolgt die Wellenanpassung. Sie kommt immer dann zum Zuge, wenn auf einem Signalpfad die Signalreflexionen an den Übergängen des Mediums verhindert werden.
 Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
 In diesem Kapitel werden zwei Arten der Anpassung genauer betrachtet. Es sind dies:
 \begin{itemize}
@@ -527,8 +527,8 @@ Der Welligkeitsfaktor $s$ aus der Gleichung \ref{eq:Welligkeitsfaktor_s} bezeich
 
 
 Anpassnetzwerke: \\
-Übertragungssysteme können als eine Kette von aktiven oder passiven  Zweitorschaltungen dargestellt werden. Das heisst Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Je nach Siganlfrequenz oder Impulsdauer müssen die frequenzabhängigen Eigenschaften dieser Zweitore berücksichtigt werden. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Je nach Verhältniss wird Leistungsanpassung oder Wellenanpassung erreicht. \\
-Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgansimpedanz als $Z_{aus}$ bezeichnet. 
+Übertragungssysteme können als eine Kette von aktiven oder passiven  Zweitorschaltungen dargestellt werden. Das heisst, Quelle, Leitungen, Übergänge und Antennen werden als Zweitore betrachtet. Je nach Siganlfrequenz oder Impulsdauer müssen die frequenzabhängigen Eigenschaften dieser Zweitore berücksichtigt werden. Für eine einwandfreie Funktion bei der Zusammenschaltung der Übertragungskette muss der Lastwiderstand $Z_L$ zum Innenwiderstand $Z_I$ des Zweitors in einem bestimmten Verhältnis stehen. Je nach Verhältniss wird Leistungsanpassung oder Wellenanpassung erreicht. \\
+Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$ und die Ausgangsimpedanz als $Z_{aus}$ bezeichnet. 
 Um die Anpassungsbedingungen zu formulieren kann das Zweitor als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden. Diese wird  durch den Lastwiderstand $Z_L$ belastet.\\
 
 Leistungsanpassung: \\
@@ -543,7 +543,7 @@ Bei der Leistungsanpassung kommt es auf Grund der unterschiedlichen Blindwiderst
 
 Das bedeutet, die Beträge des Real- und Imaginärteils von Quelle und Last sind gleich.  Der Phasenwinkel zwischen Real- und Imaginärteil ist ebenfals gleich. Diese Anpassung bezeichnet man als Wellenanpassung oder Leitungsanpassung. Die bisherigen Erkenntnisse zeigen, dass nur im Falle rein reeller Werte für den Innen- und den  Lastwiderstand, das heisst wenn $X_I = X_L = 0$ sind, Leistungsanpassung und Wellenanpassung identisch sind. Für den allgemein gültigen Fall mit komplexen Widerständen ist stets eine Entscheidung zwischen Übertragung maximaler Wirkleistung,  mit Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit einem Leistungswirkungsgrad von $\eta <50 \%$ zu treffen. In der Nachrichtentechnik bezieht man sich in der Regel auf die Wellenanpassung. Die bei der Leistungsanpassung entstehenden Reflexionen  sind störender als die Verluste durch die Übertragung geringerer Wirkleistung. Nur bei Leistungsverstärkern, zum Beispiel in Endstufe eines Senders, spielt die Leistungsanpassung eine nicht zu vernachlässigende Rolle. Für eine optimale Leistungsübertragung ist es notwendig, dass spezielle Anpassnetzwerke verwendet werden. \\
 
-Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung. Das heisst, die im $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung wie in der Last im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel (\ref{eq:PmaxLeistungsanpassung}) zeigt die maximale Leistung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung, bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
+Die maximale Wirkleistung wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung, das heisst, die im $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung wie in der Last im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel (\ref{eq:PmaxLeistungsanpassung}) zeigt die maximale Leistung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung, bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
 \begin{eqnarray}\label{eq:PmaxLeistungsanpassung}
 P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} | R_Q=R_L
 \end{eqnarray}
@@ -789,7 +789,7 @@ Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm L
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  benötigt man  oft ein Anpassnetzwerk zwischen der Leitung und der Antenne.  Da die Impedanzen der Leitung $Z_L$ und der Antenne $Z_{ant}$ nur in seltenen Fällen gleich sind. Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$ und eine Reaktanz $X_{ant}$. Je nach Antennentyp weisst  $X_{ant}$  einen kapazitiven oder  einen induktiven Anteil auf.
+Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  benötigt man  oft ein Anpassnetzwerk zwischen der Leitung und der Antenne.  Die Impedanzen der Leitung $Z_L$ und der Antenne $Z_{ant}$ sind nur in seltenen Fällen gleich. Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$ und eine Reaktanz $X_{ant}$. Je nach Antennentyp weist  $X_{ant}$  einen kapazitiven oder  einen induktiven Anteil auf.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!htb]
 %	\centering
