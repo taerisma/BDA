@@ -94,6 +94,7 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein k
 \item Nahfeldtyp
 \item Detuning durch das Umgebungsmaterial
 \item Kopplung mit anderen im Gerät vorhandenen Antennen
+\item Wirkungsgrad der Antenne
 \end{itemize}
 
 
@@ -102,6 +103,11 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein k
 	\begin{center}
 	\begin{tikzpicture}
 %	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
+%%%%%%%
+%Zuleitung
+	\draw[line width=1.5pt](8, 5)  -- (13.5, 5);
+	\draw[line width=1.5pt](8, 2)  -- (16, 2);
+%%%%%%%%
 	\draw[line width=1.5pt, *-](12, 5)  -- (13.5, 5);
 	\draw[line width=1.5pt, *-](12, 2)  -- (16, 2);
 	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
@@ -114,14 +120,14 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein k
 	\node at (17, 2.7) {$X_{ant}$};
 	\draw[line width=1.5pt](16, 2.6)  -- (16, 2);
 	
-%	\draw[line width=1.5pt, ->, >=latex](6.5, 4)  -- (8, 4) node at (8, 3.5) {$P_{ein}$};
-	\draw[line width=1.5pt, ->, >=latex](11.5, 4)  -- (13, 4) node at (13, 3.5) {$P_{ant}$};
+	\draw[line width=1.5pt, ->, >=latex](8, 4)  -- (9.5, 4) node at (8, 3.5) {$P_{ein}$};
+	\draw[line width=1.5pt, ->, >=latex](12, 4)  -- (13.5, 4) node at (13, 3.5) {$P_{ant}$};
 	
 
-	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
+%	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
 	
-	\node at (17.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
-%	\node at (9.5, 7) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
+	\node at (19.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{R_v+R_{rad}}$};
+	\node at (11.5, 6) {$\eta_{tot}=\dfrac{P_{rad}}{P_{ein}}$};
 	
 	\node at (18, 2.7) {$\varepsilon$};
 	\node at (18.5, 2.7) {$\delta$};
@@ -130,6 +136,17 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein k
 	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.9) -- (19.5, 3.9);
 	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.7) -- (19.5, 3.1);
 	\node at (20, 3.9) {$P_{rad}$};
+	%%%%%%%%%%
+	%Zanat
+		\draw[line width=1.5pt, decorate, decoration=brace] (13, 1) -- (16.5, 1) node at (14.75, 0.5) {$Z_{ant} =  R_v + R_{rad} + X_{ant}$};
+	%%%%%%%
+	%%%%%%
+	%REFLEXION
+	\coordinate (A) at (9, 1);
+	\coordinate (B) at (9, 0);
+	\coordinate (a) at (12, 0.5);
+	\draw[line width=1.5pt, cap=round,->](A) .. controls (a) .. (B) node at (8.5, 0.5) {$\Gamma$};
+	%%%%%%%%%
 	\end{tikzpicture}
 	\end{center}
 \caption{Ersatzschaltbild einer Antenne}
@@ -140,8 +157,28 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein k
 \newpage
 Der $R_{v}$ vereint die elektrischen Verluste, die in den Leitern und an den Übergängen zu Stande kommen. Ebenfalls kann der $R_{rad}$ nicht einfach ausgemessen werden. $R_{rad}$ entspricht dem Widerstand der benötigt wird, um  die abgestrahlte Leistung in Wärme umzuwandeln. Die Abstrahlleistung ist vom Antennenstrom abhängig. Der Antennenstrom wird stark von der frequenzabhängigen Anpassung beeinflusst.\\
 Das Verhältnis von $R_{rad}$  zu $R_{v}$ wirkt direkt in die Abstrahleffizienz $\eta_{rad}$ ein. \\
-Die Antennenimpedanz ist in der Abbildung \ref{fig:ESBantenne} als $X_{ant}$ in Form eines Kondensators abgebildet. Die dielektrischen Verluste des Winkels $\delta$ wirken ebenfalls in den $R_{v}$.\\
-Die drei Komponenten $R_{v}$, $R_{rad}$ und $X_{ant}$ ergeben zusammen die gesamte Antennenimpedanz $Z_{ant}$. Dieser Zusammenhang ist  in den Abbildungen \ref{fig:ESBantenne} und \ref{fig:ESBantenneZant} zu erkennen. Wie aus Kapitel \ref{sec:Speisung} bekannt ist, stellt das Verhältnis der Leitungsimpedanz $Z_L$ zur Antennenimpedanz $Z_{ant}$ ein Mass für die in die Antenne übertragene Leitungsenergie dar.
+Die Antennenreaktanz ist in der Abbildung \ref{fig:ESBantenne} als $X_{ant}$ in Form eines Kondensators abgebildet. Die dielektrischen Verluste des Winkels $\delta$ wirken ebenfalls in den $R_{v}$.\\
+Die drei Komponenten $R_{v}$, $R_{rad}$ und $X_{ant}$ ergeben zusammen die gesamte Antennenimpedanz $Z_{ant}$. Dieser Zusammenhang ist  in den Abbildungen \ref{fig:ESBantenne} und \ref{fig:ESBantenneZant} zu erkennen. Wie aus Kapitel \ref{sec:Speisung} bekannt ist, stellt das Verhältnis der Leitungsimpedanz $Z_L$ zur Antennenimpedanz $Z_{ant}$ ein Mass für die in die Antenne übertragene Leitungsenergie dar. Ein weiteres wichtiges Antennenkriterium ist die Effizienz $\eta$ einer Antenne.  Man unterscheidet zwischen der Abstrahleffizienz und der totalen Effizeienz der Antenne. Die Abstrahleffizienz $\eta_{rad}$ wie gebildet aus:
+\begin{equation}
+\eta_{rad}=\dfrac{R_{rad}}{R_v + R_{rad}}=\dfrac{P_{rad}}{P_{ant}}
+\label{eq:eta_rad}
+\end{equation}
+Die total Abstrahleffizenz $\eta_tot$ wird gebildet aus:
+\begin{equation}
+\eta_{tot}=\dfrac{P_{rad}}{P_{inc}}
+\label{eq:eta_tot}
+\end{equation}
+Für die gilt:
+\begin{enumerate}[leftmargin=2cm]
+   \item[] $\eta_{rad}$: Abstrahleffizienz [$\%$] 
+   \item[] $\eta_{tot}$: Die total Abstrahleffizienz [$\%$] 
+   \item[] $R_{rad}$: Strahlungswiderstand einer Antenne [$\Omega$]  
+   \item[] $R_v$: Antennenverluste [$\Omega$] 
+   \item[] $P_{rad}$: Von der Antenne abgestrhalte Leistung  [W] 
+   \item[] $P_{ant}$: In die Antenne eindringende Leistung  [W 
+   \item[] $P_{inc}$: Von der Zuleitung zugeführte Leistung  [W] 
+\end{enumerate} 
+
 
 
 \section{Dipol Antenne}

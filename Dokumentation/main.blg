@@ -12,48 +12,62 @@ Warning--string name "september" is undefined
 Warning--to sort, need author or key in Oeffnungswinkel
 Warning--to sort, need author or key in Antenne_Theory_Xant
 Warning--to sort, need author or key in linkbudget
+Warning--to sort, need author or key in Verkuertzungsfaktor
+Warning--to sort, need author or key in Verkuertzungsfaktor_wiki
+Warning--to sort, need author or key in WikiPermitt
+Warning--to sort, need author or key in DielektrikumPolarisation
+Warning--to sort, need author or key in Guetefaktor_Q
+Warning--to sort, need author or key in Bandbreite_B
+Warning--to sort, need author or key in Polystyrol_Datenblatt
 Warning--empty year in Antenne_Theory_Xant
+Warning--empty year in Bandbreite_B
+Warning--empty year in DielektrikumPolarisation
+Warning--empty year in Guetefaktor_Q
 Warning--empty year in Oeffnungswinkel
+Warning--empty year in Polystyrol_Datenblatt
+Warning--empty year in Verkuertzungsfaktor
+Warning--empty year in Verkuertzungsfaktor_wiki
+Warning--empty year in WikiPermitt
 Warning--empty year in linkbudget
-You've used 9 entries,
+You've used 21 entries,
             2773 wiz_defined-function locations,
-            642 strings with 5686 characters,
-and the built_in function-call counts, 2691 in all, are:
-= -- 250
-> -- 79
-< -- 6
-+ -- 33
-- -- 24
-* -- 173
-:= -- 386
-add.period$ -- 32
-call.type$ -- 9
-change.case$ -- 32
-chr.to.int$ -- 9
-cite$ -- 27
-duplicate$ -- 155
-empty$ -- 278
-format.name$ -- 29
-if$ -- 583
-int.to.chr$ -- 1
+            705 strings with 7277 characters,
+and the built_in function-call counts, 5931 in all, are:
+= -- 577
+> -- 120
+< -- 9
++ -- 58
+- -- 36
+* -- 382
+:= -- 761
+add.period$ -- 74
+call.type$ -- 21
+change.case$ -- 71
+chr.to.int$ -- 20
+cite$ -- 72
+duplicate$ -- 349
+empty$ -- 668
+format.name$ -- 46
+if$ -- 1334
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 57
-num.names$ -- 20
-pop$ -- 106
+missing$ -- 10
+newline$ -- 123
+num.names$ -- 32
+pop$ -- 264
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 57
 quote$ -- 0
-skip$ -- 103
+skip$ -- 230
 stack$ -- 0
-substring$ -- 23
-swap$ -- 10
+substring$ -- 58
+swap$ -- 25
 text.length$ -- 2
-text.prefix$ -- 1
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 84
-warning$ -- 6
-while$ -- 15
+type$ -- 206
+warning$ -- 20
+while$ -- 24
 width$ -- 0
-write$ -- 123
-(There were 9 warnings)
+write$ -- 275
+(There were 23 warnings)
