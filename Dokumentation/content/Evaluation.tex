@@ -2,29 +2,18 @@
 \newpage
 \chapter{Evaluation einer symmetrischen Antenne}
 
-Das Abstrahlverhalten von Loop und Dipol Antennen ist im Fernfeld gleich. Im Fernfeld steht das E und das H Feld senkrecht aufeinander. Senkrecht zum E und H Feld zeigt sich der Ausbreitungsvektor. Die elektrischen und
+Das Abstrahlverhalten von Loop und Dipol Antennen ist im Fernfeld identisch. Im Fernfeld steht das E und das H Feld senkrecht aufeinander. Senkrecht zum E und H Feld zeigt sich der Ausbreitungsvektor. Die elektrischen und
 magnetischen Feldkomponenten sind in Phase. Daher wird im Fernfeld Wirkleistung in transversale Raumrichtung
 übertragen. Das elektrische und magnetische Feld hat nur Komponenten in der Ebene senkrecht zur Ausbreitungsrichtung.
-Man spricht von einer ebenen Welle. Sie wird vom E und H Vektor aufgespannt  und bewegt sich in
+Man spricht von einer ebenen Welle. Sie wird vom E und H Feldvektor aufgespannt  und bewegt sich in
 Transversalerrichtung fort. Die Kugelwelle bewegt sich im Raum fort, bis die gesamte Energie absorbiert ist. Die Amplituden der E und H Vektoren
 nehmen mit steigendem Abstand $r$ um den Faktor $1/r$  ab. Der Zusammenhang zwischen E und H Feld ist
-durch die intrinsische Wellenimpedanz $\eta$ gegeben. Näheres zu den Feldvektoren und der Feldausbreitung ist im Kapitel \ref{sec:NahundFern} gezeigt.
-Die Gleichung \ref{eq:WellenImpedanzZ0} zeigt den Wellenwiderstand im Vakuum\cite{elliott1981antenna}.
-
-
+durch die intrinsische Wellenimpedanz $\eta$ gegeben. Näheres zu den Feldvektoren und der Feldausbreitung ist im Kapitel \ref{sec:NahundFern} gezeigt.Der Wellenwiderstand im Vakuum zeigt(\ref{eq:WellenImpedanzZ0}) \cite{Harrington-TimeHarmonic},\cite{Emant}.
 \begin{equation}\label{eq:WellenImpedanzZ0}
 Z_{0}=\dfrac{E}{H}=\sqrt{\dfrac{\mu}{\epsilon}}=377\Omega
 \end{equation}
-\cite{rothammel1991antennenbuch}
-\cite{elliott1981antenna}
-\cite{Harrington-TimeHarmonic}
-\cite{Emant}
-
 Die Ausrichtung des E-Feldes ist bei den Loop- und  Dipolantennen um 90 Grad verschoben. 
-Im Nahfeld sind die induktiven Anteile des elektromagnetischen Wechselfeldes bei den Loop Antennen dominant. 
-Im Gegenzug ist das Nahfeld der Dipol Antenne  kapazitiv.
-Man nennt die Dipolantenne deshalb E-Feld Antenne.  Die Loop Antenne wird oft H Feld Antenne genannt.
-Das Abstrahlverhalten ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:LoopAntenneTheorie} aufgezeigt. Die Abbildung \ref{fig:FerdVektorEinheistsvektor} zeigt einen Poynting-Vektor im  kugelkoordinaten und im kartesischen Koordinatensystem. Am Ende des Poynting-Vektors $\vec{r}$  sind die Einheitsvektoren mit den dazugehörenden  E und H Feldvektoren ersichtlich\cite{Emant}. Der Vektor ${E}_r$ zeigt die Richtung des Leistungstransports.\\
+Im Nahfeld sind die induktiven Anteile des elektromagnetischen Wechselfeldes bei den Loop Antennen dominant. Im Gegenzug ist das Nahfeld der Dipol Antenne  kapazitiv.Man nennt die Dipolantenne deshalb E-Feld Antenne.  Die Loop Antenne wird oft H-Feld Antenne genannt. Das Abstrahlverhalten dieser beiden Antennen ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:LoopAntenneTheorie} aufgezeigt. Die Abbildung \ref{fig:FerdVektorEinheistsvektor} zeigt einen Poynting-Vektor im  kugelkoordinaten und im kartesischen Koordinatensystem. Am Ende des Poynting-Vektors $\vec{r}$  befindet sich der Punkt P. Beim Punkt P sind die Einheitsvektoren mit den dazugehörenden  E- und H Feldvektoren ersichtlich\cite{Emant}. Der Vektor ${E}_r$ zeigt die Richtung des Leistungstransports.\\
 
 
 
@@ -45,7 +34,7 @@ Das Abstrahlverhalten ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:Lo
 	
 	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 3) node at (5.3, 3.5) {$\rho$};
 	
-	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 6) node at (5.5, 6.3) {$\vec{r}$};
+	\draw[line width=1pt, ->, >=latex](4, 4)  -- (5.5, 6) node at (5.1, 5.8) {$\vec{r}$}  node  at (5.5, 6.3){P};
 	
 	\draw[line width=0.5pt, style=dotted](5.5, 3) -- (5.5, 6);%Projektion p zu \vec{r}
 	\draw[line width=0.5pt, style=dotted](4, 7) -- (5.5, 6);%Projektion von z zur \vec{r}
