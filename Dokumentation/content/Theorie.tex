@@ -317,8 +317,8 @@ Die Signalgeschwindigkeit $v$ dividiert durch die Frequenz ergibt die Wellenlän
 Besonders vorteilhafte Übertragungseigenschaften hat die längshomogene Leitung. Es handelt sich dabei um eine Leitung, welche auf ihrer ganzen Länge einen konstanten Leitungsquerschnitt, gleiches
 Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator aufweist. Gebräuchliche Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, die Streifenleitung auf einer Printplatte oder das Koaxialkabel.
 \subsection{Leitungsmodell}
-Um die Zweitoreigenschaften einer längshomogenen Leitung zu ermitteln, wird diese wie in
-Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt. Diese wird in $n$ gleiche Elementarzweitore unterteilt, wobei $n$ sehr gross sein soll. Dabei wird die Leitung in eine Vielzahl von Zweitoren unterteilt. Es ist von einer Zweitorkette die Rede.
+Um die Zweitoreigenschaften einer längshomogenen Zweidrahtleitung zu ermitteln, wird diese in $n$ gleich lange Elementarzweitore mit einer Distanz von $\Delta z$ unterteilt, wie dies in Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt ist. Die Gesamtlänge der Leiter $l$ ergibt sich aus (n+1) $\Delta z$. Hierbei soll $n$ sehr gross sein, damit $\Delta z$ verschwindend klein wird.
+
 \begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
@@ -333,7 +333,7 @@ Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt. Diese wird in $n$ gl
 	\draw[line width=0.5pt, -*](3.5, 3.5)  -- (5, 3.5);
 	\draw[line width=0.5pt, -*](5, 3.5)  -- (6.5, 3.5) node at (5.75,4) {$\Delta z$};
 	\draw[line width=0.5pt, -*](6.5, 3.5)  -- (8, 3.5);
-	\draw[line width=0.5pt, -*](8, 3.5)  -- (9.5, 3.5)node at (8.75,4) {$n$};
+	\draw[line width=0.5pt, -*](8, 3.5)  -- (9.5, 3.5)node at (7.9,4) {$n$};
 	\draw[line width=1.5pt, ->, >=latex](2, 3.2) -- (2, 2.3) node at (1.5,2.75) {$\underline{U_{1}}$};
 	\draw[line width=1.5pt, ->, >=latex](9.5, 3.2) -- (9.5, 2.3) node at (10,2.75) {$\underline{U_{2}}$};
 	%vertikal gepunktete linien
@@ -343,12 +343,10 @@ Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt. Diese wird in $n$ gl
 	\draw[line width=0.5pt, style=dashed](7.9, 2) -- (7.9, 3.5);%vertikal gepunktete Linie
 	\end{tikzpicture}
 	\end{center}
-\caption{Leitungsmodell eine Kette von Zweitoren}
+\caption{Leitungsmodell einer Kette von Zweitoren}
 \label{fig:LeitungsmodellZweitorKette}
 \end{figure}
-Wie in der Abbildung \ref{fig:LeitungsmodellZweitorKette} gezeigt, kann die Leiterlänge durch $n$ geteilt werden. Da $n$ sehr gross ist, ergeben sich n+1 $\Delta z$ lange Leiterstücke. Betrachtet man ein kurzes Leitungsstück mit der Länge $\Delta z = l/n$, so ist von der Elektrotechnik  bekannt, dass beim Einschalten einer Signalquelle sich auf der Leitung ein Strom $i(t)$ einstellt. \\
-Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. \\
-Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern. Die Folge davon ist ein elektrisches Feld und eine Oberflächenladung $Q = u  \Delta C$ auf den Leitern \cite{Emant}.
+ Von der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquelle auf der Leitung ein Strom $i(t)$ einstellt. Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. Das einschalten der Quelle führt weiter zu einer Spannung zwischen den Leitern, was zu einem elektrischen Feld und einer Oberflächenladung $Q = u  \Delta C$ auf den Leitern führt \cite{Emant}.
 \begin{figure}[!h]
 \begin{minipage}{7cm}
 	\centering
@@ -390,7 +388,7 @@ Das einschalten der Quelle führt weiter zu einer  Spannung zwischen den Leitern
 	\label{fig:ESBLeiterstueck}
 \end{figure}
 
-Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leitungsbeläge ausdrücken. Die Gleichung \ref{eq:InduktiverLeitungsbelag} gibt den induktiven Leitbelag an. Die Gleichung \ref{eq:KapazitiverLeitungsbelag} zeigt den kapazitiven Leitbelag.
+Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leitungsbeläge ausdrücken. Die Gleichung (\ref{eq:InduktiverLeitungsbelag}) gibt den induktiven Leitungsbelag an, die Gleichung (\ref{eq:KapazitiverLeitungsbelag}) zeigt den kapazitiven Leitungsbelag.
 
 \begin{equation}
 L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
