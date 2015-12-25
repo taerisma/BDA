@@ -290,138 +290,127 @@ Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter, p
 Im Nahfeld einer Antenne pendelt die nicht abgestrahlte Energie im Raum um die Antenne hin und her. Das Nahfeld baut sich auf und ab. Es wechselt  mit der Resonanzfrequenz $f_{r}$ seine Richtung. Die Moleküle im dielektrischen Raum um die Antenne werden bei jeder Schwingung neu polarisiert. Das bedeutet, die Moleküle werden zwei Mal pro Schwingung neu ausgerichtet.\\
 Die im Dielektrikum gespeicherte Energie ist stark von der materialspezifischen, relativen Permittivität $\varepsilon_r $ abhängig.\\
 Die dielektrischen Verluste führen bei Antennen  zu einem Detuning. Das Detuning ist kaum zu berechnen, jedoch kann es mit Hilfe von  Simulationen bestimmt werden. Das Detuning entsteht durch Verluste in und um die  Antenne.\\ 
-Das Detuning kann auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und eine veränderte Antennenimpedanz eine Anpassung  entsteht die  eine wesentlich höhere Abstrahleffizienz $\eta_{overall}$ \ mit sich bringt. Weiter kann das Detuning eine Absenkung der Resonanzfrequenz hervorrufen, die sonnst nur mit einer Vergrösserung der Antennenstruktur möglich wäre. Das kann ein Vorteil sein, wenn die Platzverhältnisse sehr beschränkt sind.\\
-Im Zusammenhang der Antennen und den reaktiven Nahfeldverlusten wird oft der Verlustwinkel genannt.  Der Verlustwinkel beschreibt den Anteil der Wirkleistung elektrisch reaktiver Bauteile wie Spulen oder Kondensatoren bei sinusförmigem Spannungs- und Stromverlauf.\\
+Das Detuning kann auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und eine veränderte Antennenimpedanz eine Anpassung  entsteht die  eine wesentlich höhere Abstrahleffizienz $\eta_{overall}$ \ mit sich bringt. Weiter kann das Detuning eine Absenkung der Resonanzfrequenz hervorrufen, die sonnst nur mit einer Vergrösserung der Antennenstruktur möglich wäre. Das kann ein Vorteil sein, wenn die Platzverhältnisse sehr eingeschränkt sind.\\
+Im Zusammenhang der Antennen und der reaktiven Nahfeldverlusten wird oft der Verlustwinkel genannt. Der Verlustwinkel beschreibt den Anteil der Wirkleistung zu Blindleistung elektrisch reaktiver Bauteile wie Spulen oder Kondensatoren bei einem sinusförmigem Spannungs- und Stromverlauf.\\
 Der Verlustwinkel ist als $\arctan$ des Verhältnisses von Wirkleistung zu Blindleistung definiert. Dies ist  aus der Gleichung  \ref{eq:Verlustwinkel} ersichtlich. 
-Je kleiner der Verlustwinkel, desto näher kommen die realen Bauteile ihrem idealen Verhalten. Eine ideale Induktivität hat einen Verlustwinkel von $0^\circ$. Ein idealer Kondensator hat ebenfalls einen Verlustwinkel von 0$^\circ$. Ein Verlustwinkel der grösser ist als $0^\circ$ führt zu Verlustwiderständen die in Serie zu den idealen Induktivitäten und Kapazitäten gerecht werden.\\
-Dagegen hat ein idealer elektrischer Widerstand  einen Verlustwinkel von $90^\circ$. Er besitzt keine kapazitiven oder induktiven Blindanteile.\\
-In der technisch realisierbaren Elektronik gibt es jedoch keine idealen Bauteile. Die Verluste sind zudem stark frequenzabhängig.\\
-Der Verlustwinkel  $\delta$  lässt sich über die komplexe Impedanz $\underline{Z}$ oder über die Phasenverschiebung  $\varphi$  zwischen Strom $\underline{I}$ und Spannung $\underline{U}$ des Bauteils berechnen: 
-
-
+Je kleiner der Verlustwinkel ist, desto näher kommen die realen Bauteile ihrem idealen Verhalten. Eine ideale Induktivität hat einen Verlustwinkel von $0^\circ$. Ein idealer Kondensator hat ebenfalls einen Verlustwinkel von 0$^\circ$. Ein Verlustwinkel der grösser ist als $0^\circ$ führt zu Verlustwiderständen die in Serie zu den idealen Induktivitäten und Kapazitäten gerecht werden.\\
+In der technisch realisierbaren Elektronik gibt es jedoch keine idealen Bauteile. Die Verluste in dem Bauteilen sind zudem stark frequenzabhängig.\\
+Der Verlustwinkel  $\delta$  lässt sich über die komplexe Impedanz $Z$ oder über die Phasenverschiebung  $\varphi$  zwischen Strom $I$ und Spannung $U$ des Bauteils berechnen: 
 \label{eq:Verlustwinkel}
 \begin{align}
-\delta &= \arctan \dfrac{Re\underline{Z}}{Im\underline{Z}}
+\delta &= \arctan \dfrac{ReZ}{ImZ}
 \end{align}
-
 \label{eq:Verlustwinkel_aus_Phi}
 \begin{align}
 \delta &= 90^\circ - |\varphi|
 \end{align}
-
 Die realen Ersatzschaltbilder von Spulen und Kondensatoren berücksichtigen die Verluste mit einem Widerstand $R$.
 Die beiden Gleichungen \ref{eq:VerlustwinkelSpule} und \ref{eq:VerlustwinkelKondensator} zeigen die Verlustfaktoren an einer Spule $L$ und an einem Kondensator $C$:
-
 \begin{equation}\label{eq:VerlustwinkelSpule}
 \tan \delta = \dfrac{R}{\omega L}
 \end{equation}
-
 \begin{equation} \label{eq:VerlustwinkelKondensator}
 \tan \delta = R \omega C
 \end{equation}
-
-In diesem Zusammenhang soll auch die komplexe Permittivität $\varepsilon$ genannt werden:
+In diesem Zusammenhang soll  die komplexe Permittivität $\varepsilon$ genannt werden:
 \begin{equation} \label{eq:komplexePermitivität}
 \varepsilon=\varepsilon_0(\varepsilon^{'}-j\varepsilon^{''})=\varepsilon_0\varepsilon^{'}(1-j\dfrac{\varepsilon^{''}}{\varepsilon^{'}})
 \end{equation}
-
-In der Gleichung \ref{eq:komplexePermitivität} kommt das Verhältnis $\dfrac{\varepsilon^{''}}{\varepsilon^{'}}$ vor. Das Verhältnis ist klein für gute Dielektrika, welche über einen weiten Frequenzbereich annähernd konstant sind. Das Verhältnis von der Wechselstrom Permittivität $\varepsilon^{'}$ und des dielektrischen Verlustfaktors $\varepsilon^{''}$ ergibt den Verlustwinkel $\tan\delta$ \cite{elliott1981antenna}. 
-
+In der Gleichung (\ref{eq:komplexePermitivität}) kommt das Verhältnis $\dfrac{\varepsilon^{''}}{\varepsilon^{'}}$ vor. Das Verhältnis ist klein für gute Dielektrika, welche über einen weiten Frequenzbereich annähernd konstant sind. Das Verhältnis von der Wechselstrom Permittivität $\varepsilon^{'}$ und des dielektrischen Verlustfaktors $\varepsilon^{''}$ ergibt den Verlustwinkel $\tan\delta$ \cite{elliott1981antenna}. 
 \begin{equation} \label{eq:VerlustwinkelEpsilonPermitivität}
 \dfrac{\varepsilon^{''}}{\varepsilon^{'}}=\tan\delta
 \end{equation}
 
 
-\subsection{Verwendung einer Dipolantenne in der  \glqq Connect 1\grqq \  Serie}
-Eine symmetrisch gespiesene Halbwellenantenne  ist eine einfach zu produzierende Antenne. Halbe Wellenlänge als strahlende Leiterlänge bedeutet etwas weniger als $\lambda/2=0.006m$ Strahlerlänge. Ein Dipol mit der Länge von 6 cm ist im Schlitz zwischen der Hauptplatine und dem Aussengehäuse des \glqq Connect 1\grqq \ unterzubringen. 
-Das bedeutet, dass die Antenne von sehr viel ABS Kunststoffmaterial umgeben ist. Dieses Material ist elektrisch nicht leitend und nicht magnetisch. Alle Dipolantennen sind in ihrem unmittelbaren Umfeld starke E Feld Strahler.  Die Materialeigenschaften von ABS Kunststoff führen mit einem  $\varepsilon_r$ von ca. 4.2[As/Vm] bei 2.4 GHz zu einer erheblichen Energiespeicherung im reaktiven Nahfeld der Antenne. Daraus folgt eine  Abweichung der idealen Antennenimpedanz. Die Veränderung der Ausbreitungsgeschwindigkeit  bringt  ein Detuning der Antenne mit sich.\\
+\subsection{Verwendung einer Dipolantenne}
+Eine symmetrisch gespeisste Halbwellenantenne  ist eine einfach zu produzierende Antenne. Die halbe Wellenlänge als strahlende Leiterlänge bedeutet etwas weniger als $\lambda/2=0.006m$ Strahlerlänge. Ein Dipol mit der Länge von 6 cm ist im Schlitz zwischen der Hauptplatine und dem Gehäuse unterzubringen. 
+Das bedeutet, dass die Antenne von sehr viel ABS Kunststoffmaterial umgeben ist, das ganze Gehäuse aus ABS Kunsstoff besteht. Dieses Material ist elektrisch nicht leitend und nicht magnetisch. Alle Dipolantennen sind in ihrem unmittelbaren Umfeld starke E-Feld Strahler.  Die Materialeigenschaften von ABS Kunststoff führen mit einem  $\varepsilon_r$ von ca. 4.2[As/Vm] bei 2.4 GHz zu einer erheblichen Energiespeicherung im reaktiven Nahfeld der Antenne. Daraus folgt eine  Abweichung der Ausbreitungsgeschwindigkeit, diese wiederum bringt ein Detuning der Antenne mit sich bringt\cite{WikiPermitt}.\\
 
-Das Abstrahlverhalten einer Dipolantenne ist $\theta$ abhängig. Der Richtfaktor,  auf englisch \textit{directivity} D genannt, ist bei Dipolantennen wie in  (\ref{eq:Directivity}) gezeigt   1.64dBi.  Der Richtfaktor vergleicht die Leistungsdichte in der stärksten Abstrahlrichtung mit der Leistungsdichte eines isotropen Kugelstrahlers  bei gleicher abgestrahlter Leistung. Da die Dipolantenne in der Längsausrichtung des \glqq Connect 1\grqq \ Geräts untergebracht wird, ergibt sich eine theoretische Nullstelle des elektromagnetischen Feldes in der Verlängerung der Antennenstruktur. Die beiden Abbildungen \ref{fig:xyFeld} und \ref{fig:xzFeld} versuchen diese Nullstellen schematisch zu zeigen. Beide Abbildungen zeigen je einen Schnitt durch das elektromagnetische Feld, welches vom Dipol abgestrahlt wird. Die durch dicke schwarze Striche dargestellten Felder sind rotationssymmetrisch. Die beiden Abbildungen \ref{fig:xyFeld} und \ref{fig:xzFeld} zeigen das elektromagnetische Feld aus zwei unterschiedlichen Perspektiven. Der Feldschwund, der  das \glqq Connect 1\grqq \ Gerät verursacht, ist in den beiden Abbildungen nicht dargestellt.
+Das Abstrahlverhalten einer Dipolantenne ist $\theta$ abhängig. Der Richtfaktor,  auf englisch \textit{directivity} D genannt, ist bei Dipolantennen wie in  (\ref{eq:Directivity}) gezeigt   1.64 dBi.  Der Richtfaktor vergleicht die Leistungsdichte in der stärksten Abstrahlrichtung mit der Leistungsdichte eines isotropen Kugelstrahlers  bei gleicher abgestrahlter Leistung. Da die Dipolantenne in der Längsausrichtung an der Seitenkante des Geräts untergebracht wird, ergibt sich eine theoretische Nullstelle des elektromagnetischen Feldes in der Verlängerung der Antennenstruktur. Die  Abbildunge \ref{fig:DipolEFerd} zeigt die Nullstellen entlang der Ausrichtung des Dipols.Sie zeigt einen Schnitt durch das elektromagnetische Feld in der xz-Ebene. Das durch schwarze Striche dargestellten Feld ist rotationssymmetrisch um die z-Achse. Die Absorbtion des elektromagnetischen Felds, wlche durch das Gerät ensteht, ist in der Abbildungen \ref{fig:DipolEFerd} nicht dargestellt.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]%ESB Antenne
-	\begin{center}
-	\begin{tikzpicture}[scale = 0.8]
-	\draw[line width=1pt](5, 5) rectangle (8, 10) node at (6.5, 9.5) {Connect 1};
-	\draw[line width=1pt](5.3, 6.2) rectangle (7.7, 9);
-	\draw[line width=1pt, ->, >=latex](1, 1) -- (3, ) node at (3.2, 1) {x};
-	\draw[line width=1pt, ->, >=latex](1, 1) -- (1, 3) node at (1.2, 3) {y};
-	\draw[line width=1pt](1, 1) circle (0.2) ;\fill[fill=black](1, 1) circle (2pt);
-	\draw[line width=2pt] (5.15,5.3)--(5.15,6.8);%Antenne unten
-	\draw[line width=2pt] (5.15,7)--(5.15,8.5);%Antenne oben
-	\draw[line width=3pt](3.3, 6.9) ellipse (1.5 and 5);%Feld links
-	\draw[line width=3pt](6.9, 6.9) ellipse (1.5 and 5);%Feld rechts
-
-	\end{tikzpicture}
-	\end{center}
-\caption{Nullstelle des elektromagnetischen Feldes in der xy Ebene bei z = 0 in der Verlängerung der Antenne}
-\label{fig:xyFeld}
-\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!ht]%ESB Antenne
+%	\begin{center}
+%	\begin{tikzpicture}[scale = 0.8]
+%	\draw[line width=1pt](5, 5) rectangle (8, 10) node at (6.5, 9.5) {Connect 1};
+%	\draw[line width=1pt](5.3, 6.2) rectangle (7.7, 9);
+%	\draw[line width=1pt, ->, >=latex](1, 1) -- (3, ) node at (3.2, 1) {x};
+%	\draw[line width=1pt, ->, >=latex](1, 1) -- (1, 3) node at (1.2, 3) {y};
+%	\draw[line width=1pt](1, 1) circle (0.2) ;\fill[fill=black](1, 1) circle (2pt);
+%	\draw[line width=2pt] (5.15,5.3)--(5.15,6.8);%Antenne unten
+%	\draw[line width=2pt] (5.15,7)--(5.15,8.5);%Antenne oben
+%	\draw[line width=3pt](3.3, 6.9) ellipse (1.5 and 5);%Feld links
+%	\draw[line width=3pt](6.9, 6.9) ellipse (1.5 and 5);%Feld rechts
+%
+%	\end{tikzpicture}
+%	\end{center}
+%\caption{Nullstelle des elektromagnetischen Feldes in der xy Ebene bei z = 0 in der Verlängerung der Antenne}
+%\label{fig:xyFeld}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%Die Abbildung \ref{fig:xyFeld} zeigt schematisch die Feldausbreitung einer Dipolantenne, die sich in einer Lücke des  Geräts befindet. Es kommt zu einer Nullstelle in der Längsausrichtung der Antenne. Die Abbildung \ref{fig:xyFeld} zeigt das elektromagnetische Feld bei $\theta=90^\circ$. Es zeigt einen ebenen Schnitt auf der Höhe x=0. \\
+%Die selbe Situation, aber aus einer anderen Perspektive auf das \glqq Connect 1\grqq \ Gerät zeigt die Abbildung  \ref{fig:xzFeld}. Die elektromagnetischen Feldlinien bilden Kreise radial um die Dipolstäbe. Die Abbildung  \ref{fig:xzFeld} zeigt das Feld bei y=0. Diese Felddarstellung beschreibt das Feld in der xy Ebene.
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!ht]%ESB Antenne
+%	\begin{center}
+%	\begin{tikzpicture}[scale = 0.8]
+%	\draw[line width=1pt](5, 5) rectangle (8, 6); %node at (9, 6) {Connect 1};
+%	\draw[line width=1pt, ->, >=latex](3, 3) -- (5,3 ) node at (5.2, 3) {x};
+%	\draw[line width=1pt, ->, >=latex](3, 3) -- (3, 5) node at (3.2, 5) {z};
+%	\draw[line width=1pt](3, 3) circle (0.2) ;\fill[fill=black](3, 3) circle (2pt);
+%	\draw [line width=2pt] (5.15,5.3)--(5.15,5.5);%Antenne
+%	\draw[line width=3pt](5.1, 5.4) circle (1.5);%Feld
+%	\end{tikzpicture}
+%	\end{center}
+%\caption{Elektromagnetisches Feld in der xz Ebene bei y = 0 }
+%\label{fig:xzFeld}
+%\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-Die Abbildung \ref{fig:xyFeld} zeigt schematisch die Feldausbreitung einer Dipolantenne, die sich in einer Lücke des  Geräts befindet. Es kommt zu einer Nullstelle in der Längsausrichtung der Antenne. Die Abbildung \ref{fig:xyFeld} zeigt das elektromagnetische Feld bei $\theta=90^\circ$. Es zeigt einen ebenen Schnitt auf der Höhe x=0. \\
-Die selbe Situation, aber aus einer anderen Perspektive auf das \glqq Connect 1\grqq \ Gerät zeigt die Abbildung  \ref{fig:xzFeld}. Die elektromagnetischen Feldlinien bilden Kreise radial um die Dipolstäbe. Die Abbildung  \ref{fig:xzFeld} zeigt das Feld bei y=0. Diese Felddarstellung beschreibt das Feld in der xy Ebene.
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]%ESB Antenne
-	\begin{center}
-	\begin{tikzpicture}[scale = 0.8]
-	\draw[line width=1pt](5, 5) rectangle (8, 6); %node at (9, 6) {Connect 1};
-	\draw[line width=1pt, ->, >=latex](3, 3) -- (5,3 ) node at (5.2, 3) {x};
-	\draw[line width=1pt, ->, >=latex](3, 3) -- (3, 5) node at (3.2, 5) {z};
-	\draw[line width=1pt](3, 3) circle (0.2) ;\fill[fill=black](3, 3) circle (2pt);
-	\draw [line width=2pt] (5.15,5.3)--(5.15,5.5);%Antenne
-	\draw[line width=3pt](5.1, 5.4) circle (1.5);%Feld
-	\end{tikzpicture}
-	\end{center}
-\caption{Elektromagnetisches Feld in der xz Ebene bei y = 0 }
-\label{fig:xzFeld}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Der Strahlungswiderstand des $\lambda/2$ Dipols entspricht, wie aus  (\ref{RradDipol}) zu entnehmen ist, 73 Ohm. Dies ist ein theoretischer Wert und  kommt  nur im Freiraum zustande. Technisch realisierbare Halbwellendipole haben einen Strahlungswiderstand $R_{rad}$ kleiner als 70 Ohm. Zudem kommt  ein von der  Geometrie der Antenne abhängige Reaktanz $X_{ant}$ hinzu.\\
+Die Reaktanz $X_{ant}$,  der Strahlungswiderstand $R_{rad}$ sowie der Verlustwiderstand $R_v$ ergeben die Antennenimpedanz. Diese wird $Z_{ant}$  genannt. Dieser Zusammenhang ist  in der Abbildung \ref{fig:ESBantenne} gezeigt. Sie zeigt eine Reaktanz  $X_{ant}$ die einen negativen Imaginärteil auf. Deshalb ist $X_{ant}$ in Form eines Kondensators gezeichnet.
 
-Der Strahlungswiderstand des $\lambda/2$ Dipols entspricht, wie aus der Gleichung \ref{RradDipol} zu entnehmen ist, 73 Ohm. Dies ist ein theoretischer Wert. Technisch realisierbare Halbwellendipole haben einen Strahlungswiderstand $R_{rad}$ kleiner als 70 Ohm. Zudem kommt  ein von der  Geometrie der Antenne abhängige Reaktanz $X_{ant}$ hinzu. Der Strahlungswiderstand von ca. 70 Ohm kommt auch nur im Freiraum zustande.\\
-Die Reaktanz $X_{ant}$,  der Strahlungswiderstand $R_{rad}$ sowie der Verlustwiderstand $R_v$ ergeben die Antennenimpedanz. Diese wird $Z_{ant}$  genannt. Dieser Zusammenhang ist  in der Abbildung \ref{fig:ESBantenneZant} gezeigt. Die in der Abbildung \ref{fig:ESBantenneZant} gezeigte $X_{ant}$ weist einen negativen Imaginärteil auf. Deshalb ist $X_{ant}$ in Form eines Kondensators gezeichnet.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]%ESB Antenne mit Zant
-	\begin{center}
-	\begin{tikzpicture}
-%	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
-	\draw[line width=1.5pt, *-](12, 5)  -- (13.5, 5);
-	\draw[line width=1.5pt, *-](12, 2)  -- (16, 2);
-	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
-	\draw[line width=1.5pt](14.5, 5)  -- (16, 5);
-	\draw[line width=1.5pt](16, 5)  -- (16, 4.4);
-	\draw[line width=1.5pt](15.75, 3.4) rectangle (16.25, 4.4) node at (17, 3.9) {$R_{rad}$};%Rrad
-	\draw[line width=1.5pt](16, 3.4)  -- (16, 2.8);
-	\draw[line width=1.5pt](15.75, 2.8)  -- (16.25, 2.8);%Kondensator oben
-	\draw[line width=1.5pt](15.75, 2.6)  -- (16.25, 2.6);%Kondensator unten
-	\node at (17, 2.7) {$X_{ant}$};
-	\draw[line width=1.5pt](16, 2.6)  -- (16, 2);
-	
-%	\draw[line width=1.5pt, ->, >=latex](6.5, 4)  -- (8, 4) node at (8, 3.5) {$P_{ein}$};
-%	\draw[line width=1.5pt, ->, >=latex](11.5, 4)  -- (13, 4) node at (13, 3.5) {$P_{ant}$};
-	
-
-%	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
-	
-%	\node at (17.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
-%	\node at (9.5, 7) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
-	
-%	\node at (18, 2.7) {$\varepsilon$};
-%	\node at (18.5, 2.7) {$\delta$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!ht]%ESB Antenne mit Zant
+%	\begin{center}
+%	\begin{tikzpicture}
+%%	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
+%	\draw[line width=1.5pt, *-](12, 5)  -- (13.5, 5);
+%	\draw[line width=1.5pt, *-](12, 2)  -- (16, 2);
+%	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
+%	\draw[line width=1.5pt](14.5, 5)  -- (16, 5);
+%	\draw[line width=1.5pt](16, 5)  -- (16, 4.4);
+%	\draw[line width=1.5pt](15.75, 3.4) rectangle (16.25, 4.4) node at (17, 3.9) {$R_{rad}$};%Rrad
+%	\draw[line width=1.5pt](16, 3.4)  -- (16, 2.8);
+%	\draw[line width=1.5pt](15.75, 2.8)  -- (16.25, 2.8);%Kondensator oben
+%	\draw[line width=1.5pt](15.75, 2.6)  -- (16.25, 2.6);%Kondensator unten
+%	\node at (17, 2.7) {$X_{ant}$};
+%	\draw[line width=1.5pt](16, 2.6)  -- (16, 2);
 %	
-%	\draw[->,line width=0.5pt,decorate, decoration=snake ](18, 4.1) -- (19.5, 4.6);
-%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.9) -- (19.5, 3.9);
-%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.7) -- (19.5, 3.1);
-%	\node at (20, 3.9) {$P_{rad}$};
-	
-	\draw[line width=1.5pt, decorate, decoration=brace] (13, 1) -- (16.5, 1) node at (14.75, 0.5) {$Z_{ant} =  R_v + R_{rad} + X_{ant}$};
-	\end{tikzpicture}
-	\end{center}
-\caption{Ersatzschaltbild einer Antenne mit $Z_{ant}$}
-\label{fig:ESBantenneZant}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\draw[line width=1.5pt, ->, >=latex](6.5, 4)  -- (8, 4) node at (8, 3.5) {$P_{ein}$};
+%%	\draw[line width=1.5pt, ->, >=latex](11.5, 4)  -- (13, 4) node at (13, 3.5) {$P_{ant}$};
+%	
+%
+%%	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
+%	
+%%	\node at (17.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
+%%	\node at (9.5, 7) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
+%	
+%%	\node at (18, 2.7) {$\varepsilon$};
+%%	\node at (18.5, 2.7) {$\delta$};
+%%	
+%%	\draw[->,line width=0.5pt,decorate, decoration=snake ](18, 4.1) -- (19.5, 4.6);
+%%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.9) -- (19.5, 3.9);
+%%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.7) -- (19.5, 3.1);
+%%	\node at (20, 3.9) {$P_{rad}$};
+%	
+%	\draw[line width=1.5pt, decorate, decoration=brace] (13, 1) -- (16.5, 1) node at (14.75, 0.5) {$Z_{ant} =  R_v + R_{rad} + X_{ant}$};
+%	\end{tikzpicture}
+%	\end{center}
+%\caption{Ersatzschaltbild einer Antenne mit $Z_{ant}$}
+%\label{fig:ESBantenneZant}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
