@@ -18,49 +18,49 @@
 \contentsline {figure}{\numberline {2.15}{\ignorespaces statische Feldbetrachtung einer transversalen Ebene einer Zweidrahtleitung\relax }}{25}{figure.caption.24}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Ersatzschaltbild eines elementaren Leiterst\IeC {\"u}cks\relax }}{25}{figure.caption.25}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Refelxionen einer Leitung an einer Lastimpedanz \cite {Tekom}\relax }}{27}{figure.caption.26}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{29}{figure.caption.28}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Leistungsanpassung f\IeC {\"u}r eine komplexe Last mit einem Transformator\cite {Tekom}\relax }}{30}{figure.caption.29}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{30}{figure.caption.30}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{31}{figure.caption.31}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Verlustfreie Anpassung\relax }}{32}{figure.caption.32}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Blockschaltbild einer Quelle mit Leitung, Anpassung und Antenne\relax }}{34}{figure.caption.36}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{34}{figure.caption.37}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne\relax }}{35}{figure.caption.38}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{29}{figure.caption.27}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Leistungsanpassung f\IeC {\"u}r eine komplexe Last mit einem Transformator\cite {Tekom}\relax }}{30}{figure.caption.28}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{31}{figure.caption.29}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{32}{figure.caption.30}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Verlustfreie Anpassung\relax }}{33}{figure.caption.31}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Blockschaltbild einer Quelle mit Leitung, Anpassung und Antenne\relax }}{34}{figure.caption.32}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{34}{figure.caption.33}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne\relax }}{35}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Feldvektor mit Einheitsvektoren\relax }}{38}{figure.caption.39}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{40}{figure.caption.40}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Horizontalpolarisierter Halbwellendipol\relax }}{41}{figure.caption.41}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Nullstelle des elektromagnetischen Feldes in der xy Ebene bei z = 0 in der Verl\IeC {\"a}ngerung der Antenne\relax }}{46}{figure.caption.42}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Elektromagnetisches Feld in der xz Ebene bei y = 0 \relax }}{47}{figure.caption.43}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ersatzschaltbild einer Antenne mit $Z_{ant}$\relax }}{47}{figure.caption.44}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Vergleich des $S_{11}$\relax }}{49}{figure.caption.45}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Vergleich der Impedanz\relax }}{50}{figure.caption.46}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Flach gestauchte Loop Antenne\relax }}{53}{figure.caption.48}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Allgemeines Ersatzschaltbild einer induktiven Antenne\relax }}{54}{figure.caption.49}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Vergleich des $S_{11}$ Werts einer Loop Antenne\relax }}{58}{figure.caption.51}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Vergleich der Impedanz einer Loop Antenne\relax }}{59}{figure.caption.52}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Feldvektor mit Einheitsvektoren\relax }}{38}{figure.caption.35}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{40}{figure.caption.36}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Horizontalpolarisierter Halbwellendipol\relax }}{41}{figure.caption.37}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Nullstelle des elektromagnetischen Feldes in der xy Ebene bei z = 0 in der Verl\IeC {\"a}ngerung der Antenne\relax }}{46}{figure.caption.38}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Elektromagnetisches Feld in der xz Ebene bei y = 0 \relax }}{47}{figure.caption.39}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ersatzschaltbild einer Antenne mit $Z_{ant}$\relax }}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Vergleich des $S_{11}$\relax }}{49}{figure.caption.41}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Vergleich der Impedanz\relax }}{50}{figure.caption.42}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Flach gestauchte Loop Antenne\relax }}{53}{figure.caption.44}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Allgemeines Ersatzschaltbild einer induktiven Antenne\relax }}{54}{figure.caption.45}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Vergleich des $S_{11}$ Werts einer Loop Antenne\relax }}{58}{figure.caption.47}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Vergleich der Impedanz einer Loop Antenne\relax }}{59}{figure.caption.48}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops\relax }}{60}{figure.3.13}
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{60}{figure.3.14}
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Simulierte 3D Abstrahlcharakteristik eines $\lambda /2$ Loops mit einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{61}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Vergleich des $S_{11}$ Werts einer Loop Antenne\relax }}{62}{figure.caption.56}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Vergleich der Impedanz einer Loop Antenne\relax }}{63}{figure.caption.57}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungen im Freiraum\relax }}{64}{figure.caption.59}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungen und einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{65}{figure.caption.60}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungen und zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{65}{figure.caption.61}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Vergleich des $S_{11}$ Werts einer Loop Antenne\relax }}{62}{figure.caption.52}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Vergleich der Impedanz einer Loop Antenne\relax }}{63}{figure.caption.53}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungen im Freiraum\relax }}{64}{figure.caption.55}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungen und einem ABS St\IeC {\"u}ck im Nahfeld\relax }}{65}{figure.caption.56}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Simulierte 3D Abstrahlcharakteristik einer Loop Antenne mit drei Windungen und zwei ABS St\IeC {\"u}cken im Nahfeld\relax }}{65}{figure.caption.57}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Design Ausgangslage\relax }}{71}{figure.caption.69}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Dipol 5mm breit 50.5mm lang\relax }}{73}{figure.caption.73}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Dipol 3mm breit 50.25mm lang\relax }}{74}{figure.caption.74}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Dipol 1mm breit 51.25mm lang\relax }}{74}{figure.caption.75}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Dipol 1mm breit 45.25mm lang mit Dachkapazit\IeC {\"a}t\relax }}{74}{figure.caption.76}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Vergleich des $S_{11}$ im Geh\IeC {\"a}use und im Freiraum von Dipolantennen \relax }}{75}{figure.caption.78}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{80}{figure.caption.80}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{80}{figure.caption.81}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{81}{figure.caption.82}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Design Ausgangslage\relax }}{71}{figure.caption.65}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dipol 5mm breit 50.5mm lang\relax }}{73}{figure.caption.69}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Dipol 3mm breit 50.25mm lang\relax }}{74}{figure.caption.70}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Dipol 1mm breit 51.25mm lang\relax }}{74}{figure.caption.71}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Dipol 1mm breit 45.25mm lang mit Dachkapazit\IeC {\"a}t\relax }}{74}{figure.caption.72}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Vergleich des $S_{11}$ im Geh\IeC {\"a}use und im Freiraum von Dipolantennen \relax }}{75}{figure.caption.74}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Ermittlung der S-Parameter am Zweitor\relax }}{80}{figure.caption.76}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Ermittlung der $S_{11}$ Parameter am Zweitor\relax }}{80}{figure.caption.77}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Ermittlung der $S_{21}$ Parameter am Zweitor\relax }}{81}{figure.caption.78}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Vorgehensmodell\relax }}{88}{figure.caption.86}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Vorgehensmodell\relax }}{88}{figure.caption.82}
 \addvspace {10\p@ }
