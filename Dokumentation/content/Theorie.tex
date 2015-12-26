@@ -317,7 +317,7 @@ Die Signalgeschwindigkeit $v$ dividiert durch die Frequenz ergibt die Wellenlän
 Besonders vorteilhafte Übertragungseigenschaften hat die längshomogene Leitung. Es handelt sich dabei um eine Leitung, welche auf ihrer ganzen Länge einen konstanten Leitungsquerschnitt, gleiches
 Leitermaterial, konstanten Leiterabstand und einen gleichförmigen Isolator aufweist. Gebräuchliche Formen sind die symmetrische Zweidrahtleitung, die verdrillte Zweidrahtleitung, die Streifenleitung auf einer Printplatte oder das Koaxialkabel.
 \subsection{Leitungsmodell}
-Um die Zweitoreigenschaften einer längshomogenen Zweidrahtleitung zu ermitteln, wird diese in $n$ gleich lange Elementarzweitore mit einer Distanz von $\Delta z$ unterteilt, wie dies in Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt ist. Die Gesamtlänge der Leiter $l$ ergibt sich aus (n+1)$\Delta z$ langen Zweitoren. Hierbei soll $n$ sehr gross sein, damit $\Delta z$ verschwindend klein wird.
+Um die Zweitoreigenschaften einer längshomogenen Zweidrahtleitung zu ermitteln, wird diese in $n$ identische Elementarzweitore mit einer Länge von $\Delta z$ unterteilt, wie dies in Abbildung \ref{fig:LeitungsmodellZweitorKette} dargestellt ist. Die Gesamtlänge der Leiter $l$ ergibt sich aus n$\Delta z$. Hierbei soll $n$ sehr gross sein, damit $\Delta z$ verschwindend klein wird.
 
 \begin{figure}[!ht]
 	\begin{center}
@@ -343,10 +343,10 @@ Um die Zweitoreigenschaften einer längshomogenen Zweidrahtleitung zu ermitteln,
 	\draw[line width=0.5pt, style=dashed](7.9, 2) -- (7.9, 3.5);%vertikal gepunktete Linie
 	\end{tikzpicture}
 	\end{center}
-\caption{Leitungsmodell einer Kette von Zweitoren}
+\caption{Leitungsmodell einer Zweitorkette}
 \label{fig:LeitungsmodellZweitorKette}
 \end{figure}
-Aus der Elektrotechnik ist bekannt, dass  beim Einschalten einer Signalquelle auf der Leitung ein Strom $i(t)$ einstellt. Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. Das einschalten der Quelle führt weiter zu einer Spannung zwischen den Leitern, was zu einem elektrischen Feld und einer Oberflächenladung $Q = u  \Delta C$ auf den Leitern führt \cite{Tekom}.
+Aus der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquelle auf der Leitung ein Strom $i(t)$ einstellt. Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. Das Einschalten der Quelle führt weiter zu einer Spannung zwischen den Leitern, was widerum zu einem elektrischen Feld und einer Oberflächenladung $Q = u  \Delta C$ auf den Leitern führt. Diese beiden Sachverhalte sind in den Ablildungen \ref{Magnetischer Fluss einer Zweidrahtleitung}	 und \ref{fig:statischeZeidrahtleitung} dargestellt, wobei es sich um eine statische Feldbetrachtung der transversalen Ebene  einer Zweidrahtleitung handelt. \cite{Tekom}.
 \begin{figure}[!h]
 \begin{minipage}{7cm}
 	\centering
@@ -378,7 +378,7 @@ Aus der Elektrotechnik ist bekannt, dass  beim Einschalten einer Signalquelle au
 %\caption{statische Feldbetrachtung einer Transversalen Ebene einer Zeidrahtleitung}
 \end{minipage}
 \label{fig:statischeZeidrahtleitung}
-\caption{statische Feldbetrachtung einer transversalen Ebene einer Zweidrahtleitung}
+
 \end{figure}
 
 \begin{figure}[!ht]
@@ -387,7 +387,7 @@ Aus der Elektrotechnik ist bekannt, dass  beim Einschalten einer Signalquelle au
 	\caption{Ersatzschaltbild eines elementaren Leiterstücks}
 	\label{fig:ESBLeiterstueck}
 \end{figure}
-Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leitungsbeläge ausdrücken. Die Gleichung (\ref{eq:InduktiverLeitungsbelag}) gibt den induktiven Leitbelag an, die Gleichung (\ref{eq:KapazitiverLeitungsbelag}) zeigt den kapazitiven Leitungsbelag.
+Bei einer längshomogenen Leitung darf die Annahme getroffen werden, dass die Induktivität $\Delta L$ und die Kapazität $\Delta C$ gleichförmig über die Länge $\Delta z$ verteilt sind. Man kann sie daher im Modell als Leitungsbeläge ausdrücken. Die Gleichung (\ref{eq:InduktiverLeitungsbelag}) gibt den Induktivitätsbelag, die Gleichung (\ref{eq:KapazitiverLeitungsbelag})  den Kapazitätsbelag wieder.
 
 \begin{equation}
 L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
@@ -395,16 +395,16 @@ L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
 \begin{equation}
 C'=\dfrac{\Delta C}{\Delta z}\label{eq:KapazitiverLeitungsbelag}
 \end{equation}
-Werden zudem die ohmschen Verluste im Leiter und allfällige dielektrische Verluste in der Isolation als Wirkwiderstände dargestellt, so lässt sich das Ersatzschaltbild einer Leitung gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
-Für die Gleichungen \ref{eq:InduktiverLeitungsbelag}, \ref{eq:KapazitiverLeitungsbelag} gelten die Zusammenhänge aus der Abbildung \ref{fig:ESBLeiterstueck}  \cite{Tekom}:
+Werden zudem die ohmschen Verluste im Leiter $R'$ und allfällige dielektrische Verluste in der Isolation $G'$ als Wirkwiderstände dargestellt, so lässt sich das Ersatzschaltbild eines Zweitores mit der Länge $\Delta z$ gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
+Für die Abbildung \ref{fig:ESBLeiterstueck} gelten die Zusammenhänge aus den Gleichungen (\ref{eq:KapazitiverLeitungsbelag}) und  (\ref{eq:KapazitiverLeitungsbelag}) \cite{Tekom}.
 \begin{enumerate}[leftmargin=2cm]
-   \item[] $R'$: Ohmsche Leiterverlust/m [$\Omega/m$] 
-   \item[] $L'$: Serieinduktivität/m  [$H/m$] 
+   \item[] $R'$: Widerstandsbelag [$\Omega/m$] 
+   \item[] $L'$: Induktivitätsbelag  [$H/m$] 
    \item[] $G'$: Dielektrische Verluste/m  [$S/m$] 
-   \item[] $C'$: Kapazität zwischen den Leiten/m  [$F/m$] 
-   \item[] $\Delta m$: Abschnittslänge  [$m$] 
+   \item[] $C'$: Kapazitätsbelag [$F/m$] 
+   \item[] $\Delta z$: Zweitorlänge [$m$] 
 \end{enumerate} 
-Die Spannung und der Strom auf einer Leitung kann als Summe von zwei Wellen beschrieben werden. Die eine Welle läuft vorwärts entlang der positiven $z$ Ausrichtung. Die rückwärts laufende Welle geht entlang der negativen $z$ Achse. Der Strom und die Spannung können mit Hilfe der elementaren Leiterabschnitte $\Delta z$ an jedem Punkt $z$  der Leitung berechnet werden. Die Gleichung \ref{eq:UvonZundT} gibt die Summe der vor- und zurücklaufenden Spannungswellen an. Der Strom an jedem beliebigen Punkt auf der Leitung kann mit der Gleichung \ref{eq:IvonZundT} berechnet werden \cite{Tekom}.
+Auf einer Leitung sind immer eine vorwärts sowie  eine rückwärts laufende Strom- und Spannungswelle vorhanden, ausser die vorwärts laufende Welle wird vollständig von einer Last absorbiert. Die vorwärts laufende Welle breitete sich entlang der positiven z-Achse, die rückwärts laufende Welle entlang der negativen z-Achse aus. Spannung und Strom auf der Leitung können als Summe dieser zwei Wellen beschrieben werden. Mit Hilfe der elementaren Leiterabschnitte können sie an jedem Punkt $z$ der Leitung berechnet werden. Die Gleichung (\ref{eq:UvonZundT}) gibt die Summe der Spannungswellen, die Gleichung (\ref{eq:IvonZundT}) die Summe Stromwellen wider \cite{Tekom}.
 \begin{eqnarray}\label{eq:UvonZundT}
 U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
@@ -412,18 +412,14 @@ U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\ome
 I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
 
-\section{Anpassung und Reflexionen}\label{sec:AnpassungReflexionen}
-Die Anpassung ist nicht nur in der Hochfrequenztechnik ein viel diskutiertes Thema. Auch in der Gleichstromtechnik wird von Anpassung gesprochen. Es gibt verschiedene Formen der Anpassung. Zum Beispiel wird von Leistungsanpassung gesprochen, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll. Um das zu erreichen muss der Innenwiderstand  $R_i$ einer Quelle dem Lastwiderstand $R_L$ entsprechen.  Ein ganz anderes Ziel verfolgt die Wellenanpassung. Sie kommt immer dann zum Zuge, wenn auf einer Übertragungsstrecke die Signalreflexionen an den Übergängen des Mediums verhindert werden.
-Man vergleicht immer die Eingangsimpedanz mit der Ausgangsimpedanz. Es ist  von $Z_{ein}$ und $Z_{aus}$ die Rede.
-In diesem Kapitel werden zwei Arten der Anpassung genauer betrachtet. Es sind dies:
-\begin{itemize}
-\item Leistungsanpassung
-\item Wellenanpassung
-\end{itemize}
-In diesem Zusammenhang soll auch erwähnt sein, dass es weiter die Spannungs- und die Stromanpassung gibt, beide werden im Rahmen dieser Arbeit nicht erläutert. \\
-Die Leistungsanpassung wird angewendet, wenn die maximale Leistungsübertragung gefordert ist. Die maximale Leistung in der Last wird erreicht, wenn der Lastwiderstand dem Quellenwiderstand entspricht. Bei rein ohmischen Quellen- und Lastwiderstand bedeutet das:\\
-\[R_{Quelle} = R_{Last}\]
-Die Wellenanpassung wird auch Leitungsanpassung  genannt. Wellenanpassung ist in der Hochfrequenztechnik immer dann gefragt, wenn die zu übertragenden Wellen oder Impulse ohne Reflexionen von einer Quelle zu einer Last übertragen werden. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, wird sowohl Wellenanpassung als auch Leistungsanpassung erreicht, wenn $R_{Quelle} = R_{Last}$ ist. Treten jedoch Impedanzen mit positivem oder negativem Imaginärteil auf, so muss für die Wellenanpassung das folgende Kriterium erfüllt sein:
+\section{Anpassung und Reflexion}\label{sec:AnpassungReflexionen}
+Die Anpassung ist nicht nur in der  Gleichstromtechnik  ein viel diskutiertes Thema, auch in der Hochfrequenztechnik wird davon gesprochen. Unter anderem bezeichnet man als Leistungsanpassung, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll und hierfür ein Anpassung des Innenwiderstandes $R_I$ der Quelle an den Lastwiderstand $R_L$ erfolgen muss. Bei der  Wellenanpassung hingegen sollen Signalrefflexionen an den Übergängen verschiedener Medien verhinder weden. Hierfür erfolgt eine Anpassung der Eingangsimpedanz $Z_{ein}$ an die Ausgangsimpedanz $Z_{aus}$. 
+In diesem Kapitel werden die zwei erwähneten Arten der Anpassung genauer betrachtet.\\
+
+
+Die Leistungsanpassung wird angewendet, wenn eine maximale Leistungsübertragung zwischen Quelle und Last erforderlich ist. Die maximale Leistung in der Last wird erreicht, wenn der Lastwiderstand dem Quellenwiderstand entspricht. Bei rein ohmschen Quellen- und Lastwiderstanden bedeutet dies:\\
+\[R_{Q} = R_{L}\]
+Die Wellenanpassung wird auch Leitungsanpassung  genannt. Sie ist in der Hochfrequenztechnik immer dann gefragt, wenn das Signal ohne Reflexion von der Quelle zur Last übertragen werden soll. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, so wird sowohl  Wellen- als auch Leistungsanpassung erreicht, wenn $R_{Quelle} = R_{Last}$ gilt. Treten jedoch Impedanzen mit positivem oder negativem Imaginärteil $jX$ auf, muss für die Wellenanpassung das folgende Kriterium erfüllt sein:
 \begin{eqnarray}\label{eq:ZeinZaus}
 Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
 \end{eqnarray}

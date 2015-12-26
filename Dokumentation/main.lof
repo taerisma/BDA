@@ -12,20 +12,19 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Verbindungsmodell\relax }}{20}{figure.caption.19}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Ersatzschaltbild einer asymmetrischen Quelle\relax }}{21}{figure.caption.21}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Ersatzschaltbild einer symmetrischen Quelle\relax }}{22}{figure.caption.22}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Leitungsmodell einer Kette von Zweitoren\relax }}{24}{figure.caption.23}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Leitungsmodell einer Zweitorkette\relax }}{24}{figure.caption.23}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Magnetischer Fluss einer Zweidrahtleitung\relax }}{25}{figure.caption.24}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Oberfl\IeC {\"a}chenladung einer Zweidrahtleitung\relax }}{25}{figure.caption.24}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces statische Feldbetrachtung einer transversalen Ebene einer Zweidrahtleitung\relax }}{25}{figure.caption.24}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Ersatzschaltbild eines elementaren Leiterst\IeC {\"u}cks\relax }}{25}{figure.caption.25}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Refelxionen einer Leitung an einer Lastimpedanz \cite {Tekom}\relax }}{27}{figure.caption.26}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{29}{figure.caption.27}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Leistungsanpassung f\IeC {\"u}r eine komplexe Last mit einem Transformator\cite {Tekom}\relax }}{30}{figure.caption.28}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{31}{figure.caption.29}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{32}{figure.caption.30}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Verlustfreie Anpassung\relax }}{33}{figure.caption.31}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Blockschaltbild einer Quelle mit Leitung, Anpassung und Antenne\relax }}{34}{figure.caption.32}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{34}{figure.caption.33}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne\relax }}{35}{figure.caption.34}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Ersatzschaltbild eines elementaren Leiterst\IeC {\"u}cks\relax }}{25}{figure.caption.25}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Refelxionen einer Leitung an einer Lastimpedanz \cite {Tekom}\relax }}{27}{figure.caption.26}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Leistungsanpassung mit $R_Q = R_L$\relax }}{29}{figure.caption.27}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Leistungsanpassung f\IeC {\"u}r eine komplexe Last mit einem Transformator\cite {Tekom}\relax }}{30}{figure.caption.28}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q > R_L$\relax }}{31}{figure.caption.29}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Anpassung f\IeC {\"u}r $R_Q < R_L$\relax }}{32}{figure.caption.30}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Verlustfreie Anpassung\relax }}{33}{figure.caption.31}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Blockschaltbild einer Quelle mit Leitung, Anpassung und Antenne\relax }}{34}{figure.caption.32}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{34}{figure.caption.33}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne\relax }}{35}{figure.caption.34}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Feldvektor mit Einheitsvektoren\relax }}{38}{figure.caption.35}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Ersatzschaltbild einer Antenne\relax }}{40}{figure.caption.36}
