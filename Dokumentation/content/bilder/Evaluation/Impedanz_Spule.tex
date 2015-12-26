@@ -17,8 +17,8 @@ scale only axis,
 separate axis lines,
 every outer x axis line/.append style={black},
 every x tick label/.append style={font=\color{black}},
-xmin=1.95771850170261,
-xmax=3.0405788876277,
+xmin=1.95,
+xmax=3.15,
 xlabel={Frequenz in [GHz]},
 xmajorgrids,
 every outer y axis line/.append style={black},
@@ -31,7 +31,7 @@ axis background/.style={fill=white},
 title={Impedanz der Loop Antenne mit drei Windungen im Freiraum, mit einem und zwei ABS Stücken},
 legend style={legend cell align=left,align=left,draw=black}
 ]
-\addplot [color=red,solid]
+\addplot [color=red,very thick,solid]
   table[row sep=crcr]{%
 1.25	0.00140942\\
 1.26875	0.00160261\\
@@ -237,7 +237,7 @@ legend style={legend cell align=left,align=left,draw=black}
 };
 \addlegendentry{Realteil im Freien};
 
-\addplot [color=blue,solid]
+\addplot [color=blue,very thick,solid]
   table[row sep=crcr]{%
 1.25	0.0278779\\
 1.26875	0.0371202\\
@@ -443,7 +443,7 @@ legend style={legend cell align=left,align=left,draw=black}
 };
 \addlegendentry{Imaginärteil im Freien};
 
-\addplot [color=green,solid]
+\addplot [color=green,very thick,solid]
   table[row sep=crcr]{%
 1.25	0.014102\\
 1.26875	0.0110641\\
@@ -649,7 +649,7 @@ legend style={legend cell align=left,align=left,draw=black}
 };
 \addlegendentry{Realteil mit ABS};
 
-\addplot [color=black,solid]
+\addplot [color=black,very thick,solid]
   table[row sep=crcr]{%
 1.25	-0.107434\\
 1.26875	-0.0846181\\
@@ -855,7 +855,7 @@ legend style={legend cell align=left,align=left,draw=black}
 };
 \addlegendentry{Imaginärteil mit ABS};
 
-\addplot [color=mycolor1,solid]
+\addplot [color=mycolor1,very thick,solid]
   table[row sep=crcr]{%
 1.5	0.0206613\\
 1.5325	0.0142763\\
@@ -969,7 +969,7 @@ legend style={legend cell align=left,align=left,draw=black}
 };
 \addlegendentry{Realteil mit 2ABS};
 
-\addplot [color=mycolor2,solid]
+\addplot [color=mycolor2,very thick,solid]
   table[row sep=crcr]{%
 1.5	0.085088\\
 1.5325	0.0922518\\
