@@ -314,7 +314,7 @@ Die beiden Gleichungen (\ref{eq:VerlustwinkelSpule}) und (\ref{eq:VerlustwinkelK
 \end{equation}
 In diesem Zusammenhang soll  die komplexe Permittivität $\varepsilon$ genannt werden:
 \begin{equation} \label{eq:komplexePermitivität}
-\varepsilon=\varepsilon_0(\varepsilon^{'}-j\varepsilon^{''})=\varepsilon_0\varepsilon^{'}(1-j\dfrac{\varepsilon^{''}}{\varepsilon^{'}})
+\varepsilon=\varepsilon_0(\varepsilon^{'}-j\varepsilon^{''})=\varepsilon_0\varepsilon^{'}\big(1-j\dfrac{\varepsilon^{''}}{\varepsilon^{'}}\big)
 \end{equation}
 In der Gleichung (\ref{eq:komplexePermitivität}) kommt das Verhältnis $\dfrac{\varepsilon^{''}}{\varepsilon^{'}}$ vor. Es ist klein für gute Dielektrika, welche über einen weiten Frequenzbereich annähernd konstant sind. Das Verhältnis von der Wechselstrom Permittivität $\varepsilon^{'}$ und des dielektrischen Verlustfaktors $\varepsilon^{''}$ ergibt den Verlustwinkel $\tan\delta$ \cite{elliott1981antenna}. 
 \begin{equation} \label{eq:VerlustwinkelEpsilonPermitivität}
@@ -521,13 +521,13 @@ Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!h]
   \centering
-  \begin{tabular}{p{3cm} p{4cm} p{2cm} p{1.5cm} p{2cm} p{2cm} p{2.5cm} l  c c c c p r} 
+  \begin{tabular}{p{3cm} p{4cm} p{2cm} p{1.5cm} p{2cm} p{2.5cm}  l  c c c c p r} 
   \toprule 
-  Antenne und Umfeld             & $S_{11_{max}}$ [dB]		& $Z_{ant}$ [$\Omega$] 	& $\eta$ [$\%$] & Bandbreite [MHz] & relative Bandbreite [$\%$]\\ 
+  Antenneumfeld             & $S_{11_{max}}$ [dB]		& $Z_{ant}$ [$\Omega$] 	& $\eta$ [$\%$] & Bandbreite [MHz] & relative Bandbreite  [$\%$]\\ 
   \midrule
-Dipol im Freiraum    			&	-16.16 @ 2.42 GHz		&  	68.60-j4			&   	97	&	340 & 12\\         		
- Dipol mit einem ABS Stück  	&   -20.79 @ 2.08 GHz 		&	141.5+j39.6		&	71	&	342	 & 15 \\
-Dipol mit zwei ABS Stücken  	&   -28.2 @ 1.82 GHz   	&	206.2-j28		&	59	&	330	 & 17 \\
+ Freiraum    			&	-16.16 @ 2.42 GHz		&  	68.60-j4			&   	97	&	340 & 14\\         		
+1 ABS Stück  	&   -20.79 @ 2.08 GHz 		&	141.5+j39.6		&	71	&	342	 & 16 \\
+2 ABS Stücke  	&   -28.20 @ 1.82 GHz   	&	206.2-j28		&	59	&	330	 & 18 \\
  \bottomrule
   \end{tabular}
   \caption{Simulation von $\lambda/2$ Dipolantennen im Freiraum und mit ABS Stücken}
@@ -540,20 +540,20 @@ Der Quellenwiderstand $R_Q$ ist 50$\Omega$. Der maximal Wert der Rückflussdämp
 
 \newpage
 \section{Loop Antenne}
-Magnetische Antennen sprechen nur auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Deshalb werden sie magnetische Antennen genannt. Sie sind nicht magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits nach $2\lambda$ Wellenlänge ist ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei magnetischen Antennen senkrecht durch die Loop-Fläche hindurch. Für maximalen Empfang muss deshalb die Schmalseite der magnetischen Antenne in Richtung eines Dipolsenders  zeigen.
+Eine Loop Antenne wird  auch Rahmenantenne oder magnetische Antennen genannt. Sie besteht aus einer, oder mehreren Drahtwindungen die auf einem Trägerrahmen aufgespannt sind. Sie sprechen auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Sie sind nicht, wie es der Name vermuten lässt, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits in einem Abstand von $2\lambda$ Wellenlänge ist neben dem magnetischen Feld ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei Loop Antennen senkrecht durch die Loop-Fläche hindurch, dabei wird eine Spannung in die Windungen der Loop Antenne induziert. Für eine maximale Empfangsspannung muss deshalb die Schmalseite der Loop Antenne in Richtung eines Dipolsenders zeigen.
+
 
 \subsection{Elektromagnetische Wellenabstrahlung von Loop Antennen}
-An dieser Stelle werden die wesentlichen Abstrahleigenschaften und Zusammenhänge  der Loop Antenne erläutert.
+An dieser Stelle werden die wesentlichen Abstrahleigenschaften und Zusammenhänge der Loop Antenne erläutert.
 Bei einer Loop Antenne ist der Ursprung der Wellenausbreitung ein magnetischer Dipol. Eine genaue Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} erläutert. \\
 Elektromagnetische Wellen können  von einem schwingenden magnetischen Dipol
 abgestrahlt werden. Analog zum Hertzschen Dipol befindet sich im Koordinatenursprung
-ein magnetischer Dipol der Länge $dz<<\lambda$, welcher mit einem konstanten
+ein magnetischer Dipol der Länge $dz<<\lambda$, welcher von einem konstanten
 Strom $I^{m}=constant$ durchflossen wird. Das magnetische Dipolmoment beträgt somit:
-
 \begin{equation}
 \textbf{m}=I^{m}dze_z
 \end{equation}
-Äquivalent dazu kann man sich eine mit einem Strom I durchflossene, kreisförmige Schleife mit Radius $a<<\lambda$ vorstellen, die eine Magnetisierung $\textbf{M}$ hervorruft:
+Äquivalent dazu kann man sich eine mit einem Strom I durchflossene, kreisförmige Windung mit Radius $a<<\lambda$ vorstellen, die eine Magnetisierung $\textbf{M}$ hervorruft:
 \begin{equation}
 I^{m}dze_{z}=j\omega\mu_{0}I\pi a^{2}
 \end{equation}
@@ -569,7 +569,7 @@ Sie weisen die folgenden Transversalkomponenten $\textbf{E}_{\varphi}$ bzw.$\tex
 \end{equation}
 Es wird festgestellt, dass die Felder nur vom Strom, der Fläche und des Winkels $\theta$ abhängig sind
 und nicht von der Form der Antenne. 
-Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. S ist die von der Windung aufgespannte Fläche und k kann als $2\pi/\lambda$ angenommen werden. Der Radius der Windung entspricht $a$ und $Z_0$ ist die Wellenimpedanz im Freiraum mit $120\pi$.
+Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. Windung aufgespannte Fläche S  und k kann als $2\pi/\lambda$ angenommen werden. Der Radius der Windung entspricht $a$ und $Z_0$ ist die Wellenimpedanz im Freiraum mit $120\pi$.
 \begin{equation}\label{eq:RS_LOOP}
 R_{s}=\dfrac{2Ps}{|I|^{2}}=Z_{0}\dfrac{\pi}{6}(k^{2}a^{2})^{2}=Z_{0}\dfrac{2\pi}{3}\left(\dfrac{kS}{\lambda}\right)^{2} 
 \end{equation}
