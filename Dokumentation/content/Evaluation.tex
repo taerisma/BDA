@@ -296,12 +296,12 @@ Der Verlustwinkel ist als $\arctan$ des Verhältnisses von Wirkleistung zu Blind
 Je kleiner der Verlustwinkel ist, desto näher kommen die realen Bauteile ihrem idealen Verhalten. Eine ideale Induktivität hat einen Verlustwinkel von $0^\circ$. Ein idealer Kondensator hat ebenfalls einen Verlustwinkel von 0$^\circ$. Ein Verlustwinkel der grösser ist als $0^\circ$ führt zu Verlustwiderständen die in Serie zu den idealen Induktivitäten und Kapazitäten gerecht werden.\\
 In der technisch realisierbaren Elektronik gibt es jedoch keine idealen Bauteile. Die Verluste in dem Bauteilen sind zudem stark frequenzabhängig.\\
 Der Verlustwinkel  $\delta$  lässt sich über die komplexe Impedanz $Z$ oder über die Phasenverschiebung  $\varphi$  zwischen Strom $I$ und Spannung $U$ des Bauteils berechnen: 
-\label{eq:Verlustwinkel}
 \begin{align}
+\label{eq:Verlustwinkel}
 \delta &= \arctan \dfrac{ReZ}{ImZ}
 \end{align}
-\label{eq:Verlustwinkel_aus_Phi}
 \begin{align}
+\label{eq:Verlustwinkel_aus_Phi}
 \delta &= 90^\circ - |\varphi|
 \end{align}
 Die realen Ersatzschaltbilder von Spulen und Kondensatoren berücksichtigen die Verluste mit einem Widerstand $R$.
@@ -512,9 +512,9 @@ Die Antennenimpedanz aller drei Simulationen sind in der folgenden Abbildung \re
 \newpage
 
 \subsection{Vergleich aus den Simulationen der Dipolantennen}
-Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Weiter zeigen sie das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe auf. Der Kunststoff im Nahfeld der Antenne hat auf die Resonanzfrequenz dieselbe Wirkung  wie das Verlängern der  Strahlerlänge. Das bedeutet, die Resonanzfrequenz $f_{r}$ sinkt.  Die beiden Kunststoffstücke haben eine Verschiebung des maximalen $S_{11}$ Werts von 600 MHz verursacht.
+Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Zum beispiel zeigt die Simmulation im Freiraum eine Antennen Impedanz von (68.6+j4) bei einer Frequenz von 2.450 GHz, dabei resultiert die Abstrahleffizienz $\eta$ von 97$\%$. Weiter zeigen sie das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe auf. Diese führen zu einer tieferen Resonanzfrequenz der Antenne. Da die Dipole im Kunststoff bei jeder Schwinugn des Nahfeld sich neu Ausrichten. Das bedeutet, bei der Simulation von einem Dipol mit zwei ABS Kusstoffstücken im Nahfeld sinkt die Resonanzfrequenz $f_{r}$ um 600 MHz auf 1.82 GHz im Vergleich zum Dipol im Freiraum dessen maximale Dämpfung des $S_{11}$ Werts bei 2.42 GHz liegt.\\ 
 Die dreidimensionalen \glqq EM Far Field\grqq \  Darstellungen der drei Simulationen zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Sie zeigen alle drei, einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.\\
-Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie \cite{elliott1981antenna} bekannten Bereich. Der $Z_{ant}$ ist bei den drei Versuchen zwischen (68-j4) Ohm und  (208-j28) Ohm. Die Anpassung an die reelle 50 Ohm Quelle zeigt eine Abstrahleffizienz von $\eta_{tot}$ von   ca. 69\%, 71\%  bis 97\%.\\
+Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie im Kapitel \ref{sec:DipolAntenne} genannten Bereich. Der $Z_{ant}$ ist bei den drei Versuchen zwischen (68-j4) Ohm und  (208-j28) Ohm. Die Anpassung an eine Hochfrequenzquelle mit Innenwiderstand von reell 50 Ohm  zeigt eine Abstrahleffizienz von $\eta_{tot}$ von   ca. 69\%, 71\%  bis 97\%.\\
 Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergleichswerte der $\lambda/2$ Dipolantenne.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!h]
@@ -534,7 +534,7 @@ Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergle
 
 %\begin{minipage}[c]{0.95\textwidth} 
 Für die drei Siulationen gilt:\\
-Der Quellenwiderstand $R_Q$ ist 50$\Omega$. Der maximal Wert der Rückflussdämpfung ist als $S_{11_{max}}$ in der Tabelle geennzeichnet. Zu jedem dem Punkt mit maximaler $S_{11}$ Dämpfung ist die Frequenz gennat. Der Real- und Imaginärteil kann für jede Simulation aus der Abbildung \ref{Impedanz_Vergleich_Simulation} genommen werden. Die Abstrahleffizien $\eta$ stellt die gesammte Abstrahleffizienz $\eta_{tot}$ dar. Als Bandbreite wurde der Frequenzbereich definiert, den die $S_11$ Kurfe beinhaltet, bei der die Amplitude um 10 dB kleiner ist als der maximal Wert. Die relative Bandbreite wurde aus der Division von der 10 MHz Bandbreite geteilt durch die $f_{res}$, diese entspricht der Frequenz bei $S_{11_{max}}$.
+Der Quellenwiderstand $R_Q$ ist 50$\Omega$. Der maximal Wert der Rückflussdämpfung ist als $S_{11_{max}}$ in der Tabelle geennzeichnet. Die drei Werte $S_{11_{max}}$ stellen dei Resonanzfrequenz dar. Der Real- und Imaginärteil kann für jede Simulation aus der Abbildung \ref{Impedanz_Vergleich_Simulation} genommen werden. Die Abstrahleffizien $\eta$ stellt die gesammte Abstrahleffizienz $\eta_{tot}$ dar. Als Bandbreite wurde der Frequenzbereich definiert, den die $S_11$ Kurfe beinhaltet, bei der die Amplitude um 10 dB kleiner ist als der Resonanzfrequenz $f_{res}$. Die relative Bandbreite wurde aus der Division von der -10 dB Bandbreite geteilt durch die $f_{res}$ berechnet.
 %\end{minipage}
 
 
@@ -578,7 +578,7 @@ So beträgt z.B. der Strahlungswiderstand für eine kreisförmige Schleife mit R
 
 
 \subsection{Halbwellen Loop Eigenschaften}
-Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen. Der Strahlungswiderstand $R_{rad}$ kann mit der aus( \ref{eq:RradLoop}) aus Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Dipol Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für einen Loop der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung (\ref{eq:XantLoop}) ein Wert für $X = 637 \Omega$ bestimmt werden. Um die Reaktanz X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
+Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen. Der Strahlungswiderstand $R_{rad}$ kann mit der aus(\ref{eq:RradLoop}) aus Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Dipol Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für einen Loop der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung (\ref{eq:XantLoop}) ein Wert für $X = 637 \Omega$ bestimmt werden. Um die Reaktanz X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
 \begin{equation}\label{eq:XantLoop}
 X= 2\pi f a(ln \left( \frac{8a}{p} \right) - 1.75)
 \end{equation}
