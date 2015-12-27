@@ -1,8 +1,8 @@
 \newpage
 \section{Nah- und Fernfeld}\label{sec:NahundFern}
-Antennen sind Wellenwandler, da sie die ihnen zugeführten elektromagnetischen Wellen in  elektromagnetische Energie umwandeln. Diese hat ebenfalls Wellencharakter und breitet sich im Raum um die Antenne kugelförmig aus. Die zuführenden elektromagnetischen Wellen sind oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, einer Leiterbahn auf einer Leiterplatte oder einem Koaxialkabel erfolgen. Für einige Antennen wird ein Hohlleiter als Zuleitung verwendet. 
+Antennen sind Wellenwandler, da sie die ihnen zugeführten elektromagnetischen Wellen in elektromagnetische Energie umwandeln. Diese hat ebenfalls Wellencharakter und breitet sich im Raum um die Antenne kugelförmig aus. Die zuführenden elektromagnetischen Wellen sind oft an einen elektrischen Leiter gebunden. Dies kann in Form einer Zweidrahtleitung, einer Leiterbahn auf einer Leiterplatte oder einem Koaxialkabel erfolgen. Für einige Antennen wird ein Hohlleiter als Zuleitung verwendet. 
 Der Antenne kommt die Aufgabe zu, die im Leiter geführte Welle in eine Raumwelle umzuwandeln. Das bedeutet, die leitergebundene Welle wird zu einer Freiraumwelle, welche den Raum um die Antenne ausfüllt.
-Hierbei passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \  \Omega$ an. Vereinfacht kann der Wellenwiderstand im freien Raum als Wellenwiderstand im Vakuum betrachtet werden, wenn die Luft als homogenes Medium ohne Fremdkörper und demzufolge ohne Reflexionen betrachtet wird:
+Hierbei passt die Antenne den Leitungswiderstand $Z_{L}$ an den Feldwellenwiderstand $Z_{F0}$ von $120\pi = 377 \ \Omega$ an. Vereinfacht kann der Wellenwiderstand im freien Raum als Wellenwiderstand im Vakuum betrachtet werden, wenn die Luft als homogenes Medium ohne Fremdkörper und demzufolge ohne Reflexionen betrachtet wird:
 \begin{equation}\label{eq:Wellenimpedanz}
 Z_{F0}=\sqrt{\dfrac{\mu}{\epsilon}}=\sqrt{\dfrac{\mu_{0}}{\epsilon_{0}}}=120\pi
 \end{equation}
@@ -11,11 +11,11 @@ Breitet sich die Welle in einem Medium mit einer endlichen Leitfähigkeit aus, s
 Z_{F}=\sqrt{\dfrac{j\omega\mu_{0}}{\sigma+j\omega\epsilon}}
 \end{equation}
 Die Wahl der Antenne als Wellenwandlertyp hängt im wesentlichen vom gewünschten Frequenzbereich und der geforderten Antennencharakteristik ab. Bei einer Freiraumübertagungsstrecke ist die Distanz $r$ zwischen der Sende- und Empfangsantenne sehr gross verglichen mit den Abmessungen der Antennen oder der Freiraumwellenlänge $\lambda_{0}$. Vom Empfangsort scheint daher die Antennenstrahlung aus einer punktförmigen Quelle zu stammen. Dieser Entstehungspunkt der elektromagnetischen Welle wird Phasenzentrum genannt. Er ist die Quelle der abgestrahlten elektromagnetischen Felder. Die elektromagnetische Leistungsdichte, welche auf eine Empfangsantenne trifft, wird als Poynting Vektor $S$ bezeichnet.\\
- Wenn diese Voraussetzungen erfüllt sind, befindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Diese wird kurz als Fernfeld bezeichnet. Streng genommen liegen nur für Distanzen von $r\rightarrow\infty$ Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten punktweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist daher eine ebene Welle. Für die  elektrischen und magnetischen Feldstärken gilt die folgende Beziehung  \cite{meinke1992taschenbuch}:
+ Wenn diese Voraussetzungen erfüllt sind, befindet sich der Empfangsort in der Fernfeldregion der Sendeantenne. Diese wird kurz als Fernfeld bezeichnet. Streng genommen liegen nur für Distanzen von $r\rightarrow\infty$ Fernfeldbedingungen vor. In diesem Fall können die sphärischen Phasenfronten punktweise als eben betrachtet werden. Die am Empfangsort einfallende Welle ist daher eine ebene Welle. Für die elektrischen und magnetischen Feldstärken gilt die folgende Beziehung \cite{meinke1992taschenbuch}:
 \begin{equation}
 E/H=120\pi\label{eq:WellenimpedanuE/H}
 \end{equation}
-Die Leistungsdichte $S$ ergibt sich, wenn die Feldkomponenten $E$ und $H$ senkrecht aufeinander stehen, gleichphasig sind und dieselbe Amplitude haben. Die Feldkomponenten $E$ und $H$ in  (\ref{eq:LeistungsdichteS}) sind Vektoren. 
+Die Leistungsdichte $S$ ergibt sich, wenn die Feldkomponenten $E$ und $H$ senkrecht aufeinander stehen, gleichphasig sind und dieselbe Amplitude haben. Die Feldkomponenten $E$ und $H$ in (\ref{eq:LeistungsdichteS}) sind Vektoren. 
 \begin{equation}
 S=\dfrac{1}{2}EH=\dfrac{1}{2} E^{2}/F_{F0}\label{eq:LeistungsdichteS}
 \end{equation}
@@ -38,14 +38,14 @@ Bei Dipolantennen und Loop Antennen mit Abmessungen wesentlich kleiner als eine 
 \begin{equation}
 S=\dfrac{P_{t}D}{4r^{2}\pi} = \dfrac{P_{t0}G}{4r^{2}\pi}=\dfrac{P_{ei}}{4r^{2}\pi}\label{eq:LeistungsdichteS_vonD}
 \end{equation}
-In (\ref{eq:LeistungsdichteS_vonD}) fällt der Faktor $4r^{2}\pi$ auf. Er kommt daher, dass die Leistungsdichte der abgestrahlten Leistung auf einer Kugeloberfläche entspricht. Der Vektor $S$ wird mit wachsendem Abstand r  kleiner und besitzt die SI Einheit $[W/m^{2}]$. Für (\ref {eq:LeistungsdichteS_vonD}) gelten:
+In (\ref{eq:LeistungsdichteS_vonD}) fällt der Faktor $4r^{2}\pi$ auf. Er kommt daher, dass die Leistungsdichte der abgestrahlten Leistung auf einer Kugeloberfläche entspricht. Der Vektor $S$ wird mit wachsendem Abstand r kleiner und besitzt die SI Einheit $[W/m^{2}]$. Für (\ref {eq:LeistungsdichteS_vonD}) gelten:
 \begin{enumerate}[leftmargin=2cm]
-   \item[] $P_t$: abgestrahlte Leistung [W]
-   \item[] $P_{t0}$: zugeführte Leistung [W]
+  \item[] $P_t$: abgestrahlte Leistung [W]
+  \item[] $P_{t0}$: zugeführte Leistung [W]
 	\item[] $D$: Richtwert 
-   \item[] $G$: Gewinn 
-   \item[] $P_{ei}$: isotrope Strahlungsleistung  [W] 
-   \item[] $r$: Abstand zwischen Sende- und Empfangsantenne [m]
+  \item[] $G$: Gewinn 
+  \item[] $P_{ei}$: isotrope Strahlungsleistung [W] 
+  \item[] $r$: Abstand zwischen Sende- und Empfangsantenne [m]
 \end{enumerate} 
 
 %Dieser Zusammenhang ist auch im Kapitel yyy in der Gleichung xxx gezeigt.
@@ -116,7 +116,7 @@ In (\ref{eq:LeistungsdichteS_vonD}) fällt der Faktor $4r^{2}\pi$ auf. Er kommt 
 
 \section{Systemansicht}
 Die Systemansicht soll einen Überblick über die Bluetooth-Verbindung vom Fluginstrument zu einem Smartphone geben.
-In der abschliessenden Tabelle \ref{tab:Linkbudget} werden die Annahmen und  die gegebenen Parameter der Bluetooth-Verbindung aufgelistet. Mit Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der Hochfrequenzquelle an die Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen, was einem homogenen Ausbreitungsmedium ohne Fremdkörper entspricht.
+In der abschliessenden Tabelle \ref{tab:Linkbudget} werden die Annahmen und die gegebenen Parameter der Bluetooth-Verbindung aufgelistet. Mit Hilfe des Linkbudgets kann eine Abschätzung des Antennengewinns auf der Empfängerseite hergeleitet werden. Um diese Abschätzung möglich zu machen, werden einige Annahmen getroffen. Zum Beispiel geht man von einer optimalen Anpassung der Hochfrequenzquelle an die Antenne aus. Weiter wird der Luftraum zwischen Sender und Empfänger als Vakuum angenommen, was einem homogenen Ausbreitungsmedium ohne Fremdkörper entspricht.
 Weitere Annahmen sind:
 \begin{itemize}
 \item CC2541 von TI als Sende- und Empfangschip
@@ -133,7 +133,7 @@ Weitere Annahmen sind:
 
 
 \subsubsection{Linkbudget}
-Unter dem Linkbudget versteht man die Summe aller Leistungspegel in dB, welche vom Sender über das Übertragungsmedium bis hin zum Empfänger resultieren. Es beschreibt, welcher Signalpegel ausgehend von der Sendeleistung beim Empfänger nach Abzug aller Verluste und unter Berücksichtigung der Gewinne ankommt. Ist die Sendeleistung gesetzlich limitiert, kann die maximale Distanz der Übertragungsstrecke berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch Umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. Das Linkbudget kann nahezu beliebig komplex gestaltet werden und eine Reihe von weiteren Parametern beinhalten. In der Praxis hat sich die Berechnung des Linkbudgets bei Richtfunksystemen nach   (\ref{eq:LinkBudgetGelichung}) bewährt.
+Unter dem Linkbudget versteht man die Summe aller Leistungspegel in dB, welche vom Sender über das Übertragungsmedium bis hin zum Empfänger resultieren. Es beschreibt, welcher Signalpegel ausgehend von der Sendeleistung beim Empfänger nach Abzug aller Verluste und unter Berücksichtigung der Gewinne ankommt. Ist die Sendeleistung gesetzlich limitiert, kann die maximale Distanz der Übertragungsstrecke berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch Umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. Das Linkbudget kann nahezu beliebig komplex gestaltet werden und eine Reihe von weiteren Parametern beinhalten. In der Praxis hat sich die Berechnung des Linkbudgets bei Richtfunksystemen nach  (\ref{eq:LinkBudgetGelichung}) bewährt.
 
 \begin{equation}
 P_{Rx} = P_{Tx}+L_{Tx}+G_{x}+L_{fs}+L_{Rx}+G_{r}+L_{div}\label{eq:LinkBudgetGelichung}
@@ -157,7 +157,7 @@ Die Freiraumdämpfung $L_{fs}$, englisch \textit{Free Space Path Loss}, soll an 
 	\draw[line width=1.5pt] (2.5, 1.5) -- (2.8, 2);
 	\draw[line width=1.5pt] (2.5, 1.5) -- (2.5, 2);
 	
-	\draw[line width=1.5pt, <->, >=latex](6, 2)  -- (8, 2) node at (7, 2.5) {10 m Freiraum};
+	\draw[line width=1.5pt, <->, >=latex](6, 2) -- (8, 2) node at (7, 2.5) {10 m Freiraum};
 	
 	\draw[line width=1.5pt] (9.5, 0.5) -- (10, 0.5);%zuleitung
 	\draw[line width=1.5pt] (9.5, 0.5) -- (9.5, 1.5);%Antennenmast
@@ -175,26 +175,26 @@ Die Freiraumdämpfung $L_{fs}$, englisch \textit{Free Space Path Loss}, soll an 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell eines Kommunikationskanals. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget listet alle in (\ref{eq:LinkBudgetGelichung}) auftretenden Parameter  einer Signalübertragung auf. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$  ist mit Faktor 1 definiert, das entspricht 0 dBi. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen und die Übertragungsdistanz enspricht 10 Meter. Als Sende- und Empfangschip kommt der Texas Instruments CC2541 Chip zu Anwendung. Für die Berechnung der Freiraumdämpfung müssen die folgenden Definitionen und Formeln genannt weden \cite{Tekom}:
+Die Abbildung \ref{fig:LinkModell} zeigt ein einfaches Verbindungsmodell eines Kommunikationskanals. Das in der Tabelle \ref{tab:Linkbudget} aufgezeigte Linkbudget listet alle in (\ref{eq:LinkBudgetGelichung}) auftretenden Parameter einer Signalübertragung auf. Es werden einige Vereinfachungen getroffen. Der Gewinn der Empfangsantenne $G_{r}$ ist mit Faktor 1 definiert, das entspricht 0 dBi. Es werden keine Polarisationsverluste berücksichtigt. Für die Berechnung der Freiraumdämpfung $L_{fs}$ wird als Übertragungsmedium Vakuum angenommen und die Übertragungsdistanz enspricht 10 Meter. Als Sende- und Empfangschip kommt der Texas Instruments CC2541 Chip zu Anwendung. Für die Berechnung der Freiraumdämpfung müssen die folgenden Definitionen und Formeln genannt weden \cite{Tekom}:
  
 \begin{eqnarray}
-    	d_{0} 	&=& 10 [m] \\ \label{eq:d0_LinkBudget}
-    G_r		&=&  1 \\ \label{eq:Gr_LinkBudget}
-	G_t 		&=&  1 \\ \label{eq:Gt_LinkBudget}
-    P_{Rx}(d_0) 	&=& \dfrac{P_{Tx}G_t G_r\lambda^2}{(4\pi)^2 d_0^2} \\ \label{eq:Prx_LinkBudget}
-    L_{fs} 		&=& \dfrac{P_{Tx}}{P_{Rx}} \\ \label{eq:Freiraumdaempfung}
-    L_{fs}(dB) 	&=& 10\log_{10}(L_{fs}) \\ \label{eq:Freiraumdaempfung_dB}
-    L_{fs}(dB) 	&=& 20\log(\dfrac{4\pi d_0 f_0}{c_0}) \label{eq:Freiraumdaempfung_dB_aufgelöst} 
+  	d_{0} 	&=& 10 [m] \\ \label{eq:d0_LinkBudget}
+  G_r		&=& 1 \\ \label{eq:Gr_LinkBudget}
+	G_t 		&=& 1 \\ \label{eq:Gt_LinkBudget}
+  P_{Rx}(d_0) 	&=& \dfrac{P_{Tx}G_t G_r\lambda^2}{(4\pi)^2 d_0^2} \\ \label{eq:Prx_LinkBudget}
+  L_{fs} 		&=& \dfrac{P_{Tx}}{P_{Rx}} \\ \label{eq:Freiraumdaempfung}
+  L_{fs}(dB) 	&=& 10\log_{10}(L_{fs}) \\ \label{eq:Freiraumdaempfung_dB}
+  L_{fs}(dB) 	&=& 20\log(\dfrac{4\pi d_0 f_0}{c_0}) \label{eq:Freiraumdaempfung_dB_aufgelöst} 
 \end{eqnarray}
 Durch Auflösen der Gleichung (\ref{eq:Freiraumdaempfung_dB}) erhält man für eine Übertragungsstrecke von 10 Metern und einer Signalfrequenz von 2.45 GHz eine Signaldämpfung von -60dB. Man beachte das Minus in (\ref{Freiraumdämpfung_ausgerechnet}). Der erhaltene Wert muss negativ sein, da es sich um eine Dämpfung handelt.
 \begin{equation}\label{Freiraumdämpfung_ausgerechnet}
-    L_{fs}(dB) = -20\log(\dfrac{4\pi 10[m] 2.45*10^9 [1/s] }{3*10^8[m/s]}) =-60.2dB
+  L_{fs}(dB) = -20\log(\dfrac{4\pi 10[m] 2.45*10^9 [1/s] }{3*10^8[m/s]}) =-60.2dB
 \end{equation}
 
 \begin{table}[!ht]
-  \centering
-  \begin{tabular}{l c r} \toprule 
-  Komponete                  	& 			&Leistungsbeitrag  \\ \midrule
+ \centering
+ \begin{tabular}{l c r} \toprule 
+ Komponete               	& 			&Leistungsbeitrag  \\ \midrule
   Abgegebene Leitung    			&$P_{Tx}$ 	& 0dB       \\
   Übergangsverluste              &$L_{Tx}$	& -3dB       \\
   Gewinn der Sendeantenne    	&$G_{x}$		& zu bestimmen        \\
@@ -482,7 +482,7 @@ Das bedeutet, dass die Real- und Imaginäranteile von Quellen- und Lastwiderstan
 
 Bei rein reellem, identischem Innen- und Lastwiderstand, das heisst wenn $X_I = X_L = 0$ gilt, wird Leistungs- und Wellenanpassung erreicht. Es handelt sich hierbei um einen Spezialfall. Für den allgemein gültigen Fall mit komplexen Widerständen ist stets eine Entscheidung zwischen einer Übertragung mit maximaler Wirkleistung unter Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit Leistungseinbusse, sprich zwischen Leistungs- und Wellenanpassung zu treffen. In der Nachrichtentechnik bedient man sich in der Regel der Wellenanpassung, da die bei der Leistungsanpassung entstehenden Reflexionen störender sind als die Übertagungsverluste bei verwendeter Wellenanpassung. Bei Leistungsverstärkern eines Senders spielt jedoch die Leistungsanpassung eine nicht zu vernachlässigende Rolle. \\
 
-Die maximale Wirkleistung in der Last wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung, das heisst, die im $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung  in der Last auch im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel (\ref{eq:PmaxLeistungsanpassung}) zeigt die maximale Leistung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung, bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
+Die maximale Wirkleistung in der Last wird in einem Gleichstromkreis bei $R_Q = R_L$ abgegeben. Es besteht Leistungsanpassung, das heisst, die im $R_L$ umgesetzte Leistung ist maximal. Der Wirkungsgrad $\eta$ entspricht $50\%$, da dieselbe Leistung in der Last auch im Innenwiderstand der Quelle $R_Q$ umgesetzt wird. Die Formel (\ref{eq:PmaxLeistungsanpassung}) zeigt die maximale Leistung in der Last. Die Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} zeigt eine Schaltung, bei der die Bedingung für Leistungsanpassung $R_Q = R_L$ gilt.
 \begin{eqnarray}\label{eq:PmaxLeistungsanpassung}
 P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} | R_Q=R_L
 \end{eqnarray}
@@ -497,13 +497,13 @@ P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} | R_Q=R_L
 	\draw[line width=1.5pt] (3, 4) -- (3, 5);%von der Quelle nach oben
 	\draw[line width=1.5pt](4.5, 4.75) rectangle (5.5, 5.25) node at (5, 5.5) {$R_Q$};%RQ
 
-	\draw[line width=1.5pt, -*](5.5, 5)  -- (7, 5);%oben bis zum Punkt
-	\draw[line width=1.5pt, -*](3, 2)  -- (7, 2);%unten bis zum Punkt
+	\draw[line width=1.5pt, -*](5.5, 5) -- (7, 5);%oben bis zum Punkt
+	\draw[line width=1.5pt, -*](3, 2) -- (7, 2);%unten bis zum Punkt
 	
-	\draw[line width=1.5pt](7, 5)  -- (8.5, 5);%oben 
-	\draw[line width=1.5pt](7, 2)  -- (8.5, 2);%unten 
-	\draw[line width=1.5pt](8.5, 5)  -- (8.5, 4);%oben nach unten zu RL
-	\draw[line width=1.5pt](8.5, 2)  -- (8.5, 3);%unten nach oben zu RL
+	\draw[line width=1.5pt](7, 5) -- (8.5, 5);%oben 
+	\draw[line width=1.5pt](7, 2) -- (8.5, 2);%unten 
+	\draw[line width=1.5pt](8.5, 5) -- (8.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt](8.5, 2) -- (8.5, 3);%unten nach oben zu RL
 
  	\draw[line width=1.5pt](8.25, 3) rectangle (8.75, 4) node at (9.25, 3.5) {$R_L$} ;%RL
 % 	\draw[line width=1.5pt, ->, >=latex](6.5, 3.5) -- (7.5, 3.5) node at (7, 3.8) {$P_a$};
@@ -514,8 +514,8 @@ P_{Last_{max}}=\dfrac{U_{0}^2}{4R_Q} | R_Q=R_L
 \label{fig:LeistungsanpassungU0_RQ_RL}
 \end{figure}
 In der Abbildung \ref{fig:LeistungsanpassungU0_RQ_RL} ist eine Leistungsanpassung gezeigt. 
-Der Lastwiderstand $R_{L}$ besitzt denselben Widerstandswert wie der Quellenwiderstand $R_{Q}$. Im $R_{L}$ wird wie in  (\ref{eq:PmaxLeistungsanpassung}) gezeigt die Hälfte der Quellenleistung umgesetzt.\\
-Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetzt werden. Ist der Quellenwiderstand $R_Q$ oder der Lastwiderstand $R_L$  reaktiv, das heisst induktiv oder kapazitiv, dann sind die Schaltungen stark frequenzabhängig. So besitzt beispielsweise eine Antenne nur bei einer bestimmten Frequenz eine rein reelle Impedanz $Z_{ant}$. Bei allen andern Frequenzen sind sowohl Real- als auch Imaginärteil vorhanden. Als Folge ist Antennenipedanz $Z_{ant}$  komplex. Eine Möglichkeit für eine Anpassung ist in der Abbildung \ref{AnpassungKomplexerLast} dargestellt. Auch diese  Anpassung ist frequenzabhängig und nur für die Entwurfsfrequenz optimal.
+Der Lastwiderstand $R_{L}$ besitzt denselben Widerstandswert wie der Quellenwiderstand $R_{Q}$. Im $R_{L}$ wird wie in (\ref{eq:PmaxLeistungsanpassung}) gezeigt die Hälfte der Quellenleistung umgesetzt.\\
+Bei Wechselgrössen kann ein Transformator für die Leistungsanpassung eingesetzt werden. Ist der Quellenwiderstand $R_Q$ oder der Lastwiderstand $R_L$ reaktiv, das heisst induktiv oder kapazitiv, dann sind die Schaltungen stark frequenzabhängig. So besitzt beispielsweise eine Antenne nur bei einer bestimmten Frequenz eine rein reelle Impedanz $Z_{ant}$. Bei allen andern Frequenzen sind sowohl Real- als auch Imaginärteil vorhanden. Als Folge ist Antennenipedanz $Z_{ant}$ komplex. Eine Möglichkeit für eine Anpassung ist in der Abbildung \ref{AnpassungKomplexerLast} dargestellt. Auch diese Anpassung ist frequenzabhängig und nur für die Entwurfsfrequenz optimal.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
 	\centering
@@ -545,17 +545,17 @@ Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die La
 	\draw[line width=1.5pt, *-] (1, 5) -- (3, 5);%oben zu R1
 	\draw[line width=1.5pt](3, 4.75) rectangle (4, 5.25) node at (3.5, 5.5) {$R1$};%R1
 
-	\draw[line width=1.5pt, *-](5, 5.1)  -- (5, 4);%oben nach unten zu RL
-	\draw[line width=1.5pt, *-](5, 1.9)  -- (5, 3);%unten nach oben zu RL
+	\draw[line width=1.5pt, *-](5, 5.1) -- (5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt, *-](5, 1.9) -- (5, 3);%unten nach oben zu RL
  	\draw[line width=1.5pt](4.75, 3) rectangle (5.25, 4) node at (5.6, 3.5) {R2};%R2
 
-	\draw[line width=1.5pt, -*](4, 5)  -- (7, 5);%oben bis zum Punkt
-	\draw[line width=1.5pt, *-*](1, 2)  -- (7, 2);%unten bis zum Punkt
+	\draw[line width=1.5pt, -*](4, 5) -- (7, 5);%oben bis zum Punkt
+	\draw[line width=1.5pt, *-*](1, 2) -- (7, 2);%unten bis zum Punkt
 	
-	\draw[line width=1.5pt](5, 5)  -- (8.5, 5);%oben 
-	\draw[line width=1.5pt](7, 2)  -- (8.5, 2);%unten 
-	\draw[line width=1.5pt](8.5, 5)  -- (8.5, 4);%oben nach unten zu RL
-	\draw[line width=1.5pt](8.5, 2)  -- (8.5, 3);%unten nach oben zu RL
+	\draw[line width=1.5pt](5, 5) -- (8.5, 5);%oben 
+	\draw[line width=1.5pt](7, 2) -- (8.5, 2);%unten 
+	\draw[line width=1.5pt](8.5, 5) -- (8.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt](8.5, 2) -- (8.5, 3);%unten nach oben zu RL
 
  	\draw[line width=1.5pt](8.25, 3) rectangle (8.75, 4) node at (9.25, 3.5) {$R_L$} ;%RL
  	\draw[line width=1.5pt, ->, >=latex](0, 3.5) -- (1.5, 3.5) node at (0.75, 4) {$Z_{ein}=R_Q$};
@@ -567,7 +567,7 @@ Für die Anpassung einer Generatorimpedanz $R_Q$, welche grösser ist als die La
 \label{fig:Leistungsanpassung_RQ_grösser_als_RL}
 \end{figure}
 
-Gilt es, eine hochohmige Last $R_L$ an eine Quelle mit einem $R_Q$ der kleiner ist als $R_L$ anzupassen, so kann die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL} und die mathematischen Beziehungen aus \ref{eq:R1R2wennRLgrösserRQ_R1}  sowie \ref{eq:R1R2wennRLgrösserRQ_R2} verwendet werden \cite{Tekom}:
+Gilt es, eine hochohmige Last $R_L$ an eine Quelle mit einem $R_Q$ der kleiner ist als $R_L$ anzupassen, so kann die Schaltung von Abbildung \ref{fig:LeistungsanpassungU0_RQkleiner_als_RL} und die mathematischen Beziehungen aus \ref{eq:R1R2wennRLgrösserRQ_R1} sowie \ref{eq:R1R2wennRLgrösserRQ_R2} verwendet werden \cite{Tekom}:
 
 \begin{align}
 R1 &= \sqrt{R_L(R_L-R_Q)} \label{eq:R1R2wennRLgrösserRQ_R1}\\
@@ -581,17 +581,17 @@ a_{dB} &= 20\log \left( \sqrt{\dfrac{R_L}{R_Q}}+\sqrt{\dfrac{R_L}{R_Q}-1}\right)
 	\draw[line width=1.5pt, *-] (1, 5) -- (4, 5);%oben zu R1
 	\draw[line width=1.5pt](4, 4.75) rectangle (5, 5.25) node at (4.5, 5.5) {$R1$};%R1
 
-	\draw[line width=1.5pt, *-](3.5, 5.1)  -- (3.5, 4);%oben nach unten zu RL
-	\draw[line width=1.5pt, *-](3.5, 1.9)  -- (3.5, 3);%unten nach oben zu RL
+	\draw[line width=1.5pt, *-](3.5, 5.1) -- (3.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt, *-](3.5, 1.9) -- (3.5, 3);%unten nach oben zu RL
  	\draw[line width=1.5pt](3.25, 3) rectangle (3.75, 4) node at (4, 3.5) {R2};%R2
 
-	\draw[line width=1.5pt, -*](5, 5)  -- (7, 5);%oben bis zum Punkt
-	\draw[line width=1.5pt, *-*](1, 2)  -- (7, 2);%unten bis zum Punkt
+	\draw[line width=1.5pt, -*](5, 5) -- (7, 5);%oben bis zum Punkt
+	\draw[line width=1.5pt, *-*](1, 2) -- (7, 2);%unten bis zum Punkt
 	
-	\draw[line width=1.5pt](7, 5)  -- (8.5, 5);%oben von R1 zum Punkt 
-	\draw[line width=1.5pt](7, 2)  -- (8.5, 2);%unten 
-	\draw[line width=1.5pt](8.5, 5)  -- (8.5, 4);%oben nach unten zu RL
-	\draw[line width=1.5pt](8.5, 2)  -- (8.5, 3);%unten nach oben zu RL
+	\draw[line width=1.5pt](7, 5) -- (8.5, 5);%oben von R1 zum Punkt 
+	\draw[line width=1.5pt](7, 2) -- (8.5, 2);%unten 
+	\draw[line width=1.5pt](8.5, 5) -- (8.5, 4);%oben nach unten zu RL
+	\draw[line width=1.5pt](8.5, 2) -- (8.5, 3);%unten nach oben zu RL
 
  	\draw[line width=1.5pt](8.25, 3) rectangle (8.75, 4) node at (9.25, 3.5) {$R_L$} ;%RL
  	\draw[line width=1.5pt, ->, >=latex](0, 3.5) -- (1.5, 3.5) node at (0.75, 4) {$Z_{ein}=R_Q$};
@@ -604,12 +604,12 @@ a_{dB} &= 20\log \left( \sqrt{\dfrac{R_L}{R_Q}}+\sqrt{\dfrac{R_L}{R_Q}-1}\right)
 \end{figure}
 \newpage
 \textbf{Entwurf eines verlustfreien L-Netzwerkes}\\
-Ein einfaches, verlustfreies Anpassnetzwerk besteht aus zwei Reaktanzen. Der Entwurfsansatz besteht darin, dass eine Reaktanz $X_{p}$ parallel zum grösseren Widerstand, in Abbildung \ref{fig:verlustfreieAnpassung} wäre dies der Quellenwiderstand $R_{Q}$, geschaltet wird. In diesem Fall kann  die Impedanz $Z_{links}$ von der Trennlinie als Parallelschaltung von $R_Q$ und $X_P$ betrachtet werden. \\
-Die Impedanz $Z_{links}$  ist definiert als:
+Ein einfaches, verlustfreies Anpassnetzwerk besteht aus zwei Reaktanzen. Der Entwurfsansatz besteht darin, dass eine Reaktanz $X_{p}$ parallel zum grösseren Widerstand, in Abbildung \ref{fig:verlustfreieAnpassung} wäre dies der Quellenwiderstand $R_{Q}$, geschaltet wird. In diesem Fall kann die Impedanz $Z_{links}$ von der Trennlinie als Parallelschaltung von $R_Q$ und $X_P$ betrachtet werden. \\
+Die Impedanz $Z_{links}$ ist definiert als:
 \begin{equation}
 Z_{Links}= R_{Links}+jX{Links}=\dfrac{R_QX_P^2+jR_Q^2X_P}{R_Q^2+X_P^2}
 \end{equation}
-$X_P$  kann nun so gewählt werden, dass der Realteil von $Z_{Links}$  dem Lastwiderstand $R_L$ entspricht. \\
+$X_P$ kann nun so gewählt werden, dass der Realteil von $Z_{Links}$ dem Lastwiderstand $R_L$ entspricht. \\
 \begin{equation}
 R_{Links}= R_L
 \end{equation}
@@ -618,30 +618,30 @@ Trennlinie zu kompensieren, indem die Seriereaktanz $X_{S}$ entsprechend gewähl
 \begin{equation}
 X_{Links}= -X_S
 \end{equation}
-Nun können die Werte für die Induktivität $L$ und Kapazität $C$ für die gewünschte Frequenz  berechnet werden. Je nach dem, ob  $X_P$ induktiv oder kapazitiv ist, wird $X_S$ gewählt. Durch Umstellen der folgenden Formeln (\ref{eq:XL}) und (\ref{eq:XC}) kann eine Induktivität L oder eine Kapazität C bestimmt werden.
+Nun können die Werte für die Induktivität $L$ und Kapazität $C$ für die gewünschte Frequenz berechnet werden. Je nach dem, ob $X_P$ induktiv oder kapazitiv ist, wird $X_S$ gewählt. Durch Umstellen der folgenden Formeln (\ref{eq:XL}) und (\ref{eq:XC}) kann eine Induktivität L oder eine Kapazität C bestimmt werden.
 \begin{align}
-jX_{L}= j\omega L \label{eq:XL} \\  jX_C=\dfrac{-j}{\omega C} \label{eq:XC}
+jX_{L}= j\omega L \label{eq:XL} \\ jX_C=\dfrac{-j}{\omega C} \label{eq:XC}
 \end{align} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](1, 3) circle (0.5) node at (1,3){$U_0$};
-	\draw[line width=1.5pt](1, 3.5)  -- (1, 4.5);%quelle nach oben
-	\draw[line width=1.5pt](1, 2.5)  -- (1, 1.5);%Queelle nach unten
-	\draw[line width=1.5pt](1, 4.5)  -- (3, 4.5);
-	\draw[line width=1.5pt](1, 1.5)  -- (10, 1.5);
+	\draw[line width=1.5pt](1, 3.5) -- (1, 4.5);%quelle nach oben
+	\draw[line width=1.5pt](1, 2.5) -- (1, 1.5);%Queelle nach unten
+	\draw[line width=1.5pt](1, 4.5) -- (3, 4.5);
+	\draw[line width=1.5pt](1, 1.5) -- (10, 1.5);
 	\draw[line width=1.5pt](3, 4.75) rectangle (4, 4.25) node at (3.5, 5) {$R_Q$};
-	\draw[line width=1.5pt,-*](6, 3.5)  -- (6, 4.6);
-	\draw[line width=1.5pt,-*](6, 2.5)  -- (6, 1.4);
+	\draw[line width=1.5pt,-*](6, 3.5) -- (6, 4.6);
+	\draw[line width=1.5pt,-*](6, 2.5) -- (6, 1.4);
 	\draw[line width=1.5pt](5.75, 2.5) rectangle (6.25, 3.5) node at (5.25, 3) {$X_P$};
-	\draw[line width=1.5pt, style=dashed](7, 1)  -- (7, 5.5) node at (6, 1) {$X_{Links}$};%gestrichelt
+	\draw[line width=1.5pt, style=dashed](7, 1) -- (7, 5.5) node at (6, 1) {$X_{Links}$};%gestrichelt
 	\draw[line width=1.5pt, ->, >=latex](5.25, 1) -- (4, 1);
-	\draw[line width=1.5pt](4, 4.5)  -- (8, 4.5);%Rq zu XS
-	\draw[line width=1.5pt](9, 4.5)  -- (10, 4.5);
+	\draw[line width=1.5pt](4, 4.5) -- (8, 4.5);%Rq zu XS
+	\draw[line width=1.5pt](9, 4.5) -- (10, 4.5);
 	\draw[line width=1.5pt](8, 4.75) rectangle (9, 4.25) node at (8.5, 5) {$X_S$};
-	\draw[line width=1.5pt](10, 3.5)  -- (10, 4.5);
-	\draw[line width=1.5pt](10, 2.5)  -- (10, 1.5);
+	\draw[line width=1.5pt](10, 3.5) -- (10, 4.5);
+	\draw[line width=1.5pt](10, 2.5) -- (10, 1.5);
 	\draw[line width=1.5pt](9.75, 2.5) rectangle (10.25, 3.5) node at (9.25, 3) {$R_L$};
 	\end{tikzpicture}
 	\end{center}
@@ -649,7 +649,7 @@ jX_{L}= j\omega L \label{eq:XL} \\  jX_C=\dfrac{-j}{\omega C} \label{eq:XC}
 \label{fig:verlustfreieAnpassung}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Wenn ich Zeit habe
-%\section{Impedanztransformation  einer Leitung}
+%\section{Impedanztransformation einer Leitung}
 %\todo{Dieses Kapitel ist fakultativ}
 %Phasendrehung auf einer Leitung\\
 %$\lambda/4$ Leitung\\
@@ -661,7 +661,7 @@ jX_{L}= j\omega L \label{eq:XL} \\  jX_C=\dfrac{-j}{\omega C} \label{eq:XC}
 %Welche Möglichkeinten\\
 %Leistungsanpssung\\
 %Wellenanpassung\\
-%Beides, indem der  Imaginär Teil verschwindet.\\
+%Beides, indem der Imaginär Teil verschwindet.\\
 %Was steht im Fokus? Die Anpassung ist Richtungsabhängig
 %Ein möglichst optimales Empfangensverhalten steht im Vordergurnd
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -675,13 +675,13 @@ Unter der Speisung einer Antenne verstanden man die Signalzuführung. Damit eine
 \end{itemize}
 Leistungsanpassung wird benötigt, wenn der Leistungsfluss möglichst unbeeinträchtigt sein soll. Es muss gelten:
 \[Z_{ein}=Z_{aus}*\]
-Das bedeutet, dass die Realanteile von $Z_{ein}$ und $Z_{aus}$ gleich sind, jedoch der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, der Imaginärteil von $Z_{aus}$ hat ein umgekehrtes Vorzeichen als $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Bei der Leistungsanpassung werden  50\% der erzeugten Leistung in  der Quelle  und 50\% in der Last umgesetzt.
+Das bedeutet, dass die Realanteile von $Z_{ein}$ und $Z_{aus}$ gleich sind, jedoch der Imaginärteil von $Z_{aus}$ muss den konjugiert komplexen Wert des $Z_{ein}$ aufweisen. Mit anderen Worten, der Imaginärteil von $Z_{aus}$ hat ein umgekehrtes Vorzeichen als $Z_{ein}$. Leistungsanpassung kommt bei Leistungsendstufen oder allgemein dort zur Anwendung, wo es besonders wichtig ist, dass möglichst viel der erzeugten Leistung von der Last aufgenommen wird. Bei der Leistungsanpassung werden 50\% der erzeugten Leistung in der Quelle und 50\% in der Last umgesetzt.
 Wellenanpassung wird angewendet, wenn möglichst keine Reflexionen auf der Leitung entstehen sollen. Es muss gelten:
 \[Z_{ein}=Z_{aus}\]
 Die Signalanpassung ist dann gewünscht, wenn die Qualität des Signals Vorrang hat und keinerlei Reflexionen erwünscht sind. In diesem Fall ist das Stehwellenverhältnis gleich 1.
-Um die  gewünschte Anpassung zu erreichen kommen Anpassnetzwerke zum Einsatz. Diese sind meist passive Netzwerke mit Induktivitäten L, Kapazitäten C und Widerständen R.\\
+Um die gewünschte Anpassung zu erreichen kommen Anpassnetzwerke zum Einsatz. Diese sind meist passive Netzwerke mit Induktivitäten L, Kapazitäten C und Widerständen R.\\
 Ein Beispiel für Anpassung.\\
-Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm Leitung angeschlossen. Am Ende der 50 Ohm Leitung wird ein  Anpassungsnetzwerk benötigt. Damit wird die Leitung und die Antenne aufeinander abgestimmt. Das Anpassnetzwerk passt die komplexe Antennenimpedanz auf $50\Omega$ reell und $+j0\Omega$ an. In diesem Beispiel wird sowohl Wellen- als auch Leistungsanpassung erfüllt.\\
+Eine Quelle mit einem Ausgangswiderstand von 50 Ohm reell wird an eine 50 Ohm Leitung angeschlossen. Am Ende der 50 Ohm Leitung wird ein Anpassungsnetzwerk benötigt. Damit wird die Leitung und die Antenne aufeinander abgestimmt. Das Anpassnetzwerk passt die komplexe Antennenimpedanz auf $50\Omega$ reell und $+j0\Omega$ an. In diesem Beispiel wird sowohl Wellen- als auch Leistungsanpassung erfüllt.\\
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -689,18 +689,18 @@ Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm L
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](0, 0) rectangle (3, 2) node at (1.5, 1) {Quelle};
-	\draw[line width=1.5pt](3, 1.4)  -- (4, 1.4);
-	\draw[line width=1.5pt](3, 0.7)  -- (4, 0.7);
+	\draw[line width=1.5pt](3, 1.4) -- (4, 1.4);
+	\draw[line width=1.5pt](3, 0.7) -- (4, 0.7);
 	\draw[line width=1.5pt](4, 0) rectangle (7, 2) node at (5.5, 1) {50 $\Omega$Leitung};
-	\draw[line width=1.5pt](7, 1.4)  -- (8, 1.4);
-	\draw[line width=1.5pt](7, 0.7)  -- (8, 0.7);
+	\draw[line width=1.5pt](7, 1.4) -- (8, 1.4);
+	\draw[line width=1.5pt](7, 0.7) -- (8, 0.7);
 	\draw[line width=1.5pt](8, 0) rectangle (11, 2) node at (9.5, 1) {Anpassung};
-	\draw[line width=1.5pt](11, 1.4)  -- (12, 1.4);
-	\draw[line width=1.5pt](11, 0.7)  -- (12, 0.7);
+	\draw[line width=1.5pt](11, 1.4) -- (12, 1.4);
+	\draw[line width=1.5pt](11, 0.7) -- (12, 0.7);
 	\draw[line width=1.5pt](12, 0) rectangle (15, 2) node at (13.5, 1) {Antenne (Last)};
 	\end{tikzpicture}
 	\end{center}
-\caption{Blockschaltbild einer  Quelle mit Leitung, Anpassung und Antenne}
+\caption{Blockschaltbild einer Quelle mit Leitung, Anpassung und Antenne}
 \label{Anpassung}
 \end{figure}
 
@@ -714,7 +714,7 @@ Eine Quelle mit einem Ausgangswiderstand von  50 Ohm reell wird an eine 50 Ohm L
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  benötigt man  oft ein Anpassnetzwerk zwischen der Leitung und der Antenne.  Die Impedanzen der Leitung $Z_L$ und der Antenne $Z_{ant}$ sind nur in seltenen Fällen gleich. Antennen haben einen  reellen Strahlungswiderstand $R_{rad}$ und eine Reaktanz $X_{ant}$. Je nach Antennentyp weist  $X_{ant}$  einen kapazitiven oder  einen induktiven Anteil auf. Die Abbildung \ref{fig:ESBantenne} zeigt das Ersatzschaltbild einer Antenne.
+Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird, benötigt man oft ein Anpassnetzwerk zwischen der Leitung und der Antenne. Die Impedanzen der Leitung $Z_L$ und der Antenne $Z_{ant}$ sind nur in seltenen Fällen gleich. Antennen haben einen reellen Strahlungswiderstand $R_{rad}$ und eine Reaktanz $X_{ant}$. Je nach Antennentyp weist $X_{ant}$ einen kapazitiven oder einen induktiven Anteil auf. Die Abbildung \ref{fig:ESBantenne} zeigt das Ersatzschaltbild einer Antenne.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!htb]
 %	\centering
@@ -726,18 +726,18 @@ Wenn eine 50 Ohm Leitung an eine Antenne angeschlossen wird,  benötigt man  oft
 \begin{figure}[!ht]
 	\begin{center}
 	\begin{tikzpicture}
-	\draw[line width=1.5pt,*-](12, 5)  -- (13.5, 5);%Startz zu Rv
-		\draw[line width=1.5pt](14.5, 5)  -- (16, 5) ;%Rv zu Rrad
-		\draw[line width=1.5pt](16, 5)  -- (16, 4.4) ;%Rv zu Rrad
-		\draw[line width=1.5pt](14.5, 5)  -- (16, 5) ;%
+	\draw[line width=1.5pt,*-](12, 5) -- (13.5, 5);%Startz zu Rv
+		\draw[line width=1.5pt](14.5, 5) -- (16, 5) ;%Rv zu Rrad
+		\draw[line width=1.5pt](16, 5) -- (16, 4.4) ;%Rv zu Rrad
+		\draw[line width=1.5pt](14.5, 5) -- (16, 5) ;%
 		\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
 		\draw[line width=1.5pt](15.75, 3.4) rectangle (16.25, 4.4) node at (17, 3.9) {$R_{rad}$};%Rrad
-		\draw[line width=1.5pt](16, 3.4)  -- (16, 2.8);%Rrad zu Xant
-		\draw[line width=1.5pt](15.75, 2.8)  -- (16.25, 2.8);%Kondensator oben
-		\draw[line width=1.5pt](15.75, 2.6)  -- (16.25, 2.6);%Kondensator unten
+		\draw[line width=1.5pt](16, 3.4) -- (16, 2.8);%Rrad zu Xant
+		\draw[line width=1.5pt](15.75, 2.8) -- (16.25, 2.8);%Kondensator oben
+		\draw[line width=1.5pt](15.75, 2.6) -- (16.25, 2.6);%Kondensator unten
 		\node at (17, 2.7) {$X_{ant}$};
-		\draw[line width=1.5pt](16, 2.6)  -- (16, 2);
-	\draw[line width=1.5pt,-*](16, 2)  -- (12, 2);
+		\draw[line width=1.5pt](16, 2.6) -- (16, 2);
+	\draw[line width=1.5pt,-*](16, 2) -- (12, 2);
 	\end{tikzpicture}
 	\end{center}
 \caption{Ersatzschaltbild einer Antenne}
@@ -776,33 +776,33 @@ Wenn man die Speisung in einem grösseren Zusammenhang betrachtet, dann erkennt 
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
 	\draw[line width=1.5pt] (3, 5) -- (4.5, 5);
 	%\draw[line width=1.5pt] (3, 2) -- (7, 2);
-	\draw[line width=1.5pt, -*](3, 2)  -- (7, 2);
+	\draw[line width=1.5pt, -*](3, 2) -- (7, 2);
 	\draw[line width=1.5pt] (3, 2) -- (3, 3);
 	\draw[line width=1.5pt] (3, 4) -- (3, 5);
 	\draw[line width=1.5pt](4.5, 4.75) rectangle (5.5, 5.25) node at (5, 5.5) {Rq} node at (5, 4.5) {50 Ohm};
 	%\draw[line width=1.5pt] (5.5, 5) -- (7, 5);
-	\draw[line width=1.5pt, -*](5.5, 5)  -- (7, 5);
+	\draw[line width=1.5pt, -*](5.5, 5) -- (7, 5);
 	
 	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 5) {Anpassungsnetzwerk} node at (9.5, 4.5) {Leitung};
-	\draw[line width=1.5pt, *-](12, 5)  -- (13.5, 5);
-	\draw[line width=1.5pt, *-](12, 2)  -- (16, 2);
+	\draw[line width=1.5pt, *-](12, 5) -- (13.5, 5);
+	\draw[line width=1.5pt, *-](12, 2) -- (16, 2);
 	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
-	\draw[line width=1.5pt](14.5, 5)  -- (16, 5);
-	\draw[line width=1.5pt](16, 5)  -- (16, 4.4);
+	\draw[line width=1.5pt](14.5, 5) -- (16, 5);
+	\draw[line width=1.5pt](16, 5) -- (16, 4.4);
 	\draw[line width=1.5pt](15.75, 3.4) rectangle (16.25, 4.4) node at (17, 3.9) {$R_{rad}$};%Rrad
-	\draw[line width=1.5pt](16, 3.4)  -- (16, 2.8);
-	\draw[line width=1.5pt](15.75, 2.8)  -- (16.25, 2.8);%Kondensator oben
-	\draw[line width=1.5pt](15.75, 2.6)  -- (16.25, 2.6);%Kondensator unten
+	\draw[line width=1.5pt](16, 3.4) -- (16, 2.8);
+	\draw[line width=1.5pt](15.75, 2.8) -- (16.25, 2.8);%Kondensator oben
+	\draw[line width=1.5pt](15.75, 2.6) -- (16.25, 2.6);%Kondensator unten
 	\node at (17, 2.7) {$X_{ant}$};
-	\draw[line width=1.5pt](16, 2.6)  -- (16, 2);
+	\draw[line width=1.5pt](16, 2.6) -- (16, 2);
 	
-	\draw[line width=1.5pt, ->, >=latex](6.5, 4)  -- (8, 4) node at (8, 3.5) {$P_{ein}$};
-	\draw[line width=1.5pt, ->, >=latex](11.5, 4)  -- (13, 4) node at (13, 3.5) {$P_{ant}$};
+	\draw[line width=1.5pt, ->, >=latex](6.5, 4) -- (8, 4) node at (8, 3.5) {$P_{ein}$};
+	\draw[line width=1.5pt, ->, >=latex](11.5, 4) -- (13, 4) node at (13, 3.5) {$P_{ant}$};
 	
 	\coordinate (A) at (5, 1);
 	\coordinate (B) at (4.8, 0);
 	\coordinate (a) at (8, 0.5);
-	\draw[line width=1.5pt, cap=round,->](A) .. controls (a) .. (B)  node at (5, 0.5) {$\Gamma$};
+	\draw[line width=1.5pt, cap=round,->](A) .. controls (a) .. (B) node at (5, 0.5) {$\Gamma$};
 	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
 	
 	\node at (17.5, 6.2) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
