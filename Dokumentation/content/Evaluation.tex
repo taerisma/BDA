@@ -540,16 +540,16 @@ Der Quellenwiderstand $R_Q$ ist 50$\Omega$. Der maximal Wert der Rückflussdämp
 
 \newpage
 \section{Loop Antenne}
-Eine Loop Antenne wird  auch Rahmenantenne oder magnetische Antennen genannt. Sie besteht aus einer, oder mehreren Drahtwindungen die auf einem Trägerrahmen aufgespannt sind. Sie sprechen auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Sie sind nicht, wie es der Name vermuten lässt, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits in einem Abstand von $2\lambda$ Wellenlänge ist neben dem magnetischen Feld ein starkes elektrisches Feld vorhanden. Die magnetischen Feldlinien treten bei Loop Antennen senkrecht durch die Loop-Fläche hindurch, dabei wird eine Spannung in die Windungen der Loop Antenne induziert. Für eine maximale Empfangsspannung muss deshalb die Schmalseite der Loop Antenne in Richtung eines Dipolsenders zeigen.
+Eine Loop Antenne wird  auch Rahmenantenne oder magnetische Antennen genannt. Sie besteht aus einer, oder mehreren Drahtwindungen die auf einem Trägerrahmen aufgespannt sind. Sie sprechen auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Sie sind nicht, wie es der Name vermuten lässt, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits in einem Abstand von $2\lambda$ Wellenlänge ist neben dem magnetischen Feld ein starkes elektrisches Feld vorhanden. Treten magnetischen Feldlinien senkrecht durch die Loop-Fläche hindurch, so wird eine Spannung in die Windungen der Loop Antenne induziert. Für eine maximale Empfangsspannung muss deshalb die Schmalseite der Loop Antenne in Richtung eines Dipolsenders zeigen.
 
 
 \subsection{Elektromagnetische Wellenabstrahlung von Loop Antennen}
 An dieser Stelle werden die wesentlichen Abstrahleigenschaften und Zusammenhänge der Loop Antenne erläutert.
-Bei einer Loop Antenne ist der Ursprung der Wellenausbreitung ein magnetischer Dipol. Eine genaue Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} erläutert. \\
+Bei einer Loop Antenne ist der Ursprung der Wellenausbreitung ein magnetischer Dipol. Eine detailierte Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} erläutert. \\
 Elektromagnetische Wellen können  von einem schwingenden magnetischen Dipol
 abgestrahlt werden. Analog zum Hertzschen Dipol befindet sich im Koordinatenursprung
 ein magnetischer Dipol der Länge $dz<<\lambda$, welcher von einem konstanten
-Strom $I^{m}=constant$ durchflossen wird. Das magnetische Dipolmoment beträgt somit:
+Strom $I^{m}$ durchflossen wird. Das magnetische Dipolmoment beträgt somit:
 \begin{equation}
 \textbf{m}=I^{m}dze_z
 \end{equation}
@@ -565,11 +565,11 @@ Sie weisen die folgenden Transversalkomponenten $\textbf{E}_{\varphi}$ bzw.$\tex
 \end{equation}
 
 \begin{equation}
-\textbf{E}_{\theta}=\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\vartheta}
+\textbf{E}_{\theta}=\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\theta}
 \end{equation}
 Es wird festgestellt, dass die Felder nur vom Strom, der Fläche und des Winkels $\theta$ abhängig sind
 und nicht von der Form der Antenne. 
-Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. Windung aufgespannte Fläche S  und k kann als $2\pi/\lambda$ angenommen werden. Der Radius der Windung entspricht $a$ und $Z_0$ ist die Wellenimpedanz im Freiraum mit $120\pi$.
+Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. Die von den Windung aufgespannte Fläche enspricht $S$  und $k$ kann als $2\pi/\lambda$ angenommen werden. Ist die loop Antenne kreisförmig, so ist der Radius der Windung $a$ und für die Wellenimpedanz $Z_0$ im Freiraum gilt $120\pi$.
 \begin{equation}\label{eq:RS_LOOP}
 R_{s}=\dfrac{2Ps}{|I|^{2}}=Z_{0}\dfrac{\pi}{6}(k^{2}a^{2})^{2}=Z_{0}\dfrac{2\pi}{3}\left(\dfrac{kS}{\lambda}\right)^{2} 
 \end{equation}
@@ -578,11 +578,10 @@ So beträgt z.B. der Strahlungswiderstand für eine kreisförmige Schleife mit R
 
 
 \subsection{Halbwellen Loop Eigenschaften}
-Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen. Der Strahlungswiderstand $R_{rad}$ kann mit der aus(\ref{eq:RradLoop}) aus Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Dipol Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für einen Loop der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung (\ref{eq:XantLoop}) ein Wert für $X = 637 \Omega$ bestimmt werden. Um die Reaktanz X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
+Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Ebenso besitzt die Loop Antenne eine torusförmige Richtcharakteristik. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen wie beim Dipol. Der Strahlungswiderstand $R_{rad}$ kann mit der aus  (\ref{eq:RradLoop}) aus dem  Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Dipol Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung (\ref{eq:XantLoop}) ein Wert für $X = 637 \Omega$ bestimmt werden. Um die Reaktanz X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser wurde $p$ = 0.5mm  verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
 \begin{equation}\label{eq:XantLoop}
-X= 2\pi f a(ln \left( \frac{8a}{p} \right) - 1.75)
+X= 2\pi f\mu a(ln \left( \frac{8a}{p} \right) - 1.75)
 \end{equation}
-
 Aufgrund der engen Platzverhältnisse, die für das Antennenvolumen herrschen, kann keine runde Loop Antenne positioniert werden. Loop Antennen können in den unterschiedlichsten Formen realisiert werden. Man findet sie als Rechtecke, Oktagone oder als Dreiecke. Oft wird ein Rahmen gefertigt und auf diesen  werden mehrere Windungen $n$ aufgebracht. Für alle Antennenformen gilt, dass die Klemmenspannung am unbelasteten Fusspunkt der Antenne von der zeitabhängigen magnetischen Flussänderung durch die Antennenfläche induziert wird.
 \begin{equation}\label{eq:InduktionspannungLoop}
 V_{ol}= j\omega\Psi_{m}=j\omega\textbf{B}*\textbf{s}= j\omega\mu H_{z}*\pi a^{2}
@@ -593,8 +592,8 @@ H_{z}=H^{i}\cos\Psi\sin\theta_{i}
 \end{equation}
 %Bild von der Welle durch die Loop Fläche
 Zu den Formeln (\ref{eq:InduktionspannungLoop}) und (\ref{eq:InduktionspannungLoopHz}): \\
-$\Psi_{m}$ ist der magnetische Fluss und $\theta_{i}$ und $\varphi_{i}$  sind  Winkel im Kugelkoordinatensystem. Diese sind  abhängig von der durch die Loopfläche tretenden Wellen.\\ 
-Die Formgebung muss im freien Volumen, welches im Kapitel \ref{sec:EigenschaftenAntenne} beschrieben ist, Platz finden. Dies führt zu einem langgestreckten und flachen Loop. Die Form erinnert stark an jene eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne, die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
+$\Psi_{m}$ ist der magnetische Fluss, die Winkel $\theta_{i}$ und $\varphi_{i}$  sind   im Kugelkoordinatensystem und beschreiben die durch die Loopfläche tretenden Wellen .\\ 
+Da die Formgebung einer Loop Antenne die in dem untesuchten Fluginstrument Platz finden muss. Ist das im Kapitel \ref{sec:EigenschaftenAntenne} beschriebene freien Volumen berücksichtig werden. Dies führt zu einer langgestreckten und flachen Loop Antenne. Die Form erinnert stark an diejenige eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne, die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
 Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen Dipol. Der Strahlungswiderstand ist jedoch  ca.  280 Ohm. 
 
  %%%%%%%%%%%%%%%%%%%%%%%
@@ -613,58 +612,56 @@ Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen D
 	\node at (5.75, 2) {Speisung};
 	\end{tikzpicture}
 	\end{center}
-\caption{Flach gestauchte Loop Antenne}
+\caption{Flach gestauchte Loop Antenne die an einen Faltdipol erinnert}
 \label{fig:FflacheLoopAntenne}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Da  die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an der Oberfläche anders als bei einem Faltdipol. Bei einer Loopantenne wird aufgrund des im Nahfeld dominierenden starken Magnetfelds, keine Energie im umgebenden, nicht magnetischen  Kunststoff gespeichert. Dennoch kommt es bei den Loop Antennen wie bei den Dipolantennen zu einer Verlustleistung, die nicht abgestrahlt wird. Wie beim Dipol pendelt bei jeder Schwingung ein Teil der Feldenergie um die Antenne. Diese wird nicht abgestrahlt. Diese magnetische Energie baut sich bei jeder Schwingung um den Strahler auf und induziert beim Rückgang einen Strom in der umgekehrten Richtung in der Antenne. Das allgemeine Ersatzschaltbild \ref{fig:allgemeinesESB_induktiven_Antenne} einer Antenne besteht aus dem $R_{v}$, dem $R_{rad}$ und einem $X_{ant}$. $Z_{ant}$ sagt nichts darüber aus, ob die Antenne eher induktiv oder kapazitiv ist.
-
+Da  die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an der Oberfläche anders als bei einem Faltdipol. Bei einer Loopantenne wird aufgrund des im Nahfeld dominierenden starken Magnetfelds, keine Energie im umgebenden, nicht magnetischen  Kunststoff gespeichert. Dennoch kommt es bei den Loop Antennen wie bei den Dipolantennen zu einer Verlustleistung, die nicht abgestrahlt wird. Wie beim Dipol pendelt bei jeder Schwingung ein Teil der Feldenergie um die Antenne. Diese wird nicht abgestrahlt. Diese magnetische Energie baut sich bei jeder Schwingung um den Strahler auf und induziert beim Rückgang einen Strom in der umgekehrten Richtung in der Antenne. Das allgemeine Ersatzschaltbild \ref{fig:ESBantenne} einer Antenne besteht aus dem $R_{v}$, dem $R_{rad}$ und einem $X_{ant}$. $X_{ant}$ sagt nichts darüber aus, ob die Antenne eher induktiv oder kapazitiv ist. 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]%ESB Antenne
-	\begin{center}
-	\begin{tikzpicture}
-%	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
-	\draw[line width=1.5pt, *-](12, 5)  -- (13.5, 5);
-	\draw[line width=1.5pt, *-](12, 1.2)  -- (16, 1.2);
-	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
-	\draw[line width=1.5pt](14.5, 5)  -- (16, 5);
-	\draw[line width=1.5pt](16, 5)  -- (16, 4.4);
-	\draw[line width=1.5pt](15.75, 3.4) rectangle (16.25, 4.4) node at (17, 3.9) {$R_{rad}$};%Rrad
-	\draw[line width=1.5pt](16, 3.4)  -- (16, 2.7);
-%	\draw[line width=1.5pt](15.75, 2.8)  -- (16.25, 2.8);% oben
-%	\draw[line width=1.5pt](15.75, 1.8)  -- (16.25, 1.8);% unten
-%	\draw[line width=1.5pt](15.75, 2.8)  -- (15.75, 1.8);%oben zu unten links
-%	\draw[line width=1.5pt](16.25, 2.8)  -- (16.25, 1.8);%oben zu unten rechts
-%	\draw[line width=1.5pt](16.25, 2.8)  -- (15.75, 1.8);%diagonal
-	\node at (17, 2.3) {$X_{ant}$};
-	\draw (16,2.8) to[cute inductor] (16,1.8) ; 
-	\draw[line width=1.5pt](16, 1.9)  -- (16, 1.2);
-	
-%	\draw[line width=1.5pt, ->, >=latex](6.5, 4)  -- (8, 4) node at (8, 3.5) {$P_{ein}$};
-	\draw[line width=1.5pt, ->, >=latex](11.5, 4)  -- (13, 4) node at (13, 3.5) {$P_{ant}$};
-	
 
-	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
-	
-%	\node at (17.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
-%	\node at (9.5, 7) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!ht]%ESB Antenne
+%	\begin{center}
+%	\begin{tikzpicture}
+%%	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 6) {Anpassungsnetzwerk};
+%	\draw[line width=1.5pt, *-](12, 5)  -- (13.5, 5);
+%	\draw[line width=1.5pt, *-](12, 1.2)  -- (16, 1.2);
+%	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
+%	\draw[line width=1.5pt](14.5, 5)  -- (16, 5);
+%	\draw[line width=1.5pt](16, 5)  -- (16, 4.4);
+%	\draw[line width=1.5pt](15.75, 3.4) rectangle (16.25, 4.4) node at (17, 3.9) {$R_{rad}$};%Rrad
+%	\draw[line width=1.5pt](16, 3.4)  -- (16, 2.7);
+%%	\draw[line width=1.5pt](15.75, 2.8)  -- (16.25, 2.8);% oben
+%%	\draw[line width=1.5pt](15.75, 1.8)  -- (16.25, 1.8);% unten
+%%	\draw[line width=1.5pt](15.75, 2.8)  -- (15.75, 1.8);%oben zu unten links
+%%	\draw[line width=1.5pt](16.25, 2.8)  -- (16.25, 1.8);%oben zu unten rechts
+%%	\draw[line width=1.5pt](16.25, 2.8)  -- (15.75, 1.8);%diagonal
+%	\node at (17, 2.3) {$X_{ant}$};
+%	\draw (16,2.8) to[cute inductor] (16,1.8) ; 
+%	\draw[line width=1.5pt](16, 1.9)  -- (16, 1.2);
+%	
+%%	\draw[line width=1.5pt, ->, >=latex](6.5, 4)  -- (8, 4) node at (8, 3.5) {$P_{ein}$};
+%	\draw[line width=1.5pt, ->, >=latex](11.5, 4)  -- (13, 4) node at (13, 3.5) {$P_{ant}$};
+%	
+%
+%	\draw [-latex,line width=1.5pt](11.5,1) |-(13,2.5) node at (11.5, 0.5) {$Z_{ant}$};
+%	
+%%	\node at (17.5, 6) {$\eta_{rad}=\dfrac{R_{rad}}{Rv+R_{rad}}$};
+%%	\node at (9.5, 7) {$\eta_{overall}=\dfrac{P_{rad}}{P_{ein}}$};
+%
+%	
+%%	\draw[->,line width=0.5pt,decorate, decoration=snake ](18, 4.1) -- (19.5, 4.6);
+%%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.9) -- (19.5, 3.9);
+%%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.7) -- (19.5, 3.1);
+%%	\node at (20, 3.9) {$P_{rad}$};
+%	\end{tikzpicture}
+%	\end{center}
+%\caption{Allgemeines Ersatzschaltbild einer induktiven Antenne}
+%\label{fig:allgemeinesESB_induktiven_Antenne}
+%\end{figure}
+%%.................................................................................
 
-	
-%	\draw[->,line width=0.5pt,decorate, decoration=snake ](18, 4.1) -- (19.5, 4.6);
-%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.9) -- (19.5, 3.9);
-%	\draw[->,line width=0.5pt, decorate, decoration=snake](18, 3.7) -- (19.5, 3.1);
-%	\node at (20, 3.9) {$P_{rad}$};
-	\end{tikzpicture}
-	\end{center}
-\caption{Allgemeines Ersatzschaltbild einer induktiven Antenne}
-\label{fig:allgemeinesESB_induktiven_Antenne}
-\end{figure}
-%.................................................................................
-%------------------------.............---------...........----------.........-----
-\newpage
 \subsection{Verwendung einer Loop Antenne in der \glqq Connect 1\grqq \  Serie}
 Beim Einsatz einer magnetischen Antenne als Bluetooth Antenne in der "Connect 1"  \ Serie gibt es einige Punkte zu beachten. Das vorgesehene Antennenvolumen ist lang und schmal. Daher kann keine runde Schleife als Loop dienen. Die Antennenfläche kann also nicht mit $A=r^{2}\pi$ berechnet werden. Stattdessen  kann ein lang gezogener Loop zwischen dem Gehäuse und der Hauptplatine untergebracht werden. Die Loop Antennen sind in ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E und H Feldvektoren etwa gleich lang, phasengleich und rechtwinklig zueinander. Dabei strahlt die  ebene Welle  die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle ab.\\
 Um den Einfluss der "Connect 1" \ Geräte auf die Feldausbreitung der Loop Antenne abzuschätzen, kann das Antennenersatzschaltbild \ref{fig:allgemeinesESB_induktiven_Antenne}  betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
