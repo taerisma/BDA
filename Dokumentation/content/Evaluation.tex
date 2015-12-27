@@ -663,16 +663,14 @@ Da  die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an
 %%.................................................................................
 
 \subsection{Verwendung einer Loop Antenne in der \glqq Connect 1\grqq \  Serie}
-Beim Einsatz einer magnetischen Antenne als Bluetooth Antenne in der "Connect 1"  \ Serie gibt es einige Punkte zu beachten. Das vorgesehene Antennenvolumen ist lang und schmal. Daher kann keine runde Schleife als Loop dienen. Die Antennenfläche kann also nicht mit $A=r^{2}\pi$ berechnet werden. Stattdessen  kann ein lang gezogener Loop zwischen dem Gehäuse und der Hauptplatine untergebracht werden. Die Loop Antennen sind in ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E und H Feldvektoren etwa gleich lang, phasengleich und rechtwinklig zueinander. Dabei strahlt die  ebene Welle  die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle ab.\\
-Um den Einfluss der "Connect 1" \ Geräte auf die Feldausbreitung der Loop Antenne abzuschätzen, kann das Antennenersatzschaltbild \ref{fig:allgemeinesESB_induktiven_Antenne}  betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
+Beim Einsatz einer magnetischen Loop Antenne als Bluetooth Antenne im Fluginstrument gibt es einige Punkte zu beachten. Das vorgesehene Antennenvolumen ist lang, schmal und nur wenige Millimeter dick. Daher kann keine runde Schleife als Loop Antenne dienen. Die Antennenfläche kann also nicht mit $A=r^{2}\pi$ berechnet werden. Stattdessen  kann ein lang gezogener Loop zwischen dem Gehäuse und der Hauptplatine untergebracht werden. Die Loop Antennen sind in ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E und H Feldvektoren etwa gleich lang, phasengleich und rechtwinklig zueinander. Dabei strahlt die  ebene Welle  die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle ab.\\
+Um den Einfluss des Geräts auf die Feldausbreitung der Loop Antenne abzuschätzen, kann das Antennenersatzschaltbild \ref{fig:allgemeinesESB}  betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
   \begin{enumerate}[label={\alph*)}] 
-     \item die Antenne an die Quelle angepasst ist 
+     \item die Antennenimpedanz an die Quellenimpedanz angepasst ist 
      \item $R_{rad}$ gegenüber $R_{v}$ gross ist 
   \end{enumerate} 
-Die Anpassung einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk sehr schwer zu erreichen. Für alle Antennenformen gilt: wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann ist der Return Loss sehr klein. Das bedeutet, der $S_{11}$ Wert ist sehr klein. Daher erreicht nur ein kleiner Teil, der für die Antenne bestimmten Leistung, den Strahlungswiderstand und kann abgestrahlt werden.\\
-Das Verhältnis von $R_{rad}$ zu $R_{v}$ wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus. 
-
-
+Die Anpassung einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk sehr schwer zu erreichen. Für alle Antennenformen gilt: wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann nähert sich der Refflexionskoeffizient mit sicherheit nicht 1, das bedeutet der \textit{Return Loss} ist sehr klein. Daher ist der $S_{11}$ Wert ebenfalls sehr klein, die Folge sind Reflexionen. Es erreicht nur ein kleiner Teil, der für die Antenne bestimmten Leistung, den Strahlungswiderstand und kann abgestrahlt werden. Die Abstrahlleisung die im Bild \ref{AnpassungQuelleAntenne} mit $P_{rad}$ bezeichnet wird, sich daher klein.\\
+Ebenfals kann aus der Abbildung \ref{AnpassungQuelleAntenne} das Verhältnis von $R_{rad}$ zu $R_{v}$ entnommen werden, es wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus. 
 
 \subsubsection{Simulationen einer Lambda/2 Loop Antenne}\label{sec:SimL2Loop}
 Um das Abstrahlverhalten und die Wirkungen von Kunststoff im Nahfeld aufzuzeigen, werden die folgenden Abbildungen genauer erläutert.
