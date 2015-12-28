@@ -7,67 +7,57 @@ Warning--I'm ignoring elliott1981antenna's extra "publisher" field
 --line 40 of file mydata.bib.bib
 Warning--string name "februar" is undefined
 --line 48 of file mydata.bib.bib
-Warning--string name "september" is undefined
---line 58 of file mydata.bib.bib
-Warning--to sort, need author or key in Oeffnungswinkel
-Warning--to sort, need author or key in Antenne_Theory_Xant
-Warning--to sort, need author or key in linkbudget
 Warning--to sort, need author or key in Verkuertzungsfaktor
 Warning--to sort, need author or key in Verkuertzungsfaktor_wiki
 Warning--to sort, need author or key in WikiPermitt
 Warning--to sort, need author or key in DielektrikumPolarisation
 Warning--to sort, need author or key in Guetefaktor_Q
 Warning--to sort, need author or key in Bandbreite_B
-Warning--to sort, need author or key in Polystyrol_Datenblatt
-Warning--empty year in Antenne_Theory_Xant
 Warning--empty year in Bandbreite_B
 Warning--empty year in DielektrikumPolarisation
 Warning--empty year in Guetefaktor_Q
-Warning--empty year in Oeffnungswinkel
-Warning--empty year in Polystyrol_Datenblatt
 Warning--empty year in Verkuertzungsfaktor
 Warning--empty year in Verkuertzungsfaktor_wiki
 Warning--empty year in WikiPermitt
-Warning--empty year in linkbudget
-You've used 21 entries,
+You've used 11 entries,
             2773 wiz_defined-function locations,
-            705 strings with 7277 characters,
-and the built_in function-call counts, 5931 in all, are:
-= -- 577
-> -- 120
-< -- 9
-+ -- 58
-- -- 36
-* -- 382
-:= -- 761
-add.period$ -- 74
-call.type$ -- 21
-change.case$ -- 71
-chr.to.int$ -- 20
-cite$ -- 72
-duplicate$ -- 349
-empty$ -- 668
-format.name$ -- 46
-if$ -- 1334
+            653 strings with 5881 characters,
+and the built_in function-call counts, 3107 in all, are:
+= -- 285
+> -- 61
+< -- 6
++ -- 30
+- -- 18
+* -- 193
+:= -- 401
+add.period$ -- 37
+call.type$ -- 11
+change.case$ -- 35
+chr.to.int$ -- 10
+cite$ -- 40
+duplicate$ -- 186
+empty$ -- 362
+format.name$ -- 25
+if$ -- 695
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 123
-num.names$ -- 32
-pop$ -- 264
+missing$ -- 8
+newline$ -- 67
+num.names$ -- 20
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 28
 quote$ -- 0
-skip$ -- 230
+skip$ -- 120
 stack$ -- 0
-substring$ -- 58
-swap$ -- 25
-text.length$ -- 2
-text.prefix$ -- 3
+substring$ -- 28
+swap$ -- 13
+text.length$ -- 1
+text.prefix$ -- 0
 top$ -- 0
-type$ -- 206
-warning$ -- 20
-while$ -- 24
+type$ -- 101
+warning$ -- 12
+while$ -- 15
 width$ -- 0
-write$ -- 275
-(There were 23 warnings)
+write$ -- 144
+(There were 14 warnings)
