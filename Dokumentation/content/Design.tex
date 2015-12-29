@@ -71,14 +71,14 @@ Nr. & Anforderung & Beschreibung & Wert   \\
 
 Die in dem Fluginstrument geforderte symmetrische Bluetooth Antenne soll platzsparend im Inneren des Gerätes positioniert sein. Aus diesem Grunde wird eine gedruckte Dipolantenne entworfen. In kleinen elektronischen Geräten sind auf einer Leiterplatte oder auf einem selbstklebenden Kunststoffstreifen gedruckte Antennen von grossem Interesse. Die auf einer Leiterplatte oder einer Folie gedruckten Antennen haben den Vorteil, dass sie sehr kompakt und günstig zu produzieren sind. Zudem sind die Signalwege vom Sende- und Empfangschip zur Antenne sehr kurz. Trotz eines simplen Antennendesign haben Dipolantennen ein annähernd isotropes Abstrahlverhalten. Sie sind als Sende- und Empfangsantennen oft in  tragbaren Geräten eingesetzt. \\
 
-Auf Grund ihrer simplen und kostengünstigen Herstellung sind auf einer Leiterplatte gedruckte Antennen sehr beliebt. Es entstehen nur geringe Kosten, weil die Antenne auf demselben PCB wie die gesamte Gerätelektronik gefertigt wird. Somit wird die Antenne im selben Arbeitsgang wie die Printfertigung hergestellt. Die  Anpassung der Antenne und die strahlenden Antennenelemente sind ebenso Teil der Leiterplatte wie die Elektronikbauteile des Prints. Für ein System, bei dem ein isotropes Abstrahlverhalten gefordert ist, wie es in tragbaren Geräten oft der Fall ist, kommen oft Stabantennen zum Einsatz. 
-Um eine gute Abstrahlleistung der Antenne zu erhalten, ist ein $\lambda /2$ Dipol ein guter Ansatz. Dabei erfordert es, dass die effektive mechanische Länge des Dipols etwas weniger als eine halbe Wellenlänge beträgt. Dies kann auf den Verkürzungsfaktor zurückgeführt werden. Ein guter Ansatz ist 0.47 mal die Wellenlänge. 
+Auf Grund ihrer simplen und kostengünstigen Herstellung sind auf einer Leiterplatte gedruckte Antennen sehr beliebt. Es entstehen nur geringe Kosten, weil die Antenne auf demselben PCB wie die gesamte Gerätelektronik gefertigt wird. Somit wird die Antenne im selben Arbeitsgang wie die Printfertigung hergestellt. Die  Anpassung der Antenne und die strahlenden Antennenelemente sind ebenso Teil der Leiterplatte wie die Elektronikbauteile des Prints. Für ein System, bei dem ein isotropes Abstrahlverhalten gefordert ist, kommen oft Stabantennen zum Einsatz. Um eine gute Abstrahlleistung der Antenne zu erhalten, ist ein $\lambda /2$ Dipol ein viel benützter Ansatz. Dabei erfordert es, dass die effektive mechanische Länge des Dipols etwas weniger als eine halbe Wellenlänge beträgt. Dies kann auf den Verkürzungsfaktor zurückgeführt werden. 
+%Ein guter Ansatz ist 0.47 mal die Wellenlänge. 
 Zur Berechnung der Länge des in Resonanz betriebenen Dipols kann die  Gleichung \ref{eq:lamba_2_laene_dipol} herangezogen werden.
 \todo{Quelle}
 \begin{equation}\label{eq:lamba_2_laene_dipol}
-L=2l = 0.47 \lambda= 0,47 \dfrac{v}{f}
+L=2l = 0.5 \lambda= 0,5 \dfrac{v}{f}
 \end{equation} 
-Wobei $v$ die tatsächliche Ausbreitungsgeschwindigkeit der Elektronen ist. Diese Geschwindigkeit $v$ hängt von der effektiven dielektrischen Konstante der Umgebung  ab. 
+Wobei $v$ die tatsächliche Ausbreitungsgeschwindigkeit der elektromagnetischen Welle im Leiter ist. Diese Geschwindigkeit $v$ hängt von der effektiven dielektrischen Konstante der Umgebung  ab. 
 Die effektive  Impulsgeschwindigkeit der Elektronen kann mit der Gleichung \ref{eff_Geschwindigkeit} berechnet werden. 
 \begin{equation}\label{eff_Geschwindigkeit}
 v = \dfrac{c}{\varepsilon_{eff}}
@@ -88,7 +88,7 @@ Wobei $c$ die Lichtgeschwindigkeit im Vakuum und $\varepsilon_{eff}$  die effekt
 \begin{equation}\label{eff_epsilon}
 \varepsilon_{eff}=\dfrac{\varepsilon_r+1}{2}+\dfrac{\varepsilon_r-1}{2}\left[\left(1+\dfrac{12h}{w}\right)^{-\frac{1}{2}}+0.04\left(1-\dfrac{w}{h}\right)^{2}\right]
 \end{equation}
-Wobei $h$ die Dicke des Substrats, $w$ die Breite der Spuren und  $\varepsilon_{r}$ die relative Dielektrizitätskonstante des Substrats ist. 
+Wobei $h$ die Dicke des Substrats, $w$ die Breite der Antennenstrucktur auf dem Substrat und  $\varepsilon_{r}$ die relative Dielektrizitätskonstante des Substrats ist. 
 
 \section{Designansatz $\lambda$/2 Dipolantenne}  
 Unter Verwendung der in Kapitel \ref{sec:Implementierung} erwähnte Gleichung \ref{eq:lamba_2_laene_dipol} soll eine Dipolantenne für die Frequenz 2.45 GHz entworfen werden. Die Antenne wird symmetrisch gespiesen. Die Antenne wird auf eine Leiterplatte gedruckt. Als Substrat des Antennenprints kommt ein  FR-4 PCB mit einem geschätzten  $\varepsilon_r $ von 4.3 bei 1 GHz und einer Substratdicke von 1,5 mm  zum Einsatz. Die Dicke der Kupferschicht beträgt 35 $\mu m$. Die Leiterbahnbreite für den Dipol wird mit 1 mm  definiert.\\
@@ -99,10 +99,12 @@ Setzt man die effektive Dielektrizitätszahl $\varepsilon_{eff}$ von xxxxx  in d
 Die Geschwindigkeit $v$  kann in der  Gleichung \ref{eq:lamba_05_langer_dipol} eingesetzt werden. Die Länge des Dipols lässt sich bestimmen als:
 
 \begin{equation}\label{eq:lamba_05_langer_dipol}
-L=2l = 0.47 \lambda= 0,47 \dfrac{v}{f}=0,47 \dfrac{vvvv}{2.45[GHz]}=bla
+L=2l = 0.5 \lambda= 0,5\dfrac{v}{f}=0,5 \dfrac{vvvv}{2.45[GHz]}=bla
 \end{equation} 
+Für den $\lambda/2$ Designansatz resultiert eine Länge von xx [m].
 \subsection{Simulation  verschiedener Geometrien}
-Es wurden vier Dipolantennen entworfen. Die Entwürfe sind im EMPIREXPU erstellt und simuliert worden. Die Antennenabmessungen wurden auf das Simulationsmodel optimiert. Die Länge der Antennen weicht vom $L=2l=\lambda/2$ Ansatz ab. Es wurde versucht, eine optimale Länge für einen Einbau der Antenne in den "Connect 1" Geräten zu finden. Die Simulationen gehen von einem 26$\mu$m dicken Kupfer als Antennenleiter aus. Dies enspricht dem 3M Kupferband des Typs "1181 Tape". Die Leimschicht des Klebebands wird vernachlässigt. Als Trägersubstrat dient direkt das ABS Gehäuse\cite{Kupferband}.
+Es wurden vier Dipolantennen entworfen. Die Entwürfe sind im EMPIRE XPU erstellt und simuliert worden. Die Antennenabmessungen wurden auf das Simulationsmodel optimiert. Die Länge der Antennen weicht vom $L=2l=\lambda/2$ Ansatz ab. Es wurde versucht, eine optimale Länge für einen Einbau der Antenne für das Fluginstrument  "Connect 1" der Firma Flytec AG zu finden. Die Simulationen gehen von einem 26$\mu$m dicken Kupfer als Antenne aus. Dies enspricht dem 3M Kupferband des Typs "1181 Tape". Die Leimschicht des Klebebands wird vernachlässigt. Als Trägersubstrat dient direkt das ABS Gehäuse \cite{Kupferband}. Für eine Aussage wie das Abstrahlverhalten einer Dipolantenne auf der Längsseite des Fluginstrumentes sich verhaltet, wurde entschieden, dass es nicht nötig ist, die Antennenstrucktur  weder auf ein FR4 Print zu drucken noch ist die aufwändige Fertigung einrer kleinserie von gedruckten Antennen auf einer Klebefolie nötig. Stattdessen wir wie bereits erwähnt das Kupferkelbeband "1181 Tape" verwendet. Es bringt einige Vorteile mit sich: Das Tape ist einfach zu bearbeiten. Es kann mit einer Schere oder mit einem Skalpell die gewünschte Antennform aus dem Tape geschnitten werden. Die geometischen Eigenschaften des Taps sind mit einer Dicke von 26$\mu$m in einem ändlichen Bereich wie eine gedruckte Antenne die auf einer FR4 Kunstharzplatte ist.
+\newpage
 \subsubsection*{Entwurf}
 Die vier Antennen haben alle dieselbe Dicke. Das \glqq 3M 1181 Tape\grqq   hat eine Kupferstärke von 26$\mu$m. Die vier Antennen unterscheiden sich in der Breite der Kupferstreifen und in ihrer Form.\\
 Es wurden die folgenden vier Formen simuliert:
@@ -166,27 +168,30 @@ Es wurden die folgenden vier Formen simuliert:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In der Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} sind einige Antennenparameter und Abstrahlcharakterisiken der verschieden Dipolantennen aufgezeigt. Der $S_{11}$ Wert ist in dB und gibt den maximalen wert der Rückflussdämpfung an. Da die |$S_{11}$| Dämpfung der Antennen im Gerät teilweise nicht über einen Bereich von 100MHz einen  Wert von -10dB erreichen, wird die -10dB Bandbreite hier nicht aufgeführt.
 $Z_{ant}$ gibt die simulierte Antennenimpedanz bei einer Frequenz von 2.45GHz an.
-$\eta$ gibt die Abstrahleffizienz in Prozent an. Sie zeigt, wieviel Prozent der Antennenstruktur abgestrahlt werden kann, wenn die Anregung mit einer idealen 50 Ohm \textit{In Plane} Quelle simuliert wird. Auch $\eta$ ist auf die Abstrahlfrequenz von 2.45GHz bezogen.
+Die Abstrahleffizienz $\eta$ gibt in Prozent an die totale Abstrhalleffizenz an. Sie zeigt, wieviel Prozent der zugeführten Leistung der elektromagnetische Welle von der Antennenstruktur abgestrahlt werden kann, wenn die Anregung mit einer idealen 50 Ohm \textit{In Plane} Quelle simuliert wird. Auch $\eta$ wird auf die Abstrahlfrequenz von 2.45GHz bezogen.\\
+Die Abstrahleffizienz $\eta$ zeigt bei allen vier Antennen eine Reduktion von ca. 25 $\%$ der Abstrhalleistung wenn die Antenne im Gerät positioniert wird. Weiter macht sich bei allen vier Simulierten Antennen ein Detuninig von mehr als 100 MHz bemerkbar. Dies ist sehr gut in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} zu entnehmen. 
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
-  \begin{tabular}{p{4cm} p{2cm} l c c c r} 
+  \begin{tabular}{p{8cm} p{2cm} l c c c r} 
   \toprule 
-  Antenne                  	& Freiraum Conncect1	 & $S_{11}$[dB]	& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$]\\ 
+  Antenne                  	& Freiraum im Gerät	 & $S_{11}$[dB]	& $Z_{ant}$[$\Omega$] 	& $\eta$ [$\%$]\\ 
   \midrule
- 5mm breit und 50.5mm lang    	& Freiraum			&	-12.31 @ 2.54		&  	49.7-j27.9		&   	91	\\
-            					& Conncect 1   			&   -4.92 @ 2.406   		&	17.6+j25.7		& 	62	\\
- 3mm breit und 50.25mm lang    & Freiraum			&    -13.45 @ 2.56  		&	52.9-j28.3		&	91	\\
-     						& Conncect 1				&  	-5.24 @2.44			&	16+j14.7			&	65	\\
- 1mm breit und 51.25mm lang  	& Freiraum			&    -14.14 @ 2.52    	&	60.4-j23.2		&	93	\\
-      						& Conncect 1				&  	-5.9 @ 2.45			&	16.5+j6.4		&	68	\\
-  1mm breit und 45.25mm lang \\
-  mit Dachkapazität  		& Freiraum				&   -15.15 @ 2.57      	&	55.4-j29.7		&	90.5	\\
-      						& Conncect 1				&  	-5.529 @ 2.47		&	15.21j3.8		&	65	\\
+ 5mm breit \& 50.5mm lang    	& Freiraum			&	-12.31 @ 2.54		&  	49.7-j27.9		&   	91	\\
+            					& im Gerät   			&   -4.92 @ 2.406   		&	17.6+j25.7		& 	62	\\
+ 3mm breit \& 50.25mm lang    & Freiraum			&    -13.45 @ 2.56  		&	52.9-j28.3		&	91	\\
+     						& im Gerät				&  	-5.24 @2.44			&	16+j14.7			&	65	\\
+ 1mm breit \& 51.25mm lang  	& Freiraum			&    -14.14 @ 2.52    	&	60.4-j23.2		&	93	\\
+      						& im Gerät			&  	-5.9 @ 2.45			&	16.5+j6.4		&	68	\\
+  1mm breit \& 45.25mm lang
+  \& Dachkapazität  		& Freiraum				&   -15.15 @ 2.57      	&	55.4-j29.7		&	90.5	\\
+      						& im Gerät			&  	-5.529 @ 2.47		&	15.21j3.8		&	65	\\
  \bottomrule
   \end{tabular}
-  \caption{$\lambda/2$ Dipolantennen simuliert im Freiraum und im "Connect 1"}
+  \caption{$\lambda/2$ Dipolantennen simuliert im Freiraum und im Gerät}
   \label{tab:Vergeich_Lambda/2_Freiraum_Geraet}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -229,18 +234,17 @@ $\eta$ gibt die Abstrahleffizienz in Prozent an. Sie zeigt, wieviel Prozent der 
 	\inputencoding{latin1}
 	\input{content/bilder/Simulation/Simulation_S11_Dipol_1mm_Dach.tikz}
 	\endgroup
-	\caption{Vergleich des $S_{11}$ im Gehäuse und im Freiraum von Dipolantennen }
-	\label{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet}
+	\caption{Vergleich des $S_{11}$ im Gehäuse und im Freiraum von Dipolantennen }	\label{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-bbbbbbbbbbbbbbbbb\\
-Ein Text zu jedem Bild und\\
-allgemein zum Dipol\\
+
+\newpage
+\section{Interpretation der $\lambda/2$ Dipolantennen Simulation}
+
 zur Dämpgung des Gehäuses\\
 zur of nicht vorhanderenen -10 dB Bandbreite
-
-\section{Interpretation der $\lambda/2$ Dipolantennen Simulation}
 Aus der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} sind zwei Fakten klar ersichtlich. \\
-1. die Simulationen des $S_{11}$ Verlauf zeigen, dass die Resonanzfrequenz von allen simulierten Dipolantennen ist tifer wenn sie im Gerät verbaut sind gegenüber der im Freiraum.\\
-2. Alle vier kurven zeigen einen breitbandigeren verlauf. Das heisst keine der Dipolantennen die im Grät verbaut sind zeigen einen schrfe Refflexionsdämpfung auf. 
+1. die Simulationen des $S_{11}$ Verlauf zeigen, dass die Resonanzfrequenz aller simulierten Dipolantennen ist tifer wenn sie im Gerät positioniert sind gegenüber der Simulation im Freiraum.\\
+2. Alle vier kurven zeigen einen breitbandigeren verlauf, wenn die Dipolantennen sich im Gerät befinden. Das heisst keine der Dipolantennen zeigen einen schrfe Refflexionsdämpfung, wie es im Freiraum der Fall ist. \\
+Aus der dem Kurvenverlauf des $S_{11}$ Werts der in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} dargestellt ist und den Werten des Abstrahleffizienz aus der Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} wird Entscheid für die zu Produziernde Antenne getroffen. es soll eine 1mm Breite und 51.25mm lange Dipolantenne gefertigt werden. Dies zeigt eine Abstrahleeffizienz von 68$\%$ im Gerät. Die Dipolantenne mit Dachkapaziät zeigt sehr ähndliche Werte wie die 1mm breite Dipolantenne, sie ist aber aufgrund der Dachkapazit etwas schwieriger herzustelen und zeigt kein verbessertes Abstrahlverhalten.
