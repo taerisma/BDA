@@ -726,7 +726,7 @@ jX_{L}= j\omega L \label{eq:XL} \\ jX_C=\dfrac{-j}{\omega C} \label{eq:XC}
 \newpage
 \section{Speisung}\label{sec:Speisung}
 
-Unter der Speisung einer Antenne versteht man die Signalzuführung. Damit eine Antenne strahlt, muss diese mit einer elektromagnetischen Welle angeregt werden. Daraus resultiert eine Strom- und Spannungsverteilung auf der Oberfäche der Antenne, welche für deren Abstrahlverhalten verantwortlich ist. 
+Unter der Speisung einer Antenne versteht man die Signalzuführung. Damit eine Antenne strahlt, muss sie mit einer elektromagnetischen Welle angeregt werden. Daraus resultiert eine Strom- und Spannungsverteilung auf der Oberfäche der Antenne, welche für deren Abstrahlverhalten verantwortlich ist. Die Abbildung \ref{AnpassungQuelleAntenne} zeigt wichtige Zusammenhänge zwischen der Quelle, der Leitung und der Antenne auf, welche letztendlich massgebend für die Speisung sind.
 %\begin{itemize}
 %\item 	Leistungsanpassung
 %\item 	Singalanpassung
@@ -762,9 +762,20 @@ Unter der Speisung einer Antenne versteht man die Signalzuführung. Damit eine A
 %\end{tikzpicture}
 %\end{ circuitikz }
 %%%%%%%%%%%%%%%%%%%%%%
-Wenn man die Speisung in einem grösseren Zusammenhang betrachtet, dann erkennt man, dass die Speisung mehr als die Berücksichtigung der Impedanzen von der Quelle bis zur Antenne umfasst. Um eine Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein. Die Abbildung \ref{AnpassungQuelleAntenne} zeigt wichtige Zusammenhänge der Speisung und des Zusammenhangs von Quelle, Leitungsimpedanz und der Antenne auf. Wie im Kapitel \ref{sec:AnpassungReflexionen} ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$, aus dem wiederum auf die Reflexionsdämpfung |$S_{11}$| geschlossen wird. Der Zusammenhang ist einfach. Je mehr der Reflexionskoeffizient $\Gamma\rightarrow 1$ geht, desto grösser ist der |$S_{11}$| Wert in dB. Dadurch gelangt mehr Leistung in die Antenne, somit kann mehr Energie abgestrahlt werden. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_{rad}$. Denn $P_{rad}$ ist als $P_{rad}=1/2*I_{ant}^2*R_{rad}$ definiert. Aus der Abstrahleffizienz $\eta_{rad}$ ist ebenfalls zu erkennen, dass die Verluste des Antennensystems klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen. Dies führt zu einer hohen Abstrahleffizienz $\eta_{rad}$.
+Um eine Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein.  Wie im Kapitel \ref{sec:AnpassungReflexionen} erläutert wird, ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$, aus dem wiederum auf die Reflexionsdämpfung |$S_{11}$| geschlossen wird. Der Zusammenhang ist einfach. Je stärker $\Gamma\rightarrow 1$, desto grösser ist die |$S_{11}$|. Dadurch gelangt mehr Leistung in die Antenne, welche wiederum mehr Energie abstrahlt. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_{rad}$, da $P_{rad}=1/2*I_{ant}^2*R_{rad}$. Aus der Formel für die Abstrahleffizienz $\eta_{rad}$ (\ref{eq:eta_rad}) ist zudem zu erkennen, dass die Verluste des Antennensystems $R_v$ klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen, um eine hohe Abstrahleffizienz $\eta_{rad}$ erreichen zu können. 
+Die totale Abstrahleffizienz $\eta_{tot}$ vergleicht die von der Antenne abgestrahlte Leistung mit der Leistung, welche der Antenne über die Speisung zugeführt wird gemäss (\ref{eq:eta_tot}).
 
-\begin{figure}[!ht]
+\begin{equation}
+\eta_{rad}=\dfrac{R_{rad}}{R_v + R_{rad}}=\dfrac{P_{rad}}{P_{ant}}
+\label{eq:eta_rad}
+\end{equation}
+
+\begin{equation}
+\eta_{tot}=\dfrac{P_{rad}}{P_{ein}}
+\label{eq:eta_tot}
+\end{equation}
+
+\begin{figure}[!t]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
@@ -811,7 +822,7 @@ Wenn man die Speisung in einem grösseren Zusammenhang betrachtet, dann erkennt 
 	\node at (20, 3.9) {$P_{rad}$};
 	\end{tikzpicture}
 	\end{center}
-\caption{ESB einer Quelle mit Anpassnetzwerk, Leitung und einer Antenne}
+\caption{Ersatzschaltbild einer Quelle mit Anpassnetzwerk und Antenne}
 \label{AnpassungQuelleAntenne}
 \end{figure}
 
