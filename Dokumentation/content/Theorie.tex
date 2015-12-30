@@ -346,7 +346,7 @@ Um die Zweitoreigenschaften einer längshomogenen Zweidrahtleitung zu ermitteln,
 \caption{Leitungsmodell einer Zweitorkette}
 \label{fig:LeitungsmodellZweitorKette}
 \end{figure}
-Aus der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquelle auf der Leitung ein Strom $i(t)$ einstellt. Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. Das Einschalten der Quelle führt weiter zu einer Spannung zwischen den Leitern, was widerum zu einem elektrischen Feld und einer Oberflächenladung $Q = u  \Delta C$ auf den Leitern führt. Diese beiden Sachverhalte sind in den Ablildungen \ref{Magnetischer Fluss einer Zweidrahtleitung}	 und \ref{fig:statischeZeidrahtleitung} dargestellt, wobei es sich um eine statische Feldbetrachtung der transversalen Ebene  einer Zweidrahtleitung handelt. \cite{Tekom}.
+Aus der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquelle auf der Leitung ein Strom $i(t)$ einstellt. Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. Das Einschalten der Quelle führt weiter zu einer Spannung zwischen den Leitern, was widerum zu einem elektrischen Feld und einer Oberflächenladung $Q = u  \Delta C$ auf den Leitern führt. Diese beiden Sachverhalte sind in den Ablildungen \ref{fig:Mag_Fluss_Leitung}	 und \ref{fig:OberfaechenLadung} dargestellt, wobei es sich um eine statische Feldbetrachtung der transversalen Ebene  einer Zweidrahtleitung handelt. \cite{Tekom}.
 \begin{figure}[!h]
 \begin{minipage}{7cm}
 	\centering
@@ -362,7 +362,8 @@ Aus der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquell
 		\draw[line width=1.5pt](5, 5.5) circle (0.5);
 		\fill[fill=black](5, 5.5) circle (2pt);				
 	\end{tikzpicture}
-	\caption{Magnetischer Fluss einer Zweidrahtleitung}	
+	\caption{Magnetischer Fluss einer Zweidrahtleitung}
+	\label{fig:Mag_Fluss_Leitung}	
 \end{minipage}
 \hfill
 \begin{minipage}{7cm}
@@ -374,7 +375,8 @@ Aus der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquell
 		\draw[line width=1.5pt](5, 5.5) circle (0.5) node at (5, 5.5){$-$};
 		\draw node at (5.3,6.3){$Q-$};	
 	\end{tikzpicture}
-	\caption{Oberflächenladung einer Zweidrahtleitung}		
+	\caption{Oberflächenladung einer Zweidrahtleitung}
+	\label{fig:OberfaechenLadung}		
 %\caption{statische Feldbetrachtung einer Transversalen Ebene einer Zeidrahtleitung}
 \end{minipage}
 \label{fig:statischeZeidrahtleitung}
@@ -431,16 +433,45 @@ r=\dfrac{U_{R}}{U_{V}}=\dfrac{Z_{L}-Z_{0}}{Z_{L}+Z_{0}}=-\dfrac{I_{R}}{I_{V}}
 Der Reflexionskoeffizient $r$ lässt sich, wie in (\ref{eq:Reflexionskoeffizient}) gezeigt, anhand der Last- und der Quellenimpedanz oder aus dem Verhältnis zwischen der vorwärts und der rückwärts laufenden Stromwelle berechnen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=10cm]{content/bilder/ReflexionenLeitungLastimpedanz.pdf}%
-	\caption{Signalreflexion an einer Lastimpedanz \cite{Tekom}}
-	\label{LeitungMit_ZL}
-\end{figure}
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=10cm]{content/bilder/ReflexionenLeitungLastimpedanz.pdf}%
+%	\caption{Signalreflexion an einer Lastimpedanz \cite{Tekom}}
+%	\label{LeitungMit_ZL}
+%\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+	\begin{center}
+	\begin{tikzpicture}
+		\draw[line width=1pt] (0, 5) -- (5, 5) node at(2.25,5.75){$Z_0$};
+		\draw[line width=1pt] (0, 6.5) -- (5, 6.5);
+		\draw[line width=1pt](5, 5.75) ellipse (0.2 and 0.75);
+		\draw[line width=1pt] (5, 5.75) -- (6, 5.75);
+		\draw[line width=1pt] (5, 5) -- (6, 5);
+		
+		\draw[line width=1pt] (6, 5.75) -- (6, 7.75);
+		\draw[line width=1pt] (6, 5) -- (6, 3);
+		
+		\draw[line width=1pt] (6, 7.75) -- (9, 7.75);
+		\draw[line width=1pt] (6, 3) -- (9, 3);
+		
+		\draw[line width=1pt] (9, 7.75) -- (9, 6.25);
+		\draw[line width=1pt] (9, 3) -- (9, 5.25);
+		
+		\draw[line width=1pt](8.75, 5.25) rectangle (9.25, 6.25)node at(8.25,5.75){$Z_L$};
+		
+		\draw[line width=1pt, ->, >=latex](3, 4.5) -- (1.5, 4.5) node at(2.25,4){$U_R,I_R$};
+		\draw[line width=1pt, ->, >=latex](1.5, 7) -- (3, 7)node at(2.25,7.5){$U_V,I_V$};
+		
+		\draw[line width=1pt, ->, >=latex](7.2, 8.25) -- (8.2, 8.25)node at(7.7,8.75){$I_L$};
+		\draw[line width=1pt, ->, >=latex](9.75, 6.5) -- (9.75, 5)node at(10.25,5.75){$U_L$};
+	\end{tikzpicture}
+	\end{center}
+\caption{Signalreflexion an einer Lastimpedanz}
+\label{fig:Leitung_Mit_ZL}
+\end{figure}
 
-
-Die Spannung $\underline{U}_L$ über der Last ergibt sich aus der Summe der vorwärts und der rückwärts laufenden Spannugswellen, wie  in (\ref{eq:AnpassungULast}) gezeigt. Der in der Last fliessende Strom $\underline{I}_L$ wird aus der vorwärts und der rückwärts laufenden Stromwelle gemäss (\ref{eq:AnpassungILast}) berechnet \cite{Tekom}:
+Die Spannung $U_L$ über der Last ergibt sich aus der Summe der vorwärts und der rückwärts laufenden Spannugswellen, wie  in (\ref{eq:AnpassungULast}) gezeigt. Der in der Last fliessende Strom $I_L$ wird aus der vorwärts und der rückwärts laufenden Stromwelle gemäss (\ref{eq:AnpassungILast}) berechnet \cite{Tekom}:
 \begin{eqnarray}\label{eq:AnpassungULast}
 U_L =U_V +U_R
 \end{eqnarray}

@@ -158,7 +158,7 @@ Die drei Komponenten $R_{v}$, $R_{rad}$ und $X_{ant}$ ergeben zusammen die gesam
 \eta_{rad}=\dfrac{R_{rad}}{R_v + R_{rad}}=\dfrac{P_{rad}}{P_{ant}}
 \label{eq:eta_rad}
 \end{equation}
-Die total Abstrahleffizenz $\eta_{tot}$ wird gebildet aus:
+Die totale Abstrahleffizenz $\eta_{tot}$ wird gebildet aus:
 \begin{equation}
 \eta_{tot}=\dfrac{P_{rad}}{P_{inc}}
 \label{eq:eta_tot}
@@ -171,7 +171,7 @@ Für die gilt:
  \item[] $R_v$: Antennenverluste [$\Omega$] 
  \item[] $P_{rad}$: Die von der Antenne abgestrhalte Leistung [W] 
  \item[] $P_{ant}$: In die Antenne eindringende Leistung [W 
- \item[] $P_{inc}$: Die von der Zuleitung zugeführte Leistung [W] 
+ \item[] $P_{Pein}$: Die von der Zuleitung zugeführte Leistung [W] 
 \end{enumerate} 
 
 \section{Dipol Antenne}
@@ -425,7 +425,7 @@ Es wurden drei Simulationen durchgeführt.
 \end{enumerate}
 
 \textbf{Simulationen einer $\lambda/2$ Dipolantenne im Freiraum}\\
-Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist bei 2.42 GHz abgestimmt und es resultiert eine $S_{11}$ Wert von -16.1dB. Die -10dB Bandbreite beträgt 300 MHz. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt bei der Resonanzfrequenz einen Widerstand von 68.6 Ohm reell. Das ist nahe dem in der Theorie und mit der Formel \ref{RradDipol} gezeigten Wert von 73 Ohm. Die Impedanz bei einer Frequenz von 2.450 GHz zeigt weiter einen kapazitiven Imaginärteil von $-j4\Omega$. Der Realteil ist in der Abbildung \ref{Impedanz_Vergleich_Simulation} rot und der Imaginärteil als blaue Linie gezeichnet. Da die Anpassung an die Quellenimpedanz von reell 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.
+Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist bei 2.42 GHz abgestimmt und es resultiert eine $S_{11}$ Wert von -16.1dB. Die -10dB Bandbreite beträgt 300 MHz. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt bei der Resonanzfrequenz einen Widerstand von 68.6 Ohm reell. Das ist nahe dem in der Theorie und mit (\ref{RradDipol}) gezeigten Wert von 73 Ohm. Die Impedanz bei einer Frequenz von 2.450 GHz zeigt weiter einen kapazitiven Imaginärteil von $-j4\Omega$. Der Realteil ist in der Abbildung \ref{Impedanz_Vergleich_Simulation} rot und der Imaginärteil als blaue Linie gezeichnet. Da die Anpassung an die Quellenimpedanz von reell 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.
 
 
 %\begin{figure}[!ht]
@@ -515,7 +515,7 @@ Eine Richtcharakteristik von 2.38 dBi zeigt die Abbildung \ref{fig:sim_Dipol_2AB
 %%%%%%%%
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.9\textwidth]{content/bilder/Evaluation/Dipol/3D_Dipol_Freiraum.JPG} }
+		\includegraphics[width=0.9\textwidth]{content/bilder/Evaluation/Dipol/3D_Dipol_Freiraum.JPG}
 		\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Dipolantenne im Freiraum}
 		\label{fig:sim_Dipol_Freiraum_3D}
 	\end{center}
@@ -596,7 +596,7 @@ Sie weisen die folgenden Transversalkomponenten $\textbf{E}_{\varphi}$ bzw. $\te
 \end{equation}
 Es wird festgestellt, dass die Felder nur vom Strom, der Fläche und des Winkels $\theta$ abhängig sind
 und nicht von der Form der Antenne. 
-Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Auf den gleichen Wert kommt man, wenn die Formel (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. Die von den Windung aufgespannte Fläche enspricht $S$ und $k$ kann als $2\pi/\lambda$ angenommen werden. Ist die loop Antenne kreisförmig, so ist der Radius der Windung $a$ und für die Wellenimpedanz $Z_0$ im Freiraum gilt $120\pi$.
+Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Auf den gleichen Wert kommt man, wenn (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. Die von den Windung aufgespannte Fläche enspricht $S$ und $k$ kann als $2\pi/\lambda$ angenommen werden. Ist die loop Antenne kreisförmig, so ist der Radius der Windung $a$ und für die Wellenimpedanz $Z_0$ im Freiraum gilt $120\pi$.
 \begin{equation}\label{eq:RS_LOOP}
 R_{s}=\dfrac{2Ps}{|I|^{2}}=Z_{0}\dfrac{\pi}{6}(k^{2}a^{2})^{2}=Z_{0}\dfrac{2\pi}{3}\left(\dfrac{kS}{\lambda}\right)^{2} 
 \end{equation}
@@ -618,7 +618,7 @@ V_{ol}= j\omega\Psi_{m}=j\omega\textbf{B}*\textbf{s}= j\omega\mu H_{z}*\pi a^{2}
 H_{z}=H^{i}\cos\Psi\sin\theta_{i}
 \end{equation}
 %Bild von der Welle durch die Loop Fläche
-Zu den Formeln (\ref{eq:InduktionspannungLoop}) und (\ref{eq:InduktionspannungLoopHz}): \\
+Für dei Ausdrücke  (\ref{eq:InduktionspannungLoop}) und (\ref{eq:InduktionspannungLoopHz}) gilt: \\
 $\Psi_{m}$ ist der magnetische Fluss, die Winkel $\theta_{i}$ und $\varphi_{i}$ sind im Kugelkoordinatensystem und beschreiben die durch die Loopfläche tretenden Wellen .\\ 
 Da die Formgebung einer Loop Antenne die in dem untersuchten Fluginstrument Platz finden muss. Ist das im Kapitel \ref{sec:EigenschaftenAntenne} beschriebene freien Volumen berücksichtig werden. Dies führt zu einer langgestreckten und flachen Loop Antenne. Die Form erinnert stark an diejenige eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne, die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
 Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen Dipol. Der Strahlungswiderstand ist jedoch ca. 280 Ohm. 
@@ -1106,21 +1106,23 @@ Die Loop Antennen mit mehreren Windungen sind unter Berücksichtigung des gegebe
 
 \subsubsection{Antennenkriterien}
 \textbf{Antennengüte Q}\\
-Bei Antennen wird der Gütefaktor auch Q Wert genannt. Dieser wird aus dem Verhältnis der Mittenfrequenz $F_{c}$ zur Antennenbandbreite B berechnet, wobei die Mittenfrequenz aus dem Mittelwert der oberen und unteren Grenzfrequenz errechnet werden kann. $Q = f_c/(f_0-f_u)$, mit $f_c$ als Mittenfrequenz, $f_u$ als untere Grenzfrequenz und $f_o$ als obere Grenzfrequenz. Je grösser der Gütefaktor, desto schmalbandiger und je niedriger der Gütefaktor, desto breitbandiger sind Antennen \cite{Guetefaktor_Q}.\\
+Bei Antennen wird der Gütefaktor auch Q Wert genannt. Je grösser der Gütefaktor, desto schmalbandiger und je niedriger der Gütefaktor, desto breitbandiger sind Antennen. Für Q$>>$ als 1 gilt: $Q \approx\frac{1}{B_{-3dB}}$. Dieser wird aus dem Verhältnis der Mittenfrequenz $F_{c}$ zur Antennenbandbreite B berechnet, wobei die Mittenfrequenz aus dem Mittelwert der oberen und unteren Grenzfrequenz errechnet werden kann. $Q = f_c/(f_0-f_u)$, mit $f_c$ als Mittenfrequenz, $f_u$ als untere Grenzfrequenz und $f_o$ als obere Grenzfrequenz. \cite{Guetefaktor_Q}.\\
 \textbf{Bandbreite B}\\
 In der Nachrichten-, Audio- und Hochfrequenztechnik wird die Bandbreite für einen Frequenzbereich angegeben. Die Bandbreite entspricht dem Frequenzbereich, in dem elektrische Signale mit einem Amplitudenabfall bis zu einer definierten Grenze. Es handelt sich um eine Frequenzdifferenz zwischen der oberen $f_o$ und der unteren Frequenz $f_u$. Oft ist die Amplitudendgrenze bei -3dB angesetzt. Bei -3dB ist die Signalstärke auf 0.707 des Maxialwerts abgesunken. Das bedeutet, das Signal hat bei -3dB um die Hälfte der maximalen Leistung abgenommen\cite{Bandbreite_B}.
-In den Tabellen \ref{tab:Evaluation_Vergeich_Dipolantennen} ,\ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05}, \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} und \ref{nutzwertEvaluation} bezieht man sich auf die -10dB Bandbreite.\\
+In den Tabellen \ref{tab:Evaluation_Vergeich_Dipolantennen} ,\ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05}, \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} und \ref{nutzwertEvaluation} bezieht man sich auf die -10dB Bandbreite in [MHz].\\
 \textbf{Mittenfrequenz $f_{c}$}\\
-Die Mittenfrequenz $f_c$ ist definiert über die obere und untere Grenzfrequenz. Sie wird gebildet als $f_c=f_u+(f_o-f_u)/2$. Die Mittenfrequenz muss nicht der Resonanzfrequenz $f_{res}$ entsprechen.\\
+Die Mittenfrequenz $f_c$ ist definiert über die obere und untere Grenzfrequenz. Sie wird hier als geometrisches Mittel zwischen der oberen Grenzfrequenz $F_o$ und der untere Grenzfrequenz $f_u$ wie folgt gebildet: $f_c=\sqrt{f_o*f_u}$. Die Mittenfrequenz muss nicht der Resonanzfrequenz $f_{res}$ entsprechen.\\
+\textbf{Resonanzfrequenz $f_{res}$}\\
+Die Resonanzfrequenz ist in dieser Arbeit als jene Frequenz erachtet worden, die den maximalen |$S_{11}$| Wert zeigte.
 %%%%%%
 \textbf{Relative Bandbreite d}\\
-Die relative Bandbreite ist der Kehrwert der Antennegüte Q.
-Sie wird gebildet, in dem die Bandbreite B durch die Resonanzfrequenz $f_{res}$ geteilt wird. $d=\dfrac{Bandbreite}{f_{Resonanz}}$\\
+Die relative Bandbreite wird in dieser Arbeit aus der -10 dB Bandbreite und der  
+Resonanzfrequenz gebildet $d=\dfrac{Bandbreite_{-10dB}}{f_{res}}*100$. Die Multiplikation mit 100, ermöglicht ein einfaches ablesen der Relative Bandbreite in Prozent. \\
 %%%%%%
 \textbf{Richtcharakteristik D}\\
 Die Richtcharakteristik ist das Verhältnis der maximalen Leistungsdichte der Antenne gegenüber einem isotropen Strahler in dBi.\\
 \textbf{Abstrahleffizienz $\eta$}\\
-Man unterscheidet zwischen $\eta_{rad}$ und $\eta_{Total}$. Die Abstrahleffizienz des Strahlungswiderstands ist definiert als $\eta_{rad}=\dfrac{R_{rad}}{R_{rad}+R_v}$. Die totale Abstrahleffizienz ist immer an die Impedanz und Leistung der Zuleitung gebunden. Sie berechnet sich als $\eta_{Total}=\dfrac{P_{rad}}{P_{Leitung}+P_{rad}}$. In diesem Kapitel ist immer die totale Abstrahleffizienz erwähnt.\\
+Man unterscheidet zwischen $\eta_{rad}$ und $\eta_{Total}$. Die Abstrahleffizienz des Strahlungswiderstands ist definiert als $\eta_{rad}=\dfrac{R_{rad}}{R_{rad}+R_v}=\dfrac{P_{rad}}{P_{ant}}$. Die totale Abstrahleffizienz vergleicht die von der Antenne abgestrhalte Leistung $P_{rad}$ mit der zugeführten Leistung $P_{ein}$ . Sie berechnet sich als $\eta_{Total}=\dfrac{P_{rad}}{P_{Leitung}+P_{rad}}$. In diesem Kapitel ist immer die totale Abstrahleffizienz erwähnt.\\
 \textbf{Antennenimpedanz $Z_{ant}$}\\
 Die Antennenimpedanz ist eine komplexe Grösse. Sie fasst alle Real- und Imginärteile der Antenne in einem Wert zusammen.\\
 \textbf{Produktionsaufwand}\\
