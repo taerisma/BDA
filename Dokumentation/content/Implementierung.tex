@@ -3,32 +3,32 @@
 \chapter{Implementierung}\label{sec:Implementierung}
 Wie im Kapitel \ref{sec:Interpretation_Dipol} erwähnt ist, wird die Antennenstruktur weder auf einer FR4 Kunstharzplatte noch auf eine Plastikfolie aufgedruckt. Da einerseits die Produktionskosten von Kleinserien im Verhältnis zum Nutzen eher klein sind, zum andern benötigt jeder Fertigungsdurchgang von gedruckten Antennen  mindestens ein bis drei Tage. Daher werden die zu Testenden Antennen aus Kupferfolie geschnitten. So können Änderungen des Design sehr schnell umgesetzt werden.\\
 
-Aus der Interpretation der Dipolantennen Simulationen \ref{sec:Interpretation_Dipol} ist hervorgegangen, dass das Abstrahlverhalten eine Dipolantenne mit der breite von 1 mm und der Dicke von 26$\mu$ und einer Länge von xx mm ausgemessen wird.\\
+Aus der Interpretation der Dipolantennen Simulationen \ref{sec:Interpretation_Dipol} ist hervorgegangen, dass das Abstrahlverhalten eine Dipolantenne mit der breite von 1 mm und der Dicke von 26$\mu m$ und einer Länge von xx mm ausgemessen wird.\\
 
-Die Antenne wird mit dem Slapell aus dem Kupferklebeband ausgeschnitten. Das ist in der Abbildung Bliii gezeigt.\\
-%\begin{figure}[!ht]
-%	\centering
-%	\includegraphics[width=4cm]{content/bilder/3D_.pdf}%
-%	\caption{3D }
-%	\label{fig:3D}
-%\end{figure}
+Die Antenne wird mit dem Skalpell aus dem Kupferklebeband ausgeschnitten. Das ist in der Abbildung Bliii gezeigt.\\
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=4cm]{content/bilder/Implementierung/Dipol3mm50mm.jpg}%
+	\caption{Dipol aus Kupferklebeband ausgeschnitten}
+	\label{fig:DipolausKupferband}
+\end{figure}
 
-In der Abbildung bluuu zeigt die Antenne mit eimem 10 cm langen Koaxialkabel.\\
-%\begin{figure}[!ht]
-%	\centering
-%	\includegraphics[width=4cm]{content/bilder/3D_.pdf}%
-%	\caption{3D }
-%	\label{fig:3D}
-%\end{figure}
 
-Die Abbidlung Bla zeigt wie die Antenne im Fluginstumet positioniert ist.\\
-%\begin{figure}[!ht]
-%	\centering
-%	\includegraphics[width=4cm]{content/bilder/3D_.pdf}%
-%	\caption{3D }
-%	\label{fig:3D}
-%\end{figure}
 
+Die Abbildung Bla zeigt wie die Antenne im Fluginstrumet positioniert ist.\\
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=4cm]{content/bilder/Implementierung/DipolKabelGeraet.jpg}%
+	\caption{Dipol im Geraet und Koaxialkabel}
+	\label{fig:DipolimGeraet}
+\end{figure}
+In der Abbildung bluuu zeigt die Dipolantenne mit einem Koaxialkabel als Speiseleitung und wie das Kupferband an die Gehäusewand geklebt ist.\\
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=4cm]{content/bilder/Implementierung/DipolIMGeraet.jpg}%
+	\caption{Dipol aus Kupferklebeband an der Geräteinnenseite befestigt}
+	\label{fig:DipolausKupferband}
+\end{figure}
 
 Aus den Simulationen ist der erwartete |$S_{11}$| Verlauf im Freiraum und im Gerät bekannt.\\
 
@@ -43,25 +43,25 @@ Der gemessene $S_{11}$ Verlauf im Freiraum wird dem simulierten $S_{11}$ im Frei
 %\end{figure}
 
 Der gemessene $S_{11}$ Verlauf im Gerät wird dem simulierten $S_{11}$ im Gerät der Dipolantenne in Abbildung xx2 gegenübergestellt.\\
-%\begin{figure}[!ht]
-%	\centering
-%	\begingroup
-%	\inputencoding{latin1}
-%	\input{content/bilder/Messung/Messung_Sim_S11_Geraet.tikz}
-%	\endgroup
-%	\caption{Vergleich des gemessen und simulierten $S_{11}$ Werts im Geraet}	\label{S11_Messung_Simulation_Dipolantenn_Freiraum}
-%\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\begingroup
+	\inputencoding{latin1}
+	\input{content/bilder/Implementierung/S11FurDoku.tex}
+	\endgroup
+	\caption{Vergleich des gemessen und simulierten $S_{11}$ Werts im Geraet}	\label{S11_Messung_Simulation_Dipolantenn_Freiraum}
+\end{figure}
 
 Eine qualitatives Bild des Abstrahlverhaltens der Dipolantenne im Gerät zeigt die Abbildung xx3.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure}[!ht]
-%	\centering
-%	\includegraphics[width=4cm]{content/bilder/3D_.pdf}%
-%	\caption{3D }
-%	\label{fig:3D}
-%\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=4cm]{content/bilder/Implementierung/min25_0_x_yhinten_zoben.JPG}%
+	\caption{3DrichtidiagrammDipolantenne}
+	\label{fig:3D Richtdiagramm }
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Ein Schnitt durch die xy-Ebende bei z=0 ist in Abbildung xx4 dargestellt.\\
+Ein Schnitt durch die xy-Ebende bei z=0 ist in Abbildung xx4 dargestellt. Aus den Simulationen ist klar, dass die elektromagnetische Feldstärke in Richtung der positiven x-Achse kleiner sein muss als auf der negativen Seite der x-Achse. Da das elektromagnetisch Feld auf die linke Seite (neg.x-Achse) nur durch die Gehäusewand gedämpft wird. \\
 %\begin{figure}[!ht]
 %	\centering
 %	\begingroup
@@ -70,21 +70,24 @@ Ein Schnitt durch die xy-Ebende bei z=0 ist in Abbildung xx4 dargestellt.\\
 %	\endgroup
 %	\caption{xy-Ebene}\label{fig:xy_gemessen}
 %\end{figure}
-Ein Schnitt in der xz-Ebene bei y=0 ist in der Abbildung xx5 abgebildet.\\
-%\begin{figure}[!ht]
-%	\centering
-%	\begingroup
-%	\inputencoding{latin1}
-%	\input{content/bilder/Messung/xzGeraet.tikz}
-%	\endgroup
-%	\caption{xy-Ebene}\label{fig:xz_gemessen}
-%\end{figure}
-Die Effizienz der Dipolantenne ist in Abhänigkeit der Frequenz in der Abbildung xx6 gezeigt\\
-%\begin{figure}[!ht]
-%	\centering
-%	\begingroup
-%	\inputencoding{latin1}
-%	\input{content/bilder/Messung/Effizienz_Geraet.tikz}
-%	\endgroup
-%	\caption{xy-Ebene}\label{fig:Effizienz_gemessen}
-%\end{figure}
+Ein Schnitt in der xz-Ebene bei y=0 ist in der Abbildung xx5 abgebildet. Aus der Theorie sollte jetzt ein Kreis ersichtlich sein. Die absorbierenden Eigenschaften des Gerätes zeigen jedoch ein starke Reduktion der elektromagnetischen Feldstärke in Richtung der positiven x-Achse. \\
+\begin{figure}[!ht]
+	\centering
+	\begingroup
+	\inputencoding{latin1}
+	\input{content/bilder/Implementierung/SchnittFurDoku.tex}
+	\endgroup
+	\caption{xy-Ebene}\label{fig:Schnittgemessen}
+\end{figure}
+Die Effizienz der Dipolantenne ist in Abhängigkeit der Frequenz in der Abbildung xx6 gezeigt. Sie zeigt bei 2.45GHz eine $\eta_{tot}$ von xx$\%$. Über eine Bandbreite von 100 MHz annähernd konstant. \\
+\begin{figure}[!ht]
+	\centering
+	\begingroup
+	\inputencoding{latin1}
+	\input{content/bilder/Implementierung/EffizienzFurDoku.tex}
+	\endgroup
+	\caption{xy-Ebene}\label{fig:Effizienz_gemessen}
+\end{figure}
+
+
+
