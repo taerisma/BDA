@@ -4,11 +4,11 @@
 
 Das Abstrahlverhalten von Loop Antennen und Dipolantennen im Fernfeld ist identisch. Das E- und das H-Feld stehen senkrecht aufeinander. Jeweils senkrecht zum E- und H-Feld zeigt sich wiederum der Ausbreitungsvektor der elektromagnetischen Welle. Die elektrischen und magnetischen Feldkomponenten sind in Phase, daher wird im Fernfeld Wirkleistung in transversaler Raumrichtung
 übertragen. Das elektrische und magnetische Feld hat nur Komponenten in der Ebene senkrecht zur Ausbreitungsrichtung. Man spricht von einer ebenen Welle. Sie wird vom E- und H-Feldvektor aufgespannt und bewegt sich in
-Transversalerrichtung fort. Die Kugelwelle breitet sich im Raum aus bis die gesamte Energie absorbiert ist. Die Amplituden der E- und H-Vektoren nehmen daher mit steigendem Abstand $r$ um den Faktor $1/r$ ab. Der Zusammenhang zwischen E- und H-Feld ist durch die intrinsische Wellenimpedanz $\eta$ gegeben. Näheres zu den Feldvektoren und der Feldausbreitung wird im Kapitel \ref{sec:NahundFern} beschrieben. Der Wellenwiderstand im Vakuum zeigt (\ref{eq:WellenImpedanzZ0}) \cite{Harrington-TimeHarmonic}, \cite{Emant}:
+Transversalerrichtung fort. Sie breitet sich solange im Raum aus bis die gesamte Energie absorbiert ist. Die Amplituden der E- und H-Vektoren nehmen daher mit steigendem Abstand $r$ um den Faktor $1/r$ ab. Der Zusammenhang zwischen E- und H-Feld ist durch die intrinsische Wellenimpedanz $\eta$ gegeben. Näheres zu den Feldvektoren und der Feldausbreitung wird im Kapitel \ref{sec:NahundFern} beschrieben. Der Wellenwiderstand im Vakuum zeigt (\ref{eq:WellenImpedanzZ0}) \cite{Harrington-TimeHarmonic}, \cite{Emant}:
 \begin{equation}\label{eq:WellenImpedanzZ0}
 Z_{0}=\dfrac{E}{H}=\sqrt{\dfrac{\mu}{\epsilon}}=377\ \Omega
 \end{equation}
-Die Ausrichtung des E-Feldes ist im Vergleich zwischen den Loop Antennen und den Dipolantennen um 90 Grad verschoben. Im Nahfeld sind die induktiven Anteile des elektromagnetischen Wechselfeldes bei den Loop Antennen dominant. Im Gegenzug ist das Nahfeld der Dipolantennen kapazitiv. Man nennt die Dipolantenne deshalb E-Feld Antenne. Die Loop Antenne wird oft H-Feld Antenne genannt. Das Abstrahlverhalten dieser beiden Antennen ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:LoopAntenneTheorie} aufgezeigt. Die Abbildung \ref{fig:FerdVektorEinheistsvektor} zeigt einen Poynting-Vektor im Kugel- und im kartesischen Koordinatensystem. Am Ende des Poynting-Vektors $r$ befindet sich der Punkt P. An diesem Punkt sind die Einheitsvektoren mit den dazugehörenden E- und H-Feldvektoren ersichtlich \cite{Emant}. Der Vektor ${E}_r$ zeigt die Richtung des Leistungstransports an.\\
+Die Ausrichtung des E-Feldes ist im Vergleich zwischen den Loop Antennen und den Dipolantennen um 90 Grad verschoben. Im Nahfeld sind die induktiven Anteile des elektromagnetischen Wechselfeldes bei den Loop Antennen dominant. Im Gegenzug ist das Nahfeld der Dipolantennen kapazitiv. Man nennt die Dipolantenne deshalb auch E-Feld Antenne. Die Loop Antenne hingegen wird oft H-Feld Antenne genannt. Das Abstrahlverhalten dieser beiden Antennen ist in den Kapiteln \ref{sec:DipolAntenne} und \ref{sec:LoopAntenneTheorie} aufgezeigt. Die Abbildung \ref{fig:FerdVektorEinheistsvektor} zeigt einen Poynting-Vektor sowohlim im Kugelkoordinaten als auch im kartesischen Koordinatensystem. Am Ende des Poynting-Vektors $r$ befindet sich der Punkt P. An diesem sind die Einheitsvektoren mit den dazugehörenden E- und H-Feldvektoren ersichtlich \cite{Emant}. Der Vektor ${E}_r$ zeigt die Richtung des Leistungstransports an.\\
 
 
 
@@ -54,7 +54,7 @@ Die Ausrichtung des E-Feldes ist im Vergleich zwischen den Loop Antennen und den
 	\caption{Feldvektor mit Einheitsvektoren}
 	\label{fig:FerdVektorEinheistsvektor}
 \end{figure}
-Die Oberfläche der elektromagnetischen Welle nimmt mit steigendem Abstand $r$ von der Antenne zu. Gleichzeitig nimmt die Beugung der Kugelwelle immer mehr ab. Ist der Abstand $r$ genügend gross, so kann die Welle lokal als ebene Wellenfront angenommen werden, was als Fernfeldkriterium bezeichnet wird. Bei Distanzen von mehr als $2\lambda$ kann das Fernfeld angenommen werden. Bei einer Sendefrequenz von 2.45 GHz einer Bluetooth Antenne tritt das Fernfeld wie in (\ref{eq:Fernfeld}) gezeigt nach 24 cm auf.
+Die Oberfläche der elektromagnetischen Welle nimmt mit steigendem Abstand $r$ von der Antenne zu. Gleichzeitig nimmt die Beugung der Kugelwelle immer mehr ab. Ist der Abstand $r$ genügend gross, so kann die Welle lokal als ebene Wellenfront betrachtet werden, was als Fernfeldkriterium bezeichnet wird. Bei Distanzen von mehr als $2\lambda$ kann das Fernfeld angenommen werden. Bei einer Sendefrequenz von 2.45 GHz einer Bluetooth Antenne tritt das Fernfeld wie in (\ref{eq:Fernfeld}) gezeigt nach 24 cm auf.
 
 
 \begin{eqnarray}
@@ -64,10 +64,10 @@ Die Oberfläche der elektromagnetischen Welle nimmt mit steigendem Abstand $r$ v
 2\lambda &= 2*0.12[m] =0.24 [m] \label{eq:Fernfeld}
 \end{eqnarray}
 
-Es ist wahrscheinlich, dass die meisten Tuchfliegerpiloten ihr Fluginstrument auf dem Schoss tragen. Dabei wird das Gerät in einer Hülle mit Bändern am Oberschenkel befestigt. Ein Mobiltelefon, welches sich am Arm des Piloten oder in einer Brusttasche befindet, ist mehr als $2\lambda$ entfernt und somit im Fernfeld. Da sowohl die Loop Antenne als auch die Dipolantenne ein Torus ähnliches Fernfeld aufzeigen und die Position der neuen Bluetooth Antenne im Fluginstrument für beide Antennen dieselbe sein wird, sind letztendlich die unterschiedlichen Nahfeldeigenschaften der Antennen für das Design entscheidend.
+Es ist wahrscheinlich, dass die meisten Tuchfliegerpiloten ihr Fluginstrument praktischer weise auf dem Schoss tragen. Dabei wird das Gerät in einer Hülle mit Bändern am Oberschenkel befestigt. Ein Mobiltelefon, welches sich am Arm des Piloten oder in seiner Brusttasche befindet, ist mehr als $2\lambda$ entfernt und somit im Fernfeld. Da sowohl die Loop Antenne als auch die Dipolantenne ein  Fernfeld aufzeigen, welches einem Torus ähnlich ist und die Position der neuen Bluetooth Antenne im Fluginstrument dieselbe sein wird, sind letztendlich die unterschiedlichen Nahfeldeigenschaften der Antennen für das Design entscheidend.
 
 \section{Eigenschaften einer Antenne für den Einsatz in der \\ \glqq Connect 1\grqq \ Serie}\label{sec:EigenschaftenAntenne}
-Die 2.4 GHz Bluetooth Antenne wird im Gerät \glqq Connect 1\grqq \ der Flytec AG eingesetzt. Dies ist ein kompaktes Handgerät, welches den Piloten eines Tuchfliegers mit Informationen versorgt. Die Geräteabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum, den die neue Antenne einnehmen wird, ist nicht derselbe wie in der Vorgängerversion. Für die neue Positionierung der Antenne ist der Hohlraum zwischen der Seitenwand des ABS Kunststoffgehäuses und der Hauptplatine vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 3.5 x 10 mm (L x B x H).\\
+Die 2.4 GHz Bluetooth Antenne wird im Gerät \glqq Connect 1\grqq \ der Flytec AG eingesetzt. Dies ist ein kompaktes Handgerät, welches den Piloten eines Tuchfliegers mit verschiedensten Informationen versorgt. Die Geräteabmessungen sind 142 x 88 x 23 mm (L x B x H). Der Raum, den die neue Antenne einnehmen wird, ist nicht derselbe wie in der Vorgängerversion. Für die neue Positionierung der Antenne ist der Hohlraum zwischen der Seitenwand des ABS Kunststoffgehäuses und der Hauptplatine vorgesehen. Das mögliche Antennenvolumen beschränkt sich somit auf 55 x 3.5 x 10 mm (L x B x H).\\
 Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch sein. Wie der Antennenfusspunkt mit der Quelle verbunden wird, ist zum jetzigen Zeitpunkt noch nicht definiert. Mögliche symmetrische Verbindungen sind:
 \begin{itemize}
 \item Microstrip 
@@ -75,7 +75,7 @@ Die Speisung der neuen Bluetooth Antenne soll nicht wie bis anhin asymmetrisch s
 \item Zweidrahtleitung in Form eines Koaxialkabels
 \end{itemize}
 Die symmetrische Verbindung zwischen Quelle und Antenne hat den Vorteil, dass die bis anhin verwendeten Baluns für die Umwandlung des symmetrischen Ausgangs des Transceivers nicht mehr benötigt werden. Die passive Anpassung in Form der Baluns bringt bis anhin eine Dämpfung zwischen 6dB und 9dB mit sich. Die grosse Streuung kommt durch Bauteiltoleranzen zustande.\\
-Diese Baluns waren bei der ersten Hardware Version des \glqq Connect 1\grqq \ Geräts notwendig, da für die Bluetooth Verbindung eine Monopolstabantennen verwendet wurde. Monopolstabantennen werden asymmetrisch gespeist, daher musste der symmetrische Ausgang des Transceivers mit Hilfe von einem Balun angepasst werden. Der Balun wird aufgrund des zukünftigen, symmetrischen Antennendesign nicht mehr nötig sein. Die Ausgangsimpedanz $Z_{aus}$ des verwendeten Texas Instruments CC2541 Transceivers ist bei einer Frequenz von 2.440 GHz bei $(70+j30)$ Ohm. Dies entspricht einer komplexen Ausgangsimpedanz. \\
+Diese Baluns waren bei der ersten Hardware Version des \glqq Connect 1\grqq \ Geräts notwendig, da für die Bluetooth Verbindung eine Monopolstabantenne verwendet wurde. Monopolstabantennen werden asymmetrisch gespeist, und daher musste der symmetrische Ausgang des Transceivers mit Hilfe eines Baluns angepasst werden. Der Balun wird aufgrund des zukünftigen, symmetrischen Antennendesigns nicht mehr nötig sein. Die Ausgangsimpedanz $Z_{aus}$ des verwendeten Texas Instruments CC2541 Transceivers liegt bei einer Frequenz von 2.440 GHz bei $(70+j30)$ Ohm. Dies entspricht also einer komplexen Ausgangsimpedanz. \\
 Bei den in dieser Arbeit gemachten Aussagen zu den Simulationen wurde jedoch eine reelle Quellimpedanz von $(50+j0)$ Ohm angenommen. In der ersten Betrachtung steht das Abstrahlverhalten und nicht die Anpassung an die Quelle im Fokus. Eine optimale Anpassung kann mit der im Kapitel \ref{sec:AnpassungReflexionen} beschriebenen Theorie gefunden werden.\\
 Das Ersatzschaltbild in der Abbildung \ref{fig:ESBantenne} zeigt die wesentlichen Parameter einer Antenne, die für eine Beurteilung der Abstrahleffizienz notwendig sind. Es sind dies:
 \begin{itemize}
@@ -83,7 +83,7 @@ Das Ersatzschaltbild in der Abbildung \ref{fig:ESBantenne} zeigt die wesentliche
 \item $R_{rad}$
 \item $Z_{ant}$
 \end{itemize}
-Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein kompaketes Handgerät zu berücksichtigen sind:
+Als weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein kompaketes Handgerät zu berücksichtigen sind:
 \begin{itemize}
 \item Directivity D
 \item Nahfeldtyp
@@ -150,39 +150,39 @@ Weitere wichtige Eigenschaften, die für die Auswahl eines Antennentyps in ein k
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-Der $R_{v}$ vereint die elektrischen Verluste, die in den Leitern und an den Übergängen zu Stande kommen. Ebenfalls kann der $R_{rad}$ nicht einfach ausgemessen werden. $R_{rad}$ entspricht dem Widerstand der benötigt wird, um die abgestrahlte Leistung in Wärme umzuwandeln. Die Abstrahlleistung ist vom Antennenstrom abhängig. Dieser wird stark von der frequenzabhängigen Anpassung beeinflusst.\\
+Der $R_{v}$ vereint alle elektrischen Verluste, die in den Leitern und an den Übergängen zu Stande kommen. Ebenfalls kann der $R_{rad}$ nicht einfach ausgemessen werden. $R_{rad}$ entspricht dem Widerstand der benötigt wird, um die abgestrahlte Leistung in Wärme umzuwandeln. Die Abstrahlleistung ist also vom Antennenstrom abhängig, dieser wird seinerseits stark von der frequenzabhängigen Anpassung beeinflusst.\\
 Das Verhältnis von $R_{rad}$ zu $R_{v}$ wirkt direkt in die Abstrahleffizienz $\eta_{rad}$ ein. \\
-Die Antennenreaktanz ist in der Abbildung \ref{fig:ESBantenne} als $X_{ant}$ in Form eines Kondensators abgebildet. Die dielektrischen Verluste des Winkels $\delta$ wirken ebenfalls in den $R_{v}$.\\
+Die Antennenreaktanz ist in der Abbildung \ref{fig:ESBantenne} als $X_{ant}$ in Form eines Kondensators abgebildet. Die dielektrischen Verluste des Winkels $\delta$ wirken ebenfalls auf den $R_{v}$.\\
 Die drei Komponenten $R_{v}$, $R_{rad}$ und $X_{ant}$ ergeben zusammen die gesamte Antennenimpedanz $Z_{ant}$. Dieser Zusammenhang ist in den Abbildungen \ref{fig:ESBantenne} und \ref{fig:ESBantenneZant} zu erkennen. Wie aus Kapitel \ref{sec:Speisung} bekannt ist, stellt das Verhältnis der Leitungsimpedanz $Z_L$ zur Antennenimpedanz $Z_{ant}$ ein Mass für die in die Antenne übertragene Leitungsenergie dar. Ein weiteres wichtiges Antennenkriterium ist die Effizienz $\eta$ einer Antenne. Man unterscheidet zwischen der Abstrahleffizienz und der totalen Effizienz der Antenne. Die Abstrahleffizienz $\eta_{rad}$ wie gebildet aus:
 \begin{equation}
 \eta_{rad}=\dfrac{R_{rad}}{R_v + R_{rad}}=\dfrac{P_{rad}}{P_{ant}}
 \label{eq:eta_rad}
 \end{equation}
-Die totale Abstrahleffizenz $\eta_{tot}$ wird gebildet aus:
+Die totale Abstrahleffizenz $\eta_{tot}$ wird berechnet aus:
 \begin{equation}
 \eta_{tot}=\dfrac{P_{rad}}{P_{inc}}
 \label{eq:eta_tot}
 \end{equation}
-Für die gilt:
+Für sie gilt:
 \begin{enumerate}[leftmargin=2cm]
- \item[] $\eta_{rad}$: Abstrahleffizienz [$\%$] 
- \item[] $\eta_{tot}$: Die total Abstrahleffizienz [$\%$] 
- \item[] $R_{rad}$: Strahlungswiderstand einer Antenne [$\Omega$] 
- \item[] $R_v$: Antennenverluste [$\Omega$] 
+ \item[] $\eta_{rad}$: Die Abstrahleffizienz [$\%$] 
+ \item[] $\eta_{tot}$: Die totale Abstrahleffizienz [$\%$] 
+ \item[] $R_{rad}$: Der Strahlungswiderstand einer Antenne [$\Omega$] 
+ \item[] $R_v$: Die Antennenverluste [$\Omega$] 
  \item[] $P_{rad}$: Die von der Antenne abgestrhalte Leistung [W] 
- \item[] $P_{ant}$: In die Antenne eindringende Leistung [W 
+ \item[] $P_{ant}$: Die in die Antenne eindringende Leistung [W 
  \item[] $P_{Pein}$: Die von der Zuleitung zugeführte Leistung [W] 
 \end{enumerate} 
 
 \section{Dipol Antenne}
-Die Dipol Antenne ist eine häufig vorkommende Antennenform. Dipol Antennen gibt es in einer grossen Zahl verschiedener Ausführungen. Ihre Abstrahlverhalten ändert sich mit ihren geometrischen Eigenschaften. Die Antennen werden oft ihn Kategorien entsprechend ihrer Länge eingeteilt. Eine Dipolarmlänge entspricht der halben Länge des Dipols und ist im folgenden Kapitel als $l$ bezeichnet. Dipol Antennen werden oft in die vier typische Gruppen eigeteilt. 
+Die Dipol Antenne ist eine häufig vorkommende Antennenform. Dipol Antennen gibt es in einer grossen Zahl verschiedener Ausführungen. Ihr Abstrahlverhalten ändert sich mit ihren geometrischen Eigenschaften. Die Antennen werden oft, entsprechend ihrer Länge, in Kategorien eingeteilt. Eine Dipolarmlänge entspricht der halben Länge des Dipols und wird im folgenden Kapitel als $l$ bezeichnet. Dipol Antennen werden oft in die vier typischen Gruppen eigeteilt. 
 \begin{itemize}
 \item $2l<< \lambda/2 $
 \item $2l = \lambda/2 $
 \item $2l = \lambda $
 \item $2l>> \lambda $
 \end{itemize} 
-Die Dipolantenne, bei der $2l=\lambda/2$ entspricht, wird oft Referenzdipol oder Halbwellendipol genannt. Wird der Halbwellendipol mit seiner Resonanzfrequenz $f_{res}$ angesteuert, tritt ein maximales Schwingen des Dipols auf. 
+Die Dipolantenne, bei der $2l=\lambda/2$ entspricht, wird oft Referenzdipol oder Halbwellendipol genannt. Wird der Halbwellendipol mit seiner Resonanzfrequenz $f_{res}$ angesteuert, so tritt ein maximales Schwingen des Dipols auf. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]%ESB Antenne
@@ -215,22 +215,22 @@ Die Dipolantenne, bei der $2l=\lambda/2$ entspricht, wird oft Referenzdipol oder
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-Gegenüber idealen Betrachtungen muss die Länge des $\lambda /2$ Dipols um den Verkürzungsfaktor kürzer gewählt werden, um die gewünschte Frequenz zu erhalten. Die Verkürzung ist in der Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt und abhängig von der Geometrie, dem Material der Antenne und dem umgebenden Materialien \cite{Hcuno}.
+Im gegensatz zur idealisierten, theoretischen Betrachtung muss die Länge des $\lambda /2$ Dipols um den Verkürzungsfaktor verringert werden, um die gewünschte Frequenz zu erhalten. Die Verkürzung ist in der Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt und abhängig von der Geometrie, dem Material der Antenne und dem umgebenden Materialien \cite{Hcuno}.
 Der Verkürzungsfaktor ist für das Antennendesign entscheidend. Daher soll an dieser Stelle etwas genauer auf die Ausbreitungsgeschwindigkeit einer Welle im Medium eingegangen werden.
 Die Ausbreitungsgeschwindigkeit, die Wellenlänge und die Frequenz sind voneinander abhängige Grössen. 
-Die Ausbreitungsgeschwindigkeit beschreibt, wie schnell sich ein Signal im Medium, das heisst im Vakuum, in der Luft oder in einer Leitung , fortpflanzt. Die Ausbreitungsgeschwindigkeit wird mit dem Buchstaben $c$ abgekürzt. Eine elektromagnetische Welle breitet sich im
-Vakuum mit $c_0 = $ 299'792’458 [m/s] aus. In der Praxis kann mit 300000 km/s gerechnet werden.
-Die Wellenlänge beschreibt die Länge einer vollständigen Schwingung. Sie ist der kleinste Abstand zweier phasengleicher Punkte einer Welle. Die Wellenlänge wird mit dem Buchstaben $\lambda$ abgekürzt. Die Frequenz beschreibt die Anzahl der Schwingungen in einem Zeitraum von einer Sekunde. Die Einheit der Frequenz ist Herz und wird mit Hz abgekürzt. Ein Herz beschreibt eine Schwingung pro Sekunde [1/s] \cite{Verkuertzungsfaktor}.
+Die Ausbreitungsgeschwindigkeit beschreibt, wie schnell sich ein Signal im Medium, das heisst im Vakuum, in der Luft oder in einer Leitung, fortpflanzt. Die Ausbreitungsgeschwindigkeit wird mit dem Buchstaben $c$ abgekürzt. Eine elektromagnetische Welle breitet sich im
+Vakuum mit $c_0 = $ 299'792’458 [m/s] aus. In der Praxis kann mit 300'000 km/s gerechnet werden.
+Die Wellenlänge beschreibt die Länge einer vollständigen Schwingung. Sie ist der kleinste Abstand zweier phasengleicher Punkte einer Welle und wird mit dem Buchstaben $\lambda$ abgekürzt. Die Frequenz beschreibt die Anzahl der Schwingungen in einem Zeitraum von einer Sekunde. Die Einheit der Frequenz ist Hertz und wird mit Hz abgekürzt. Ein Hertz beschreibt eine Schwingung pro Sekunde [1/s] \cite{Verkuertzungsfaktor}.
 Es gilt folgender Zusammenhang:\\
 Die Ausbreitungsgeschwindigkeit ist in einem homogenen Medium konstant. Wird die Frequenz erhöht, muss die Wellenlänge kürzer werden $\lambda = \dfrac{c}{f}$. Geht man von einer konstanten Frequenz, aber von sich ändernden Medien aus, so gilt: \\
-Die Geschwindigkeit mit der sich eine elektromagnetische Welle im Medium fortbewegt, muss um einen Faktor $V$ kleiner als die Lichtgeschwindigkeit $c_0$ sein.\\
+Die Geschwindigkeit $v_p$ mit der sich eine elektromagnetische Welle im Medium fortbewegt, muss um einen Faktor $V$ kleiner als die Lichtgeschwindigkeit $c_0$ sein.\\
 Die Fortpflanzungsgeschwindigkeit $v_p$ gibt die Geschwindigkeit einer Welle im Medium an $v_p=c_0*V $. Der Faktor $V$ gibt den Verkürzungsfaktor an, um den $v_p$ kleiner als die Lichtgeschwindigkeit $c_0$ ist. \\
 Der Verkürzungsfaktor V ist also definiert durch:
 \begin{equation}
 V=\dfrac{v_p}{c_0}=\dfrac{c_0}{\sqrt{\epsilon_0 \mu_0}}
 \end{equation}
 Wobei $\varepsilon_0$ die effektive Permittivitätszahl
- und $\mu_0$ die Permeabilitätszahl des Mediums ist. Beide Grössen sind frequenzabhängig. Für die Berechnung des Verkürzungsfaktors in Leitungen werden kurze Rechteckpulse betrachtet, die hohe Frequenzen beinhalten, bei denen sich $\varepsilon$ einem Grenzwert nähert. Für Leitungen aus Kupfer und Aluminium gilt weiterhin, dass $\mu_r \approx 1$ entspricht. Bei einer verlustfreien Leitung gilt \cite{Verkuertzungsfaktor_wiki}:
+ und $\mu_0$ die Permeabilitätszahl des Mediums ist. Beide Grössen sind frequenzabhängig und für die Berechnung des Verkürzungsfaktors in Leitungen werden kurze Rechteckpulse betrachtet, die hohe Frequenzen beinhalten, bei denen sich $\varepsilon$ einem Grenzwert nähert. Für Leitungen aus Kupfer und Aluminium gilt weiterhin, dass $\mu_r \approx 1$ entspricht. Bei einer verlustfreien Leitung gilt somit \cite{Verkuertzungsfaktor_wiki}:
 \begin{equation}\label{V_verlustfreie_Leitung}
 V=\dfrac{1}{c_0 \sqrt{L'C'}} 
 \end{equation}
@@ -239,7 +239,7 @@ Für (\ref{V_verlustfreie_Leitung}) gibt $C'$ den Kapazitätsbelag und $L'$ den 
 \lambda=\dfrac{v_p}{f}
 \end{equation} 
 Aus (\ref{eq:v}) ist ersichtlich, dass die Wellenlänge $\lambda$ bei gleichbleibender Frequenz $f$ und sinkender Geschwindigkeit $v_p$ kürzer wird. 
-Um den Verkürzungsfaktor einer Antenne zu berechnen, müssen alle elektrischen, magnetischen und Geometrischen Parameter der Antenne und der unmittelbaren Umgebung bekannt sein. Falls diese Parameter nicht bekannt sind, muss mit empirischen Versuchsreihen die Ausbreitungsgeschwindigkeit ermittelt werden.\\
+Um den Verkürzungsfaktor einer Antenne zu berechnen, müssen alle elektrischen, magnetischen und geometrischen materialabhänigen Parameter der Antenne und der unmittelbaren Umgebung bekannt sein. Ansonsten muss, mit empirischen Versuchsreihen die Ausbreitungsgeschwindigkeit ermittelt werden.\\
 
 \newpage
 Die Simulationen zeigen den Verkürzungseffekt, in dem die resultierende Antennenfrequenz tiefer als erwartet ist. Das heisst, aus $\lambda = \dfrac{c}{f}$ kann die Formel nach $f$ umgestellt werden. Das ergibt $f=\dfrac{c}{\lambda}$. Setzt man für $\lambda$ die Länge der Antennenstruktur in Meter ein, so resultiert eine Frequenz $f$. Da die Ausbreitungsgeschwindigkeit in einem verlustbehafteten Leiter entspricht nicht der Vakuumausbreitungsgeschwindigkeit einer elektromagnetischen Welle $c_0$, sondern $v_p=V c_0$. Daher wird die Resonanzfrequenz tiefer sein als erwartet. Erst nach einer Kürzung der Antennenstruktur um den Faktor $v_p$ wird die Resonanzfrequenz auf die gewünschte Signalfrequenz steigen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein.\\
