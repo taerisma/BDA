@@ -242,16 +242,16 @@ Aus (\ref{eq:v}) ist ersichtlich, dass die Wellenlänge $\lambda$ bei gleichblei
 Um den Verkürzungsfaktor einer Antenne zu berechnen, müssen alle elektrischen, magnetischen und geometrischen materialabhänigen Parameter der Antenne und der unmittelbaren Umgebung bekannt sein. Ansonsten muss, mit empirischen Versuchsreihen die Ausbreitungsgeschwindigkeit ermittelt werden.\\
 
 \newpage
-Die Simulationen zeigen den Verkürzungseffekt, in dem die resultierende Antennenfrequenz tiefer als erwartet ist. Das heisst, aus $\lambda = \dfrac{c}{f}$ kann die Formel nach $f$ umgestellt werden. Das ergibt $f=\dfrac{c}{\lambda}$. Setzt man für $\lambda$ die Länge der Antennenstruktur in Meter ein, so resultiert eine Frequenz $f$. Da die Ausbreitungsgeschwindigkeit in einem verlustbehafteten Leiter entspricht nicht der Vakuumausbreitungsgeschwindigkeit einer elektromagnetischen Welle $c_0$, sondern $v_p=V c_0$. Daher wird die Resonanzfrequenz tiefer sein als erwartet. Erst nach einer Kürzung der Antennenstruktur um den Faktor $v_p$ wird die Resonanzfrequenz auf die gewünschte Signalfrequenz steigen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein.\\
+Die Simulationen zeigen den Verkürzungseffekt, in dem die resultierende Antennenfrequenz tiefer ist als erwartet. Das heisst, aus $\lambda = \dfrac{c}{f}$ kann die Formel nach $f$ umgestellt werden. Das ergibt $f=\dfrac{c}{\lambda}$. Setzt man für $\lambda$ die Länge der Antenne in Meter ein, so resultiert eine Frequenz $f$. Die Ausbreitungsgeschwindigkeit in einem verlustbehafteten Leiter entspricht nicht der Vakuumausbreitungsgeschwindigkeit einer elektromagnetischen Welle $c_0$, sondern $v_p=V c_0$. Daher wird die Resonanzfrequenz tiefer sein als erwartet. Die Antenne muss um den Faktor  $V$ kürzer gerwählt werden und die Signalfrequenz wird steigen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein.\\
 
 %Weiter Komentar wiso es sich eine Verkürzung einstellt
 %H. Cuno, Vorbereitung auf die Amateurfunklizenzprüfung, Frech-VerlagStuttgart, 1976 
-Ideale Betrachtung geht von einem unendlich dünnen Leiter aus, wobei der Dipol im ungestörten Raum betrieben wird. Aufgrund der geforderten mechanischen Festigkeit müssen reale Dipole eine gewisse Mindestdicke aufweisen. Die Umgebung des Dipols kann ebenfalls nicht als völlig als freier Raum angenommen werden. Es befindet sich immer eine Quelle oder eine Zuleitung in der Nähe von realen Antennen. \\
+Die idealierte, theoretische Betrachtung geht von einem unendlich dünnen Leiter aus, wobei der Dipol im ungestörten Raum sendet. Aufgrund der geforderten mechanischen Festigkeit müssen reale Dipole in der Praxis jedoch eine gewisse Mindestdicke aufweisen. Die Umgebung des Dipols kann ebenfalls nicht als völlig freier Raum angenommen werden. Realistischerweise befindet sich immer eine Quelle oder eine Zuleitung in der Nähe von realen Antennen. \\
 
-Wenn sich eine $\lambda /2$ lange Antenne vertikal über der Erde befindet, ergibt sich für ein Strahlungsdiagramm mit den folgenden Eigenschaften: 
+Wenn sich eine $\lambda /2$ lange Antenne vertikal über der Erde befindet, ergibt sich ein Strahlungsdiagramm mit den folgenden Eigenschaften: 
 Die Horizontalcharakteristik des vertikalen Halbwellendipols ist kreisförmig. Das Strahlungsdiagramm ist unabhängig vom Azimutwinkel $\varphi$ in der Horizontalebene des Dipols. Die Vertikalcharakteristik des Halbwellendipols erscheint jedoch gerichtet. Dies bedeutet, es besteht eine Abhängigkeit vom Winkel $\theta$ \cite{zinke1965lehrbuch}. 
 %O. Zinke, H. Brunswig, Lehrbuch der Hochfrequenztechnik, Band 1, 4. Auflage,Springer-Verlag, Berlin Heidelberg New York, 1990
-Nach \cite{elliott1981antenna} lassen sich die folgenden Aussagen für die Gewichtungsfunktion eines Dipols der vertikal über der Erde polarisiert ist treffen\cite{elliott1981antenna}:
+Nach \cite{elliott1981antenna} lässt sich die folgende Aussage für die Gewichtungsfunktion eines Dipols, der vertikal über der Erde polarisiert ist, machen \cite{elliott1981antenna}:
 
 \begin{equation}\label{eq:FDipolTheat}
 F(\theta,\frac{l}{\lambda}=\dfrac{1}{2})=-\dfrac{2I_{m}}{k}\dfrac{\cos\left(\dfrac{\pi}{2}\cos\theta\right)}{\sin\theta}
@@ -259,8 +259,8 @@ F(\theta,\frac{l}{\lambda}=\dfrac{1}{2})=-\dfrac{2I_{m}}{k}\dfrac{\cos\left(\dfr
 
 %Braucht es eventuell noch ein Bild
 
-Die Nahfeldeigenschaften der Dipol Antenne weisen ein starkes E-Feld auf. Dieses zeigt eine Richtungsabhängigkeit des Winkels $\theta$. Die starken E-Felder polarisieren alle Dielektrika in unmittelbarer Nähe des Dipols. Dies führt zu dielektrischen Verlusten. Diese steigen mit der Frequenz des Wechselfeldes. Die dielektrischen Verluste können als Widerstände in Serie zu den idealen Komponenten eines Ersatzschaltbildes gedacht werden. Sie stellen die äquivalente Verlustleistung an einer Komponente dar. Die Verlustenergie wird für das Polarisieren des umgebenden Dielektrikums benötigt. Die Ausrichtungsenergie ist Verlustenergie und kann somit nicht abgestrahlt werden.
-Das Dielektrikum ist ein elektrisch nicht leitendes Material das vom elektrischen Feld durchdringt wird. Die Feldgrössen des Dielektrikums sind die elektrische Feldstärke E und die elektrische Flussdichte D. Im elektrostatischen Fall, das heisst im zeitlich konstanten Fall und in einem isotropen Medium, ist die Flussdichte D durch die Primitivität $\varepsilon $ und durch die elektrische Feldstärke E beschrieben. Die folgende Beziehung in (\ref{eq:FlussdichteD}) zeigt die Verknüpfung von $\varepsilon$ und des E-Feldes \cite{Emant}:
+Die Nahfeldeigenschaften der Dipol Antenne weisen ein starkes E-Feld auf. Dieses zeigt eine Richtungsabhängigkeit vom Winkels $\theta$. Die starken E-Felder polarisieren alle Dielektrika in unmittelbarer Nähe des Dipols. Dies führt zu dielektrischen Verlusten, diese mit der Frequenz des Wechselfeldes steigen. Die dielektrischen Verluste können als Widerstände in Serie zu den idealen Komponenten eines Ersatzschaltbildes gedacht werden. Sie stellen die äquivalente Verlustleistung an einer Komponente dar und die Verlustenergie wird für das Polarisieren des umgebenden Dielektrikums benötigt. Die Ausrichtungsenergie ist Verlustenergie und kann somit nicht abgestrahlt werden.
+Das Dielektrikum ist ein elektrisch nicht leitendes Material das vom elektrischen Feld durchdringt wird. Die Feldgrössen des Dielektrikums sind die elektrische Feldstärke E und die elektrische Flussdichte D. Im elektrostatischen Fall, das heisst im zeitlich konstanten Fall und in einem isotropen Medium, ist die Flussdichte D durch die Permittivität $\varepsilon $ und durch die elektrische Feldstärke E beschrieben. Die folgende Beziehung in (\ref{eq:FlussdichteD}) zeigt die Verknüpfung von $\varepsilon$ und des E-Feldes \cite{Emant}:
 \begin{equation}\label{eq:FlussdichteD}
 D=\varepsilon E
 \end{equation}
@@ -268,7 +268,7 @@ Die Permittivität $\varepsilon$ setzt sich, wie in (\ref{eq:Epsilon}) ersichtli
 \begin{equation}\label{eq:Epsilon}
 \varepsilon = \varepsilon_r \varepsilon_0
 \end{equation}
-Die Permittivitäts Konstante $\varepsilon_{0}$ ist eine Naturkonstante. Sie erhält ihren Wert aus dem in (\ref{eq:Epsilon0}) ersichtlichen Zusammenhang. Die Konstante $\mu_{0}$ ist wie die Lichtgeschwindigkeit $c_0$ eine Naturkonstante und beschreibt die magnetische Feldkonstante. Sie ist definiert als \cite {WikiPermitt}: 
+Die Permittivitätskonstante $\varepsilon_{0}$ ist eine Naturkonstante. Sie erhält ihren Wert aus dem in (\ref{eq:Epsilon0}) ersichtlichen Zusammenhang. Die Konstante $\mu_{0}$ ist wie die Lichtgeschwindigkeit $c_0$ eine Naturkonstante und beschreibt die magnetische Feldkonstante. Sie ist definiert als \cite {WikiPermitt}: 
 \begin{equation}\label{mu_0}
 \mu_{0}=4\pi10^-7 [N/A^{2}] 
 \end{equation}
@@ -280,15 +280,15 @@ Da in einem Dielektrikum die Ladungsträger nicht frei beweglich sind, werden si
 \item Verschiebungspolarisation
 \item Orientierungspolarisation
 \end{itemize}
-Bei der Verschiebungspolarisation werden elektrische Dipole induziert. Das heisst, die Dipole entstehen durch geringe Ladungsverschiebung in den Atomen, Molekülen oder zwischen verschieden geladenen Ionen. In einem Wechselfeld schwingen die negativen Elektronenhüllen und die positiven Atomkerne gegenläufig hin und her. Bei diesen Schwingungen entsteht Wärmeenergie. Diese kann gegenüber der Energie, die bei der Orientierungspolarisation entsteht, vernachlässigt werden. Die Bewegung des Atomkerns kann auf Grund seiner deutlich grösseren Masse gegenüber der Elektronenhüllenbewegung vernachlässigt werden. Somit wird der Atomkern als ortsfest betrachtet. \\
-Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter, permanenter Dipole eines Isolators im elektrischen Feld. Bei einem Wechselfeld müssen sich die Moleküle ständig umorientieren, wodurch Wärmeenergie entsteht\cite{DielektrikumPolarisation}.\\
+Bei der Verschiebungspolarisation werden elektrische Dipole induziert. Das heisst, die Dipole entstehen durch geringe Ladungsverschiebung in den Atomen, Molekülen oder zwischen verschieden geladenen Ionen. In einem Wechselfeld schwingen die negativen Elektronenhüllen und die positiven Atomkerne gegenläufig hin und her. Bei diesen Schwingungen entsteht Wärmeenergie. Diese kann gegenüber der Energie, die bei der Orientierungspolarisation entsteht, vernachlässigt werden. Die Bewegung des Atomkerns kann auf Grund seiner deutlich grösseren Masse im Vergleich zur Elektronenhüllenbewegung vernachlässigt werden. Somit wird der Atomkern als ortsfest betrachtet. \\
+Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter, permanenter Dipole eines Isolators im elektrischen Feld. Bei einem Wechselfeld müssen sich die Moleküle ständig umorientieren, wodurch Wärmeenergie entsteht \cite{DielektrikumPolarisation}.\\
 Im Nahfeld einer Antenne pendelt die nicht abgestrahlte Energie im Raum um die Antenne hin und her. Das Nahfeld baut sich auf und ab. Es wechselt mit der Resonanzfrequenz $f_{r}$ seine Richtung. Die Moleküle im dielektrischen Raum um die Antenne werden bei jeder Schwingung neu polarisiert. Das bedeutet, die Moleküle werden zwei Mal pro Schwingung neu ausgerichtet.\\
 Die im Dielektrikum gespeicherte Energie ist stark von der materialspezifischen, relativen Permittivität $\varepsilon_r $ abhängig.\\
-Die dielektrischen Verluste führen bei Antennen zu einem Detuning. Das Detuning ist kaum zu berechnen, jedoch kann es mit Hilfe von Simulationen bestimmt werden. Das Detuning entsteht durch Verluste in und um die Antenne.\\ 
-Das Detuning kann auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und eine veränderte Antennenimpedanz eine Anpassung entsteht die eine wesentlich höhere Abstrahleffizienz $\eta_{overall}$ \ mit sich bringt. Weiter kann das Detuning eine Absenkung der Resonanzfrequenz hervorrufen, die sonnst nur mit einer Vergrösserung der Antennenstruktur möglich wäre. Das kann ein Vorteil sein, wenn die Platzverhältnisse sehr eingeschränkt sind.\\
-Im Zusammenhang der Antennen und der reaktiven Nahfeldverlusten wird oft der Verlustwinkel genannt. Der Verlustwinkel beschreibt den Anteil der Wirkleistung zu Blindleistung elektrisch reaktiver Bauteile wie Spulen oder Kondensatoren bei einem sinusförmigem Spannungs- und Stromverlauf.\\
+Die dielektrischen Verluste führen bei Antennen zu einem Detuning. Das Detuning ist zwar kaum zu berechnen, kann jedoch mit Hilfe von Simulationen bestimmt werden. Das Detuning entsteht durch Verluste in und um die Antenne.\\ 
+Das Detuning kann auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und eine veränderte Antennenimpedanz eine Anpassung entsteht, die eine wesentlich höhere Abstrahleffizienz $\eta_{tot}$ \ mit sich bringt. Weiter kann das Detuning eine Absenkung der Resonanzfrequenz hervorrufen, die sonst nur mit einer Vergrösserung der Antenne möglich wäre. Das kann ein Vorteil sein, wenn die Platzverhältnisse sehr eingeschränkt sind.\\
+Im Zusammenhang mit dem Antennen und den reaktiven Nahfeldverlusten wird oft der Verlustwinkel genannt. Der Verlustwinkel beschreibt das Verhältniss der Wirkleistung an der Blindleistung elektrisch reaktiver Bauteile wie Spulen oder Kondensatoren bei einem sinusförmigem Spannungs- und Stromverlauf.\\
 Der Verlustwinkel ist als $\arctan$ des Verhältnisses von Wirkleistung zu Blindleistung definiert. Dies ist aus der Gleichung \ref{eq:Verlustwinkel} ersichtlich. 
-Je kleiner der Verlustwinkel ist, desto näher kommen die realen Bauteile ihrem idealen Verhalten. Eine ideale Induktivität hat einen Verlustwinkel von $0^\circ$. Ein idealer Kondensator hat ebenfalls einen Verlustwinkel von 0$^\circ$. Ein Verlustwinkel der grösser ist als $0^\circ$ führt zu Verlustwiderständen die in Serie zu den idealen Induktivitäten und Kapazitäten gerecht werden.\\
+Je kleiner der Verlustwinkel ist, desto näher kommen die realen Bauteile ihrem idealen Verhalten. Eine ideale Induktivität hat einen Verlustwinkel von $0^\circ$. Ein idealer Kondensator hat ebenfalls einen Verlustwinkel von 0$^\circ$. Ein Verlustwinkel, der grösser ist als $0^\circ$, führt zu Verlustwiderständen die in Serie hinzugerechnet werden.\\
 In der technisch realisierbaren Elektronik gibt es jedoch keine idealen Bauteile. Die Verluste in dem Bauteilen sind zudem stark frequenzabhängig.\\
 Der Verlustwinkel $\delta$ lässt sich über die komplexe Impedanz $Z$ oder über die Phasenverschiebung $\varphi$ zwischen Strom $I$ und Spannung $U$ des Bauteils berechnen: 
 \begin{align}
@@ -318,10 +318,12 @@ In der Gleichung (\ref{eq:komplexePermitivität}) kommt das Verhältnis $\dfrac{
 
 
 \subsection{Verwendung einer Dipolantenne}
-Eine symmetrisch gespeisste Halbwellenantenne ist eine einfach zu produzierende Antenne. Zwei elektrisch leitende Strahler mit je einer Länge von $\lambda/4$ und eine symmetrische Zuleitung stellen einen geringen Produktionsaufwand dar. Die halbe Wellenlänge als strahlende Leiterlänge bedeutet bei einer Signalfrequenz von 2.45 GHz etwas weniger als $\lambda/2=0.006m$ Strahlerlänge. Ein Dipol mit der Länge von 6 cm ist im Schlitz zwischen der Hauptplatine und dem Gehäuse unterzubringen. 
-Bei dieser Positionierung der Antenne ist sie von sehr viel ABS Kunststoffmaterial umgeben, da das ganze Gehäuse aus ABS Kunststoff besteht. Dieses Material ist elektrisch nicht leitend und nicht magnetisch. Alle Dipolantennen sind in ihrem unmittelbaren Umfeld starke E-Feld Strahler. Die Materialeigenschaften von ABS Kunststoff führen mit einem $\varepsilon_r$ von ca. 4.2[As/Vm] bei 2.4 GHz zu einer erheblichen Energiespeicherung im reaktiven Nahfeld der Antenne. Daraus folgt eine Abweichung der Ausbreitungsgeschwindigkeit, diese wiederum bringt ein Detuning der Antenne mit sich \cite{WikiPermitt}.\\
+Eine symmetrisch gespeisste Halbwellenantenne ist eine einfach zu produzierende Antenne. Zwei elektrisch leitende Strahler mit  einer Länge von je $\lambda/4$ und eine symmetrische Zuleitung stellen einen geringen Produktionsaufwand dar. Die halbe Wellenlänge als strahlende Leiterlänge bedeutet bei einer Signalfrequenz von 2.45 GHz etwas weniger als $\lambda/2=0.06m$ Strahlerlänge. Ein Dipol mit der Länge von 6 cm ist also im Schlitz zwischen der Hauptplatine und dem Gehäuse unterzubringen. 
+Da die dazu notwendige Positionierung der Antenne ist sie von sehr viel ABS Kunststoffmaterial umgeben, da das ganze Gehäuse aus ABS Kunststoff besteht. Dieses Material ist elektrisch nicht leitend und nicht magnetisch. Alle Dipolantennen sind in ihrem unmittelbaren Umfeld starke E-Feld Strahler. Die Materialeigenschaften des ABS Kunststoffs führen deshalb mit einem $\varepsilon_r$ von ca. 4.2[As/Vm] bei 2.4 GHz zu einer erheblichen Energiespeicherung im reaktiven Nahfeld der Antenne. Daraus folgt eine Abweichung der Ausbreitungsgeschwindigkeit und diese wiederum bringt ein Detuning der Antenne mit sich \cite{WikiPermitt}.\\
 
-Das Abstrahlverhalten einer Dipolantenne ist $\theta$ abhängig. Der Richtfaktor, auf englisch \textit{directivity} D genannt, ist bei Dipolantennen wie in (\ref{eq:Directivity}) gezeigt 1.64 dBi. Der Richtfaktor vergleicht die Leistungsdichte in der stärksten Abstrahlrichtung mit der Leistungsdichte eines isotropen Kugelstrahlers bei gleicher abgestrahlter Leistung. Da die Dipolantenne in der Längsausrichtung an der Seitenkante des Geräts untergebracht wird, ergibt sich eine theoretische Nullstelle des elektromagnetischen Feldes in der Verlängerung der Antennenstruktur. Die Abbildunge \ref{fig:DipolEFerd} zeigt die Nullstellen entlang der Ausrichtung des Dipols. Sie zeigt einen Schnitt durch das elektromagnetische Feld in der xz-Ebene. Das dargestellten Feld ist um die z-Achse rotationssymmetrisch. Die Absorption des elektromagnetischen Felds, welche durch das Gerät entsteht, ist in der Abbildungen \ref{fig:DipolEFerd} nicht dargestellt.
+Das Abstrahlverhalten einer Dipolantenne ist $\theta$ abhängig. Der Richtfaktor, im Englischen \textit{directivity} D genannt, beträgt bei Dipolantennen, wie in (\ref{eq:Directivity}) gezeigt, 1.64 dBi. Der Richtfaktor vergleicht die Leistungsdichte in der stärksten Abstrahlrichtung mit der Leistungsdichte eines isotropen Kugelstrahlers bei identischer abgestrahlter Leistung. Da die Dipolantenne in der Längsausrichtung an der Seitenkante des Geräts untergebracht wird, ergibt sich, in der Verlängerung der Antennenstruktur, eine theoretische Nullstelle des elektromagnetischen Feldes . Die Abbildunge \ref{fig:DipolEFerd} zeigt die Nullstellen entlang der Ausrichtung des Dipols. Sie zeigt einen Schnitt durch das elektromagnetische Feld in der xz-Ebene. Das dargestellte Feld ist um die z-Achse rotationssymmetrisch. Die Absorption des elektromagnetischen Felds, welche durch das Gerät entsteht, ist in der Abbildungen \ref{fig:DipolEFerd} nicht dargestellt.\\
+Der Strahlungswiderstand des $\lambda/2$ Dipols entspricht, wie aus (\ref{RradDipol}) zu entnehmen ist, 73 Ohm. Dies ist ein theoretischer Wert und kommt nur im Vakuum zustande. Technisch realisierbare Halbwellendipole haben einen Strahlungswiderstand $R_{rad}$ kleiner als 70 Ohm. Zudem kommt eine von der Geometrie der Antenne abhängige Reaktanz $X_{ant}$ hinzu.\\
+Die Reaktanz $X_{ant}$, der Strahlungswiderstand $R_{rad}$ sowie der Verlustwiderstand $R_v$ ergeben die Antennenimpedanz. Diese wird $Z_{ant}$ genannt. der enstehende Zusammenhang ist in der Abbildung \ref{fig:ESBantenne} ersichtlich. Sie zeigt eine Reaktanz $X_{ant}$ mit einen negativen Imaginärteil auf. Deshalb ist $X_{ant}$ in Form eines Kondensators gezeichnet.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!ht]%ESB Antenne
@@ -362,8 +364,7 @@ Das Abstrahlverhalten einer Dipolantenne ist $\theta$ abhängig. Der Richtfaktor
 %\label{fig:xzFeld}
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Der Strahlungswiderstand des $\lambda/2$ Dipols entspricht, wie aus (\ref{RradDipol}) zu entnehmen ist, 73 Ohm. Dies ist ein theoretischer Wert und kommt nur im Freiraum zustande. Technisch realisierbare Halbwellendipole haben einen Strahlungswiderstand $R_{rad}$ kleiner als 70 Ohm. Zudem kommt ein von der Geometrie der Antenne abhängige Reaktanz $X_{ant}$ hinzu.\\
-Die Reaktanz $X_{ant}$, der Strahlungswiderstand $R_{rad}$ sowie der Verlustwiderstand $R_v$ ergeben die Antennenimpedanz. Diese wird $Z_{ant}$ genannt. Dieser Zusammenhang ist in der Abbildung \ref{fig:ESBantenne} gezeigt. Sie zeigt eine Reaktanz $X_{ant}$ die einen negativen Imaginärteil auf. Deshalb ist $X_{ant}$ in Form eines Kondensators gezeichnet.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!ht]%ESB Antenne mit Zant
@@ -415,8 +416,7 @@ Die Reaktanz $X_{ant}$, der Strahlungswiderstand $R_{rad}$ sowie der Verlustwide
 \subsection{Simulationen eines Halbwellen Dipols}\label{sim_lamda2_Dipol}
 
 Das Volumen, in dem eine Bluetooth Antenne untergebracht werden kann, ist in Kapitel \ref{sec:EigenschaftenAntenne} beschrieben. Das zur Verfügung stehende Volumen von 55 x 3.5 x 10 mm (L x B x H) wurde bei den Simulationen berücksichtigt. \\
-Für die Simulationen wurden grosse Vereinfachungen getroffen.\\
-Der ABS Kunststoff ist mit einem $\varepsilon_r $ von 4.3 und einem Verlustwinkel von 0.02 simuliert. Diese Werte wurden als Frequenzunabhängig angenommen. Als Antennenstäbe wurde ein Kupferdraht mit einem Radius $r = 1.12 mm$ verwendet. Das Kupfer hat eine Leitfähigkeit von $\kappa=58E6 [1/\Omega m]$. Die Länge der beiden Antennenarme ist je 25 mm. Für die Quelle wurde eine Lücke von 2.45mm ausgespart. Die Quelle ist als 50 Ohm reell definiert. Das Gehäuse, die Elektronik, der Akku und das Display wurden in dieser Simulationsreihe nicht berücksichtigt.\\ 
+Für die Simulationen wurden grosse Vereinfachungen getroffen, wie zum Beispiel der ABS Kunststoff ist mit einem $\varepsilon_r $ von 4.3 und einem Verlustwinkel von 0.02 simuliert. Diese Werte wurden als Frequenzunabhängig angenommen. Als Antennenstäbe wurde ein Kupferdraht mit einem Radius $r = 1.12 mm$ verwendet. Das Kupfer hat eine Leitfähigkeit von $\kappa=58E6 [1/\Omega m]$. Die Länge der beiden Antennenarme ist je 25 mm. Für die Quelle wurde eine Lücke von 2.45mm ausgespart und ist als 50 Ohm reell definiert. Das Gehäuse, die Elektronik, der Akku und das Display wurden in dieser Simulationsreihe nicht berücksichtigt.\\ 
 Es wurden drei Simulationen durchgeführt.
 \begin{enumerate}
 \item $\lambda/2 \ $Dipol im Freiraum
@@ -425,7 +425,7 @@ Es wurden drei Simulationen durchgeführt.
 \end{enumerate}
 
 \textbf{Simulationen einer $\lambda/2$ Dipolantenne im Freiraum}\\
-Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist bei 2.42 GHz abgestimmt und es resultiert eine $S_{11}$ Wert von -16.1dB. Die -10dB Bandbreite beträgt 300 MHz. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt bei der Resonanzfrequenz einen Widerstand von 68.6 Ohm reell. Das ist nahe dem in der Theorie und mit (\ref{RradDipol}) gezeigten Wert von 73 Ohm. Die Impedanz bei einer Frequenz von 2.450 GHz zeigt weiter einen kapazitiven Imaginärteil von $-j4\Omega$. Der Realteil ist in der Abbildung \ref{Impedanz_Vergleich_Simulation} rot und der Imaginärteil als blaue Linie gezeichnet. Da die Anpassung an die Quellenimpedanz von reell 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.
+Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist auf 2.42 GHz abgestimmt und es resultiert ein $S_{11}$ Wert von -16.1dB. Die -10dB Bandbreite beträgt 300 MHz. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt bei der Resonanzfrequenz einen Widerstand von 68.6 Ohm reell. Das ist nahe dem in der Theorie und mit (\ref{RradDipol}) gezeigten Wert von 73 Ohm. Die Impedanz bei einer Frequenz von 2.450 GHz zeigt weiter einen kapazitiven Imaginärteil von $-j4\Omega$. Der Realteil ist in der Abbildung \ref{Impedanz_Vergleich_Simulation} rot und der Imaginärteil als blaue Linie gezeichnet. Da die Anpassung an die Quellenimpedanz von reell 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.\\
 
 
 %\begin{figure}[!ht]
@@ -441,15 +441,16 @@ Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}
 %\end{center}
 %\end{figure}
 %\newpage
+
 \textbf{Simulationen einer $\lambda/2$ Dipolantenne mit einem ABS Kunststoffstück im Nahfeld}\\
+In der Abbildung \ref{S11_Vergleich_Simulation} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kunststoffstück im Nahfeld gezeigt  blaue Kurve dargestellt. Das ABS Stück hat die Masse: 100 x 2 x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz in der Abbildung \ref{S11_Vergleich_Simulation}. Der maximale $S_{11}$ Wert liegt neu rund 380 MHz tiefer bei 2.04 GHz. Er bringt eine Dämpfung von neu -20.79 dB mit sich. Die -10dB Bandbreite beträgt 340 MHz.\\
 
-In der Abbildung \ref{S11_Vergleich_Simulation} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kunststoffstück im Nahfeld gezeigt als blaue Kurve dargestellt. Das ABS Stück hat die Masse: 100 x 2 x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz in der Abbildung \ref{S11_Vergleich_Simulation}. Der maximale $S_{11}$ Wert liegt neu 400 MHz tiefer bei 2.04 GHz. Er zwingt eine Dämpfung von neu -20.79 dB. Die -10dB Bandbreite beträgt 340 MHz.\\
+Real- und Imaginärteil werden in Abbildung \ref{Impedanz_Vergleich_Simulation} als grüne und schwarze Kurve gezeigt und macht eine Fehlanpassung deutlich. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil ist mit $+j39$ Ohm induktiv. Insgesammt führt dies zu einer Abstrahleffizienz $\eta$ von 71.1$\%$.\\
 
-Der Real- und Imaginärteil ist in Abbildung \ref{Impedanz_Vergleich_Simulation} als grüne und schwarze Kurve gezeigt und macht eine Fehlanpassung deutlich. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil ist mit $+j39$ Ohm induktiv. Das führt zu einer Abstrahleffizienz $\eta$ von 71.1$\%$.\\
 \textbf{Simulationen einer $\lambda/2$ Dipolantenne mit zwei ABS Kunststoffstücken im Nahfeld}\\
-
-Die dritte Simulation zeigt den $S_{11}$ Wert und die Impedanz der Antenne wenn diese zwischen zwei ABS Kunststoffstücken liegt. In der Abbildung \ref{S11_Vergleich_Simulation} ist der $S_{11}$ Wert als grüne Linie gezeichnet.Es zeigt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück. Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 180 MHz tiefer als bei der Simulation mit nur einem ABS Stück. Die Abbildung \ref{S11_Vergleich_Simulation} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz.\\
-Der Real-und Imaginärteil ist in der Abbildung \ref{Impedanz_Vergleich_Simulation} als gelbe Kurve für den Realteil und als rosa Kurve für den Imaginärteil gekennzeichnet. Sie zeigen eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt bei $59.6 \%$. Da die Impedanz $Z_{ant}$ (206.192-j28.979)$\Omega$ bei 2.45GHz entspricht.\\
+Die dritte Simulation zeigt den $S_{11}$ Wert und die Impedanz der Antenne wenn diese zwischen zwei ABS Kunststoffstücken liegt. In der Abbildung \ref{S11_Vergleich_Simulation} ist der ensprechnede $S_{11}$ Wert als grüne Linie gezeichnet. Es zeigt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück: \\
+Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 220 MHz tiefer als bei der Simulation mit nur einem ABS Stück. Die Abbildung \ref{S11_Vergleich_Simulation} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz.\\
+Real-und Imaginärteil sind in der Abbildung \ref{Impedanz_Vergleich_Simulation} als gelbe Kurve für den Realteil und als rosa Kurve für den Imaginärteil gekennzeichnet. Sie zeigen eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt nur noch bei $59.6 \%$. Da die Impedanz bei 2.45GHz $Z_{ant}$ =(206.192-j28.979)$\Omega$  entspricht.\\
 %\begin{figure}[!h]
 %\begin{center}
 %\minipage{0.4\textwidth}
@@ -478,7 +479,7 @@ Der Real-und Imaginärteil ist in der Abbildung \ref{Impedanz_Vergleich_Simulati
 %\endminipage
 %\end{center}
 %\end{figure}
-Die $|S_{11}|$ Werte der drei Simulationen des $\lambda/2$ Dipols sind in der Grafik \ref{S11_Vergleich_Simulation} gezeigt. Das Detuning ist anhand der nach links laufenden Kurven ersichtlich. Ebenso werden die Kurven schmalbandiger wenn sich Kunststoff im Nahfeld der Antennen befindet.
+Die $|S_{11}|$ Werte der drei Simulationen des $\lambda/2$ Dipols sind in der Grafik \ref{S11_Vergleich_Simulation} gezeigt. Das Detuning ist anhand der nach links verschobenen Kurven ersichtlich. Ebenso werden die Kurven schmalbandiger wenn sich Kunststoff im Nahfeld der Antennen befindet.
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
@@ -492,7 +493,7 @@ Die $|S_{11}|$ Werte der drei Simulationen des $\lambda/2$ Dipols sind in der Gr
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-Die Antennenimpedanz aller drei Simulationen sind in der folgenden Abbildung \ref{Impedanz_Vergleich_Simulation} dargestellt. Jede der drei Impedanzen wird mit einer Kurve für den Realteil und den Imaginärteil dargestellt. 
+Die Antennenimpedanzen aller drei Simulationen sind in der folgenden Abbildung \ref{Impedanz_Vergleich_Simulation} dargestellt. Jede der drei Impedanzen wird jeweils mit einer Kurve für den Realteil und den Imaginärteil dargestellt. Die simulierten Werte für die Impedanz $Z_{ant}$ bei der Frequenz von 2.45 GHz sind in der Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} für alle drei Simulationen aufgeführt.
 \begin{figure}[!ht]
 	\centering
 	\begingroup
@@ -508,10 +509,11 @@ Die Antennenimpedanz aller drei Simulationen sind in der folgenden Abbildung \re
 \subsubsection{Simulierte 3D Richtdiagramme einer Loop Antenne mit drei Windungen}
 Die folgenden drei Abbildungen \ref{fig:sim_Dipol_Freiraum_3D},
 \ref{fig:sim_Dipol_1ABS_3D} und 
-\ref{fig:sim_Dipol_2ABS_3D} zeigen alle drei die 3DRichtdiagramme einer Dipolantenne bei einer Frequenz von 2.45 GHz. Sie zeigen ein qualitatives Abstrahlverhalten der Antennen. Die Richtwirkung aller drei Antennen ist etwa gleich sie seigen alle einen Torus um die Antenne. Das elektromagnetische Feld ist wie aus der Theorie in Kapitel xx vom Winkel $\theta$ abhängig.
+\ref{fig:sim_Dipol_2ABS_3D} zeigen alle drei die 3D Richtdiagramme einer Dipolantenne bei einer Frequenz von 2.45 GHz. Sie zeigen ein qualitatives Abstrahlverhalten der Antennen. Die Richtwirkung aller drei Antennen ist etwa gleich sie zeigen alle einen Torus um die Antenne. Das elektromagnetische Feld ist wie aus der Theorie in Kapitel \ref{sec:DipolAntenne} vom Winkel $\theta$ abhängig.
 In der Abbildung \ref{fig:sim_Dipol_Freiraum_3D} ist eine Richtdiagramm einer Dipolantenne im Freiraum gezeigt. Die Richtcharakteristik zeigt einen maximalen $D$ Wert  von 2.10 dBi.\\
 Das Richtdiagramm der Dipolantenne mit angrenzendem Kunststoffstück ist in Abbildung \ref{fig:sim_Dipol_1ABS_3D} gezeigt. Die maximale Richtcharakteristik weisst einen $D$ Wert von 2.36 dBi auf.\\
-Eine Richtcharakteristik von 2.38 dBi zeigt die Abbildung \ref{fig:sim_Dipol_2ABS_3D}. Sie stellt die Simulation mit zwei angrenzenden Kunststoffstücken an eine Dipolantenne dar.
+Eine Richtcharakteristik von 2.38 dBi zeigt die Abbildung \ref{fig:sim_Dipol_2ABS_3D}. Sie stellt die Simulation mit zwei angrenzenden Kunststoffstücken an eine Dipolantenne dar.\\
+Beid der qualitativen Betrachtung der Richtwirkung von Antennen muss immer die die Farbskala betrachtet werden. Nicht die Farbe eines Punktes im Raum ist entscheidenden, sonder der Wert würd den sie sthet. Für die beurteilung der Darstellungen hilft es, wenn der Maximal- under der Minimalwert für die zu vergleichenden Abbildungen gleich ist.
 %%%%%%%%
 \begin{figure}[h]
 	\begin{center}
@@ -539,9 +541,9 @@ Eine Richtcharakteristik von 2.38 dBi zeigt die Abbildung \ref{fig:sim_Dipol_2AB
 
 
 \subsection{Vergleich aus den Simulationen der Dipolantennen}
-Diese drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Zum Beispiel zeigt die Simulation im Freiraum eine Antennen Impedanz von (68.6+j4) bei einer Frequenz von 2.450 GHz, dabei resultiert die Abstrahleffizienz $\eta$ von 97$\%$. Weiter zeigen sie das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe auf. Diese führen zu einer tieferen Resonanzfrequenz der Antenne. Da die Dipole im Kunststoff bei jeder Schwingung des Nahfeld sich neu Ausrichten. Das bedeutet, bei der Simulation von einem Dipol mit zwei ABS Kusstoffstücken im Nahfeld sinkt die Resonanzfrequenz $f_{r}$ um 600 MHz auf 1.82 GHz im Vergleich zum Dipol im Freiraum dessen maximale Dämpfung des $S_{11}$ Werts bei 2.42 GHz liegt.\\ 
-Die dreidimensionalen \glqq EM Far Field\grqq \ Darstellungen der drei Simulationen zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Sie zeigen alle drei, einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.\\
-Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie im Kapitel \ref{sec:DipolAntenne} genannten Bereich. Der $Z_{ant}$ ist bei den drei Versuchen zwischen (68-j4) Ohm und (208-j28) Ohm. Die Anpassung an eine Hochfrequenzquelle mit Innenwiderstand von reell 50 Ohm zeigt eine Abstrahleffizienz von $\eta_{tot}$ von ca. 69\%, 71\% bis 97\%.\\
+Die drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Zum Beispiel zeigt die Simulation im Freiraum eine Antennenimpedanz von (68.6+j4) bei einer Frequenz von 2.450 GHz, womit eine die Abstrahleffizienz $\eta$ von 97$\%$ resultiert. Weiter zeigen sie das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe auf. Diese führen zu einer tieferen Resonanzfrequenz der Antenne, da sich die Dipole im Kunststoff bei jeder Schwingung des Nahfeldes neu ausrichten. Das bedeutet, bei der Simulation von einem Dipol mit zwei ABS Kusstoffstücken im Nahfeld sinkt die Resonanzfrequenz $f_{r}$ um 600 MHz.\\ 
+Die dreidimensionalen \glqq EM Far Field\grqq \ Darstellungen der drei Simulationen zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Alle drei zeigen, einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.\\
+Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie im Kapitel \ref{sec:DipolAntenne} genannten Bereich. Der $Z_{ant}$ ist bei den drei Versuchen zwischen (68-j4) und (208-j28)$\Omega$. Die Anpassung an eine Hochfrequenzquelle mit einem Innenwiderstand von reell 50 Ohm zeigt eine Abstrahleffizienz von $\eta_{tot}$ ca. 69\%, 71\% bis 97\%.\\
 Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergleichswerte der $\lambda/2$ Dipolantenne.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!h]
@@ -552,7 +554,7 @@ Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergle
  \midrule
  Freiraum 			&	-16.16 @ 2.42 GHz		& 	68.60-j4			& 	97	&	340 & 14\\ 		
 1 ABS Stück 	& -20.79 @ 2.08 GHz 		&	141.5+j39.6		&	71	&	342	 & 16 \\
-2 ABS Stücke 	& -28.20 @ 1.82 GHz 	&	206.2-j28		&	59	&	330	 & 18 \\
+2 ABS Stücke 	& -28.20 @ 1.82 GHz 	&	206.2-j28		&	69	&	330	 & 18 \\
  \bottomrule
  \end{tabular}
  \caption{Simulation von $\lambda/2$ Dipolantennen im Freiraum und mit ABS Stücken}
@@ -560,25 +562,25 @@ Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergle
 \end{table}
 
 %\begin{minipage}[c]{0.95\textwidth} 
-Für die drei Simulationen gilt:\\
-Der Quellenwiderstand $R_Q$ ist 50$\Omega$. Der maximal Wert der Rückflussdämpfung ist als $S_{11_{max}}$ in der Tabelle aufgeführt. Die drei Werte $S_{11_{max}}$ stellen drei Resonanzfrequenz dar. Der Real- und Imaginärteil kann für jede Simulation aus der Abbildung \ref{Impedanz_Vergleich_Simulation} genommen werden. Die Abstrahleffizienz $\eta$ stellt die gesamte Abstrahleffizienz $\eta_{tot}$ dar. Als Bandbreite wurde der Frequenzbereich definiert, den die $S_11$ Kurve beinhaltet, bei der die Amplitude um 10 dB kleiner ist als der Resonanzfrequenz $f_{res}$. Die relative Bandbreite wurde aus der Division von der -10 dB Bandbreite geteilt durch die $f_{res}$ berechnet.
+
+Der Quellenwiderstand $R_Q$ ist 50$\Omega$. Der Maximalwert der Rückflussdämpfung ist als $S_{11_{max}}$ in der Tabelle aufgeführt. Die drei Werte $S_{11_{max}}$ stellen drei Resonanzfrequenzen dar. Der Real- und Imaginärteil kann für jede Simulation aus der Abbildung \ref{Impedanz_Vergleich_Simulation} enrnommen werden. Die Abstrahleffizienz $\eta$ stellt die gesamte Abstrahleffizienz $\eta_{tot}$ dar. Als Bandbreite wurde der Frequenzbereich definiert, den die $S_{11}$ Kurve beinhaltet, bei der die Amplitude um 10 dB kleiner ist als dijenige der Resonanzfrequenz $f_{res}$. Die relative Bandbreite wurde aus der Division der -10 dB Bandbreite mit der $f_{res}$ geteilt.
 %\end{minipage}
 
 
 \newpage
 \section{Loop Antenne}
-Eine Loop Antenne wird auch Rahmenantenne oder magnetische Antennen genannt. Sie besteht aus einer, oder mehreren Drahtwindungen die auf einem Trägerrahmen aufgespannt sind. Sie sprechen auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Sie sind nicht, wie es der Name vermuten lässt, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits in einem Abstand von $2\lambda$ Wellenlänge ist neben dem magnetischen Feld ein starkes elektrisches Feld vorhanden. Treten magnetischen Feldlinien senkrecht durch die Loop-Fläche hindurch, so wird eine Spannung in die Windungen der Loop Antenne induziert. Für eine maximale Empfangsspannung muss deshalb die Schmalseite der Loop Antenne in Richtung eines Dipolsenders zeigen.
+Loop Antennen werden auch Rahmenantennen oder magnetische Antennen genannt. Sie bestehen aus einer oder mehreren Drahtwindungen, die auf einem Trägerrahmen aufgespannt sind. Sie sprechen auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Sie sind nicht, wie es der Name vermuten lässt, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits in einem Abstand von $2\lambda$ Wellenlänge tritt neben dem magnetischen Feld ein starkes elektrisches Feld auf. Treten magnetische Feldlinien senkrecht durch die Loop-Fläche hindurch, so wird eine Spannung in die Windungen der Loop Antenne induziert. Für eine maximale Empfangsspannung muss deshalb die Schmalseite der Loop Antenne in Richtung eines Dipolsenders zeigen.
 
 
 \subsection{Elektromagnetische Wellenabstrahlung von Loop Antennen}
-An dieser Stelle werden die wesentlichen Abstrahleigenschaften und Zusammenhänge der Loop Antenne erläutert.
-Bei einer Loop Antenne ist der Ursprung der Wellenausbreitung ein magnetischer Dipol. Eine detaillierte Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} erläutert. \\
+An dieser Stelle werden die wesentlichen Abstrahleigenschaften der Loop Antenne erläutert.
+Bei einer Loop Antenne ist der Ursprung der Wellenausbreitung ein magnetischer Dipol. Eine detaillierte Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} gegeben. \\
 Elektromagnetische Wellen können von einem schwingenden magnetischen Dipol
 abgestrahlt werden. Analog zum Hertzschen Dipol befindet sich im Koordinatenursprung
 ein magnetischer Dipol der Länge $dz<<\lambda$, welcher von einem konstanten
-Strom $I^{m}$ durchflossen wird. Das magnetische Dipolmoment beträgt somit:
+Strom $I^{m}$ durchflossen wird. Das magnetische Dipolmoment $m$ beträgt somit:
 \begin{equation}
-\textbf{m}=I^{m}dze_z
+m=I^{m}dze_z
 \end{equation}
 Äquivalent dazu kann man sich eine mit einem Strom I durchflossene, kreisförmige Windung mit Radius $a<<\lambda$ vorstellen, die eine Magnetisierung $\textbf{M}$ hervorruft:
 \begin{equation}
@@ -586,30 +588,30 @@ I^{m}dze_{z}=j\omega\mu_{0}I\pi a^{2}
 \end{equation}
 Dieser Fall wird als Loop Antenne bezeichnet und ist in Abbildung \ref{FitzDipol} dargestellt. Aus der Lösung der Maxwellschen Gleichungen mit Hilfe des elektrischen und
 magnetischen Vektorpotentials kann man die Felder der Loop Antenne bestimmen.
-Sie weisen die folgenden Transversalkomponenten $\textbf{E}_{\varphi}$ bzw. $\textbf{E}_{\theta}$ im Fernfeld auf:
+Sie weisen die folgenden Transversalkomponenten $E_{\varphi}$ bzw. $E_{\theta}$ im Fernfeld auf:
 \begin{equation}
-\textbf{E}_{\varphi}=Z_{0}\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\varphi}
+E_{\varphi}=Z_{0}\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\varphi}
 \end{equation}
 
 \begin{equation}
-\textbf{E}_{\theta}=\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\theta}
+E_{\theta}=\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\theta}
 \end{equation}
-Es wird festgestellt, dass die Felder nur vom Strom, der Fläche und des Winkels $\theta$ abhängig sind
+Es wird festgestellt, dass die Felder nur vom Strom, der Fläche und vom Winkel $\theta$ abhängig sind
 und nicht von der Form der Antenne. 
-Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Auf den gleichen Wert kommt man, wenn (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} verwendet wird. Die von den Windung aufgespannte Fläche enspricht $S$ und $k$ kann als $2\pi/\lambda$ angenommen werden. Ist die loop Antenne kreisförmig, so ist der Radius der Windung $a$ und für die Wellenimpedanz $Z_0$ im Freiraum gilt $120\pi$.
+Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Der selbe Wert resultiert aus  (\ref{eq:RradLoop}), welche im Kapitel \ref{sec:LoopAntenneTheorie} genannt wurde. Die von den Windung aufgespannte Fläche enspricht $S$ und $k$ kann als $2\pi/\lambda$ angenommen werden. Ist die Loop Antenne kreisförmig, so ist der Radius der Windung $a$, für die Wellenimpedanz $Z_0$ im Freiraum gilt $120\pi$ und $Ps$ enspricht der abgestrahlten Antennenleistung, so kann der Strahlungswiderstand $R_s$ wie forlgt berechnet werden:
 \begin{equation}\label{eq:RS_LOOP}
 R_{s}=\dfrac{2Ps}{|I|^{2}}=Z_{0}\dfrac{\pi}{6}(k^{2}a^{2})^{2}=Z_{0}\dfrac{2\pi}{3}\left(\dfrac{kS}{\lambda}\right)^{2} 
 \end{equation}
 %\simeq 31.171\dfrac{S^{2}}{\lambda^{4}} ist um den Faktor 1000 zu klein
-So beträgt z.B. der Strahlungswiderstand für eine kreisförmige Schleife mit Radius $a = \lambda/25$ der $R_{s} = 0,788\Omega$.
+So beträgt z.B. der Strahlungswiderstand $R_{s}$ für eine kreisförmige Schleife mit Radius $a = \lambda/25$  $R_{s} = 0,788\Omega$.
 
 
 \subsection{Halbwellen Loop Eigenschaften}
-Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Ebenso besitzt die Loop Antenne eine torusförmige Richtcharakteristik. Seine strahlenden Eigenschaften sind jedoch nicht die Gleichen wie beim Dipol. Der Strahlungswiderstand $R_{rad}$ kann mit der aus (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Dipol Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung (\ref{eq:XantLoop}) ein Wert für $X = 637 \Omega$ bestimmt werden. Um die Reaktanz X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser wurde $p$ = 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet.
+Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipolantenne. Ebenso besitzt die Loop Antenne eine torusförmige Richtcharakteristik. Seine strahlenden Eigenschaften sind jedoch nicht die Selben wie die eines Dipols. Der Strahlungswiderstand $R_{rad}$ kann mit (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Dipol Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung (\ref{eq:XantLoop}) ein Wert für $X = 637 \Omega$ bestimmt werden. Um die Reaktanz X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser wurde $p$ = 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet und $f$ steht für die Siganlfrequenz \cite{Antenne_Theory_Xant_Loop}.
 \begin{equation}\label{eq:XantLoop}
 X= 2\pi f\mu a(ln \left( \frac{8a}{p} \right) - 1.75)
 \end{equation}
-Aufgrund der engen Platzverhältnisse, die für das Antennenvolumen herrschen, kann keine runde Loop Antenne positioniert werden. Loop Antennen können in den unterschiedlichsten Formen realisiert werden. Man findet sie als Rechtecke, Oktagone oder als Dreiecke. Oft wird ein Rahmen gefertigt und auf diesen werden mehrere Windungen $n$ aufgebracht. Für alle Antennenformen gilt, dass die Klemmenspannung am unbelasteten Fusspunkt der Antenne von der zeitabhängigen magnetischen Flussänderung durch die Antennenfläche induziert wird.
+Aufgrund der engen Platzverhältnisse, die für das Antennenvolumen herrschen, kann im Fluginstrument "Connect 1" keine runde Loop Antenne positioniert werden. Loop Antennen können in den unterschiedlichsten Formen realisiert werden. Man findet sie als Rechtecke, Oktagone oder als Dreiecke. Oft wird ein Rahmen gefertigt und auf diesem werden dann mehrere Windungen $n$ aufgebracht. Für alle Antennenformen gilt, dass die Klemmenspannung am unbelasteten Fusspunkt der Antenne von der zeitabhängigen magnetischen Flussänderung durch die Antennenfläche induziert wird.
 \begin{equation}\label{eq:InduktionspannungLoop}
 V_{ol}= j\omega\Psi_{m}=j\omega\textbf{B}*\textbf{s}= j\omega\mu H_{z}*\pi a^{2}
 \end{equation}
@@ -619,8 +621,8 @@ H_{z}=H^{i}\cos\Psi\sin\theta_{i}
 \end{equation}
 %Bild von der Welle durch die Loop Fläche
 Für dei Ausdrücke  (\ref{eq:InduktionspannungLoop}) und (\ref{eq:InduktionspannungLoopHz}) gilt: \\
-$\Psi_{m}$ ist der magnetische Fluss, die Winkel $\theta_{i}$ und $\varphi_{i}$ sind im Kugelkoordinatensystem und beschreiben die durch die Loopfläche tretenden Wellen .\\ 
-Da die Formgebung einer Loop Antenne die in dem untersuchten Fluginstrument Platz finden muss. Ist das im Kapitel \ref{sec:EigenschaftenAntenne} beschriebene freien Volumen berücksichtig werden. Dies führt zu einer langgestreckten und flachen Loop Antenne. Die Form erinnert stark an diejenige eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne, die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
+$\Psi_{m}$ ist der magnetische Fluss, die Winkel $\theta_{i}$ und $\varphi_{i}$ beschreiben die durch die Loopfläche tretenden Wellen im  Kugelkoordinatensystem.\\ 
+Die Platzverhältnisse füren zu einer langgestreckten und flachen Loop Antenne. Die Form erinnert stark an diejenige eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne, die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
 Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen Dipol. Der Strahlungswiderstand ist jedoch ca. 280 Ohm. 
 
  %%%%%%%%%%%%%%%%%%%%%%%
@@ -643,7 +645,7 @@ Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen D
 \label{fig:FflacheLoopAntenne}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Da die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an der Oberfläche anders als bei einem Faltdipol. Bei einer Loopantenne wird aufgrund des im Nahfeld dominierenden starken Magnetfelds, keine Energie im umgebenden, nicht magnetischen Kunststoff gespeichert. Dennoch kommt es bei den Loop Antennen wie bei den Dipolantennen zu einer Verlustleistung, die nicht abgestrahlt wird. Wie beim Dipol pendelt bei jeder Schwingung ein Teil der Feldenergie um die Antenne. Diese wird nicht abgestrahlt. Diese magnetische Energie baut sich bei jeder Schwingung um den Strahler auf und induziert beim Rückgang einen Strom in der umgekehrten Richtung in der Antenne. Das allgemeine Ersatzschaltbild \ref{fig:ESBantenne} einer Antenne besteht aus dem $R_{v}$, dem $R_{rad}$ und einem $X_{ant}$. $X_{ant}$ sagt nichts darüber aus, ob die Antenne eher induktiv oder kapazitiv ist. 
+Da die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an der Oberfläche anders als bei einem Faltdipol. Bei einer Loopantenne wird aufgrund des im Nahfeld dominierenden starken Magnetfelds keine Energie im umgebenden, nicht magnetischen Kunststoff gespeichert. Dennoch kommt es bei den Loop Antennen wie bei den Dipolantennen zu einer Verlustleistung, die sich im Raum um die Antenne auf- und abbaut, aber nicht nicht abgestrahlt wird. Wie beim Dipol pendelt bei jeder Schwingung ein Teil der Feldenergie um die Antenne und wirder zurück, dabei induziert die magnetische Energie beim Rückgang einen Strom in der umgekehrten Richtung. Das allgemeine Ersatzschaltbild \ref{fig:ESBantenne} einer Antenne besteht aus dem $R_{v}$, dem $R_{rad}$ und einem $X_{ant}$. $X_{ant}$ sagt nichts darüber aus, ob die Antenne eher induktiv oder kapazitiv ist. 
 
 
 
@@ -690,21 +692,21 @@ Da die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an 
 %%.................................................................................
 
 \subsection{Verwendung einer Loop Antenne in der \glqq Connect 1\grqq \ Serie}
-Beim Einsatz einer magnetischen Loop Antenne als Bluetooth Antenne im Fluginstrument gibt es einige Punkte zu beachten. Das vorgesehene Antennenvolumen ist lang, schmal und nur wenige Millimeter dick. Daher kann keine runde Leiterschleife als Loop Antenne dienen. Die Antennenfläche kann also nicht mit $A=r^{2}\pi$ berechnet werden. Stattdessen kann ein lang gezogener Loop zwischen dem Gehäuse und der Hauptplatine untergebracht werden. Die Loop Antennen sind in ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E-und H Feldvektoren etwa gleich lang, phasengleich und rechtwinklig zueinander. Dabei strahlt die ebene Welle die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle ab.\\
+Beim Einsatz einer magnetischen Loop Antenne als Bluetooth Antenne im Fluginstrument gibt es einige Punkte zu beachten. Das vorgesehene Antennenvolumen ist lang, schmal und nur wenige Millimeter dick. Daher kann keine runde Leiterschleife als Loop Antenne dienen. Die Antennenfläche kann also nicht mit $A=r^{2}\pi$ berechnet werden. Stattdessen ist es möglich, dass ein lang gezogener Loop zwischen dem Gehäuse und der Hauptplatine untergebracht wird. Die Loop Antennen sind in ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E-und H Feldvektoren etwa gleich lang, phasengleich und rechtwinklig zueinander. Dabei strahlt die ebene Welle die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle ab.\\
 Um den Einfluss des Geräts auf die Feldausbreitung der Loop Antenne abzuschätzen, kann das Antennenersatzschaltbild \ref{fig:ESBantenne} betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
  \begin{enumerate}[label={\alph*)}] 
  \item die Antennenimpedanz an die Quellenimpedanz angepasst ist 
  \item $R_{rad}$ gegenüber $R_{v}$ gross ist 
  \end{enumerate} 
-Ein Wellenanpassung bei einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk kaum zu erreichen. Für alle Antennenformen gilt: wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann nähert sich der Reflexionskoeffizient mit Sicherheit nicht 1, das bedeutet der \textit{Return Loss} ist sehr klein. Daher ist der $S_{11}$ Wert ebenfalls sehr klein, die Folge sind Reflexionen. 
-Dementsprechend erreicht nur ein kleiner Teil, der für die Antenne bestimmten Leistung, den Strahlungswiderstand und kann abgestrahlt werden. Die Abstrahlleistung die in Abbildung \ref{fig:ESBantenne} mit $P_{rad}$ bezeichnet wird, fällt daher klein.\\
-Ebenfals kann aus der Abbildung \ref{fig:ESBantenne} das Verhältnis von $R_{rad}$ zu $R_{v}$ entnommen werden, es wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus.
+Ein Wellenanpassung bei einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk kaum zu erreichen. Für alle Antennenformen gilt: Wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann kann der Reflexionskoeffizient den Wert 1 nicht annehmen, das bedeutet der \textit{Return Loss} ist sehr klein. Daher ist der $S_{11}$ Wert ebenfalls sehr klein, die Folge sind Reflexionen. 
+Dementsprechend erreicht nur ein kleiner Teil der für die Antenne bestimmten Leistung den Strahlungswiderstand und kann abgestrahlt werden. Die Abstrahlleistung die in Abbildung \ref{fig:ESBantenne} mit $P_{rad}$ bezeichnet wird, fällt daher klein aus.\\
+Ebenfalls kann aus der Abbildung \ref{fig:ESBantenne} das Verhältnis von $R_{rad}$ zu $R_{v}$ entnommen werden. Es wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus.
 
-\subsubsection{Simulationen einer Lambda/2 Loop Antenne}\label{sec:SimL2Loop}
+\subsubsection{Simulationen einer $\lambda$/2 Loop Antenne}\label{sec:SimL2Loop}
 Um das Abstrahlverhalten und die Wirkungen von Kunststoff im Nahfeld aufzuzeigen, werden die folgenden Abbildungen genauer erläutert.
-Die erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodell wurde keine runde Stromschleife verwendet, sondern ein langer, schmaler Loop. Die Länge des Loop entspricht $\lambda/2$ der Bluetooth Zielfrequenz von 2.45 GHz. Die Antennenstruktur wird von einer Quelle mit 50 Ohm Innenwiderstand betrieben. Als Antennenstruktur wurden rechteckige Kupferquader mit einer Dicke von 1mm  und einer Gesamtlänge von 63 mm verwendet.\\
+Die erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodell wurde keine runde Stromschleife verwendet, sondern ein langer, schmaler Loop. Die Länge des Loop entspricht $\lambda/2$ der Bluetooth Zielfrequenz von 2.45 GHz. Die Antenne wird von einer Quelle mit 50 Ohm Innenwiderstand gespeist. Als Antennenstruktur wurden rechteckige Kupferquader mit einer Dicke von 1mm  und einer Gesamtlänge von 63 mm verwendet.\\
 
-Es wurden wie beim der Dipol Antenne in Kapitel \ref{sim_lamda2_Dipol}\ drei Simulationen durchgeführt. Diese sollen das Verhalten von Loop Antennen mit und ohne Kunststoff im Nahfeld aufzeigen.\\ 
+Es wurden wie bei der Dipol Antenne in Kapitel \ref{sim_lamda2_Dipol}\ drei Simulationen durchgeführt. Diese sollen das Verhalten von Loop Antennen mit und ohne Kunststoff im Nahfeld aufzeigen.\\ 
 
 \textbf{$\lambda/2$ Loop Antenne im Freiraum}\\
 Die Resonanzfrequenz einer $\lambda/2$ langen Leiterschleife im Freiraum ist in der Abbildung \ref{S11_Loop_Vergleich_Simulation} als rote Kurve gezeichnet gezeigt. Sie liegt bei dieser Simulation bei 5.493 GHz. Bei dieser Frequenz zeigt die Antenne einen $S_{11}$ Wert von mehr als -26 dB. Die -10 dB Bandbreite beträgt 428 MHz.\\
