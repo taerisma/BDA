@@ -698,7 +698,7 @@ Um den Einfluss des Geräts auf die Feldausbreitung der Loop Antenne abzuschätz
  \item die Antennenimpedanz an die Quellenimpedanz angepasst ist 
  \item $R_{rad}$ gegenüber $R_{v}$ gross ist 
  \end{enumerate} 
-Ein Wellenanpassung bei einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk kaum zu erreichen. Für alle Antennenformen gilt: Wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann kann der Reflexionskoeffizient den Wert 1 nicht annehmen, das bedeutet der \textit{Return Loss} ist sehr klein. Daher ist der $S_{11}$ Wert ebenfalls sehr klein, die Folge sind Reflexionen. 
+Ein Wellenanpassung bei einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk kaum zu erreichen. Für alle Antennenformen gilt: Wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann kann der Reflexionskoeffizient den Wert 0 nicht annehmen, das bedeutet der \textit{Return Loss} ist sehr klein. Daher ist der $S_{11}$ Wert ebenfalls sehr klein, die Folge sind Reflexionen. 
 Dementsprechend erreicht nur ein kleiner Teil der für die Antenne bestimmten Leistung den Strahlungswiderstand und kann abgestrahlt werden. Die Abstrahlleistung die in Abbildung \ref{fig:ESBantenne} mit $P_{rad}$ bezeichnet wird, fällt daher klein aus.\\
 Ebenfalls kann aus der Abbildung \ref{fig:ESBantenne} das Verhältnis von $R_{rad}$ zu $R_{v}$ entnommen werden. Es wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus.
 
@@ -709,9 +709,10 @@ Die erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodell 
 Es wurden wie bei der Dipol Antenne in Kapitel \ref{sim_lamda2_Dipol}\ drei Simulationen durchgeführt. Diese sollen das Verhalten von Loop Antennen mit und ohne Kunststoff im Nahfeld aufzeigen.\\ 
 
 \textbf{$\lambda/2$ Loop Antenne im Freiraum}\\
-Die Resonanzfrequenz einer $\lambda/2$ langen Leiterschleife im Freiraum ist in der Abbildung \ref{S11_Loop_Vergleich_Simulation} als rote Kurve gezeichnet gezeigt. Sie liegt bei dieser Simulation bei 5.493 GHz. Bei dieser Frequenz zeigt die Antenne einen $S_{11}$ Wert von mehr als -26 dB. Die -10 dB Bandbreite beträgt 428 MHz.\\
-Die Impedanz der Antenne bei 2.45 GHz in Abbildung \ref{Impedanz_Loop_Vergleich_Simulation} zeigt die Fehlanpassung klar auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 225 Ohm bei einer Frequenz von 2.45 GHz. Deshalb ist der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt eines Smith-Diagramm. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer total Reflexion. Der Reflexionsfaktor $\Gamma$ ist in diesem Fall 1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$.\\
+Die Resonanzfrequenz einer $\lambda/2$ langen Leiterschleife im Freiraum ist in der Abbildung \ref{S11_Loop_Vergleich_Simulation} als rote Kurve gezeichnet gezeigt. Sie liegt bei dieser Simulation bei 5.85 GHz. Bei dieser Frequenz zeigt die Antenne einen $S_{11}$ Wert von mehr als -26 dB. Die -10 dB Bandbreite beträgt 428 MHz.\\
+Die Impedanz der Antenne bei 2.45 GHz in Abbildung \ref{Impedanz_Loop_Vergleich_Simulation} zeigt die Fehlanpassung klar auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 225 Ohm bei einer Frequenz von 2.45 GHz. Deshalb ist der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt eines Smith-Diagramms. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer totalen Reflexion der zuführenden Welle. Der Reflexionsfaktor $\Gamma$ beträgt in diesem Fall +1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$.\\
 
+Die sehr tiefe Abstrahleffizienz ist auch aus der Abbildung \ref{fig:sim_Loop_freiraum_3D} zu entnehmen. Es ist kaum eine bevorzugte Abstrahlrichtung zu sehen. Die dunkelrote Farbe entspricht einem Richtfaktor von 1.19dBi. Das entspricht beinahe einem isotropen Abstrahlverhalten.\\
 
 %\begin{figure}[!h]
 %\begin{center}
@@ -726,8 +727,6 @@ Die Impedanz der Antenne bei 2.45 GHz in Abbildung \ref{Impedanz_Loop_Vergleich_
 %\end{center}
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
-%\newpage
-Die sehr tiefe Abstrahleffizienz ist auch aus der Abbildung \ref{fig:sim_Loop_freiraum_3D} zu entnehmen. Es ist kaum eine bevorzugte Abstrahlrichtung zu sehen. Die dunkelrote Farbe entspricht einem Richtfaktor von 1.19dBi, das entspricht beinahe einem isotropen Abstrahlverhalten.
 %%%%%%%%%%%%%%%%%
 %\begin{figure}[h]
 %	\centering
@@ -743,8 +742,8 @@ Die Simulationen der Dipolantennen haben eine erhebliche Wirkung des ABS Kunstst
  
 Die Abbildung \ref{S11_Loop_Vergleich_Simulation} zeigt das $S_{11}$ Diagramm derselben Loopantenne, jedoch wird wie bei den Simulationen der Dipolantenne ein ABS Kunststoffstück direkt an die Antenne gelegt. Das ABS Stück hat die Masse 100 x 30 x 2 mm (L x B x H). Die Abmessungen der Antennenstruktur und die Simulationseigenschaften bleiben dieselben wie bei den Dipolsimulationen und der Freiraum Simulation der Loop Antenne.\\
 
-Der in der  Abbildung \ref{S11_Loop_Vergleich_Simulation} dargestellte $S_{11}$ verlauf der Loop Antenne mit einem Kunsstoffstück, ist als blaue Kurve gezeigt. Die Resonanzfrequenz ist um mehr als 1430MHz auf 4.41GHz gefallen. Die -10dB Bandbreite ist auf 335kHz gesunken. Weiter ist der $S_{11}$ maximal Wert auf -15.4dB gesunken.\\
-Das Smith-Diagramm zeigt eine Antennenimpedanz von (27.7+j433)$\Omega$ bei der Frequenz 2.45 GHz. Daraus ist ebenfalls ersichtlich, dass die Antenne für diese kein einen Unterbruch darstellt. Die Abstrahleffizienz bleibt sehr tief bei unter $3\%$. Das ist auf die Antennenimpedanz $Z_{ant}$ von (28-j433)Ohm zurückzuführen.
+Der in der  Abbildung \ref{S11_Loop_Vergleich_Simulation} dargestellte $S_{11}$ Verlauf der Loop Antenne mit einem Kunsstoffstück ist als blaue Kurve gezeigt. Die Resonanzfrequenz ist um mehr als 1430MHz auf 4.41GHz gefallen. Die -10dB Bandbreite ist auf 335MHz gewachsen. Weiter ist der $S_{11}$ Maximalwert auf -15.4dB gesunken.\\
+Das Smith-Diagramm zeigt eine Antennenimpedanz von (27.7+j433)$\Omega$ bei der Frequenz von 2.45 GHz. Daraus ist ebenfalls ersichtlich, dass die Antenne für diese Frequenz keinen Unterbruch darstellt. Die Abstrahleffizienz bleibt sehr tief bei unter $3\%$. Das ist auf die Antennenimpedanz $Z_{ant}$ von (28-j433)Ohm zurückzuführen.
 %%%%%%%%%%%%%%%%%%%
 %Simulation S11 Loop
 
@@ -764,7 +763,8 @@ Das Smith-Diagramm zeigt eine Antennenimpedanz von (27.7+j433)$\Omega$ bei der F
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%
 %\newpage
-Das simulierte 3D Richtdiagramm, siehe Abbildung \ref{fig:sim_Loop_freiraum_3D_1ABS}, des $\lambda/2$ langen und flachen Dipols zeigt weiterhin keine eindeutig bevorzugte Richtwirkung. Der D Wert liegt bei 1.54dBi, das ist etwa derselbe Wert einer $\lambda/2$ Dipolantenne. 
+Das simulierte 3D Richtdiagramm, siehe Abbildung \ref{fig:sim_Loop_freiraum_3D_1ABS}, des $\lambda/2$ langen und flachen Dipols zeigt weiterhin keine eindeutig bevorzugte Richtwirkung. Der D Wert liegt bei 1.54dBi. Das ist etwa derselbe Wert wie bei einer $\lambda/2$ Dipolantenne.\\
+
 %%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[h]
 %	\centering
@@ -775,14 +775,15 @@ Das simulierte 3D Richtdiagramm, siehe Abbildung \ref{fig:sim_Loop_freiraum_3D_1
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{$\lambda/2$ Loop Antenne mit zwei ABS Stücken im Nahfeld}\\
-Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfeld zeigt, dass der Kunststoff erhebliche Auswirkungen auf die Resonanzfrequenz in ähnlicher Art und Weise wie bei einer Dipolantenne zeigt.\\
 
-Die Loop Antenne wird nun zwischen zwei gleich grossen ABS Kunststoffstücken eingeklemmt. Die Antennenanordnung und Ausrichtung der Antenne bleibt dieselbe. \\
+\textbf{$\lambda/2$ Loop Antenne mit zwei ABS Stücken im Nahfeld}\\
+Die Simulationen der Loopantennen mit ABS Kunststoff im Nahfeld zeigen, dass der Kunststoff in ähnlicher Art und Weise wie bei einer Dipolantenne erhebliche Auswirkungen auf die Resonanzfrequenz  aufweisen.\\
+
+Die Loop Antenne wird nun zwischen zwei gleich grossen ABS Kunststoffstücken eingeklemmt. Die Antennenanordnung und Ausrichtung der Antenne bleiben dieselbe. \\
 Die Erwartung ist, dass auch bei dieser Simulation ein Detunig stattfindet.\\ 
 
-Die Abbildung \ref{S11_Loop_Vergleich_Simulation} zeigt, dass die Resonanzfrequenz weiter sinkt. Sie liegt neu bei 4.3 GHz. Die -10 dB Bandbreite beträgt 278 MHz. Der $S_{11}$ Wert zeigt bei 4.3 GHz -13.2 dB.\\
-Ein Smith-Diagramm zeigt eine Antennenimpedanz von (24.4+j379)$\Omega$ auf. Die Abbildung \ref{Impedanz_Loop_Vergleich_Simulation} zeigt den Realteil als Kurve gelbe und den Imaginärteil als pinken Kurve auf. \\
+Die Abbildung \ref{S11_Loop_Vergleich_Simulation} zeigt, dass die Resonanzfrequenz aufgrund der beiden ABS Stücke weiter sinkt. Sie liegt neu bei 4.3 GHz. Die -10 dB Bandbreite beträgt 278 MHz. Der $S_{11}$ Wert zeigt bei 4.3 GHz -13.2 dB.\\
+Ein Smith-Diagramm zeigt eine Antennenimpedanz von (24.4+j379)$\Omega$ auf. Die Abbildung \ref{Impedanz_Loop_Vergleich_Simulation} zeigt den Realteil als gelbe Kurve und den Imaginärteil als pinke Kurve auf. \\
 %\begin{figure}[!ht]
 %	\begin{center}
 %	\minipage{0.4\textwidth}
@@ -797,7 +798,7 @@ Ein Smith-Diagramm zeigt eine Antennenimpedanz von (24.4+j379)$\Omega$ auf. Die 
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%
 %\newpage
-Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfeld zeigt, dass der Kunststoff Auswirkungen auf die Resonanzfrequenz in ähnlicher Weise wie bei einer Dipolantenne zeigt.\\
+Die Simulationen der Loopantenne mit ABS Kunststoff im Nahfeld zeigt, dass der Kunststoff Auswirkungen auf die Resonanzfrequenz in ähnlicher Weise wie bei einer Dipolantenne hat.\\
 Die Abstrahleffizienz ist knapp über $3\%$. Die erhebliche Fehlanpassung macht sich deutlich bemerkbar. Die Abstrahlrichtung mit der stärksten Ausprägung zeigt nur 1.59dBi. Das ist in der Abbildung \ref{fig:sim_Loop_freiraum_3D_2ABS} gezeigt.
 %%%%%%%%%%%%%%%%
 %\begin{figure}[h]
@@ -853,29 +854,29 @@ Die Abstrahleffizienz ist knapp über $3\%$. Die erhebliche Fehlanpassung macht 
 %\captionof{figure}{Messwerte des Versuches IV}
 }
 \subsubsection{Interpretation der Simulationen der Loop Antennen}
-Die drei Simulationen der Loop Antenne im Freiraum, Mit einem ABS Kunststoffstück im Nahfeld und mit zwei ABS Kunststoffstücken im Nahfeld haben gezeigt, dass der Kunststoff eine erhebliche Verschiebung des Resonanzfrequenz mit sich bringt. Dabei ist der Unterschied in der Frequenzverschiebung bei zwei ABS Stücken nicht viel grösser als bei einem ABS Stück im Nahfeld. Der erzielte Gesamtwirkungsgrad $\eta_{tot}$ ist bei allen drei simulierten Antennen sehr tief. Er beträgt zwischen 1$\%$ und 3$\%$ bei der Zielfrequenz von 2.45 GHz.
-Dieser Wert ist nicht weiter verwunderlich, wenn der Verlauf des $S_{11}$ Wert in der Abbildung \ref{S11_Loop_Vergleich_Simulation} betrachtet wird. Es ist ersichtlich, dass bei der Frequenz von 2.45 GHz bei keiner der drei Antennen eine Resonanz auftritt. Das heisst, es findet beinahe eine Totalreflexion der zuführenden elektromagnetische Welle statt. Das 3D Richtdiagramm zeigt, dass der kleine Anteil der Leitung der in die Antenne gelangt annähernd isotrop abgestrahlt wird bei der Loop Antenne im Freiraum. Die beiden Antennen Kunststoff mit ABS im Nahfeld zeigen eine leichte Richtwirkung um 1.5 dBi das entspricht etwa einer Richtcharakteristik eines Dipols im Freiraum.
+Die drei Simulationen der Loop Antenne im Freiraum, Mit einem und mit zwei ABS Kunststoffstücken im Nahfeld haben gezeigt, dass der Kunststoff eine erhebliche Verschiebung des Resonanzfrequenz mit sich bringt. Dabei ist der Unterschied in der Frequenzverschiebung bei zwei ABS Stücken nicht viel grösser als bei einem ABS Stück im Nahfeld. Der erzielte Gesamtwirkungsgrad $\eta_{tot}$ ist bei allen drei simulierten Antennen sehr tief. Er beträgt zwischen 1$\%$ und 3$\%$ bei der Zielfrequenz von 2.45 GHz.
+Dieser Wert ist nicht weiter verwunderlich, wenn der Verlauf des $S_{11}$ Wert in der Abbildung \ref{S11_Loop_Vergleich_Simulation} betrachtet wird, daraus ist ersichtlich, dass bei der Frequenz von 2.45 GHz bei keiner der drei Antennen eine Resonanz auftritt. Das heisst, es findet beinahe eine Totalreflexion der zuführenden elektromagnetische Welle statt. Das 3D Richtdiagramm zeigt, dass der kleine Anteil der Leitung der in die Antenne gelangt annähernd isotrop abgestrahlt wird, wie bei einer Loop Antenne im Freiraum. Die beiden Antennen  mit ABS Kunststoff im Nahfeld zeigen eine leichte Richtwirkung um 1.5 dBi das entspricht etwa einer Richtcharakteristik eines Dipols im Freiraum.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
 \subsubsection{Simulationen einer Loop Antenne mit mehreren Windungen}
-Im vorhergehenden Abschnitt Kapitel \ref{sec:SimL2Loop} sind anhand eines einfachen Modells die Eigenschaften einer Loop Antenne mit umliegendem Kunststoff gezeigt. Der Effekt des Kunststoffes im Nahfeld einer Loop Antenne war grösser als erwartet. Es ist ein Detuning wie bei einer Dipolantenne feststellbar. Das heisst die Resonazfrequenz sank als sich Kunststoff im Nahfeld der Loop Antenne befand. Demnach hat der kunststoff mehr elektromagnetische Energie aufgenommen als erwartet. Dass das Detuning auch eine Chancen bildet, zeigen die drei folgenden Simulationen der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation}. Es wurde immer dieselbe Antennenstruktur simuliert. Diese ist ähnlich wie eine RFID Spule aufgebaut. Drei lange, flache Windungen die sich nicht berühren stellen die Strahlendestrucktur dar. Die äusserste Windung ist nicht Höher als 10mm und die Länge beträgt nicht mehr als 55mm. Demnach  berücksichtigt die Spule das mögliche Antennenvolumen des Fluginstrument. Die Simulation wurde drei mal mit unterschiedlicher Antennenümgebung durchgeführt. Die erste Simulation zeigt die Antenne im Freiraum, sie ist in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} mit einer roten Kurve gezeigt. Die zweite Simulation zeigt den $S_{11}$ Wert mit einem ABS Stück im Nahfeld, diese ist als blaue Kurve in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} dargestellt. Die dritte Simulation zeigt die Antennenstruktur zwischen zwei ABS Kunststoffstücken, deren $S_{11}$ Verhalten ist in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} mit grüner Farbe abgegbildet.\\
+Im vorhergehenden Abschnitt (Kapitel \ref{sec:SimL2Loop}) sind anhand eines einfachen Modells die Eigenschaften einer Loop Antenne mit umliegendem Kunststoff gezeigt. Der Effekt des Kunststoffes im Nahfeld einer Loop Antenne war grösser als erwartet. Es ist ein Detuning wie bei einer Dipolantenne feststellbar. Das heisst die Resonazfrequenz sank als sich Kunststoff im Nahfeld der Loop Antenne befand. Demnach hat der kunststoff mehr elektromagnetische Energie aufgenommen als erwartet. Dass das Detuning auch eine Chancen bildet, zeigen die drei Simulationen der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation}. Es wurde immer dieselbe Antennenstruktur simuliert. Diese ist ähnlich wie eine RFID (\textit{radio-frequency identification}) Spule aufgebaut. Drei lange, flache Windungen die sich nicht berühren stellen die Strahlendestrucktur dar. Die äusserste Windung ist nicht höher als 10mm und die Länge beträgt nicht mehr als 55mm. Demnach  berücksichtigt die Spule das mögliche Antennenvolumen des Fluginstrument. Die Simulation wurde drei Mal mit unterschiedlicher Antennenümgebung durchgeführt. Die erste Simulation zeigt die Antenne im Freiraum, sie ist in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} mit einer roten Kurve gezeigt. Die zweite Simulation zeigt den $S_{11}$ Wert mit einem ABS Stück im Nahfeld, diese ist als blaue Kurve in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} dargestellt. Die dritte Simulation zeigt die Antennenstruktur zwischen zwei ABS Kunststoffstücken, deren $S_{11}$ Verhalten ist in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} mit grüner Farbe abgegbildet.\\
 
 \textbf{Loop Antenne mit drei Windungen im Freiraum}\\
-Die Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} zeigt die Rückflussdämpfung der Antennenstruktur in roter Farbe. Die Kurve bestätigt  einen sehr schmalbandigen $S_{11}$ Verlauf. Die -10 dB Bandbreite beträgt 34 MHz. Der maximale $S_{11}$ Wert liegt bei 3.3 GHz und weist -11.4 dB aus. In Abbildung \ref{Impedanz_Loop_3N_Vergleich_Simulation} ist die Antennenimpedanz von (37+j375)$\Omega$ als kombination der roten Kurve für den Realteil und als blaue Kurve für den Imaginärteil dargestellt. Dabei resultiert eine Abstrahleffizienz von ca. $\eta=2.24\%$. Das beutet, dass nur ein kleiner Teil der zugeführten Leisugn effektiv abgestrahlt wird.
+Die Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} zeigt die Rückflussdämpfung der Antennenstruktur in roter Farbe. Die Kurve bestätigt  einen sehr schmalbandigen $S_{11}$ Verlauf. Die -10 dB Bandbreite beträgt 34 MHz. Der maximale $S_{11}$ Wert liegt bei 3.3 GHz und weist -11.4 dB aus. In Abbildung \ref{Impedanz_Loop_3N_Vergleich_Simulation} ist die Antennenimpedanz von (37+j375)$\Omega$ als kombination der roten Kurve für den Realteil und als blaue Kurve für den Imaginärteil dargestellt. Dabei resultiert eine Abstrahleffizienz von ca. $\eta=2.24\%$. Das beutet, dass nur ein kleiner Teil der zugeführten Leisugn effektiv abgestrahlt wird.\\
 %%%%%%%%%%%%%%%%
 
 \textbf{Loop Antenne mit drei Windungen und mit einem ABS Stück im Nahfeld}\\
-Die blaue Kurve in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} zeigt den dreifach Loop mit einem angrenzenden ABS Kunststoff Stück. Der maximale $S_{11}$ Wert resultiert bei 2.5 GHz mit einer Rückflussdämpfung von -14 dB. Demnach ist die Resonazfrequenz um 800 MHz gefallen, der Kunststoff im Nahfeld hat dieselbe wirkung wie eine verlängerte Antennenstrucktur. Die -10dB Bandbreite ergiebt 51 MHz. Die simulierte Antennenimpedanz bei 2.45 GHz entspricht (19.7-j49)$\Omega$. Dies führt zu einer Abstrahleffizienz von 29$\%$.\\
+Die blaue Kurve in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} zeigt den dreifach Loop mit einem angrenzenden ABS Kunststoff Stück. Der maximale $S_{11}$ Wert resultiert bei 2.5 GHz mit einer Rückflussdämpfung von -14 dB. Demnach ist die Resonazfrequenz um 800 MHz gefallen, der Kunststoff im Nahfeld hat dieselbe wirkung wie eine verlängerte Antennenstrucktur. Die -10 dB Bandbreite ergiebt 51 MHz. Die simulierte Antennenimpedanz bei 2.45 GHz entspricht (19.7-j49)$\Omega$. Dies führt zu einer Abstrahleffizienz $\eta$ von 29$\%$.\\
 %%%%%%%%%%%
 
 \textbf{Loop Antenne mit drei Windungen und zwei ABS Stücken im Nahfeld}\\
 Ein Loop mit drei Windungen, der zwischen zwei ABS Kunststoffstücken positioniert ist, wird mit der grünen Kurve in der Abbildung \ref{S11_Loop_3N_Vergleich_Simulation} gezeigt.\\
 
 Die maximale $S_{11}$ Dämpfung liegt bei 2.45 GHz. Die -10dB Bandbreite beträgt 30 MHz. Das weitere Kunststoffstück hat die resonazfrequenz um weitere 50 MHz gesenkt. Zudem ist die Bandbreite bandbreite weriter gefallen. Die Effizienz liegt bei einer Frequenz von 2.45Ghz bei $16\%$. Bei der Entwurfsfrequenz von 2.45GHz resultiert eine Antennenimpedanz $Z_{ant}$ von (25.83+j161.42)$\Omega$.
-Eine Richtwirkung von 4.7dBi zeigt das 3D Richtdigramm aus der Abbildung \ref{fig:sim_Loop_3Fach_2ABS_3D}.
+Eine Richtwirkung von 4.7dBi ist im 3D Richtdigramm der Abbildung \ref{fig:sim_Loop_3Fach_2ABS_3D} ersichtlich.
 %%%%%%%%%
 \newpage
 Die folgende Abbildung enthält alle drei $S_{11}$ Verläufe der Simulationen der Loop Antenne mit drei Winudngen. Die rote Kurve zeigt den $S_{11}$ Verlauf der Loop Antenne im Freiraum. Die Blaue stellt den Verlauf des $S_{11}$ Werts mit einem ABS Stück im Nahfeld der Antenne dar. Die Grüne Kurve zeigt den $S_{11}$ Verlauf des Loopmit zwei ABS Stücken im Nahfeld. Alle drei zeigen eine sehr Schamlbandiges Verhalten. Keine der drei Verläufe zeigt eine -10 dB Bantbreite von 100 MHz. Zu beobachten ist, dass die resonazfrequenz von der roten zur blauen Kurve um 800 MHz fällte, wenn Kunststoff ins Nahfeld der Antenne befindet.
@@ -941,7 +942,7 @@ $Z_{ant}$ bei 2.45 GHz der Loop Antenne mit drei Winungen und mit zwei ABS Stüc
 Die folgenden drei Abbildungen \ref{fig:sim_Loop_3Fach_freiraum_3D}, \ref{fig:sim_Loop_3Fach_1ABS_3D} und \ref{fig:sim_Loop_3Fach_2ABS_3D} zeigen alle drei die Richtdiagramme in 3D der Loop Antennen mit drei Winungen. Alle Richtdiagramme zeigen ein Qualitatives Abstrahlverhalten der Antennen bei einer Frequenz von 2.45 GHz.
 In der Abbildung \ref{fig:sim_Loop_3Fach_freiraum_3D} ist eine Richtdiagramm der Loop Antenne mit drei Windungen im Freiraum gezeigt. Die Richtcharakteristik zeigt einen maximalen $D$ Wert  von 3.4 dBi.\\
 Das Richtdiagramm der Loop Antenne mit angrenzendem Kunststoffstück ist in Abbildung \ref{fig:sim_Loop_3Fach_1ABS_3D} gezeigt. Die maximale Richtcharakteristik weisst einen $D$ Wert von 4.55 dBi auf.\\
-Eine Richtcharakteristik von 4.7 dBi zeigt die Abbildung \ref{fig:sim_Loop_3Fach_2ABS_3D}. Sie stellt die Simulation mit zwei angrenzenden Kunsstoffstücken dar.
+Eine Richtcharakteristik von $D$=4.7 dBi zeigt die Abbildung \ref{fig:sim_Loop_3Fach_2ABS_3D}. Sie stellt die Simulation mit zwei angrenzenden Kunsstoffstücken dar.
 %%%%%%%%
 \begin{figure}[h]
 	\begin{center}
@@ -1017,11 +1018,13 @@ Eine Richtcharakteristik von 4.7 dBi zeigt die Abbildung \ref{fig:sim_Loop_3Fach
 %%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \subsection{Vergleich aus den Simulationen der Loop Antennen}
-Die folgende Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} zeigt die wesentlichen Parameter aus den drei Simulationen der $\lambda/2$ Dipolantenne, der $\lambda/2$ Loop Antenne und der Loop Antenne mit drei Windungen. Für jede der Antennen wurden die Werte für die drei Fälle aufgenommen.\\
-Fall 1 die Antenne befindet sich im Freiraum.\\
-Fall 2 an die Antenne ist ein Kunststoffstück angebracht.\\
-Fall 3 die Antenne wird von beiden Seiten von Kunststoffstücken umschlossen.\\
-Die Bandbreite beschreibt die -10dB Bandbreite in MHz. Die relative Bandbreite ist ohne Einheit und die Angabe erfolgt in $\%$. Die relative Bandbreite wird durch die Division der -10dB Bandbreite und der Resonanzfrequenz gebildet. Als Resonanzfrequenz wird bei jeder Simulation die Frequenz mit der grössten |$S_{11}$| Dämpfung bestimmt.\\
+Die folgende Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} zeigt die wesentlichen Parameter aus den drei Simulationen der $\lambda/2$ Dipolantenne, der $\lambda/2$ Loop Antenne und der Loop Antenne mit drei Windungen. Für jede der Antennen wurden die Werte für die drei Fälle aufgenommen:\\
+\begin{itemize}
+\item Fall 1 Die Antenne befindet sich im Freiraum.
+\item Fall 2 An die Antenne ist ein Kunststoffstück angebracht.
+\item Fall 3 Die Antenne wird von beiden Seiten von Kunststoffstücken umschlossen.
+\end{itemize}
+andbreite beschreibt die -10dB Bandbreite in MHz. Die relative Bandbreite ist ohne Einheit und die Angabe erfolgt in $\%$. Die relative Bandbreite wird durch die Division der -10dB Bandbreite und der Resonanzfrequenz gebildet. Als Resonanzfrequenz wird bei jeder Simulation die Frequenz mit der grössten |$S_{11}$| Dämpfung bestimmt.\\
 
 %Die Tabelle \ref{tab:Evaluation_Vergeich_Dipolantennen} beinhaltet einige Vergleichswerte der $\lambda/2$ Dipolantenne.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1041,7 +1044,7 @@ Die Bandbreite beschreibt die -10dB Bandbreite in MHz. Die relative Bandbreite i
 %\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Tabelle \ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05} beinhaltet einige Vergleichswerte der $\lambda/2$ Loop Antenne.
+Die Tabelle \ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05} beinhaltet Vergleichswerte der $\lambda/2$ Loop Antenne.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!h]
  \centering
@@ -1059,7 +1062,7 @@ zwei ABS Stücke & -13.2 @ 4.30 	&	24.5-j379	& 3.1	&	278 & 6.2\\
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Die Tabelle \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} beinhaltet die Vergleichswerte der Loop Antenne mit drei Windungen.
+Die Tabelle \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} beinhaltet Vergleichswerte der Loop Antenne mit drei Windungen.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!h]
  \centering
@@ -1108,10 +1111,10 @@ Die Loop Antennen mit mehreren Windungen sind unter Berücksichtigung des gegebe
 
 \subsubsection{Antennenkriterien}
 \textbf{Antennengüte Q}\\
-Bei Antennen wird der Gütefaktor auch Q Wert genannt. Je grösser der Gütefaktor, desto schmalbandiger und je niedriger der Gütefaktor, desto breitbandiger sind Antennen. Für Q$>>$ als 1 gilt: $Q \approx\frac{1}{B_{-3dB}}$. Dieser wird aus dem Verhältnis der Mittenfrequenz $F_{c}$ zur Antennenbandbreite B berechnet, wobei die Mittenfrequenz aus dem Mittelwert der oberen und unteren Grenzfrequenz errechnet werden kann. $Q = f_c/(f_0-f_u)$, mit $f_c$ als Mittenfrequenz, $f_u$ als untere Grenzfrequenz und $f_o$ als obere Grenzfrequenz. \cite{Guetefaktor_Q}.\\
+Bei Antennen wird der Gütefaktor auch Q Wert genannt. Je grösser der Gütefaktor, desto schmalbandiger und je niedriger der Gütefaktor, desto breitbandiger sind Antennen. Für Q$>>$ als 1 gilt: $Q \approx\frac{1}{B_{-3dB}}$. Dieser wird aus dem Verhältnis der Mittenfrequenz $f_{c}$ zur Antennenbandbreite B berechnet, wobei die Mittenfrequenz aus dem Mittelwert der oberen und unteren Grenzfrequenz errechnet werden kann: $Q = f_c/(f_0-f_u)$, mit $f_c$ als Mittenfrequenz, $f_u$ als untere Grenzfrequenz und $f_o$ als obere Grenzfrequenz. \cite{Guetefaktor_Q}.\\
 \textbf{Bandbreite B}\\
-In der Nachrichten-, Audio- und Hochfrequenztechnik wird die Bandbreite für einen Frequenzbereich angegeben. Die Bandbreite entspricht dem Frequenzbereich, in dem elektrische Signale mit einem Amplitudenabfall bis zu einer definierten Grenze. Es handelt sich um eine Frequenzdifferenz zwischen der oberen $f_o$ und der unteren Frequenz $f_u$. Oft ist die Amplitudendgrenze bei -3dB angesetzt. Bei -3dB ist die Signalstärke auf 0.707 des Maxialwerts abgesunken. Das bedeutet, das Signal hat bei -3dB um die Hälfte der maximalen Leistung abgenommen\cite{Bandbreite_B}.
-In den Tabellen \ref{tab:Evaluation_Vergeich_Dipolantennen} ,\ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05}, \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} und \ref{nutzwertEvaluation} bezieht man sich auf die -10dB Bandbreite in [MHz].\\
+In der Nachrichten-, Audio- und Hochfrequenztechnik wird die Bandbreite für einen Frequenzbereich angegeben. Die Bandbreite entspricht dem Frequenzbereich, in dem ein Signale um einen definierten Wert kleiner ist als der Spitzenwert. Es handelt sich um eine Frequenzdifferenz zwischen der oberen $f_o$ und der unteren Grenzfrequenz $f_u$. Oft ist die Amplitudendgrenze bei -3dB angesetzt. Bei -3dB ist die Signalstärke auf 0.707 des Maxialwerts abgesunken. Das bedeutet, das Signal hat bei -3dB um die Hälfte der maximalen Leistung abgenommen\cite{Bandbreite_B}.
+In den Tabellen \ref{tab:Evaluation_Vergeich_Dipolantennen} ,\ref{tab:Evaluation_Vergeich_Loop_Antennen_Lmabda05}, \ref{tab:Evaluation_Vergeich_Loop_Antennen_Coil} und \ref{nutzwertEvaluation} bezieht man sich auf die -10dB Bandbreite in [MHz], sie beschreibt den Frequenzbereich, bei dem der $S_{11}$ Wert eine grössere Dämpfung als -10 dB einnimmt.\\
 \textbf{Mittenfrequenz $f_{c}$}\\
 Die Mittenfrequenz $f_c$ ist definiert über die obere und untere Grenzfrequenz. Sie wird hier als geometrisches Mittel zwischen der oberen Grenzfrequenz $F_o$ und der untere Grenzfrequenz $f_u$ wie folgt gebildet: $f_c=\sqrt{f_o*f_u}$. Die Mittenfrequenz muss nicht der Resonanzfrequenz $f_{res}$ entsprechen.\\
 \textbf{Resonanzfrequenz $f_{res}$}\\
@@ -1119,18 +1122,18 @@ Die Resonanzfrequenz ist in dieser Arbeit als jene Frequenz erachtet worden, die
 %%%%%%
 \textbf{Relative Bandbreite d}\\
 Die relative Bandbreite wird in dieser Arbeit aus der -10 dB Bandbreite und der  
-Resonanzfrequenz gebildet $d=\dfrac{Bandbreite_{-10dB}}{f_{res}}*100$. Die Multiplikation mit 100, ermöglicht ein einfaches ablesen der Relative Bandbreite in Prozent. \\
+Resonanzfrequenz gebildet in dem: $d=\dfrac{Bandbreite_{-10dB}}{f_{res}}*100$. Die Multiplikation mit 100, ermöglicht ein einfaches ablesen der relativen Bandbreite in Prozent. \\
 %%%%%%
 \textbf{Richtcharakteristik D}\\
 Die Richtcharakteristik ist das Verhältnis der maximalen Leistungsdichte der Antenne gegenüber einem isotropen Strahler in dBi.\\
 \textbf{Abstrahleffizienz $\eta$}\\
-Man unterscheidet zwischen $\eta_{rad}$ und $\eta_{Total}$. Die Abstrahleffizienz des Strahlungswiderstands ist definiert als $\eta_{rad}=\dfrac{R_{rad}}{R_{rad}+R_v}=\dfrac{P_{rad}}{P_{ant}}$. Die totale Abstrahleffizienz vergleicht die von der Antenne abgestrhalte Leistung $P_{rad}$ mit der zugeführten Leistung $P_{ein}$ . Sie berechnet sich als $\eta_{Total}=\dfrac{P_{rad}}{P_{Leitung}+P_{rad}}$. In diesem Kapitel ist immer die totale Abstrahleffizienz erwähnt.\\
+Man unterscheidet zwischen $\eta_{rad}$ und $\eta_{Total}$. Die Abstrahleffizienz des Strahlungswiderstands ist definiert als $\eta_{rad}=\dfrac{R_{rad}}{R_{rad}+R_v}=\dfrac{P_{rad}}{P_{ant}}$. Die totale Abstrahleffizienz vergleicht die von der Antenne abgestrhalte Leistung $P_{rad}$ mit der zugeführten Leistung $P_{ein}$ . Sie berechnet sich als $\eta_{Total}=\dfrac{P_{rad}}{P_{Leitung}+P_{rad}}$. In vorliegenden Kapitel ist immer die totale Abstrahleffizienz erwähnt.\\
 \textbf{Antennenimpedanz $Z_{ant}$}\\
 Die Antennenimpedanz ist eine komplexe Grösse. Sie fasst alle Real- und Imginärteile der Antenne in einem Wert zusammen.\\
 \textbf{Produktionsaufwand}\\
 Eine Schätzung, wie aufwenig ein Produkt herzustellen ist. Die Anzahl der Arbeitsschritte oder die Menge und die Verfühgbarkeit der Materialen werden berücksichtigt.\\
 \textbf{Kosten}\\
-Eine Abschätzung wie Kostenintensiv ein Produkt ist.
+Eine Abschätzung wie kostenintensiv ein Produkt ist.
 \newpage 
 \thispagestyle{empty}
 
