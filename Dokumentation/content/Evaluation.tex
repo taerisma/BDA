@@ -208,39 +208,33 @@ Dipol Antennen mit $2l=\lambda/2$ werden oft Referenzdipol oder Halbwellendipol 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Im Gegensatz zur idealisierten theoretischen Betrachtung muss in der Realität die Länge des $\lambda /2$-Dipols um den Verkürzungsfaktor $V$ verringert werden, damit der Dipol bei der gewünschten Resonanzfrequenz schwingt. Oder anders gesagt, bei einem Halbwellendipol mit definierter Länge $2l=\lambda/2$ wird die Resonanzfrequenz tiefer sein als erwartet. Bei Kürzung der Antenne steigt die Signalfrequenz. Die Verkürzung der Dipollänge ist in Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt. \\
+$V$ ist abhängig von der Geometrie und dem Material der Antenne sowie den umgebenden Materialien \cite{Hcuno}. Da der Verkürzungsfaktor $V$ für das Antennendesign entscheidend ist,  wird an dieser Stelle genauer auf den Verkürzungsfaktor $V$ und die damit verbundene Ausbreitungsgeschwindigkeit der elektromagnetischen Welle $v_p$ eingegangen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein.
+
 \newpage
-Im Gegensatz zur idealisierten theoretischen Betrachtung muss in der Realität die Länge des $\lambda /2$-Dipols um den Verkürzungsfaktor $V$ verringert werden, damit der Dipol bei der gewünschten Resonanzfrequenz schwingt. $V$ ist abhängig von der Geometrie und dem Material der Antenne sowie den umgebenden Materialien \cite{Hcuno}. Die Verkürzung der Dipollänge ist in Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt. Der Verkürzungsfaktor $V$ ist für das Antennendesign entscheidend. Daher soll an dieser Stelle etwas genauer auf den Verkürzungsfaktor $V$ und die damit verbundene Ausbreitungsgeschwindigkeit der elektromagnetischen Welle $v_p$ eingegangen werden.\\
-Die Ausbreitungsgeschwindigkeit $v_p$, die Wellenlänge $\lambda$ und die Frequenz $f$ sind voneinander abhängige Grössen. Die Ausbreitungsgeschwindigkeit beschreibt, wie schnell sich ein Signal im Medium, das heisst im Vakuum, in der Luft oder in einer Leitung, fortpflanzt. Die Ausbreitungsgeschwindigkeit im Vakuum wird mit dem Buchstaben $c$ abgekürzt. In diesem breitet sich eine elektromagnetische Welle mit $c_0 = $ 299'792’458 [m/s] aus. In der Praxis kann mit 300'000 km/s gerechnet werden. Die Wellenlänge beschreibt die Länge einer vollständigen Schwingung. Sie ist der kleinste Abstand zweier phasengleicher Punkte einer Welle und wird mit dem Buchstaben $\lambda$ abgekürzt. Die Frequenz beschreibt die Anzahl der Schwingungen in einem Zeitraum von einer Sekunde. Die Einheit der Frequenz ist Hertz und wird mit Hz abgekürzt. Ein Hertz beschreibt eine Schwingung pro Sekunde [1/s] \cite{Verkuertzungsfaktor}.
+Die Ausbreitungsgeschwindigkeit $v_p$, die Wellenlänge $\lambda$ und die Frequenz $f$ sind voneinander abhängige Grössen. Die Ausbreitungsgeschwindigkeit beschreibt, wie schnell sich ein Signal im Medium, das heisst im Vakuum, in der Luft oder in einer Leitung, fortpflanzt. Die Ausbreitungsgeschwindigkeit im Vakuum wird mit dem Buchstaben $c_0$ abgekürzt. In diesem breitet sich eine elektromagnetische Welle mit $c_0 = $ 299'792’458 [m/s] aus. In der Praxis kann mit 300'000 km/s gerechnet werden. Die Wellenlänge beschreibt die Länge einer vollständigen Schwingung. Sie ist der kleinste Abstand zweier phasengleicher Punkte einer Welle und wird mit dem Buchstaben $\lambda$ abgekürzt. Die Frequenz beschreibt die Anzahl der Schwingungen in einem Zeitraum von einer Sekunde. Die Einheit der Frequenz ist Hertz und wird mit Hz abgekürzt. Ein Hertz beschreibt eine Schwingung pro Sekunde [1/s] \cite{Verkuertzungsfaktor}.
 Es gilt der Zusammenhang $\lambda = \dfrac{c_0}{f}$. \\
-Die Ausbreitungsgeschwindigkeit ist in einem homogenen Medium konstant. Wird die Frequenz erhöht, so muss die Wellenlänge kürzer werden. Geht man von einer konstanten Frequenz, jedoch von sich ändernden Medien aus, so muss die Geschwindigkeit $v_p$, mit der sich eine elektromagnetische Welle im Medium fortbewegt, um den Verkürzungsfaktor $V$ kleiner als die Lichtgeschwindigkeit $c_0$.\\
-Die Fortpflanzungsgeschwindigkeit $v_p$ gibt die Geschwindigkeit einer Welle im Medium an $v_p=c_0*V $. Der Faktor $V$ gibt den Verkürzungsfaktor an, um den $v_p$ kleiner als die Lichtgeschwindigkeit $c_0$ ist. \\
-Der Verkürzungsfaktor V ist also definiert durch:
+Die Ausbreitungsgeschwindigkeit in einem verlustbehafteten Leiter entspricht nicht der Vakuumausbreitungsgeschwindigkeit einer elektromagnetischen Welle $c_0$, sondern $v_p=V c_0$. Die Geschwindigkeit $v_p$, mit der sich eine elektromagnetische Welle im Medium fortbewegt, ist also um den Verkürzungsfaktor $V$ kleiner sein als die Lichtgeschwindigkeit $c_0$.\\ 
+
+Der Verkürzungsfaktor V ist definiert durch:
 \begin{equation}
-V=\dfrac{v_p}{c_0}=\dfrac{c_0}{\sqrt{\epsilon_0 \mu_0}}
+V=\dfrac{v_p}{c_0}=\dfrac{c_0}{\sqrt{\epsilon_r \mu_r}}
 \end{equation}
-Wobei $\varepsilon_0$ die effektive Permittivitätszahl
- und $\mu_0$ die Permeabilitätszahl des Mediums ist. Beide Grössen sind frequenzabhängig und für die Berechnung des Verkürzungsfaktors in Leitungen werden kurze Rechteckpulse betrachtet, die hohe Frequenzen beinhalten, bei denen sich $\varepsilon$ einem Grenzwert nähert. Für Leitungen aus Kupfer und Aluminium gilt weiterhin, dass $\mu_r \approx 1$ entspricht. Bei einer verlustfreien Leitung gilt somit \cite{Verkuertzungsfaktor_wiki}:
+Hierbei entspricht $\varepsilon_r$ der Permittivitätszahl und $\mu_r$ der Permeabilitätszahl des Mediums. Beide Grössen sind frequenzabhängig. Bei einer verlustfreien Leitung kann der Verkürzungsfaktor auch mittels Kapazitätsbelag $C'$ und Induktivitätsbelag $L'$ berechnet werden \cite{Verkuertzungsfaktor_wiki}:
 \begin{equation}\label{V_verlustfreie_Leitung}
 V=\dfrac{1}{c_0 \sqrt{L'C'}} 
 \end{equation}
-Für (\ref{V_verlustfreie_Leitung}) gibt $C'$ den Kapazitätsbelag und $L'$ den Induktivitätsbelag der Leitung an und $c_0$ entspricht der Vakuumlichtgeschwindigkeit einer Welle.
-\begin{equation}\label{eq:v}
-\lambda=\dfrac{v_p}{f}
-\end{equation} 
-Aus (\ref{eq:v}) ist ersichtlich, dass die Wellenlänge $\lambda$ bei gleichbleibender Frequenz $f$ und sinkender Geschwindigkeit $v_p$ kürzer wird. 
-Um den Verkürzungsfaktor einer Antenne zu berechnen, müssen alle elektrischen, magnetischen und geometrischen materialabhänigen Parameter der Antenne und der unmittelbaren Umgebung bekannt sein. Ansonsten muss, mit empirischen Versuchsreihen die Ausbreitungsgeschwindigkeit ermittelt werden.\\
-
-\newpage
-Die Simulationen zeigen den Verkürzungseffekt, in dem die resultierende Antennenfrequenz tiefer ist als erwartet. Das heisst, aus $\lambda = \dfrac{c}{f}$ kann die Formel nach $f$ umgestellt werden. Das ergibt $f=\dfrac{c}{\lambda}$. Setzt man für $\lambda$ die Länge der Antenne in Meter ein, so resultiert eine Frequenz $f$. Die Ausbreitungsgeschwindigkeit in einem verlustbehafteten Leiter entspricht nicht der Vakuumausbreitungsgeschwindigkeit einer elektromagnetischen Welle $c_0$, sondern $v_p=V c_0$. Daher wird die Resonanzfrequenz tiefer sein als erwartet. Die Antenne muss um den Faktor  $V$ kürzer gerwählt werden und die Signalfrequenz wird steigen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein.\\
+Aufgrund der materialabhängigen Parameter müssen für die Berechnung des Verkürzungsfaktor einer Antenne die Materialeigenschaften der Antenne sowie deren unmittelbaren Umgebung bekannt sein. Ansonsten muss mit empirischen Versuchsreihen der Verkürzungsfaktur und hierüber die Ausbreitungsgeschwindigkeit ermittelt werden.\\
 
 %Weiter Komentar wiso es sich eine Verkürzung einstellt
 %H. Cuno, Vorbereitung auf die Amateurfunklizenzprüfung, Frech-VerlagStuttgart, 1976 
-Die idealierte, theoretische Betrachtung geht von einem unendlich dünnen Leiter aus, wobei der Dipol im ungestörten Raum sendet. Aufgrund der geforderten mechanischen Festigkeit müssen reale Dipole in der Praxis jedoch eine gewisse Mindestdicke aufweisen. Die Umgebung des Dipols kann ebenfalls nicht als völlig freier Raum angenommen werden. Realistischerweise befindet sich immer eine Quelle oder eine Zuleitung in der Nähe von realen Antennen. \\
-
-Wenn sich eine $\lambda /2$ lange Antenne vertikal über der Erde befindet, ergibt sich ein Strahlungsdiagramm mit den folgenden Eigenschaften: 
-Die Horizontalcharakteristik des vertikalen Halbwellendipols ist kreisförmig. Das Strahlungsdiagramm ist unabhängig vom Azimutwinkel $\varphi$ in der Horizontalebene des Dipols. Die Vertikalcharakteristik des Halbwellendipols erscheint jedoch gerichtet. Dies bedeutet, es besteht eine Abhängigkeit vom Winkel $\theta$ \cite{zinke1965lehrbuch}. 
-%O. Zinke, H. Brunswig, Lehrbuch der Hochfrequenztechnik, Band 1, 4. Auflage,Springer-Verlag, Berlin Heidelberg New York, 1990
-Nach \cite{elliott1981antenna} lässt sich die folgende Aussage für die Gewichtungsfunktion eines Dipols, der vertikal über der Erde polarisiert ist, machen \cite{elliott1981antenna}:
+Die idealierte theoretische Betrachtung geht zudem von einem unendlich dünnen Dipol aus, welcher im ungestörten Raum sendet. Aufgrund der geforderten mechanischen Festigkeit müssen reale Dipole in der Praxis jedoch eine gewisse Mindestdicke aufweisen. Die Umgebung des Dipols kann ebenfalls nicht als völlig freier Raum angenommen werden, da sich immer eine Quelle oder eine Zuleitung in der Nähe von realen Antennen befindet. Für ein $\lambda /2$-Dipol vertikal über der Erde ergibt sich ein Strahlungsdiagramm mit den folgenden Eigenschaften  \cite{zinke1965lehrbuch}: 
+\begin{itemize}
+\item Kreisförmige Horizontalcharakteristik
+\item Unabhängigkeit vom Winkel $\varphi$ in der Horizontalebene
+\item Abhängigkeit vom Winkel $\theta$ in der Vertikalebene
+\end{itemize}
+Nach \cite{elliott1981antenna} gilt folgende Gewichtungsfunktion für oben beschriebenen Dipol:
 
 \begin{equation}\label{eq:FDipolTheat}
 F(\theta,\frac{l}{\lambda}=\dfrac{1}{2})=-\dfrac{2I_{m}}{k}\dfrac{\cos\left(\dfrac{\pi}{2}\cos\theta\right)}{\sin\theta}
@@ -248,30 +242,28 @@ F(\theta,\frac{l}{\lambda}=\dfrac{1}{2})=-\dfrac{2I_{m}}{k}\dfrac{\cos\left(\dfr
 
 %Braucht es eventuell noch ein Bild
 
-Die Nahfeldeigenschaften der Dipol Antenne weisen ein starkes E-Feld auf. Dieses zeigt eine Richtungsabhängigkeit vom Winkels $\theta$. Die starken E-Felder polarisieren alle Dielektrika in unmittelbarer Nähe des Dipols. Dies führt zu dielektrischen Verlusten, diese mit der Frequenz des Wechselfeldes steigen. Die dielektrischen Verluste können als Widerstände in Serie zu den idealen Komponenten eines Ersatzschaltbildes gedacht werden. Sie stellen die äquivalente Verlustleistung an einer Komponente dar und die Verlustenergie wird für das Polarisieren des umgebenden Dielektrikums benötigt. Die Ausrichtungsenergie ist Verlustenergie und kann somit nicht abgestrahlt werden.
-Das Dielektrikum ist ein elektrisch nicht leitendes Material das vom elektrischen Feld durchdringt wird. Die Feldgrössen des Dielektrikums sind die elektrische Feldstärke E und die elektrische Flussdichte D. Im elektrostatischen Fall, das heisst im zeitlich konstanten Fall und in einem isotropen Medium, ist die Flussdichte D durch die Permittivität $\varepsilon $ und durch die elektrische Feldstärke E beschrieben. Die folgende Beziehung in (\ref{eq:FlussdichteD}) zeigt die Verknüpfung von $\varepsilon$ und des E-Feldes \cite{Emant}:
+Im Nahfeld einer Dipol Antenne dominiert ein starkes E-Feld. Dieses zeigt eine Richtungsabhängigkeit vom Winkels $\theta$ und polarisiert alle Dielektrika, sprich elektrisch nicht leitende Materialien, in unmittelbarer Nähe des Dipols. Dies wiederum führt zu dielektrischen Verlusten, welche mit der Frequenz des Wechselfeldes ansteigen. Die dielektrischen Verluste können als Verluste, welche über in Serie zu den idealen Komponenten geschalteten Widerstände anfallen, betrachtet werden. Die Ausrichtungsenergie ist Verlustenergie und kann somit nicht abgestrahlt werden. Die Feldgrössen des Dielektrikums sind die elektrische Feldstärke E und die elektrische Flussdichte D. Im elektrostatischen Fall, das heisst im zeitlich konstanten Fall, und in einem isotropen Medium ist die Flussdichte D durch die Permittivität $\varepsilon $ und die elektrische Feldstärke E charakterisiert gemäss (\ref{eq:FlussdichteD}) \cite{Emant}:
 \begin{equation}\label{eq:FlussdichteD}
 D=\varepsilon E
 \end{equation}
-Die Permittivität $\varepsilon$ setzt sich, wie in (\ref{eq:Epsilon}) ersichtlich, aus der elektrischen Feldkonstante $\varepsilon_0$ und der materialspezifischen, relativen Permittivität $\varepsilon_r$ zusammen:
+Die Permittivität $\varepsilon$ setzt sich, wie in (\ref{eq:Epsilon}) ersichtlich, aus der elektrischen Feldkonstante $\varepsilon_0$ und der materialspezifischen relativen Permittivität $\varepsilon_r$ zusammen:
 \begin{equation}\label{eq:Epsilon}
 \varepsilon = \varepsilon_r \varepsilon_0
 \end{equation}
-Die Permittivitätskonstante $\varepsilon_{0}$ ist eine Naturkonstante. Sie erhält ihren Wert aus dem in (\ref{eq:Epsilon0}) ersichtlichen Zusammenhang. Die Konstante $\mu_{0}$ ist wie die Lichtgeschwindigkeit $c_0$ eine Naturkonstante und beschreibt die magnetische Feldkonstante. Sie ist definiert als \cite {WikiPermitt}: 
+Die Permittivitätskonstante $\varepsilon_{0}$ ist eine Naturkonstante. Sie erhält ihren Wert aus dem in (\ref{eq:Epsilon0}) ersichtlichen Zusammenhang. Die Konstante $\mu_{0}$ sowie die Lichtgeschwindigkeit $c_0$ sind weitere  Naturkonstanten. $\mu_{0}$ beschreibt die magnetische Feldkonstante. Sie ist in (\ref{mu_0})definiert \cite {WikiPermitt}: 
 \begin{equation}\label{mu_0}
-\mu_{0}=4\pi10^-7 [N/A^{2}] 
+\mu_{0}=4\pi10^-7  \ [N/A^{2}] 
 \end{equation}
 \begin{equation}\label{eq:Epsilon0}
-\varepsilon_{0} = \dfrac{1}{\mu_{0}c^{2}}=8.854187...[As/Vm]
+\varepsilon_{0} = \dfrac{1}{\mu_{0}c^{2}}=8.854187... \  [As/Vm]
 \end{equation}
-Da in einem Dielektrikum die Ladungsträger nicht frei beweglich sind, werden sie durch ein äusseres elektrisches Feld polarisiert. Dabei wird zwischen zwei Arten der Polarisation unterschieden:
+Da die Ladungsträger in einem Dielektrikum nicht frei beweglich sind, werden sie durch ein äusseres elektrisches Feld lediglich polarisiert. Dabei wird zwischen zwei Arten der Polarisation unterschieden:
 \begin{itemize}
 \item Verschiebungspolarisation
 \item Orientierungspolarisation
 \end{itemize}
-Bei der Verschiebungspolarisation werden elektrische Dipole induziert. Das heisst, die Dipole entstehen durch geringe Ladungsverschiebung in den Atomen, Molekülen oder zwischen verschieden geladenen Ionen. In einem Wechselfeld schwingen die negativen Elektronenhüllen und die positiven Atomkerne gegenläufig hin und her. Bei diesen Schwingungen entsteht Wärmeenergie. Diese kann gegenüber der Energie, die bei der Orientierungspolarisation entsteht, vernachlässigt werden. Die Bewegung des Atomkerns kann auf Grund seiner deutlich grösseren Masse im Vergleich zur Elektronenhüllenbewegung vernachlässigt werden. Somit wird der Atomkern als ortsfest betrachtet. \\
-Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter, permanenter Dipole eines Isolators im elektrischen Feld. Bei einem Wechselfeld müssen sich die Moleküle ständig umorientieren, wodurch Wärmeenergie entsteht \cite{DielektrikumPolarisation}.\\
-Im Nahfeld einer Antenne pendelt die nicht abgestrahlte Energie im Raum um die Antenne hin und her. Das Nahfeld baut sich auf und ab. Es wechselt mit der Resonanzfrequenz $f_{r}$ seine Richtung. Die Moleküle im dielektrischen Raum um die Antenne werden bei jeder Schwingung neu polarisiert. Das bedeutet, die Moleküle werden zwei Mal pro Schwingung neu ausgerichtet.\\
+Bei der Verschiebungspolarisation werden elektrische Dipole im Dielektrikum induziert. Das heisst, durch geringe Ladungsverschiebung in den Atomen, Molekülen oder zwischen verschieden geladenen Ionen entstehen Dipole. In einem Wechselfeld schwingen die negativen Elektronenhüllen und die positiven Atomkerne gegenläufig hin und her. Bei diesen Schwingungen entsteht Wärmeenergie. Diese kann jedoch gegenüber der Energie, welche bei der unten beschriebenen Orientierungspolarisation entsteht, vernachlässigt werden, da  die Atomkerns aufgrund ihrer Masse als ortsfest betrachtet werden und daher die Schwingungen der mit ihnen verbundenen Elektronenhüllen vernachlässigbar sind.\\
+Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter, permanenter Dipole eines Isolators im elektrischen Feld. In einem Wechselfeld müssen sich die Dipole ständig umorientieren, wodurch konstant Wärmeenergie entsteht \cite{DielektrikumPolarisation}. Bei jeder Schwingung werden die Dipole neu polarisiert, die Moleküle werden demzufolge zwei Mal pro Schwingung neu ausgerichtet. Im Nahfeld einer Antenne pendelt die nicht abgestrahlte Energie im Raum um die Antenne hin und her. Das Nahfeld baut sich auf und ab und wechselt mit der Resonanzfrequenz $f_{r}$ seine Richtung. \\
 Die im Dielektrikum gespeicherte Energie ist stark von der materialspezifischen, relativen Permittivität $\varepsilon_r $ abhängig.\\
 Die dielektrischen Verluste führen bei Antennen zu einem Detuning. Das Detuning ist zwar kaum zu berechnen, kann jedoch mit Hilfe von Simulationen bestimmt werden. Das Detuning entsteht durch Verluste in und um die Antenne.\\ 
 Das Detuning kann auch eine Chance darstellen. Es ist denkbar, dass durch das Detuning und eine veränderte Antennenimpedanz eine Anpassung entsteht, die eine wesentlich höhere Abstrahleffizienz $\eta_{tot}$ \ mit sich bringt. Weiter kann das Detuning eine Absenkung der Resonanzfrequenz hervorrufen, die sonst nur mit einer Vergrösserung der Antenne möglich wäre. Das kann ein Vorteil sein, wenn die Platzverhältnisse sehr eingeschränkt sind.\\
@@ -495,7 +487,7 @@ Die Antennenimpedanzen aller drei Simulationen sind in der folgenden Abbildung \
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \newpage
-\subsubsection{Simulierte 3D Richtdiagramme einer Loop Antenne mit drei Windungen}
+%
 Die folgenden drei Abbildungen \ref{fig:sim_Dipol_Freiraum_3D},
 \ref{fig:sim_Dipol_1ABS_3D} und 
 \ref{fig:sim_Dipol_2ABS_3D} zeigen alle drei die 3D Richtdiagramme einer Dipol Antenne bei einer Frequenz von 2.45 GHz. Sie zeigen ein qualitatives Abstrahlverhalten der Antennen. Die Richtwirkung aller drei Antennen ist etwa gleich sie zeigen alle einen Torus um die Antenne. Das elektromagnetische Feld ist wie aus der Theorie in Kapitel \ref{sec:Dipol Antenne} vom Winkel $\theta$ abhängig.
