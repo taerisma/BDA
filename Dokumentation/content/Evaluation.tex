@@ -389,16 +389,15 @@ Der Strahlungswiderstand des $\lambda/2$-Dipols entspricht, wie aus (\ref{RradDi
 
 \subsection{Simulationen eines Halbwellendipols}\label{sim_lamda2_Dipol}
 
-Das zur Verfügung stehende Volumen von 55 mm x 3.5 mm x 10 mm (L x B x H) für die Bluetooth Antenne ist in Kapitel \ref{sec:EigenschaftenAntenne} beschrieben und wurde bei den Simulationen berücksichtigt. Allerdings wurden diverse Vereinfachungen getroffen. Unter anderem wurde der ABS-Kunststoff mit einer Permittivität $\varepsilon_r $ von 4.3 [As/Vm] und einem Verlustwinkel von 0.02$^\circ$ simuliert. Diese Werte wurden als Frequenzunabhängig angenommen. Als Antennenstäbe wurde ein Kupferdraht mit einem Radius $r = 1.12 mm$ verwendet. Das Kupfer hat eine Leitfähigkeit von $\kappa=58*106 [1/\Omega m]$. Die Länge der beiden Antennenarme ist je 25 mm. Für die Quelle wurde eine Lücke von 2.45 mm ausgespart und ist als 50 Ohm reell definiert. Das Gehäuse, die Elektronik, der Akku und das Display wurden in dieser Simulationsreihe nicht berücksichtigt.\\ 
-Es wurden drei Simulationen durchgeführt.
+Das zur Verfügung stehende Volumen von 55 mm x 3.5 mm x 10 mm (L x B x H) für die Bluetooth Antenne ist in Kapitel \ref{sec:EigenschaftenAntenne} beschrieben und wurde bei den Simulationen berücksichtigt. Allerdings wurden diverse Vereinfachungen getroffen. Unter anderem wurde der ABS-Kunststoff mit einer Permittivität $\varepsilon_r $ von 4.3 [As/Vm] und einem Verlustwinkel von 0.02$^\circ$ simuliert. Diese Werte wurden zudem als frequenzunabhängig angenommen. Als Antennenstäbe wurde ein Kupferdraht mit einem Radius $r = 1.12\ mm$ verwendet. Kupfer hat eine Leitfähigkeit von $\kappa=58*10^{6}\ [1/\Omega m]$. Die Länge der beiden Antennenarme beträgt je 25 mm. Für die Quelle wurde eine Lücke von 2.45 mm im Zentrum der Dipolantenne ausgespart und ihre Impedanz ist als 50 Ohm reell definiert. Das Gehäuse, die Elektronik, der Akku und das Display des Fluginstruments wurden in dieser Simulationsreihe nicht berücksichtigt. Es wurden folgende drei Simulationen durchgeführt.
 \begin{enumerate}
-\item $\lambda/2 \ $Dipol im Freiraum
-\item $\lambda/2 \ $Dipol mit angrenzendem ABS Stück
-\item $\lambda/2 \ $Dipol eingeklemmt zwischen zwei ABS Stücken
+\item $\lambda/2-$Dipol Antenne im Freiraum
+\item $\lambda/2-$Dipol Antenne mit einem ABS-Kunststoffstück im Nahfeld
+\item $\lambda/2-$Dipol Antenne mit zwei ABS-Kunststoffstücken im Nahfeld
 \end{enumerate}
 
-\textbf{Simulationen einer $\lambda/2$ Dipol Antenne im Freiraum}\\
-Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}$ Diagramm eines Dipols im Freiraum. Die Resonanzfrequenz ist auf 2.42 GHz abgestimmt und es resultiert ein $S_{11}$ Wert von -16.1dB. Die -10dB Bandbreite beträgt 300 MHz. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt bei der Resonanzfrequenz einen Widerstand von 68.6 Ohm reell. Das ist nahe dem in der Theorie und mit (\ref{RradDipol}) gezeigten Wert von 73 Ohm. Die Impedanz bei einer Frequenz von 2.450 GHz zeigt weiter einen kapazitiven Imaginärteil von $-j4\Omega$. Der Realteil ist in der Abbildung \ref{Impedanz_Vergleich_Simulation} rot und der Imaginärteil als blaue Linie gezeichnet. Da die Anpassung an die Quellenimpedanz von reell 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \% $ erreicht.\\
+\textbf{Simulation einer $\lambda/2$-Dipol Antenne im Freiraum}\\
+Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}$-Diagramm eines Dipols im Freiraum. Bei der Simulation zeigt sich eine Resonanzfrequenz von 2.42 GHz mit einem $S_{11}$-Wert von -16.1 dB. Die -10 dB Bandbreite beträgt 300 MHz. Das zu dieser Freiraumsimulation gehörende Smith Diagramm zeigt bei der gewünschten Resonanzfrequenz von 2.45 GHz einen Widerstand von 68.6 Ohm reell. Das ist nahe dem in der Theorie gemäss (\ref{RradDipol}) errechneten Wert von 73 Ohm. Die Impedanz bei einer Frequenz von 2.45 GHz zeigt weiter einen kapazitiven Imaginärteil von $-j4\ \Omega$. Der Realteil ist in Abbildung \ref{Impedanz_Vergleich_Simulation} als rote und der Imaginärteil als blaue Kurve gezeichnet. Da die Anpassung an die Quellenimpedanz von reell 50 Ohm gut stimmt, wird eine hohe Abstrahleffizienz von $\eta = 97.5 \ \% $ erreicht.\\
 
 
 %\begin{figure}[!ht]
@@ -415,15 +414,11 @@ Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}
 %\end{figure}
 %\newpage
 
-\textbf{Simulationen einer $\lambda/2$ Dipol Antenne mit einem ABS Kunststoffstück im Nahfeld}\\
-In der Abbildung \ref{S11_Vergleich_Simulation} wird das $S_{11}$ Diagramm eines Dipols mit einem ABS Kunststoffstück im Nahfeld gezeigt  blaue Kurve dargestellt. Das ABS Stück hat die Masse: 100 x 2 x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz in der Abbildung \ref{S11_Vergleich_Simulation}. Der maximale $S_{11}$ Wert liegt neu rund 380 MHz tiefer bei 2.04 GHz. Er bringt eine Dämpfung von neu -20.79 dB mit sich. Die -10dB Bandbreite beträgt 340 MHz.\\
+\textbf{Simulation einer $\lambda/2$-Dipol Antenne mit einem ABS-Kunststoffstück im Nahfeld}\\
+In Abbildung \ref{S11_Vergleich_Simulation} wird das $S_{11}$-Diagramm eines Dipols mit einem ABS-Kunststoffstück im Nahfeld als blaue Kurve dargestellt. Das verwendete ABS-Stück hat die Masse 100 mm x 2 mm x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz, wodurch die Kurve in Abbildung \ref{S11_Vergleich_Simulation} nach links rutscht. Der maximale $S_{11}$-Wert liegt neu rund 380 MHz tiefer bei 2.04 GHz. Er bringt eine Dämpfung von -20.79 dB mit sich. Die -10dB Bandbreite beträgt 340 MHz. Real- und Imaginäranteil der simulierten Antenns sind in Abbildung \ref{Impedanz_Vergleich_Simulation} als grüne und schwarze Kurve gezeigt. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil  $+j39$ Ohm. Hieraus wird eine Fehlanpassung deutlich, da eine Quellenimpedanz von 50 Ohm reell besitzt. Insgesammt führt dies zu einer Abstrahleffizienz $\eta$ von 71.1$\ \%$.\\
 
-Real- und Imaginärteil werden in Abbildung \ref{Impedanz_Vergleich_Simulation} als grüne und schwarze Kurve gezeigt und macht eine Fehlanpassung deutlich. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil ist mit $+j39$ Ohm induktiv. Insgesammt führt dies zu einer Abstrahleffizienz $\eta$ von 71.1$\%$.\\
-
-\textbf{Simulationen einer $\lambda/2$ Dipol Antenne mit zwei ABS Kunststoffstücken im Nahfeld}\\
-Die dritte Simulation zeigt den $S_{11}$ Wert und die Impedanz der Antenne wenn diese zwischen zwei ABS Kunststoffstücken liegt. In der Abbildung \ref{S11_Vergleich_Simulation} ist der ensprechnede $S_{11}$ Wert als grüne Linie gezeichnet. Es zeigt sich dasselbe Verhalten wie bei der Simulation mit nur einem ABS Stück: \\
-Die Resonanzfrequenz sinkt weiter ab. Sie liegt neu bei 1.82 GHz und ist somit 220 MHz tiefer als bei der Simulation mit nur einem ABS Stück. Die Abbildung \ref{S11_Vergleich_Simulation} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz.\\
-Real-und Imaginärteil sind in der Abbildung \ref{Impedanz_Vergleich_Simulation} als gelbe Kurve für den Realteil und als rosa Kurve für den Imaginärteil gekennzeichnet. Sie zeigen eine erhebliche Fehlanpassung an die Referenzquelle. Die Abstrahleffizienz $\eta$ liegt nur noch bei $59.6 \%$. Da die Impedanz bei 2.45GHz $Z_{ant}$ =(206.192-j28.979)$\Omega$  entspricht.\\
+\textbf{Simulation einer $\lambda/2$-Dipol Antenne mit zwei ABS-Kunststoffstücken im Nahfeld}\\
+Die dritte Simulation bezieht sich auf eine Antenne, welche  zwischen zwei ABS-Kunststoffstücken liegt. In der Abbildung \ref{S11_Vergleich_Simulation} ist der ensprechnede $S_{11}$-Wert als grüne Linie gezeichnet. Es zeigt sich dasselbe Verhalten wie bei einer Antenne mit nur einem ABS-Stück. Die Resonanzfrequenz sinkt weiter ab, sie liegt neu bei 1.82 GHz und ist somit 220 MHz tiefer als bei der Simulation mit nur einem ABS-Stück. Die Abbildung \ref{S11_Vergleich_Simulation} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz. Real- und Imaginäranteil sind in der Abbildung \ref{Impedanz_Vergleich_Simulation} als gelbe Kurve für den Real- und als rosa Kurve für den Imaginäranteil dargestellt. Sie zeigen eine erhebliche Fehlanpassung an die Referenzquelle, die Abstrahleffizienz $\eta$ liegt daher nur noch bei $59.6 \ \%$. Die Impedanz $Z_{ant}$ entspricht bei 2.45 GHz (206.192-j28.979) $\Omega$.\\
 %\begin{figure}[!h]
 %\begin{center}
 %\minipage{0.4\textwidth}
@@ -452,7 +447,6 @@ Real-und Imaginärteil sind in der Abbildung \ref{Impedanz_Vergleich_Simulation}
 %\endminipage
 %\end{center}
 %\end{figure}
-Die $|S_{11}|$ Werte der drei Simulationen des $\lambda/2$ Dipols sind in der Grafik \ref{S11_Vergleich_Simulation} gezeigt. Das Detuning ist anhand der nach links verschobenen Kurven ersichtlich. Ebenso werden die Kurven schmalbandiger wenn sich Kunststoff im Nahfeld der Antennen befindet.
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
@@ -466,7 +460,8 @@ Die $|S_{11}|$ Werte der drei Simulationen des $\lambda/2$ Dipols sind in der Gr
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-Die Antennenimpedanzen aller drei Simulationen sind in der folgenden Abbildung \ref{Impedanz_Vergleich_Simulation} dargestellt. Jede der drei Impedanzen wird jeweils mit einer Kurve für den Realteil und den Imaginärteil dargestellt. Die simulierten Werte für die Impedanz $Z_{ant}$ bei der Frequenz von 2.45 GHz sind in der Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} für alle drei Simulationen aufgeführt.
+Die Grafik \ref{S11_Vergleich_Simulation} zeigt die $|S_{11}|$-Werte der drei simulierten $\lambda/2$-Dipole. In der Linksverschiebung der Kurven ist das Detuning bei Verwendung von ABS-Kunststoff im Nahfeld ersichtlich. Ebenso nimmt die -10 dB Bandbreite ab, wenn sich Kunststoff im Nahfeld der Antenne befindet.
+
 \begin{figure}[!ht]
 	\centering
 	\begingroup
@@ -477,6 +472,8 @@ Die Antennenimpedanzen aller drei Simulationen sind in der folgenden Abbildung \
 	\label{Impedanz_Vergleich_Simulation}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+Die Antennenimpedanzen aller drei Simulationen sind in der folgenden Abbildung \ref{Impedanz_Vergleich_Simulation} dargestellt. Jede der drei Impedanzen wird jeweils mit einer Kurve für den Realteil und den Imaginärteil dargestellt. Die simulierten Werte für die Impedanz $Z_{ant}$ bei der Frequenz von 2.45 GHz sind in der Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} für alle drei Simulationen aufgeführt.
 \clearpage
 \newpage
 %
