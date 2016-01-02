@@ -169,7 +169,7 @@ Für sie gilt:
 \end{enumerate} 
 
 \section{Dipol Antenne}
-Die Dipol Antenne ist eine häufig vorkommende Antennenform  mit zahlreichen Ausführungen. Ihr Abstrahlverhalten ändert sich mit ihren geometrischen Eigenschaften. Die Antennen werden oft entsprechend ihrer Länge in Kategorien eingeteilt. Eine Dipolarmlänge entspricht der halben Länge des Dipols und wird im folgenden Kapitel als $l$ bezeichnet. Dipol Antennen werden oft in die folgenden vier Gruppen eigeteilt:
+Die Dipol Antenne ist eine häufig vorkommende Antennenform  mit zahlreichen Ausführungen. Ihr Abstrahlverhalten ändert sich mit ihren geometrischen Eigenschaften. Eine Dipolarmlänge entspricht der halben Länge des Dipols und wird im Folgenden als $l$ bezeichnet. Dipol Antennen werden oft entsprechend ihrer Länge in Kategorien eingeteilt, dabei werden folgende vier Gruppen unterschieden:
 \begin{itemize}
 \item $2l<< \lambda/2 $
 \item $2l = \lambda/2 $
@@ -208,7 +208,7 @@ Dipol Antennen mit $2l=\lambda/2$ werden oft Referenzdipol oder Halbwellendipol 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Im Gegensatz zur idealisierten theoretischen Betrachtung muss in der Realität die Länge des $\lambda /2$-Dipols um den Verkürzungsfaktor $V$ verringert werden, damit der Dipol bei der gewünschten Resonanzfrequenz schwingt. Oder anders gesagt, bei einem Halbwellendipol mit definierter Länge $2l=\lambda/2$ wird die Resonanzfrequenz tiefer sein als erwartet. Bei Kürzung der Antenne steigt die Signalfrequenz. Die Verkürzung der Dipollänge ist in Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt. \\
+Im Gegensatz zur idealisierten theoretischen Betrachtung muss in der Realität die Länge des $\lambda /2$-Dipols um den Verkürzungsfaktor $V$ verringert werden, damit der Dipol bei der gewünschten Resonanzfrequenz schwingt. Oder anders gesagt, bei einem Halbwellendipol mit definierter Länge $2l=\lambda/2$ ist die Resonanzfrequenz tiefer als erwartet. Bei Kürzung der Antenne steigt die Signalfrequenz. Die Verkürzung der Dipollänge ist in Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt. \\
 $V$ ist abhängig von der Geometrie und dem Material der Antenne sowie den umgebenden Materialien \cite{Hcuno}. Da der Verkürzungsfaktor $V$ für das Antennendesign entscheidend ist,  wird an dieser Stelle genauer auf den Verkürzungsfaktor $V$ und die damit verbundene Ausbreitungsgeschwindigkeit der elektromagnetischen Welle $v_p$ eingegangen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein.
 
 \newpage
@@ -293,7 +293,7 @@ Das Verhältnis $\dfrac{\varepsilon^{''}}{\varepsilon^{'}}$ zwischen dem dielekt
 \end{equation}
 \newpage
 
-\subsection{Verwendung einer Dipol Antenne}
+\subsection{Verwendung einer Dipol Antenne in der \glqq Connect 1\grqq \ Serie}
 Eine symmetrisch gespeiste Halbwellenantenne ist einfach zu produzieren. Zwei elektrisch leitende Strahler mit  einer Länge von je $\lambda/4$ und eine symmetrische Zuleitung stellen einen geringen Produktionsaufwand dar. Die halbe Wellenlänge als strahlende Leiterlänge bedeutet bei einer Signalfrequenz von 2.45 GHz etwas weniger als $\lambda/2=0.06\  m$ Strahlerlänge. Ein Dipol mit der Länge von 6 cm ist im Raum zwischen der Hauptplatine und dem Gehäuse unterzubringen. 
 In der vorgegebenen Lokalisation ist die Antenne von sehr viel Acrylnitril-Butadien-Styrol (ABS)-Kunststoffmaterial umgeben, da das ganze Gehäuse des Fluginstruments aus diesem Material besteht, welches elektrisch nicht leitend und nicht magnetisch ist. Wie bereits mehrfach erwähnt sind alle Dipol Antennen in ihrem unmittelbaren Umfeld starke E-Feld Strahler. Die Polarisation führt aufgrund der materialspezifischen Permittivität des Dielektrikums ABS-Kunststoffes $\varepsilon_r$ = ca. 4.2 [As/Vm] bei 2.4 GHz zu einer erheblichen Energiespeicherung im reaktiven Nahfeld der Antenne. Aufgrund der grossen dielektrischen Verluste erfolgt eine starke Reduktion der Ausbreitungsgeschwindigkeit in der Antenne, was wiederum ein ausgeprägtes Detuning mit sich bringt \cite{WikiPermitt}.\\
 
@@ -537,7 +537,7 @@ Die Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} beinhaltet einige Vergl
 
 \newpage
 \section{Loop Antenne}
-Loop Antennen werden auch Rahmenantennen oder magnetische Antennen genannt. Sie bestehen aus einer oder mehreren Drahtwindungen, die auf einem Trägerrahmen aufgespannt sind. Sie sprechen auf die magnetischen Feldlinien des elektromagnetischen Feldes an. Sie sind nicht, wie es der Name vermuten lässt, magnetisch. Nur in unmittelbarer Nähe der Antenne ist ein starkes magnetisches Feld vorhanden und bereits in einem Abstand von $2\lambda$ Wellenlänge tritt neben dem magnetischen Feld ein starkes elektrisches Feld auf. Treten magnetische Feldlinien senkrecht durch die Loop-Fläche hindurch, so wird eine Spannung in die Windungen der Loop Antenne induziert. Für eine maximale Empfangsspannung muss deshalb die Schmalseite der Loop Antenne in Richtung eines Dipolsenders zeigen.
+Loop Antennen werden auch Rahmenantennen oder magnetische Antennen genannt. Sie bestehen aus einer oder mehreren Drahtwindungen, welche auf einem Trägerrahmen aufgespannt sind. Sie sind nicht, wie es der Name vermuten lässt, magnetisch. In unmittelbarer Nähe der Antenne ist jedoch ein starkes magnetisches Feld vorhanden. Bereits in einem Abstand von $2\lambda$ zur Antenne tritt neben dem magnetischen Feld ein ebenso starkes elektrisches Feld auf. Treten magnetische Feldlinien senkrecht durch die von den Windungen der Loop Antenne aufgespannten Fläche hindurch, so wird eine Spannung in den Windungen der Loop Antenne induziert. Für eine maximale Empfangsspannung am Fusspunkt der Loop Antenne muss diese deshalb in der Ebene eines Dipolsenders liegen.
 
 
 \subsection{Elektromagnetische Wellenabstrahlung von Loop Antennen}
@@ -670,13 +670,13 @@ Ein Wellenanpassung bei einer Loop Antenne ist aufgrund der Antennenimpedanz ohn
 Dementsprechend erreicht nur ein kleiner Teil der für die Antenne bestimmten Leistung den Strahlungswiderstand und kann abgestrahlt werden. Die Abstrahlleistung die in Abbildung \ref{fig:ESBantenne} mit $P_{rad}$ bezeichnet wird, fällt daher klein aus.\\
 Ebenfalls kann aus der Abbildung \ref{fig:ESBantenne} das Verhältnis von $R_{rad}$ zu $R_{v}$ entnommen werden. Es wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus.
 
-\subsubsection{Simulationen einer $\lambda$/2 Loop Antenne}\label{sec:SimL2Loop}
+\subsubsection{Simulation einer $\lambda$/2-Loop Antenne}\label{sec:SimL2Loop}
 Um das Abstrahlverhalten und die Wirkungen von Kunststoff im Nahfeld aufzuzeigen, werden die folgenden Abbildungen genauer erläutert.
 Die erste Simulation zeigt eine Loop Antenne im Freiraum. Als Simulationsmodell wurde keine runde Stromschleife verwendet, sondern ein langer, schmaler Loop. Die Länge des Loop entspricht $\lambda/2$ der Bluetooth Zielfrequenz von 2.45 GHz. Die Antenne wird von einer Quelle mit 50 Ohm Innenwiderstand gespeist. Als Antennenstruktur wurden rechteckige Kupferquader mit einer Dicke von 1mm  und einer Gesamtlänge von 63 mm verwendet.\\
 
 Es wurden wie bei der Dipol Antenne in Kapitel \ref{sim_lamda2_Dipol}\ drei Simulationen durchgeführt. Diese sollen das Verhalten von Loop Antennen mit und ohne Kunststoff im Nahfeld aufzeigen.\\ 
 
-\textbf{$\lambda/2$ Loop Antenne im Freiraum}\\
+\textbf{$\lambda/2$-Loop Antenne im Freiraum}\\
 Die Resonanzfrequenz einer $\lambda/2$ langen Leiterschleife im Freiraum ist in der Abbildung \ref{S11_Loop_Vergleich_Simulation} als rote Kurve gezeichnet gezeigt. Sie liegt bei dieser Simulation bei 5.85 GHz. Bei dieser Frequenz zeigt die Antenne einen $S_{11}$ Wert von mehr als -26 dB. Die -10 dB Bandbreite beträgt 428 MHz.\\
 Die Impedanz der Antenne bei 2.45 GHz in Abbildung \ref{Impedanz_Loop_Vergleich_Simulation} zeigt die Fehlanpassung klar auf. Der Realteil der Antenne liegt bei 2721 Ohm und der Imaginärteil bei 225 Ohm bei einer Frequenz von 2.45 GHz. Deshalb ist der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt eines Smith-Diagramms. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer totalen Reflexion der zuführenden Welle. Der Reflexionsfaktor $\Gamma$ beträgt in diesem Fall +1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$.\\
 
@@ -744,7 +744,7 @@ Das simulierte 3D Richtdiagramm, siehe Abbildung \ref{fig:sim_Loop_freiraum_3D_1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\textbf{$\lambda/2$ Loop Antenne mit zwei ABS Stücken im Nahfeld}\\
+\textbf{$\lambda/2$-Loop Antenne mit zwei ABS-Stücken im Nahfeld}\\
 Die Simulationen der Loopantennen mit ABS Kunststoff im Nahfeld zeigen, dass der Kunststoff in ähnlicher Art und Weise wie bei einer Dipol Antenne erhebliche Auswirkungen auf die Resonanzfrequenz  aufweisen.\\
 
 Die Loop Antenne wird nun zwischen zwei gleich grossen ABS Kunststoffstücken eingeklemmt. Die Antennenanordnung und Ausrichtung der Antenne bleiben dieselbe. \\
