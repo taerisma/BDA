@@ -387,7 +387,7 @@ Der Strahlungswiderstand des $\lambda/2$-Dipols entspricht, wie aus (\ref{RradDi
 
 %Der Strahlungswiderstand $R_{rad}$ des Halbwellen Dipols wird in der Gleichung \ref{eq:Rrrad} im Kapitel \ref{sec:kurzerDipol} berechnet. Man erhält für einen Dipol mit $2L = \frac{\lambda}{2}$ einen $R_{rad}$ von $15.7 \Omega $.
 
-\subsection{Simulationen eines Halbwellendipols}\label{sim_lamda2_Dipol}
+\subsection{Simulationen einer Dipol Antenne}\label{sim_lamda2_Dipol}
 
 Das zur Verfügung stehende Volumen von 55 mm x 3.5 mm x 10 mm (L x B x H) für die Bluetooth Antenne ist in Kapitel \ref{sec:EigenschaftenAntenne} beschrieben und wurde bei den Simulationen berücksichtigt. Allerdings wurden diverse Vereinfachungen getroffen. Unter anderem wurde der ABS-Kunststoff mit einer Permittivität $\varepsilon_r $ von 4.3 [As/Vm] und einem Verlustwinkel von 0.02$^\circ$ simuliert. Diese Werte wurden zudem als frequenzunabhängig angenommen. Als Antennenstäbe wurde ein Kupferdraht mit einem Radius $r = 1.12\ mm$ verwendet. Kupfer hat eine Leitfähigkeit von $\kappa=58*10^{6}\ [1/\Omega m]$. Die Länge der beiden Antennenarme beträgt je 25 mm. Für die Quelle wurde eine Lücke von 2.45 mm im Zentrum der Dipolantenne ausgespart und ihre Impedanz ist als 50 Ohm reell definiert. Das Gehäuse, die Elektronik, der Akku und das Display des Fluginstruments wurden in dieser Simulationsreihe nicht berücksichtigt. Es wurden folgende drei Simulationen durchgeführt.
 \begin{enumerate}
@@ -418,7 +418,7 @@ Die rote Kurve in der Abbildung \ref{S11_Vergleich_Simulation} zeigt das $S_{11}
 In Abbildung \ref{S11_Vergleich_Simulation} wird das $S_{11}$-Diagramm eines Dipols mit einem ABS-Kunststoffstück im Nahfeld als blaue Kurve dargestellt. Das verwendete ABS-Stück hat die Masse 100 mm x 2 mm x 30 mm (L x B x H). Es ist direkt an die Antennenstäbe angrenzend. Die dielektrischen Verluste zeigen sich im Detuning der Resonanzfrequenz, wodurch die Kurve in Abbildung \ref{S11_Vergleich_Simulation} nach links rutscht. Der maximale $S_{11}$-Wert liegt neu rund 380 MHz tiefer bei 2.04 GHz. Er bringt eine Dämpfung von -20.79 dB mit sich. Die -10dB Bandbreite beträgt 340 MHz. Real- und Imaginäranteil der simulierten Antenns sind in Abbildung \ref{Impedanz_Vergleich_Simulation} als grüne und schwarze Kurve gezeigt. Bei der Wunschfrequenz von 2.45 GHz entspricht der Realteil der Antennenimpedanz 141 Ohm und der Imaginärteil  $+j39$ Ohm. Hieraus wird eine Fehlanpassung deutlich, da eine Quellenimpedanz von 50 Ohm reell besitzt. Insgesammt führt dies zu einer Abstrahleffizienz $\eta$ von 71.1$\ \%$.\\
 
 \textbf{Simulation einer $\lambda/2$-Dipol Antenne mit zwei ABS-Kunststoffstücken im Nahfeld}\\
-Die dritte Simulation bezieht sich auf eine Antenne, welche  zwischen zwei ABS-Kunststoffstücken liegt. In der Abbildung \ref{S11_Vergleich_Simulation} ist der ensprechnede $S_{11}$-Wert als grüne Linie gezeichnet. Es zeigt sich dasselbe Verhalten wie bei einer Antenne mit nur einem ABS-Stück. Die Resonanzfrequenz sinkt weiter ab, sie liegt neu bei 1.82 GHz und ist somit 220 MHz tiefer als bei der Simulation mit nur einem ABS-Stück. Die Abbildung \ref{S11_Vergleich_Simulation} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz. Real- und Imaginäranteil sind in der Abbildung \ref{Impedanz_Vergleich_Simulation} als gelbe Kurve für den Real- und als rosa Kurve für den Imaginäranteil dargestellt. Sie zeigen eine erhebliche Fehlanpassung an die Referenzquelle, die Abstrahleffizienz $\eta$ liegt daher nur noch bei $59.6 \ \%$. Die Impedanz $Z_{ant}$ entspricht bei 2.45 GHz (206.192-j28.979) $\Omega$.\\
+Die dritte Simulation bezieht sich auf eine Antenne, welche  zwischen zwei ABS-Kunststoffstücken liegt. In der Abbildung \ref{S11_Vergleich_Simulation} ist der ensprechnede $S_{11}$-Wert als grüne Linie gezeichnet. Es zeigt sich dasselbe Verhalten wie bei einer Antenne mit nur einem ABS-Stück. Die Resonanzfrequenz sinkt weiter ab, sie liegt neu bei 1.82 GHz und ist somit 220 MHz tiefer als bei der Simulation mit nur einem ABS-Stück. Die Abbildung \ref{S11_Vergleich_Simulation} zeigt weiter, dass die Antenne immer schmalbandiger wird. Die -10dB Bandbreite beträgt 320 MHz. Real- und Imaginäranteil sind in der Abbildung \ref{Impedanz_Vergleich_Simulation} als gelbe Kurve für den Real- und als rosa Kurve für den Imaginäranteil dargestellt. Sie zeigen eine erhebliche Fehlanpassung an die Referenzquelle, die Abstrahleffizienz $\eta$ liegt daher nur noch bei $69.6 \ \%$. Die Impedanz $Z_{ant}$ entspricht bei 2.45 GHz (206.192-j28.979) $\Omega$.\\
 %\begin{figure}[!h]
 %\begin{center}
 %\minipage{0.4\textwidth}
@@ -460,7 +460,7 @@ Die dritte Simulation bezieht sich auf eine Antenne, welche  zwischen zwei ABS-K
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-Die Grafik \ref{S11_Vergleich_Simulation} zeigt die $|S_{11}|$-Werte der drei simulierten $\lambda/2$-Dipole. In der Linksverschiebung der Kurven ist das Detuning bei Verwendung von ABS-Kunststoff im Nahfeld ersichtlich. Ebenso nimmt die -10 dB Bandbreite ab, wenn sich Kunststoff im Nahfeld der Antenne befindet.
+Die Grafik \ref{S11_Vergleich_Simulation} zeigt die $S_{11}$-Werte der drei simulierten $\lambda/2$-Dipole. In der Linksverschiebung der Kurven ist das Detuning bei Verwendung von ABS-Kunststoff im Nahfeld ersichtlich. Ebenso nimmt die -10 dB Bandbreite ab, wenn sich Kunststoff im Nahfeld der Antenne befindet.
 
 \begin{figure}[!ht]
 	\centering
@@ -473,36 +473,34 @@ Die Grafik \ref{S11_Vergleich_Simulation} zeigt die $|S_{11}|$-Werte der drei si
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-Die Antennenimpedanzen aller drei Simulationen sind in der folgenden Abbildung \ref{Impedanz_Vergleich_Simulation} dargestellt. Jede der drei Impedanzen wird jeweils mit einer Kurve für den Realteil und den Imaginärteil dargestellt. Die simulierten Werte für die Impedanz $Z_{ant}$ bei der Frequenz von 2.45 GHz sind in der Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} für alle drei Simulationen aufgeführt.
+Die Antennenimpedanzen aller drei Simulationen sind in der Abbildung \ref{Impedanz_Vergleich_Simulation} gezeigt. Jede der drei Impedanzen wird jeweils mit einer Kurve für den Realanteil und den Imaginäranteil dargestellt. Die simulierten Werte für die Impedanz $Z_{ant}$ bei der Frequenz von 2.45 GHz sind in der Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} im Kapitel \ref{sec:VerglecihSimDipol} für alle drei Simulationen aufgeführt.
 \clearpage
 \newpage
 %
 Die folgenden drei Abbildungen \ref{fig:sim_Dipol_Freiraum_3D},
 \ref{fig:sim_Dipol_1ABS_3D} und 
-\ref{fig:sim_Dipol_2ABS_3D} zeigen alle drei die 3D Richtdiagramme einer Dipol Antenne bei einer Frequenz von 2.45 GHz. Sie zeigen ein qualitatives Abstrahlverhalten der Antennen. Die Richtwirkung aller drei Antennen ist etwa gleich sie zeigen alle einen Torus um die Antenne. Das elektromagnetische Feld ist wie aus der Theorie in Kapitel \ref{sec:Dipol Antenne} vom Winkel $\theta$ abhängig.
-In der Abbildung \ref{fig:sim_Dipol_Freiraum_3D} ist eine Richtdiagramm einer Dipol Antenne im Freiraum gezeigt. Die Richtcharakteristik zeigt einen maximalen $D$ Wert  von 2.10 dBi.\\
-Das Richtdiagramm der Dipol Antenne mit angrenzendem Kunststoffstück ist in Abbildung \ref{fig:sim_Dipol_1ABS_3D} gezeigt. Die maximale Richtcharakteristik weisst einen $D$ Wert von 2.36 dBi auf.\\
-Eine Richtcharakteristik von 2.38 dBi zeigt die Abbildung \ref{fig:sim_Dipol_2ABS_3D}. Sie stellt die Simulation mit zwei angrenzenden Kunststoffstücken an eine Dipol Antenne dar.\\
-Beid der qualitativen Betrachtung der Richtwirkung von Antennen muss immer die die Farbskala betrachtet werden. Nicht die Farbe eines Punktes im Raum ist entscheidenden, sonder der Wert würd den sie sthet. Für die beurteilung der Darstellungen hilft es, wenn der Maximal- under der Minimalwert für die zu vergleichenden Abbildungen gleich ist.
+\ref{fig:sim_Dipol_2ABS_3D} zeigen die 3D-Richtdiagramme der simulierten Dipol Antennen bei einer Frequenz von 2.45 GHz. Das Abstrahlverhalten der drei Antennen ist praktisch identisch, es ist bei allen torusförmig. Das elektromagnetische Feld ist wie aus der Theorie in Kapitel \ref{sec:Dipol Antenne} bekannt vom Winkel $\theta$ abhängig.\\
+In der Abbildung \ref{fig:sim_Dipol_Freiraum_3D} ist das Richtdiagramm einer Dipol Antenne im Freiraum gezeigt. Die Richtcharakteristik zeigt einen maximalen $D$-Wert von 2.10 dBi. Das Richtdiagramm der Dipol Antenne mit einem angrenzenden Kunststoffstück ist in Abbildung \ref{fig:sim_Dipol_1ABS_3D} gezeigt. Die maximale Richtcharakteristik weisst einen $D$-Wert von 2.36 dBi auf. Eine Richtcharakteristik von 2.38 dBi zeigt die Abbildung \ref{fig:sim_Dipol_2ABS_3D} für die Dipol Antenne mit zwei angrenzenden Kunststoffstücken.\\
+Bei der Betrachtung von Richtdiagrammen verschiedener Antennen muss immer die Farbskala betrachtet werden. Generell entspricht rot dem positiven und blau dem negativen Skalenende, die genauen Werte sind jedoch für jede Antenne aus der entsprechenden Skala zu entnehmen. In den vorliegenden Graphiken sind der Maximal- und Minimalwert nicht identisch. Im Simulationstool EMPIRE XPU können diese beiden Werte gewählt werden. 
 %%%%%%%%
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{content/bilder/Evaluation/Dipol/3D_Dipol_Freiraum.JPG}
-		\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Dipol Antenne im Freiraum}
+		\captionof{figure}{Simulierte 3D-Abstrahlcharakteristik einer Dipol Antenne im Freiraum}
 		\label{fig:sim_Dipol_Freiraum_3D}
 	\end{center}
 \end{figure}
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{content/bilder/Evaluation/Dipol/3D_Dipol_ABS.JPG}
-		\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Dipol Antenne mit einem ABS Stück im Nahfeld}
+		\captionof{figure}{Simulierte 3D-Abstrahlcharakteristik einer Dipol Antenne mit einem ABS-Stück im Nahfeld}
 		\label{fig:sim_Dipol_1ABS_3D}
 	\end{center}
 \end{figure}
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{content/bilder/Evaluation/Dipol/3D_Dipol_2ABS.JPG}
-		\captionof{figure}{Simulierte 3D Abstrahlcharakteristik einer Dipol Antenne mit zwei ABS Stücken im Nahfeld}
+		\captionof{figure}{Simulierte 3D-Abstrahlcharakteristik einer Dipol Antenne mit zwei ABS-Stücken im Nahfeld}
 		\label{fig:sim_Dipol_2ABS_3D}
 	\end{center}
 \end{figure}
@@ -510,30 +508,30 @@ Beid der qualitativen Betrachtung der Richtwirkung von Antennen muss immer die d
 %%%%%%%
 
 
-\subsection{Vergleich aus den Simulationen der Dipol Antennen}
-Die drei Simulationen zeigen auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennen nicht mehr auf die Quellimpedanz abgestimmt sind. Zum Beispiel zeigt die Simulation im Freiraum eine Antennenimpedanz von (68.6+j4) bei einer Frequenz von 2.450 GHz, womit eine die Abstrahleffizienz $\eta$ von 97$\%$ resultiert. Weiter zeigen sie das Detuning durch die im Nahfeld der Antenne existierenden Kunststoffe auf. Diese führen zu einer tieferen Resonanzfrequenz der Antenne, da sich die Dipole im Kunststoff bei jeder Schwingung des Nahfeldes neu ausrichten. Das bedeutet, bei der Simulation von einem Dipol mit zwei ABS Kusstoffstücken im Nahfeld sinkt die Resonanzfrequenz $f_{r}$ um 600 MHz.\\ 
-Die dreidimensionalen \glqq EM Far Field\grqq \ Darstellungen der drei Simulationen zeigen unabhängig vom Kunststoff dasselbe Abstrahlverhalten. Alle drei zeigen, einen Torus um die Antenne mit Nullstellen in der Verlängerung der Dipolausrichtung.\\
-Die Antennenimpedanz $Z_{ant}$ bewegt sich in dem aus der Theorie im Kapitel \ref{sec:Dipol Antenne} genannten Bereich. Der $Z_{ant}$ ist bei den drei Versuchen zwischen (68-j4) und (208-j28)$\Omega$. Die Anpassung an eine Hochfrequenzquelle mit einem Innenwiderstand von reell 50 Ohm zeigt eine Abstrahleffizienz von $\eta_{tot}$ ca. 69\%, 71\% bis 97\%.\\
-Die Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} beinhaltet einige Vergleichswerte der $\lambda/2$ Dipol Antenne.
+\subsection{Vergleich der simulierten Dipol Antennen}\label{sec:VerglecihSimDipol}
+Die drei Simulationen zeigen einerseits auf, wie sich die Abstrahleffizienz $\eta$ reduziert, wenn die Antennenimpedanz nicht auf die Quellenimpedanz abgestimmt ist. Die Simulation im Freiraum ergibt mit einer Antennenimpedanz von (68.6+j4) $\Omega$ eine Abstrahleffizienz $\eta$ von 97$\ \%$, während bei der Antenne mit zwei ABS-Stücken im Nahfeld aufgrund einer Antennenimpedanz von (206.2-j28) $\Omega$ lediglich eine Abstrahleffizienz $\eta$ von 69$\ \%$ resultiert. \\
+Weiter zeigt sich ein Detuning durch die im Nahfeld der Antenne platzierten Kunststoffstücke. Da sich die Dipole im Kunststoff bei jeder Schwingung des Nahfeldes neu ausrichten, kommt es zu einer tieferen Resonanzfrequenz der Antenne. Bei der Simulation von einem Dipol mit zwei ABS-Kusstoffstücken im Nahfeld sinkt die Resonanzfrequenz $f_{r}$ um 600 MHz im Vergleich zur Resonanzfrequenz der Antenne im Freiraum.\\ 
+Die dreidimensionalen Richtdiagramme aller drei Simulationen zeigen unabhängig von der Antennenumgebung ein ähnliches, torusförmiges Abstrahlverhalten mit Nullstellen in der Verlängerung der Dipolausrichtung.\\
+Die Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} beinhaltet einige Vergleichswerte der simulierten $\lambda/2$-Dipol Antennen. Der Maximalwert der Rückflussdämpfung ist als $S_{11_{max}}$ in der Tabelle aufgeführt und entspricht jeweils der Resonanzfrequenz. Die Abstrahleffizienz $\eta$ stellt die gesamte Abstrahleffizienz $\eta_{tot}$ dar. Als -10 dB Bandbreite wurde der Frequenzbereich zwischen den beiden Werten auf der $S_{11}$-Kurve definiert, bei welchen die Amplitude -10 dB beträgt. Die relative Bandbreite wird gebildet aus der Division der -10 dB Bandbreite durch die Resonanzfrequenz $f_{res}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!h]
  \centering
  \begin{tabular}{p{3cm} p{4cm} p{2cm} p{1.5cm} p{2cm} p{2.5cm} l c c c c p r} 
  \toprule 
- Antenneumfeld & $S_{11_{max}}$ [dB]		& $Z_{ant}$ [$\Omega$] 	& $\eta$ [$\%$] & Bandbreite [MHz] & relative Bandbreite [$\%$]\\ 
+ Antennenumfeld & $S_{11_{max}}$ [dB]		& $Z_{ant}$ [$\Omega$] 	& $\eta$ [$\%$] & Bandbreite [MHz] & relative Bandbreite [$\%$]\\ 
  \midrule
  Freiraum 			&	-16.16 @ 2.42 GHz		& 	68.60-j4			& 	97	&	340 & 14\\ 		
-1 ABS Stück 	& -20.79 @ 2.08 GHz 		&	141.5+j39.6		&	71	&	342	 & 16 \\
-2 ABS Stücke 	& -28.20 @ 1.82 GHz 	&	206.2-j28		&	69	&	330	 & 18 \\
+1 ABS-Stück 	& -20.79 @ 2.08 GHz 		&	141.5+j39.6		&	71	&	342	 & 16 \\
+2 ABS-Stücke 	& -28.20 @ 1.82 GHz 	&	206.2-j28		&	69	&	330	 & 18 \\
  \bottomrule
  \end{tabular}
- \caption{Simulation von $\lambda/2$ Dipol Antennen im Freiraum und mit ABS Stücken}
+ \caption{Simulation von $\lambda/2$-Dipol Antennen im Freiraum und mit ABS-Stücken}
  \label{tab:Evaluation_Vergeich_Dipol Antennen}
 \end{table}
 
 %\begin{minipage}[c]{0.95\textwidth} 
 
-Der Quellenwiderstand $R_Q$ ist 50$\Omega$. Der Maximalwert der Rückflussdämpfung ist als $S_{11_{max}}$ in der Tabelle aufgeführt. Die drei Werte $S_{11_{max}}$ stellen drei Resonanzfrequenzen dar. Der Real- und Imaginärteil kann für jede Simulation aus der Abbildung \ref{Impedanz_Vergleich_Simulation} enrnommen werden. Die Abstrahleffizienz $\eta$ stellt die gesamte Abstrahleffizienz $\eta_{tot}$ dar. Als Bandbreite wurde der Frequenzbereich definiert, den die $S_{11}$ Kurve beinhaltet, bei der die Amplitude um 10 dB kleiner ist als dijenige der Resonanzfrequenz $f_{res}$. Die relative Bandbreite wurde aus der Division der -10 dB Bandbreite mit der $f_{res}$ geteilt.
+
 %\end{minipage}
 
 
