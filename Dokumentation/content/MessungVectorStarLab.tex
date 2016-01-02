@@ -1,11 +1,11 @@
 \chapter{Anhang}
 \section{ Netzwerkanalysator}
 Mit Hilfe des Netzwerkanalysors werden die Streuparameter des DUT aufgenommen. Die Rückflussdämpfung $S_{11}$ und die Durchgangsdämpfung $S_{21}$ oder die Kopplung zweier Ports sind  von Interesse.\\
-Um die Impedanz $Z_{ant}$ einer Antenne zu bestimmen wird das Smith Diagramm mit dem Netzwerkanalysator verendet. Es zeigt den Realteil einer Impedanz sowie die Reaktanz an. Die positiven imaginär Teile entsprechen einer Induktivität  und die negativen Anteilen einer Kapazität.
+Um die Impedanz $Z_{ant}$ einer Antenne zu bestimmen wird das Smith Diagramm mit dem Netzwerkanalysator verwendet. Es zeigt den Realteil einer Impedanz sowie die Reaktanz an. Die positiven Imaginärteile entspricht einer Induktivität und die negativen Anteilen einer Kapazität.
 	
 	\subsection{DUT und Netzwerkanalysator vorbereiten}
-	Netzwerkanalysator etwas laufen lassen. Den Netzwerkanalysator kalibrieren.  Wenn der Netzwerkanalysator kalibriert ist, dann das Messkabel nicht mehr wechseln. Bei der Kalibrierung nicht mit den Händen das Kabel oder die Stecker beeinflussen. Falls nötig eklektisch leidende HF Absorber Matten als Unterlage verwenden. \\
-	Auf mögliche Störquellen achten, diese abschirmen oder ausschalten.
+Den Netzwerkanalysator 10 Minuten laufen lassen, so kommt die Messelektronik auf Betriebstemperatur um diesen anschliessend zu kalibrieren.  Ist diesr kalibriert, so soll das Messkabel nicht mehr gewechselt werden. Bei der Kalibrierung ist es wichtig nicht mit den Händen das Kabel oder die Stecker zu beeinflussen. Mit der PRESET Taste das gerätzurücksetzen um feherhafte Einstellung zu vermeiden. Falls nötig eklektisch leidende HF Absorber Matten als Unterlage des Messobjektes verwenden,aber es soll auf mgliche Kurschlüssegeachtet werden. \\
+Weiter soll auf mögliche Störquellen geachtet werden, sind welche vorhanden diese abschirmen oder ausschalten.
 	\begin{itemize}
 	\item Netzwerkanalysator 10 Minuten laufen lassen
 	\item Netzwerkanalysator Kalibrieren
@@ -14,7 +14,6 @@ Um die Impedanz $Z_{ant}$ einer Antenne zu bestimmen wird das Smith Diagramm mit
 	\item $50\Omega$
 	\item short
 	\end{itemize}
-
 	\item PRESET
 	\item SPAM die Mittenfrequenz wählen
 	\item die Bandbreite wählen
@@ -23,32 +22,35 @@ Um die Impedanz $Z_{ant}$ einer Antenne zu bestimmen wird das Smith Diagramm mit
 		\item Ofeset der Messebene  der durch die Phasendrehung durch das zusätliche Antennenkabel hinzukommt einstellen einstellen
 	\end{itemize}
 	
-	\section{Starlab}
-	Das StarLab misst die Nahfeldeigenschaften einer Antenne oder eines strahlenden Körpers. Diese werden benötigt um die Ferfeldeigenschaften zu berechnen. Dies geschieht mit einer \textit{near field to fare fild transformation}. Für elektrisch keine Antennen kennen je nach Abstand zur Antenne und Abhängig von der maximalen Antennen Abmessung drei Verschiedene Empfangszonen. Der Übergang zwischen den Zonen ist fliessen. Es gilt:\\  
-	Das Nahfeld wir in zwei Regionen unterteilt. Es sind dies: das Nahfeld und das strahlende Nahfeld. Das Fernfeld entspricht der Fraunhofer Kriterium. Dank der Fernfeldvereinfachung können ab einem Abstand von $R>r_3$ das H und das H Feld als orthogonal, mit der selben Amplitude und Phasengleich betrachtet  werden. Das Produkt aus den $\vec{E}$ und $\vec{H}$ Vektor ist ein Leistungstransport in transversale Richtung.
+Weiter sit bei allen Messungen zu beachten, dass ein "vernünftiger" Messbereich eingestellt ist, das heisst dem Signalbereich, der von interesse ist, soll auch Bildfüllend dargestellt werden. So kann garantiert werden, dass im zu messenden Bereich auch genügen Messpunkte liegen.
+	
+\section{Starlab}
+Das StarLab misst die Nahfeldeigenschaften einer Antenne oder eines strahlenden Körpers. Diese werden benötigt um die Ferfeldeigenschaften zu berechnen. Dies geschieht mit einer \textit{near field to fare fild transformation}. Für elektrisch keine Antennen kennen je nach Abstand zur Antenne und Abhängig von der maximalen Antennen Abmessung drei Verschiedene Empfangszonen. Der Übergang zwischen den Zonen ist fliessen. 
+Es gilt:\\  
+Das Nahfeld wir in zwei Regionen unterteilt. Es sind dies: das Nahfeld und das strahlende Nahfeld. Das Fernfeld entspricht der Fraunhofer Kriterium. Dank der Fernfeldvereinfachung können ab einem Abstand von $R>r_3$ das H und das H Feld als orthogonal, mit der selben Amplitude und Phasengleich betrachtet werden. Das Produkt aus den $\vec{E}$ und $\vec{H}$ Vektor ist ein Leistungstransport in transversale Richtung.
 	
 	\begin{itemize}
 	\item Nahfeld bis zum Abstand $r_1<2\lambda$
 	\item strahlendes Nahfeld bis zum Abstand $r_2<\dfrac{D^2}{2\lambda}$
 	\item Nahfeld bis zum Abstand $r_3>\dfrac{2D^2}{\lambda}$
 \end{itemize}	 
-Mit dem StarLab aufgezeichete Daten können mit Softwar ausgewertet werden, es ist möglich 3D Richtdiagramme darzustellen, aber auch 1D Schnitte duch eine gewünschte Ebene zu betrachten. Eine weitere Möglichkeit ist die Berechnung der Abstrahleffizen bei einer gewünschten Frequenz.
-	\subsection{DUT vorbereiten}
+Mit dem StarLab aufgezeichete Daten können mit Software ausgewertet werden, es ist möglich 3D Richtdiagramme darzustellen, aber auch 2D und 1D Schnitte duch eine gewünschte Ebene zu betrachten. Eine weitere Möglichkeit ist die Berechnung der Abstrahleffizen bei einer gewünschten Frequenz.
+	\subsection{StarLab und  vorbereiten}
 	\begin{itemize}
-	\item 50 Ohm Abschlusswiderstand am Ende des Kabel beachten
-	\item 6dB Dämpfungsglied am Ende des Kabel überprüfen
-	\item Die Antenne muss am DUT fest befestigt sein
+	\item Staubschutzkappe am Ende des Messkabels beachten
+	\item 6dB Dämpfungsglied am Ende des Kabel überprüfen, dieses muss vorhanden sein
+	\item Die Antenne muss aam drehenden Mast fest befestigt sein
 	\item Das Messkabel benötigt eine Zugsentlastung
-	\item Koordinatensystem beim platzieren des DUT beachten
+	\item Koordinatensystem beim platzieren des DUT beachten, und notieren nur so sind vergleiche mit den Simulationen süpäter nachvollziebar
 	\begin{itemize}
 	\item Koordinatenbezugssystem muss gleich gewählt sein wie das des Bezugssystem der Simulation
 	\item Der Startpunkt von $\theta=0^\circ$ ist auf der 12 Uhr Position
 	\item Die Richtung von $\theta$ läuft von 12 Uhr nach 6 Uhr $\pm 180\circ$
-	\item Wo ist der Startpunkt von $\phi=0^\circ$
-	\item in welche Richtung läuft $\phi$
+	\item Der Startpunkt von $\phi=0^\circ$ ist bei der positiven x-Achse
+	\item Im StarLab geht $\varphi$ von der positiven x-Achse um $\pi$ zur negativen x-Achse und weiter über einen Halbkries von $\pi$ über die negative y-Achse wider zum Ausgangspunkt (pos x-Achse auf der 3 Uhr Position)
 	\end{itemize}
 
-	\item Messturm auf $\phi=0^\circ$, $\phi=90^\circ$ und zurück auf $\phi=0^\circ$ drehen und Position bestimmen
+	\item Messturm auf $\phi=0^\circ$, $\phi=90^\circ$ und zurück auf $\phi=0^\circ$ drehen und Position bestimmen, dies ist wichtig, denn der Messturm darf keine  Messschritte verlieren.
 	\end{itemize}
 \subsection{Messparameter und Erwartungen}
 In dieser Arbeit werden nur die Folgenden Daten der Messugn ausgewertet:

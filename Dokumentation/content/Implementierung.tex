@@ -1,11 +1,11 @@
 \newpage 
 \thispagestyle{empty}
 \chapter{Implementierung}\label{sec:Implementierung}
-Wie im Kapitel \ref{sec:Interpretation_Dipol} erwähnt, wird die Antennenstruktur weder auf einer FR4 Kunstharzplatte noch auf eine Plastikfolie aufgedruckt, da einerseits die Produktionskosten von Kleinserien im Verhältnis zum Nutzen eher gross sind, und wiel andererseits, jeder Fertigungsdurchgang von gedruckten Antennen mindestens ein bis drei Tage benötigt. Daher werden die zu testenden Antennen aus einer Kupferfolie geschnitten. So können Änderungen im Designs sehr schnell umgesetzt werden und die Kosten sind gering.\\
+Wie im Kapitel \ref{sec:Interpretation_Dipol} erwähnt, wird die Antennenstruktur weder auf einer FR4 Kunstharzplatte noch auf eine Plastikfolie aufgedruckt, da einerseits die Produktionskosten von Kleinserien im Verhältnis zum Nutzen eher gross sind, und weil andererseits, jeder Fertigungsdurchgang von gedruckten Antennen mindestens ein bis drei Tage benötigt. Daher werden die zu testenden Antennen aus einer Kupferfolie geschnitten. So können Änderungen im Designs sehr schnell umgesetzt werden und die Kosten sind gering.\\
 
-Aus der Interpretation der Dipolantennen Simulationen im Kapitel ( \ref{sec:Interpretation_Dipol}) ist hervorgegangen, dass das Abstrahlverhalten einer Dipolantenne mit einer Breite von 3 mm und einer Dicke von 26 $\mu m$ sowie der Länge von 50.25 mm ausgemessen wird. Wie die Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} zeigt, unterscheidet sich das Abstrahlverhalten von Dipole mit einer Breite von 1 mm und 3 mm nur unfesentlich. Die Antennenstrucktur mit einer Breite von 3 mm ist wesentlich einfacher zu bearbeiten als die 1 mm Breiten Antennestruckturen. Das Kupferband mit einer Beite von weniger als 3 mm kann unter keinem Zug reissen. Zudem ist die grössere Klebefäche von Vorteil um die Antenne an das Kunststoffgehäuse zu fixieren.  \\
-\newpage
-Die Antenne wird mit dem Skalpell aus dem Kupferklebeband ausgeschnitten. Das ist in der Abbildung \ref{fig:DipolausKupferband} gezeigt. Dabei gilt es zu beachten, dass sich das Kupferband nicht in seine ursprünglicher Form zurück zieht. Das Zentrum der Antenne, dient als Fusspunkt der Antenne, dieser wird mit einem ca. 1 mm$^{2}$ grosssen Lötzinnpunkt versehen. An diesem speisst die Zuleitung, in Form eines Koaxialkabels, die Antenne.\\
+Aus der Interpretation der Dipolantennen Simulationen im Kapitel ( \ref{sec:Interpretation_Dipol}) ist hervorgegangen, dass das Abstrahlverhalten einer Dipolantenne mit einer Breite von 3 mm und einer Dicke von 26 $\mu m$ sowie der Länge von 50.25 mm ausgemessen wird. Wie die Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} zeigt, unterscheidet sich das Abstrahlverhalten von Dipole mit einer Breite von 1 mm und 3 mm nur unwesentlich. Die Antennenstruktur mit einer Breite von 3 mm ist wesentlich einfacher zu bearbeiten als die 1 mm Breiten Antennenstruktur. Das Kupferband mit einer Breite von weniger als 3 mm kann unter geringem Zug reissen. Zudem ist die grössere Fläche mit Klebstoff von Vorteil um die Antenne an das Kunststoffgehäuse zu fixieren.  \\
+
+Die Antenne wird mit dem Skalpell aus dem Kupferklebeband ausgeschnitten. Das ist in der Abbildung \ref{fig:DipolausKupferband} gezeigt. Dabei gilt es zu beachten, dass sich das Kupferband nicht in seine ursprünglicher Form zurück zieht. Das Zentrum der Antenne, dient als Fusspunkt der Antenne, dieser wird mit einem ca. 1 mm$^{2}$ grosssen Lötzinnpunkt versehen. An diesem speist die Zuleitung, in Form eines Koaxialkabels, die Antenne.\\
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=13cm]{content/bilder/Implementierung/Dipol3mm50mm.jpg}%
@@ -14,7 +14,7 @@ Die Antenne wird mit dem Skalpell aus dem Kupferklebeband ausgeschnitten. Das is
 \end{figure}
 %\newpage
 
-In der Abbildung \ref{fig:DipolausKupferbandGeraeteinnenseite} ist  die Dipolantenne mit einem Koaxialkabel als Speiseleitung gezeigt. Das Koaxialkabel diehnt als längs homogene Leiteung. Sie führt die elektromagnetische Welle von der Quelle zur Antenne. Die Leitung wird rechtwinklig von der Antenne weggeführt. Es muss stehts darauf geachtet werden, dass sich das der Biegeradius des Koaxialkabels einghalten wird. Der Aussenleiter des Koaxialkabels muss nicht zusätzlich gegenüber dem darunterliedenden Akkupaket isoliert werden. Denn diser ist bereits in eine Kunstofffolie gehüllt. Jedoch muss darauf geachtet werden, dass der Aussenleiter des Koaxialkabels, nicht mir der Elektronikplatione, die sich auf der Rückseite des Displays befindet, kurzschliesst. Daher erfüllt das Papierklebeband mehrere Aufgaben. Es dient als Isolation zwischen der Elektronikplatione und dem Koaxialkabel und zusähzlich als Zugsentlastung der Antenne. Des weitern hilft das Papierkelbeband zur Fixierung der Antenne.\\
+In der Abbildung \ref{fig:DipolausKupferbandGeraeteinnenseite} ist  die Dipolantenne mit einem Koaxialkabel als Speiseleitung gezeigt. Das Koaxialkabel dient als längs homogene Leitung. Sie führt die elektromagnetische Welle von der Quelle zur Antenne. Die Leitung wird rechtwinklig von der Antenne weggeführt. Es muss stehst darauf geachtet werden, dass sich das der Biegeradius des Koaxialkabels eingehalten wird. Der Aussenleiter des Koaxialkabels muss nicht zusätzlich gegenüber dem darunterliegenden Akkupaket isoliert werden. Denn dieser ist bereits in eine Kunststofffolie gehüllt. Jedoch muss darauf geachtet werden, dass der Aussenleiter des Koaxialkabels, nicht mir der Elektronikplatine, die sich auf der Rückseite des Displays befindet, kurzschliesst. Daher erfüllt das Papierklebeband mehrere Aufgaben. Es dient als Isolation zwischen der Elektronikplatine und dem Koaxialkabel und zusätzlich als Zugsentlastung der Antenne. Des weitern hilft das Papierklebeband zur Fixierung der Antenne.\\
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=13cm]{content/bilder/Implementierung/DipolIMGeraet.jpg}%
@@ -23,86 +23,16 @@ In der Abbildung \ref{fig:DipolausKupferbandGeraeteinnenseite} ist  die Dipolant
 \end{figure}
 
 \newpage
-Die Abbildung \ref{fig:DipolimGeraet} zeigt, wie die Antenne im Fluginstrumet positioniert ist. Auf diesr Abbildung ist sehr gut zu erkennen, dass die Antenne dirkt an die Aussenwand des Kuststoffgehöuse des Fluginstumetes geklebt ist. Das Koaxialkabel fühert rechtwinklig von der Antenne weg. Bis zum SMA Stecker, über diesen wird die Antenne mit der interen Quelle des Starlab verbunden.\\
+Die Abbildung \ref{fig:DipolimGeraet} zeigt, wie die Antenne im Fluginstrumet positioniert ist. Auf dieser Abbildung ist sehr gut zu erkennen, dass die Antenne direkt an die Aussenwand Kunststoffgehäuse des Kuststoffgehäuse des Fluginstumetes geklebt ist. Das Koaxialkabel führt rechtwinklig von der Antenne weg. Bis zum SMA Stecker, über diesen wird die Antenne mit der interne Quelle des StarLab verbunden.\\
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=13cm]{content/bilder/Implementierung/DipolKabelGeraet.jpg}%
-	\caption{Dipol im Geraet und Koaxialkabel}
+	\caption{Dipol im Gerät und Koaxialkabel}
 	\label{fig:DipolimGeraet}
 \end{figure}
 
-\newpage
-Aus den Simulationen ind er Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} ist der |$S_{11}$| Verlauf im Freiraum und im Gerät bekannt. Die nachfolgende Abbildung zeigt als rote Kurve den $S_{11}$ Wert der Dipolantenne im Freiraum. Als rote Kurve ist der Verlauf des $S_{11}$ gezeigt, wenn die Dipolantenne im Gerät positioniert ist. Es ist die breits erwähnte Verschiebung der Resonanzfrequenz ersichtlicht. Zudem ist die Resonanz der Dämpfung des $S_{11}$ Verlaufs im Gerät weniger stark ausgeprägt wie im Freiraum. Die Messung der im Gerät platzierten Dipolantenne ist als grüne Kurve in der Abbildung \ref{S11_Messung_Simulation_Dipolantenn_Freiraum} dargestellt. Die Resonaz der bluen Kurve(Simulation des Dipols im Gerät) und die Resonaz der grünen Kurve(Messung des Dipols im Gerät) stimmen gut überein. Was erstaunt, ist dass die $S_{11}$ Dämpfung der zuführenden Welle -15dB aufweisst. Ein erklährungsversuch weisst auf das Simulationsmodell. Es zeigt qualitativ wie wie sich die Resonazfrequenz von einem Dipol im Freiraum gegenüber einem Dipol im Gerät verhält. Es macht aber erhebliche Fehler beim Impedanzverhalten. So weisst der gemessene Dipol bei einer Frequenz von 2.45 GHz eine Antennenimpedanz von $Z_{ant}$ = (30+j4)$\Omega$. Während aus der Simulation die Antennenimpedanz von $Z_{ant}$ = (16+j14.7)$\Omega$ aus Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} zu entnehmen ist. Demnach ist die Anpassung von an eine 50$\Omega$ Quelle in realität bersser als aus der Simulation erwartet.
 
 
-%\begin{figure}[!ht]
-%	\centering
-%	\begingroup
-%	\inputencoding{latin1}
-%	\input{content/bilder/Messung/Messung_Sim_S11_Freiraum.tikz}
-%	\endgroup
-%	\caption{Vergleich des gemessen und simulierten $S_{11}$ Werts im Freiraum}	\label{S11_Messung_Simulation_Dipolantenn_Freiraum}
-%\end{figure}
-
-\begin{figure}[!ht]
-	\centering
-	\begingroup
-	\inputencoding{latin1}
-	\input{content/bilder/Implementierung/S11FurDoku.tex}
-	\endgroup
-	\caption{Vergleich des gemessen und simulierten $S_{11}$ Wert im Ger\"at und im Freiraum}	\label{S11_Messung_Simulation_Dipolantenn_Freiraum}
-\end{figure}
-\newpage
-Ein qualitatives Bild des Abstrahlverhaltens der Dipolantenne im Gerät zeigt die Abbildung \ref{fig:3D Richtdiagramm} Um die richtwirkung zu intepretiern wurde der minimale Richtwert auf min -25dB und der maximale Wert auf 0 dB gesetzt. Das Bild zeigt eine Sicht auf die xz-Ebene. Senkrecht nach oben zeigt die positve z-Achse und rechtwinklig dazu verläuft horizontal die x-Achse. Der Pfeil nach rechts zeigt die positve x-Achse. Die negative y-Achse würde rechtwincklig aus der Blattebene zeigen. Die Abbildung \ref{fig:FrontStarLab} zeigt das Gerät im Starlab im Moment der elektromagnetsichen Feldverteilung der Abbildung \ref{fig:3D Richtdiagramm}\\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=8cm]{content/bilder/Implementierung/min25_0_x_yhinten_zoben.JPG}%
-	\caption{3DrichtidiagrammDipolantenne}
-	\label{fig:3D Richtdiagramm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=8cm]{content/bilder/Implementierung/Front.JPG}%
-	\caption{Versuchsanordnung Front Perspektive im Starlab}
-	\label{fig:FrontStarLab}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-Ein Schnitt durch die xy-Ebende bei z=0 ist in Abbildung \ref{fig:Schnittgemessen} in der oberen Grafik dargestellt. Aus den Simulationen ist zu erwarten, dass die elektromagnetische Feldstärke in Richtung der positiven x-Achse kleiner sein muss als auf der negativen Seite der x-Achse. Da das elektromagnetisch Feld auf die linke Seite (neg.x-Achse) nur durch die Gehäusewand gedämpft wird. Der Schnitt durch die xy-Ebene zeigt einen Schnitt wie in einer Vogelperspektive auf das Gerät. Bei der Messung der Feldstärke im Starlab ist das Gerät wie in der Simulation in der xy-Ebene auf der Höhe z=0 positioniert. Das Display zeigt bei der Messung und der Simulation in die positive z-Richtung.    \\
-%\begin{figure}[!ht]
-%	\centering
-%	\begingroup
-%	\inputencoding{latin1}
-%	\input{content/bilder/Messung/xyGeraet.tikz}
-%	\endgroup
-%	\caption{xy-Ebene}\label{fig:xy_gemessen}
-%\end{figure}
-
-Ein Schnitt in der xz-Ebene bei y=0 ist in der unteren Grafik von Abbildung \ref{fig:Schnittgemessen} gezeigt. Das Gerät ist in der xy-Ebene positioniert. Das Display zeigt in die Richtung der positiven z-Achse. Die Ausrichtung der Antenne im Gerät ist entlang der y-Achse. Der Dipol ist im Ursprung des Koordinatensystems plaziert. Aus der Theorie sollte jetzt ein Kreis ersichtlich sein. Da ein radiales elektromagetisches Feld um die längsausrichtung des Dipols zu erwarten ist. Die absorbierenden Eigenschaften des Gerätes zeigen jedoch eine starke Reduktion der elektromagnetischen Feldstärke in Richtung der positiven x-Achse, sowie ein reduziertes Feld entlang der negativen x-Achse. Um diese Abbildung zu ploten war es nötig einen offste von 17.6 dB zu den Richtwirkun zu addieren.\\
-Um die ensprechenden in der $\varphi$ zu erhalten muss zuerst der $\theta$ Winkel bei -90$^{circ}$ festgehalten werden und $\varphi$ nimmt die elektromagnetische Feldstärkte von $0..\pi$ auf. Anschliessen wird der $\theta$ Winkel bei 90$^{\circ}$ festgehalten  und $\varphi$ nimmt die elektromagnetische Feldstärkte von $0..\pi$ auf. Somit ist die ganze xy-Ebene auf der Höhe z=0 aufgenommen.\\
-Der Schnitt in der xz-Eben kann mit festem Winkel $\varphi$ bei 0$^{\circ}$ über den  $\pm \theta$ Bereich aufgenommen werden.
-\begin{figure}[!h]
-	\centering
-	\begingroup
-	\inputencoding{latin1}
-	\input{content/bilder/Implementierung/SchnittFurDoku.tex}
-	\endgroup
-	\caption{Schnitte durch das 3D Richtdiagramm}
-	\label{fig:Schnittgemessen}
-\end{figure}
-\newpage
-Die Effizienz der Dipolantenne ist in Abhängigkeit von der Frequenz in der Abbildung \ref{fig:Effizienz_gemessen} gezeigt. Bei 2.45 GHz beträgt $\eta_{tot}$ von 49$\%$. Über eine Bandbreite von 100 MHz nimmt die Effizienz Werte im Bereich von 47$\%$ bis 56.3$\%$ an.\\
-\begin{figure}[!h]
-	\centering
-	\begingroup
-	\inputencoding{latin1}
-	\input{content/bilder/Implementierung/EffizienzFurDoku.tex}
-	\endgroup
-	\caption{xy-Ebene}\label{fig:Effizienz_gemessen}
-\end{figure}
 
 
 
