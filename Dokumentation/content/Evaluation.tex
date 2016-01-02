@@ -176,6 +176,7 @@ Die Dipol Antenne ist eine häufig vorkommende Antennenform  mit zahlreichen Aus
 \item $2l = \lambda $
 \item $2l>> \lambda $
 \end{itemize} 
+\subsection{$\lambda/2$- Dipol Antenneneigenschaften}
 Dipol Antennen mit $2l=\lambda/2$ werden oft Referenzdipol oder Halbwellendipol genannt. Wird der Halbwellendipol mit seiner Resonanzfrequenz $f_{res}=c/\lambda$ angesteuert, so tritt ein maximales Schwingen des Dipols auf. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -209,10 +210,7 @@ Dipol Antennen mit $2l=\lambda/2$ werden oft Referenzdipol oder Halbwellendipol 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Im Gegensatz zur idealisierten theoretischen Betrachtung muss in der Realität die Länge des $\lambda /2$-Dipols um den Verkürzungsfaktor $V$ verringert werden, damit der Dipol bei der gewünschten Resonanzfrequenz schwingt. Oder anders gesagt, bei einem Halbwellendipol mit definierter Länge $2l=\lambda/2$ ist die Resonanzfrequenz tiefer als erwartet. Bei Kürzung der Antenne steigt die Signalfrequenz. Die Verkürzung der Dipollänge ist in Abbildung \ref{fig:HalbWellenDipolHorizontal} gezeigt. \\
-$V$ ist abhängig von der Geometrie und dem Material der Antenne sowie den umgebenden Materialien \cite{Hcuno}. Da der Verkürzungsfaktor $V$ für das Antennendesign entscheidend ist,  wird an dieser Stelle genauer auf den Verkürzungsfaktor $V$ und die damit verbundene Ausbreitungsgeschwindigkeit der elektromagnetischen Welle $v_p$ eingegangen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein.
-
-\newpage
-Die Ausbreitungsgeschwindigkeit $v_p$, die Wellenlänge $\lambda$ und die Frequenz $f$ sind voneinander abhängige Grössen. Die Ausbreitungsgeschwindigkeit beschreibt, wie schnell sich ein Signal im Medium, das heisst im Vakuum, in der Luft oder in einer Leitung, fortpflanzt. Die Ausbreitungsgeschwindigkeit im Vakuum wird mit dem Buchstaben $c_0$ abgekürzt. In diesem breitet sich eine elektromagnetische Welle mit $c_0 = $ 299'792’458 [m/s] aus. In der Praxis kann mit 300'000 km/s gerechnet werden. Die Wellenlänge beschreibt die Länge einer vollständigen Schwingung. Sie ist der kleinste Abstand zweier phasengleicher Punkte einer Welle und wird mit dem Buchstaben $\lambda$ abgekürzt. Die Frequenz beschreibt die Anzahl der Schwingungen in einem Zeitraum von einer Sekunde. Die Einheit der Frequenz ist Hertz und wird mit Hz abgekürzt. Ein Hertz beschreibt eine Schwingung pro Sekunde [1/s] \cite{Verkuertzungsfaktor}.
+$V$ ist abhängig von der Geometrie und dem Material der Antenne sowie den umgebenden Materialien \cite{Hcuno}. Da der Verkürzungsfaktor $V$ für das Antennendesign entscheidend ist,  wird an dieser Stelle genauer auf den Verkürzungsfaktor $V$ und die damit verbundene Ausbreitungsgeschwindigkeit der elektromagnetischen Welle $v_p$ eingegangen. Um die gewünschte Zielfrequenz zu erhalten, muss die effektive Ausbreitungsgeschwindigkeit $v_p$ einer Antennenstruktur bekannt sein. Die Ausbreitungsgeschwindigkeit $v_p$, die Wellenlänge $\lambda$ und die Frequenz $f$ sind voneinander abhängige Grössen. Die Ausbreitungsgeschwindigkeit beschreibt, wie schnell sich ein Signal im Medium, das heisst im Vakuum, in der Luft oder in einer Leitung, fortpflanzt. Die Ausbreitungsgeschwindigkeit im Vakuum wird mit dem Buchstaben $c_0$ abgekürzt. In diesem breitet sich eine elektromagnetische Welle mit $c_0 = $ 299'792’458 [m/s] aus. In der Praxis kann mit 300'000 km/s gerechnet werden. Die Wellenlänge beschreibt die Länge einer vollständigen Schwingung. Sie ist der kleinste Abstand zweier phasengleicher Punkte einer Welle und wird mit dem Buchstaben $\lambda$ abgekürzt. Die Frequenz beschreibt die Anzahl der Schwingungen in einem Zeitraum von einer Sekunde. Die Einheit der Frequenz ist Hertz und wird mit Hz abgekürzt. Ein Hertz beschreibt eine Schwingung pro Sekunde [1/s] \cite{Verkuertzungsfaktor}.
 Es gilt der Zusammenhang $\lambda = \dfrac{c_0}{f}$. \\
 Die Ausbreitungsgeschwindigkeit in einem verlustbehafteten Leiter entspricht nicht der Vakuumausbreitungsgeschwindigkeit einer elektromagnetischen Welle $c_0$, sondern $v_p=V c_0$. Die Geschwindigkeit $v_p$, mit der sich eine elektromagnetische Welle im Medium fortbewegt, ist also um den Verkürzungsfaktor $V$ kleiner sein als die Lichtgeschwindigkeit $c_0$.\\ 
 
@@ -264,7 +262,7 @@ Da die Ladungsträger in einem Dielektrikum nicht frei beweglich sind, werden si
 \end{itemize}
 Bei der Verschiebungspolarisation werden elektrische Dipole im Dielektrikum induziert. Das heisst, durch geringe Ladungsverschiebung in den Atomen, Molekülen oder zwischen verschieden geladenen Ionen entstehen Dipole. In einem Wechselfeld schwingen die negativen Elektronenhüllen und die positiven Atomkerne gegenläufig hin und her. Bei diesen Schwingungen entsteht Wärmeenergie. Diese kann jedoch gegenüber der Wärmeenergie, welche bei der unten beschriebenen Orientierungspolarisation entsteht, vernachlässigt werden, da  die Atomkerns aufgrund ihrer Masse als ortsfest betrachtet werden und daher die Schwingungen der mit ihnen verbundenen Elektronenhüllen minim sind.\\
 Unter der Orientierungspolarisation versteht man die Ausrichtung ungeordneter permanenter Dipole eines Isolators im elektrischen Feld. In einem Wechselfeld müssen sich die Dipole ständig umorientieren, da sie zweimal pro Schwingung neu ausgerichtet werden. Hierdurch entsteht ebenfalls Wärmeenergie \cite{DielektrikumPolarisation}. Im Nahfeld einer Antenne pendelt die nicht abgestrahlte Energie der dielektrischen Verluste im Raum um die Antenne hin und her. Das Nahfeld baut sich auf und ab und wechselt mit der Resonanzfrequenz $f_{r}$ seine Richtung. Die im Dielektrikum gespeicherte Energie ist stark von der materialspezifischen relativen Permittivität $\varepsilon_r $ abhängig.\\
-\newpage
+
 Die dielektrischen Verluste einer Antennen führen zu einem Detuning, einer Verschiebung der Resonanzfrequenz. Das Ausmass des Detunings ist nur schwer zu berechnen, kann jedoch mit Hilfe von Simulationen bestimmt werden. Unter dem Gesichtspunkt, dass das Detuning über die Frequenzänderung auch zu einer Änderung der Antennenimpedanz führt, kann das Detuning auch eine Chance darstellen. Unter Umständen kann eine bessere Anpassung zwischen Leitung und Antenne erreicht werden, welche eine wesentlich höhere Abstrahleffizienz $\eta_{tot}$ \ aufweist. Vereinfacht gesagt, ruft das Detuning  eine Reduktion der Resonanzfrequenz hervor, welche sonst nur mit einer Vergrösserung der Antenne erarbeitet werden könnte. Das kann ein Vorteil sein, wenn die Platzverhältnisse sehr eingeschränkt sind.\\
 Im Zusammenhang mit Antennen und reaktiven Nahfeldverlusten wird oft der Verlustwinkel $\delta$ genannt. Dieser beschreibt das Verhältniss der Wirkleistung gegenüber der Blindleistung elektrisch reaktiver Bauteile wie Spulen oder Kondensatoren bei einem sinusförmigem Spannungs- und Stromverlauf. Dies ist aus der Gleichung \ref{eq:Verlustwinkel} ersichtlich. Je kleiner der Verlustwinkel ist, desto näher kommen die realen Bauteile ihrem idealen Verhalten. Eine ideale Induktivität hat einen Verlustwinkel von $0^\circ$, ein idealer Kondensator hat ebenfalls einen Verlustwinkel von 0$^\circ$. Ein Verlustwinkel grösser $0^\circ$ führt zu Verlustwiderständen die in Serie zu den idealen Komponenten hinzugerechnet werden, wie es bei jedem reellen Bauteil der Fall ist.\\
 Der Verlustwinkel $\delta$ lässt sich über die komplexe Impedanz $Z$ (\ref{eq:Verlustwinkel}) oder über die Phasenverschiebung $\varphi$ (\ref{eq:Verlustwinkel_aus_Phi}) zwischen Strom $I$ und Spannung $U$ des Bauteils berechnen: 
@@ -541,22 +539,11 @@ Loop Antennen werden auch Rahmenantennen oder magnetische Antennen genannt. Sie 
 
 
 \subsection{Elektromagnetische Wellenabstrahlung von Loop Antennen}
-An dieser Stelle werden die wesentlichen Abstrahleigenschaften der Loop Antenne erläutert.
-Bei einer Loop Antenne ist der Ursprung der Wellenausbreitung ein magnetischer Dipol. Eine detaillierte Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} gegeben. \\
-Elektromagnetische Wellen können von einem schwingenden magnetischen Dipol
-abgestrahlt werden. Analog zum Hertzschen Dipol befindet sich im Koordinatenursprung
-ein magnetischer Dipol der Länge $dz<<\lambda$, welcher von einem konstanten
-Strom $I^{m}$ durchflossen wird. Das magnetische Dipolmoment $m$ beträgt somit:
+Der Ursprung der Wellenausbreitung bildet bei einer Loop Antenne ein magnetischer Dipol der Länge $dz<<\lambda$, welcher sich analog zum Hertzschen Dipol im Koordinatenursprung befindet und von einem konstanten Strom $I^{m}$ durchflossen wird. Eine detaillierte Schilderung des Zusammenhangs des kreisförmigen Stromes und der Wellenausbreitung ist im Kapitel \ref{sec:FitzgeraldescherDipol} gegeben. Von einem schwingenden magnetischen Dipol werden elektromagnetische Wellen abgestrahlt, das magnetische Dipolmoment $m$ beträgt hierbei:
 \begin{equation}
-m=I^{m}dze_z
+m=I^{m}dze_z=j\omega\mu_{0}I\pi a^{2}
 \end{equation}
-Äquivalent dazu kann man sich eine mit einem Strom I durchflossene, kreisförmige Windung mit Radius $a<<\lambda$ vorstellen, die eine Magnetisierung $\textbf{M}$ hervorruft:
-\begin{equation}
-I^{m}dze_{z}=j\omega\mu_{0}I\pi a^{2}
-\end{equation}
-Dieser Fall wird als Loop Antenne bezeichnet und ist in Abbildung \ref{FitzDipol} dargestellt. Aus der Lösung der Maxwellschen Gleichungen mit Hilfe des elektrischen und
-magnetischen Vektorpotentials kann man die Felder der Loop Antenne bestimmen.
-Sie weisen die folgenden Transversalkomponenten $E_{\varphi}$ bzw. $E_{\theta}$ im Fernfeld auf:
+Äquivalent dazu kann man sich eine mit einem Strom I durchflossene, kreisförmige Windung mit Radius $a<<\lambda$ vorstellen, die eine Magnetisierung $m$ hervorruft. Dieser Fall wird als Loop Antenne bezeichnet und ist in Abbildung \ref{FitzDipol} dargestellt. Durch Lösen der Maxwellschen Gleichungen mit Hilfe des elektrischen und magnetischen Vektorpotentials kann man die Felder der Loop Antenne bestimmen. Sie weisen die folgenden Transversalkomponenten $E_{\varphi}$ beziehungsweise $E_{\theta}$ im Fernfeld auf:
 \begin{equation}
 E_{\varphi}=Z_{0}\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\varphi}
 \end{equation}
@@ -564,58 +551,36 @@ E_{\varphi}=Z_{0}\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\varph
 \begin{equation}
 E_{\theta}=\dfrac{(ka)^2I_{0}}{4}\sin \theta \dfrac{e^{-jkr}}{r} e_{\theta}
 \end{equation}
-Es wird festgestellt, dass die Felder nur vom Strom, der Fläche und vom Winkel $\theta$ abhängig sind
-und nicht von der Form der Antenne. 
-Die Loop Antenne besitzt einen sehr kleinen Strahlungswiderstand, der mit (\ref{eq:RS_LOOP}) beschrieben wird. Der selbe Wert resultiert aus  (\ref{eq:RradLoop}), welche im Kapitel \ref{sec:LoopAntenneTheorie} genannt wurde. Die von den Windung aufgespannte Fläche enspricht $S$ und $k$ kann als $2\pi/\lambda$ angenommen werden. Ist die Loop Antenne kreisförmig, so ist der Radius der Windung $a$, für die Wellenimpedanz $Z_0$ im Freiraum gilt $120\pi$ und $Ps$ enspricht der abgestrahlten Antennenleistung, so kann der Strahlungswiderstand $R_s$ wie forlgt berechnet werden:
+Es lässt sich feststellen, dass die elektromagnetischen Felder einer Loop Antenne nur vom durch die Antenne fliessenden Strom, der Windungsfläche und vom Winkel $\theta$ abhängig sind, jedoch nicht von der Antennenform. Loop Antennen besitzen einen sehr kleinen Strahlungswiderstand, welcher mit (\ref{eq:RS_LOOP}) berechnet wird. Derselbe Wert resultiert aus (\ref{eq:RradLoop}) im Kapitel \ref{sec:LoopAntenneTheorie}. Die von den Windung aufgespannte Fläche enspricht $S$ und die Wellenzahl $k$ kann als $2\pi/\lambda$ angenommen werden. Ist die Loop Antenne kreisförmig, so ist der Radius der Windung $a$. Für die Wellenimpedanz $Z_0$ im Freiraum gilt $120\pi$ und $Ps$ enspricht der abgestrahlten Antennenleistung. Der Strahlungswiderstand $R_s$ kann nun berechnet werden.
 \begin{equation}\label{eq:RS_LOOP}
 R_{s}=\dfrac{2Ps}{|I|^{2}}=Z_{0}\dfrac{\pi}{6}(k^{2}a^{2})^{2}=Z_{0}\dfrac{2\pi}{3}\left(\dfrac{kS}{\lambda}\right)^{2} 
 \end{equation}
 %\simeq 31.171\dfrac{S^{2}}{\lambda^{4}} ist um den Faktor 1000 zu klein
-So beträgt z.B. der Strahlungswiderstand $R_{s}$ für eine kreisförmige Schleife mit Radius $a = \lambda/25$  $R_{s} = 0,788\Omega$.
+Für eine kreisförmige Leiterschleife mit dem Radius $a = \lambda/25$ beträgt der Strahlungswiderstand $R_{s}$ beispielsweise  0,788 Omega.
 
 
-\subsection{Halbwellen Loop Eigenschaften}
-Der Loop als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipol Antenne. Ebenso besitzt die Loop Antenne eine torusförmige Richtcharakteristik. Seine strahlenden Eigenschaften sind jedoch nicht die Selben wie die eines Dipols. Der Strahlungswiderstand $R_{rad}$ kann mit (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Dipol Antenne der Länge $l=\frac{\lambda}{2}$ findet man $R_{rad} = 12.3\Omega$. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ kann mit der Gleichung (\ref{eq:XantLoop}) ein Wert für $X = 637 \Omega$ bestimmt werden. Um die Reaktanz X zu berechnen wurde ein Loop Radius a von 1cm und als Leiterdurchmesser wurde $p$ = 0.5mm verwendet. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet und $f$ steht für die Siganlfrequenz \cite{Antenne_Theory_Xant_Loop}.
+\subsection{$\lambda$/2-Loop Antenneneigenschaften}
+Die Loop Antenne als strahlendes Element besitzt dasselbe Ersatzschaltbild wie eine Dipol Antenne. Ebenso zeigt die Loop Antenne eine torusförmige Richtcharakteristik. Ihre strahlenden Eigenschaften sind jedoch nicht dieselben wie diejenigen einer Dipol Antenne. Der Strahlungswiderstand $R_{rad}$ einer Loop Antenne kann mit (\ref{eq:RradLoop}) aus dem Kapitel \ref{sec:LoopAntenneTheorie} berechnet werden. Für eine Loop Antenne der Länge $l=\frac{\lambda}{2}$ kann mit (\ref{eq:XantLoop}) eine Reaktanz $X = 637 \ \Omega$ bestimmt werden. Hierfür wurde ein Windungsradius $a$ von 1cm und ein Leiterdurchmesser $p$ = 0.5 mm angenommen. Das führt zu einem Kreisumfang von $U=D\pi=2a\pi=\lambda /2$. Als Permeabilität $\mu $ für Kupfer wurde der Wert $1.256E^{-10}$ verwendet, $f$ steht für die Siganlfrequenz \cite{Antenne_Theory_Xant_Loop}.
 \begin{equation}\label{eq:XantLoop}
-X= 2\pi f\mu a(ln \left( \frac{8a}{p} \right) - 1.75)
+X= 2\pi f\mu a(ln \left( \frac{8a}{p} \right)-1.75)
 \end{equation}
-Aufgrund der engen Platzverhältnisse, die für das Antennenvolumen herrschen, kann im Fluginstrument "Connect 1" keine runde Loop Antenne positioniert werden. Loop Antennen können in den unterschiedlichsten Formen realisiert werden. Man findet sie als Rechtecke, Oktagone oder als Dreiecke. Oft wird ein Rahmen gefertigt und auf diesem werden dann mehrere Windungen $n$ aufgebracht. Für alle Antennenformen gilt, dass die Klemmenspannung am unbelasteten Fusspunkt der Antenne von der zeitabhängigen magnetischen Flussänderung durch die Antennenfläche induziert wird.
+Loop Antennen können jedoch in den unterschiedlichsten Formen realisiert werden. Man findet sie als Rechtecke, Oktagone oder als Dreiecke. Oft wird ein Trägerrahmen gefertigt, auf welchen mehrere Windungen $n$ aufgebracht werden. Für alle Antennenformen gilt, dass die Klemmenspannung $v_{ol}$ am unbelasteten Fusspunkt der Antenne von der zeitabhängigen magnetischen Flussänderung durch die Antennenfläche induziert und gemäss (\ref{eq:XantLoop}) berechnet wird:
 \begin{equation}\label{eq:InduktionspannungLoop}
-V_{ol}= j\omega\Psi_{m}=j\omega\textbf{B}*\textbf{s}= j\omega\mu H_{z}*\pi a^{2}
+V_{ol}= j\omega\Psi_{m}=j\omega B\textbf{s}= j\omega\mu H_{z}\pi a^{2}
 \end{equation}
 
 \begin{equation}\label{eq:InduktionspannungLoopHz}
 H_{z}=H^{i}\cos\Psi\sin\theta_{i}
 \end{equation}
 %Bild von der Welle durch die Loop Fläche
-Für dei Ausdrücke  (\ref{eq:InduktionspannungLoop}) und (\ref{eq:InduktionspannungLoopHz}) gilt: \\
-$\Psi_{m}$ ist der magnetische Fluss, die Winkel $\theta_{i}$ und $\varphi_{i}$ beschreiben die durch die Loopfläche tretenden Wellen im  Kugelkoordinatensystem.\\ 
-Die Platzverhältnisse füren zu einer langgestreckten und flachen Loop Antenne. Die Form erinnert stark an diejenige eines Faltdipols. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne, die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt.\\
-Ein gefalteter Dipol hat in etwa dasselbe Abstrahlverhalten wie ein Halbwellen Dipol. Der Strahlungswiderstand ist jedoch ca. 280 Ohm. 
+Für (\ref{eq:InduktionspannungLoop}) und (\ref{eq:InduktionspannungLoopHz}) gilt: \\
 
- %%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]
-	\begin{center}
-	\begin{tikzpicture}
-	\draw[line width=1.5pt](3, 3) -- (3, 4);%links
-	\draw[line width=1.5pt](3, 4) -- (8.5, 4);%oben lang
-	\draw[line width=1.5pt](3, 3) -- (5.5, 3);%unten von links
-	\draw[line width=1.5pt](6, 3) -- (8.5, 3);%unten von rechts
-	\draw[line width=1.5pt](8.5, 3) -- (8.5, 4);%rechts
-	%\draw[line width=1.5pt, *-](3, 3) -- (3, 4);%Speisung
-	\draw[line width=1.5pt,*-](5.5, 2.5) -- (5.5, 3);%Speisung vertikal links
-	\draw[line width=1.5pt,*-](6, 2.5) -- (6, 3);%Speisung vertikal rechts
-
-	\node at (5.75, 2) {Speisung};
-	\end{tikzpicture}
-	\end{center}
-\caption{Flach gestauchte Loop Antenne die an einen Faltdipol erinnert}
-\label{fig:FflacheLoopAntenne}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Da die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an der Oberfläche anders als bei einem Faltdipol. Bei einer Loopantenne wird aufgrund des im Nahfeld dominierenden starken Magnetfelds keine Energie im umgebenden, nicht magnetischen Kunststoff gespeichert. Dennoch kommt es bei den Loop Antennen wie bei den Dipol Antennen zu einer Verlustleistung, die sich im Raum um die Antenne auf- und abbaut, aber nicht nicht abgestrahlt wird. Wie beim Dipol pendelt bei jeder Schwingung ein Teil der Feldenergie um die Antenne und wirder zurück, dabei induziert die magnetische Energie beim Rückgang einen Strom in der umgekehrten Richtung. Das allgemeine Ersatzschaltbild \ref{fig:ESBantenne} einer Antenne besteht aus dem $R_{v}$, dem $R_{rad}$ und einem $X_{ant}$. $X_{ant}$ sagt nichts darüber aus, ob die Antenne eher induktiv oder kapazitiv ist. 
-
-
+\begin{itemize}
+\item $\Psi_{m}$: magnetischer Fluss [Vs]
+\item $B$: magnetische Flussdichte [T]
+\item $H$: magnetische Feldstärke [A/m]
+\end{itemize}
+Die Winkel $\theta_{i}$ und $\varphi_{i}$ beschreiben die durch die Loopfläche tretenden elektromagnetischen Wellen im  Kugelkoordinatensystem.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!ht]%ESB Antenne
@@ -660,13 +625,38 @@ Da die Loopantenne nicht in der Mitte gespeist wird, ist die Stromverteilung an 
 %%.................................................................................
 
 \subsection{Verwendung einer Loop Antenne in der \glqq Connect 1\grqq \ Serie}
-Beim Einsatz einer magnetischen Loop Antenne als Bluetooth Antenne im Fluginstrument gibt es einige Punkte zu beachten. Das vorgesehene Antennenvolumen ist lang, schmal und nur wenige Millimeter dick. Daher kann keine runde Leiterschleife als Loop Antenne dienen. Die Antennenfläche kann also nicht mit $A=r^{2}\pi$ berechnet werden. Stattdessen ist es möglich, dass ein lang gezogener Loop zwischen dem Gehäuse und der Hauptplatine untergebracht wird. Die Loop Antennen sind in ihrem Nahfeld stark induktiv. Nach einem Abstand von mehr als $2\lambda$ sind die E-und H Feldvektoren etwa gleich lang, phasengleich und rechtwinklig zueinander. Dabei strahlt die ebene Welle die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle ab.\\
-Um den Einfluss des Geräts auf die Feldausbreitung der Loop Antenne abzuschätzen, kann das Antennenersatzschaltbild \ref{fig:ESBantenne} betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
- \begin{enumerate}[label={\alph*)}] 
+Beim Einsatz einer magnetischen Loop Antenne als Bluetooth Antenne im Fluginstrument der \glqq Connect 1\grqq \ Serie gibt es einige Punkte zu beachten. Das vorgesehene Antennenvolumen ist mit 55 mm x 3.5 mm x 10 mm (L x B x H) lang, schmal und nur wenige Millimeter dick, weshalb keine Loop Antenne mit runder Leiterschleife verwendet werden kann. Die Antennenfläche kann also nicht mit $A=r^{2}\pi$ berechnet werden. Stattdessen ist es möglich ein lang gezogener Loop zwischen dem Gehäuse und der Hauptplatine unterzubringen. Die Abbildung \ref{fig:FflacheLoopAntenne} zeigt eine Loop Antenne, die das freie Volumen zwischen der Elektronik des Gerätes und der Seitenwand nutzt. Die Form der Antenne erinnert stark an diejenige eines Faltdipols, welcher in etwa dasselbe Abstrahlverhalten wie ein Halbwellendipol aufweist. Der Strahlungswiderstand $R_{rad}$ eines Faltdipols ist jedoch mit ca. 280 Ohm viel grösser als derjenige eines Halbwellendipols mit ca. 70 Ohm.
+
+ %%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+	\begin{center}
+	\begin{tikzpicture}
+	\draw[line width=1.5pt](3, 3) -- (3, 4);%links
+	\draw[line width=1.5pt](3, 4) -- (8.5, 4);%oben lang
+	\draw[line width=1.5pt](3, 3) -- (5.5, 3);%unten von links
+	\draw[line width=1.5pt](6, 3) -- (8.5, 3);%unten von rechts
+	\draw[line width=1.5pt](8.5, 3) -- (8.5, 4);%rechts
+	%\draw[line width=1.5pt, *-](3, 3) -- (3, 4);%Speisung
+	\draw[line width=1.5pt,*-](5.5, 2.5) -- (5.5, 3);%Speisung vertikal links
+	\draw[line width=1.5pt,*-](6, 2.5) -- (6, 3);%Speisung vertikal rechts
+
+	\node at (5.75, 2) {Speisung};
+	\end{tikzpicture}
+	\end{center}
+\caption{Flach gestauchte Loop Antenne in Anlehnung an einen Faltdipol}
+\label{fig:FflacheLoopAntenne}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bei einer Loop Antenne wird aufgrund des im Nahfeld dominierenden Magnetfeldes deutlich weniger Energie im umgebenden, nicht magnetischen Kunststoff gespeichert als bei der Dipol Antenne. Dennoch kommt es zu einer Verlustleistung, unter anderem durch ohmsche Verluste, welche nicht abgestrahlt wird. Hierdurch baut sich ebenfalls im Raum um die Antenne das elektromagnetische Nahfeld auf und ab und induziert dabei einen Strom in der Leiterschleife.
+Ab einem Abstand $r$ von mehr als $2\lambda$ zur Antenne sind jedoch auch bei der Loop Antenne die E-und H Feldvektoren etwa gleich lang, phasengleich und rechtwinklig zueinander. Dabei strahlt die ebene Wellenfront die Antennenleistung in Form von Wirkleistung in Transversalrichtung von der Quelle ab.\\
+
+Um den Einfluss des Fluggeräts auf die Feldausbreitung der Loop Antenne abzuschätzen, kann das Antennenersatzschaltbild \ref{fig:ESBantenne} betrachtet werden. Ein effizientes Abstrahlen der Antennenleistung ist möglich, wenn:
+ \begin{itemize}
  \item die Antennenimpedanz an die Quellenimpedanz angepasst ist 
  \item $R_{rad}$ gegenüber $R_{v}$ gross ist 
- \end{enumerate} 
-Ein Wellenanpassung bei einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk kaum zu erreichen. Für alle Antennenformen gilt: Wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann kann der Reflexionskoeffizient den Wert 0 nicht annehmen, das bedeutet der \textit{Return Loss} ist sehr klein. Daher ist der $S_{11}$ Wert ebenfalls sehr klein, die Folge sind Reflexionen. 
+ \end{itemize}
+ Ein Wellenanpassung bei einer Loop Antenne ist aufgrund der Antennenimpedanz ohne Anpassungsnetzwerk kaum zu erreichen. Für alle Antennenformen gilt: Wenn die Anpassung an die Quelle eine grosse Abweichung zeigt, dann kann der Reflexionskoeffizient den Wert 0 nicht annehmen, das bedeutet der \textit{Return Loss} ist sehr klein. Daher ist der $S_{11}$ Wert ebenfalls sehr klein, die Folge sind Reflexionen. 
 Dementsprechend erreicht nur ein kleiner Teil der für die Antenne bestimmten Leistung den Strahlungswiderstand und kann abgestrahlt werden. Die Abstrahlleistung die in Abbildung \ref{fig:ESBantenne} mit $P_{rad}$ bezeichnet wird, fällt daher klein aus.\\
 Ebenfalls kann aus der Abbildung \ref{fig:ESBantenne} das Verhältnis von $R_{rad}$ zu $R_{v}$ entnommen werden. Es wirkt sich auf die Abstrahleffizienz $\eta_{rad}$ der Antenne aus.
 
