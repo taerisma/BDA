@@ -9,7 +9,7 @@ Hšhe = 10mm
 Tiefe= 1mm
 Gesamt LŠnge 291.75mm
 
-Zant (258.833+j161.420) bei 2450MHz
+Zant (25.8+j161.420) bei 2450MHz
 S11max 2.346  GHz 12.1306 -dB
 -10dB Bandbreite 30 MHz
 Effizienz

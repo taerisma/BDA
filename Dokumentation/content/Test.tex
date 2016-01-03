@@ -24,8 +24,8 @@ Das Messobjekt wird mit Polystyrol angehoben, damit das Testobjekt genau in der 
 \subsection{Netzwerkanalysator}
 Ein Netzwerkanalysator wird in der Elektronik, der Nachrichtentechnik und besonders in der Hochfrequenztechnik eingesetzt. Seine Aufgaben umfassen das Aufnehmen der Streuparameter (S-Parameter), also Reflexion und Transmission von elektrischen Signalwellen an Messobjekten. Der Netzwerkanalysator zeichnet die S-Parameter als Funktion der Frequenz auf. Der Netzwerkanalysator sendet ein Signal, die  hinlaufende Welle genannt, zum  Messobjekt. Das Messobjekt wird in der englischen Literatur  \textit{DUT}, \textit{device under test} genannt. Die  Frequenz, Amplitude und Phase der hinlaufenden Welle sind bekannt. Das Messobjekt reflektiert einen Teil der hinlaufenden Welle. Dieser Teil wird weglaufende Welle genannt. Sie wird, ohne in das Testobjekt einzudringen, am Eingang des Messobjekts, zum Netzwerkanalysator zurück reflektiert. Dabei vergleicht der Netzwerkanalysator die beiden Wellen. Der Rest der elektromagnetischen Welle, der nicht am Eingang des Messobjekts refelktiert wird, tritt in das Messobjekt ein, wird dort verändert, das heisst gedämpft, verstärkt oder phasenverschoben. Der transmittierte Signalanteil tritt am Ausgang des DUT als übertragenes Signal in Erscheinung. Die durch das DUT veränderte und am Ausgang anliegende Signalwelle wird auch  weglaufende Welle genannt.
 
-Aus dem Verhältnis von reflektiertem zu gesendetem Signal wird die Reflexion, das heisst der Reflexionskoeffizient gemessen. Weiter wird die Dämpfung des Reflektierten Signales  in Abhängigkeit der Frequenz aufgezeichnet und dargestellt. Dies wird als Rückflussdämpfung  oder als $S_{11}$ Wert in dB angegeben. Diese wird in  der englischer  Literatur \textit{Return Loss} genannt.
-Der $S_{21}$ Wert gibt Auskunft über das Verhältnis des übertragenen Signal, zum gesendeten Signal. Dabei wird die  Transmission des Messobjektes gemessen. 
+Aus dem Verhältnis von reflektiertem zu gesendetem Signal wird die Reflexion, das heisst der Reflexionskoeffizient gemessen. Weiter wird die Dämpfung des Reflektierten Signales  in Abhängigkeit der Frequenz aufgezeichnet und dargestellt. Dies wird als Rückflussdämpfung  oder als $S_{11}$-Wert in dB angegeben. Diese wird in  der englischer  Literatur \textit{Return Loss} genannt.
+Der $S_{21}$-Wert gibt Auskunft über das Verhältnis des übertragenen Signal, zum gesendeten Signal. Dabei wird die  Transmission des Messobjektes gemessen. 
 Die Abbildung \ref{NetzwerkanalysatorZweiTor} zeigt diesen Zusammenhang auf.
 \cite{NetzwerkanalyzorTUDarmstadt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +54,7 @@ Die Abbildung \ref{NetzwerkanalysatorZweiTor} zeigt diesen Zusammenhang auf.
 	%\draw[line width=1.5pt](3, 0) rectangle (5, 1);
 \end{tikzpicture}
 \end{center}
-	\caption{Ermittlung der $S_{11}$ Parameter am Zweitor}
+	\caption{Ermittlung der $S_{11}$-Parameter am Zweitor}
 	\label{NetzwerkanalysatorS11}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,7 +70,7 @@ Die Abbildung \ref{NetzwerkanalysatorZweiTor} zeigt diesen Zusammenhang auf.
 	\draw[line width=2.5pt] (13, 3) -- (13, 1.8);
 \end{tikzpicture}
 \end{center}
-	\caption{Ermittlung der $S_{21}$ Parameter am Zweitor}
+	\caption{Ermittlung der $S_{21}$-Parameter am Zweitor}
 	\label{NetzwerkanalysatorS21}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,7 +81,7 @@ Die Antennendesigs wurden Anhand der im EMPIRE XPU erstellten Simulationsdaten g
 Da jede Antenne eine Zuleitung braucht, wurden am Fusspunkt der Kupferbandantennen ein \textit{semi rigid Koaxialkabel} angebracht. Da es sich bei einem Dipol um eine symmetrische Antenne handelt, muss auch die Zuleitung symmetrisch sein. Aus diesem Grunde wurde der Innenleiter und der Mantel des Koaxialkabels mit den Einspeisepunkteden des Dipols verlötet.\\
 Die \textit{semi rigid Koaxialkabel} von $HUBER+SUHNER$ des Typs $SUCOFORM\_47\_CU$ besitzen eine Impedanz von $50  \pm 2\Omega$. Das Ende des Koaxialkabels ist mit einem SMA Gewinde versehen.\\
 
-Eine semi ridid Koaxialkabel mit einer Dipolantenne ist in der folgenden Abbidlung gezeigt.
+Eine semi ridid Koaxialkabel mit einer Dipol Antenne ist in der folgenden Abbidlung gezeigt.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=8cm]{content/bilder/Implementierung/KoaxMitAntenne.JPG}%
@@ -95,7 +95,7 @@ In der Implementierung ist die Herstellung der getesteten Antenne gezeigt.\\
 Die Erwartungen an das Funktionsmuster entsprechen den Simulationen der Dipolantenne aus dem Kapitel \ref{sec:Sim_verschiedene_Geometrien}.\\
 
 \subsection{Messergebnisse}
-Aus den Simulationen in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} ist der |$S_{11}$| Verlauf im Freiraum und im Gerät bekannt. Die nachfolgende Abbildung zeigt als rote Kurve den $S_{11}$ Wert der Dipolantenne im Freiraum. Als rote Kurve ist der Verlauf des $S_{11}$ gezeigt, wenn die Dipolantenne im Gerät positioniert ist. Es ist die bereits erwähnte Verschiebung der Resonanzfrequenz ersichtlich. Zudem ist die Resonanz der Dämpfung des $S_{11}$ Verlaufs im Gerät weniger stark ausgeprägt wie im Freiraum. Die Messung der im Gerät platzierten Dipolantenne ist als grüne Kurve in der Abbildung \ref{S11_Messung_Simulation_Dipolantenn_Freiraum} dargestellt. Die Resonanz der bluen Kurve(Simulation des Dipols im Gerät) und die Resonanz der grünen Kurve(Messung des Dipols im Gerät) stimmen gut überein. Was erstaunt, ist dass die $S_{11}$ Dämpfung der zuführenden Welle -15dB aufweisst. Ein Erklärungsversuch weisst auf das Simulationsmodell. Es zeigt qualitativ wie wie sich die Resonanzfrequenz von einem Dipol im Freiraum gegenüber einem Dipol im Gerät verhält. Es macht aber erhebliche Fehler beim Impedanzverhalten. So weisst der gemessene Dipol bei einer Frequenz von 2.45 GHz eine Antennenimpedanz von $Z_{ant}$ = (30+j4)$\Omega$. Während aus der Simulation die Antennenimpedanz von $Z_{ant}$ = (16+j14.7)$\Omega$ aus Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} zu entnehmen ist. Demnach ist die Anpassung von an eine 50$\Omega$ Quelle in Realität bersser als aus der Simulation erwartet.
+Aus den Simulationen in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} ist der $S_{11}$-Verlauf im Freiraum und im Gerät bekannt. Die nachfolgende Abbildung zeigt als rote Kurve den $S_{11}$-Wert der Dipolantenne im Freiraum. Als rote Kurve ist der Verlauf des $S_{11}$ gezeigt, wenn die Dipolantenne im Gerät positioniert ist. Es ist die bereits erwähnte Verschiebung der Resonanzfrequenz ersichtlich. Zudem ist die Resonanz der Dämpfung des $S_{11}$-Verlaufs im Gerät weniger stark ausgeprägt wie im Freiraum. Die Messung der im Gerät platzierten Dipolantenne ist als grüne Kurve in der Abbildung \ref{S11_Messung_Simulation_Dipolantenn_Freiraum} dargestellt. Die Resonanz der bluen Kurve(Simulation des Dipols im Gerät) und die Resonanz der grünen Kurve(Messung des Dipols im Gerät) stimmen gut überein. Was erstaunt, ist dass die $S_{11}$-Dämpfung der zuführenden Welle -15dB aufweisst. Ein Erklärungsversuch weisst auf das Simulationsmodell. Es zeigt qualitativ wie wie sich die Resonanzfrequenz von einem Dipol im Freiraum gegenüber einem Dipol im Gerät verhält. Es macht aber erhebliche Fehler beim Impedanzverhalten. So weisst der gemessene Dipol bei einer Frequenz von 2.45 GHz eine Antennenimpedanz von $Z_{ant}$ = (30+j4)$\Omega$. Während aus der Simulation die Antennenimpedanz von $Z_{ant}$ = (16+j14.7)$\Omega$ aus Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} zu entnehmen ist. Demnach ist die Anpassung von an eine 50$\Omega$ Quelle in Realität bersser als aus der Simulation erwartet.
 
 
 %\begin{figure}[!ht]
@@ -113,7 +113,7 @@ Aus den Simulationen in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_
 	\inputencoding{latin1}
 	\input{content/bilder/Implementierung/S11FurDoku.tex}
 	\endgroup
-	\caption{Vergleich des gemessen und simulierten $S_{11}$ Wert im Ger\"at und im Freiraum}	\label{S11_Messung_Simulation_Dipolantenn_Freiraum}
+	\caption{Vergleich des gemessen und simulierten $S_{11}$-Wert im Ger\"at und im Freiraum}	\label{S11_Messung_Simulation_Dipolantenn_Freiraum}
 \end{figure}
 \newpage
 Ein qualitatives Bild des Abstrahlverhaltens der Dipolantenne im Gerät zeigt die Abbildung \ref{fig:3D Richtdiagramm} Um die Richtwirkung zu interpretieren wurde der minimale Richtwert auf min -25dB und der maximale Wert auf 0 dB gesetzt. Das Bild zeigt eine Sicht auf die xz-Ebene. Senkrecht nach oben zeigt die positive z-Achse und rechtwinklig dazu verläuft horizontal die x-Achse. Der Pfeil nach rechts zeigt die positive x-Achse. Die negative y-Achse würde rechtwinklig aus der Blattebene zeigen. Die Abbildung \ref{fig:FrontStarLab} zeigt das Gerät im StarLab im Moment der elektromagnetischen Feldverteilung der Abbildung \ref{fig:3D Richtdiagramm}\\

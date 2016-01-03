@@ -1,5 +1,5 @@
 
-\section{Dipolantenne}\label{sec:DipolAntenne}
+\section{Dipol Antenne}\label{sec:DipolAntenne}
 Der zentral gespiesene Dipol besteht oft aus zwei runden Leiterstäben mit dem Durchmesser $d$ und der Länge $l$. Die beiden Stäbe haben eine gesamte Länge von $2l$ und liegen bis auf eine kleine Lücke direkt hintereinander. Die gesamte Länge der beiden Stäbe ist viel grösser als der Durchmesser $d$. Wird eine Spannung in der Lücke zwischen den beiden Stäben angelegt, kommt es zu einer Stromverteilung über die gesamte Länge. Oft wird die Spannung mit einer Zweidrahtleitung,  diese wird englisch \textit{Transmission Line} genannt, zwischen den Leiterstäben angebracht. Die anschliessende Stromverteilung entlang der beiden runden Leiterstäbe liefert den Ursprung der Wellenausbreitung. In einer ersten Näherung kann die sich von der Speisestelle ausbreitende Welle als richtungsunabhängige Kugelwelle betrachtet werden mit folgender mathematischer Beschreibung: \cite{elliott1981antenna}.
 %E^j(wt-kr)/4pimu^-1 r
 %Elliot Seite 29 Nr1.93
@@ -17,7 +17,7 @@ Der zentral gespiesene Dipol besteht oft aus zwei runden Leiterstäben mit dem D
 	\label{FitzDipol}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Die Dipolantenne entspricht einer Zweidrahtleitung mit offenen, um $90^\circ$ abgewinkelten Drahtarmen. Die offenen Enden der Dipolarme führen zu einer Reflexion der zuführenden Spannungswelle in die umgekehrte Richtung und somit zu einer stehenden Welle. Stromführende Elemente, welche nahe beieinander liegen und deren Stromamplituden betragsmässig gleich, jedoch entgegengesetzt sind, strahlen nur gering. Dies trifft auf die Zuführung der Dipolantenne zu. Die voneinander abgewinkelten Dipolarme strahlen jedoch stark, da aufgrund des durch die räumliche Trennung entstehenden elektrischen Feldes elektromagnetische Wellen abgestrahlt werden.
+Die Dipol Antenne entspricht einer Zweidrahtleitung mit offenen, um $90^\circ$ abgewinkelten Drahtarmen. Die offenen Enden der Dipolarme führen zu einer Reflexion der zuführenden Spannungswelle in die umgekehrte Richtung und somit zu einer stehenden Welle. Stromführende Elemente, welche nahe beieinander liegen und deren Stromamplituden betragsmässig gleich, jedoch entgegengesetzt sind, strahlen nur gering. Dies trifft auf die Zuführung der Dipol Antenne zu. Die voneinander abgewinkelten Dipolarme strahlen jedoch stark, da aufgrund des durch die räumliche Trennung entstehenden elektrischen Feldes elektromagnetische Wellen abgestrahlt werden.
 Als Näherung für die Stromverteilung in den Dipolarmen soll Folgendes gelten \cite{elliott1981antenna}:
 \begin{equation}\label{I_xt_Dipol} 
 I(x,t) =I_{m}sin([k(l-x)])e^{j\omega t}
@@ -39,7 +39,7 @@ Die Gewichtungsfunktion in Abhängigkeit von $\theta$ beträgt nach folgender Fo
 a_{\theta}(\theta)=- \frac{2I_{m}}{k sin(\theta)} \Big\lbrack cos(kl cos(\theta)) - cos(kl) \Big\rbrack
 \end{equation}
 %Elliot Formel 2.6 oder Joss EMANT 122.
-Es sollen nun zwei Spezialfälle einer Dipolantenne genauer betrachtet werden:
+Es sollen nun zwei Spezialfälle einer Dipol Antenne genauer betrachtet werden:
 \begin{itemize}
 \item der Halbwellendipol mit 2l = $\lambda/2$
 \item der kurze Dipol mit 2l$ \ <<\lambda$
@@ -84,7 +84,7 @@ Die Feldverteilung einer Antenne kann in einem zwei- oder dreidimensionalen Rich
 	\draw[line width=0.5pt, dashed, very thick,cap=round,->](A) .. controls (a) .. node[above] {$\theta$} (B);
 \end{tikzpicture}
 \end{center}
-	\caption{Das E-Feld einer Dipolantenne in der xz-Ebene}
+	\caption{Das E-Feld einer Dipol Antenne in der xz-Ebene}
 	\label{fig:DipolEFerd}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
