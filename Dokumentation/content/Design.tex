@@ -3,7 +3,7 @@
 \chapter{Design}
 
 \section{Anforderungen}
-Das Design der Antenne wird für einen Anwendungsfall im freien entwickelt. Die Distanz zwischen dem Sender und dem Empfänger soll 10 Meter betragen. Das Übertragungsmedium ist Luft, kann aber idealisiert als Vakuum angenommen werden. Die Antenne soll isotrop abstrahlen und der Gewinn der Empfangsantenne kann mit einem Faktor  1 angenommen werden. Weiter ist vorgesehen, dass die Antenne symmetrisch gespeisst wird und im 2.4 GHz ISM Band arbeiten. Als Quelle dient der Bluetooth Low Energie Texas Instruments CC2541 Chip mit 0 dBm  Sendeleistung. Als Designkriterien wird eine $S_{11}$-Dämpfung von -10 dB mit einer Bandbreite von mindestens 100 MHz erwünscht und eine Reserve von 6 dB wird in das Linkbudget eingerechnet. Die Abbildung \ref{fig:DesignAusgangslage} zeigt die wesentlichen Punkte der Designanforderungen.
+Das Funktionsmuster der Antenne wird für einen Anwendungsfall im Freien entwickelt. Die Distanz zwischen zwischen der Sende- und der Empfängerantenne soll 10 Meter betragen. Das Übertragungsmedium ist Luft, kann aber idealisiert als Vakuum angenommen werden. Die Antenne soll isotrop abstrahlen und der Gewinn der Empfangsantenne kann mit einem Faktor  1 angenommen werden. Weiter ist vorgesehen, dass die Antenne symmetrisch gespeist wird und im 2.4 GHz ISM Frequenzband arbeitet. Als Quelle dient der Bluetooth Low Energie Texas Instruments CC2541 Chip mit einer Sendeleistung von 0 dB. Weitere Anforderungen sind eine $S_{11}$-Dämpfung von -10 dB mit einer Bandbreite von mindestens 100 MHz erwünscht sowie eine Reserve von 6 dB im Linkbudget. Die Abbildung \ref{fig:DesignAusgangslage} zeigt die wesentlichen Punkte der Designanforderungen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
@@ -25,7 +25,7 @@ Das Design der Antenne wird für einen Anwendungsfall im freien entwickelt. Die 
 	\draw[line width=1.5pt] (9.5, 1.5) -- (9.5, 2);
 	\draw[line width=1.5pt,decorate,decoration=expanding waves](3, 2) -- (5, 2);
 	\draw[line width=1.5pt](10, 0) rectangle (12, 1) node[pos=0.5] {Empfänger};
-	\node[draw,align=left] at (0.5,4) {ISM 2.4 - 2.5 GHz Band\\ Vakuum als Übertragungsmedium\\ $G_{r} =1$\\ $S_{11}$ bei -10 dB über 100MHz \\ isotropes Abstrahlverhalten};
+	\node[draw,align=left] at (0.5,4) {ISM 2.4 - 2.5 GHz Band\\ Vakuum \\ $G_{r} =1$\\ $S_{11}$ bei -10 dB über 100MHz \\ Isotropes Abstrahlverhalten};
 \end{tikzpicture}
 \end{center}
 \caption{Ausgangslage und Anforderungen an das Design}
