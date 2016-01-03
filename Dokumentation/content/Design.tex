@@ -28,7 +28,7 @@ Das Funktionsmuster der Antenne wird für einen Anwendungsfall im Freien entwick
 	\node[draw,align=left] at (0.5,4) {ISM 2.4 - 2.5 GHz Band\\ Vakuum \\ $G_{r} =1$\\ $S_{11}$ bei -10 dB über 100MHz \\ Isotropes Abstrahlverhalten};
 \end{tikzpicture}
 \end{center}
-\caption{Ausgangslage und Anforderungen an das Design}
+\caption{Designanforderungen}
 \label{fig:DesignAusgangslage}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -57,9 +57,9 @@ Nr. & Anforderung & Beschreibung & Wert   \\
 \midrule
 001 & fest & ISM Frequenzbereich  & 2.4-2.5 GHz  \\ 
 002 & fest &  Speisung des Antennensystems & symmetrisch  \\  
-003 & wunsch & $S_{11}$ der Antenne   -10B & 100 MHz  \\ 
-004 & wunsch & Funkdistanz, Arbeitsradius & 10m   \\ 
-005 & wunsch & Linkbudget Reserve & 6dB   \\ 
+003 & Wunsch & $S_{11}$ der Antenne   -10B & 100 MHz  \\ 
+004 & Wunsch & Funkdistanz, Arbeitsradius & 10 m   \\ 
+005 & Wunsch & Linkbudget Reserve & 6 dB   \\ 
 \bottomrule
   \end{tabular}
   \caption{Anforderungen an das Bluetooth Antennensystem}
@@ -68,26 +68,26 @@ Nr. & Anforderung & Beschreibung & Wert   \\
 
 \section{Design mit bekannten Modellen}
 
-Im Fluginstrument geforderte symmetrische Bluetooth Antenne soll platzsparend im Inneren des Gerätes positioniert sein. Aus diesem Grunde wird eine gedruckte Dipol Antenne entworfen. In kleinen elektronischen Geräten sind auf einer Leiterplatte oder auf einem selbstklebenden Kunststoffstreifen gedruckte Antennen von grossem Interesse. Die auf einer Leiterplatte oder einer Folie gedruckten Antennen haben den Vorteil, dass sie sehr kompakt und günstig zu produzieren sind. Zudem sind die Signalwege vom Sende- und Empfangschip zur Antenne sehr kurz. Trotz eines simplen Antennendesigns haben Dipolantennen ein annähernd isotropes Abstrahlverhalten. Sie werden als Sende- und Empfangsantennen oft in  tragbaren Geräten eingesetzt. \\
-
-Auf Grund ihrer bereitserwähnten simplen und kostengünstigen Herstellung sind auf einer Leiterplatte gedruckte Antennen sehr beliebt. Es entstehen nur geringe Kosten, weil die Antenne auf demselben PCB (printed circuit board) wie die gesamte Gerätelektronik gefertigt wird. Somit wird die Antenne im selben Arbeitsgang wie die Printfertigung hergestellt. Die  Anpassung der Antenne und die strahlenden Antennenelemente sind ebenso Teil der Leiterplatte wie die Elektronikbauteile des Prints. Für ein System, bei dem ein isotropes Abstrahlverhalten gefordert ist, kommen oft Stabantennen zum Einsatz. Um eine gute Abstrahlleistung der Antenne zu erhalten, ist der $\lambda /2$ Dipol ein viel benutzter Ansatz. Er erfordert, dass die effektive mechanische Länge des Dipols, aufgrund des Verkürtzungsfaktors, etwas weniger als eine halbe Wellenlänge beträgt. 
+Die im Fluginstrument erforderliche symmetrische Bluetooth Antenne muss aufgrund des vorgegebenen Antennenvolumens im Inneren des Fluggerätes positioniert werden. In kleinen elektronischen Geräten sind auf Leiterplatten oder selbstklebende Kunsstoffstreifen gedruckte Antennen von grossem Interesse, da diese den Vorteil haben, dass sie sehr kompakt gebaut und günstig zu produzieren sind. Aus diesem Grunde wird eine gedruckte Dipol Antenne entworfen. Zudem sind die Signalwege vom Sende- und Empfangschip zur Antenne sehr kurz. Trotz des simplen Antennendesigns haben Dipol Antennen ein annähernd isotropes Abstrahlverhalten. Sie werden als Sende- und Empfangsantennen oft in  tragbaren Geräten eingesetzt. Auf Grund ihrer bereitserwähnten simplen und kostengünstigen Herstellung sind auf einer Leiterplatte gedruckte Antennen sehr beliebt. Durch den Druck der Antenne auf die Leiterplatte entstehen nur geringe Kosten, da die Antenne auf demselben PCB. (printed circuit board) wie die gesamte Gerätelektronik gefertigt wird. Somit wird die Antenne im selben Arbeitsgang wie die Printfertigung hergestellt. Die  Anpassung der Antenne und die strahlenden Antennenelemente sind ebenso Teil der Leiterplatte wie die Elektronikbauteile des Prints.\\
+In Systemen, welche ein isotropes Abstrahlverhalten erfordern, kommen oft Stabantennen zum Einsatz. Um eine gute Abstrahlleistung der Antenne zu erhalten, ist der $\lambda /2$-Dipol ein viel benutzter Ansatz. Aufgrund des Verkürzungsfaktors muss die effektive Länge des Dipols etwas weniger als die halbe Wellenlänge der Signalfrequenz betragen.  
  
 Zur Berechnung der Länge des in Resonanz betriebenen Dipols kann die  Gleichung \ref{eq:lamba_2_laene_dipol} herangezogen werden.
 
 \begin{equation}\label{eq:lamba_2_laene_dipol}
-L=2l = 0.5 \lambda= 0,5 \dfrac{v}{f}
+L = 2l = 0.5 \  \lambda= 0,5 \  \dfrac{v}{f}
 \end{equation} 
-Wobei $v$ die tatsächliche Ausbreitungsgeschwindigkeit der elektromagnetischen Welle im Leiter ist. Diese Geschwindigkeit $v$ hängt von der effektiven dielektrischen Konstante $\epsilon_{eff}$ der Umgebung  ab. 
-Die effektive  Impulsgeschwindigkeit der Elektronen kann mit der Gleichung \ref{eff_Geschwindigkeit} berechnet werden. 
+Die tatsächliche Ausbreitungsgeschwindigkeit v der elektromagnetischen Welle im Leiter hängt von der effektiven dielektrischen Konstante $\epsilon_{eff}$ der Umgebung  ab. 
+Die effektive  Impulsgeschwindigkeit der Elektronen kann mit der Gleichung \ref{eff_Geschwindigkeit} berechnet werden:
 \begin{equation}\label{eff_Geschwindigkeit}
 v = \dfrac{c}{\varepsilon_{eff}}
 \end{equation}
-Wobei $c$ die Lichtgeschwindigkeit im Vakuum und $\varepsilon_{eff}$  die effektive Dielektrizitätskonstante des umgebenden Mediums sind. Die effektive Dielektrizitätskonstante, einer auf ein Substrat gedruckte Antenne, ist von der  Geometrie und dem Dielektrikum des Substrats abhängig. Die Berechnung der effektiven Dielektrizitätszahl für eine schmale Kupferspur kann aus der Gleichung \ref{eff_epsilon} entnommen werden. 
+Hierbei steht $c$ für die Lichtgeschwindigkeit im Vakuum und $\varepsilon_{eff}$ und für Dielektrizitätskonstante des umgebenden Mediums. Die effektive Dielektrizitätskonstante einer auf ein Substrat gedruckten Antenne ist von der  Geometrie und dem Dielektrikum des Substrats abhängig. Die Berechnung der effektiven Dielektrizitätszahl für eine schmale Kupferspur kann aus der Gleichung \ref{eff_epsilon} entnommen werden. 
 
 \begin{equation}\label{eff_epsilon}
 \varepsilon_{eff}=\dfrac{\varepsilon_r+1}{2}+\dfrac{\varepsilon_r-1}{2}\left[\left(1+\dfrac{12h}{w}\right)^{-\frac{1}{2}}+0.04\left(1-\dfrac{w}{h}\right)^{2}\right]
 \end{equation}
-Wobei $h$ die Dicke des Substrats, $w$ die Breite der Antennenstrucktur auf dem Substrat und  $\varepsilon_{r}$ die relative Dielektrizitätskonstante des Substrats sind. 
+$h$ steht für die Dicke des Substrats , $w$w für die Breite der Antennenstrucktur und  $\varepsilon_{r}$ für die relative Dielektrizitätskonstante des Substrats
+$h$ , $w$  auf dem Substrat  sind. 
 
 \section{Designansatz $\lambda$/2 Dipolantenne}  
 Unter Verwendung der in Kapitel \ref{sec:Implementierung} erwähnten Gleichung \ref{eq:lamba_2_laene_dipol} soll eine Dipolantenne für eine Frequenz von 2.45 GHz entworfen werden. Die Antenne wird symmetrisch gespeisst und wird auf eine Leiterplatte gedruckt. Als Substrat des Antennenprints kommt ein  FR-4 PCB mit einem geschätzten  $\varepsilon_r $ von 4.3 bei 1 GHz und einer Substratdicke von 1,5 mm  zum Einsatz. Die Dicke der Kupferschicht beträgt 35 $\mu m$ und  die Leiterbahnbreite für den Dipol wird mit 1 mm definiert.\\
@@ -102,7 +102,13 @@ L=2l = 0.5 \lambda= 0,5\dfrac{v}{f}=0,5 \dfrac{vvvv}{2.45[GHz]}=bla
 \end{equation} 
 Für den $\lambda/2$ Designansatz resultiert eine Länge von xx [m].
 \subsection{Simulation  verschiedener Geometrien}\label{sec:Sim_verschiedene_Geometrien}
-Es wurden insgesammt vier Dipolantennen entworfen. Sie sind im EMPIRE XPU erstellt und simuliert worden. Die Antennenabmessungen wurden für das Simulationsmodel optimiert. Die Länge der Antennen weicht vom $L=2l=\lambda/2$ Ansatz ab. Es wurde versucht für einen Einbau der Antenne eine optimale Länge  ins Fluginstrument "Connect 1" der Firma Flytec AG zu finden. Die Simulationen gehen von einem 26$\mu$m dicken Kupferband als Antenne aus. Dies entspricht dem 3M Kupferband des Typs "1181 Tape". Die Leimschicht des Klebebands wird vernachlässigt. Als Trägersubstrat dient direkt das ABS Gehäuse \cite{Kupferband}. Für eine Aussage über das Abstrahlverhalten einer Dipolantenne auf der Längsseite des Fluginstrumentes sich verhaltet, wurde entschieden, dass es weder nötig ist, die Antennenstruktur auf ein FR4 Print zu drucken noch ist die aufwändige Fertigung einer Kleinserie von gedruckten Antennen auf einer Klebefolie nötig. Stattdessen wir wie bereits erwähnt das Kupferklebeband "1181 Tape" verwendet. Es bringt einige Vorteile mit sich: Das Tape ist einfach zu bearbeiten. Es kann mit einer Schere oder mit einem Skalpell die gewünschte Antennenform aus dem Tape geschnitten werden. Die geometrischen Eigenschaften des Taps sind mit einer Dicke von 26$\mu$m in einem ändlich Bereich wie eine gedruckte Antenne die auf einer FR4 Kunstharzplatte aufgetragen ist.
+Es wurden insgesammt vier Dipol Antennen entworfen, im EMPIRE XPU erstellt und simuliert worden. Die Antennenabmessungen wurden für das Simulationsmodel optimiert. Die Länge der Antennen weicht vom Ansatz $L=2l=\lambda/2$ ab. Hierdurch wurde versucht eine optimale Länge für den Einbau der Antenne ins "Connect 1" Fluggerät der Firma Fytec AG zu finden. Die Simulationen gehen von einem 26 $\mu$m dicken Kupferband als Antenne aus. Dies entspricht dem 3M Kupferband des Typs "1181 Tape". Die Leimschicht des Klebebands wird vernachlässigt. Als Trägersubstrat dient direkt das ABS-Gehäuse \cite{Kupferband}. 
+%%%%
+Um eine Aussage über das Abstrahlverhalten einer Dipol Antenne auf der Längsseite des Fluginstruments zu erhalten, kann darauf verzichtet werden, die Antennenstruktur auf ein FR4 Print zu drucken oder Kleinserie von gedruckten Antennen auf einer Klebefolie zu fertigen. Stattdessen kann das bereits erwähnte Kupferklebeband des Typs "1181 Tape" verwendet werden, welches einige Vorteile mit sich bringt.
+%%%%%
+Einerseits ist das Tape einfach zu bearbeiten, es kann mit einer Schere oder einem Skalpell die gewünschte Antennenform aus dem Tape geschnitten werden, andererseits entspricht das Tape mit einer Dicke von 26 $\mu$m  den geometrischen Eigenschaften einer gedruckten Antenne auf einer FR4 Kunstharzplatte.
+%%%
+
 \newpage
 \subsubsection*{Entwurf}
 Die vier Antennen haben alle dieselbe Dicke. Das \glqq 3M 1181 Tape\grqq hat eine Kupferstärke von 26$\mu$m. Die vier Antennen unterscheiden sich in der Breite der Kupferstreifen und in ihrer Form.\\
