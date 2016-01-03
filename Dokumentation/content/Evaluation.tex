@@ -513,10 +513,9 @@ Die dreidimensionalen Richtdiagramme aller drei Simulationen zeigen unabhängig 
 Die Tabelle \ref{tab:Evaluation_Vergeich_Dipol Antennen} beinhaltet einige Vergleichswerte der simulierten $\lambda/2$-Dipol Antennen. Der Maximalwert der Rückflussdämpfung ist als $S_{11_{max}}$ in der Tabelle aufgeführt und entspricht jeweils der Resonanzfrequenz. Die Abstrahleffizienz $\eta$ stellt die gesamte Abstrahleffizienz $\eta_{tot}$ dar. Als -10 dB-Bandbreite wurde der Frequenzbereich zwischen den beiden Werten auf der $S_{11}$-Kurve definiert, bei welchen die Amplitude -10 dB beträgt. Die relative Bandbreite wird gebildet aus der Division der -10 dB-Bandbreite durch die Resonanzfrequenz $f_{res}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!h]
- \centering
- \begin{tabular}{p{3cm} p{4cm} p{2cm} p{1.5cm} p{2cm} p{2.5cm} l c c c c p r} 
+ \begin{tabular}{p{3cm} p{3cm} l c c c c r} 
  \toprule 
- Antennenumfeld & $S_{11_{max}}$ [dB]		& $Z_{ant}$ [$\Omega$] 	& $\eta$ [$\%$] & Bandbreite [MHz] & relative Bandbreite [$\%$]\\ 
+ Antennenufeld & max $S_{11}$ [dB]		& $Z_{ant}$ [$\Omega$] 	& $\eta$ [$\%$] & Bandbreite [MHz] & relative Bandbreite [$\%$]\\ 
  \midrule
  Freiraum 			&	-16.16 @ 2.42 GHz		& 	68.60-j4			& 	97	&	340 & 14\\ 		
 1 ABS-Stück 	& -20.79 @ 2.08 GHz 		&	141.5+j39.6		&	71	&	342	 & 16 \\
@@ -663,7 +662,7 @@ Dementsprechend erreicht nur ein sehr kleiner Teil der für die Antenne bestimmt
 Es wurden wie in Kapitel \ref{sim_lamda2_Dipol}\ für die Dipol Antenne drei Simulationen durchgeführt. Diese sollen das Verhalten der Loop Antenne mit und ohne Kunststoff im Nahfeld aufzeigen. Als Simulationsmodell wurde entsprechend den Anforderungen keine runde Leiterschleife, sondern ein langer, schmaler Loop verwendet. Das Kupferrechteck mit einer Dicke von 1 mm wies eine Gesamtlänge von 63 mm auf. Diese Länge entspricht näherungsweise $\lambda/2$ bei der Bluetooth Zielfrequenz von 2.45 GHz (61 mm). Die Antenne wird von einer Quelle mit 50 Ohm Innenwiderstand gespeist. \\
 
 \textbf{$\lambda/2$-Loop Antenne im Freiraum}\\
-Die erste Simulation bezieht sich auf eine $\lambda/2$-Loop Antenne im Freiraum. Die $S_{11}$- Werte einer solchen Antenne sind in Abbildung \ref{S11_Loop_Vergleich_Simulation} als rote Kurve aufgezeigt. Die Resonanzfrequenz liegt bei 5.85 GHz, die Antenne zeigt bei dieser Frequenz einen $S_{11}$-Wert von mehr als -26 dB. Die -10 dB-Bandbreite beträgt 428 MHz. Die Impedanz der Antenne bei 2.45 GHz in Abbildung \ref{Impedanz_Loop_Vergleich_Simulation} zeigt klar eine Fehlanpassung. Der Realanteil der Antennenimpedanz liegt bei 2721 Ohm und der Imaginäranteil bei 225 Ohm. Deshalb ist der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt eines Smith-Diagramms. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer totalen Reflexion der zuführenden Welle. Der Reflexionsfaktor $\Gamma$ beträgt in diesem Fall +1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$. Die sehr tiefe Abstrahleffizienz ist auch aus der Abbildung \ref{fig:sim_Loop_freiraum_3D} zu entnehmen. Es ist kaum eine bevorzugte Abstrahlrichtung zu sehen. Die dunkelrote Farbe entspricht einem Richtfaktor von 1.19 dBi. Das entspricht beinahe einem isotropen Abstrahlverhalten.\\
+Die erste Simulation bezieht sich auf eine $\lambda/2$-Loop Antenne im Freiraum. Die $S_{11}$- Werte einer solchen Antenne sind in Abbildung \ref{S11_Loop_Vergleich_Simulation} als rote Kurve aufgezeigt. Die Resonanzfrequenz liegt bei 5.85 GHz, die Antenne zeigt bei dieser Frequenz einen $S_{11}$-Wert von mehr als -26 dB. Die -10 dB-Bandbreite beträgt 428 MHz. Die Impedanz der Antenne bei 2.45 GHz in Abbildung \ref{Impedanz_Loop_Vergleich_Simulation} zeigt klar eine Fehlanpassung. Der Realanteil der Antennenimpedanz liegt bei 2721 Ohm und der Imaginäranteil bei 5875 Ohm. Deshalb ist der Frequenzpunkt von 2.45 GHz beim rechten Ausgangspunkt eines Smith-Diagramms. Dieser Punkt steht für eine $\infty$ Impedanz. Dies führt zu einer totalen Reflexion der zuführenden Welle. Der Reflexionsfaktor $\Gamma$ beträgt in diesem Fall +1. Die vom EMPIRE XPU berechnete Abstrahleffizienz ist dementsprechend $1\%$. Die sehr tiefe Abstrahleffizienz ist auch aus der Abbildung \ref{fig:sim_Loop_freiraum_3D} zu entnehmen. Es ist kaum eine bevorzugte Abstrahlrichtung zu sehen. Die dunkelrote Farbe entspricht einem Richtfaktor von 1.19 dBi. Das entspricht beinahe einem isotropen Abstrahlverhalten.\\
 
 %\begin{figure}[!h]
 %\begin{center}
@@ -993,7 +992,7 @@ Die Bandbreite beschreibt die -10 dB-Bandbreite in MHz. Die relative Bandbreite 
  \toprule 
  Antennenumfeld 	& max $S_{11}$ [dB]		& $Z_{ant}$ [$\Omega$] 	& $\eta$ [$\%$] & Bandbreite [MHz] & relative Bandbreite [$\%$]\\ 
  \midrule
-im Freiraum 		&	-26.2 @ 5.85	& 	2721+j225	& 1		&	428 & 7.3\\ 					 		
+im Freiraum 		&	-26.2 @ 5.85	& 	2721+j5875	& 1		&	428 & 7.3\\ 					 		
 ein ABS-Stück 	& -15.41 @ 4.41 	&	27.7-j433	& 2.7	&	335 & 7.6 \\
 zwei ABS-Stücke & -13.2 @ 4.30 	&	24.5-j379	& 3.1	&	278 & 6.4\\
  \bottomrule
