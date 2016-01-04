@@ -5,7 +5,7 @@ Der zentral gespiesene Dipol besteht oft aus zwei runden Leiterstäben mit dem D
 %Elliot Seite 29 Nr1.93
 
 \begin{equation}\label{term:Kugelwelle}
-\frac{e^{j(\omega t-kr)}}{4\pi \mu_{0}^{-1}r}
+Kugelwelle=\frac{e^{j(\omega t-kr)}}{4\pi \mu_{0}^{-1}r}
 \end{equation}
 
 
@@ -24,7 +24,7 @@ I(x,t) =I_{m}sin([k(l-x)])e^{j\omega t}
 \end{equation}
 %Elliot Seite 59 Formel 2.1
 
-Aus  (\ref{I_xt_Dipol}) kann entnommen werden, dass sich der Strom entlang der Dipolarmen ändert. Die Stromverteilung ist somit vom Betrachtungsort $x$ und dem Zeitpunkt $t$ abhängig. Ein Dipol mit einem Durchmesser $d<<\lambda$ wird  zu einem dünnen Stromfaden, welcher nur eine Ausdehnung entlang der z-Achse aufweist. Die Stromdichte im Leiter $J \textit{d}V$ kann daher mit $I\textit{d}l$ ersetzt werden. Werden die Arme des Dipols in sehr viele kurze Stücke $\textit{\textit{d}}z$ geteilt, so entsprechen diese jeweils einem Hertzschen Elementardipol mit konstanter Stromdichte. Sowohl die Elementardipole als auch deren Summe können als punktförmige Quelle elektromagnetischer Wellen betrachtet werden. Die Gewichtsfunktion $a(\varphi)$ dieser Summe lautet: \cite{elliott1981antenna}.\\
+Aus  (\ref{I_xt_Dipol}) kann entnommen werden, dass sich der Strom entlang der Dipolarme ändert. Die Stromverteilung ist somit vom Betrachtungsort $x$ und dem Zeitpunkt $t$ abhängig. Ein Dipol mit einem Durchmesser $d<<\lambda$ wird  zu einem dünnen Stromfaden, welcher nur eine Ausdehnung entlang der z-Achse aufweist. Die Stromdichte im Leiter $J \textit{d}V$ kann daher mit $I\textit{d}l$ ersetzt werden. Werden die Arme des Dipols in sehr viele kurze Stücke $\textit{\textit{d}}z$ geteilt, so entsprechen diese jeweils einem Hertzschen Elementardipol mit konstanter Stromdichte. Sowohl die Elementardipole als auch deren Summe können als punktförmige Quelle elektromagnetischer Wellen betrachtet werden. Die Gewichtungsfunktion $a(\varphi)$ dieser Summe lautet: \cite{elliott1981antenna}.\\
 
 \begin{equation}
 I(z')=I_{m}sin(k(l-dz))
@@ -42,7 +42,7 @@ a_{\theta}(\theta)=- \frac{2I_{m}}{k sin(\theta)} \Big\lbrack cos(kl cos(\theta)
 Es sollen nun zwei Spezialfälle einer Dipol Antenne genauer betrachtet werden:
 \begin{itemize}
 \item der Halbwellendipol mit 2l = $\lambda/2$
-\item der kurze Dipol mit 2l$ \ <<\lambda$
+\item der kurze Dipol mit 2l$ \ <<\lambda/2$
 \end{itemize}
 \newpage
 \subsubsection{Halbwellendipol 2l = $\lambda/2$}
@@ -98,14 +98,14 @@ P(\theta,\varphi)=\frac{2\eta I_{m}^{2}}{(4\pi r)^{2}}\Bigl\lbrack \frac{cos^{2}
 %Elliot Seite 63
 Die abgestrahlte elektromagnetische Leistung aller Oberflächenpunkte ist anhand des Doppelintegrals über die Torusoberfläche gegeben \cite{Emant}:
 \begin{equation}
-P_{rad}=\int_0^{2\pi} \int_0^\pi P(\theta,\varphi)r^2\sin(\theta) d\theta d\varphi
+P_{rad}=\int_0^{\pi} \int_0^{2\pi} P(\theta,\varphi)r^2\sin(\theta) d\theta d\varphi
 \end{equation}
 Durch Auflösen des Doppelintegrals über $\varphi$ von 0 bis $2\pi$ und $\theta$ von 0 bis $\pi$ erhält man als Leistung \cite{elliott1981antenna}:
 \begin{equation}
 P_{rad}=0.609 \frac{\eta I_{m}^{2}}{2\pi}
 \end{equation}
 %elliot 63 Forlmel 2.11
-Wie aus Grafik \ref{fig:DipolEFerd} ebenfalls ersichtlich wird, liegt die maximale Feldausbreitung bei $\theta =\pm 90 ^\circ $, da $\sin(90^\circ)  $ = 1.
+Wie aus Grafik \ref{fig:DipolEFerd} ebenfalls ersichtlich, liegt die maximale Feldausbreitung bei $\theta =\pm 90 ^\circ $, da $\sin(90^\circ)  $ = 1.
 Der maximale Richtwert oder Richtfaktor des elektromagnetischen Feldes einer Antenne, aus dem englischen als \textit{directivity} $D$ bekannt, erhält man durch den Vergleich der von ihr abgestrahlten Leistung mit derjenigen eines isotropen Kugelstrahlers \cite{elliott1981antenna}:
 \begin{equation}
 D(peak)=\frac{P(\theta,\varphi)(\pi/2)}{P_{rad}/ 4 \pi r^{2}} =1.64
@@ -113,7 +113,6 @@ D(peak)=\frac{P(\theta,\varphi)(\pi/2)}{P_{rad}/ 4 \pi r^{2}} =1.64
 \end{equation}
 %Dmax=1.64 nach Ellito 2.12
 Der Richtwert von 1.64 besagt, dass das elektromagnetische Feld einer Halbwellenantenne im Raum nicht homogen ist. Er stellt einen Verhältnisfaktor dar, welcher sich auf einen gleichmässig in den Raum strahlenden Kugelstrahler bezieht. Die maximale Ausbreitungsrichtung des elektromagnetischen Feldes, auch Hauptkeule genannt, beschreibt die Richtung der grössten Abstrahlung. Sie ist bei einem Halbwellendipol um den Faktor 1.64 grösser als bei einem isotropen Kugelstrahler. Der Richtfaktor wird in der Einheit Dezibel dB angegeben. In Bezug auf den isotropen Strahler erfolgt die Angabe in der Einheit dBi. Der Richtfaktor entspricht in dem gezeigten Beispiel (\ref{eq:Directivity}) $10\log{(1.64)}=2.15$ dBi.\\
-
 Bei einem Halbwellendipol der Länge 2l mit $l=\lambda/4 $ ist der Scheitelwert des Antennenstromes $I_{m}$ beim Einspeisepunkt. Dieser liegt im Zentrum des Dipols bei z = 0. Somit kann gesagt werden, dass die Zuleitung die folgende Leistung liefert \cite{Emant}:
 %Elliot 2.14
 \begin{equation}

@@ -19,7 +19,7 @@ Die Leistungsdichte $S$ ergibt sich, wenn die Feldkomponenten $E$ und $H$ senkre
 \begin{equation}
 S=\dfrac{1}{2}EH=\dfrac{1}{2} E^{2}/F_{F0}\label{eq:LeistungsdichteS}
 \end{equation}
-Näherungsweise treten die Gesetzmässigkeiten des Fernfeldes bereits bei einem endlichen Abstand $r$ von der Sendeantenne auf. Als Grenzwert für den Fernfeldabstand ist $r_{2}$ definiert, er beschreibt den Beginn der Fernfeldregion. Für Antennen mit einer geometrischen Abmessung $D_{0}$ gilt näherungsweise\cite{meinke1992taschenbuch}:
+Näherungsweise treten die Gesetzmässigkeiten des Fernfeldes bereits bei einem endlichen Abstand $r$ von der Sendeantenne auf. Als Grenzwert für den Fernfeldabstand ist $r_{2}$ definiert, er beschreibt den Beginn der Fernfeldregion. Für Antennen mit einer geometrischen Abmessung $D_{0}$ gilt näherungsweise \cite{meinke1992taschenbuch}:
 \begin{equation}
 r_{2}=\dfrac{2D_{0}^{2}}{\lambda_{0}} \label{eq:Fernfelddistanz_r2}
 \end{equation}
@@ -27,12 +27,12 @@ Als $D_{0}$ ist die maximale Antennenabmessung definiert. Für Antennen mit $D_{
 \begin{equation}
 \Delta r\leqq\lambda_{0}/8 \label{eq:Phasenfehler}
 \end{equation}
-Das Gebiet zwischen der Sende- und Empfangsantenne kann in Abhängigkeit von der Distanz $r$ zwischen den Antennen in drei Regionen unterteilt werden. Hierbei können keine klaren Grenzen gezogen werden, die Übergänge sind fliessend. Zwischen der Sendeantenne und der Fernfeldregion liegt die Nahfeldregion. Diese wird folgend Nahfeld genannt. Das Nahfeld wiederum kann in zwei Gebiete unterteilt werden. Es sind dies das Nahfeld und das strahlende Nahfeld. In der Nahfeldregion, welche unmittelbar die Antenne umschliesst, dominieren die reaktiven Feldkomponenten. Diese fallen mit $r^{3}$ und $r^{2}$ ab. Je nach Literatur ist die Grenze zwischen Nahfeld und strahlendem Nahfeld anders definiert. Nach dem Taschenbuch der Hochfrequenztechnik ist dieser Übergang beim Abstand $r_{1}$ erreicht, wenn $r_{1}$ der Formel (\ref{eq:Fernfelddistanz_kurzeAntenne}) entspricht\cite{meinke1992taschenbuch}.
+Das Gebiet zwischen der Sende- und Empfangsantenne kann in Abhängigkeit von der Distanz $r$ zwischen den Antennen in drei Regionen unterteilt werden. Hierbei können keine klaren Grenzen gezogen werden, die Übergänge sind fliessend. Zwischen der Sendeantenne und der Fernfeldregion liegt die Nahfeldregion. Diese wird folgend Nahfeld genannt. Das Nahfeld wiederum kann in zwei Gebiete unterteilt werden. Es sind dies das Nahfeld und das strahlende Nahfeld. In der Nahfeldregion, welche unmittelbar die Antenne umschliesst, dominieren die reaktiven Feldkomponenten. Diese fallen mit $r^{3}$ und $r^{2}$ ab. Je nach Literatur ist die Grenze zwischen Nahfeld und strahlendem Nahfeld anders definiert. Nach dem Taschenbuch der Hochfrequenztechnik ist dieser Übergang beim Abstand $r_{1}$ erreicht, wenn $r_{1}$ der Formel (\ref{eq:Fernfelddistanz_kurzeAntenne}) entspricht \ \cite{meinke1992taschenbuch}.
 
 \begin{equation}
 r_{1}=0.62\sqrt{\dfrac{D_{0}^{3}}{\lambda_{0}}} \label{eq:Fernfelddistanz_kurzeAntenne}
 \end{equation}
-Die Bedingungen für die Nahfeldregion sind von den maximalen Antennenabmessungen abhängig. Die Definition in (\ref{eq:Fernfelddistanz_kurzeAntenne}) gilt nur für Antennen, welche als maximale Abmessung $D_{0}>\lambda_{0}$ gilt.
+Die Bedingungen für die Nahfeldregion sind von den maximalen Antennenabmessungen abhängig. Die Definition in (\ref{eq:Fernfelddistanz_kurzeAntenne}) gilt nur für Antennen, welche als maximale Abmessung $D_{0}>\lambda_{0}$ aufweisen.
 Bei Dipol Antennen und Loop Antennen mit Abmessungen wesentlich kleiner als eine Wellenlänge $\lambda_{0}$ erstreckt sich das Nahfeld bis zum Abstand $r_{1}=\lambda_{0}/2pi$ von der Quelle. Bei einer Freiraumübertragungsstrecke, bei welcher sich die Empfangsantenne im Fernfeld der Sendeantenne im Abstand $r$ befindet, erhält man für die Leistungsdichte am Ort der Empfangsantenne \cite{meinke1992taschenbuch}:
 
 \begin{equation}
@@ -133,16 +133,14 @@ Weitere Annahmen sind:
 
 
 \subsubsection{Linkbudget}
-Unter dem Linkbudget versteht man die Summe aller Leistungspegel in dB, welche vom Sender über das Übertragungsmedium bis hin zum Empfänger resultieren. Es beschreibt, welcher Signalpegel ausgehend von der Sendeleistung beim Empfänger nach Abzug aller Verluste und unter Berücksichtigung der Gewinne ankommt. Ist die Sendeleistung gesetzlich limitiert, kann die maximale Distanz der Übertragungsstrecke berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch Umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. Das Linkbudget kann nahezu beliebig komplex gestaltet werden und eine Reihe von weiteren Parametern beinhalten. In der Praxis hat sich die Berechnung des Linkbudgets bei Richtfunksystemen nach  (\ref{eq:LinkBudgetGelichung}) bewährt.
+Unter dem Linkbudget versteht man die Summe aller Leistungspegel in dB, welche vom Sender über das Übertragungsmedium bis hin zum Empfänger resultieren. Es beschreibt, welcher Signalpegel ausgehend von der Sendeleistung beim Empfänger nach Abzug aller Verluste und unter Berücksichtigung der Gewinne ankommt. Ist die Sendeleistung limitiert, kann die maximale Distanz der Übertragungsstrecke berechnet werden. Ist die Sendeleistung nicht beschränkt, so kann durch Umstellen der Formel die theoretisch erreichbare Sendedistanz ermittelt werden. Das Linkbudget kann nahezu beliebig komplex gestaltet werden und eine Reihe von weiteren Parametern beinhalten. In der Praxis hat sich die Berechnung des Linkbudgets bei Richtfunksystemen nach  (\ref{eq:LinkBudgetGelichung}) bewährt.
 
 \begin{equation}
 P_{Rx} = P_{Tx}+L_{Tx}+G_{x}+L_{fs}+L_{Rx}+G_{r}+L_{div}\label{eq:LinkBudgetGelichung}
 \end{equation}
 Die Summe (\ref{eq:LinkBudgetGelichung}) dient als Ausgangslage für die Berechnung des minimalen Gewinns der Sendeantenne $G_{x}$, welcher in dieser Arbeit den unbekannten Faktor darstellt und beim Antennendesign berücksichtigt werden muss. Da die minimale Empfängersensitivität $P_{Rx}$ aus dem Datenblatt des Bluetooth Low Energy Texas Instruments CC2541 Chip sowie die weiteren Parameter bekannt sind, kann der minimale Gewinn der Sendeantenne $G_{x}$ berechnet werden. \\
-
 Der Empfangspegel $P_{Rx}$ aus (\ref{eq:LinkBudgetGelichung}) steht für die am Empfänger resultierende Empfangsleistung in dBm. Die Sendeleistung der Antenne wird mit $P_{Tx}$ abgekürzt und ebenfalls in der Einheit dBm angegeben. Die Übergangsverluste $L_{Tx}$ fassen jegliche Verluste durch Kabel, Verbindungen und Stecker in dB auf der Senderseite zusammen, während $L_{Rx}$ jegliche Verluste durch Kabel, Verbindungen und Stecker in dB auf Seite der Empfangsantenne bezeichnet. Der Gewinn der Sendeantenne ist als $G_{x}$ angegeben und hat die Einheit dBi. $G_{r}$ steht für den Gewinn, englisch \textit{gain}, der Empfangsantenne. $L_{fs}$ bezeichnet den Energieverlust durch die Freiraumdämpfung in der Einheit dB, $L_{div}$ steht für diverse weitere Verluste, wie zum Beispiel durch Hindernisse, oder für eine Systemreserve. \\
-
-Die Freiraumdämpfung $L_{fs}$, englisch \textit{Free Space Path Loss}, soll an dieser Stelle genauer erläutert werden. Hierunter versteht man die Reduktion der Leistungsdichte elektromagnetischer Wellen bei der Ausbreitung im freien Raum. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger. In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler, der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in den Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler identisch ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler, desto mehr verteilt sich die Energie auf eine immer grösser werdende Kugeloberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zu dem Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zu dem Quadrat der verwendeten Frequenz \cite{linkbudget}.
+Die Freiraumdämpfung $L_{fs}$, englisch \textit{Free Space Path Loss}, soll an dieser Stelle genauer erläutert werden. Hierunter versteht man die Reduktion der Leistungsdichte elektromagnetischer Wellen bei der Ausbreitung im freien Raum. Anders ausgedrückt, der Pfadverlust beschreibt den Verlust an elektromagnetischer Leistung zwischen einem Sender und Empfänger. In der Theorie wird von einem isotropen Kugelstrahler ausgegangen, also einem Strahler, der gleichmässig und verlustfrei in alle Richtungen in den Raum abstrahlt. Daraus folgt, dass die abgestrahlte Energie gleichmässig in den Raum verteilt wird und somit an jedem beliebigen Punkt mit gleicher Entfernung zum Strahler identisch ist. So bilden sich Kugeln mit gleicher Leistungsdichte um den Strahler. Je grösser der Abstand zum Strahler, desto mehr verteilt sich die Energie auf eine immer grösser werdende Kugeloberfläche. Hierbei ist der Verlust durch die Freiraumdämpfung proportional zum Quadrat der Entfernung $R$ zwischen Sender und Empfänger und zum Quadrat der verwendeten Frequenz \cite{linkbudget}.
 \clearpage
 \newpage
 
@@ -210,14 +208,14 @@ Durch Auflösen der Gleichung (\ref{eq:Freiraumdaempfung_dB}) erhält man für e
   \label{tab:Linkbudget}
 \end{table}
 
-Tabelle \ref{tab:Linkbudget} zeigt die für die Bluetooth-Verbindung relevanten Gewinne und Verluste des Übertragungskanals. Bei einer Verbindung von 10 Metern und den getroffenen Vereinfachungen ist mit einem minimalen Empfangspegel von $-72$ dB am Empfänger zu rechnen. Da die minimale Empfangssensitivität bei $-92$ dB liegt, entspricht dies einem ausreichenden Empfangspegel, es resultiert sogar eine Reserve von $20$ dB. Da sich, wie aus (\ref{gain}) ersichtlich wird, der Gewinn einer Antenne aus dem Richtfaktor $D$ und dem Wirkungsgrad $\eta$ zusammensetzt, kann an dieser Stelle keine konkrete Aussgage zum Gewinn der Sendeantenne $G_{Tx}$ gemacht werden, da diese beiden Parameter nicht bekannt sind. Bei einem realen Antennendesign wird der Wirkungsgrad mit Sicherheit nicht 1 betragen und das Abstrahlverhalten nicht kugelförmig sein. Keine praktisch realisierbare Antenne zeigt ein rein isotropes Verhalten, da sich unter anderem die absorbierenden Eigenschaften des  Gerätes in der Feldausbreitung bemerkbar machen. 
+Tabelle \ref{tab:Linkbudget} zeigt die für die Bluetooth-Verbindung relevanten Gewinne und Verluste des Übertragungskanals. Bei einer Verbindung von 10 Metern und den getroffenen Vereinfachungen ist mit einem minimalen Empfangspegel von $-72$ dB am Empfänger zu rechnen. Da die minimale Empfangssensitivität bei $-92$ dB liegt, entspricht dies einem ausreichenden Empfangspegel, es resultiert sogar eine Reserve von $20$ dB. Da sich, wie aus (\ref{gain}) ersichtlich wird, der Gewinn einer Antenne aus dem Richtfaktor $D$ und dem Wirkungsgrad $\eta$ zusammensetzt, kann an dieser Stelle keine konkrete Aussgage zum Gewinn der Sendeantenne $G_{Tx}$ gemacht werden, da diese beiden Parameter nicht bekannt sind. Bei einem realen Antennendesign wird der Wirkungsgrad nicht 1 betragen und das Abstrahlverhalten nicht kugelförmig sein. Keine praktisch realisierbare Antenne zeigt ein rein isotropes Verhalten, da sich unter anderem die absorbierenden Eigenschaften des  Gerätes in der Feldausbreitung bemerkbar machen. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%Quelle&%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Quelle}
-Jedes Antennensystem verfügt über eine Quelle. Diese liefert an ihrem Ausgang ein hochfrequentes Signal, dessen Übertragungskanal entweder symmetrisch oder asymmetrisch sein kann. Die Ausgangsimpedanz von Quellen kann sehr unterschiedlich sein. Oft befindet sich am Quellenausgang ein Anpassungsnetzwerk, welches die Quellenimpedanz an die Leitungsimpedanz anpasst. Die in der Hochfrequenztechnik verwendeten Quellen haben oft einen Innenwiderstand von $50\ \Omega$. Die Abbildung \ref{fig:asymetrischeQuelle} zeigt eine asymmetrische  Hochfrequenzquelle. Einer der beiden Anschlüsse wird als Massenpotential definiert, der andere Anschluss führt das gewünschte Signal. Der Innenwiderstand der gezeigten Quelle ist $50\ \Omega$ reell.
+Jedes Antennensystem verfügt über eine Quelle. Diese liefert an ihrem Ausgang ein hochfrequentes Signal, dessen Übertragungskanal entweder symmetrisch oder asymmetrisch sein kann. Die Ausgangsimpedanz von Quellen kann sehr unterschiedlich sein. Oft befindet sich am Quellenausgang ein Anpassungsnetzwerk, welches die Quellenimpedanz an die Leitungsimpedanz anpasst. Die in der Hochfrequenztechnik verwendeten Quellen haben oft einen Innenwiderstand von $50\ \Omega$. Die Abbildung \ref{fig:asymmetrischeQuelle} zeigt eine asymmetrische  Hochfrequenzquelle. Einer der beiden Anschlüsse wird als Massenpotential definiert, der andere Anschluss führt das gewünschte Signal. Der Innenwiderstand der gezeigten Quelle ist $50\ \Omega$ reell.
 \begin{figure}[!th]
 	\begin{center}
 	\begin{tikzpicture}
@@ -296,7 +294,7 @@ Ein geeignetes Konzept für die Betrachtung und das  Verständnis eines frequenz
 Elektrische \  L\"ange=\dfrac{l}{\lambda}\label{eq:ElektrischeLänge}
 \end{equation}
 
-In (\ref{eq:ElektrischeLänge}) entspricht $l$ der Länge der Leitung und $\lambda$ der Wellenlänge des Signales auf der Leitung. Zur Analyse, ob eine Leitung strahlt, wird ihre $elektrische \  Länge$ betrachtet. Bei einer $elektrischen  \ L\"ange\ \dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klassischen Schaltungstheorie behandelt und als verlustlos und reflexionsfrei betrachtet werden. Ein anderes Bild zeigt sich bei einer $elektrischen \ L\"ange\ \dfrac{l}{\lambda}>\dfrac{1}{20}$. In diesem Fall muss die Leitung als frequenzabhängiges Zweitor betrachtet werden. Die Phänomene der elektromagnetischen Wellen werden wirksam, die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. \\
+In (\ref{eq:ElektrischeLänge}) entspricht $l$ der Länge der Leitung und $\lambda$ der Wellenlänge des Signals auf der Leitung. Zur Analyse, ob eine Leitung strahlt, wird ihre $elektrische \  Länge$ betrachtet. Bei einer $elektrischen  \ L\"ange\ \dfrac{l}{\lambda} \le \dfrac{1}{20}$  kann die Leitung mit der klassischen Schaltungstheorie behandelt und als verlustlos und reflexionsfrei betrachtet werden. Ein anderes Bild zeigt sich bei einer $elektrischen \ L\"ange\ \dfrac{l}{\lambda}>\dfrac{1}{20}$. In diesem Fall muss die Leitung als frequenzabhängiges Zweitor betrachtet werden. Die Phänomene der elektromagnetischen Wellen werden wirksam, die Leitungen müssen mit ihren frequenzabhängigen Eigenschaften behandelt werden. \\
 
 Geht man von einer idealen Wellenausbreitung aus, bei der keine Verluste vorkommen, so ist die Wellenlänge $\lambda$ mit der Signalfrequenz $f$ und der Lichtgeschwindigkeit $c_0$ wie gemäss (\ref{eq:WellenlängeMITc}) verknüpft \cite{Tekom}:
 \begin{equation}
@@ -346,7 +344,7 @@ Um die Zweitoreigenschaften einer längshomogenen Zweidrahtleitung zu ermitteln,
 \caption{Leitungsmodell einer Zweitorkette}
 \label{fig:LeitungsmodellZweitorKette}
 \end{figure}
-Aus der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquelle auf der Leitung ein Strom $i(t)$ einstellt. Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. Das Einschalten der Quelle führt weiter zu einer Spannung zwischen den Leitern, was widerum zu einem elektrischen Feld und einer Oberflächenladung $Q = u  \Delta C$ auf den Leitern führt. Diese beiden Sachverhalte sind in den Ablildungen \ref{fig:Mag_Fluss_Leitung}	 und \ref{fig:OberfaechenLadung} dargestellt, wobei es sich um eine statische Feldbetrachtung der transversalen Ebene  einer Zweidrahtleitung handelt. \cite{Tekom}.
+Aus der Elektrotechnik ist bekannt, dass sich beim Einschalten einer Signalquelle auf der Leitung ein Strom $i(t)$ einstellt. Die Folge davon ist ein magnetisches Feld radial um die Leitung. Der magnetische Fluss ergibt sich mit der Abschnittsinduktivität zu $\Phi = i  \Delta L$. Das Einschalten der Quelle führt weiter zu einer Spannung zwischen den Leitern, was wiederum zu einem elektrischen Feld und einer Oberflächenladung $Q = u  \Delta C$ auf den Leitern führt. Diese beiden Sachverhalte sind in den Ablildungen \ref{fig:Mag_Fluss_Leitung}	 und \ref{fig:OberfaechenLadung} dargestellt, wobei es sich um eine statische Feldbetrachtung der transversalen Ebene  einer Zweidrahtleitung handelt \cite{Tekom}.
 \begin{figure}[!h]
 \begin{minipage}{7cm}
 	\centering
@@ -398,7 +396,7 @@ L'=\dfrac{\Delta L}{\Delta z}\label{eq:InduktiverLeitungsbelag}
 C'=\dfrac{\Delta C}{\Delta z}\label{eq:KapazitiverLeitungsbelag}
 \end{equation}
 Werden zudem die ohmschen Verluste im Leiter $R'$ und allfällige dielektrische Verluste in der Isolation $G'$ als Wirkwiderstände dargestellt, so lässt sich das Ersatzschaltbild eines Zweitores mit der Länge $\Delta z$ gemäss Abbildung \ref{fig:ESBLeiterstueck} modellieren.
-Für die Abbildung \ref{fig:ESBLeiterstueck} gelten die Zusammenhänge aus den Gleichungen (\ref{eq:KapazitiverLeitungsbelag}) und  (\ref{eq:KapazitiverLeitungsbelag}) \cite{Tekom}.
+Für die Abbildung \ref{fig:ESBLeiterstueck} gelten die Zusammenhänge aus den Gleichungen (\ref{eq:InduktiverLeitungsbelag}) und  (\ref{eq:KapazitiverLeitungsbelag}) \cite{Tekom}.
 \begin{enumerate}[leftmargin=2cm]
    \item[] $R'$: Widerstandsbelag [$\Omega/m$] 
    \item[] $L'$: Induktivitätsbelag  [$H/m$] 
@@ -406,7 +404,7 @@ Für die Abbildung \ref{fig:ESBLeiterstueck} gelten die Zusammenhänge aus den G
    \item[] $C'$: Kapazitätsbelag [$F/m$] 
    \item[] $\Delta z$: Zweitorlänge [$m$] 
 \end{enumerate} 
-Auf einer Leitung sind immer eine vorwärts sowie  eine rückwärts laufende Strom- und Spannungswelle vorhanden, ausser die vorwärts laufende Welle wird vollständig von einer Last absorbiert. Die vorwärts laufende Welle breitete sich entlang der positiven z-Achse, die rückwärts laufende Welle entlang der negativen z-Achse aus. Spannung und Strom auf der Leitung können als Summe dieser zwei Wellen beschrieben werden. Mit Hilfe der elementaren Leiterabschnitte können sie an jedem Punkt $z$ der Leitung berechnet werden. Die Gleichung (\ref{eq:UvonZundT}) gibt die Summe der Spannungswellen, die Gleichung (\ref{eq:IvonZundT}) die Summe Stromwellen wider \cite{Tekom}.
+Auf einer Leitung sind immer eine vorwärts sowie  eine rückwärts laufende Strom- und Spannungswelle vorhanden, ausser die vorwärts laufende Welle wird vollständig von einer Last absorbiert. Die vorwärts laufende Welle breitet sich entlang der positiven z-Achse, die rückwärts laufende Welle entlang der negativen z-Achse aus. Spannung und Strom auf der Leitung können als Summe dieser zwei Wellen beschrieben werden. Mit Hilfe der elementaren Leiterabschnitte können sie an jedem Punkt $z$ der Leitung berechnet werden. Die Gleichung (\ref{eq:UvonZundT}) gibt die Summe der Spannungswellen, die Gleichung (\ref{eq:IvonZundT}) die Summe Stromwellen wieder \cite{Tekom}.
 \begin{eqnarray}\label{eq:UvonZundT}
 U(z,t) &=& U_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+U_{r}e^{\alpha z}e^{j(\omega t \beta z)}
 \end{eqnarray}
@@ -415,9 +413,8 @@ I(z,t) &=& I_{v}e^{-\alpha z}e^{j(\omega t -\beta z)}+I_{r}e^{\alpha z}e^{j(\ome
 \end{eqnarray}
 
 \section{Anpassung und Reflexion}\label{sec:AnpassungReflexionen}
-Die Anpassung ist nicht nur in der Gleichstromtechnik ein viel diskutiertes Thema, auch in der Hochfrequenztechnik wird davon gesprochen. Unter anderem bezeichnet man als Leistungsanpassung, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll und hierfür ein Anpassung des Innenwiderstandes $R_I$ der Quelle an den Lastwiderstand $R_L$ erfolgen muss. Bei der  Wellenanpassung hingegen sollen Signalrefflexionen an den Übergängen verschiedener Medien verhindert weden. Hierfür erfolgt eine Anpassung der Eingangsimpedanz $Z_{ein}$ an die Ausgangsimpedanz $Z_{aus}$. 
+Die Anpassung ist nicht nur in der Gleichstromtechnik ein viel diskutiertes Thema, auch in der Hochfrequenztechnik wird davon gesprochen. Unter anderem bezeichnet man als Leistungsanpassung, wenn möglichst viel Leistung einer Quelle einem Lastwiderstand zugeführt werden soll und hierfür eine Anpassung des Innenwiderstandes $R_I$ der Quelle an den Lastwiderstand $R_L$ erfolgen muss. Bei der  Wellenanpassung hingegen sollen Signalreflexionen an den Übergängen verschiedener Medien verhindert werden. Hierfür erfolgt eine Anpassung der Eingangsimpedanz $Z_{ein}$ an die Ausgangsimpedanz $Z_{aus}$. 
 In diesem Kapitel werden die zwei erwähneten Arten der Anpassung genauer betrachtet.\\
-
 Die Leistungsanpassung wird angewendet, wenn eine maximale Leistungsübertragung zwischen Quelle und Last erforderlich ist. Die maximale Leistung in der Last wird erreicht, wenn der Lastwiderstand dem Quellenwiderstand entspricht. Bei rein ohmschen Quellen- und Lastwiderständen bedeutet dies:\\
 \[R_{Q} = R_{L}\]
 Die Wellenanpassung wird auch Leitungsanpassung genannt. Sie ist in der Hochfrequenztechnik immer dann gefragt, wenn das Signal ohne Reflexion von der Quelle zur Last übertragen werden soll. Haben die Impedanzen der Quelle, der Leitung und der Last nur reelle Anteile, so wird sowohl Wellen- als auch Leistungsanpassung erreicht, wenn $R_{Quelle} = R_{Last}$ gilt. Treten jedoch Impedanzen mit einem positiven oder negativen Imaginärteil $jX$ auf, muss für die Wellenanpassung das folgende Kriterium erfüllt sein:
@@ -425,8 +422,7 @@ Die Wellenanpassung wird auch Leitungsanpassung genannt. Sie ist in der Hochfreq
 Z_{ein} = Z_{aus} = R_{ein} +jX_{ein} = R_{aus} + jX_{aus}
 \end{eqnarray}
 Anhand des Beispiels einer Leitung mit Abschlusswiderstand sollen die Zusammenhänge der Anpassung und das bei ungenügender Anpassung  entstehende Phänomen der Reflexionen näher erläutert werden: \\
-
-Eine Signalquelle erzeugt eine vorwärts laufende eletromagnetische Welle in einer Leitung mit einem Leitungswiderstand $Z_0$, welcher gemäss (\ref{eq:Wellenimpedanz_Leitung}) berechnet werden kann. Das Ende der Leitung ist mit einem Abschlusswiderstand versehen, welcher eine Lastimpedanz $Z_L$ darstellt. Man spricht deshalb von einer mit einer Lastimpedanz $Z_L$ abgeschlossenen Übertragungsleitung. Da die Leitungsimpedanz $Z_0$ im Normalfall nicht der Lastimpedanz $Z_L$ entspricht, kommt es zu einer   Teilreflexion der vorlaufenden Welle am Übergang von der Leitung zur Last. Das Verhältnis zwischen der Amplituden der rückwärts und der vorwärts laufenden Welle wird als Reflexionskoeffizient $r$ bezeichnet \cite{Tekom}: \\
+Eine Signalquelle erzeugt eine vorwärts laufende eletromagnetische Welle in einer Leitung mit einem Leitungswiderstand $Z_0$, welcher gemäss (\ref{eq:Wellenimpedanz_Leitung}) berechnet werden kann. Das Ende der Leitung ist mit einem Abschlusswiderstand versehen, welcher eine Lastimpedanz $Z_L$ darstellt. Man spricht deshalb von einer mit einer Lastimpedanz $Z_L$ abgeschlossenen Übertragungsleitung. Da die Leitungsimpedanz $Z_0$ im Normalfall nicht der Lastimpedanz $Z_L$ entspricht, kommt es zu einer   Teilreflexion der vorlaufenden Welle am Übergang von der Leitung zur Last. Das Verhältnis zwischen den Amplituden der rückwärts und der vorwärts laufenden Welle wird als Reflexionskoeffizient $r$ bezeichnet \cite{Tekom}: \\
 \begin{eqnarray}\label{eq:Reflexionskoeffizient}
 r=\dfrac{U_{R}}{U_{V}}=\dfrac{Z_{L}-Z_{0}}{Z_{L}+Z_{0}}=-\dfrac{I_{R}}{I_{V}}
 \end{eqnarray}
@@ -495,7 +491,7 @@ s=\dfrac{U_{max}}{U_{min}}=\dfrac{1+|r|}{1-|r|}
 Der Welligkeitsfaktor $s$ aus der Gleichung \ref{eq:Welligkeitsfaktor_s} bezieht sich auf das Verhältnis von Spannungsmaxima zu -minima der stehenden Welle \cite{Tekom}.\\
 
 Informationsübermittlungssysteme mit Quelle, Leitung, Verbindungen und Antenne können als eine Kette von Zweitorschaltungen betrachtet werden. Die Eingangsimpedanz eines Zweitors wird oft als $Z_{ein}$, die Ausgangsimpedanz als $Z_{aus}$ bezeichnet. 
-Jedes Zweitor kann wiederum als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden, welche mit dem Lastwiderstand $Z_L$ belastet wird. Bei Verwendung hoher Signalfrequenzen oder kurzer Impulsdauer müssen die frequenzabhängigen Eigenschaften dieser Zweitore bei der Entwicklung der Übertragungskette berücksichtigt werden, da wie im Kapitel XX beschrieben Effekte wie Phasenverschiebung oder Signaldämpfung auftreten. Um eine maximale Leistungsübertragung oder eine reflexionsfreie Signalübertragung im System zu erreichen, werden Anpassnetzwerke eingesetzt. Diese führen entweder zu Leistungs- oder Wellenanpassung. Für eine optimale Leistungsübertragung ist es oft notwendig, dass für die verwendete Siganlfrequenz definierte Anpassnetzwerke eingesetzt werden. Die verwendeten Anpassnetzwerke sind meisens passive Netzwerke mit Induktivitäten L, Kapazitäten C und Widerständen R.\\
+Jedes Zweitor kann wiederum als eine Spannungsquelle mit dem Innenwiderstand $Z_I$ verstanden werden, welche mit dem Lastwiderstand $Z_L$ belastet wird. Bei Verwendung hoher Signalfrequenzen oder kurzer Impulsdauer müssen die frequenzabhängigen Eigenschaften dieser Zweitore bei der Entwicklung der Übertragungskette berücksichtigt werden, da wie im Kapitel XX beschrieben, Effekte wie Phasenverschiebung oder Signaldämpfung auftreten. Um eine maximale Leistungsübertragung oder eine reflexionsfreie Signalübertragung im System zu erreichen, werden Anpassnetzwerke eingesetzt. Diese führen entweder zu Leistungs- oder Wellenanpassung. Für eine optimale Leistungsübertragung ist es oft notwendig, dass für die verwendete Signalfrequenz definierte Anpassnetzwerke eingesetzt werden. Die verwendeten Anpassnetzwerke sind meisens passive Netzwerke mit Induktivitäten L, Kapazitäten C und Widerständen R.\\
 
 Beispielsweise wird in Abbildung \ref{fig:Anpassung} eine Quelle mit einem Ausgangswiderstand von 50 Ohm reell an eine 50 Ohm Leitung angeschlossen. Am Ende der 50 Ohm Leitung wird ein Anpassnetzwerk benötigt, damit die Leitung auf die Antenne abgestimmt werden kann, da die Impedanzen der Leitung $Z_L$ und der Antenne $Z_{ant}$ nur in seltenen Fällen gleich sind. Das Anpassnetzwerk passt die komplexe Antennenimpedanz mit dem reellen Strahlungswiderstand $R_{rad}$ und der Reaktanz $X_{ant}$ auf $50\ \Omega$ reell und $+j0\ \Omega$ imaginär an. Je nach Antennentyp weist $X_{ant}$ einen kapazitiven oder einen induktiven Anteil auf. In diesem Beispiel wird sowohl Wellen- als auch Leistungsanpassung erreicht. Die Abbildung \ref{fig:ESBantenne} zeigt ein entsprechendes Ersatzschaltbild einer Antenne.\\
 
@@ -608,16 +604,16 @@ Bei Wechselstrom kann ein Transformator für die Leistungsanpassung eingesetzt w
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\newpage
 \textbf{Wellenanpassung} \\
-Bei der Leistungsanpassung kommt es aufgrund der unterschiedlichen Phasenwinkel der Blindwiderstände zu einer Stossstelle für das zu übertragende Signal, wodurch ein Teil des Signals reflektiert wird. Stehende Wellen sind das Resultat. Um diesen für die Signalübermittlung störende Effekt zu vermeiden, wird Wellenanpassung benötigt. Hierbei muss gelten:
+Bei der Leistungsanpassung kommt es aufgrund der unterschiedlichen Phasenwinkel der Blindwiderstände zu einer Stossstelle für das zu übertragende Signal, wodurch ein Teil des Signals reflektiert wird. Stehende Wellen sind das Resultat. Um diesen für die Signalübermittlung störenden Effekt zu vermeiden, wird Wellenanpassung benötigt. Hierbei muss gelten:
 \[Z_{ein} = Z_{aus}\]
 Das bedeutet, dass die Real- und Imaginäranteile von Quellen- und Lastwiderstand gleich sind, inklusiv dem Phasenwinkel zwischen Real- und Imaginärteil.\\
 
-Bei rein reellem, identischem Innen- und Lastwiderstand, das heisst wenn $X_I = X_L = 0$ gilt, wird Leistungs- und Wellenanpassung erreicht. Es handelt sich hierbei um einen Spezialfall. Für den allgemein gültigen Fall mit komplexen Widerständen ist stets eine Entscheidung zwischen einer Übertragung mit maximaler Wirkleistung unter Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit Leistungseinbusse, sprich zwischen Leistungs- und Wellenanpassung zu treffen. In der Nachrichtentechnik bedient man sich in der Regel der Wellenanpassung, da die bei der Leistungsanpassung entstehenden Reflexionen störender sind als die Übertagungsverluste bei verwendeter Wellenanpassung. Bei Leistungsverstärkern eines Senders spielt jedoch die Leistungsanpassung eine nicht zu vernachlässigende Rolle. \\
+Bei rein reellem, identischem Innen- und Lastwiderstand, das heisst wenn $X_I = X_L = 0$ gilt, wird Leistungs- und Wellenanpassung erreicht. Es handelt sich hierbei um einen Spezialfall. Für den allgemein gültigen Fall mit komplexen Widerständen ist stets eine Entscheidung zwischen einer Übertragung mit maximaler Wirkleistung unter Inkaufnahme von Teilreflexionen auf den Leitungen oder einer reflexionsfreien Übertragung mit Leistungseinbusse, zwischen Leistungs- und Wellenanpassung zu treffen. In der Nachrichtentechnik bedient man sich in der Regel der Wellenanpassung, da die bei der Leistungsanpassung entstehenden Reflexionen störender sind als die Übertagungsverluste bei verwendeter Wellenanpassung. Bei Leistungsverstärkern eines Senders spielt jedoch die Leistungsanpassung eine nicht zu vernachlässigende Rolle. \\
 
 
 \newpage
 \textbf{Entwurf eines Ohm’schen Anpassnetzwerkes} \\
-Für die Anpassung einer Generatorimpedanz $R_Q$ an die grössere Last $R_L$, kann die Schaltung von Abbildung \ref{fig:Leistungsanpassung_RQ_grösser_als_RL} verwendet werden. Die Widerstände R1 und R2 gemäss der Gleichungen (\ref{eq:R1R2wennRQgrösserRL_R1}) und (\ref{eq:R1R2wennRQgrösserRL_R2}) \cite{Tekom}:
+Für die Anpassung einer Generatorimpedanz $R_Q$ an die grössere Last $R_L$ kann die Schaltung von Abbildung \ref{fig:Leistungsanpassung_RQ_grösser_als_RL} verwendet werden. Die Widerstände R1 und R2 gemäss der Gleichungen (\ref{eq:R1R2wennRQgrösserRL_R1}) und (\ref{eq:R1R2wennRQgrösserRL_R2}) \cite{Tekom}:
 %\begin{equation}
 	\begin{align}
 		R1 &= \sqrt{R_Q(R_Q-R_L)} \label{eq:R1R2wennRQgrösserRL_R1} \\
@@ -793,7 +789,7 @@ Unter der Speisung einer Antenne versteht man die Signalzuführung. Damit eine A
 %\end{tikzpicture}
 %\end{ circuitikz }
 %%%%%%%%%%%%%%%%%%%%%%
-Um eine Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein.  Wie im Kapitel \ref{sec:AnpassungReflexionen} erläutert wird, ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$, aus dem wiederum auf die Reflexionsdämpfung $S_{11}$ geschlossen wird. Der Zusammenhang ist einfach. Je stärker $\Gamma\rightarrow 1$, desto grösser ist die $S_{11}$. Dadurch gelangt mehr Leistung in die Antenne, welche wiederum mehr Energie abstrahlt. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_{rad}$, da $P_{rad}=1/2*I_{ant}^2*R_{rad}$. Aus der Formel für die Abstrahleffizienz $\eta_{rad}$ (\ref{eq:eta_rad}) ist zudem zu erkennen, dass die Verluste des Antennensystems $R_v$ klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen, um eine hohe Abstrahleffizienz $\eta_{rad}$ erreichen zu können. 
+Um eine Aussage über die Speisung einer Antenne zu machen, muss mehr als nur die Ausgangsimpedanz der Quelle $Z_{aus}$ und die Eingangsimpedanz der Antenne $Z_{ant}$ bekannt sein.  Wie im Kapitel \ref{sec:AnpassungReflexionen} erläutert, ist die Anpassung der Zuleitung an die Antenne massgebend für den Reflexionskoeffizient $\Gamma$, aus dem wiederum auf die Reflexionsdämpfung $S_{11}$ geschlossen wird. Der Zusammenhang ist einfach. Je stärker $\Gamma\rightarrow 1$, desto grösser ist die $S_{11}$. Dadurch gelangt mehr Leistung in die Antenne, welche wiederum mehr Energie abstrahlt. Die Abstrahlleistung $P_{rad}$ ist abhängig von $R_{rad}$, da $P_{rad}=1/2*I_{ant}^2*R_{rad}$. Aus der Formel für die Abstrahleffizienz $\eta_{rad}$ (\ref{eq:eta_rad}) ist zudem zu erkennen, dass die Verluste des Antennensystems $R_v$ klein gegenüber dem Abstrahlwiderstand $R_{rad}$ sein müssen, um eine hohe Abstrahleffizienz $\eta_{rad}$ erreichen zu können. 
 Die totale Abstrahleffizienz $\eta_{tot}$ vergleicht die von der Antenne abgestrahlte Leistung mit der Leistung, welche der Antenne über die Speisung zugeführt wird gemäss (\ref{eq:eta_tot}).
 
 \begin{equation}
@@ -806,7 +802,7 @@ Die totale Abstrahleffizienz $\eta_{tot}$ vergleicht die von der Antenne abgestr
 \label{eq:eta_tot}
 \end{equation}
 
-\begin{figure}[!t]
+\begin{figure}[t!]
 	\begin{center}
 	\begin{tikzpicture}
 	\draw[line width=1.5pt](3, 3.5) circle (0.5) node at (3,3.5) {Uq};
@@ -819,7 +815,7 @@ Die totale Abstrahleffizienz $\eta_{tot}$ vergleicht die von der Antenne abgestr
 	%\draw[line width=1.5pt] (5.5, 5) -- (7, 5);
 	\draw[line width=1.5pt, -*](5.5, 5) -- (7, 5);
 	
-	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 5) {Anpassungsnetzwerk} node at (9.5, 4.5) {Leitung};
+	\draw[line width=1.5pt](7, 1.5) rectangle (12, 5.5) node at (9.5, 5) {Anpassungsnetzwerk} node at (9.5, 4.5) {\& \  Leitung};
 	\draw[line width=1.5pt, *-](12, 5) -- (13.5, 5);
 	\draw[line width=1.5pt, *-](12, 2) -- (16, 2);
 	\draw[line width=1.5pt](13.5, 4.75) rectangle (14.5, 5.25) node at (14, 5.5) {$R_{v}$};
@@ -853,7 +849,7 @@ Die totale Abstrahleffizienz $\eta_{tot}$ vergleicht die von der Antenne abgestr
 	\node at (20, 3.9) {$P_{rad}$};
 	\end{tikzpicture}
 	\end{center}
-\caption{Ersatzschaltbild einer Quelle mit Anpassnetzwerk und Antenne}
+\caption{Ersatzschaltbild einer Quelle mit Anpassungsnetzwerk und Antenne}
 \label{AnpassungQuelleAntenne}
 \end{figure}
 
