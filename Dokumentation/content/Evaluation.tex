@@ -1024,29 +1024,31 @@ Die simulierte Loop Antenne mit drei Windungen berücksichtigt ebenfalls das vor
 
 \newpage
 \subsubsection{Nutzwertanalyse der Antenneneigenschaften }
-\todo{Text beschreiben}
-!!!!!!!!!!Hier Muss noch etwas geschrieben werden und die Tabelle ausgefüllt werden oder das fällt raus!!!!!!!!
+Die Nutzwertanalyse kann zur Beurteilung von einem Antennensystem dienen. Jedes Kriterium bekommt eine Gewichtung $g$ in Prozent. Für die Eigenschaften der verschieden Antennentypen konnten Punkte von 1 bis 5 Verteilt werden. Je höher die Punktezahl desto besser Eigenschaften verspricht man sich von der Antenne.\\
+Aus der Tabelle \ref{nutzwertEvaluation} geht hervor, dass die Dipol Antenne das vielversprechendste Potenzial für die weiteren Simulationsschritte zeigt.\\
+In die Beurteilung der Antenneneigenschaften wurden die Erfahrungen aus den Simulationen unten Berücksichtigung der unten aufgeführten Antennenparameter genommen.
+
 \begin{table}[!ht]
  \centering
  \begin{tabular}{l r l l l l l l l l} \toprule 
  && \multicolumn{2}{c}{Dipol $\lambda/2$} && \multicolumn{2}{c}{Loop $\lambda/2$} && \multicolumn{2}{c}{Loop} \\ \cmidrule{3-4} \cmidrule{6-7} \cmidrule{9-10}
  	Kriterium 	& $g$ \% 		& $N$ & $N\cdot g$ 	&& $N$ & $N\cdot g$ 		&& $N$ 	& $N\cdot g$ \\ \midrule
- 	Abstrahleffizienz	& 	30 	& 4 & 0.5 	&& 1 & 1.25 && 2 	& 1.25 \\
- 	Impedanz 			& 	30 	& 4 & 0.45 	&& 1 & 0.6 	&& 3 	& 0.75 \\
-	Bandbreite 			&	30	& 4 	& 0.8 	&& 2 & 0.3 	&& 1		&	\\
+ 	Abstrahleffizienz	& 	30 	& 4 & 1.2 	&& 1 & 0.3 	&& 2 	& 0.6 \\
+ 	Impedanz 			& 	30 	& 4 & 1.2 	&& 1 & 0.3 	&& 3 	& 1 \\
+	Bandbreite 			&	30	& 4 	& 1.2 	&& 2 & 0.6 	&& 1		& 0.3	\\
 %	Relative Bandbreite 	&	10	& 4 	& 0.8 	&& 5 & 1 	&&		&	\\
 %	Richtcharakteristik & 	5 	& 1 & 0.2 	&& 6 & 1.2 	&& 6 	& 1.2 \\
- 	Produktionsaufwand 	& 	5 	& 4 & 0.3 	&& 2 & 0.2 	&& 1 	& 0.3 \\
- 	Kosten 				& 	5 	& 5 & 0.4 	&& 4 & 1.2 	&& 3 	& 1 \\
+ 	Produktionsaufwand 	& 	5 	& 4 & 0.25 	&& 2 & 0.2 	&& 1 	& 0.3 \\
+ 	Kosten 				& 	5 	& 5 & 0.25 	&& 3 & 0.15 	&& 3 	& 0.3 \\
  \hline
- Gesamt 					& 100 	& & xx 	&& & xx && 	& xx \\ \bottomrule
+ Gesamt 					& 100 	& & 4.1 		&& 	& 1.55 	&& 		& 2.5 \\ \bottomrule
  \end{tabular}
  \caption{Nutzwertanalyse }
  \label{nutzwertEvaluation}
 \end{table}
 
 
-\subsubsection{Antennenkriterien}
+%\subsubsection{Antennenkriterien}
 \textbf{Antennengüte Q}\\
 Die Antennengüte Q beschreibt das Ausmass der Dämpfung in einem schwingungsfähigen System. Bei Antennen wird der Gütefaktor auch Q Wert genannt. Je grösser der Gütefaktor Q, desto schmalbandiger und je niedriger der Gütefaktor Q, desto breitbandiger sind Antennen. Für Q  $>>$ als 1 gilt: $Q \approx\frac{1}{B_{-3dB}}$. Berechnet wird Q aus dem Verhältnis der Mittenfrequenz fc zur Antennenbandbreite B, wobei die Mittenfrequenz aus dem arithmetisches Mittel der oberen und unteren Grenzfrequenz errechnet werden kann: $Q = f_c/(f_0-f_u)$, mit $f_c$ als Mittenfrequenz, $f_u$ als untere Grenzfrequenz und $f_o$ als obere Grenzfrequenz. \cite{Guetefaktor_Q}.\\
 
