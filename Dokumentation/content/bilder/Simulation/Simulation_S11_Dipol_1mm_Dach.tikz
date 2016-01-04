@@ -25,7 +25,7 @@ ymax=0,
 ylabel={Amplitude in [dB]},
 ymajorgrids,
 axis background/.style={fill=white},
-title={$\text{Simulation des  S}_{\text{11}}\text{-Wertes im Freiraum und im Gerät unter der Verwendung verschiedener Geometrien}$},
+title={$\text{Simulation des  S}_{\text{11}}\text{-Wertes im Freiraum und im Gerät unter Verwendung verschiedener Geometrien}$},
 legend style={at={(0.00,0.00)},anchor=south west,legend cell align=left,align=left,draw=black}
 ]
 \addplot [color=red,style=dotted]
@@ -632,7 +632,7 @@ legend style={at={(0.00,0.00)},anchor=south west,legend cell align=left,align=le
 2998330000	-6.1544\\
 3000000000	-6.13593\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{Freiraum 1mm Dach}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ Freiraum 1mm Dach}$};
 
 \addplot [color=green,solid]
   table[row sep=crcr]{%
@@ -1845,7 +1845,7 @@ legend style={at={(0.00,0.00)},anchor=south west,legend cell align=left,align=le
 2998330000	-5.70963\\
 3000000000	-5.69461\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{Freiraum 1mm}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ Freiraum 1mm}$};
 
 \addplot [color=blue,solid]
   table[row sep=crcr]{%
@@ -3057,7 +3057,7 @@ legend style={at={(0.00,0.00)},anchor=south west,legend cell align=left,align=le
 2998330000	-6.38433\\
 3000000000	-6.36748\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{Freiraum 3mm}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ Freiraum 3mm}$};
 
 \addplot [color=violet,solid]
   table[row sep=crcr]{%
@@ -4272,7 +4272,7 @@ legend style={at={(0.00,0.00)},anchor=south west,legend cell align=left,align=le
 2998330000	-6.46651\\
 3000000000	-6.45119\\
 };
-\addlegendentry{$\text{S}_{\text{11}}\text{Freiraum 5mm}$};
+\addlegendentry{$\text{S}_{\text{11}}\text{ Freiraum 5mm}$};
 
 \addplot [color=black,solid]
   table[row sep=crcr]{%

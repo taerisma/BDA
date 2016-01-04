@@ -77,7 +77,7 @@ Die Abbildung \ref{NetzwerkanalysatorZweiTor} zeigt diesen Zusammenhang auf.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Messsetup}
-Um zukünftig die Kommunikation der "Connect 1"\   Geräte mit einem Smartphone zu ermöglichen wird eine Antenne für das " Bluetooth Low Energy Network " gesucht. Aus Simulationen der Loop- und Dipolantennen resultierte, dass das Abstrahlverhalten von Dipolantennen genauer untersucht wird und mit Hilfe von Simulationen ein optimales Antennedesign für den Einsatz in den "Connect 1"\  Geräten gesucht wurde. 
+Um zukünftig die Kommunikation der "Connect 1"\   Geräte mit einem Smartphone zu ermöglichen wird eine Antenne für das " Bluetooth Low Energy Network " gesucht. Aus Simulationen der Loop- und Dipol Antennen resultierte, dass das Abstrahlverhalten von Dipol Antennen genauer untersucht wird und mit Hilfe von Simulationen ein optimales Antennedesign für den Einsatz in den "Connect 1"\  Geräten gesucht wurde. 
 Die Antennendesigs wurden Anhand der im EMPIRE XPU erstellten Simulationsdaten gefertigt. Die Antennenstrukturen sind aus dem Kupferband des Typs „8111“ von M3 hergestellt. Dieses Band eignet sich sehr gut, um in der Testphase ein einfaches Design kostgünstig und schnell umzusetzen. Die gewünschte Antennenstruktur wird dem Skalpell oder einer Schere aus dem Band ausgeschnitten und auf einen Träger aufgeklebt. \\
 Da jede Antenne eine Zuleitung braucht, wurden am Fusspunkt der Kupferbandantennen ein \textit{semi rigid Koaxialkabel} angebracht. Da es sich bei einem Dipol um eine symmetrische Antenne handelt, muss auch die Zuleitung symmetrisch sein. Aus diesem Grunde wurde der Innenleiter und der Mantel des Koaxialkabels mit den Einspeisepunkteden des Dipols verlötet.\\
 Die \textit{semi rigid Koaxialkabel} von $HUBER+SUHNER$ des Typs $SUCOFORM\_47\_CU$ besitzen eine Impedanz von $50  \pm 2\Omega$. Das Ende des Koaxialkabels ist mit einem SMA Gewinde versehen.\\
@@ -91,13 +91,13 @@ Eine semi ridid Koaxialkabel mit einer Dipol Antenne ist in der folgenden Abbidl
 \end{figure}
 
 \textbf{Testobjekte}\\
-In der Implementierung ist die Herstellung der getesteten Antenne gezeigt.\\ 
+In der Implementierung ist die Herstellung der getesteten Antenne gezeigt. \\ 
 \textbf{Erwartungshaltung}\\
-Die Erwartungen an das Funktionsmuster entsprechen den Simulationen der Dipolantenne aus dem Kapitel \ref{sec:Sim_verschiedene_Geometrien}.\\
+Die Erwartungen an das Funktionsmuster entsprechen den Simulationen der Dipol Antenne aus dem Kapitel \ref{sec:Sim_verschiedene_Geometrien}.\\
 
 \subsection{Messergebnisse}
 \label{sec:Messergebinsse}
-Aus den Simulationen in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} ist der $S_{11}$-Verlauf im Freiraum und im Gerät bekannt. Die nachfolgende Abbildung zeigt als rote Kurve den $S_{11}$-Wert der Dipolantenne im Freiraum. Als rote Kurve ist der Verlauf des $S_{11}$ gezeigt, wenn die Dipolantenne im Gerät positioniert ist. Es ist die bereits erwähnte Verschiebung der Resonanzfrequenz ersichtlich. Zudem ist die Resonanz der Dämpfung des $S_{11}$-Verlaufs im Gerät weniger stark ausgeprägt wie im Freiraum. Die Messung der im Gerät platzierten Dipolantenne ist als grüne Kurve in der Abbildung \ref{S11_Messung_Simulation_Dipolantenn_Freiraum} dargestellt. Die Resonanz der bluen Kurve(Simulation des Dipols im Gerät) und die Resonanz der grünen Kurve(Messung des Dipols im Gerät) stimmen gut überein. Was erstaunt, ist dass die $S_{11}$-Dämpfung der zuführenden Welle -15dB aufweisst. Ein Erklärungsversuch weisst auf das Simulationsmodell. Es zeigt qualitativ wie wie sich die Resonanzfrequenz von einem Dipol im Freiraum gegenüber einem Dipol im Gerät verhält. Es macht aber erhebliche Fehler beim Impedanzverhalten. So weisst der gemessene Dipol bei einer Frequenz von 2.45 GHz eine Antennenimpedanz von $Z_{ant}$ = (30+j4)$\Omega$. Während aus der Simulation die Antennenimpedanz von $Z_{ant}$ = (16+j14.7)$\Omega$ aus Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} zu entnehmen ist. Demnach ist die Anpassung von an eine 50$\Omega$ Quelle in Realität bersser als aus der Simulation erwartet.
+Aus den Simulationen in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_freiraum_Geraet} ist der $S_{11}$-Verlauf im Freiraum und im Gerät bekannt. Die nachfolgende Abbildung zeigt als rote Kurve den $S_{11}$-Wert der Dipol Aantenne im Freiraum. Als rote Kurve ist der Verlauf des $S_{11}$ gezeigt, wenn die Dipol Antenne im Gerät positioniert ist. Es ist die bereits erwähnte Verschiebung der Resonanzfrequenz ersichtlich. Zudem ist die Resonanz der Dämpfung des $S_{11}$-Verlaufs im Gerät weniger stark ausgeprägt wie im Freiraum. Die Messung der im Gerät platzierten Dipol Antenne ist als grüne Kurve in der Abbildung \ref{S11_Messung_Simulation_Dipolantenn_Freiraum} dargestellt. Die Resonanz der bluen Kurve(Simulation des Dipols im Gerät) und die Resonanz der grünen Kurve(Messung des Dipols im Gerät) stimmen gut überein. Was erstaunt, ist dass die $S_{11}$-Dämpfung der zuführenden Welle -15dB aufweisst. Ein Erklärungsversuch weisst auf das Simulationsmodell. Es zeigt qualitativ wie wie sich die Resonanzfrequenz von einem Dipol im Freiraum gegenüber einem Dipol im Gerät verhält. Es macht aber erhebliche Fehler beim Impedanzverhalten. So weisst der gemessene Dipol bei einer Frequenz von 2.45 GHz eine Antennenimpedanz von $Z_{ant}$ = (30+j4)$\Omega$. Während aus der Simulation die Antennenimpedanz von $Z_{ant}$ = (16+j14.7)$\Omega$ aus Tabelle \ref{tab:Vergeich_Lambda/2_Freiraum_Geraet} zu entnehmen ist. Demnach ist die Anpassung von an eine 50$\Omega$ Quelle in Realität bersser als aus der Simulation erwartet.
 
 
 %\begin{figure}[!ht]
@@ -118,7 +118,7 @@ Aus den Simulationen in der Abbildung \ref{S11_Vergleich_Simulation_Dipolantenn_
 	\caption{Vergleich des gemessen und simulierten $S_{11}$-Wert im Ger\"at und im Freiraum}	\label{S11_Messung_Simulation_Dipolantenn_Freiraum}
 \end{figure}
 \newpage
-Ein qualitatives Bild des Abstrahlverhaltens der Dipolantenne im Gerät zeigt die Abbildung \ref{fig:3D Richtdiagramm} Um die Richtwirkung zu interpretieren wurde der minimale Richtwert auf min -25 dB und der maximale Wert auf 0 dB gesetzt. Das Bild zeigt eine Sicht auf die xz-Ebene. Senkrecht nach oben zeigt die positive z-Achse und rechtwinklig dazu verläuft horizontal die x-Achse. Der Pfeil nach rechts zeigt die positive x-Achse. Die negative y-Achse würde rechtwinklig aus der Blattebene zeigen. Die Abbildung \ref{fig:FrontStarLab} zeigt das Gerät im StarLab im Moment der elektromagnetischen Feldverteilung der Abbildung \ref{fig:3D Richtdiagramm}\\
+Ein qualitatives Bild des Abstrahlverhaltens der Dipol Antenne im Gerät zeigt die Abbildung \ref{fig:3D Richtdiagramm} Um die Richtwirkung zu interpretieren wurde der minimale Richtwert auf min -25 dB und der maximale Wert auf 0 dB gesetzt. Das Bild zeigt eine Sicht auf die xz-Ebene. Senkrecht nach oben zeigt die positive z-Achse und rechtwinklig dazu verläuft horizontal die x-Achse. Der Pfeil nach rechts zeigt die positive x-Achse. Die negative y-Achse würde rechtwinklig aus der Blattebene zeigen. Die Abbildung \ref{fig:FrontStarLab} zeigt das Gerät im StarLab im Moment der elektromagnetischen Feldverteilung der Abbildung \ref{fig:3D Richtdiagramm}\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!h]
 	\centering
@@ -147,8 +147,8 @@ Ein Schnitt durch die xy-Ebene bei z=0 ist in Abbildung \ref{fig:Schnittgemessen
 %\end{figure}
 
 Ein Schnitt in der xz-Ebene bei y=0 ist in der unteren Grafik von Abbildung \ref{fig:Schnittgemessen} gezeigt. Das Gerät ist in der xy-Ebene positioniert. Das Display zeigt in die Richtung der positiven z-Achse. Die Ausrichtung der Antenne im Gerät ist entlang der y-Achse. Der Dipol ist im Ursprung des Koordinatensystems platziert. Aus der Theorie sollte jetzt ein Kreis ersichtlich sein. Da ein radiales elektromagnetisches Feld um die längs Ausrichtung des Dipols zu erwarten ist. Die absorbierenden Eigenschaften des Gerätes zeigen jedoch eine starke Reduktion der elektromagnetischen Feldstärke in Richtung der positiven x-Achse, sowie ein reduziertes Feld entlang der negativen x-Achse. Entlang der positiven-x Achse ist das Fluginstrumet plaziert, dises reduziert die Feldausbreitug erheblich. das Um diese Abbildung zu plotten war es nötig, einen Offset von 17.6 dB zu den Richtwirkung zu addieren.\\
-Um die entsprechend in der $\varphi$ zu erhalten muss zuerst der $\theta$ Winkel bei -90$^{circ}$ festgehalten werden und $\varphi$ nimmt die elektromagnetische Feldstärkte von $0..\pi$ auf. Anschliessen wird der $\theta$ Winkel bei 90$^{\circ}$ festgehalten  und $\varphi$ nimmt die elektromagnetische Feldstärkte von $0..\pi$ auf. Somit ist die ganze xy-Ebene auf der Höhe z=0 aufgenommen.\\
-Der Schnitt in der xz-Eben kann mit festem Winkel $\varphi$ bei 0$^{\circ}$ über den  $\pm \theta$ Bereich aufgenommen werden.
+Um die entsprechend in der $\varphi$ zu erhalten muss zuerst der $\theta$ Winkel bei -90$^\circ$ festgehalten werden und $\varphi$ nimmt die elektromagnetische Feldstärkte von $0..\pi$ auf. Anschliessen wird der $\theta$ Winkel bei 90$^\circ$ festgehalten  und $\varphi$ nimmt die elektromagnetische Feldstärkte von $0..\pi$ auf. Somit ist die ganze xy-Ebene auf der Höhe z=0 aufgenommen.\\
+Der Schnitt in der xz-Eben kann mit festem Winkel $\varphi$ bei 0$^\circ$ über den  $\pm \theta$ Bereich aufgenommen werden.
 \begin{figure}[!h]
 	\centering
 	\begingroup
@@ -159,7 +159,7 @@ Der Schnitt in der xz-Eben kann mit festem Winkel $\varphi$ bei 0$^{\circ}$ übe
 	\label{fig:Schnittgemessen}
 \end{figure}
 \newpage
-Die Effizienz der Dipolantenne ist in Abhängigkeit von der Frequenz in der Abbildung \ref{fig:Effizienz_gemessen} gezeigt. Bei 2.45 GHz beträgt $\eta_{tot}$ von 49$\%$. Über eine Bandbreite von 100 MHz nimmt die Effizienz Werte im Bereich von 47$\%$ bis 56.3$\%$ an.\\
+Die Effizienz der Dipol Antenne ist in Abhängigkeit von der Frequenz in der Abbildung \ref{fig:Effizienz_gemessen} gezeigt. Bei 2.45 GHz beträgt $\eta_{tot}$ von 49$\%$. Über eine Bandbreite von 100 MHz nimmt die Effizienz Werte im Bereich von 47$\%$ bis 56.3$\%$ an.\\
 \begin{figure}[!h]
 	\centering
 	\begingroup
@@ -169,6 +169,6 @@ Die Effizienz der Dipolantenne ist in Abhängigkeit von der Frequenz in der Abbi
 	\caption{xy-Ebene}\label{fig:Effizienz_gemessen}
 \end{figure}
 
-\subsection{Intpretation der Messresultate}
+%\subsection{Intpretation der Messresultate}
 Vergleich aus der Erwartungshaltung und den Messresultaten
 
