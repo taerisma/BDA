@@ -195,22 +195,22 @@ Durch Auflösen der Gleichung (\ref{eq:Freiraumdaempfung_dB}) erhält man für e
  \centering
  \begin{tabular}{l c r} \toprule 
  Komponete               	& 			&Leistungsbeitrag  \\ \midrule
-  Abgegebene Leitung    			&$P_{Tx}$ 	& 0dB       \\
-  Übergangsverluste              &$L_{Tx}$	& -3dB       \\
+  Abgegebene Leitung    			&$P_{Tx}$ 	& 0 dB       \\
+  Übergangsverluste              &$L_{Tx}$	& -3 dB       \\
   Gewinn der Sendeantenne    	&$G_{x}$		& zu bestimmen        \\
-  Ausbreitungsverluste   		& $F_{LS}$	& -60dB        \\
-  Gewinn Empfangsantenne  		& $G_{r}$	& 0dB           \\
+  Ausbreitungsverluste   		& $F_{LS}$	& -60 dB        \\
+  Gewinn Empfangsantenne  		& $G_{r}$	& 0 dB           \\
   Polarisationsverluste          & 	& 0dB            \\
-  Übergangsverluste              & $L_{Rx}$	& -3dB            \\
-  Erwartete Leistung am Empfänger & $P_{Rx}$  & -66dBm \cite{CC2541} \\ \midrule
-  Systemreserve        			 & $L_{div}$&-6dBm \\ 
-  Minimal notwendiges Empfängersignal &$P_{Rx}^{'}$ & -72dB \\ \bottomrule
+  Übergangsverluste              & $L_{Rx}$	& -3 dB            \\
+  Erwartete Leistung am Empfänger & $P_{Rx}$  & -66 dBm \cite{CC2541} \\ \midrule
+  Systemreserve        			 & $L_{div}$&-6 dBm \\ 
+  Minimal notwendiges Empfängersignal &$P_{Rx}^{'}$ & -72 dB \\ \bottomrule
   \end{tabular}
   \caption{Linkbudget 10m Bluetooth Übertragung}
   \label{tab:Linkbudget}
 \end{table}
 
-Tabelle \ref{tab:Linkbudget} zeigt die für die Bluetooth-Verbindung relevanten Gewinne und Verluste des Übertragungskanals. Bei einer Verbindung von 10 Metern und den getroffenen Vereinfachungen ist mit einem minimalen Empfangspegel von $-72\ dB$ am Empfänger zu rechnen. Da die minimale Empfangssensitivität bei $-92\ dB$ liegt, entspricht dies einem ausreichenden Empfangspegel, es resultiert sogar eine Reserve von $20\ dB$. Da sich, wie aus (\ref{gain}) ersichtlich wird, der Gewinn einer Antenne aus dem Richtfaktor $D$ und dem Wirkungsgrad $\eta$ zusammensetzt, kann an dieser Stelle keine konkrete Aussgage zum Gewinn der Sendeantenne $G_{Tx}$ gemacht werden, da diese beiden Parameter nicht bekannt sind. Bei einem realen Antennendesign wird der Wirkungsgrad mit Sicherheit nicht 1 betragen und das Abstrahlverhalten nicht kugelförmig sein. Keine praktisch realisierbare Antenne zeigt ein rein isotropes Verhalten, da sich unter anderem die absorbierenden Eigenschaften des  Gerätes in der Feldausbreitung bemerkbar machen. 
+Tabelle \ref{tab:Linkbudget} zeigt die für die Bluetooth-Verbindung relevanten Gewinne und Verluste des Übertragungskanals. Bei einer Verbindung von 10 Metern und den getroffenen Vereinfachungen ist mit einem minimalen Empfangspegel von $-72$ dB am Empfänger zu rechnen. Da die minimale Empfangssensitivität bei $-92$ dB liegt, entspricht dies einem ausreichenden Empfangspegel, es resultiert sogar eine Reserve von $20$ dB. Da sich, wie aus (\ref{gain}) ersichtlich wird, der Gewinn einer Antenne aus dem Richtfaktor $D$ und dem Wirkungsgrad $\eta$ zusammensetzt, kann an dieser Stelle keine konkrete Aussgage zum Gewinn der Sendeantenne $G_{Tx}$ gemacht werden, da diese beiden Parameter nicht bekannt sind. Bei einem realen Antennendesign wird der Wirkungsgrad mit Sicherheit nicht 1 betragen und das Abstrahlverhalten nicht kugelförmig sein. Keine praktisch realisierbare Antenne zeigt ein rein isotropes Verhalten, da sich unter anderem die absorbierenden Eigenschaften des  Gerätes in der Feldausbreitung bemerkbar machen. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%Quelle&%%%%%%%%%%%
