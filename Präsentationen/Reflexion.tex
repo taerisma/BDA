@@ -1,0 +1,28 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Marcel Erismann}
+\begin{document}
+\begin{itemize}
+\item VSWR \textit{Voltage Standing Wave Ratio} 
+\item Welligkeitsfaktor s
+\item RL \textit{Return Loss}
+\item Reflexionskoeffizient $\Gamma$
+
+
+\end{itemize}
+\begin{align*}
+VSWR &= s\\
+s&=\dfrac{1+|\Gamma|}{1-|\Gamma|}\\
+\Gamma &= \dfrac{s-1}{s+1}\\
+\Gamma&=\dfrac{U_r}{U_v}\\ 
+\Gamma &= \dfrac{Z_{ant}-Z_0}{Z_{ant}+Z_0}\\
+RL&=-20log_{10}(|\Gamma|)\\
+\end{align*}
+\end{document}
