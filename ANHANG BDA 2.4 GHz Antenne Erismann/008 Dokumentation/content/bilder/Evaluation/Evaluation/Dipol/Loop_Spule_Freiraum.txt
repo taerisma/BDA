@@ -1,0 +1,15 @@
+Loop
+3 Widungen
+
+
+3 Winungen L= 48.6mm
+Höhe = 10mm
+Tiefe= 1mm
+Gesammt Länge 291.75mm
+
+Zant 37.528+j375.522 bei 2450MHz
+S11max 3.3497 GHz -11.4217 dB
+-10dB Bandbreite  34 MHz
+Effizienz
+44.424%
+2.24%

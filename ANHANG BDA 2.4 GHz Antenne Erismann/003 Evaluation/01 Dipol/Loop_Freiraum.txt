@@ -1,0 +1,11 @@
+Loop
+Freiraum
+
+Kupfer Quader 22mm lang 10mm hoch 1 mm tief
+
+Zant 2721+j5875 bei 2450MHz
+S11max 5.85 GHz -26.2322dB
+-10dB Bandbreite 428MHz
+Effizienz
+87.7 %
+1.029%

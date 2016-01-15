@@ -1,0 +1,14 @@
+Evaluation 
+Dipol
+im Freiraum
+Form rund
+länge 52.25mm
+Lücke 2.45mm
+Durchmess 2.44mm
+
+Radiation   Efficiency (P_rad/P_in)     is 100.115 %
+Total       Efficiency (P_rad/P_in_inc) is 97.555 %
+
+S11 max 2.426 GHz -16.1742
+-10dB Bandbreit 340MHz
+Zant 68.604-j4.057 bei 2.45GHz

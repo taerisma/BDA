@@ -1,0 +1,53 @@
+\newpage
+\subsubsection{Kurzer Dipol 2l$ \ <<\lambda$/2}\label{sec:kurzerDipol}
+Der kurze Dipol kann wie der $\lambda /2$-Dipol als eine Reihe von elementaren Dipolen angesehen werden. Diese bilden einen schlanken Stromfaden. Auch für den kurzen Dipol gilt, dass der Durchmesser $d$ des Dipols viel kleiner ist als die Länge $l$ der Antennenstäbe. Die Terme $cos(kl*cos(\theta)) $ und $cos(kl)$ aus der Gewichtungsfunktion (\ref{eq:Gewichtungsfunktion}) des $\lambda/2$-Dipols können mit einer Reihe angenähert werden, sofern $kl$ klein ist.
+\begin{equation}
+a_{\theta}(\theta)=-kl^{2}I_{m}sin(\theta) \biggl\lbrack 1- \frac{(kl)^{2}}{12}(1+cos^{2}(\theta))+...\biggr\rbrack
+\end{equation}
+%Ellito 2.15 Seite 64
+Der Eingangsstrom eines kurzen Dipols ist gegeben durch:
+\begin{equation}
+I=I_{m}sin(kl)=I_{m}\biggl\lbrack kl - \frac{(kl)^{3}}{3!} +... \biggr\rbrack
+\end{equation}
+%Ellito 2.16
+ Für kleine Dipollängen wie 2l = $\lambda/4 $ kann als Näherung die Gewichtungsfunktion in (\ref{GewichtungKurzerDipol}) angenommen werden.
+%Ellito 2.17
+\begin{equation}\label{GewichtungKurzerDipol}
+a_{\theta}(\theta)=-kl^{2}I_{m}sin(\theta)=-Ilsin\theta
+\end{equation}
+Wie bei einem $\lambda/2$-Dipol findet man bei einem kurzen Dipol mit Ausrichtung entlang der z-Achse ein vertikal polarisiertes E-Feld. Dieses ist ebenfalls torusförmig, weist jedoch einen grösseren Öffnungswinkel auf, was einer breiteren Abstrahlcharakteristik entspricht. In der Antennentechnik wird der Öffnungswinkel als eine Kenngrösse von Antennen angesehen, da dieser die Abstrahlcharakteristik der Antenne stark beeinflusst. Er beschreibt den Winkel, bei dem die abgestrahlte Sendeleistung der Hälfte der maximalen Sendeleistung entspricht. Die Abnahme der Sendeleistung um die Hälfte enspricht einer Abnahme der Feldstärke um 3 dB. Der Öffnungswinkel wird daher auch als Halbwertbreite bezeichnet \cite{Oeffnungswinkel}. Die winkelabhängige Leistungsdichte für einen beliebigen Punkt im dreidimensionalen Raum ist durch die mathematische Integration über die Torusoberfläche mit dem Radius $r$ wie folgt gegeben \cite{elliott1981antenna}:
+%Ellito 2.18
+\begin{equation}
+P(\theta,\varphi)=\frac{(kl)^{2}\eta I^{2}}{2(4\pi r)^{2}}sin^{2}(\theta)
+\label{Prad_kurzerDipol}
+\end{equation}
+Die abgegebene Leistung aller Oberflächenpunte eines kurzen Dipols ist in erster Näherung definiert als:
+\begin{equation}
+P_{rad}=\dfrac{1}{2}\dfrac{(kl)^{2}\eta I^{2}}{(4\pi r)^{2}}sin^{2}(\theta)
+\label{Prad_kurzer_Dipol}
+\end{equation}
+Da $P_{rad}$ ebenfalls als $P_{rad}=1/2I^{2}R_{rad}$ definiert ist, kann nun mit (\ref{Prad_kurzer_Dipol}) auf den  Strahlungswiderstand $R_{rad}$ geschlossen werden.
+\begin{equation}
+R_{rad}=20 (\dfrac{2 \pi l}{\lambda})^{2}
+\label{R_rad_kurzer_Dipol}
+\end{equation}
+%Der Strahlungswiderstand $R_{rad}$, als $R_{rad}=1/2 I^{2}R_{rad}$ definiert, kann (\ref{eq:Rrrad}) für den Strahlungswiderstand hergeleitet werden\cite{Emant}.
+%%Ellito 2.19
+%\begin{equation}\label{eq:Rrrad}
+%R_{rad}=20 \left(\frac{\pi L}{\lambda} \right) ^{2}
+%\end{equation}
+Die Reaktanz des kurzen Dipols kann näherungsweise mit (\ref{eq:X_Rrad}) berechnet werden \cite{Antenne_Theory_Xant}.
+\begin{equation}\label{eq:X_Rrad}
+X=\dfrac{-120\lambda}{\pi L}\biggl(ln\dfrac{L}{2a}-1\biggr)
+\end{equation}
+
+Dabei wird L als 2l und somit als Länge der beiden Dipolarme angenommen.
+Wenn ein Dipol sehr kurz wird, zum Beispiel $2l=\lambda/8$,  wird $R_{rad} = 3$ Ohm. Dieser Wert ist merklich kleiner als die 73 Ohm eines $\lambda/2$-Dipols. Der Effekt des kürzer werdenden Dipols macht sich im  reaktiven Anteil der Eingangsimpedanz dramatisch bemerkbar, dies ist aus (\ref{eq:X_Rrad}) zu entnehmen. Für einen Dipol mit der Dicke $d$ und der Länge $2l>\lambda/2$ ist die Reaktanz der Eingangsimpedanz positiv. Die Reaktanz ist wenig unter Null, wenn die Dipollänge $2l=\lambda/2$ entspricht. Wird der Dipol weiter gekürzt,  sinkt die Reaktanz sehr schnell ins Negative. Bei einer Länge von $2l=\lambda/8$ sind Werte für die Reaktanz X über -1000 Ohm zu erwarten \cite{elliott1981antenna}. \\
+Die sich aus der abgestrahlten Leistung ergebende maximale Richtwirkung eines kurzen Dipols wird mit einem isotropen Strahler verglichen. Dies ergibt aus (\ref{eq:Directivity}) einen Richtfaktors $D$ von 1.5, was $10\log{1.5}=1.76$ dBi entspricht. Dieser Wert ist nicht viel kleiner als der eines $\lambda/2$-Dipols mit einem $D$-Wert von 1.64 = $10\log{(1.64)}=2.15$ dBi. Der Gewinn G einer Antenne wird im Englischen \textit{gain} genannt. Der Gewinn ist die Multiplikation des Richtfaktors $D$ mit der Abstrahleffizienz $\eta$. Dieser Zusammenhang ist in (\ref{gain}) beschrieben.
+\begin{equation}\label{gain}
+G=D\eta
+\end{equation}
+
+
+
+

@@ -1,0 +1,465 @@
+GANYMEDE  7.02 build 11057
+BINARY 370855134208
+
+
+sETTINGS 'KGRwMQpTJ19fb3B0X19leHBfaHBnbF9mYWN0JwpwMgpTJzEvMjUuNCcKcDMKc1MnX19vcHRfX2QzbWZzJwpwNApTJzE0JwpwNQpzUyd6bWluJwpwNgpTJ3BtbCA2JwpwNwpzUydfX29wdF9fYmdfY29sb3JfY29ycicKcDgKUycyMicKcDkKc1MnX19vcHRfX2Qzc3BlZWQnCnAxMApTJzEwMDAnCnAxMQpzUydfX2F1dG9kaXNjX196bWluJwpwMTIKUyctMzYuNScKcDEzCnNTJ2Vwc2VmZicKcDE0CkYxCnNTJ19fb3B0X196YXVuX2V4cGVuc2l2ZScKcDE1ClMnb2ZmJwpwMTYKc1MncmVtb3RlX2VuYV8xXzEnCnAxNwpTJzEnCnNTJ2F1dG9hbGdvJwpwMTgKUycyJwpzUydzcmNzdW0nCnAxOQpJMjAwCnNTJ2VvcmQnCnAyMApJMTAwCnNTJ19fb3B0X19zdGxzZXAnCnAyMQpTJ29mZicKcDIyCnNTJ3ltaW5fYXMnCnAyMwpTJ2F1dG9tYXRpYycKcDI0CnNTJ19fYXV0b2Rpc2NfX3ltYXgnCnAyNQpTJzkyLjA5NDEnCnAyNgpzUydtcGMnCnAyNwpTJ29mZicKcDI4CnNTJ19fb3B0X19scHdpZHRoJwpwMjkKUycwJwpzUydvcHRpbWlzZXJfMl9zZmQnCnAzMApGMC41CnNTJ3JlbW90ZV9saW1pdF85OTlfMScKcDMxClMnMScKc1MnX19hdXRvZGlzY19fZm1saW1pdCcKcDMyCkYwLjA1MDAwMDAwMDAwMDAwMDAwMwpzUydfX29wdF9fY3Vyc29yX2NvbG9yJwpwMzMKUydncmV5MjAnCnAzNApzUydsZXZlbCcKcDM1ClMnMCcKc1MnX19vcHRfX2FsbHRyaScKcDM2ClMnb2ZmJwpwMzcKc1MnYmF0Y2hfZGlyc181JwpwMzgKUydhbGwnCnAzOQpzUydfX29wdF9fcG9pbnRfc2hhcGUnCnA0MApTJ3NtYWxsJwpwNDEKc1MnX19vcHRfX2dkc21pbnNpemUnCnA0MgpTJzAnCnNTJ19fb3B0X19kaXNjbWFpbicKcDQzClMnb2ZmJwpwNDQKc1MnZXh0eXBlJwpwNDUKUydnYXVzcycKcDQ2CnNTJ19fYXV0b2Rpc2NfX2FzcGVjdCcKcDQ3ClMnMjAnCnA0OApzUydfX29wdF9fZXhwX2dicl9mYWN0JwpwNDkKUycwLjAwMScKcDUwCnNTJ19fb3B0X19wb2ludF90ZXh0JwpwNTEKUydub3JtYWwnCnA1MgpzUydndWlfZXhwb3J0JwpwNTMKUycxJwpzUydndWlfcmVmcmVzaCcKcDU0ClMnMScKc1Mnb3B0aW1pc2VyXzJfc2hydCcKcDU1ClMnMCcKc1MnX19vcHRfX2ltcGNpcmN0b2wnCnA1NgpTJzAuMScKcDU3CnNTJ19fb3B0X19taW5kaXNjJwpwNTgKUycxLjJlLTA2JwpwNTkKc1MnX19vcHRfX2RybGVuJwpwNjAKUycxLjUnCnA2MQpzUydfX2F1dG9kaXNjX19yZWZpbmUnCnA2MgpTJzIuNScKcDYzCnNTJ3RlbXBsYXRlJwpwNjQKUydNaWNyb3N0cmlwIEFudGVubmEnCnA2NQpzUydkb19wJwpwNjYKUycxJwpzUydnbHZpZXcnCnA2NwooKEYyNQpGLTQuMjQxMDYwMDAwMDAwMDA0NQpGMTYuODEyNzI3MjcyNzI3MjczCkYyMDAKdGNmaXhfbnVtX3BpY2tsZQphcnJheV9jb25zdHJ1Y3RvcgpwNjgKKChJMwp0UydkJwpTJ1x4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDAkQCcKSTAxCnRScDY5Cmc2OAooKEkzCnRTJ2QnClMnXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwJwpJMDEKdFJwNzAKZzY4CigoSTMKdFMnZCcKUydceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4ZjA/XHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDAnCkkwMQp0UnA3MQpnNjgKKChJNApJNAp0UydkJwpTIlx4MDBceDAwXHgwMGBceGFhJ1x4ZDhceGJmXHgwMFx4MDBceDAwXHhhMH5ceDBmXHhlM1x4YmZceDAwXHgwMFx4MDBceGUwXHg5ZFx4YjBceGU2P1x4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHhlMCZNXHhlZD9ceDAwXHgwMFx4MDBceGEwXFxceGFkXHhkNlx4YmZceDAwXHgwMFx4MDBceGMwdUlceGM4P1x4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHhlMFFceGIxXHhjMT9ceDAwXHgwMFx4MDBceDgwalx4MTFceGU3P1x4MDBceDAwXHgwMFx4YTBceDg3XHhiYlx4ZTU/XHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceDAwXHgwMFx4MDBceGYwPyIKSTAxCnRScDcyCihGMC4wMjUzNjE3MjM0ODgyMTUwNjgKKGxwNzMKRjEKYUYwCmFGMAphSTAKYUYwCmFGMQphRjAKYUkwCmFGMAphRjAKYUYxCmFJMAphSTAKYUkwCmFJMAphSTEKYUYyNQpGLTQuMjQxMDYwMDAwMDAwMDA0NQpGMTYuODEyNzI3MjcyNzI3MjczCnR0cDc0CnNTJ3JlbW90ZV9saW1pdF8xXzEnCnA3NQpTJzEnCnNTJ3RocmVhZHMnCnA3NgpTJ2F1dG8nCnA3NwpzUydfX29wdF9fdHNuYXAnCnA3OApTJzE1JwpwNzkKc1MnX19vcHRfX2RyZG1heCcKcDgwClMnNjAwMCcKcDgxCnNTJ3htYXhfYXMnCnA4MgpTJ2F1dG9tYXRpYycKcDgzCnNTJ19fb3B0X19leHBfcHcnCnA4NApTJzI4MCBtbScKcDg1CnNTJ29wdGltaXNlcl8xX3NocnQnCnA4NgpTJzAnCnNTJ3RkZmlsdGVyJwpwODcKUycwJwpzUyd3MzJtZW1ibG9jaycKcDg4ClMnMCcKc1MnZG9feScKcDg5ClMnMCcKc1MneW1pbicKcDkwClMncG1sIDQnCnA5MQpzUydfX29wdF9fZHJzdGFydCcKcDkyClMnMCAwJwpwOTMKc1Mnc2ltdGltZScKcDk0ClMnMWUtMycKcDk1CnNTJ2ZzX2ZpZWxkX2NvbnYnCnA5NgpTJzAuMDEnCnA5NwpzUydVU0VERFQnCnA5OApTJzAnCnNTJ3NhdmVfZDNfYm91bmRhcnknCnA5OQpTJ0tHeHdNUXBHTUM0NU16RTBNamcxTnpFME1qZzFOekV6T0FwaFJqQXVNVGN4TkRJNE5UY3hOREk0TlRjeE5ETUtZVWt4Q21GSk1BcGhSakF1TXpNME9EVTNNVFF5T0RVM01UUXlPQXBoUmpBdU5EY3lNREF3TURBd01EQXdNREF3TURNS1lVWXRNQzR5TURBd01EQXdNREF3TURBd01EQXdNUXBoTGc9PScKcDEwMApzUydfX29wdF9fYm5kcGhpMCcKcDEwMQpTJzUwLjAnCnAxMDIKc1MnX19vcHRfX2JuZHBoaTEnCnAxMDMKUyc1MC4wJwpwMTA0CnNTJ19fb3B0X19kZWcnCnAxMDUKUycxMS4yNScKcDEwNgpzUyd0aF90eXBlJwpwMTA3ClMnc3RhdGljJwpwMTA4CnNTJ19fb3B0X19tc2NhbGUnCnAxMDkKUycxJwpzUydyZW1vdGVfZW5hXzk5OV8xJwpwMTEwClMnMScKc1Mnem1heF9hcycKcDExMQpTJ2F1dG9tYXRpYycKcDExMgpzUydyZW1vdGVfcHJmJwpwMTEzClMnJEhPTUUvLmJhc2hfcHJvZmlsZScKcDExNApzUydfX29wdF9fbXRpYycKcDExNQpTJzUnCnNTJ2F1dG9zeW5jJwpwMTE2ClMnMCcKc1MnX19hdXRvZGlzY19fZWRnZW1vdmUnCnAxMTcKUycxMCcKcDExOApzUydhdXRvcmVzbycKcDExOQpTJzEnCnNTJ19fb3B0X19keGZucG9pbnRzJwpwMTIwClMnMTInCnAxMjEKc1MnY2xldmVsJwpwMTIyClMnNScKc1MnX19vcHRfX2RyY3RvbCcKcDEyMwpTJzEwJwpwMTI0CnNTJ2JhdGNoX2RpcnNfMycKcDEyNQpnMzkKc1MnYmF0Y2hfZGlyc18xJwpwMTI2CmczOQpzUydiYXRjaF9kaXJzXzYnCnAxMjcKZzM5CnNTJ2JhdGNoX2RpcnNfNycKcDEyOApnMzkKc1MnYmF0Y2hfZGlyc180JwpwMTI5CmczOQpzUydfX29wdF9fZXhwX2R4Zl9mYWN0JwpwMTMwClMnMScKc1MnYmF0Y2hfZGlyc184JwpwMTMxCmczOQpzUydiYXRjaF9kaXJzXzknCnAxMzIKZzM5CnNTJ3htaW5fYXMnCnAxMzMKUydhdXRvbWF0aWMnCnAxMzQKc1MnX19vcHRfX3BvdmNlbmxnJwpwMTM1ClMnMScKc1MnX19vcHRfX2R4Zm5hcmMnCnAxMzYKUycwJwpzUydfX29wdF9fcG9pbnRfY29sb3InCnAxMzcKUydyZWQnCnAxMzgKc1MnTUFURVJJQUwnCnAxMzkKUydEMScKcDE0MApzUydfX2F1dG9kaXNjX194bWF4JwpwMTQxClMnNzUnCnAxNDIKc1Mnem1pbl9hcycKcDE0MwpTJ2F1dG9tYXRpYycKcDE0NApzUydfX29wdF9fc2Vsc2l6ZScKcDE0NQpTJzUnCnNTJ19fb3B0X19leGNzdGFydCcKcDE0NgpTJzAgMCcKcDE0NwpzUyd4bWluJwpwMTQ4ClMncG1sIDQnCnAxNDkKc1MnTk9WRVInCnAxNTAKUyc5JwpzUydQR0EnCnAxNTEKUycwJwpzUydfX29wdF9fcGVycHNjYWxlJwpwMTUyClMnb2ZmJwpwMTUzCnNTJ3JlbW90ZV9lbmFfMl8xJwpwMTU0ClMnMScKc1MnZGVsYXknCnAxNTUKUycwJwpzUydvcHRpbWlzZXInCnAxNTYKUyd2YXJpYXRvcicKcDE1NwpzUydwb3J0bW9kZScKcDE1OApTJ3NlcXVlbnRpYWwnCnAxNTkKc1MnX19vcHRfX3NkdGhyZXMnCnAxNjAKSTMKc1MncGFyX2VxbnMnCnAxNjEKUydLR1J3TVFvdScKcDE2MgpzUydfX29wdF9fYm5kdycKcDE2MwpTJzUnCnNTJ19fb3B0X19leHBfbHAnCnAxNjQKUydMYW5kc2NhcGUnCnAxNjUKc1MndGhfY29udmVjdGlvbicKcDE2NgpTJ2F1dG9tYXRpYycKcDE2NwpzUydzaGlmdF8yJwpwMTY4CkYwCnNTJ19fb3B0X190ZXh0c2V0JwpwMTY5ClMnb2ZmJwpwMTcwCnNTJ19fb3B0X19iZ19jb2xvcicKcDE3MQpTJyNmZmZmZmYnCnAxNzIKc1MnX19vcHRfX2hib3JkZXInCnAxNzMKUyc1JwpzUydfX29wdF9fYm5kTicKcDE3NApTJzEwJwpwMTc1CnNTJ2xwaV8xJwpwMTc2ClMnZGVmYXVsdCcKcDE3NwpzUydscGlfMicKcDE3OApTJ2RlZmF1bHQnCnAxNzkKc1MnX19hdXRvZGlzY19fZm1ydWxlJwpwMTgwClMnMScKc1Mnb3BlcmF0aW9ucycKcDE4MQpTJ1V5SjdKM04xWWkxaGJHd25PbHRkTENkemRYQmxjbkJ2YzJsMGFXOXVKenBiWFN3bmVYQmhjaWM2VzEwc0ozTjFZaTB4SnpwYlhHNVBVRVZTUVZSSlQwNG9ZMnh6UFU5UVJWSkJWRWxQVGw4eVJGOUdSaXgwZVhCbFBTZEdRVkpHU1VWTVJDY3NaSE4wUFNjbkxITnlZejFiSjBaaGNtWnBaV3hrWHpRblhTeHdZWEk5V3lkRWFYSmxZM1JwZG1sMGVTY3NJRnNuWlc1aFlteGxKeXdnSjJWaFluTW5MQ0FuWlhCb2FTY3NJQ2RsZEdobGRHRW5MQ0FuY0dOb1pXTnJKeXdnSjNodGFXNG5MQ0FuZVcxcGJpY3NJQ2Q2YldsdUp5d2dKM2h0WVhnbkxDQW5lVzFoZUNjc0lDZDZiV0Y0Snl3Z0oySnZlRjl5WldZblhTd2dXeWN5TGpRMVpTc3dPU2RkTENBblJtbDRaV1FnVUdocEp5d2dKekF1TURBd01EQXdKeXdnSnpVbkxDQW5UbTl1WlNjc0lDZE9iMjVsSnl3Z0owUmxabUYxYkhRbkxDQW5SR1ZtWVhWc2RDY3NJQ2RUYVc1bmJHVW5MQ0FuSnl3Z0p6RW5MQ0JiWFYwc1kyRjBQU2RWVTBWU1JFVkdKeXhsZUhSeVlUMU9iMjVsTEdWNGRGOXBaRDFPYjI1bEtTeGNiazlRUlZKQlZFbFBUaWhqYkhNOVQxQkZVa0ZVU1U5T1gxTlpUVUpQVEVsRExIUjVjR1U5SjFOWlRTY3NaSE4wUFNkYU1DY3NjM0pqUFZzbmRXWXhKMTBzY0dGeVBWc25NUzR3THlocUttOXRaV2RoS1NwMVpqRW5MQ0FuSjEwc1kyRjBQU2RWVTBWU1JFVkdKeXhsZUhSeVlUMU9iMjVsTEdWNGRGOXBaRDFPYjI1bEtWMHNKM04xWWkweUp6cGJYU3duYzNCaGNpYzZXMTE5SWdwd01Rb3UnCnAxODIKc1MnX19vcHRfX3phdW5fZGlhJwpwMTgzClMnMjAwJwpwMTg0CnNTJ3ptYXgnCnAxODUKUydwbWwgNCcKcDE4NgpzUydfX29wdF9fZDNtd2MnCnAxODcKUydvZmYnCnAxODgKc1Mnb3B0aW1pc2VyXzJfc2VxJwpwMTg5ClMnMCcKc1MnX19vcHRfX2V4Y2ZtdCcKcDE5MApTJyUuM2YnCnAxOTEKc1MnX19hdXRvZGlzY19fZGlzel9vcHQnCnAxOTIKUydvZmYnCnAxOTMKc1Mnb3B0aW1pc2VyXzFfc2ZkJwpwMTk0CkYwLjUKc1MnX19vcHRfX3phdW5fZHJjX2ZhaWwnCnAxOTUKUydlcnJvcicKcDE5NgpzUydfX29wdF9fZXhjZGVjaScKcDE5NwpTJzQnCnNTJ19fb3B0X192ZXJsYXVmM2QnCnAxOTgKUydzbW9vdGhfYScKcDE5OQpzUydfX29wdF9fbWhlYWQnCnAyMDAKUydBVVRPJwpwMjAxCnNTJ19fYXV0b2Rpc2NfX2FjY3VyYWN5JwpwMjAyClMnMWUtMycKcDIwMwpzUydfX29wdF9faG9zbmFwJwpwMjA0ClMnMicKc1MnX19hdXRvZGlzY19fc2NhbnBvaW50cycKcDIwNQpTJzUwMDAnCnAyMDYKc1MnX19vcHRfX2xheWVyX29yZGVyJwpwMjA3ClMnbm9ybWFsJwpwMjA4CnNTJ25mdGltZScKcDIwOQpTJzAnCnNTJ19fYXV0b2Rpc2NfX2lubmVyX3N0cnVjdHVyZScKcDIxMApTJzAnCnNTJ19fb3B0X19vcnRob3NuYXAnCnAyMTEKUyc1JwpzUydkZWJ1ZycKcDIxMgpTJzEwMCcKcDIxMwpzUydfX2F1dG9kaXNjX19wZGlyJwpwMjE0ClMnTm9uZScKcDIxNQpzUydfX2F1dG9kaXNjX19kbWluYScKcDIxNgpTJzAuMDhfMC4wOF8wLjAxNScKcDIxNwpzUyd0aF90MCcKcDIxOApGMzAwCnNTJ2lkbGNsb3NlJwpwMjE5ClMnMScKc1MnX19vcHRfX2ljc2l6ZScKcDIyMApTJ2RlZmF1bHQnCnAyMjEKc1MnX19vcHRfX2QzbWx3JwpwMjIyClMnMicKc1MnX19vcHRfX2JuZHoxJwpwMjIzClMnMCcKc1MnX19vcHRfX2JuZHowJwpwMjI0ClMnMCcKc1MnX19vcHRfX2RycHRvbCcKcDIyNQpTJzEwJwpwMjI2CnNTJ19fYXV0b2Rpc2NfX2FtaW4nCnAyMjcKUyczMCcKcDIyOApzUydndWlfY2xlYW51cCcKcDIyOQpTJzEnCnNTJ3JlbW90ZV9saW1pdF8yXzEnCnAyMzAKUycxJwpzUyd0aF9yYWRpYXRpb24nCnAyMzEKUydhdXRvbWF0aWMnCnAyMzIKc1MncmVtb3RlX2RpcicKcDIzMwpTJ25vbmUnCnAyMzQKc1MnUEdBX0FDQ1UnCnAyMzUKUycxMCcKcDIzNgpzUydfX29wdF9fc3VyZmFuZycKcDIzNwpTJzMwJwpwMjM4CnNTJ19fb3B0X19iZGwnCnAyMzkKUycwLjU1JwpwMjQwCnNTJ19fYXV0b2Rpc2NfX2RtaW4nCnAyNDEKUycwLjA4XzAuMDhfMC4wMTUnCnAyNDIKc1MnX19vcHRfX3BtaW5hbmcnCnAyNDMKUycwLjAxJwpwMjQ0CnNTJ3Bvc3Rwcm9jX3N1Yi0yJwpwMjQ1ClMnMScKc1MnZ3VpX3NhdmUnCnAyNDYKUycxJwpzUydfX29wdF9fcGNyZWMnCnAyNDcKUyc4JwpzUydfX29wdF9fdmZoZGlzdCcKcDI0OApTJzAuMycKcDI0OQpzUydfX29wdF9fdnNpemUnCnAyNTAKUycxMDAnCnAyNTEKc1MnZ3VpX2F1dG9tZXNoJwpwMjUyClMnMScKc1MnX19vcHRfX2dyaWRtYWluJwpwMjUzClMnb2ZmJwpwMjU0CnNTJ19fb3B0X19zcmFkbGltaXQnCnAyNTUKUydTRVQnCnAyNTYKc1MnX19vcHRfX3ZzbmFwJwpwMjU3ClMnPSBob3Jpem9udGFsJwpwMjU4CnNTJ3JlbW90ZV9tYWNoaW5lXzFfMScKcDI1OQpTJ2xvY2FsaG9zdCcKcDI2MApzUydfX29wdF9fY3Vyc29yX3RleHQnCnAyNjEKUydvbicKcDI2MgpzUydsaWN3YWl0JwpwMjYzClMnMCcKc1MnX19vcHRfX2Qzc2l6ZScKcDI2NApTJ2F1dG8nCnAyNjUKc1MnX19vcHRfX3Jlc2VsZWN0JwpwMjY2ClMnMjAnCnAyNjcKc1MnX19vcHRfX3B0b2wnCnAyNjgKUycwLjAwMDEnCnAyNjkKc1MnX19vcHRfX2RybGFtcCcKcDI3MApTJzE5LjUnCnAyNzEKc1MnX19vcHRfX3phdW5fd2lkJwpwMjcyClMnMzAwJwpwMjczCnNTJ3N0YWJfcmVzJwpwMjc0ClMnMScKc1MnZl8wJwpwMjc1CkYwCnNTJ19fb3B0X19oc2l6ZScKcDI3NgpTJzEwMCcKcDI3NwpzUydtZW1saW1pdCcKcDI3OApTJzUxMicKcDI3OQpzUyd2bWNvbW0nCnAyODAKUydjb21wYXRpYmxlJwpwMjgxCnNTJ19fb3B0X19wb3ZwcmlvJwpwMjgyClMnb24nCnAyODMKc1MnX19vcHRfX3NuYXBjb2xvcicKcDI4NApTJyNmNzAnCnAyODUKc1MnX19vcHRfX2RydW5kZXInCnAyODYKUyczNScKcDI4NwpzUydmX2MnCnAyODgKRjMwMDAwMDAwMDAKc1MnZG9fc3BhcicKcDI4OQpTJzAnCnNTJ19fb3B0X19pbXBjaXJjbicKcDI5MApTJzgnCnNTJ19fb3B0X19hcnJvd19jb2xvcicKcDI5MQpTJ3JlZCcKcDI5MgpzUydfX29wdF9fYXJyb3dfY2hhaXInCnAyOTMKUydvbicKcDI5NApzUydfX29wdF9fZXhwX3BzbF9zY2FsZScKcDI5NQpTJzcyLjAvMjU0MDAuMCcKcDI5NgpzUydfX29wdF9fZDNsMHAnCnAyOTcKUycwIDAgMSAwJwpwMjk4CnNTJ19fb3B0X19kM2wwcycKcDI5OQpTJzAuOScKcDMwMApzUydfX29wdF9fcGJib3gnCnAzMDEKUycyZCBwZXJwZW5kaWN1bGFyJwpwMzAyCnNTJ2JhdGNoX2RpcnNfMicKcDMwMwpnMzkKc1MnX19vcHRfX3BvdmJnJwpwMzA0ClMnYmFja2dyb3VuZCB7Y29sb3IgcmdiIDAuNX0nCnAzMDUKc1MnX19vcHRfX3Zvc25hcCcKcDMwNgpTJz0gaG9yaXpvbnRhbCcKcDMwNwpzUydfX29wdF9fZDNsMGEnCnAzMDgKUycwLjInCnAzMDkKc1MnX19vcHRfX2QzbDBkJwpwMzEwClMnMC40JwpwMzExCnNTJ19fYXV0b2Rpc2NfX2Rpc3lfb3B0JwpwMzEyClMnb2ZmJwpwMzEzCnNTJ19fb3B0X19tY29weScKcDMxNApTJ21jb3B5KGR4PTEwMCxkeT0xMDAsbng9NSxueT01KScKcDMxNQpzUydfX29wdF9fZXhwX2dicl9hcHAnCnAzMTYKUycwLjAwMScKcDMxNwpzUydvcHRpbWlzZXJfMl9udW1iZXJ1cCcKcDMxOApTJzAnCnNTJ2FjY3VyYWN5JwpwMzE5ClMnMWUtNScKcDMyMApzUydfX29wdF9fZHJkdmlhJwpwMzIxClMnb24nCnAzMjIKc1MnX19vcHRfX3BzYXZlJwpwMzIzClMnc21hcnQnCnAzMjQKc1MnX19vcHRfX2RpYm9yZGVyJwpwMzI1Ckk4CnNTJ3NmaycKcDMyNgpTJzEwMCcKcDMyNwpzUydjaGtzdW0nCnAzMjgKSTYwCnNTJ19fb3B0X19kM3RyYW5zcCcKcDMyOQpTJ2FjY3VyYXRlIGh3JwpwMzMwCnNTJ3RoX3N0b3JlJwpwMzMxClMnOGJpdCcKcDMzMgpzUydyZW1vdGVfbWFjaGluZV8yXzEnCnAzMzMKUydsb2NhbGhvc3QnCnAzMzQKc1MnX19vcHRfX2ZsYXRyZWN0JwpwMzM1ClMnb2ZmJwpwMzM2CnNTJ19fb3B0X192ZnZkaXN0JwpwMzM3ClMnMS40JwpwMzM4CnNTJ19fb3B0X19wb3Z4ZW5sZycKcDMzOQpTJzAuMDAxJwpwMzQwCnNTJ2xwaScKcDM0MQpGNTAKc1MnX19vcHRfX3ZmaGVpZ2h0JwpwMzQyClMnMzUnCnAzNDMKc1MnX19vcHRfX3NpemUzZCcKcDM0NApTJzEnCnNTJ25vcm1fZWYnCnAzNDUKUycxJwpzUydfX29wdF9fZHJjbGltaXQnCnAzNDYKUycxMicKcDM0NwpzUydfX29wdF9faHNuYXAnCnAzNDgKUydzbWFsbCcKcDM0OQpzUydndWlfbWVzc2FnZXMnCnAzNTAKUycwJwpzUydfX29wdF9fc21vb3RoM2QnCnAzNTEKUydvZmYnCnAzNTIKc1MnX19vcHRfX2xtb2RlJwpwMzUzClMnZnVsbCcKcDM1NApzUydyZW1vdGVwb3N0JwpwMzU1ClMnMCcKc1MnX19hdXRvZGlzY19fcGdyaWQnCnAzNTYKUycxJwpzUydfX29wdF9fcHJpbnRfc3onCnAzNTcKUycxJwpzUydvcHRpbWlzZXJfMV9zZXEnCnAzNTgKUycwJwpzUydfX29wdF9fZDNiZycKcDM1OQpTJ3doaXRlJwpwMzYwCnNTJ3ZlcnNpb24nCnAzNjEKRjcuMDE5OTk5OTk5OTk5OTk5NgpzUyd2bXNhdmUnCnAzNjIKUydvZmYnCnAzNjMKc1MncmVtb3RlX21hY2hpbmVfOTk5XzEnCnAzNjQKUydsb2NhbGhvc3QnCnAzNjUKc1MnX19vcHRfX2R4ZmNubicKcDM2NgpTJzAnCnNTJ19fb3B0X19neW1zY2FsZScKcDM2NwpJMQpzUydfX29wdF9fcHJhc3QnCnAzNjgKUycwLjEnCnAzNjkKc1MnX19vcHRfX3phdW5fY2lyYycKcDM3MApTJzE2JwpwMzcxCnNTJ19fb3B0X196YXVuX2xtJwpwMzcyClMnVmlhJwpwMzczCnNTJ19fb3B0X19tYjInCnAzNzQKUydyZWN0YW5nbGVzJwpwMzc1CnNTJ19fb3B0X19tYjMnCnAzNzYKUydyZWN0YW5nbGVzJwpwMzc3CnNTJ19fb3B0X19zdGxzaGlmdCcKcDM3OApTJzAgMCAwJwpwMzc5CnNTJ2R4JwpwMzgwClMnMWUtMycKcDM4MQpzUyd0aW1pbmcnCnAzODIKUydvZmYnCnAzODMKc1MnX19vcHRfX3phdW5fbHMnCnAzODQKUydWaWEnCnAzODUKc1MnX19vcHRfX3phdW5fbHAnCnAzODYKUydQYWQnCnAzODcKc1MnX19vcHRfX2R4Zm1lcmdlJwpwMzg4ClMnMScKc1MnX19vcHRfX3BvdnF1YWQnCnAzODkKSTgKc1MnX19vcHRfX2QzcHMnCnAzOTAKUycxMCcKcDM5MQpzUyd0aF90bWF4JwpwMzkyCkY1MDAwCnNTJ19fb3B0X19leHBfbHByJwpwMzkzClMnbHByJwpwMzk0CnNTJ3htYXgnCnAzOTUKUydwbWwgNCcKcDM5NgpzUydfX29wdF9fZXhwX2dicl9mbXQnCnAzOTcKUyczNCcKcDM5OApzUydfX29wdF9fYXJyb3dfdGV4dCcKcDM5OQpTJ25vcm1hbCcKcDQwMApzUydfX29wdF9fYnNhdmUnCnA0MDEKUydvZmYnCnA0MDIKc1MnX19vcHRfX21iMmNvbWInCnA0MDMKUydvZmYnCnA0MDQKc1MnX19vcHRfX2V4cF9wc2xfc2hpZnQnCnA0MDUKUycxMDAwMCcKcDQwNgpzUydfX29wdF9fM2RfaGFuZGxlX2xpbWl0JwpwNDA3CkkxMDAwCnNTJ19fb3B0X19oZHNuYXAnCnA0MDgKUydvZmYnCnA0MDkKc1MnZ3VpYmF0Y2gnCnA0MTAKUycwJwpzUydfX29wdF9fd3plcm8nCnA0MTEKUydvZmYnCnA0MTIKc1MnbnNvdXJjZScKcDQxMwpJMTUKc1MnY2xlYW51cF90Y2wnCnA0MTQKUycwJwpzUydfX2F1dG9kaXNjX19kbWF4JwpwNDE1CmcyMTUKc1MnX19vcHRfX2xheWlnbicKcDQxNgpTJ29mZicKcDQxNwpzUydfX29wdF9fcnNpbXBsJwpwNDE4ClMnb2ZmJwpwNDE5CnNTJ19fb3B0X19kM2xnYScKcDQyMApTJzAuMicKcDQyMQpzUydlcmVmJwpwNDIyClMnT0ZGJwpwNDIzCnNTJ19fb3B0X19kcnN1YnMnCnA0MjQKUydvbicKcDQyNQpzUydudW1iZXJfZzNkJwpwNDI2ClMnMScKc1MnZ2FiX2ZyZXEnCnA0MjcKUyc5MDBlNicKcDQyOApzUydfX2F1dG9kaXNjX19ub2JqMycKcDQyOQpJMQpzUydfX29wdF9fZGlzY29sb3InCnA0MzAKUydyZWQnCnA0MzEKc1MnX19vcHRfX3N0bGNvYXJzZScKcDQzMgpTJzEwMCcKcDQzMwpzUydfX29wdF9fYXJyb3dfYm94JwpwNDM0ClMnZ3JleTI1JwpwNDM1CnNTJ3RoX2FjY3UnCnA0MzYKRjkuOTk5OTk5OTk5OTk5OTk5MWUtMDYKc1MnX19vcHRfX3BvdmxzMicKcDQzNwpTJ29mZicKcDQzOApzUydvcHRpbWlzZXJfMV9pc2YnCnA0MzkKSTIKc1MnX19vcHRfX2dkc3ZpYXNpemUnCnA0NDAKUycwJwpzUydfX29wdF9fZGlzY19rb29yJwpwNDQxClMnb2ZmJwpwNDQyCnNTJ19fYXV0b2Rpc2NfX2Rpc3hfb3B0JwpwNDQzClMnb2ZmJwpwNDQ0CnNTJ19fb3B0X196YXVuX2F0dHInCnA0NDUKUydvbicKcDQ0NgpzUydfX29wdF9fcGFuZ2xlJwpwNDQ3ClMnLTkwJwpwNDQ4CnNTJ19fb3B0X196YXVuX2l0ZXInCnA0NDkKUycxMDAwJwpwNDUwCnNTJ01FTVNBVkUnCnA0NTEKUycxJwpzUyd3Z19wb3J0X2Fic29yYicKcDQ1MgpTJzEnCnNTJ19fb3B0X19oMmRfY3VydmVzJwpwNDUzClMnMjAwJwpwNDU0CnNTJ19fb3B0X190aWNrc2l6ZScKcDQ1NQpTJzMwJwpwNDU2CnNTJ19fb3B0X19tZGlzdCcKcDQ1NwpTJzQnCnNTJ19fb3B0X19nZHN2aWFkaXN0JwpwNDU4ClMnMTAwMCcKcDQ1OQpzUydfX29wdF9fY3Vyc29yX3NoYXBlJwpwNDYwClMnYmlnJwpwNDYxCnNTJ3N0cmF0ZWd5JwpwNDYyClMnYXV0bycKcDQ2MwpzUydfX29wdF9femF1bl9kaXN0JwpwNDY0ClMnNTAwJwpwNDY1CnNTJ19fb3B0X19kaWdyYWRlZCcKcDQ2NgpTJzEuNScKcDQ2NwpzUydfX29wdF9fc3VyZmhhbmQnCnA0NjgKUycxMDAwMCcKcDQ2OQpzUydmc19wb3J0X21vZGUnCnA0NzAKUydzZXAnCnA0NzEKc1MncnNoY21kbmV3JwpwNDcyClMncmVtb3RlJwpwNDczCnNTJ2ZzX2FjX2V4Y2l0ZScKcDQ3NApTJzAnCnNTJ19fb3B0X19maXhjb2xvcicKcDQ3NQpTJ2JsYWNrJwpwNDc2CnNTJ19fb3B0X19zdXJmZGlzcCcKcDQ3NwpTJ2FsbCcKcDQ3OApzUydtdWx0aScKcDQ3OQpTJzQnCnNTJ19fb3B0X19kM21kaScKcDQ4MApTJzEwMCcKcDQ4MQpzUydfX29wdF9fcG92ZW5sZycKcDQ4MgpTJzEnCnNTJ3NpbXR5cGVzJwpwNDgzClMnRU0nCnA0ODQKc1MnX19vcHRfX2RycmVwJwpwNDg1ClMnMScKc1Mnb2JhdGNoJwpwNDg2ClMnMScKc1MndGhfYmxvb2RfdGVtcCcKcDQ4NwpTJzMxMCcKcDQ4OApzUydUWVBFJwpwNDg5ClMnTUVEJwpwNDkwCnNTJ3J1bmxlbmd0aCcKcDQ5MQpTJzEwMDAnCnA0OTIKc1MnX19vcHRfX2V4Y3VuaXQnCnA0OTMKUydtbScKcDQ5NApzUydfX2F1dG9kaXNjX19kaXN6JwpwNDk1ClMnYXV0bycKcDQ5NgpzUydfX2F1dG9kaXNjX19kaXN4JwpwNDk3ClMnYXV0bycKcDQ5OApzUydfX2F1dG9kaXNjX19kaXN5JwpwNDk5ClMnYXV0bycKcDUwMApzUyd2bScKcDUwMQpTJ29mZicKcDUwMgpzUydUSElDS05FU1MnCnA1MDMKUycwJwpzUydfX29wdF9fY29udmluZm8nCnA1MDQKUydvZmYnCnA1MDUKc1MnRl9TVEFSVCcKcDUwNgpGMjAwMDAwMDAwMApzUydjbGVhbnVwX2h3JwpwNTA3ClMnMScKc1MnX19vcHRfX2QzbW9kZScKcDUwOApTJ2ZpbGwnCnA1MDkKc1Mnc2hpZnRfMScKcDUxMApGMApzUyd0ZW1wbGF0ZV9vcHMnCnA1MTEKUydOb25lJwpwNTEyCnNTJ19fb3B0X19nZXJibXVsdGknCnA1MTMKUydvZmYnCnA1MTQKc1MnX19vcHRfX2R4ZnRvbCcKcDUxNQpTJzFlLTMnCnA1MTYKc1MnX19vcHRfX3BvdnRyJwpwNTE3ClMnMCcKc1MnX19vcHRfX3phdW5fbG9nJwpwNTE4ClMnd2luZG93JwpwNTE5CnNTJ21hbmNoaycKcDUyMApTJ2F1dG8nCnA1MjEKc1MnX19vcHRfX2Rvc25hcCcKcDUyMgpTJ29uJwpwNTIzCnNTJ29wdGltaXNlcl8xX251bWJlcnVwJwpwNTI0ClMnMCcKc1Mnb3B0aW1pc2VyXzJfaXNmJwpwNTI1CkkyCnNTJ19fb3B0X19wb3ZmaW4nCnA1MjYKUydmaW5pc2ggeyBkaWZmdXNlIDAuNiB9JwpwNTI3CnNTJ19fb3B0X19hY2N1JwpwNTI4ClMnMC4wMScKcDUyOQpzUydfX29wdF9fcG92Y2FtJwpwNTMwClMnY2FtZXJhIHtsb2NhdGlvbiAgX19FWUVfXyBza3kgX19VUF9fIGxvb2tfYXQgX19DRU5URVJfXyBhbmdsZSA0MH0nCnA1MzEKc1Mnb2xvZ2xldicKcDUzMgpTJzEwMCcKcDUzMwpzUydfX29wdF9fZHJkc2NhbGUnCnA1MzQKUycxNjAuMC81OC4wJwpwNTM1CnNTJ19fYXV0b2Rpc2NfX2tlZXAnCnA1MzYKUycxJwpzUydjbGVhbnVwX2FsbCcKcDUzNwpTJzAnCnNTJ29wdGltaXNlcl8xJwpwNTM4ClMnU3dlZXAgaW5kZXBlbmRlbnQnCnA1MzkKc1MnX19hdXRvZGlzY19feG1pbicKcDU0MApTJy03NScKcDU0MQpzUyduc3RlcHMnCnA1NDIKSTMwMDAwMApzUydfX2F1dG9kaXNjX196bWF4JwpwNTQzClMnNTEuNTgnCnA1NDQKc1Mnb3NfcHJpb3JpdHknCnA1NDUKUydsb3cnCnA1NDYKc1MnX19vcHRfX2QzbDFzJwpwNTQ3ClMnMC4wJwpwNTQ4CnNTJ19fb3B0X19kM2wxcCcKcDU0OQpTJ29mZicKcDU1MApzUydhdXRvZGlzYycKcDU1MQpTJ3UnCnNTJ19fb3B0X19kcnNwMCcKcDU1MgpTJzIwMCcKcDU1MwpzUydfX29wdF9fZHJzcDEnCnA1NTQKUycxJwpzUydfX29wdF9fZHJzcDInCnA1NTUKUycxJwpzUydfX29wdF9fZDNsMWEnCnA1NTYKUycxLjAnCnA1NTcKc1MnX19vcHRfX2QzbDFkJwpwNTU4ClMnMC4yJwpwNTU5CnNTJ19fYXV0b2Rpc2NfX3ltaW4nCnA1NjAKUyctMTAwLjU3NjIyJwpwNTYxCnNTJ19fb3B0X19leHBfY2dtX2dlbycKcDU2MgpTJzY0MDB4NDgwMCcKcDU2MwpzUydfX29wdF9fdWh0c2hpZnQnCnA1NjQKUycwIDAnCnA1NjUKc1MnX19vcHRfX29zbmFwJwpwNTY2ClMnb2JqZWN0cyt0cmFjZXMnCnA1NjcKc1MnX19vcHRfX2JhY2t1cCcKcDU2OApTJ29uJwpwNTY5CnNTJ251bWJlcl9nMmQnCnA1NzAKUyczJwpzUydfX29wdF9fZ2VyYnRvbCcKcDU3MQpTJzFlLTA2JwpwNTcyCnNTJ19fb3B0X196YXVuX29kaXN0JwpwNTczClMnODAwJwpwNTc0CnNTJ3ZtYWxnbycKcDU3NQpTJ2Jsb2NrJwpwNTc2CnNTJ19fb3B0X19zb2xpZGFjY3UnCnA1NzcKUycxZS01JwpwNTc4CnNTJ19fb3B0X19keGZzY2FsZScKcDU3OQpTJzEnCnNTJ19fYXV0b2Rpc2NfX2NsYW0nCnA1ODAKSTEwCnNTJ19fb3B0X19kM2x3JwpwNTgxClMnMycKc1MnbHJvcHQnCnA1ODIKUycxJwpzUydndWlfdHVuZV9hY3Rpb24nCnA1ODMKUycxJwpzUydlY3V0JwpwNTg0ClMnLTEnCnA1ODUKc1MnX19vcHRfX2QzY28nCnA1ODYKUydvbicKcDU4NwpzUydfX29wdF9fc3Rsc2ltcGFuZycKcDU4OApJMApzUydfX29wdF9fZXhjbGltaXQnCnA1ODkKUycxMicKcDU5MApzUydfX29wdF9fc3RsZXhzZXAnCnA1OTEKUydvZmYnCnA1OTIKc1MndGhfYmxvb2RfY2FwJwpwNTkzClMnMzgyNCcKcDU5NApzUydfX29wdF9fdmJvcmRlcicKcDU5NQpTJzYwJwpwNTk2CnNTJ19fb3B0X19leHBfZ2RzaWlfZmFjdCcKcDU5NwpTJzEwMDAnCnA1OTgKc1MnX19vcHRfX2V4Y3NjYWxlJwpwNTk5ClMnMS4vMTAwMCcKcDYwMApzUydjbGVhbnVwX2ludGVyJwpwNjAxClMnMScKc1MnY2xlYW51cF9yZXMnCnA2MDIKUycxJwpzUydmb2Zmc2V0JwpwNjAzClMnMCcKc1MncGFydG9sJwpwNjA0ClMnNWUtNicKcDYwNQpzUydfX29wdF9fcnN1YicKcDYwNgpTJzM2JwpwNjA3CnNTJ3ltYXgnCnA2MDgKUydwbWwgNCcKcDYwOQpzUydfX2F1dG9kaXNjX193ZmVuY2UnCnA2MTAKUycyNScKcDYxMQpzUydfX29wdF9fM2Rfd2lyZWZyYW1lX2FuZ2xlJwpwNjEyCkkzMApzUydORicKcDYxMwpJNjAwCnNTJ251bWJlcl9hbicKcDYxNApTJzInCnNTJ19fb3B0X19kM21jcycKcDYxNQpTJzUwJwpwNjE2CnNTJ25zb3VyY2VfMScKcDYxNwpTJ2RlZmF1bHQnCnA2MTgKc1MnX19vcHRfX2d5bXNoaWZ0JwpwNjE5ClMnMCAwIDAnCnA2MjAKc1MnX19hdXRvZGlzY19fd2FybmxpbWl0JwpwNjIxClMnMWUtMycKcDYyMgpzUydfX29wdF9fZHhmY3RvbCcKcDYyMwpTJzAuMDEnCnA2MjQKc1MnX19vcHRfX2N1cnNvcl9yZWN0JwpwNjI1ClMnb24nCnA2MjYKc1MnX19vcHRfX2tvb3JfZm9ybWF0JwpwNjI3ClMnJSsxMC4yZicKcDYyOApzUydfX29wdF9fZXhjdG9sJwpwNjI5ClMnMTAnCnA2MzAKc1MnX19vcHRfX2R4ZmFyYycKcDYzMQpTJzUnCnNTJ19fb3B0X19leHBfY2dtX2ZzJwpwNjMyClMnMC43JwpwNjMzCnNTJ2RvX3RvdWNoJwpwNjM0ClMnMCcKc1MnX19vcHRfX2hwZ2xwZW4nCnA2MzUKUyczMDAnCnA2MzYKc1MnX19hdXRvZGlzY19fc2xvcGUnCnA2MzcKUycwJwpzUydfX29wdF9fc3RhY2toaWdobGlnaHQnCnA2MzgKUydvZmYnCnA2MzkKc1MnX19hdXRvZGlzY19fbm9iajQnCnA2NDAKSTMKc1MndGhfYmNvbmQnCnA2NDEKUydOb25lJwpwNjQyCnNTJ19fYXV0b2Rpc2NfX25vYmoxJwpwNjQzCkkxCnNTJ19fYXV0b2Rpc2NfX25vYmoyJwpwNjQ0CkkxCnNTJ19fb3B0X19wb3ZmaW5pc2gnCnA2NDUKUydmaW5pc2ggeyBkaWZmdXNlIDAuNSB9JwpwNjQ2CnNTJ19fb3B0X19wb3ZsczQnCnA2NDcKUydvZmYnCnA2NDgKc1MnX19vcHRfX3BvdmxzNScKcDY0OQpTJ29mZicKcDY1MApzUydfX29wdF9fZGlzY2JvdW5kJwpwNjUxClMnYmxhY2snCnA2NTIKc1MnX19vcHRfX3BvdmxzMycKcDY1MwpTJ29mZicKcDY1NApzUydfX29wdF9fcG92bHMxJwpwNjU1ClMnbGlnaHRfc291cmNlIHsgX19MSUdIVF9fIFdoaXRlIH0nCnA2NTYKc1MnZXBzZWZmXzInCnA2NTcKUydkZWZhdWx0JwpwNjU4CnNTJ2Vwc2VmZl8xJwpwNjU5ClMnZGVmYXVsdCcKcDY2MApzUydfX29wdF9fbWIzb3B0JwpwNjYxClMnb2ZmJwpwNjYyCnNTJ19fb3B0X19kcnNjYWxlJwpwNjYzClMnMS4wJwpwNjY0CnNTJ19fb3B0X193aGVlbGZhY3QnCnA2NjUKUycxLjInCnA2NjYKc1MnX19vcHRfX2V4cF9zdGxfZmFjdCcKcDY2NwpTJzEnCnNTJ3Vpb25seScKcDY2OApTJzAnCnNTJ0ZfTUlEJwpwNjY5CkYyNDUwMDAwMDAwCnNTJ2dhYl9lcHNyJwpwNjcwClMnb24nCnA2NzEKc1MnX19hdXRvZGlzY19fc2ltZ3JpZCcKcDY3MgpTJzEnCnNTJ19fb3B0X19zZGJvcmRlcicKcDY3MwpJMwpzUydfX2F1dG9kaXNjX19yb3VnaG5lc3MnCnA2NzQKUycwJwpzUydfX29wdF9fbWIyb3B0JwpwNjc1ClMnb24nCnA2NzYKc1MnX19vcHRfX21kaWdpdHMnCnA2NzcKUycwJwpzUydGX0VORCcKcDY3OApGMzAwMDAwMDAwMApzUydfX29wdF9fcG9seW9ubHknCnA2NzkKUydvZmYnCnA2ODAKc1MnX19hdXRvZGlzY19fYXJjcmVzJwpwNjgxClMnMjIuNScKcDY4MgpzUydfX29wdF9fZHJtYXhpJwpwNjgzClMnMjAwJwpwNjg0CnNTJ01FVEFMJwpwNjg1ClMnRDEnCnA2ODYKc1MndGhfYmxvb2RfZGVucycKcDY4NwpTJzEwNjAnCnA2ODgKc1MneW1heF9hcycKcDY4OQpTJ2F1dG9tYXRpYycKcDY5MApzUydfX29wdF9fc3VyZndhcm4nCnA2OTEKUydvbicKcDY5MgpzUydlc3dpdGNoJwpwNjkzClMnT04nCnA2OTQKc1MnX19vcHRfX21mc2l6ZScKcDY5NQpTJzEyJwpwNjk2CnNTJ19fb3B0X19hdXRvYXJjJwpwNjk3ClMnb2ZmJwpwNjk4CnNTJ19fb3B0X19zZWxhY2MnCnA2OTkKUycxJwpzUyduc291cmNlXzInCnA3MDAKUydkZWZhdWx0JwpwNzAxCnNTJ19fb3B0X19tYmdlbm9wdCcKcDcwMgpTJ29mZicKcDcwMwpzUydfX29wdF9fdmRzbmFwJwpwNzA0ClMnPSBob3Jpem9udGFsJwpwNzA1CnNTJ19fb3B0X19kcmZyZXEnCnA3MDYKUycxLjUnCnA3MDcKc1MnX19vcHRfX3RoaWNrJwpwNzA4ClMnMC4wMDEnCnA3MDkKcy4='
+
+ORIGINS 0
+list [mat.mat(3,1, 0.0 ,0.0 ,0.0)]
+END ORIGINS
+
+DISC 0
+   lines [-7.500000000000000e+01,-6.656426153846154e+01,-5.812852307692307e+01,-4.969278461538461e+01,-4.463134153846153e+01,-4.210062000000000e+01,-4.099997989990904e+01,-3.999087000000002e+01,-3.864343500000001e+01,-3.729599999999999e+01,-3.537614666666666e+01,-3.441622000000000e+01,-3.402500000000001e+01,-3.336833333333333e+01,-3.304000000000000e+01,-3.288800000000000e+01,-3.262133333333333e+01,-3.235466666666667e+01,-3.208800000000000e+01,-3.187200000000000e+01,-3.144850000000000e+01,-3.102500000000001e+01,-3.008290666666667e+01,-2.914081333333333e+01,-2.819872000000000e+01,-2.779777000000001e+01,-2.699565575757577e+01,-2.516225177489179e+01,-2.118987647907649e+01,-1.456925098605099e+01,-7.948625493025496e+00,-1.328000000000000e+00,6.680648999999998e+00,1.517464881818182e+01,1.942164872727273e+01,2.124179154545455e+01,2.306193436363637e+01,2.488207718181819e+01,2.670222000000001e+01,2.829281333333335e+01,2.908811000000001e+01,2.988340666666667e+01,3.067870333333334e+01,3.147400000000000e+01,3.218564070099263e+01,3.246820002153766e+01,3.260000000000000e+01,3.300000000000000e+01,3.340000000000000e+01,3.357404700000000e+01,3.388269800000000e+01,3.450000000000000e+01,3.587500000000001e+01,3.725000000000001e+01,3.828645750000000e+01,3.932291499999999e+01,3.999999000000000e+01,4.100000000000001e+01,4.234738000000000e+01,4.531580000000000e+01,5.026316666666667e+01,5.850877777777778e+01,6.675438888888888e+01,7.500000000000000e+01]
+  fixed [7.500000000000000e+01,-7.500000000000000e+01]
+  auto  [3.450000000000000e+01,3.725000000000001e+01,-4.210062000000000e+01,-3.288800000000000e+01,4.100000000000001e+01,3.932291499999999e+01,-3.304000000000000e+01,3.999999000000000e+01,-4.099997989990904e+01,-3.208800000000000e+01,-3.999087000000002e+01,-3.729599999999999e+01,3.260000000000000e+01,-3.402500000000001e+01,-7.500000000000000e+01,-3.441622000000000e+01,6.680648999999998e+00,4.234738000000000e+01,-2.819872000000000e+01,3.147400000000000e+01,2.670222000000001e+01,-1.328000000000000e+00,7.500000000000000e+01,3.340000000000000e+01,-2.779777000000001e+01,-3.102500000000001e+01,3.246820002153766e+01,-3.187200000000000e+01,3.357404700000000e+01]
+END DISC
+
+DISC 1
+   lines [-1.005762200000000e+02,-9.355398916666668e+01,-8.653175833333334e+01,-7.950952750000002e+01,-7.650000000000001e+01,-7.499999999999999e+01,-7.350243434343436e+01,-7.275365151515155e+01,-7.230438181818187e+01,-7.203482000000005e+01,-7.192143098214125e+01,-7.165227502840756e+01,-7.118125210937359e+01,-7.014500168749888e+01,-6.876333445833259e+01,-6.738166722916630e+01,-6.600000000000000e+01,-6.532379000000003e+01,-6.420924330518139e+01,-6.266143199983075e+01,-6.219730720632429e+01,-6.195203764170245e+01,-6.170630693033305e+01,-6.145810519958792e+01,-6.113985325121383e+01,-6.060805976837753e+01,-6.007631450974180e+01,-5.975785866792119e+01,-5.950439074360453e+01,-5.922117945099733e+01,-5.896408524987388e+01,-5.866388953939433e+01,-5.823099701976797e+01,-5.782500000000001e+01,-5.755506333333334e+01,-5.728512666666666e+01,-5.701518999999999e+01,-5.687159500000000e+01,-5.672800000000000e+01,-5.661600000000000e+01,-5.638666666666666e+01,-5.615733333333333e+01,-5.592800000000000e+01,-5.563200000000000e+01,-5.548790000000001e+01,-5.513144270384294e+01,-5.477498540768588e+01,-5.438400000000000e+01,-5.411733333333333e+01,-5.385066666666667e+01,-5.358400000000000e+01,-5.340000000000000e+01,-5.294395000000000e+01,-5.248790000000001e+01,-5.154032000000001e+01,-4.964516000000000e+01,-4.775000000000000e+01,-4.536000000000000e+01,-4.296999999999999e+01,-3.855052631578947e+01,-2.915914473684210e+01,-1.976776315789473e+01,-1.037638157894736e+01,-9.849999999999852e-01,8.406381578947389e+00,1.779776315789476e+01,2.718914473684212e+01,3.658052631578949e+01,4.100000000000001e+01,4.290151500000000e+01,4.480303000000000e+01,4.607070666666667e+01,4.670454500000000e+01,4.697619000000000e+01,4.709397000000001e+01,4.736910893563605e+01,4.801109978545348e+01,4.929508148508835e+01,5.070962000000000e+01,5.389304153846154e+01,6.153325323076923e+01,7.172020215384616e+01,8.190715107692307e+01,9.209410000000000e+01]
+  fixed []
+  auto  [-7.650000000000001e+01,-7.499999999999999e+01,-5.701518999999999e+01,-4.775000000000000e+01,-7.203482000000005e+01,-6.219730720632429e+01,-5.672800000000000e+01,-5.782500000000001e+01,-5.477498540768588e+01,-5.661600000000000e+01,-4.296999999999999e+01,4.697619000000000e+01,4.100000000000001e+01,-5.592800000000000e+01,-5.340000000000000e+01,-6.145810519958792e+01,-6.600000000000000e+01,5.070962000000000e+01,4.709397000000001e+01,-5.248790000000001e+01,-1.005762200000000e+02,-5.438400000000000e+01,4.929508148508835e+01,-5.896408524987388e+01,-7.192143098214125e+01,9.209410000000000e+01,-6.532379000000003e+01,-5.975785866792119e+01,-5.358400000000000e+01,-5.548790000000001e+01,-5.563200000000000e+01]
+END DISC
+
+DISC 2
+   lines [-3.650000000000000e+01,-2.722727272727273e+01,-1.795454545454545e+01,-1.331818181818182e+01,-1.100000000000000e+01,-1.000000000000000e+01,-8.333333333333334e+00,-5.555555555555555e+00,-2.777777777777778e+00,0.000000000000000e+00,1.560000000000000e+00,3.210000000000000e+00,4.859999999999999e+00,6.510000000000000e+00,7.500000000000000e+00,8.000000000000000e+00,8.500000000000000e+00,8.900000000000000e+00,9.892558139534884e+00,1.234476060191519e+01,1.724916552667579e+01,2.869277701778386e+01,4.013638850889193e+01,5.158000000000000e+01]
+  fixed []
+  auto  [-3.650000000000000e+01,0.000000000000000e+00,5.158000000000000e+01,7.500000000000000e+00,8.900000000000000e+00,-1.100000000000000e+01,-1.000000000000000e+01,1.560000000000000e+00,8.500000000000000e+00]
+END DISC
+
+LAYER 1
+ texts     [stack_text(text='name @@initial',st=STACK), stack_text(text='conductor',st=STACK)]
+ color     stack_color('black')
+ fill      stack_color('black')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1000.0])
+ texture   '0'
+END LAYER
+
+LAYER 2
+ texts     [stack_text(text='name @@loads',st=STACK)]
+ color     stack_color('green')
+ fill      stack_color('green')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 3
+ texts     [stack_text(text='name @@excite',st=STACK)]
+ color     stack_color('green')
+ fill      stack_color('green')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 4
+ texts     [stack_text(text='name @@air',st=STACK)]
+ color     stack_color('red')
+ fill      stack_color('red')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 5
+ texts     [stack_text(text='name @@currents',st=STACK)]
+ color     stack_color('green')
+ fill      stack_color('green')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 6
+ texts     [stack_text(text='name @@voltages',st=STACK)]
+ color     stack_color('maroon')
+ fill      stack_color('maroon')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 7
+ texts     [stack_text(text="name @@Monitor 1 'EM Field Plane'",st=STACK)]
+ color     stack_color('gold')
+ fill      stack_color('gold')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       0
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 8
+ texts     [stack_text(text="name @@Monitor 2 'EM Field Volume'",st=STACK)]
+ color     stack_color('red')
+ fill      stack_color('red')
+ pattern   'No Fill'
+ opaque    0.39
+ width     1
+ acadcolor 61
+ vis       0
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 9
+ texts     [stack_text(text="name @@Monitor 3 'EM Farfield Display'",st=STACK)]
+ color     stack_color('gold')
+ fill      stack_color('gold')
+ pattern   'No Fill'
+ opaque    0.15
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 10
+ texts     [stack_text(text="name @@Monitor 4 'EM Farfield Display'",st=STACK)]
+ color     stack_color('green')
+ fill      stack_color('green')
+ pattern   'No Fill'
+ opaque    0.43
+ width     1
+ acadcolor 61
+ vis       0
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 11
+ texts     [stack_text(text="name @@Monitor 3 'EM Farfield Display'",st=STACK)]
+ color     stack_color('red')
+ fill      stack_color('red')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       0
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1000.0])
+ texture   '0'
+END LAYER
+
+LAYER 12
+ texts     [stack_text(text='conductor name Conductor sigma infinite sides auto rough 0 prio 200 automodel auto th_conductivity 100 th_density 4 th_capacity 1000 th_sigma 1 th_sink 20',st=STACK), stack_text(text='name Frame',st=STACK)]
+ color     stack_color('grey')
+ fill      stack_color('gold')
+ pattern   'No Fill'
+ opaque    0.47
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 13
+ texts     [stack_text(text='dielectric name UserDef_3 epsr 1 sigma 0 prio 100 tand 0 density 0 th_conductivity 0.2 th_density 0.6 th_capacity 1000 th_sigma 1 th_sink 20',st=STACK), stack_text(text='name Body',st=STACK)]
+ color     stack_color('#ff4bff')
+ fill      stack_color('#ff4bff')
+ pattern   'No Fill'
+ opaque    0.46
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.0])
+ texture   '0'
+END LAYER
+
+LAYER 14
+ texts     [stack_text(text='name Tasten-PCB V1347_07_3908',st=STACK), stack_text(text='dielectric name Polyclad-FR4-PCL-FR-370-175 epsr 4.5 sigma 0.0 prio 100 tand 1.50E-02 density 0 th_conductivity 0.3 th_density 0 th_capacity 0 th_sigma 0 th_sink 0',st=STACK)]
+ color     stack_color('#4f0')
+ fill      stack_color('#4f0')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 8.5, 8.9])
+ texture   '0'
+END LAYER
+
+LAYER 15
+ texts     [stack_text(text='name PCB_7020',st=STACK), stack_text(text='dielectric name Polyclad-FR4-PCL-HF-571-160 epsr 4.4 sigma 0.0 prio 100 tand 1.00E-02 density 0 th_conductivity 0.3 th_density 0 th_capacity 0 th_sigma 0 th_sink 0',st=STACK)]
+ color     stack_color('#4bff4b')
+ fill      stack_color('#4bff4b')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.56])
+ texture   '0'
+END LAYER
+
+LAYER 16
+ texts     [stack_text(text='conductor',st=STACK), stack_text(text='name Groundplane',st=STACK)]
+ color     stack_color('#ffdc64')
+ fill      stack_color('#ffdc64')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 1.56, 1.578])
+ texture   '0'
+END LAYER
+
+LAYER 17
+ texts     [stack_text(text='conductor',st=STACK), stack_text(text='name VIA',st=STACK)]
+ color     stack_color('grey')
+ fill      stack_color('#ffdc64')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  0
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 1.56, 8.918])
+ texture   '0'
+END LAYER
+
+LAYER 18
+ texts     [stack_text(text='conductor',st=STACK), stack_text(text='name Antenna',st=STACK)]
+ color     stack_color('grey')
+ fill      stack_color('#ffdc64')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  0
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 8.9, 8.918])
+ texture   '0'
+END LAYER
+
+LAYER 19
+ texts     [stack_text(text="name @@Monitor 1 'Planar EM Field'",st=STACK)]
+ color     stack_color('red')
+ fill      stack_color('red')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       0
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1000.0])
+ texture   '0'
+END LAYER
+
+LAYER 20
+ texts     [stack_text(text="name @@Monitor 2 'Partial EM Field'",st=STACK)]
+ color     stack_color('gold')
+ fill      stack_color('gold')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       0
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1000.0])
+ texture   '0'
+END LAYER
+
+LAYER 21
+ texts     [stack_text(text="name @@Monitor 3 'EM Farfield'",st=STACK)]
+ color     stack_color('green')
+ fill      stack_color('green')
+ pattern   'No Fill'
+ opaque    0.0
+ width     1
+ acadcolor 61
+ vis       1
+ autodisc  1
+ lock      0
+ arrow     stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1000.0])
+ texture   '0'
+END LAYER
+
+CURRENT_LAYER 13
+
+BOX 98
+ nbin	'eAF1TzGOgzAQ7OcXqUx1ciDJUUKTE80pCq0lyywQOQlgGaM4v7+lzN2lmNHsrHZWQzS5p/bdBUw0jXPwC4XJw22R0GACzEouBWndLPYe7Kg1pubaEdsZvsPZ7ZC0bo9aeNPaZRZwB1QScy16Aept1OMyaGfpdu9gvDdP/fLqE0lSZahShFq0goMeKvb5TcUmPe5LFUmqKP+gKIv/bBU7+fXuRsVcnt4vpdxwJrUM+o1NIbjVFlw4X7sNPKarGFlkmJuPH7+kaPw='
+ texts	[]
+ layer_	14
+ points	[-34.41622,34.5,-47.75,-66.0,8.5,8.9]
+END BOX
+
+LIBRARY 1
+ element	'EMPlane'
+ texts	[stack_text(text='dumpbox automatic -E -H std freq sigmawrite +E +H  2.45e+09',st=STACK), stack_text(text='anim sample=x1y1z1 file=sub-1/automatic par=2.4500000000e+09 fk=jxy loop=off scale=log_70_dB  move=z0 type=quads fmode=fill height=25 border=off btype=grid legend=10 norm=ef pyra=off pyco=auto psz=1000 ppp=10 action=display cb=ieee/P1528 sd=1e10 max=Auto wgt=1.0 shm=smooth sar_zero_list=KGxwMQou sar_display_list=KGxwMQou tstat= tnei=1 restrict=no smooth=off cache=None per=10 tloop=off resample=Off surface=auto surfres=10k legsty=main_window_8pt sar2fn= sar3fn= sar4fn= sar2nm= sar3nm= sar4nm=',st=STACK)]
+ para	{}
+ layer_	19
+ objects	(98.0, 1.4210854715202004e-14, 0.0, 107.0, 5.000000000000014, 0.0)
+ h_rads	None
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 1.59, 10000000001.59])
+END LIBRARY
+
+LIBRARY 2
+ element	'EMVolume'
+ texts	[stack_text(text='dumpbox automatic -E -H std freq sigmawrite +E +H  2.45e+09',st=STACK), stack_text(text='anim sample=x1y1z1 file=sub-1/automatic par=2.4500000000e+09 fk=Exyz loop=off scale=log_70_dB  move=z0 type=quads fmode=fill height=20 border=off btype=grid legend=10 norm=ef pyra=off pyco=auto psz=1000 ppp=10 action=display cb=ieee/P1528 sd=1e10 max=Auto wgt=1.0 shm=smooth sar_zero_list=KGxwMQou sar_display_list=KGxwMQou tstat= tnei=1 restrict=no smooth=off cache=None per=10 tloop=off resample=Off surface=auto surfres=10k legsty=main_window_8pt sar2fn=None sar3fn=None sar4fn=None sar2nm=ef sar3nm=ef sar4nm=ef',st=STACK)]
+ para	{}
+ layer_	20
+ objects	(-21.0, -68.0, -15.0, 125.0, 22.0, 51.58, -10000000000.0, -23.0, -10000000000.0)
+ h_rads	None
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.56])
+END LIBRARY
+
+LIBRARY 3
+ element	'EMFarField'
+ texts	[stack_text(text='nf2ff automatic   2.45e+09',st=STACK), stack_text(text='ffanim file=automatic loop=off move=z0 type=quads fmode=fill height=autosize border=off legend=10 scale=log_30_dB rotate=4e6f6e65 display=var_radius limit=off',st=STACK), stack_text(text="operation \nOPERATION(cls=OPERATION_2D_FF,type='FARFIELD',dst='',src=['automatic'],par=['Directivity', ['enable', 'eabs', 'ephi', 'etheta', 'pcheck', 'xmin', 'ymin', 'zmin', 'xmax', 'ymax', 'zmax', 'box_ref'], ['2.45e+09', '10e9'], 'Fixed Phi', '0.0000', '1', 'None', 'None', 'Default', 'Default', 'Single', '', '1', ['2.45e+09'], 'None'],cat='AUTOMATIC',extra=None,ext_id='ff3_0')",st=STACK), stack_text(text="operation \nOPERATION(cls=OPERATION_2D_FF,type='FARFIELD',dst='',src=['automatic'],par=['Directivity', ['enable', 'eabs', 'ephi', 'etheta', 'pcheck', 'xmin', 'ymin', 'zmin', 'xmax', 'ymax', 'zmax', 'box_ref'], ['10e9', '10e9', '2.45e+09'], 'Fixed Phi', '90.000', '1', 'None', 'None', 'Default', 'Default', 'Single', '', '1', ['2.45e+09'], 'None'],cat='AUTOMATIC',extra=None,ext_id='ff3_1')",st=STACK), stack_text(text="operation \nOPERATION(cls=OPERATION_2D_FF,type='FARFIELD',dst='',src=['automatic'],par=['Directivity', ['enable', 'eabs', 'ephi', 'etheta', 'pcheck', 'xmin', 'ymin', 'zmin', 'xmax', 'ymax', 'zmax', 'box_ref'], ['10e9', '10e9', '2.45e+09'], 'Sweep Both', '0.0000', '5', 'None', 'None', 'Default', 'Default', 'Single', '', '1', ['2.45e+09'], 'None'],cat='AUTOMATIC',extra=None,ext_id='ff3_2')",st=STACK), stack_text(text="operation \nOPERATION(cls=OPERATION_2D_FF,type='FARFIELD',dst='',src=['automatic'],par=['Directivity', ['eabs', 'ephi', 'etheta', 'pcheck', 'xmin', 'ymin', 'zmin', 'xmax', 'ymax', 'zmax', 'box_ref'], ['2.45e+09'], 'Fixed Phi', '0.0000', '1', 'None', 'None', 'Default', 'Default', 'Single', 'automatic', '1', ['2.45e+09'], 'None'],cat='AUTOMATIC',extra=None,ext_id='ff3_3')",st=STACK), stack_text(text="operation \nOPERATION(cls=OPERATION_2D_FF,type='FARFIELD',dst='',src=['automatic'],par=['Directivity', ['eabs', 'ephi', 'etheta', 'pcheck', 'xmin', 'ymin', 'zmin', 'xmax', 'ymax', 'zmax', 'box_ref'], ['2.45e+09'], 'Fixed Phi', '0.0000', '1', 'None', 'None', 'Default', 'Default', 'Single', 'automatic', '1', ['2.45e+09'], 'None'],cat='AUTOMATIC',extra=None,ext_id='ff3_4')",st=STACK), stack_text(text="operation \nOPERATION(cls=OPERATION_2D_FF,type='FARFIELD',dst='',src=['automatic'],par=['Directivity', ['eabs', 'ephi', 'etheta', 'pcheck', 'xmin', 'ymin', 'zmin', 'xmax', 'ymax', 'zmax', 'box_ref'], ['2.45e+09'], 'Fixed Phi', '0.0000', '1', 'None', 'None', 'Default', 'Default', 'Single', 'automatic', '1', ['2.45e+09'], 'None'],cat='AUTOMATIC',extra=None,ext_id='ff3_5')",st=STACK)]
+ para	{}
+ layer_	21
+ objects	(19.0, -58.4166306056, 8.5)
+ h_rads	None
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 1.56, 1.578])
+END LIBRARY
+
+GANLIB 9
+ entry	'lport'
+ texts	[]
+ para	{'WE': 1.0, 'p1': 2, 'WC': 1.0, 'p1e': 'On', 'ED': 0.0, 'DL': 0.0, 'lport': None, 'WV': 1.0, 'R': 50.0, 'FE': 'default', 'w': 1.2, 'Rcopy': 'Off', 'd0': '0.2*w', 'd1': '0.2'}
+ layer_	16
+ objects	(32.974035, -54.774985407685875, 0.0, 32.974035, -55.99998540768588, 0.0)
+ nbin	'eAFrYEpOy6yIzyvNjS/ITM7OSeVKLCpKrIxPzs8rLikqTS7JL+IqZNTwZvJmbgtlTAk1SBM5rbu2xsFhTeGpHUbJ3gcYoAAmXmk3vfX/f4R4R0lQIZOfN5O7/Y+vh/pjNL652/+0r3k7MaO4vb2QWQ8AYrwuMw=='
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 1.56, 1.578])
+ rad  	100
+ show 	0
+END GANLIB
+
+POLY 7
+ texts	[]
+ layer_	17
+ points	(-32.49348533482891, -53.98786430400575, 0.0)
+ rads	(0.4,)
+ nbin	'eAFrYEpOy6yIzyvNjS/ITM7OSeVKLCpKrIxPzs8rLikqTS7JL+IqZNTwZvRmbgtlTAmVWCnE3q5l73Bgqnd6WNE/rwMMUNBRElTIlAFS2QpSxzFrJgjctAeJM3szudv/+HqoP0bjm7uD4jUWickle9rbC1n0APhkLPk='
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 1.56, 8.918])
+ rad	100.0
+END POLY
+
+POLY 8
+ texts	[]
+ layer_	17
+ points	(33.00551399999999, -56.32863423913088, 0.0)
+ rads	(0.4,)
+ nbin	'eAFrYEpOy6yIzyvNjS/ITM7OSeVKLCpKrIxPzs8rLikqTS7JL+IqZNTwZvRmbgtlTAmVOHb1xLotDQ4Od7acWy+g5XOAAQo6SoIKmTJAKltB6jhmzQSBm/YgcWZvJnf7H18P9cdofHN3ULzGIjG5ZE97eyGLHgCrXC9I'
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 1.56, 8.918])
+ rad	100.0
+END POLY
+
+POLY 16
+ texts	[]
+ layer_	18
+ points	(-33.04775, -53.40000000000001, 0.0, -31.873440000000006, -53.40000000000001, 0.0, -31.760080000000006, -54.45850000000001, 0.0, -30.734400000000004, -56.45850000000001, 0.0, -28.834400000000006, -58.35850000000001, 0.0, -26.534400000000005, -59.15850000000001, 0.0, -23.134400000000003, -59.65850000000001, 0.0, -18.634400000000003, -60.25850000000001, 0.0, -14.234400000000003, -60.65850000000001, 0.0, -10.134400000000003, -61.05850000000001, 0.0, -5.834400000000001, -61.25850000000001, 0.0, -1.334400000000001, -61.35850000000001, 0.0, -1.334400000000001, -62.35850000000001, 0.0, -5.834400000000001, -62.25850000000001, 0.0, -10.134400000000003, -62.05850000000001, 0.0, -14.234400000000003, -61.65850000000001, 0.0, -18.634400000000003, -61.25850000000001, 0.0, -23.134400000000003, -60.65850000000001, 0.0, -26.534400000000005, -60.15850000000001, 0.0, -28.834400000000006, -59.35850000000001, 0.0, -30.734400000000004, -57.95850000000001, 0.0, -32.034400000000005, -56.35850000000001, 0.0, -32.934400000000004, -54.45850000000001, 0.0)
+ nbin	'eAFrYEpOy6yIzyvNjS/ITM7OSeVKLCpKrIxPzs8rLikqTS7JL+IqZNTwFvdmbgtlTAnRYGJgUDfkWCPT5nDA1BgINnsdYICCtSzdh2fet8cQ/xseNmvKIfsDy2cfUdhg5Q1Xv1kvbzHjHjuouA9c3PcEu+3sqzYHbp37HvxY1xcu3vDbquBch9UBR9O4XZ5TEOKSU69wZiiZQ8SvoIkvMjrAx6TdLqboBzcnNfaOG3OFDkR9CELcSGul8AUXlQMlGRPf1rQjxPUV5b/khIlDzFmIEN/VUnNhc+TX/WB3rsUhrusPtxfFHEWEOIq97AhxFHdeQZgP9i/MX0juQQkHJH+hhJsIwhyUcF6LCDeUePmFiJcDtbIW6SwO0HhBiH/eEJA9q9wBI347SoIKmfy8mdwdFM+AwFkg4xqLxOSSPe3thcx6AIEbygs='
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 8.9, 8.918])
+ rad	100.0
+END POLY
+
+POLY 24
+ texts	[]
+ layer_	18
+ points	(-1.3344000000000007, -59.86873000000001, 0.0, 6.828840707783874, -59.86873000000001, 0.0, 17.05904, -59.59493000000001, 0.0, 24.699999999999992, -58.868730000000006, 0.0, 30.600000000000005, -57.79197000000002, 0.0, 33.52579000000001, -56.61766, 0.0, 33.52906000000001, -55.63606, 0.0, 30.600000000000005, -56.83183000000001, 0.0, 24.699999999999992, -57.91019999999999, 0.0, 17.05904, -58.58908000000001, 0.0, 6.841318999999987, -58.868730000000006, 0.0, -1.3344000000000007, -58.868730000000006, 0.0, -1.3344000000000007, -59.86873000000001, 0.0)
+ nbin	'eAFrYEpOy6yIzyvNjS/ITM7OSeVKLCpKrIxPzs8rLikqTS7JL+IqZNTw5vVmbgtlTAmxYGRg2NlSc2Fz5Nf979pyu43e+x5ggIJrkmHzdgdIO6CLP1W/aifLb+iQuqVvldoZhHpDYyDYbOHwFmROPkJ89kwQsHN4suWBa/xTH7j5uh7GYr6HHRwE2OZV8/sjxKef/2SzAyg+S5UxK+uiN1w9zJyyV6fSK7MQ6mH23spgyG/8ghCHuVMt1vhnmjfCPcXMUbuaYqUx3AkLB3T3w8TRw6GjJKiQyc+byd1B8QwInAUyrrFITC7Z095eyKwHAEjZgkk='
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 8.9, 8.918])
+ rad	100.0
+END POLY
+
+POLY 27
+ texts	[]
+ layer_	15
+ points	(-40.04777000000002, 46.97619, 0.0, -40.04777000000002, -72.03482000000005, 0.0, -28.198719999999998, -72.03482000000005, 0.0, -27.79777000000001, -57.01518999999999, 0.0, 6.680648999999998, -57.01518999999999, 0.0, 6.652220000000004, -65.32379000000003, 0.0, 26.702220000000015, -65.32379000000003, 0.0, 26.702220000000015, -72.03482000000005, 0.0, 39.40179, -71.92143098214125, 0.0, 39.24404, 47.09882123960451, 0.0, -40.04777000000002, 46.97619, 0.0)
+ nbin	'eAFrYEpOy6yIzyvNjS/ITM7OSeVKLCpKrIxPzs8rLikqTS7JL+IqZNTw5vZmbgtlTAnhYGRgKLx7NliWzeVASLjd6c817g4MUAATP+e/qtaKKegATHwpf2zAfSObA+ji93fNXm51xvrAlzlf9n1s9IGrz7bQ4f2zQ8oBXdzVwL3//mwphwzDjT93hATA1T+cMW/Dkc1WOMXR7eV/d+5W7mZnh/CS5Tt//AqEm2NV+nSzzXxnB2OFJTrLejD9he7fjpKgQiY/byZ3mEfd7X98PdQfo/Gtvb2QWQ8ABtdzOA=='
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 0.0, 1.56])
+ rad	100.0
+END POLY
+
+POLY 39
+ texts	[]
+ layer_	16
+ points	(39.244040000000005, 47.09882, 0.0, 39.401790000000005, -71.92143000000002, 0.0, 26.702220000000004, -72.03482000000001, 0.0, 26.702220000000004, -65.32379, 0.0, 6.652220000000001, -65.32379, 0.0, 6.680640000000001, -57.01519000000001, 0.0, -27.797770000000003, -57.01519000000001, 0.0, -28.198720000000005, -72.03482000000001, 0.0, -40.04777000000001, -72.03482000000001, 0.0, -40.04777000000001, 46.97619000000001, 0.0, -32.525000000000006, 46.987820000000006, 0.0, -32.525000000000006, -52.48790000000001, 0.0, -32.81763000000001, -52.51672000000001, 0.0, -33.09902, -52.60208000000001, 0.0, -33.35835, -52.74069000000001, 0.0, -33.585660000000004, -52.92723000000001, 0.0, -33.772200000000005, -53.154540000000004, 0.0, -33.910810000000005, -53.41387000000001, 0.0, -33.996170000000006, -53.695260000000005, 0.0, -34.025000000000006, -53.98790000000001, 0.0, -33.996170000000006, -54.280530000000006, 0.0, -33.910810000000005, -54.56192000000001, 0.0, -33.772200000000005, -54.821250000000006, 0.0, -33.585660000000004, -55.04856000000001, 0.0, -33.35835, -55.23510000000001, 0.0, -33.09902, -55.37371000000001, 0.0, -32.81763000000001, -55.45907000000001, 0.0, -32.525000000000006, -55.48790000000001, 0.0, -32.23236000000001, -55.45907000000001, 0.0, -31.950970000000005, -55.37371000000001, 0.0, -31.691640000000003, -55.23510000000001, 0.0, -31.464330000000004, -55.04856000000001, 0.0, -31.277790000000003, -54.821250000000006, 0.0, -31.139180000000003, -54.56192000000001, 0.0, -31.053820000000005, -54.280530000000006, 0.0, -31.025000000000006, -53.98790000000001, 0.0, -31.053820000000005, -53.695260000000005, 0.0, -31.139180000000003, -53.41387000000001, 0.0, -31.277790000000003, -53.154540000000004, 0.0, -31.464330000000004, -52.92723000000001, 0.0, -31.691640000000003, -52.74069000000001, 0.0, -31.950970000000005, -52.60208000000001, 0.0, -32.23236000000001, -52.51672000000001, 0.0, -32.525000000000006, -52.48790000000001, 0.0, -32.525000000000006, 46.987820000000006, 0.0, 32.974000000000004, 47.08912000000001, 0.0, 32.974000000000004, -54.82500000000001, 0.0, 32.681360000000005, -54.853820000000006, 0.0, 32.39997, -54.93918000000001, 0.0, 32.140640000000005, -55.07779000000001, 0.0, 31.913330000000006, -55.26433000000001, 0.0, 31.726790000000005, -55.49164000000001, 0.0, 31.588180000000005, -55.75097000000001, 0.0, 31.502820000000003, -56.03236000000001, 0.0, 31.474000000000004, -56.32500000000001, 0.0, 31.502820000000003, -56.617630000000005, 0.0, 31.588180000000005, -56.89902000000001, 0.0, 31.726790000000005, -57.158350000000006, 0.0, 31.913330000000006, -57.38566000000001, 0.0, 32.140640000000005, -57.57220000000001, 0.0, 32.39997, -57.71081000000001, 0.0, 32.681360000000005, -57.79617000000001, 0.0, 32.974000000000004, -57.82500000000001, 0.0, 33.266630000000006, -57.79617000000001, 0.0, 33.54802000000001, -57.71081000000001, 0.0, 33.80735000000001, -57.57220000000001, 0.0, 34.03466, -57.38566000000001, 0.0, 34.2212, -57.158350000000006, 0.0, 34.35981, -56.89902000000001, 0.0, 34.445170000000005, -56.617630000000005, 0.0, 34.474000000000004, -56.32500000000001, 0.0, 34.445170000000005, -56.03236000000001, 0.0, 34.35981, -55.75097000000001, 0.0, 34.2212, -55.49164000000001, 0.0, 34.03466, -55.26433000000001, 0.0, 33.80735000000001, -55.07779000000001, 0.0, 33.54802000000001, -54.93918000000001, 0.0, 33.266630000000006, -54.853820000000006, 0.0, 32.974000000000004, -54.82500000000001, 0.0, 32.974000000000004, 47.08912000000001, 0.0)
+ nbin	'eAF1lHlQjHEYxzskg47RDIkwcpsxkimy9n1ejC2rFK2MkbA0G2W1WyaJcszmnMgxkUFm5KqpVDNNlJ9ryZEcO+RY12Bz5KhWYZa14+lXT+P352eeed7v832+z5vuoIyJTY5emRQfvSpWuSJuWffFGs3iNdFK9UptoiZJmajWdE+wHyEPkzvqFPZLI9Kd7ewmJb0pkRyZCss9pYPzdsjA7t9zb6h5HF9i5a+3lLX8CGfIjdmHi66UBMLNWafXBTrM7sRjfItbyyPC2rg4Vpb5PMcLKDcs+1voBd8PNVV93TCzrf5ZRc6JwFuTGOUn3KLCno+TMPpd9bPbc7y7TvsvV0RKbzam8rnG+1nfVGB1oy6+WrW+Mzc/ebhBK53Rpge8M/ueVAHzz9a99JnCue99c2H+DmDF1V7N7iGcX5lSEGssAFYmcWuoWch5XvBIk/kGsEWfLcmFqzkP/+WpffgKmGhO+X5tD+cKtUvcviZgNp9KOa89mpu28Tcwfb8DMssjzm1zOYrMpt/COdbb6/1UJh9521zYv3FtjuWjjHPUo/sQXj4glnPUr/p22z9AxznO63G88mKfw5yjP308z1YYCjlHP7OCp9dcquAc92LTX8W5k7appdIbGK0fltL3qqZRYLT/74P54W7FAqN6JDtLI4yrBUb1vx1ukHrLBEbnNYofZ+b6CIz6U2+8PPSai8Con6oY6+sqdPIf6+m+sD/dL+qheUD9ND84L80b+kPziX7SPHfwv13+kdN7eT/Mt1t+KkBpWVWQaju/I+Q5B6yvXX7OxViDEwnwRBHUGhzP91tdtC1gnB/A3IynPQOSOfcXH6yz6wUw/0etU/NWzk8lFlnu1AvgVMB2GXI5n+N21+RaIcC7EuvhtcuP3Hp2WfsFSPFpvD7wBa9X6C/cKU8XIK5ufvSQLvz/8yBkifu8NQLY9I/kHOvzNjWnuc7iHPtnT4zq7aHlHPWMPuVRO20v56jfpSgzNKqYc5y3fEla3eRqztGf8wbtvZ+POUc/A5y7vTW94byD//Wcm913Ngw6BkDrTfqmzUP1ALT/Wv8z0sh3AFTPgsnDK9VdRKD6nb/0DgrrLwKdt4eyh+g6RgTqj27vkYifE0Sgftr0S8RO/mM93Rf2p/tFPTQPqJ/mB+eleUN/aD7RT5rnDv63yz9yei9bEmcnOITKHWRCS/OlzAUjzDKhVUj9tFulzchIcBzzB123mqA='
+ arrow	stack_arrow([0.0, 0.0, 0.0, 0.0, 1.56, 1.578])
+ rad	100.0
+END POLY
+
+SURFACE 42
+ texts	[]
+ layer_	13
+ triangles	[3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,8.500000000000000e+00,3.999999000000000e+01,4.697619000000000e+01,-1.000000000000000e+01,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,-1.000000000000000e+01,-3.999087000000002e+01,-7.192143098214125e+01,-1.000000000000000e+01,3.999999000000000e+01,-7.192143098214125e+01,-1.000000000000000e+01,-3.999087000000002e+01,4.697619000000000e+01,-1.000000000000000e+01,3.725000000000001e+01,4.100000000000001e+01,7.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,8.500000000000000e+00,-2.299999999998903e-02,4.100000000000001e+01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,3.725000000000001e+01,-9.849999999999923e-01,8.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,7.500000000000000e+00,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,7.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,8.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,7.500000000000000e+00,3.725000000000001e+01,-1.777899999999999e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,1.488620000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,4.100000000000000e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,-1.493219999999999e+01,4.100000000000001e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,7.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,7.500000000000000e+00,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,-1.000000000000000e+01,-3.729599999999999e+01,-4.296999999999999e+01,7.500000000000000e+00,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,7.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,3.999999000000000e+01,4.697619000000000e+01,-1.000000000000000e+01,3.999999000000000e+01,-7.192143098214125e+01,-1.000000000000000e+01,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,3.725000000000001e+01,-9.849999999999923e-01,8.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,8.500000000000000e+00,3.725000000000001e+01,-1.777899999999999e+01,7.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,7.500000000000000e+00,3.725000000000001e+01,-1.777899999999999e+01,7.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,7.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,7.500000000000000e+00,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,7.500000000000000e+00,1.488620000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,-2.051318959426701e+01,-4.297000000000000e+01,7.500000000000000e+00,-2.299999999998903e-02,-4.296999999999999e+01,8.500000000000000e+00,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,-2.051318959426701e+01,-4.297000000000000e+01,7.500000000000000e+00,1.488620000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,1.488620000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,-3.999087000000002e+01,-7.192143098214125e+01,-1.000000000000000e+01,-3.999087000000002e+01,4.697619000000000e+01,-1.000000000000000e+01,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,-2.299999999998903e-02,4.100000000000001e+01,8.500000000000000e+00,3.552756692446471e+01,4.100000000000001e+01,8.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,7.500000000000000e+00,-3.729599999999999e+01,1.580900000000000e+01,7.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,7.500000000000000e+00,-1.493219999999999e+01,4.100000000000001e+01,7.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,7.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,-1.000000000000000e+01,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,-9.849999999999923e-01,8.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,3.725000000000001e+01,-9.849999999999923e-01,8.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,3.552756692446471e+01,4.100000000000001e+01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,-2.299999999998903e-02,-4.296999999999999e+01,8.500000000000000e+00,-1.986914089314446e+01,-4.297000000000000e+01,8.500000000000000e+00,-3.729599999999999e+01,1.580900000000000e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,7.500000000000000e+00,-3.729599999999999e+01,-9.849999999999923e-01,8.500000000000000e+00,3.725000000000001e+01,-1.777899999999999e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,3.725000000000001e+01,-9.849999999999923e-01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000000e+01,4.929508148508835e+01,-1.100000000000000e+01,-2.051318959426701e+01,-4.297000000000000e+01,7.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,7.500000000000000e+00,-2.299999999998903e-02,-4.296999999999999e+01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,8.500000000000000e+00,3.725000000000001e+01,-9.849999999999923e-01,8.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,3.725000000000001e+01,-1.777899999999999e+01,7.500000000000000e+00,-3.999087000000002e+01,-7.192143098214125e+01,-1.000000000000000e+01,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,-1.000000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,-1.100000000000000e+01,3.597938324879173e+01,4.100000000000000e+01,7.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,7.500000000000000e+00,-2.299999999998903e-02,4.100000000000001e+01,8.500000000000000e+00,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,3.597938324879173e+01,4.100000000000000e+01,7.500000000000000e+00,-1.493219999999999e+01,4.100000000000001e+01,7.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,7.500000000000000e+00,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,8.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,7.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,-1.000000000000000e+01,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,4.100000000000000e+01,4.929508148508835e+01,-1.100000000000000e+01,3.999999000000000e+01,4.697619000000000e+01,-1.000000000000000e+01,-3.999087000000002e+01,4.697619000000000e+01,-1.000000000000000e+01,3.999999000000000e+01,-7.192143098214125e+01,-1.000000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000000e+01,-7.499999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,-9.849999999999923e-01,8.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,7.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,8.500000000000000e+00,-2.299999999998903e-02,-4.296999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,7.500000000000000e+00,-2.051318959426701e+01,-4.297000000000000e+01,7.500000000000000e+00,-3.999087000000002e+01,-7.192143098214125e+01,7.500000000000000e+00,-3.729599999999999e+01,-9.849999999999923e-01,8.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,1.580900000000000e+01,7.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,7.500000000000000e+00,-3.729599999999999e+01,1.580900000000000e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,-1.986914089314446e+01,-4.297000000000000e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-2.299999999998903e-02,4.100000000000001e+01,8.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,-1.493219999999999e+01,4.100000000000001e+01,7.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,8.500000000000000e+00,3.552756692446471e+01,4.100000000000001e+01,8.500000000000000e+00,-2.299999999998903e-02,4.100000000000001e+01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,-2.299999999998903e-02,-4.296999999999999e+01,8.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,1.488620000000001e+01,-4.296999999999999e+01,7.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,3.552756692446471e+01,4.100000000000001e+01,8.500000000000000e+00,3.725000000000001e+01,4.100000000000001e+01,8.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,8.500000000000000e+00,-1.986914089314446e+01,-4.297000000000000e+01,8.500000000000000e+00,-2.299999999998903e-02,-4.296999999999999e+01,8.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,7.500000000000000e+00,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,3.999999000000000e+01,-7.192143098214125e+01,-1.000000000000000e+01,3.725000000000001e+01,4.100000000000001e+01,7.500000000000000e+00,3.597938324879173e+01,4.100000000000000e+01,7.500000000000000e+00,3.999999000000000e+01,4.697619000000000e+01,7.500000000000000e+00,3.725000000000001e+01,-4.296999999999999e+01,8.500000000000000e+00,4.100000000000000e+01,-7.499999999999999e+01,8.500000000000000e+00,4.100000000000000e+01,4.929508148508835e+01,8.500000000000000e+00,-3.999087000000002e+01,4.697619000000000e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,7.500000000000000e+00,-3.729599999999999e+01,1.580900000000000e+01,7.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-1.986914089314446e+01,-4.297000000000000e+01,8.500000000000000e+00,-3.729599999999999e+01,-4.296999999999999e+01,8.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,7.500000000000000e+00,-3.729599999999999e+01,4.100000000000001e+01,8.500000000000000e+00,-3.729599999999999e+01,-9.849999999999923e-01,8.500000000000000e+00,-1.493219999999999e+01,4.100000000000001e+01,7.500000000000000e+00,3.597938324879173e+01,4.100000000000000e+01,7.500000000000000e+00,-2.299999999998903e-02,4.100000000000001e+01,8.500000000000000e+00]
+ arx	'eAFtldtrVFcUh2cmF2ts1dZrLznO0RiTarwmXqLVnWS8jtZcxo7WaC4TxWCamBihQqihwSqo+NLimwgiUuof0IKQgxL6IPjkQx9q+9AHBREfVJSCxt83c/bEc/TAx9p7nX1Z67fW4QzHMoe7v2/rPfFd27HuzNGeQyUdAwMdJ9syfb3HBwdOZAb7Bkr6oxXJsmTBT3uiXan2gkhkfmcmPX4q4Y3zjDZ7kexT7sWwV+qNedT0u3P6yWjO7xrr/+GXhnM9f67wcn7HrEnG7t173eClB6//8fL/Jt9flj9n/8VbzyuGNufXZ/cNJ0zx1Ie1Y9e2mew8Uu7Zc1LpjXeeDm31/WXe35WlN8bHG0zYb88Jx2/PCcbjmNriG13tI9Veayiev+6+aPnvWr0XjtPqE4zTNe/3l3vVvVejN8eqTPgcq1uUgJV3Nu6Ia4ZG5jWeuV2X0/Utf2Tv+n93X7g0GjzHNVaHYF4T+gT9Tn59UDcnX8dgPE4urnfq4ub9QZ0n+iEcp9Xz58dDm2ouL/PzneiTcDx2ffgcq3P43me/nSoc/mdVqI6useeE+9b6g/lOrA/6pYOvf9DvmvO//ti0/X6VF/Q7ZuzBot7WV3V5nSLZxzFnB5v7Y0f00R1OxvTRdaeW66ObpZfTxGTxmZgpJgmaBD/vZ/hzxryPixIxVfB8JL7wLb5CwXmMi/2xrsqOp8hyz3wRFwQ/14d9Hwj7cOY8Mdu302WJiz3A+o8FsbAGHzFjbcysYQ/3f+JDbICPfUXCFTY/YmO/zQPLnD2sJ0arFfmhCXPGnMV7NGGMZY6m3M8aLHPG5DhHsMZamzf2Q2HnduzIR95oCcSFBljmjD8VrPvct8wZY1nDGIv2nI8tFeSO5oAmgKZY9Cd/4gByA3zUmpiwtp7Mecd+9mKZM+YdMWC5F03QGC3fHtua4F8gmGO5g7PQDMucMXUgx7hvmTMmR+7jLmvxoVHct+TMGIsOrg/3AT4+ogI+okT2z5X7iIxeLBf7RExUiGWCy5YKROJJCA4lQERIi5RoETQZD01TIBCGQu4QJL9F1IglAoFoGAJCVBopKihKpVjrzykGTVEttooq0SyIEWG4B/EQhHuJYZHgvFZBkyLsdrHOn9uG434KZhuuTGPyJAYEbBCbBQX7VmwUxNMpiLleNAkKsFCsFh1ilSB39KGgKwX3kDNnfS3QIykaRZ3YL9rFekFRbVOUa/yliItasUaQz05B/tRhgbDNQdzEQ922ibhYLL4RrugSe8QhgfbETd6cwV17xQpBDegBtKRenEEc9AT9QB3Ii7X0DXWlRuR+QGwQ6LFJ7BbETfzUgNry/itBvqxBW+Zo0SaMQH80zohdglokBHnRC1sEGtJf1BddWYc2BwXacneLoGeoFTqQf0rsE+SbFq2CGlBn7mc/eXSKDtEu0Az9iIePqPBMf9HSNyjUZ3Y='
+ operations	'eAFrYIotZNQDAAYHAYA='
+END SURFACE
+
+SURFACE 48
+ texts	[]
+ layer_	12
+ triangles	[-4.210062000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-6.218607407370223e+01,8.500000000000000e+00,-4.099997989990904e+01,3.776254815142036e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.905165286176897e+01,8.500000000000000e+00,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,4.100000000000001e+01,-7.447035219548600e+01,8.500000000000000e+00,4.100000000000001e+01,-7.499999999999999e+01,8.500000000000000e+00,3.339175444227649e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,-3.254637372466069e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-3.254637372466069e+01,-7.499999999999999e+01,8.500000000000000e+00,4.234738000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,4.100000000000001e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000001e+01,3.648115555879059e+01,8.500000000000000e+00,4.100000000000001e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000001e+01,4.867997219548599e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-3.339173434218552e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.484203286176898e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,8.500000000000000e+00,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,3.254639382475166e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000001e+01,4.929508148508835e+01,8.500000000000000e+00,-3.339173434218552e+01,4.929508148508835e+01,-1.100000000000000e+01,4.100000000000001e+01,4.929508148508835e+01,-1.100000000000000e+01,3.254639382475166e+01,4.929508148508835e+01,8.500000000000000e+00,-3.254637372466069e+01,-7.499999999999999e+01,8.500000000000000e+00,4.100000000000001e+01,-7.499999999999999e+01,8.500000000000000e+00,3.339175444227649e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.499999999999999e+01,8.500000000000000e+00,4.100000000000001e+01,-7.499999999999999e+01,-1.100000000000000e+01,3.339175444227649e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,3.339175444227649e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.099997989990904e+01,4.905165286176897e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,3.776254815142036e+01,-1.100000000000000e+01,-4.099997989990904e+01,-6.218607407370223e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.484203286176898e+01,-1.100000000000000e+01,4.100000000000001e+01,3.648115555879059e+01,8.500000000000000e+00,4.100000000000001e+01,-6.346746666633200e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.447035219548600e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-3.339173434218552e+01,4.929508148508835e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000001e+01,-6.346746666633200e+01,-1.100000000000000e+01,4.100000000000001e+01,-6.346746666633200e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.447035219548600e+01,8.500000000000000e+00,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,4.100000000000001e+01,4.929508148508835e+01,-1.100000000000000e+01,-3.339173434218552e+01,4.929508148508835e+01,-1.100000000000000e+01,4.100000000000001e+01,-6.346746666633200e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,4.100000000000001e+01,4.867997219548599e+01,-1.100000000000000e+01,4.100000000000001e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.099997989990904e+01,3.776254815142036e+01,-1.100000000000000e+01,4.100000000000001e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000001e+01,4.929508148508835e+01,-1.100000000000000e+01,4.100000000000001e+01,4.867997219548599e+01,-1.100000000000000e+01,-4.099997989990904e+01,-6.218607407370223e+01,8.500000000000000e+00,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.210062000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.099997989990904e+01,3.776254815142036e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,3.254639382475166e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,-3.339173434218552e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,3.339175444227649e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.099997989990904e+01,-6.218607407370223e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.484203286176898e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.100000000000001e+01,-6.346746666633200e+01,-1.100000000000000e+01,4.100000000000001e+01,3.648115555879059e+01,8.500000000000000e+00,4.100000000000001e+01,4.867997219548599e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,4.100000000000001e+01,-7.499999999999999e+01,8.500000000000000e+00,-3.254637372466069e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.210062000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.099997989990904e+01,3.776254815142036e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.905165286176897e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.484203286176898e+01,-1.100000000000000e+01,4.100000000000001e+01,4.929508148508835e+01,-1.100000000000000e+01,4.100000000000001e+01,4.929508148508835e+01,8.500000000000000e+00,3.254639382475166e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000001e+01,3.648115555879059e+01,8.500000000000000e+00,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,4.234738000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.099997989990904e+01,3.776254815142036e+01,-1.100000000000000e+01,-4.099997989990904e+01,-7.484203286176898e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-3.254637372466069e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,4.100000000000001e+01,3.648115555879059e+01,8.500000000000000e+00,4.100000000000001e+01,-7.447035219548600e+01,8.500000000000000e+00,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.210062000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,8.500000000000000e+00,4.100000000000001e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000001e+01,3.648115555879059e+01,8.500000000000000e+00,-4.099997989990904e+01,-6.218607407370223e+01,8.500000000000000e+00,-4.099997989990904e+01,4.905165286176897e+01,8.500000000000000e+00,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,-4.099997989990904e+01,4.905165286176897e+01,8.500000000000000e+00,-4.210062000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,4.100000000000001e+01,-6.346746666633200e+01,-1.100000000000000e+01,4.100000000000001e+01,4.867997219548599e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.099997989990904e+01,4.929508148508835e+01,-1.100000000000000e+01,-4.210062000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.210062000000000e+01,-7.650000000000001e+01,-1.100000000000000e+01,4.234738000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.099997989990904e+01,4.929508148508835e+01,8.500000000000000e+00,3.254639382475166e+01,4.929508148508835e+01,8.500000000000000e+00,4.100000000000001e+01,-7.499999999999999e+01,-1.100000000000000e+01,4.100000000000001e+01,-7.499999999999999e+01,8.500000000000000e+00,4.100000000000001e+01,-7.447035219548600e+01,8.500000000000000e+00,4.234738000000000e+01,5.070962000000000e+01,8.500000000000000e+00,4.234738000000000e+01,5.070962000000000e+01,-1.100000000000000e+01,-4.210062000000000e+01,5.070962000000000e+01,8.500000000000000e+00,-4.210062000000000e+01,-7.650000000000001e+01,8.500000000000000e+00,-4.099997989990904e+01,-7.499999999999999e+01,8.500000000000000e+00,-4.099997989990904e+01,-6.218607407370223e+01,8.500000000000000e+00]
+ arx	'eAF1lEtQjWEYx0+nCyW5piSckzpCheQW8apOylFRmYaFJsctl9JRhpUsxM6MBQsxLTTDtpk2mPFt7GyaiQ0tGsZYYRpLM/n/zjnvnAt9M795nvf53u+5zzfkDp7vudnVO3i161pP8PKVc1ndoVD3ra5gX+/1gdBgcKAvlNWfUhooDKQOn0g52zHqdrlyqz6eLB43TkbO9+p3Y43GFX58zu/JkLtk3Jg5nrdtjrUXnQl2zt2ud5LtKVwYqjfJfux9z/T76S8T//r5+udu+ZOZWsPnLpfPufR8bPZGmd+E/XnanbBZ9k8X5h7+9JukuN7IPcV9MXb6zqOaWhO5H7Mn5uM1Np9Q+siDkWFbb+z+yLfKjsxOa/c5tq7PP57Ofnjd6kT8+xzrJ9G/z+l5+WbtTLbfqQq4p6ZONUXzma8ur7H3k+t9lT6y75ffJPUzln9i3Fj+E835puCZ7XPMnjiv+ezz5e81di7z1ZVoj+U5+vhGw2Se7VvMnpzP//vgNfcH2vrdF7W0HQG3lrYnvLQLNAXtrmuVyBScaSCsFEtFbvSMXC3SBc9ikSGwrxDZUR2ZJ3hSIyL8jrvYsS0SxENyxmeO4FkWEa7lksQnF3JEckZPE+SCT2z4WSiIjSR3alkS1bMkiUHOSL4viEr8AWdikw+S/IBzvsAX3xIP8GF9kQfvgRrB2vBLLkjeo5OjvU/vOCPXCGbBmZjEj9epmffUg+SMDtSGpG/AmTv0FWnz5mxnRN/IlTM67/gOG5IzOrmSGz7idfzSK+IhOaNTi90LZoGO5D114TNepw7806N4naVNZWn3hP+0kaX161KZaBc0ea3YI7aJo6JQEJCHwXpFOQc9LYJF2imqBMUQkOIZTJ3YKDyCBEvEZnFMNIoNgu9pWJGgWBJnSYjVLFgKuzQsCQOkeLssu6VXiyOC/GlGqaB4Br5d7BPkY5cjfsAB2blnB0nuB8UWwdCMYFC8rxXrBMMpFnaAu6RXiuPCJw4I7jQJYlIX9dvBtUlfL8h1k2gQDNIO7JB0+k4vKsR+0SrqBfH3CubkFR6BL/Khn/Rxq6DXOwS9YAbkRU30n5j4ZY7Mnh4xb76jjhpxWNi54oedoNfUSj/pOXlQK/fJkbyNoH/kWifoGb6o0S+YE31h/syXHWMG7AQ1toh2QY/oJ0ubdq8/veIvjn8XLw=='
+ operations	'eAFrYIotZNQDAAYHAYA='
+END SURFACE

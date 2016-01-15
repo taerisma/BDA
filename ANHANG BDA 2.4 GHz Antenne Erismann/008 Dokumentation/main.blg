@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: abbrvnat.bst
+Database file #1: mydata.bib.bib
+Warning--I'm ignoring elliott1981antenna's extra "publisher" field
+--line 40 of file mydata.bib.bib
+Warning--string name "februar" is undefined
+--line 48 of file mydata.bib.bib
+Warning--string name "september" is undefined
+--line 58 of file mydata.bib.bib
+Warning--to sort, need author or key in Oeffnungswinkel
+Warning--to sort, need author or key in Antenne_Theory_Xant
+Warning--to sort, need author or key in linkbudget
+Warning--to sort, need author or key in Verkuertzungsfaktor
+Warning--to sort, need author or key in Verkuertzungsfaktor_wiki
+Warning--to sort, need author or key in WikiPermitt
+Warning--to sort, need author or key in DielektrikumPolarisation
+Warning--to sort, need author or key in Antenne_Theory_Xant_Loop
+Warning--to sort, need author or key in Guetefaktor_Q
+Warning--to sort, need author or key in Bandbreite_B
+Warning--to sort, need author or key in Polystyrol_Datenblatt
+Warning--empty year in Antenne_Theory_Xant
+Warning--empty year in Antenne_Theory_Xant_Loop
+Warning--empty year in Bandbreite_B
+Warning--empty year in DielektrikumPolarisation
+Warning--empty year in Guetefaktor_Q
+Warning--empty year in Oeffnungswinkel
+Warning--empty year in Polystyrol_Datenblatt
+Warning--empty year in Verkuertzungsfaktor
+Warning--empty year in Verkuertzungsfaktor_wiki
+Warning--empty year in WikiPermitt
+Warning--empty year in linkbudget
+You've used 22 entries,
+            2773 wiz_defined-function locations,
+            709 strings with 7425 characters,
+and the built_in function-call counts, 6192 in all, are:
+= -- 604
+> -- 120
+< -- 9
++ -- 60
+- -- 36
+* -- 404
+:= -- 784
+add.period$ -- 77
+call.type$ -- 22
+change.case$ -- 74
+chr.to.int$ -- 20
+cite$ -- 77
+duplicate$ -- 364
+empty$ -- 703
+format.name$ -- 46
+if$ -- 1397
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 10
+newline$ -- 128
+num.names$ -- 32
+pop$ -- 279
+preamble$ -- 1
+purify$ -- 59
+quote$ -- 0
+skip$ -- 237
+stack$ -- 0
+substring$ -- 61
+swap$ -- 28
+text.length$ -- 2
+text.prefix$ -- 3
+top$ -- 0
+type$ -- 217
+warning$ -- 22
+while$ -- 24
+width$ -- 0
+write$ -- 288
+(There were 25 warnings)
